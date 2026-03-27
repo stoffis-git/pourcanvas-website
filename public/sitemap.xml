@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Core pages -->
   <url>
     <loc>https://pourcanvas.com/</loc>
     <changefreq>weekly</changefreq>
@@ -13,312 +11,293 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/materials</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Pillar pages -->
-  <url>
-    <loc>https://pourcanvas.com/blog/patio</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://pourcanvas.com/blog/driveway</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/walkway</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Patio articles -->
-  <url>
-    <loc>https://pourcanvas.com/blog/patio/concrete-patio-sealing</loc>
-    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/blog/patio/stamped-concrete-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/patio/concrete-patio-cost</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/patio/patio-color-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/patio/concrete-patio-vs-pavers</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/patio/small-patio-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/patio/concrete-patio-resurfacing</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Driveway articles -->
-  <url>
-    <loc>https://pourcanvas.com/blog/driveway/modern-driveway-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/driveway/concrete-driveway-vs-asphalt</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/driveway/stamped-concrete-driveway</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/driveway/exposed-aggregate-driveway</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/driveway/concrete-driveway-cost</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/blog/driveway/driveway-resurfacing</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/blog/driveway/black-concrete-driveway</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pourcanvas.com/blog/driveway/circular-driveway-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Walkway articles -->
-  <url>
-    <loc>https://pourcanvas.com/blog/walkway/walkway-lighting-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/blog/walkway/concrete-steps-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/blog/driveway/concrete-driveway-cost</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/blog/walkway/stepping-stone-walkway-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/blog/driveway/concrete-driveway-vs-asphalt</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/blog/walkway/front-walkway-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/blog/driveway/driveway-border-ideas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/blog/walkway/flagstone-vs-concrete-walkway</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/blog/driveway/driveway-resurfacing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/driveway/exposed-aggregate-driveway</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/driveway/modern-driveway-ideas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/driveway/stamped-concrete-driveway</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/concrete-patio-cost</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/concrete-patio-crack-repair</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/concrete-patio-resurfacing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/concrete-patio-sealing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/concrete-patio-vs-pavers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/patio-color-ideas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/patio-lighting-ideas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/pool-deck-ideas-concrete</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/small-patio-ideas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/stamped-concrete-ideas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/walkway</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pourcanvas.com/blog/walkway/backyard-walkway-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/walkway/concrete-steps-ideas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pourcanvas.com/blog/walkway/concrete-walkway-cost</loc>
-    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pourcanvas.com/blog/walkway/curved-walkway-ideas</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Material pages -->
-  <url>
-    <loc>https://pourcanvas.com/materials/stamped-concrete</loc>
-    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/materials/exposed-aggregate</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/blog/walkway/flagstone-vs-concrete-walkway</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/materials/broom-finish</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/blog/walkway/front-walkway-ideas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/materials/colored-concrete</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/blog/walkway/stepping-stone-walkway-ideas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/materials/concrete-pavers</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/blog/walkway/walkway-lighting-ideas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/materials/flagstone</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/materials/travertine</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/materials/polished-concrete</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/materials/concrete-overlay</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Inspiration pages -->
-  <url>
-    <loc>https://pourcanvas.com/inspiration/flagstone-walkway-natural</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/inspiration/exposed-aggregate-driveway-grey</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/inspiration/stamped-concrete-steps-entry</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/inspiration/modern-black-concrete-driveway</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/inspiration/concrete-pool-deck-grey</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/inspiration/stamped-concrete-patio-grey</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/inspiration/herringbone-brick-patio</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/inspiration/pool-deck-travertine</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/inspiration/modern-driveway-concrete</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/inspiration/circle-patio-pattern</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pourcanvas.com/inspiration/cobblestone-driveway-border</loc>
-    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/inspiration/pool-deck-broom-finish</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/inspiration/concrete-pool-deck-grey</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/inspiration/stamped-concrete-walkway-grey</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pourcanvas.com/inspiration/patio-wood-plank-concrete</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/inspiration/exposed-aggregate-driveway-grey</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pourcanvas.com/inspiration/exposed-aggregate-patio-white</loc>
-    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://pourcanvas.com/inspiration/circle-patio-pattern</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://pourcanvas.com/inspiration/exposed-aggregate-walkway-tan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
+  <url>
+    <loc>https://pourcanvas.com/inspiration/flagstone-walkway-natural</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/herringbone-brick-patio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/herringbone-walkway-concrete</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/modern-black-concrete-driveway</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/modern-driveway-concrete</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/patio-wood-plank-concrete</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/pool-deck-broom-finish</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/pool-deck-travertine</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/stamped-concrete-driveway-cobblestone</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/stamped-concrete-patio-grey</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/stamped-concrete-steps-entry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/stamped-concrete-walkway-grey</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/materials</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/materials/broom-finish</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/materials/colored-concrete</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/materials/concrete-overlay</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/materials/concrete-pavers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/materials/exposed-aggregate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/materials/flagstone</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/materials/polished-concrete</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/materials/stamped-concrete</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/materials/travertine</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
