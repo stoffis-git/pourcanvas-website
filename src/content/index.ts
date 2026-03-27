@@ -1,0 +1,45 @@
+import { patioArticles } from "./articles/patio";
+import { drivewayArticles } from "./articles/driveway";
+import { walkwayArticles } from "./articles/walkway";
+import type { Article, Pillar } from "./types";
+
+export { patioArticles, drivewayArticles, walkwayArticles };
+export { inspirationPages } from "./inspiration";
+export type { Article, ArticleSection, InspirationPage, Pillar } from "./types";
+
+export const allArticles: Article[] = [
+  ...patioArticles,
+  ...drivewayArticles,
+  ...walkwayArticles,
+];
+
+export const articlesBySlug = new Map<string, Article>(
+  allArticles.map((a) => [`${a.pillar}/${a.slug}`, a])
+);
+
+export const articlesByPillar: Record<Pillar, Article[]> = {
+  patio: patioArticles,
+  driveway: drivewayArticles,
+  walkway: walkwayArticles,
+};
+
+export const pillarMeta: Record<Pillar, { title: string; description: string; headline: string }> = {
+  patio: {
+    title: "Patio Design Ideas & Concrete Inspiration | PatioCanvas",
+    headline: "Patio Design Ideas",
+    description:
+      "Explore stamped concrete patterns, patio colors, and cost guides for your next patio project.",
+  },
+  driveway: {
+    title: "Driveway Design Ideas & Concrete Inspiration | PatioCanvas",
+    headline: "Driveway Design Ideas",
+    description:
+      "Stamped concrete driveways, exposed aggregate finishes, and curb appeal ideas for every budget.",
+  },
+  walkway: {
+    title: "Walkway Design Ideas & Concrete Inspiration | PatioCanvas",
+    headline: "Walkway Design Ideas",
+    description:
+      "Front path ideas, flagstone patterns, and concrete walkway guides for every home style.",
+  },
+};

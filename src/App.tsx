@@ -1,27 +1,36 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import Index from "./pages/Index.tsx";
-import NotFound from "./pages/NotFound.tsx";
+import type { RouteRecord } from "vite-react-ssg";
+import RootLayout from "./components/RootLayout";
+import Index from "./pages/Index";
+import NotFound from "./pages/NotFound";
+import BlogHub from "./pages/blog/BlogHub";
+import PillarPage from "./pages/blog/PillarPage";
+import ArticlePage from "./pages/blog/ArticlePage";
+import InspirationPage from "./pages/InspirationPage";
+import { allArticles, inspirationPages } from "./content";
 
-const queryClient = new QueryClient();
+export const routes: RouteRecord[] = [
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <Index /> },
+      { path: "blog", element: <BlogHub /> },
+      { path: "blog/patio", element: <PillarPage /> },
+      { path: "blog/driveway", element: <PillarPage /> },
+      { path: "blog/walkway", element: <PillarPage /> },
+      {
+        path: "blog/:pillar/:slug",
+        element: <ArticlePage />,
+        getStaticPaths: () => allArticles.map((a) => `blog/${a.pillar}/${a.slug}`),
+      },
+      {
+        path: "inspiration/:slug",
+        element: <InspirationPage />,
+        getStaticPaths: () => inspirationPages.map((p) => `inspiration/${p.slug}`),
+      },
+      { path: "*", element: <NotFound /> },
+    ],
+  },
+];
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
-
-export default App;
+export default routes;
