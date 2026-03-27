@@ -196,4 +196,19 @@ export const inspirationPages: InspirationPage[] = [
     ctaHeadline: "Visualize a circle pattern in your space",
     ctaBody: "Upload a photo of your patio and see what a circular stamped design could look like.",
   },
+  {
+    slug: "modern-black-concrete-driveway",
+    title: "Black Concrete Driveway Ideas & Inspiration | PatioCanvas",
+    headline: "Black Concrete Driveway",
+    metaDescription:
+      "A black concrete driveway makes a bold, modern statement. See how integral dark pigment works, what it costs, and how it looks on real homes.",
+    ogImage: "/og/inspiration-modern-black-concrete-driveway.jpg",
+    heroAlt: "Black integrally colored concrete driveway with modern home exterior",
+    contentBlock:
+      "A black concrete driveway is one of the boldest curb appeal choices available — and increasingly one of the most searched. The look is achieved through integral dark pigment mixed directly into the concrete pour, not a surface coating. That distinction matters: integral color runs all the way through the slab, so chips and surface wear don't expose a different-colored base beneath.\n\nThe visual case for black is strong. Against a white, light grey, or warm cream home exterior, a black driveway creates a high-contrast, architectural quality that reads as deliberate and high-end. It pairs naturally with black window frames, dark metal hardware, and structured landscaping. The effect is bold — which means it's decisive in both directions. It looks exceptional when the rest of the exterior is clean and coordinated; it can read as harsh if the surrounding materials are mismatched or the landscape is underdeveloped.\n\nOn the practical side, dark concrete absorbs significantly more heat than light-toned surfaces. In climates with hot summers, the surface can reach temperatures that are uncomfortable underfoot and slightly accelerate surface degradation over time. A quality UV-stable pigment and a penetrating sealer applied every 2–3 years are essential to maintain the depth of color — without sealer maintenance, dark integral color fades to a muted charcoal rather than a true black. Cost-wise, a black integrally colored plain driveway runs $6–12 per sq ft — $2–4 per sq ft above plain grey concrete for the pigment premium. On a standard 500 sq ft two-car driveway, that's $3,000–6,000 total. PatioCanvas can show you how a black concrete finish would look on your specific driveway before you commit.",
+    targetKeywords: ["black concrete driveway", "dark driveway ideas", "modern driveway color"],
+    pillar: "driveway",
+    ctaHeadline: "See black concrete on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what a black integrally colored concrete finish could look like in your space.",
+  },
 ];

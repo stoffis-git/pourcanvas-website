@@ -215,7 +215,7 @@ export const patioArticles: Article[] = [
     title: "Small Concrete Patio Ideas That Make Any Yard Feel Bigger",
     headline: "Small Concrete Patio Ideas That Actually Work",
     metaDescription:
-      "A small patio doesn't have to feel cramped. These concrete design ideas use layout, pattern, and color to make compact outdoor spaces feel intentional and spacious.",
+      "Small patio ideas in concrete: layout tricks, pattern choices, and color tips that make 100–150 sq ft feel intentional and spacious.",
     targetKeywords: ["small patio ideas", "small backyard patio", "compact patio design"],
     ogImage: "/og/patio-small-ideas.jpg",
     publishedAt: "2026-03-27",
@@ -241,6 +241,10 @@ export const patioArticles: Article[] = [
       {
         heading: "Light Colors Expand Space",
         body: "Light gray, buff, or sandstone color washes reflect more light and make the space feel more open. Charcoal and dark colors absorb light and visually tighten the space. In a small patio, err lighter unless you have a specific design reason for contrast. Lighter colors also stay cooler underfoot in direct sun.",
+      },
+      {
+        heading: "Stamped vs. Plain Concrete: Which Is Worth It on a Small Patio",
+        body: "Stamped concrete ($12–18/sq ft) costs roughly double plain broom finish ($6–10/sq ft). On a 120 sq ft small patio, that's a difference of $720–960 — a meaningful sum for a modest surface. Stamped concrete makes sense on a small patio when the rest of the exterior is polished and the patio is the primary design statement. Plain finish with a quality color wash ($8–14/sq ft) is the stronger value choice when you want a finished look without the premium. The design tricks in this article — diagonal patterns, light colors, no border — work with either finish.",
       },
     ],
     relatedSlugs: ["concrete-patio-cost", "patio-color-ideas"],

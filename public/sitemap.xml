@@ -113,6 +113,18 @@
 
   <!-- Walkway articles -->
   <url>
+    <loc>https://patiocanvas.com/blog/walkway/concrete-steps-ideas</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://patiocanvas.com/blog/walkway/stepping-stone-walkway-ideas</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://patiocanvas.com/blog/walkway/front-walkway-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -214,6 +226,12 @@
   </url>
   <url>
     <loc>https://patiocanvas.com/inspiration/stamped-concrete-steps-entry</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patiocanvas.com/inspiration/modern-black-concrete-driveway</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

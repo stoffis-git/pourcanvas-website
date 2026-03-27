@@ -252,4 +252,112 @@ export const walkwayArticles: Article[] = [
       },
     ],
   },
+  {
+    slug: "concrete-steps-ideas",
+    pillar: "walkway",
+    title: "Concrete Steps Ideas: Designs, Costs & What Works",
+    headline: "Concrete Steps That Look Great and Last Decades",
+    metaDescription:
+      "Concrete steps cost $150–400 per step installed. Here are the design ideas, finish options, and contractor tips that get the best result.",
+    targetKeywords: ["concrete steps ideas", "outdoor concrete steps", "front entry steps"],
+    ogImage: "/og/walkway-concrete-steps-ideas.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Concrete steps cost $150–400 per step installed, depending on size and finish. A standard 3-step front entry stoop with a landing runs $1,500–3,000. Entry steps are the highest-impact hardscape upgrade per square foot — every visitor touches them. Here's what determines the cost, which finishes hold up, and how to avoid the design mistakes that make concrete steps look institutional rather than intentional. If you're also planning a front walkway, coordinating the step finish to the path material is the single most effective design decision you can make.",
+    sections: [
+      {
+        heading: "What Concrete Steps Cost in 2026",
+        body: "A single concrete step costs $150–400 installed, including forming, pouring, and finishing. A 3-step entry stoop with a small landing (roughly 20–30 sq ft of total concrete) runs $1,500–3,000 for a plain broom finish. Add stamping or exposed aggregate and the range moves to $2,500–5,000. For reference, natural bluestone or limestone steps cost $200–450 per step for the stone alone — installed totals run $3,000–8,000 for a comparable entry. Concrete delivers 60–70% of the visual impact at 30–50% of the cost.",
+      },
+      {
+        heading: "Stamped Concrete Steps vs. Plain Finish: Which Is Worth It",
+        body: "Plain broom-finish steps ($150–250/step) are durable, slip-resistant, and appropriate for most homes. Stamped steps ($250–400/step) add pattern — typically an ashlar slate, flagstone, or cobblestone stamp on the treads — and match the front walkway finish if that surface is also stamped. The upgrade is worth it when the steps are a prominent design feature and the rest of the entry is polished. If the walkway is plain, stamped steps can look mismatched. Match the step finish to the walk finish: that consistency is what makes an entry look designed rather than assembled.",
+      },
+      {
+        heading: "Riser and Tread Dimensions That Matter",
+        body: "Standard entry steps use 6\"–7\" risers and 11\"–12\" treads — the proportions feel natural for most adults. Wider treads (13\"–16\") feel more generous and give decorative stamps more surface to read clearly. Taller risers (7\"+) make steps feel steeper and less welcoming — avoid on a primary front entry. If you're replacing existing steps, match the riser height exactly to the threshold so the door swing still clears comfortably.",
+      },
+      {
+        heading: "Edge Details and Nosing",
+        body: "A bullnose edge (rounded tread front) is the standard — it looks clean and reduces chipping. A square edge looks crisper and more contemporary but chips more easily if struck by a snowblower or cart. For stamped steps, the nosing detail should continue the pattern to the edge rather than stopping short — a blunt stamp cutoff at the tread edge is the most common sign of inexperienced step work.",
+      },
+      {
+        heading: "DIY vs. Contractor for Concrete Steps",
+        body: "Concrete step pours are not a beginner DIY project. Steps require precise forming, reinforcement with rebar or wire mesh, correct water-to-cement ratios for strength, and proper curing — all within a narrow timing window. A failed step pour is expensive to remove. For plain steps, a competent DIYer with concrete experience can succeed; for stamped or decorative finishes, contractor work is strongly recommended. Get quotes from contractors who specifically show completed step work in their portfolio.",
+      },
+      {
+        heading: "Sealing and Long-Term Care",
+        body: "Concrete steps take more wear than any other hardscape surface — foot traffic, freeze-thaw cycling, and deicing salt all concentrate on the same small area. Sealing every 2 years with a penetrating sealer protects the surface and extends finish life. In cold climates, use magnesium chloride rather than rock salt for ice control — sodium chloride degrades concrete surface over time, especially on stamped or colored finishes. Tools like PatioCanvas can show you how different step finishes would look at your specific entry before you commit to a contractor.",
+      },
+    ],
+    relatedSlugs: ["front-walkway-ideas", "concrete-walkway-cost"],
+    faqs: [
+      {
+        question: "How much do concrete front entry steps cost?",
+        answer: "A single concrete step costs $150–400 installed; a 3-step front entry stoop with a small landing runs $1,500–3,000 for plain broom finish or $2,500–5,000 for stamped. Natural stone steps (bluestone, limestone) cost $3,000–8,000 installed for a comparable entry — concrete delivers similar visual impact at 30–50% of the stone price.",
+      },
+      {
+        question: "Should concrete entry steps be stamped or plain?",
+        answer: "Stamped steps are worth the premium when they match the front walkway finish and the entry is a design statement. Plain broom-finish steps are the right choice when the walkway is also plain, when budget is the constraint, or when the steps will take heavy wear (stamped finishes show wear at the nosing more visibly than plain). The most important rule: match the step finish to the walkway finish for visual continuity.",
+      },
+      {
+        question: "How long do concrete entry steps last?",
+        answer: "Properly installed concrete steps last 30–50 years. The most common failure points are the nosing (edge chipping from impact or freeze-thaw) and surface spalling from salt damage. Resealing every 2 years and using magnesium chloride instead of rock salt for ice control are the two maintenance habits that most extend step life.",
+      },
+    ],
+  },
+  {
+    slug: "stepping-stone-walkway-ideas",
+    pillar: "walkway",
+    title: "Stepping Stone Walkway Ideas: Designs and Costs",
+    headline: "Stepping Stone Walkway Ideas That Work in Any Yard",
+    metaDescription:
+      "Stepping stone walkways cost $50–250 per pad installed. Here are the design ideas, spacing rules, and material choices that make them look intentional.",
+    targetKeywords: ["stepping stone walkway ideas", "stepping stone path", "garden stepping stones"],
+    ogImage: "/og/walkway-stepping-stone-ideas.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Stepping stone walkways cost $50–250 per pad installed, or $10–30 per pad in materials if you pour them yourself. A 15-pad front path runs $750–3,750 for contractor installation — roughly half the cost of a continuous poured walkway of the same length. The design challenge with stepping stones is avoiding the look of random slabs dropped in the grass. Spacing, size, and material consistency are what separate a designed path from an afterthought.",
+    sections: [
+      {
+        heading: "Stepping Stones vs. Poured Walkway: Which Is Right for Your Yard",
+        body: "A continuous poured concrete walkway ($6–18/sq ft depending on finish) looks polished and handles daily traffic, snow shoveling, and heavy foot flow better. Stepping stones ($50–250/pad installed) cost less per linear foot for infrequent-use paths, suit informal garden settings, and require minimal site prep. Choose a continuous pour for your primary front entrance or any path you use daily; choose stepping stones for secondary garden routes, backyard connections, or paths where you want a more naturalistic feel.",
+      },
+      {
+        heading: "Concrete vs. Natural Stone Stepping Pads",
+        body: "Poured concrete pads ($50–150 each installed) can be cast in any shape and finished with broom texture, exposed aggregate, or a light stamp. They're durable, matchable across a project, and easy to DIY if you have basic concrete experience. Natural stone pavers and flagstones ($80–250 each installed for quality cut stone) have more visual texture and character but cost significantly more and vary in thickness, making level placement harder. Poured concrete wins on cost and consistency; natural stone wins on authentic texture for high-end landscapes.",
+      },
+      {
+        heading: "Spacing: The Rule That Changes Everything",
+        body: "Standard comfortable walking stride between pad centers is 18\"–24\". At 18\" centers, the path feels natural at a normal walking pace. At 24\"+ centers, the path feels like it forces unnatural long steps — most people end up stepping between pads, defeating the design. Measure your own stride before setting forms. For larger pads (24\"×24\" or bigger), the center-to-center distance is effectively the gap between pad edges — a 2\"–4\" gap on large pads looks intentional; 8\"+ gaps look like the pads were placed without measurement.",
+      },
+      {
+        heading: "Size and Shape Options",
+        body: "Square pads (18\"×18\" or 24\"×24\") suit modern and contemporary landscapes — the geometry is clean and reads as intentional. Irregular or round pads suit cottage, woodland, and naturalistic gardens. Large rectangular slabs (24\"×36\" or 12\"×24\") work well for a formal front entry approach where you want something bolder. Mixing pad sizes in an informal path (some 18\"×18\", some 24\"×24\") creates organic variety without losing coherence.",
+      },
+      {
+        heading: "Ground Cover Between Pads",
+        body: "What you put between stepping pads changes the entire character of the path. Decomposed granite or fine gravel is the most low-maintenance option — stable, weed-suppressible with landscape fabric, and available in tones that complement concrete. Grass between pads looks great initially but requires careful mowing around each pad. Creeping thyme, Irish moss, and creeping Jenny are the most popular living ground covers — they fill in over a season, suppress weeds, and handle light foot traffic if the path isn't walked heavily. PatioCanvas can show you how different pad styles and spacing would look in your specific yard before you commit.",
+      },
+      {
+        heading: "DIY Poured Stepping Pads",
+        body: "Casting your own concrete stepping pads is one of the most approachable DIY concrete projects. Use 2\"×6\" lumber as a form, pour standard 3,500 PSI concrete to a 3\"–4\" depth, and add a broom texture before it sets. A bag of 80 lb concrete ($7–10) fills roughly one 18\"×18\"×3\" pad. Total material cost per pad: $10–20 including the form lumber you can reuse. Cure under plastic for 48–72 hours before handling. For a 15-pad path, that's $150–300 in materials — a significant saving over contractor work.",
+      },
+    ],
+    relatedSlugs: ["backyard-walkway-ideas", "front-walkway-ideas"],
+    faqs: [
+      {
+        question: "How much do stepping stone walkways cost?",
+        answer: "Contractor-installed stepping pads cost $50–250 each, depending on size and material. A 15-pad path runs $750–3,750 installed. DIY poured concrete pads cost $10–20 each in materials — a 15-pad path in materials runs $150–300. Natural stone pavers cost $80–250 each installed. Stepping stone paths cost roughly half the per-linear-foot price of a continuous poured walkway for infrequent-use routes.",
+      },
+      {
+        question: "What is the correct spacing for stepping stones?",
+        answer: "Set stepping stone pads 18\"–24\" apart center to center — matching a comfortable natural stride. At 18\" centers the path feels natural; wider than 24\" forces awkward long steps. For large pads (24\"×24\" or bigger), a 2\"–4\" gap between pad edges looks intentional. Measure your own walking stride on the site before finalizing spacing, since comfortable stride varies by person.",
+      },
+      {
+        question: "What looks better: stepping stones or a poured walkway?",
+        answer: "It depends on the setting and use frequency. A continuous poured walkway looks more polished and suits formal entries and daily-use routes. Stepping stones look better in informal garden settings, woodland landscapes, and casual backyard connections where a hard path would feel overbuilt. Both can look excellent — the mismatch happens when stepping stones are used where a continuous path is needed for practical use, or a poured path is used in a relaxed garden where it reads as too formal.",
+      },
+    ],
+  },
 ];
