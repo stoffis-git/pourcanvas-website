@@ -60,4 +60,18 @@ export const stampedConcretePage: MaterialPage = {
     { pillar: "patio", slug: "stamped-concrete-ideas" },
     { pillar: "driveway", slug: "stamped-concrete-driveway" },
   ],
+  faqs: [
+    {
+      question: "How much does stamped concrete cost per square foot?",
+      answer: "Stamped concrete runs $12–18 per sq ft installed. The premium over plain broom-finish ($6–10/sq ft) reflects skilled labor — stamping requires precise timing during the pour. Complex patterns, multiple colors, or detailed borders push toward $18+. On a 300 sq ft patio, budget $3,600–5,400.",
+    },
+    {
+      question: "How often does stamped concrete need to be resealed?",
+      answer: "Every 2–3 years, or when water stops beading on the surface. Resealing maintains the color depth and protects against UV fade, staining, and surface wear. In high-traffic areas or climates with harsh winters, reseal closer to the 2-year mark.",
+    },
+    {
+      question: "Is stamped concrete cheaper than pavers?",
+      answer: "Yes, significantly. Stamped concrete runs $12–18/sq ft installed vs. $15–30/sq ft for concrete pavers. On a 300 sq ft patio that's a $900–3,600 difference. Stamped concrete also has no weed-prone joints. The trade-off: individual pavers are easier to repair than a cracked stamped slab.",
+    },
+  ],
 };

@@ -60,4 +60,18 @@ export const exposedAggregatePage: MaterialPage = {
     { pillar: "driveway", slug: "exposed-aggregate-driveway" },
     { pillar: "patio", slug: "concrete-patio-cost" },
   ],
+  faqs: [
+    {
+      question: "How much does exposed aggregate concrete cost per square foot?",
+      answer: "Exposed aggregate runs $8–14 per sq ft installed. Standard pea gravel aggregate is at the lower end; specialty stone like crushed granite or recycled glass pushes toward $14+. For a two-car driveway (400 sq ft), budget $3,200–5,600.",
+    },
+    {
+      question: "Is exposed aggregate concrete slippery when wet?",
+      answer: "No — exposed aggregate is naturally slip-resistant. The texture of the embedded stones provides grip without any added surface treatment, which is why it's a popular choice for pool decks and driveways where wet-surface traction matters.",
+    },
+    {
+      question: "Can exposed aggregate concrete be patched if it cracks?",
+      answer: "Patching exposed aggregate is difficult. New concrete poured to match an existing surface will differ in stone size, distribution, and color — repairs are almost always visible. In areas prone to cracking, it's worth discussing control joints with your contractor upfront to direct any cracking to less visible locations.",
+    },
+  ],
 };

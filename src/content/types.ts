@@ -40,6 +40,7 @@ export interface MaterialPage {
   prosAndCons?: MaterialProCon;
   relatedPillars: Pillar[];
   relatedArticles?: MaterialRelatedArticle[];
+  faqs?: FAQ[];
 }
 
 export interface ArticleSection {

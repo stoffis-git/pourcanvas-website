@@ -60,4 +60,18 @@ export const broomFinishPage: MaterialPage = {
     { pillar: "patio", slug: "concrete-patio-cost" },
     { pillar: "driveway", slug: "concrete-driveway-cost" },
   ],
+  faqs: [
+    {
+      question: "How much does broom finish concrete cost per square foot?",
+      answer: "Plain broom-finish concrete is the most affordable option at $6–10 per sq ft installed. A 300 sq ft patio runs $1,800–3,000; a standard two-car driveway (400–600 sq ft) costs $2,400–6,000. These figures include site prep, forming, reinforcement, pour, and finish.",
+    },
+    {
+      question: "Is broom finish concrete slippery?",
+      answer: "No — the fine parallel lines left by the broom provide natural grip without being rough underfoot. It's the default surface for driveways and pool decks precisely because it's safe in wet conditions. The texture level is controlled by the timing and pressure of the broom pass.",
+    },
+    {
+      question: "Can you add color to broom finish concrete?",
+      answer: "Yes. Integral color mixed into the concrete before pouring adds $2–4 per sq ft and produces warm buff, sandstone, charcoal, or custom tones. Concrete stain applied after curing is another option. You can also add saw-cut patterns or a decorative border to dress up a plain broom-finish slab at minimal added cost.",
+    },
+  ],
 };

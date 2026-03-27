@@ -57,4 +57,18 @@ export const travertinePage: MaterialPage = {
   },
   relatedPillars: ["patio"],
   relatedArticles: [],
+  faqs: [
+    {
+      question: "How much does a travertine pool deck cost installed?",
+      answer: "Travertine pool deck installation runs $20–40 per sq ft. The stone itself costs $5–12/sq ft; the rest is base prep, labor, and grouting. On a 600 sq ft pool deck, budget $12,000–24,000 installed. Compare to stamped concrete ($12–18/sq ft) or poured concrete ($8–18/sq ft), which can approximate the look at roughly half the cost.",
+    },
+    {
+      question: "Does travertine get hot in the sun?",
+      answer: "No — travertine stays measurably cooler underfoot than concrete or brick. Its porous surface and light color reflect rather than absorb heat, keeping the surface 20–30°F cooler than dark concrete on a hot day. This thermal property, combined with its natural non-slip texture, is the primary reason travertine is the preferred pool deck material.",
+    },
+    {
+      question: "How often does travertine need to be sealed?",
+      answer: "Every 1–2 years around pools, where chemical exposure, chlorine, and constant wet/dry cycling accelerate degradation. Unsealed travertine stains readily from sunscreen, pool chemicals, and organic matter. In freeze-thaw climates, seal diligently before winter — the porous stone can absorb water and crack under repeated freezing if left unsealed.",
+    },
+  ],
 };

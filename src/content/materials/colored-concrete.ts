@@ -28,7 +28,7 @@ export const coloredConcretePage: MaterialPage = {
     },
     {
       heading: "Color Selection",
-      body: "Charcoal and dark gray are the most searched patio colors in 2025 — they pair with any home exterior and don't show staining. Warm buff and sandstone tones suit traditional homes and feel warmer underfoot than dark surfaces. Slate blue and sage green are emerging contemporary choices. When selecting a color, ask your contractor for a sample pour — concrete color always dries lighter than the wet mix looks, and colors can shift during curing.",
+      body: "Charcoal and dark gray are the most searched patio colors in 2026 — they pair with any home exterior and don't show staining. Warm buff and sandstone tones suit traditional homes and feel warmer underfoot than dark surfaces. Slate blue and sage green are emerging contemporary choices. When selecting a color, ask your contractor for a sample pour — concrete color always dries lighter than the wet mix looks, and colors can shift during curing.",
     },
     {
       heading: "Fading and Maintenance",
@@ -59,5 +59,19 @@ export const coloredConcretePage: MaterialPage = {
   relatedArticles: [
     { pillar: "patio", slug: "patio-color-ideas" },
     { pillar: "patio", slug: "concrete-patio-cost" },
+  ],
+  faqs: [
+    {
+      question: "What is the most popular color for concrete patios?",
+      answer: "Charcoal and dark gray are the most searched patio colors. They pair with any home exterior and don't show staining. Warm buff and sandstone tones suit traditional homes. Slate blue and sage green are growing contemporary choices. Always ask your contractor for a sample pour — concrete dries lighter than the wet mix looks.",
+    },
+    {
+      question: "What's the difference between integral color and concrete stain?",
+      answer: "Integral color is pigment mixed into the concrete before pouring — the color runs throughout the entire slab, so scratches and chips show the same color below. It's the most durable option, adding $2–4/sq ft. Concrete stain is applied to cured concrete and penetrates the surface — less durable in high-traffic areas and more prone to fading, but can be applied to existing slabs.",
+    },
+    {
+      question: "How long does colored concrete last before fading?",
+      answer: "Integral color holds up best because there's no surface layer to degrade, but all exterior concrete color benefits from a UV-stabilizing sealer. Stained and dyed surfaces require resealing every 2–3 years to maintain color intensity. In high-sun climates like the Southwest or Florida, plan to reseal annually. UV-stable pigments and sealers are worth specifying when ordering.",
+    },
   ],
 };

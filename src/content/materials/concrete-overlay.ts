@@ -60,4 +60,18 @@ export const concreteOverlayPage: MaterialPage = {
     { pillar: "patio", slug: "concrete-patio-resurfacing" },
     { pillar: "driveway", slug: "driveway-resurfacing" },
   ],
+  faqs: [
+    {
+      question: "How much does a concrete overlay cost?",
+      answer: "Basic spray-down overlays run $3–5 per sq ft. Stamped overlays cost $8–15 per sq ft — comparable to a full stamped concrete pour but significantly less than demo and repour. On a 300 sq ft patio, a stamped overlay costs $2,400–4,500 vs. a full replacement that also includes demo costs.",
+    },
+    {
+      question: "Can a concrete overlay be applied over cracked concrete?",
+      answer: "Only if the cracks are narrow (under 1/4\") and the slab is structurally intact. Any crack in the base slab will eventually telegraph through the overlay, usually within 1–3 seasons. Crack repair before overlay application is mandatory. Slabs with heaving, drainage problems, or widespread structural cracking need full replacement, not resurfacing.",
+    },
+    {
+      question: "How long does a concrete overlay last?",
+      answer: "A properly applied overlay on a well-prepared base can extend slab life by 10–15 years. Longevity depends heavily on prep quality — a perfectly applied overlay on a poorly prepped surface will fail early through delamination. Stamped overlays outdoors also benefit from resealing every 2–3 years to maintain appearance and surface protection.",
+    },
+  ],
 };

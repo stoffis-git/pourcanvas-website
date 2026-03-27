@@ -57,4 +57,18 @@ export const concretePagersPage: MaterialPage = {
   },
   relatedPillars: ["patio"],
   relatedArticles: [{ pillar: "patio", slug: "concrete-patio-vs-pavers" }],
+  faqs: [
+    {
+      question: "How much do concrete pavers cost installed?",
+      answer: "Concrete paver installation runs $15–30 per sq ft. The cost breakdown includes the pavers themselves ($3–8/sq ft), compacted gravel base, sand setting layer, labor, and edging restraints. On a 300 sq ft patio, budget $4,500–9,000 installed — roughly double the cost of stamped concrete.",
+    },
+    {
+      question: "Are concrete pavers better than stamped concrete?",
+      answer: "It depends on your priorities. Concrete pavers cost significantly more ($15–30 vs $12–18/sq ft) but offer one major advantage: individual units can be lifted and replaced if they crack or shift — a 15-minute fix vs. grinding and patching a stamped slab. Pavers are the better long-term choice in climates with hard freeze-thaw cycles or significant tree root activity.",
+    },
+    {
+      question: "Do concrete pavers require a lot of maintenance?",
+      answer: "Two main tasks: joint sand replenishment every 3–5 years, and re-leveling any units that sink due to base compaction or tree roots. A penetrating paver sealer applied every 2–3 years deepens the color and reduces staining. This is less maintenance than flagstone but slightly more than a sealed concrete slab.",
+    },
+  ],
 };

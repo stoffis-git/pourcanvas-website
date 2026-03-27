@@ -6,6 +6,7 @@ import { SeoHead } from "@/components/SeoHead";
 import { InspirationUpsellTile } from "@/components/inspiration/InspirationUpsellTile";
 import { MaterialProConBlock } from "@/components/materials/MaterialProConBlock";
 import { MaterialRelatedArticles } from "@/components/materials/MaterialRelatedArticles";
+import { FAQSection } from "@/components/FAQSection";
 import { materialsBySlug } from "@/content";
 
 const MaterialPage = () => {
@@ -26,6 +27,7 @@ const MaterialPage = () => {
         canonical={`/materials/${material.slug}`}
         publishedAt={material.publishedAt}
         keywords={material.targetKeywords}
+        faqs={material.faqs}
       />
       <Header />
       <main className="max-w-3xl mx-auto px-5 py-28 md:py-36">
@@ -72,6 +74,10 @@ const MaterialPage = () => {
             body="PatioCanvas turns your photo into a concrete design preview. Free to try, no account needed."
           />
         </div>
+
+        {material.faqs && material.faqs.length > 0 && (
+          <FAQSection faqs={material.faqs} />
+        )}
 
         {material.relatedArticles && material.relatedArticles.length > 0 && (
           <MaterialRelatedArticles articles={material.relatedArticles} />

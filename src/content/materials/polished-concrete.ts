@@ -57,4 +57,18 @@ export const polishedConcretePage: MaterialPage = {
   },
   relatedPillars: ["patio"],
   relatedArticles: [{ pillar: "patio", slug: "concrete-patio-cost" }],
+  faqs: [
+    {
+      question: "Can you have polished concrete outside?",
+      answer: "Yes, but only on covered or sheltered surfaces — roofed outdoor kitchens, covered pergola floors, screened porches. On these surfaces, polished concrete performs nearly as well as indoors. On uncovered outdoor surfaces exposed to rain, it's not appropriate: polished concrete becomes dangerously slippery when wet.",
+    },
+    {
+      question: "Is polished concrete slippery when wet?",
+      answer: "Yes — polished concrete is extremely slippery when wet. The same smooth, reflective surface that makes it look great inside is a safety liability outside. For outdoor surfaces exposed to rain, consider acid-stained or honed concrete instead, or add an anti-slip additive to the final sealer coat on covered surfaces where you want the polished look.",
+    },
+    {
+      question: "How much does polished concrete cost?",
+      answer: "Polishing an existing concrete slab runs $3–8 per sq ft for a basic satin finish, or $8–15 per sq ft for a high-gloss finish with full densifier treatment. On a 300 sq ft covered patio, budget $900–4,500 depending on the finish level. The slab must be structurally sound — polishing doesn't hide cracks, it reveals them.",
+    },
+  ],
 };

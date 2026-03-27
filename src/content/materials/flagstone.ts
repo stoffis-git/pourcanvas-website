@@ -60,4 +60,18 @@ export const flagstonePage: MaterialPage = {
     { pillar: "walkway", slug: "flagstone-vs-concrete-walkway" },
     { pillar: "patio", slug: "concrete-patio-vs-pavers" },
   ],
+  faqs: [
+    {
+      question: "How much does flagstone cost per square foot installed?",
+      answer: "Natural flagstone installation runs $25–45 per sq ft. Bluestone is at the lower end; travertine and quartzite are at the higher end. The stone itself costs $3–8/sq ft; the rest is labor. On a 200 sq ft front walkway, expect $5,000–9,000 installed vs. $2,400–3,600 for stamped concrete.",
+    },
+    {
+      question: "Does flagstone crack in cold climates?",
+      answer: "It depends on the stone type. Bluestone and quartzite are highly freeze-thaw resistant. Limestone and travertine are more porous and can spall (surface flaking) under repeated freeze cycles if not sealed. Slate can delaminate along its natural grain lines in harsh winters. Always ask your stone supplier specifically about freeze-thaw performance for your climate.",
+    },
+    {
+      question: "Is real flagstone worth the premium over stamped concrete?",
+      answer: "From across the yard, well-done stamped concrete flagstone pattern is nearly indistinguishable from real stone. Up close, natural stone has depth and texture that stamping approximates but doesn't fully replicate. The $10–25/sq ft premium is justified for high-end properties where material authenticity matters or where future buyers at a higher price point will notice the difference. For most homeowners, stamped concrete is the better value.",
+    },
+  ],
 };
