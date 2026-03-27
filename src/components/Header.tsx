@@ -13,12 +13,16 @@ const Header = () => {
           <img src="/patiocanvas_logo-full.png" alt="PatioCanvas" className="h-8 w-auto" />
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
-          <a href="#how-it-works" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">How It Works</a>
-          <a href="#projects" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">Projects</a>
-          <Link to="/blog" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
-          <Link to="/materials" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">Materials</Link>
-          <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-body rounded-full px-6">
+        <nav className="hidden md:flex items-center gap-2">
+          <a href="#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-full px-4 py-2 transition-all duration-200">How It Works</a>
+          <a href="#projects" className="text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-full px-4 py-2 transition-all duration-200">Projects</a>
+          <Link to="/blog" className="text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-full px-4 py-2 transition-all duration-200">Blog</Link>
+          <Link to="/materials" className="text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-full px-4 py-2 transition-all duration-200">Materials</Link>
+          <Button
+            size="sm"
+            className="rounded-full px-6 font-semibold text-sm border-0 hover:opacity-90 transition-opacity"
+            style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
+          >
             Get Inspired
           </Button>
         </nav>
@@ -33,12 +37,16 @@ const Header = () => {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-background border-t border-border px-5 py-4 flex flex-col gap-4">
-          <a href="#how-it-works" onClick={() => setMobileOpen(false)} className="text-sm font-body text-muted-foreground">How It Works</a>
-          <a href="#projects" onClick={() => setMobileOpen(false)} className="text-sm font-body text-muted-foreground">Projects</a>
-          <Link to="/blog" onClick={() => setMobileOpen(false)} className="text-sm font-body text-muted-foreground">Blog</Link>
-          <Link to="/materials" onClick={() => setMobileOpen(false)} className="text-sm font-body text-muted-foreground">Materials</Link>
-          <Button size="sm" className="bg-primary text-primary-foreground font-body rounded-full w-full">
+        <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border px-5 py-4 flex flex-col gap-2">
+          <a href="#how-it-works" onClick={() => setMobileOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-xl px-3 py-2 transition-all">How It Works</a>
+          <a href="#projects" onClick={() => setMobileOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-xl px-3 py-2 transition-all">Projects</a>
+          <Link to="/blog" onClick={() => setMobileOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-xl px-3 py-2 transition-all">Blog</Link>
+          <Link to="/materials" onClick={() => setMobileOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-xl px-3 py-2 transition-all">Materials</Link>
+          <Button
+            size="sm"
+            className="rounded-full w-full mt-2 font-semibold border-0 hover:opacity-90 transition-opacity"
+            style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
+          >
             Get Inspired
           </Button>
         </div>

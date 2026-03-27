@@ -15,10 +15,10 @@ const ProjectCategories = () => {
     <section id="projects" className="section-padding">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-xl mx-auto mb-10">
-          <p className="text-sm font-display font-medium text-muted-foreground uppercase tracking-widest mb-3">
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-3">
             Browse by Project
           </p>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             Find Your Next Project
           </h2>
         </div>
@@ -27,7 +27,7 @@ const ProjectCategories = () => {
           {categories.map((cat, i) => (
             <button
               key={i}
-              className="group relative aspect-[3/4] rounded-xl overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary"
+              className="group relative aspect-[3/4] rounded-3xl overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <img
                 src={cat.image}

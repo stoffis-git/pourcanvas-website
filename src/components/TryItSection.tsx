@@ -24,13 +24,13 @@ const TryItSection = () => {
     <section id="try-it" className="section-padding">
       <div className="max-w-4xl mx-auto">
         <div className="text-center max-w-xl mx-auto mb-8">
-          <p className="text-sm font-display font-medium text-muted-foreground uppercase tracking-widest mb-3">
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-3">
             Try It Now
           </p>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
             Upload Your Space
           </h2>
-          <p className="font-body text-muted-foreground leading-relaxed">
+          <p className="text-muted-foreground leading-relaxed">
             Drop a photo of your patio, driveway, or walkway and see what's possible.
           </p>
         </div>
@@ -40,11 +40,12 @@ const TryItSection = () => {
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
           onDrop={handleDrop}
-          className={`relative border-2 border-dashed rounded-2xl p-8 md:p-14 text-center transition-all duration-300 cursor-pointer group ${
+          className={`relative border-2 border-dashed rounded-3xl p-8 md:p-14 text-center transition-all duration-300 cursor-pointer group ${
             isDragOver
               ? "border-primary bg-primary/5 scale-[1.01]"
-              : "border-border hover:border-primary/50 bg-card hover:bg-card/80"
+              : "border-stone-300 hover:border-primary/60 bg-white/60 backdrop-blur-sm hover:bg-white/80"
           }`}
+          style={{ borderColor: isDragOver ? "#90d1bf" : undefined }}
         >
           <div className="flex flex-col items-center gap-4">
             <div
@@ -56,17 +57,17 @@ const TryItSection = () => {
             </div>
 
             <div>
-              <p className="font-display font-semibold text-foreground text-lg mb-1">
+              <p className="font-semibold text-foreground text-lg mb-1">
                 Drag & drop your photo here
               </p>
-              <p className="font-body text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 or click to browse · JPG, PNG up to 10MB
               </p>
             </div>
 
             <Button
               variant="outline"
-              className="rounded-full font-display text-sm px-6 mt-2 border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground"
+              className="rounded-full font-semibold text-sm px-6 mt-2 border-primary/40 text-primary hover:bg-primary/10 transition-colors"
             >
               <ImagePlus className="w-4 h-4 mr-2" />
               Choose Photo
@@ -83,14 +84,14 @@ const TryItSection = () => {
           ].map((style, i) => (
             <button
               key={i}
-              className="flex items-center gap-3 p-3 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors text-left group"
+              className="flex items-center gap-3 p-3 rounded-2xl bg-white/70 border border-stone-200 hover:border-primary/50 backdrop-blur-sm transition-all duration-200 text-left group"
             >
               <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/15 transition-colors">
                 <style.icon className="w-4 h-4 text-primary" />
               </div>
               <div>
-                <p className="font-display text-sm font-medium text-foreground">{style.label}</p>
-                <p className="font-body text-xs text-muted-foreground">{style.desc}</p>
+                <p className="text-sm font-medium text-foreground">{style.label}</p>
+                <p className="text-xs text-muted-foreground">{style.desc}</p>
               </div>
             </button>
           ))}
