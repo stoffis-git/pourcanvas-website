@@ -239,4 +239,32 @@ export const inspirationPages: InspirationPage[] = [
     ctaHeadline: "See black concrete on your driveway",
     ctaBody: "Upload a photo of your driveway and see what a black integrally colored concrete finish could look like in your space.",
   },
+  {
+    slug: "exposed-aggregate-walkway-tan",
+    title: "Tan Exposed Aggregate Walkway Ideas & Inspiration | PatioCanvas",
+    headline: "Tan Exposed Aggregate Walkway",
+    metaDescription: "A tan exposed aggregate walkway adds warm texture to any front entry. See how this finish looks in real yards and what it costs to install.",
+    ogImage: "/og/inspiration-exposed-aggregate-walkway-tan.jpg",
+    heroAlt: "Tan exposed aggregate concrete walkway leading to a front door with warm-toned landscaping",
+    contentBlock:
+      "Tan and warm buff exposed aggregate is one of the most natural-looking concrete finishes for front walkways. The washed surface reveals rounded pea gravel or crushed stone aggregate in warm amber, honey, and tan tones — colors that read as belonging in a landscape rather than imposed on it. Against a red brick, warm stucco, or painted wood siding exterior, this finish creates a continuity that a grey or neutral surface can't match.\n\nThe visual appeal is in the texture variation. No two sections of exposed aggregate look identical — the aggregate distributes slightly differently across each pour, giving the surface a subtle organic quality. This is the opposite of stamped concrete's deliberate, repeating geometry; exposed aggregate reads as earthy and unforced. For a craftsman, cottage, or Spanish Colonial exterior, tan aggregate often outperforms any stamped pattern in terms of visual fit.\n\nFrom a practical standpoint, tan exposed aggregate walkways cost $10–16 per sq ft installed, depending on aggregate type and regional labor. Premium aggregate (tumbled river stone, beige granite chips) adds $2–4 per sq ft over standard pea gravel. The surface is naturally slip-resistant — the exposed stones provide grip underfoot even when wet — making it a particularly good choice for shaded walkways that stay damp. Maintenance is minimal: a penetrating sealer every 2–3 years keeps the aggregate color from graying out and prevents staining. On a standard 4-foot-wide, 30-foot front walkway (120 sq ft), total installed cost runs $1,200–1,920. PatioCanvas can show you how a tan aggregate finish would look on your specific front path before you commit.",
+    targetKeywords: ["exposed aggregate walkway", "tan concrete walkway", "warm tone walkway ideas"],
+    pillar: "walkway",
+    ctaHeadline: "See tan aggregate on your front path",
+    ctaBody: "Upload a photo of your front walkway and see what tan exposed aggregate concrete could look like in your space.",
+  },
+  {
+    slug: "stamped-concrete-driveway-cobblestone",
+    title: "Cobblestone Stamped Concrete Driveway Inspiration | PatioCanvas",
+    headline: "Cobblestone Stamped Concrete Driveway",
+    metaDescription: "A cobblestone-stamped concrete driveway costs $12–20/sq ft and delivers the look of real stone pavers for less. See how it looks on real homes.",
+    ogImage: "/og/inspiration-stamped-concrete-driveway-cobblestone.jpg",
+    heroAlt: "Cobblestone stamped concrete driveway with warm charcoal color wash and clean edging",
+    contentBlock:
+      "A cobblestone-stamped concrete driveway delivers one of the most convincing approximations of real stone available in concrete — and at a fraction of the cost. The full-surface cobblestone stamp covers the entire driveway in an interlocking round-stone pattern that reads as traditional, substantial, and deliberately chosen. Against a colonial, craftsman, or Tudor home exterior, it's one of the most visually cohesive driveway finishes available.\n\nThe distinction between a full cobblestone stamp and a cobblestone border treatment is worth understanding clearly. A border-only treatment stamps a 12–24 inch perimeter strip and leaves the interior plain — it's a cost-saving approach that works well on contemporary homes where you want edge definition without heavy ornamentation. A full cobblestone stamp covers the entire surface and creates a richer, more immersive look suited to traditional architecture where the driveway is a prominent design feature.\n\nColor wash choices are decisive. A warm buff or sandstone wash reads as traditional and pairs well with brick and painted wood trim. An aged iron or charcoal wash shifts the same pattern toward contemporary territory — bolder and more architectural. A two-tone approach (lighter field with darker mortar-line accents) is what makes the stamped pattern look most like real cobblestone from the street.\n\nFrom a cost standpoint, a full cobblestone-stamped driveway runs $12–20 per sq ft installed — the upper range of the stamped concrete spectrum, due to the complexity of the round-stone pattern and the color work required. On a 500 sq ft two-car driveway, that's $6,000–10,000. Real cobblestone or Belgian block pavers cost $25–50 per sq ft installed — stamped concrete delivers 80% of the visual result at 30–50% of the price. Resealing every 2–3 years maintains the color depth and protects the mortar-line detailing. PatioCanvas can show you how a cobblestone stamp in different color washes would look on your specific driveway before you commit to a contractor.",
+    targetKeywords: ["cobblestone driveway", "stamped concrete cobblestone driveway", "cobblestone driveway ideas"],
+    pillar: "driveway",
+    ctaHeadline: "See cobblestone on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what a cobblestone-stamped concrete finish could look like in your space.",
+  },
 ];

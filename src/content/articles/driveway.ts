@@ -423,4 +423,57 @@ export const drivewayArticles: Article[] = [
       },
     ],
   },
+  {
+    slug: "driveway-border-ideas",
+    pillar: "driveway",
+    title: "Driveway Border Ideas: 5 Styles and What They Cost",
+    headline: "Driveway Border Ideas That Add Curb Appeal Without the Full Price Tag",
+    metaDescription: "Driveway borders cost $8–20 per linear foot and can transform a plain concrete slab. Here are 5 styles, real costs, and which homes they suit best.",
+    targetKeywords: ["driveway border ideas", "concrete driveway border", "stamped concrete border driveway"],
+    ogImage: "/og/driveway-driveway-border-ideas.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "A driveway border adds visual definition to a plain concrete slab without the cost of stamping the entire surface. Border treatments run $8–20 per linear foot installed — on a standard two-car driveway perimeter (roughly 160 linear feet), that's $1,280–3,200. Here are 5 border styles worth considering, with real cost ranges and the home styles they work best with.",
+    sections: [
+      {
+        heading: "Cobblestone Stamp Border: The Most Popular Choice",
+        body: "A cobblestone-stamped border strip — typically 12–24 inches wide — is the most widely used driveway border treatment. The pattern reads as traditional and upscale, making it a natural match for colonial, craftsman, and Tudor-style homes. In a darker color wash (charcoal, aged iron, or slate), it also works on contemporary homes where you want a defined edge without heavy ornamentation. Cost: $8–12 per linear foot for a border-only stamp treatment. Compare that to $12–20 per sq ft to stamp the entire surface — on a 500 sq ft two-car driveway, a border-only approach saves $4,000–8,000 while delivering most of the visual impact. The border approach works because the eye follows the edge of the driveway naturally; a defined perimeter reads as intentional even when the interior is plain-finish concrete.",
+      },
+      {
+        heading: "Exposed Aggregate Border Strip",
+        body: "An exposed aggregate border is a clean, modern alternative to stamped patterns. Instead of a stamp, the perimeter strip is finished with washed aggregate — pea gravel, white quartz, or crushed stone — while the interior remains smooth-broom or lightly textured. The contrast in texture reads as designed without being decorative. Cost: $10–16 per linear foot installed, depending on aggregate type (quartz and marble aggregate add $2–4/lf over standard pea gravel). This border style suits contemporary, transitional, and minimalist exteriors particularly well — it pairs with dark trim, concrete curbing, and structured landscaping. It's also one of the more durable border options since exposed aggregate doesn't rely on a color wash that fades over time.",
+      },
+      {
+        heading: "Saw-Cut Score Line Border",
+        body: "The simplest and least expensive border option is a saw-cut score line — a straight cut made 1–3 inches deep along the perimeter of the driveway, optionally filled with a contrasting color sealant or left as a shadow line. Cost: $3–6 per linear foot. This is not a decorative treatment in the traditional sense; it's a geometric definition tool. The score line creates a visual edge that separates the driveway from the lawn, curbing, or planting beds — much like a picture frame. In charcoal or black sealant fill, it reads as deliberate and architectural. Best for: modern and contemporary homes where the goal is clean lines over ornamentation.",
+      },
+      {
+        heading: "Brick Inlay Border",
+        body: "A real brick or concrete paver inlay border involves setting a course of bricks or pavers directly into the concrete perimeter — either during the original pour or by cutting and setting them into an existing slab. This is the most labor-intensive border option and the most visually substantial. Cost: $14–22 per linear foot depending on material (concrete pavers at the low end; natural clay brick at the high end). The result is a border with real material variation — actual brick or stone reading differently from the concrete field — not a simulation. Best for: traditional, craftsman, and colonial homes where a brick element ties the driveway to brick facade elements. It also holds up better to snowplow edge contact than a stamped border because the paver units resist chipping under impact.",
+      },
+      {
+        heading: "Color Band Border (Integral Pigment)",
+        body: "A color band border uses a contrasting integral pigment in the perimeter strip versus the driveway field — for example, a charcoal perimeter band around a light grey driveway interior, or a warm buff edge around a cool grey field. The concrete is poured in two phases or using a divider form to keep colors separate. Cost: $10–16 per linear foot for the border strip, including the pigment premium. This approach requires careful planning before the pour — you can't easily add a pigment border to an existing driveway. Tools like PatioCanvas let you preview how different color band combinations would look on your specific driveway layout before the concrete is ordered. Best for: new pours where you want a two-tone effect that's highly durable with no stamping maintenance requirements. If you're also planning a front walkway, running a matching color band as a border on the path creates continuity across both surfaces.",
+      },
+      {
+        heading: "Which Border Works Best for Your Home",
+        body: "Matching the border style to your home's exterior is the deciding factor. Cobblestone stamp borders suit traditional architecture and brick facades. Exposed aggregate borders fit modern and contemporary homes with clean lines. Saw-cut score lines are best for strictly minimalist exteriors where any decoration would feel out of place. Brick inlay borders are the premium choice for traditional homes where material authenticity matters. Color band borders work with any style but require planning at the pour stage. Budget also matters: saw-cut score lines are $3–6/lf; brick inlay borders are $14–22/lf. A cobblestone stamp border at $8–12/lf is the best value option for most homeowners — significant visual impact, moderate cost, and no ongoing maintenance beyond the sealer schedule the rest of the driveway already requires.",
+      },
+    ],
+    relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
+    faqs: [
+      {
+        question: "How much does a driveway border cost?",
+        answer: "Driveway border treatments range from $3–6 per linear foot for a saw-cut score line to $14–22 per linear foot for a real brick or paver inlay. Cobblestone stamp borders run $8–12/lf; exposed aggregate strips run $10–16/lf; integral pigment color bands run $10–16/lf. On a standard two-car driveway perimeter (roughly 160 linear feet), total border costs range from $480 for a score line to $3,500 for a brick inlay.",
+      },
+      {
+        question: "Can you add a border to an existing concrete driveway?",
+        answer: "Yes, with limitations. Stamped borders, exposed aggregate strips, and saw-cut score lines can all be applied to or cut into existing concrete. Real brick or paver inlay borders require cutting into the existing slab, which is labor-intensive and requires matching the existing slab depth. Integral pigment color band borders cannot be added to an existing slab — they require planning at the pour stage.",
+      },
+      {
+        question: "What is the most durable driveway border?",
+        answer: "Brick or concrete paver inlay borders are the most durable — the individual units resist edge chipping from snowplow contact and don't rely on a surface color wash that fades. Exposed aggregate borders are next: the aggregate texture holds up without periodic resealing for color maintenance. Stamped borders with a color wash need resealing every 2–3 years to maintain color depth, similar to the main driveway surface.",
+      },
+    ],
+  },
 ];

@@ -474,4 +474,57 @@ export const patioArticles: Article[] = [
       },
     ],
   },
+  {
+    slug: "patio-lighting-ideas",
+    pillar: "patio",
+    title: "Patio Lighting Ideas: Types, Costs, and What Works",
+    headline: "Patio Lighting Ideas That Actually Change How the Space Feels",
+    metaDescription: "Patio lighting costs $200–2,500 depending on type. Here are the ideas that work with concrete and paver patios — and the decisions worth getting right.",
+    targetKeywords: ["patio lighting ideas", "outdoor patio lighting", "concrete patio lighting"],
+    ogImage: "/og/patio-patio-lighting-ideas.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Patio lighting costs $200–600 for a DIY solar or plug-in setup, or $800–2,500 for a professionally installed low-voltage system. The difference between a patio that looks finished at night and one that disappears isn't the amount of light — it's the placement and type. Most homeowners overlook lighting until after the concrete is poured, which eliminates the best options. Here's what to know before that decision gets made.",
+    sections: [
+      {
+        heading: "In-Ground vs. Surface-Mounted vs. String Lights: The Core Decision",
+        body: "In-ground well lights ($80–200 each installed) are the cleanest option — flush with the patio surface, they uplight architectural features or surrounding plantings without adding visible fixtures. They require conduit to be run before or during the concrete pour; adding them after requires coring through the slab. Surface-mounted step lights and wall-mounted downlights ($60–150 per fixture installed) are more flexible post-construction but add visible hardware to the space. String lights ($50–300 for a 40-foot span) are the easiest and most budget-friendly option — no electrical work required, fully reversible, and consistently popular for covered patios and pergolas. The right choice depends on how permanent you want the installation and whether the concrete has already been poured.",
+      },
+      {
+        heading: "Low-Voltage vs. Line-Voltage vs. Solar: Cost and Practicality Compared",
+        body: "Low-voltage systems (12V) are the standard for most residential patio lighting. They run off a transformer plugged into a standard 120V outlet and are safe enough to work on without an electrician in most jurisdictions. A complete low-voltage patio kit (transformer, wire, 6–8 fixtures) runs $150–400 and covers a medium-sized patio. Professional installation adds $300–600 in labor. Line-voltage systems (120V) are brighter and more durable but require a licensed electrician and permit — total cost typically $1,500–3,000 for a full patio system. Solar fixtures ($20–60 each) eliminate wiring entirely but deliver significantly less light output and depend on adequate sun exposure during the day. For a primary patio lighting system, low-voltage professionally installed is the practical benchmark; solar works for accent and path lighting where bright output isn't critical.",
+      },
+      {
+        heading: "Placement That Actually Works: Where to Put the Fixtures",
+        body: "The most common patio lighting mistake is illuminating the middle of the space rather than the edges and vertical elements. Wash the perimeter planting beds and fencing with low-angled uplights — this creates depth and makes the patio feel larger at night. Put downlights over the dining area from an overhead structure or pergola, not overhead spotlights aimed at eye level. Use step lights on any grade changes — 2-inch square step lights embedded in the riser are nearly invisible during the day and provide practical safety lighting at night. Keep fixture heights consistent: mixing low-bollard lights with tall post-top fixtures fragments the light field. One fixture type per zone — dining area, perimeter, circulation — reads as intentional; mixed-height fixtures in the same zone look unplanned.",
+      },
+      {
+        heading: "Lighting and Surface Finish: A Decision That Works Together",
+        body: "The surface finish you choose for your patio affects how lighting reads at night. Smooth or lightly textured concrete with a satin sealer reflects uplighting evenly — the surface holds the light and glows softly. Exposed aggregate surfaces scatter light more diffusely, reducing harsh reflection but also reducing the luminous quality. Stamped patterns with deep relief — cobblestone, ashlar slate — cast interesting shadows when lit from low angles, emphasizing the texture in a way flat lighting doesn't. Dark surfaces (charcoal, graphite) absorb more light and need higher-output fixtures than light surfaces. If you're choosing a surface finish while also planning a lighting system, it's worth running both decisions in parallel — a light-colored, smooth-finish patio with well-placed uplights is one of the most dramatic night-time outdoor settings available. PatioCanvas lets you preview how different concrete finishes look in your specific space before committing, which also helps you anticipate how they'll interact with your lighting setup.",
+      },
+      {
+        heading: "String Lights Done Well vs. Done Poorly",
+        body: "String lights are the most visible category of patio lighting — and the most often done poorly. The difference comes down to structure and bulb type. String lights hung without a support structure sag in the middle and look improvised. The right approach: run wire rope or cable between anchor points (posts, pergola beams, or wall-mounted eye hooks) taut at 8–10 feet, then drape the string lights along that structure. Edison-style bulbs (ST64, G40) at 2-watt equivalent give warm, glowing light that photographs well and reads as intentional. Small LED commercial string lights at high density look cheap and read as party-grade regardless of the underlying setup. Budget $150–350 for a good Edison-bulb string light setup over a 300 sq ft patio including cable and mounting hardware. Dimmable setups add $50–100 for the transformer — worth it for a dining area where you want brightness control.",
+      },
+      {
+        heading: "What Patio Lighting Projects Cost in 2026",
+        body: "Entry-level: $200–400 total for 6–8 low-voltage path or perimeter lights on a timer. Handles accent lighting but not primary use. Mid-range: $600–1,200 for a full low-voltage kit with dining downlights, perimeter uplights, and step lights, professionally installed. This is the practical benchmark for a 200–400 sq ft patio. Premium: $1,500–3,000 for a line-voltage system with smart controls, hardwired fixtures, and permit — appropriate for large patios ($3,000+ concrete) or high-spec outdoor kitchens. String light add-on: $150–400 DIY for Edison bulbs over a dining area, on top of any of the above. If you're also planning a front walkway or driveway lighting, a coordinated approach — same fixture family, same color temperature — reads as designed. Mixing warm and cool LED sources on the same property creates a disjointed effect most homeowners only notice after installation.",
+      },
+    ],
+    relatedSlugs: ["concrete-patio-cost", "small-patio-ideas"],
+    faqs: [
+      {
+        question: "How much does patio lighting cost to install?",
+        answer: "Low-voltage patio lighting kits (transformer, wire, 6–8 fixtures) run $150–400 in materials. Professional installation adds $300–600 in labor, bringing a complete low-voltage system to $450–1,000. Line-voltage hardwired systems run $1,500–3,000 total with electrical permit and licensed electrician. String lights are the entry-level option at $150–400 DIY for a quality Edison-bulb setup over a dining area.",
+      },
+      {
+        question: "What type of patio lighting lasts the longest?",
+        answer: "Low-voltage brass and aluminum fixtures with sealed LED modules last 15–25 years with minimal maintenance. Line-voltage fixtures are equally durable but require more installation investment. Solar fixtures typically last 3–5 years before battery degradation reduces output significantly. Avoid fixtures with replaceable bulbs in outdoor applications — the socket and connections corrode before the bulb fails, causing intermittent failures.",
+      },
+      {
+        question: "Should I plan patio lighting before or after the concrete is poured?",
+        answer: "Before — ideally during the design phase. In-ground well lights and conduit for hardwired fixtures must be placed before or during the pour; adding them after requires coring through the slab, which is expensive and structurally disruptive. Surface-mounted and plug-in fixtures can be added anytime. If you haven't decided yet, run a 3/4\" conduit loop under the slab perimeter during the pour — it costs $50–100 in materials and keeps every future option open.",
+      },
+    ],
+  },
 ];
