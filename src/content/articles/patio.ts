@@ -264,6 +264,60 @@ export const patioArticles: Article[] = [
     ],
   },
   {
+    slug: "concrete-patio-sealing",
+    pillar: "patio",
+    title: "How to Seal a Concrete Patio: Cost, Types & Timeline",
+    headline: "Sealing Your Concrete Patio: What You Need to Know",
+    metaDescription: "Concrete patio sealing costs $0.15–0.25/sq ft DIY or $1–3/sq ft hired out. Here's which sealer type to use and when to apply it.",
+    targetKeywords: ["concrete patio sealing", "best concrete sealer patio", "how to seal concrete patio"],
+    ogImage: "/og/patio-concrete-sealing.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Sealing a concrete patio costs $0.15–0.25 per sq ft in materials for a DIY job, or $1–3 per sq ft if you hire a contractor. On a 300 sq ft patio, that's $45–75 in product or $300–900 for professional application. The right sealer type depends on your finish — stamped and colored concrete need a different product than plain broom finish. Done correctly, sealing extends finish life by years and dramatically improves how the surface looks. Done wrong, it traps moisture and causes peeling.",
+    sections: [
+      {
+        heading: "Why Sealing Matters More for Some Finishes",
+        body: "Plain broom-finish concrete benefits from sealing — it reduces water infiltration and staining — but it won't look dramatically different before vs. after. Stamped and colored concrete is different: a quality sealer enhances color depth and gives the surface a wet-look or satin sheen that makes the finish look significantly better. If you have stamped or integrally colored concrete, sealing isn't optional maintenance — it's part of how the finish is supposed to look. Tools like PatioCanvas can show you how different sealer sheen levels (matte, satin, wet-look gloss) would change the appearance of your specific patio finish.",
+      },
+      {
+        heading: "Penetrating Sealer vs. Film-Forming Sealer: Which to Choose",
+        body: "Penetrating sealers (silane-siloxane or siliconate) soak into the concrete and repel water and staining without changing the surface appearance. They're the right choice for plain concrete or any surface where you want protection without sheen. Film-forming sealers (acrylic, polyurethane, epoxy) sit on top of the surface and add visible sheen from matte to high gloss. They enhance color depth on stamped and colored concrete but require reapplication every 2–3 years as the film breaks down. Never apply a film-forming sealer over an existing film — strip the old coat first or you'll trap moisture.",
+      },
+      {
+        heading: "What Concrete Patio Sealing Costs in 2026",
+        body: "DIY sealing costs $0.15–0.25 per sq ft in product — a 5-gallon pail of quality acrylic sealer ($60–90) covers 250–400 sq ft depending on the surface texture. Sprayer rental adds $30–50. Contractor sealing runs $1–3 per sq ft, including surface cleaning, crack prep, and application. On a 300 sq ft stamped patio, that's $300–900 for professional work. The labor premium is worth it for first-time sealing on a stamped or decorative surface — application technique matters more than most homeowners expect.",
+      },
+      {
+        heading: "When to First Seal and How Often to Reseal",
+        body: "New concrete should cure for at least 28 days before sealing — ideally 60 days. Sealing too early traps residual moisture and causes the sealer to cloud or peel. Reseal every 2–3 years for film-forming products on decorative surfaces. Penetrating sealers typically last 4–7 years. Test whether your patio needs resealing: drop a tablespoon of water on the surface. If it beads up, the sealer is still working. If it soaks in within 30 seconds, it's time to reseal.",
+      },
+      {
+        heading: "DIY Sealing vs. Hiring a Contractor",
+        body: "DIY sealing is a reasonable project for plain or lightly colored concrete: clean the surface, let it dry fully, and apply the sealer with a roller or sprayer in thin, even coats. Stamped concrete with heavy texture and multiple color layers is harder to DIY — the sealer pools in the low points of the stamp and can look uneven without proper back-rolling technique. For stamped or decorative concrete, a professional first application is worth the cost. Subsequent resealings are easier to DIY once you know the product and surface behavior.",
+      },
+      {
+        heading: "Stamped vs. Plain Concrete: Different Sealer Needs",
+        body: "Plain broom-finish concrete does fine with a penetrating sealer applied every 5–7 years — it gives water resistance without changing the look. Stamped concrete should use a film-forming acrylic or polyurethane sealer that enhances color depth, reapplied every 2–3 years. Exposed aggregate concrete benefits from a penetrating sealer that doesn't fill the surface texture; film-forming sealers can make aggregate surfaces slippery when wet. If you're also sealing a driveway, the same product selection logic applies — match the sealer type to the finish, not to the square footage.",
+      },
+    ],
+    relatedSlugs: ["concrete-patio-resurfacing", "concrete-patio-cost"],
+    relatedMaterials: ["broom-finish", "stamped-concrete", "exposed-aggregate"],
+    faqs: [
+      {
+        question: "How much does it cost to seal a concrete patio?",
+        answer: "DIY concrete patio sealing costs $0.15–0.25 per sq ft in materials — roughly $45–75 for a 300 sq ft patio, plus $30–50 to rent a sprayer. Contractor sealing runs $1–3 per sq ft, or $300–900 for the same patio. The professional premium is worth it for first-time sealing on stamped or decorative concrete where application technique affects the result.",
+      },
+      {
+        question: "What is the best sealer for a stamped concrete patio?",
+        answer: "A film-forming acrylic or polyurethane sealer is the right choice for stamped concrete. It enhances color depth, adds the wet-look or satin sheen that makes stamped finishes look their best, and protects the color wash from UV fading. Reapply every 2–3 years. Avoid penetrating sealers on stamped concrete — they protect but won't enhance the decorative finish.",
+      },
+      {
+        question: "How often should you reseal a concrete patio?",
+        answer: "Film-forming sealers on decorative concrete need reapplication every 2–3 years. Penetrating sealers on plain concrete last 4–7 years. Test with a water drop: if a tablespoon of water soaks into the surface within 30 seconds, it's time to reseal. Don't apply new sealer over a degraded film coating — strip the old coat first to avoid moisture trapping.",
+      },
+    ],
+  },
+  {
     slug: "concrete-patio-resurfacing",
     pillar: "patio",
     title: "Concrete Patio Resurfacing: Resurface or Replace?",

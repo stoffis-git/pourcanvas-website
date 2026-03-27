@@ -37,6 +37,12 @@
 
   <!-- Patio articles -->
   <url>
+    <loc>https://patiocanvas.com/blog/patio/concrete-patio-sealing</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://patiocanvas.com/blog/patio/stamped-concrete-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -75,6 +81,12 @@
 
   <!-- Driveway articles -->
   <url>
+    <loc>https://patiocanvas.com/blog/driveway/modern-driveway-ideas</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://patiocanvas.com/blog/driveway/concrete-driveway-vs-asphalt</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -112,6 +124,12 @@
   </url>
 
   <!-- Walkway articles -->
+  <url>
+    <loc>https://patiocanvas.com/blog/walkway/walkway-lighting-ideas</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://patiocanvas.com/blog/walkway/concrete-steps-ideas</loc>
     <lastmod>2026-03-27</lastmod>
@@ -232,6 +250,12 @@
   </url>
   <url>
     <loc>https://patiocanvas.com/inspiration/modern-black-concrete-driveway</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patiocanvas.com/inspiration/concrete-pool-deck-grey</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

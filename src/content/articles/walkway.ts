@@ -307,6 +307,59 @@ export const walkwayArticles: Article[] = [
     ],
   },
   {
+    slug: "walkway-lighting-ideas",
+    pillar: "walkway",
+    title: "Walkway Lighting Ideas: What Works and What to Avoid",
+    headline: "Front Walkway Lighting Ideas That Actually Look Good",
+    metaDescription: "Walkway lighting costs $150–600 DIY or $500–2,000 installed. These ideas cover path lights, uplighting, and in-ground options that work in 2026.",
+    targetKeywords: ["walkway lighting ideas", "front path lighting", "outdoor walkway lights"],
+    ogImage: "/og/walkway-lighting-ideas.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Path lighting for a standard 30-foot front walkway costs $150–600 in materials for a DIY solar or low-voltage system, or $500–2,000 for professional hardwired installation. Lighting is one of the highest-ROI curb appeal investments — it adds safety, extends usable evening hours, and changes how the entire exterior reads after dark. The choice of fixture style and placement matters more than budget. Here's what works and what tends to look cheap or dated.",
+    sections: [
+      {
+        heading: "Low-Voltage LED Path Lights: The Default for a Reason",
+        body: "Low-voltage LED bollard-style path lights are the most popular choice — and genuinely the right call for most front walkways. A set of 6–8 lights on a 30-foot walk runs $80–300 in materials and connects to a transformer you plug into an outdoor outlet. Install time is 2–3 hours for a competent DIYer. Quality LED path lights (not the $8 solar units) last 10–15 years and maintain consistent brightness. Look for fixtures with a beam angle of 60 degrees or less — wider spread washes out the path and loses the layered look.",
+      },
+      {
+        heading: "Solar vs. Low-Voltage: Which Is Worth It",
+        body: "Solar path lights cost less upfront ($20–80 for a set of 6) but have real limitations: inconsistent brightness, shorter runtime in winter or under tree canopy, and cheaper fixtures that look dated quickly. Low-voltage LED systems cost more upfront ($80–300 for comparable coverage) but provide consistent performance and look cleaner. For a primary front walkway visible from the street, low-voltage is the stronger investment. Solar is a reasonable choice for secondary garden paths where occasional dim nights are acceptable.",
+      },
+      {
+        heading: "Fixture Placement: The Rule That Changes the Result",
+        body: "Space path lights 6–8 feet apart on alternating sides of the walk — offset, not directly across from each other. Opposite-paired lights create a landing-strip effect that reads as institutional. Offset placement gives a more relaxed, residential quality. The top of the light should sit 12–18 inches above grade — low enough to light the path surface, high enough to not create tripping hazards or get obscured by plant growth.",
+      },
+      {
+        heading: "Uplighting: The High-Impact Upgrade",
+        body: "Adding 2–3 uplight fixtures aimed at a specimen tree or prominent shrub near the walkway changes the entire scale of the exterior after dark. Path lights alone light the ground; uplights create vertical dimension. The combination — low path lights along the walk plus one or two uplights on landscape features — is what separates a professionally designed exterior from a standard home improvement job. Budget $50–150 per uplight fixture for quality brass or powder-coated aluminum units that hold up outdoors.",
+      },
+      {
+        heading: "In-Ground Step Lighting",
+        body: "If your front walkway includes steps, in-ground or recessed step lights are the single most safety-critical lighting decision. A 3-step entry stoop with no riser lighting is a fall hazard after dark. Recessed LED step lights run $30–80 per fixture installed, or $150–400 for a typical 3-step entry. Wire them on the same transformer circuit as the path lights. Choose fixtures rated for wet locations and with a frosted lens — bare LED point sources on step risers are harsh and glare directly into visitors' eyes at approach angle.",
+      },
+      {
+        heading: "Fixture Style: What Pairs with Your Surface Finish",
+        body: "Warm brass or bronze fixtures pair naturally with stamped concrete in earth tones (buff, sandstone, aged brick colors). Matte black fixtures suit contemporary driveways with charcoal or dark grey concrete. Stainless or brushed nickel suits modern homes with cool-grey aggregate finishes. The lighting fixture style should reinforce the surface finish choice — if you're deciding on a walkway finish and want to add lighting, choosing the finish first makes the fixture selection easier. PatioCanvas can help you visualize what your walkway surface will look like in different finishes before you commit to a material that may limit your fixture options.",
+      },
+    ],
+    relatedSlugs: ["front-walkway-ideas", "concrete-steps-ideas"],
+    faqs: [
+      {
+        question: "How much does walkway lighting cost?",
+        answer: "A DIY low-voltage LED path light system for a standard 30-foot front walkway costs $150–300 in materials (6–8 fixtures plus a transformer). Professional hardwired installation runs $500–2,000 for the same scope. Solar path light sets are cheaper at $30–100 but deliver inconsistent performance. In-ground step lighting adds $150–400 for a typical 3-step entry.",
+      },
+      {
+        question: "How far apart should walkway lights be spaced?",
+        answer: "Space path lights 6–8 feet apart, offset on alternating sides of the walk. Opposite-paired lights spaced 4 feet apart create a landing-strip effect; offset placement reads as more residential and relaxed. Set fixture tops 12–18 inches above grade — low enough to light the path surface, high enough not to create tripping hazards or get obscured by plant growth over time.",
+      },
+      {
+        question: "What is the best outdoor walkway lighting for a front yard?",
+        answer: "Low-voltage LED bollard path lights are the most reliable all-around choice — consistent brightness, 10–15 year lifespan, and clean aesthetic. For a front entry, combine path lights along the walk with one or two uplights aimed at landscape features near the approach. If steps are present, add recessed step lights on the risers — the safety improvement is significant and the cost is modest.",
+      },
+    ],
+  },
+  {
     slug: "stepping-stone-walkway-ideas",
     pillar: "walkway",
     title: "Stepping Stone Walkway Ideas: Designs and Costs",

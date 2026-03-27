@@ -256,6 +256,63 @@ export const drivewayArticles: Article[] = [
     ],
   },
   {
+    slug: "modern-driveway-ideas",
+    pillar: "driveway",
+    title: "Modern Driveway Ideas: What's Working in 2026",
+    headline: "Modern Concrete Driveway Designs for 2026",
+    metaDescription: "Modern driveways in 2026 use charcoal washes, clean score lines, and border details. Here are 10 ideas that look great and hold their value.",
+    targetKeywords: ["modern driveway ideas", "contemporary driveway design", "modern concrete driveway"],
+    ogImage: "/og/driveway-modern-ideas.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Modern concrete driveways in 2026 rely on three elements: clean geometry, intentional color, and edge definition. The cost range is wide — a charcoal-washed broom-finish driveway with scored border details runs $6–12 per sq ft, while a fully stamped modern design runs $14–20. The look that's resonating most right now is restraint: wide, dark surfaces with minimal decoration and crisp edge lines. These 10 ideas cover the full range from budget to premium. For reference, the same modern sensibility that's working on driveways in 2026 is equally effective on front walkways and patios.",
+    sections: [
+      {
+        heading: "Charcoal Broom Finish with Scored Border: The High-Value Entry Point",
+        body: "The most cost-effective modern driveway look in 2026 is a charcoal-washed broom-finish slab with clean score lines running parallel to the house and a contrasting color border band 12–18 inches wide. No stamps, no complex patterns. The design work comes from geometry and color, not from decorative elements. Cost: $6–12 per sq ft. On a 500 sq ft two-car driveway, that's $3,000–6,000. This is the best return-on-investment modern driveway option available.",
+      },
+      {
+        heading: "What's Dated in 2026 vs. What Looks Current",
+        body: "Dated: cobblestone stamps in warm tan tones, decorative saw-cut medallions at the apron, multi-color release agent effects meant to look like aged stone. Current: single dark tone with tight surface texture, clean linear score patterns, minimal or no stamping on the field with a simple border contrast. The shift is away from 'decorative concrete that looks like something else' toward concrete that owns its material identity — dark, clean, and geometric.",
+      },
+      {
+        heading: "Dark Integral Color: The Core Design Decision",
+        body: "Integral color mixed into the pour is the foundation of modern driveway design. Charcoal, graphite, and dark slate tones are the dominant choices. They read as bold against light home exteriors, hold color more reliably than surface stains, and don't develop the patchy look of faded earth-tone pigments. Integral color adds $2–4 per sq ft over plain grey concrete. A quality UV-stable penetrating sealer applied on installation and every 3–5 years maintains depth without adding surface sheen.",
+      },
+      {
+        heading: "Exposed Aggregate in Dark Tones",
+        body: "Dark pea gravel or black basalt aggregate in a washed finish gives a modern, textured surface without any stamped pattern. The aggregate itself provides visual interest and the texture handles vehicle loads well without polish or decoration. Cost: $8–14 per sq ft. It's one of the cleanest modern looks when executed in a consistent dark tone — the aggregate color and concrete base color should be close to each other to avoid a spotty appearance.",
+      },
+      {
+        heading: "Two-Tone Driveway: Border vs. Field Contrast",
+        body: "A two-tone approach — dark field with a light border or vice versa — creates visual structure without pattern complexity. The most current execution: charcoal field, light grey or off-white border band, clean saw-cut scoring that aligns with house lines. This costs more than a single-color approach ($10–16/sq ft) but less than full stamped concrete. The design reads as intentional from the street without the maintenance complexity of stamped finishes.",
+      },
+      {
+        heading: "Stamped Concrete in a Modern Context",
+        body: "If you want a stamped driveway that reads as modern rather than traditional, avoid cobblestone and small brick patterns. The patterns that work in a modern context are: linear plank (wide rectangular bands running perpendicular to the house), large-format ashlar in a single dark tone without accent color, and simple grid scoring with a contrasting border. PatioCanvas lets you preview how different stamp patterns and color combinations would look on your specific driveway before you commit to a contractor.",
+      },
+      {
+        heading: "Driveway Apron Design: Where Modern Driveways Fail or Succeed",
+        body: "The apron — the transition from street to the main driveway surface — is where most driveway designs break down. A modern driveway should have a clean, defined edge at the street with consistent surface texture all the way to the curb. Avoid: saw-cut decorative patterns only on the apron (looks like an afterthought), mismatched concrete color between the apron and main surface (happens when aprons are poured separately), or brick or cobblestone inserts at the street transition (dated by 2026 standards). If you're also planning a front walkway, the apron is the best place to establish the material language that carries through to the walk.",
+      },
+    ],
+    relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
+    faqs: [
+      {
+        question: "What makes a driveway look modern in 2026?",
+        answer: "Modern driveways in 2026 use dark integral color (charcoal, graphite, slate), clean linear score lines aligned with the house geometry, minimal or no stamping on the field, and a simple border contrast. The design principle is restraint — wide, clean surfaces with intentional edge definition rather than decorative pattern complexity. What's dated: cobblestone stamps in warm earth tones, multi-color release agent effects, and decorative apron medallions.",
+      },
+      {
+        question: "How much does a modern concrete driveway cost?",
+        answer: "A modern charcoal broom-finish driveway with a scored border runs $6–12 per sq ft. A two-tone approach with a contrasting border band costs $10–16 per sq ft. A fully stamped modern driveway (linear plank or large ashlar) runs $14–20 per sq ft. On a standard 500 sq ft two-car driveway, that's $3,000–10,000 depending on finish choice.",
+      },
+      {
+        question: "Is stamped concrete still modern in 2026?",
+        answer: "Some stamped concrete patterns read as modern in 2026; others look dated. Linear plank stamps, large-format ashlar in a single dark tone, and simple grid scoring all hold their contemporary quality. Cobblestone, small brick, and multi-color aged-stone effects have shifted to the dated side of the spectrum. The key is choosing patterns with geometry and restraint over patterns that try to replicate historical materials.",
+      },
+    ],
+  },
+  {
     slug: "concrete-driveway-vs-asphalt",
     pillar: "driveway",
     title: "Concrete vs Asphalt Driveway: Which Is Right for You?",
