@@ -25,7 +25,7 @@ export const inspirationPages: InspirationPage[] = [
     ogImage: "/og/inspiration-herringbone-patio.jpg",
     heroAlt: "Herringbone brick pattern stamped concrete patio",
     contentBlock:
-      "The herringbone brick pattern has been used in outdoor spaces for centuries — and it still looks as good as ever. The interlocking diagonal layout creates a sense of movement and visual interest that a simple grid can't match. In stamped concrete form, you get all the aesthetic of traditional brick without the weed-prone joints, the uneven settling, or the higher installation cost.\n\nWhat makes herringbone work visually is the directionality. The 45-degree angle of each "brick" draws the eye across the surface and makes a patio feel larger than it is. Color choice is decisive: warm buff or sandstone tones pair well with craftsman and colonial homes; charcoal or aged-brick stains suit more contemporary or transitional exteriors.\n\nFrom a practical standpoint, herringbone-stamped concrete runs $12–18 per sq ft — significantly less than real brick pavers ($20–35/sq ft) for a nearly identical look from any normal viewing distance. It's one of the few stamped patterns that holds its visual crispness as it weathers, which is part of why it photographs so well years after installation. PatioCanvas can show you how herringbone in different tones would look on your specific patio before you book a contractor.",
+      "The herringbone brick pattern has been used in outdoor spaces for centuries — and it still looks as good as ever. The interlocking diagonal layout creates a sense of movement and visual interest that a simple grid can't match. In stamped concrete form, you get all the aesthetic of traditional brick without the weed-prone joints, the uneven settling, or the higher installation cost.\n\nWhat makes herringbone work visually is the directionality. The 45-degree angle of each \"brick\" draws the eye across the surface and makes a patio feel larger than it is. Color choice is decisive: warm buff or sandstone tones pair well with craftsman and colonial homes; charcoal or aged-brick stains suit more contemporary or transitional exteriors.\n\nFrom a practical standpoint, herringbone-stamped concrete runs $12–18 per sq ft — significantly less than real brick pavers ($20–35/sq ft) for a nearly identical look from any normal viewing distance. It's one of the few stamped patterns that holds its visual crispness as it weathers, which is part of why it photographs so well years after installation. PatioCanvas can show you how herringbone in different tones would look on your specific patio before you book a contractor.",
     targetKeywords: ["herringbone patio", "brick pattern patio", "stamped concrete herringbone"],
     pillar: "patio",
     ctaHeadline: "Visualize it in your space",
@@ -195,6 +195,20 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "Visualize a circle pattern in your space",
     ctaBody: "Upload a photo of your patio and see what a circular stamped design could look like.",
+  },
+  {
+    slug: "concrete-pool-deck-grey",
+    title: "Grey Concrete Pool Deck Ideas & Inspiration | PatioCanvas",
+    headline: "Grey Concrete Pool Deck",
+    metaDescription: "A grey concrete pool deck stays cool underfoot and pairs with any pool style. See the best grey tones and finishes for 2026.",
+    ogImage: "/og/inspiration-concrete-pool-deck-grey.jpg",
+    heroAlt: "Grey concrete pool deck with cool-toned finish surrounding a modern pool",
+    contentBlock:
+      "Grey is the dominant color choice for concrete pool decks in 2026 — and the range within 'grey' is wider than most homeowners realize. A warm silver-grey with exposed aggregate reads as coastal and relaxed, pairing naturally with light-toned coping and white or cream home exteriors. A cool charcoal broom-finish or lightly stamped surface reads as architectural and grounded, suited to contemporary homes with dark window frames and structured landscaping. Both are the same material; the tone and finish choice is what changes the entire mood.\n\nThe practical case for grey pool decks is strong. Lighter grey tones reflect more heat than darker surfaces — an important consideration for any surface you walk across barefoot. A medium-grey exposed aggregate or lightly stamped concrete stays 15–20 degrees cooler underfoot than the same finish in charcoal or charcoal-black on a hot summer afternoon. It also doesn't show chemical splash staining as readily as very light white or cream tones.\n\nFrom a cost standpoint, a grey broom-finish or lightly textured pool deck runs $6–10 per sq ft installed. Exposed aggregate in grey tones adds $2–4 per sq ft over plain finish. Stamped grey concrete — especially the popular cool-grey flagstone patterns — runs $12–18 per sq ft. On a 500 sq ft pool deck, that's $3,000–9,000 depending on finish. Sealing every 2 years maintains color depth and protects against chemical degradation. PatioCanvas can show you how different grey tones and finishes would look around your specific pool layout.",
+    targetKeywords: ["grey pool deck concrete", "concrete pool deck grey", "pool deck ideas grey"],
+    pillar: "patio",
+    ctaHeadline: "See grey concrete around your pool",
+    ctaBody: "Upload a photo of your pool deck and see what grey concrete could look like in your space.",
   },
   {
     slug: "modern-black-concrete-driveway",
