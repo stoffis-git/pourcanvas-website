@@ -10,33 +10,37 @@ export const walkwayArticles: Article[] = [
       "Your front walkway is the first thing visitors see. These 10 concrete walkway ideas work across home styles and budgets.",
     targetKeywords: ["concrete walkway ideas", "front path ideas", "walkway design"],
     ogImage: "/og/walkway-front-ideas.jpg",
-    publishedAt: "2025-04-01",
+    publishedAt: "2026-03-27",
     intro:
-      "A well-designed front walkway does two things: guides visitors confidently to your door and sets the visual tone for your whole property. These 10 ideas do both.",
+      "A concrete front walkway costs $720–2,160 for a standard 4-foot-wide, 30-foot run — plain broom finish at the low end, stamped at the high. For most homes, it's one of the highest-ROI curb appeal upgrades per dollar spent. These 10 ideas cover the most effective approaches across home styles and budgets. If you're also redoing a driveway or patio, coordinating the finish and color across all three surfaces adds significant visual coherence to the overall property.",
     sections: [
       {
-        heading: "Straight and Wide",
-        body: "A straight 5-foot-wide walkway in broom-finish concrete reads as confident and modern. Add a slight bevel on the edges and a dark-gray color wash and it looks significantly more expensive than it is.",
+        heading: "Straight and Wide: The Modern Default",
+        body: "A straight 5-foot-wide walkway in broom-finish concrete costs $6–10/sq ft installed — about $900–1,500 for a typical 30-foot front walk. Add a slight bevel on the edges and a dark-gray color wash and it looks significantly more expensive than it is. The wider format (5 feet vs. the code minimum of 3) is worth the cost: it reads as generous and intentional.",
       },
       {
         heading: "Curved Flagstone-Stamped Path",
-        body: "A curved walkway with random flagstone stamping softens the approach to a traditional home. The curve also allows you to route around existing landscaping without removing mature plants.",
+        body: "A curved walkway with random flagstone stamping softens the approach to a traditional home and runs $12–18/sq ft. The curve also allows you to route around existing landscaping without removing mature plants. Budget 10–20% extra over a straight walkway of the same finish due to forming complexity.",
+      },
+      {
+        heading: "Stamped vs. Plain: Which Finish Is Worth It for a Front Walkway",
+        body: "Plain broom finish ($6–10/sq ft) is the practical choice: durable, easy to maintain, and perfectly appropriate for most homes. Stamped concrete ($12–18/sq ft) doubles the cost but transforms the walkway from functional to designed. The upgrade is worth it when the rest of the property is polished — less so when the walkway is the only design element getting attention.",
       },
       {
         heading: "Stepping-Stone Style",
-        body: "Large individual pads (24\"×24\" or 24\"×36\") set into a gravel or grass surround give a modern, intentional look. Each pad can be poured and stamped individually, making this a good DIY-friendly option.",
-      },
-      {
-        heading: "Herringbone Brick Pattern",
-        body: "Herringbone brick stamping on a front walkway is one of the most durable-looking choices. It holds its visual crispness even as it ages and weathers.",
+        body: "Large individual pads (24\"×24\" or 24\"×36\") set into a gravel or grass surround give a modern, intentional look. Each pad can be poured and stamped individually. Cost varies widely — a simple DIY pour runs $50–150 per pad in materials; contractor installation typically runs $100–250 per pad including forming and finishing.",
       },
       {
         heading: "Exposed Aggregate with Smooth Borders",
-        body: "A textured exposed-aggregate field with smooth concrete borders gives the walkway a finished, designed appearance. The border also acts as a clean edge that delineates the path from the lawn.",
+        body: "A textured exposed-aggregate field with smooth concrete borders gives the walkway a finished, designed appearance. The border delineates the path from the lawn cleanly and adds definition without the full stamping premium. Exposed aggregate runs $8–14/sq ft — between plain and stamped in both cost and visual impact. PatioCanvas can show you how different finish combinations would look on your specific front approach.",
       },
     ],
-    relatedSlugs: ["flagstone-vs-concrete-walkway"],
+    relatedSlugs: ["flagstone-vs-concrete-walkway", "concrete-walkway-cost"],
   },
+  // GEO: FAQ candidates
+  // 1. How much does a concrete front walkway cost?
+  // 2. Is stamped concrete worth it for a front walkway?
+  // 3. How wide should a front walkway be?
   {
     slug: "flagstone-vs-concrete-walkway",
     pillar: "walkway",
@@ -46,46 +50,50 @@ export const walkwayArticles: Article[] = [
       "Flagstone looks beautiful but costs more and requires more maintenance. Concrete is cheaper but can crack. Here's the real comparison homeowners need.",
     targetKeywords: ["flagstone vs concrete walkway", "walkway materials comparison"],
     ogImage: "/og/walkway-flagstone-vs-concrete.jpg",
-    publishedAt: "2025-04-08",
+    publishedAt: "2026-03-27",
     intro:
-      "Both materials have real fans and real detractors. This comparison cuts through the landscaping marketing to tell you which actually makes sense for your situation.",
+      "Natural flagstone walkways cost $25–45 per sq ft installed. Stamped concrete mimicking the same look runs $12–18 per sq ft. On a 150 sq ft front walkway, that's a $2,000–4,000 difference. Both materials are legitimate choices — the right one depends on your budget, climate, and how much you care about long-term repairability. This comparison cuts through the landscaping marketing to give you a straight answer. The same cost and performance logic applies when comparing flagstone to concrete on a patio or driveway.",
     sections: [
       {
         heading: "Cost Comparison",
-        body: "Natural flagstone walkways run $25–45 per sq ft installed. A stamped concrete walkway mimicking the same look costs $12–18 per sq ft. On a 150 sq ft front walkway, that's a $2,000–4,000 difference.",
+        body: "Natural flagstone walkways run $25–45 per sq ft installed. A stamped concrete walkway mimicking the same look costs $12–18 per sq ft. On a 150 sq ft front walkway, that's a $2,000–4,000 difference. Stamped concrete wins on cost for every project size — the gap doesn't narrow at scale.",
       },
       {
         heading: "Maintenance Over Time",
-        body: "Flagstone requires annual joint sand replenishment to prevent weeds, and individual stones can sink or shift over time. Concrete needs periodic resealing (every 2–3 years) but doesn't shift and has no joints to weed.",
+        body: "Flagstone requires annual joint sand replenishment to prevent weeds, and individual stones can sink or shift over time. Concrete needs periodic resealing (every 2–3 years) but doesn't shift and has no joints to weed. Over a 10-year period, the maintenance labor difference strongly favors concrete.",
       },
       {
         heading: "Freeze-Thaw Performance",
-        body: "Both handle freeze-thaw cycles, but concrete with proper sealing and air-entrainment performs better. Natural flagstone can crack along natural fissures under repeated freeze-thaw stress.",
+        body: "Both handle freeze-thaw cycles, but concrete with proper sealing and air-entrainment performs better. Natural flagstone can crack along natural fissures under repeated freeze-thaw stress. If you're in a region with hard winters (Zone 5 and colder), concrete is the more reliable long-term choice.",
       },
       {
         heading: "Visual Authenticity",
-        body: "Up close, natural flagstone looks different from stamped concrete — there's a texture and depth that stamping doesn't fully replicate. From a street-view distance, well-done stamped concrete is nearly indistinguishable.",
+        body: "Up close, natural flagstone looks different from stamped concrete — there's a texture and depth that stamping doesn't fully replicate. From a street-view distance, well-done stamped concrete is nearly indistinguishable. The authenticity advantage matters most for high-end homes where buyers inspect closely.",
       },
       {
         heading: "The Verdict",
-        body: "If budget is a consideration, stamped concrete is the clear choice. If you're looking at a high-end home where material authenticity matters for resale, natural flagstone is worth the premium — but be honest about whether your home's price point supports it.",
+        body: "Stamped concrete is the right choice if budget matters, if you're in a cold climate, or if you want lower long-term maintenance. Natural flagstone is worth the premium for high-end homes where material authenticity affects resale value — but be honest about whether your home's price point supports a $4,000 upcharge on a walkway.",
       },
     ],
-    relatedSlugs: ["front-walkway-ideas"],
+    relatedSlugs: ["front-walkway-ideas", "concrete-walkway-cost"],
     relatedMaterials: ["flagstone"],
   },
+  // GEO: FAQ candidates
+  // 1. Is flagstone or concrete cheaper for a walkway?
+  // 2. Which lasts longer: flagstone or concrete walkway?
+  // 3. Does stamped concrete look as good as real flagstone?
   {
     slug: "backyard-walkway-ideas",
     pillar: "walkway",
     title: "Backyard Walkway Ideas That Connect Your Outdoor Spaces",
     headline: "Backyard Walkway Ideas for Every Landscape Style",
     metaDescription:
-      "A backyard walkway does more than connect two points — it structures how you move through the space. These concrete ideas work across landscape styles and lot sizes.",
+      "Backyard walkway ideas in concrete: from $50 stepping stone pads to stamped paths at $12–18/sq ft. These ideas work across landscape styles and lot sizes.",
     targetKeywords: ["backyard walkway ideas", "garden path", "stepping stone walkway"],
     ogImage: "/og/walkway-backyard-ideas.jpg",
-    publishedAt: "2025-05-01",
+    publishedAt: "2026-03-27",
     intro:
-      "The best backyard walkways feel inevitable — like the path was always supposed to be there. These ideas work with your landscape instead of fighting it.",
+      "A backyard concrete walkway ranges from $50 per stepping stone pad to $12–18 per sq ft for a stamped path. The cost depends almost entirely on how much continuity you want — individual pads are DIY-friendly and low cost; a poured stamped path is a contractor job with a bigger budget. These ideas cover both ends of the range and everything in between. If you're also building a patio, coordinating the walkway finish to the patio surface creates a more cohesive outdoor space.",
     sections: [
       {
         heading: "Poured Concrete Path with Planting Gaps",
@@ -100,8 +108,8 @@ export const walkwayArticles: Article[] = [
         body: "Curve your backyard path toward a specific destination — a seating area, a garden feature, or a gate — and the curve itself creates visual interest. A slight curve slows the eye and makes the path feel longer than it is, which makes small backyards feel more spacious.",
       },
       {
-        heading: "Stamped Border Strip",
-        body: "Run a 12-inch stamped concrete border alongside a plain concrete path. The border adds visual interest without the cost of stamping the full path width, and it cleanly delineates the path edge from the planting beds on each side.",
+        heading: "Poured Path vs. Stepping Pads: Which Is Right for Your Yard",
+        body: "A continuous poured concrete path ($6–18/sq ft depending on finish) gives a clean, intentional look and requires minimal long-term maintenance. Stepping pads ($50–250 each installed) are the lower-cost option and work well in informal gardens, but they can feel underdone in a polished landscape. Choose a continuous path if the walkway is a primary route you'll use daily; stepping pads if it's an occasional or decorative connection.",
       },
       {
         heading: "Rustic Flagstone-Look Pads",
@@ -110,18 +118,22 @@ export const walkwayArticles: Article[] = [
     ],
     relatedSlugs: ["front-walkway-ideas", "flagstone-vs-concrete-walkway"],
   },
+  // GEO: FAQ candidates
+  // 1. How much does a backyard walkway cost?
+  // 2. What concrete finish is best for a backyard path?
+  // 3. What's the difference between stepping stones and a poured walkway?
   {
     slug: "concrete-walkway-cost",
     pillar: "walkway",
-    title: "Concrete Walkway Cost: What Homeowners Pay in 2025",
+    title: "Concrete Walkway Cost: What Homeowners Pay in 2026",
     headline: "How Much Does a Concrete Walkway Cost?",
     metaDescription:
       "A basic concrete walkway costs $6–10 per sq ft. Stamped finishes run $12–18. Here's what drives the price and how to budget your project accurately.",
     targetKeywords: ["concrete walkway cost", "walkway installation price"],
     ogImage: "/og/walkway-cost.jpg",
-    publishedAt: "2025-05-08",
+    publishedAt: "2026-03-27",
     intro:
-      "Walkway costs vary by finish, width, and length — but the per-square-foot numbers are consistent. Here's what to expect for each option.",
+      "A plain concrete walkway costs $6–10 per sq ft installed. Stamped runs $12–18; exposed aggregate falls in between at $8–14. For a standard 4-foot-wide, 30-foot front walkway (120 sq ft), that's $720–2,160 depending on finish. The finish choice is the single biggest cost driver — site prep, width, and regional labor are secondary variables. These per-sq-ft numbers also apply to patio and driveway concrete work, so you can use this breakdown to budget multiple surface projects at once.",
     sections: [
       {
         heading: "Plain Broom-Finish Walkway",
@@ -146,18 +158,22 @@ export const walkwayArticles: Article[] = [
     ],
     relatedSlugs: ["front-walkway-ideas", "flagstone-vs-concrete-walkway"],
   },
+  // GEO: FAQ candidates
+  // 1. How much does a 30-foot concrete walkway cost?
+  // 2. Is stamped concrete worth the extra cost for a walkway?
+  // 3. What factors drive up the cost of a concrete walkway?
   {
     slug: "curved-walkway-ideas",
     pillar: "walkway",
-    title: "Curved Walkway Ideas: When a Straight Path Isn't the Right Call",
+    title: "Curved Walkway Ideas: When a Curve Beats a Straight Path",
     headline: "Curved Walkway Designs That Make Your Yard Feel Designed",
     metaDescription:
-      "A curved walkway slows the eye, adds visual interest, and can work around existing landscaping. These concrete ideas show how to make curves work for your property.",
+      "Curved concrete walkways cost 10–20% more than straight ones. Here's how to make a curve work for your property and which patterns suit curved forms best.",
     targetKeywords: ["curved walkway ideas", "curved garden path", "winding walkway"],
     ogImage: "/og/walkway-curved-ideas.jpg",
-    publishedAt: "2025-05-15",
+    publishedAt: "2026-03-27",
     intro:
-      "Curved walkways are harder to pour than straight ones — but they read as more intentional and tend to age better visually. Here's how to make a curve work.",
+      "A curved concrete walkway costs 10–20% more than a straight one of the same finish — typically an extra $100–400 on a standard front walk — due to forming complexity. Whether that premium is worth it depends on your lot and landscape. Curved walkways read as more intentional when there's a landscape reason for the curve; without one, they can feel arbitrary. Here's how to make a curve work, which patterns suit it, and when a straight path is actually the stronger design choice. The same curve-vs-straight decision applies to concrete pathways through a patio or rear garden.",
     sections: [
       {
         heading: "Gentle Arc vs Winding Path",
@@ -182,4 +198,8 @@ export const walkwayArticles: Article[] = [
     ],
     relatedSlugs: ["front-walkway-ideas", "backyard-walkway-ideas"],
   },
+  // GEO: FAQ candidates
+  // 1. How much more does a curved walkway cost vs a straight one?
+  // 2. What concrete patterns work best for curved walkways?
+  // 3. When should you choose a curved walkway over a straight path?
 ];

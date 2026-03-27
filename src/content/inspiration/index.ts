@@ -10,11 +10,11 @@ export const inspirationPages: InspirationPage[] = [
     ogImage: "/og/inspiration-grey-stamped-patio.jpg",
     heroAlt: "Grey stamped concrete patio with modern outdoor furniture",
     contentBlock:
-      "Grey stamped concrete is one of the most popular choices for modern backyards — and it's easy to see why. The neutral tone pairs with virtually any home exterior, reads as clean and intentional, and ages gracefully without showing staining or wear the way lighter colors do. The stamped texture adds depth without the maintenance complexity of actual stone or pavers. Whether you're going for an ashlar slate look, a random flagstone pattern, or a clean geometric grid, grey concrete gives you the foundation to pull it off. If you're considering a similar transformation for your own space, PatioCanvas can generate a realistic preview so you can see what it might look like before committing to a contractor.",
+      "Grey stamped concrete is one of the most popular choices for modern backyards — and for good reason. The neutral tone pairs with virtually any home exterior, reads as clean and intentional, and ages gracefully without showing staining or wear the way lighter colors do. The stamped texture adds depth without the maintenance complexity of actual stone or pavers.\n\nFrom a visual standpoint, grey works because it's a recessive color — it makes the furniture, planting, and architectural details read more strongly than a competing surface color would. Whether you're going for an ashlar slate pattern, random flagstone, or a clean geometric grid, grey gives you the foundation. The right shade matters: charcoal reads as contemporary and bold, medium grey is the safe all-rounder, and a light silver-grey suits coastal and Scandinavian-influenced homes.\n\nOn the practical side, grey stamped concrete costs $12–18 per sq ft installed — roughly half the cost of natural stone pavers for the same look. It requires resealing every 2–3 years to maintain color depth and protect the surface. UV-stable pigments are worth specifying if your patio gets full afternoon sun. PatioCanvas can generate a realistic preview of how different grey tones and patterns would look on your specific patio before you commit.",
     targetKeywords: ["grey stamped concrete patio", "stamped concrete ideas", "modern patio"],
     pillar: "patio",
     ctaHeadline: "See this in your own backyard",
-    ctaBody: "Upload a photo of your space and get an AI-generated preview in seconds.",
+    ctaBody: "Upload a photo of your patio and see what grey stamped concrete could look like in your space.",
   },
   {
     slug: "herringbone-brick-patio",
@@ -25,11 +25,11 @@ export const inspirationPages: InspirationPage[] = [
     ogImage: "/og/inspiration-herringbone-patio.jpg",
     heroAlt: "Herringbone brick pattern stamped concrete patio",
     contentBlock:
-      "The herringbone brick pattern has been used in outdoor spaces for centuries — and it still looks as good as ever. The interlocking diagonal layout creates a sense of movement and visual interest that a simple grid can't match. In stamped concrete form, you get all the aesthetic of traditional brick without the weed-prone joints, the uneven settling, or the higher installation cost. A herringbone-stamped patio in a warm buff or sandstone tone pairs particularly well with traditional and craftsman-style homes. Going darker with a charcoal or aged-brick stain gives it a more contemporary feel. This is one of those patterns that photographs exceptionally well — which is part of why it performs so well as inspiration.",
+      "The herringbone brick pattern has been used in outdoor spaces for centuries — and it still looks as good as ever. The interlocking diagonal layout creates a sense of movement and visual interest that a simple grid can't match. In stamped concrete form, you get all the aesthetic of traditional brick without the weed-prone joints, the uneven settling, or the higher installation cost.\n\nWhat makes herringbone work visually is the directionality. The 45-degree angle of each "brick" draws the eye across the surface and makes a patio feel larger than it is. Color choice is decisive: warm buff or sandstone tones pair well with craftsman and colonial homes; charcoal or aged-brick stains suit more contemporary or transitional exteriors.\n\nFrom a practical standpoint, herringbone-stamped concrete runs $12–18 per sq ft — significantly less than real brick pavers ($20–35/sq ft) for a nearly identical look from any normal viewing distance. It's one of the few stamped patterns that holds its visual crispness as it weathers, which is part of why it photographs so well years after installation. PatioCanvas can show you how herringbone in different tones would look on your specific patio before you book a contractor.",
     targetKeywords: ["herringbone patio", "brick pattern patio", "stamped concrete herringbone"],
     pillar: "patio",
     ctaHeadline: "Visualize it in your space",
-    ctaBody: "Upload your outdoor photo and see what a herringbone pattern could look like.",
+    ctaBody: "Upload a photo of your patio and see what a herringbone brick pattern could look like in your space.",
   },
   {
     slug: "pool-deck-travertine",
@@ -40,23 +40,23 @@ export const inspirationPages: InspirationPage[] = [
     ogImage: "/og/inspiration-travertine-pool-deck.jpg",
     heroAlt: "Travertine-look pool deck with natural stone finish",
     contentBlock:
-      "Travertine is the gold standard for pool decks — it stays cooler underfoot than most materials, doesn't get slippery when wet, and has that unmistakable warm, natural look. The downside is cost: natural travertine installation runs $20–40 per square foot, and it requires sealing and occasional re-grouting. For homeowners who want the look without the price, travertine-stamped concrete is a compelling alternative. Modern stamping techniques can replicate the vein texture and pitted surface of travertine closely enough that most visitors won't know the difference. The real payoff comes in maintenance: sealed stamped concrete around a pool is far easier to upkeep over the long term.",
+      "Travertine is the gold standard for pool decks — it stays cooler underfoot than most materials, doesn't get slippery when wet, and has that unmistakable warm, natural look. The surface's natural porosity and light-colored stone scatter heat rather than absorbing it, which matters when you're walking barefoot on a surface that gets full afternoon sun.\n\nThe downside is cost: natural travertine installation runs $20–40 per square foot, and it requires sealing and occasional re-grouting to keep the joints from harboring algae or cracking. For homeowners who want the look without the price, travertine-stamped concrete is a compelling alternative at $12–18 per sq ft. Modern stamping techniques can replicate the vein texture and slightly pitted surface of travertine closely enough that most visitors won't know the difference.\n\nThe practical advantages of stamped concrete over natural travertine around a pool are significant: no joint gaps to harbor algae, no porous surface to stain, and a sealed finish that's easier to clean after heavy use. It also handles pool chemical splashing better over time. For a 500 sq ft pool deck, that's a potential $4,000–11,000 in savings over natural stone. PatioCanvas can show you how travertine-stamped concrete would look around your specific pool layout.",
     targetKeywords: ["travertine pool deck", "pool deck ideas", "concrete pool deck"],
     pillar: "patio",
     ctaHeadline: "See it around your pool",
-    ctaBody: "Upload a photo of your pool area and get an AI preview of how this could look.",
+    ctaBody: "Upload a photo of your pool deck and see what travertine-stamped concrete could look like in your space.",
   },
   {
     slug: "modern-driveway-concrete",
-    title: "Modern Concrete Driveway Ideas for 2025 | PatioCanvas",
+    title: "Modern Concrete Driveway Ideas for 2026 | PatioCanvas",
     headline: "Modern Concrete Driveway",
     metaDescription:
-      "Modern concrete driveways are clean, durable, and increasingly popular. These 2025 ideas show what's working — and how to get the look.",
+      "Modern concrete driveways are clean, durable, and increasingly popular. These 2026 ideas show what's working — and how to get the look.",
     ogImage: "/og/inspiration-modern-driveway.jpg",
     heroAlt: "Modern minimalist concrete driveway with clean lines",
     contentBlock:
-      "The modern concrete driveway has moved well beyond the plain grey slab. Today's versions feature charcoal color washes, subtle broom finishes, clean expansion joint placement, and border details that tie the driveway visually to the landscape. The key design principle for a modern driveway is restraint: wide, clean surfaces with minimal texture variation and intentional edge detailing. A crisp dark border strip, for instance, can make a plain driveway look like it was designed rather than just poured. If your home has a contemporary or minimalist exterior, this style of driveway is one of the most impactful curb appeal improvements you can make — often for less than you'd expect.",
-    targetKeywords: ["modern concrete driveway", "contemporary driveway", "driveway ideas 2025"],
+      "The modern concrete driveway has moved well beyond the plain grey slab. Today's versions feature charcoal color washes, subtle broom finishes, clean expansion joint placement, and border details that tie the driveway visually to the landscape. The key design principle is restraint: wide, clean surfaces with minimal texture variation and intentional edge detailing.\n\nA crisp dark border strip — typically a contrasting color band 12–18 inches wide — can make an otherwise plain driveway look designed rather than just poured. The expansion joints become part of the aesthetic rather than an afterthought: evenly spaced, scored cleanly, and aligned with the house lines. Charcoal and dark graphite tones dominate the modern driveway palette right now because they read as grounded and confident against white or light-colored home exteriors.\n\nFrom a cost standpoint, a modern broom-finish driveway with a color wash and scored border runs $6–12 per sq ft — significantly less than a fully stamped surface. It's one of the most design-efficient approaches available: maximum visual impact relative to installation cost. Properly sealed with a quality penetrating sealer, the color holds for 5–7 years before needing a refresh. PatioCanvas can show you how a modern concrete finish would look on your specific driveway before you commit to a contractor.",
+    targetKeywords: ["modern concrete driveway", "contemporary driveway", "driveway ideas 2026"],
     pillar: "driveway",
     ctaHeadline: "Preview your driveway redesign",
     ctaBody: "Upload a photo of your current driveway and see what modern concrete could look like.",
@@ -66,15 +66,15 @@ export const inspirationPages: InspirationPage[] = [
     title: "Cobblestone Border Driveway Ideas | PatioCanvas",
     headline: "Cobblestone Border Driveway",
     metaDescription:
-      "A cobblestone border instantly elevates a plain concrete driveway. See how it's done and what it costs in 2025.",
+      "A cobblestone border instantly elevates a plain concrete driveway. See how it's done and what it costs in 2026.",
     ogImage: "/og/inspiration-cobblestone-border-driveway.jpg",
     heroAlt: "Concrete driveway with cobblestone stamped border detail",
     contentBlock:
-      "Adding a cobblestone-stamped border to an otherwise simple concrete driveway is one of the most cost-effective curb appeal upgrades available. Instead of stamping the entire surface — which adds significant labor cost — you stamp only the perimeter band, typically 12–24 inches wide. The result is a driveway that looks intentionally designed without the full stamped-concrete price tag. The cobblestone pattern in particular reads as upscale and traditional, making it a natural fit for colonial, craftsman, and Tudor-style homes. In a darker color wash (charcoal, aged iron, or slate), it also works well on contemporary homes where you want a defined edge without ornamentation.",
+      "Adding a cobblestone-stamped border to an otherwise simple concrete driveway is one of the most cost-effective curb appeal upgrades available. Instead of stamping the entire surface — which adds significant labor cost — you stamp only the perimeter band, typically 12–24 inches wide. The result is a driveway that looks intentionally designed without the full stamped-concrete price tag.\n\nThe cobblestone pattern reads as upscale and traditional, making it a natural fit for colonial, craftsman, and Tudor-style homes. In a darker color wash (charcoal, aged iron, or slate), it also works well on contemporary homes where you want a defined edge without ornamentation. The border approach costs roughly $8–12 per linear foot versus the $12–20/sq ft premium for fully stamping the entire surface — a meaningful savings on a two-car driveway.\n\nFor durability, the cobblestone border holds up particularly well to edge loading and snowplow contact because the stamp pattern adds surface texture that resists chipping better than a smooth finish. Sealing the border annually extends the color depth and prevents staining from oil and road salt. If you're debating between a full-stamp and a border-only approach, a border treatment on a quality plain-finish driveway consistently delivers the better return per dollar spent. PatioCanvas can show you how a cobblestone border would look on your specific driveway layout.",
     targetKeywords: ["cobblestone driveway border", "driveway border ideas", "stamped concrete border"],
     pillar: "driveway",
     ctaHeadline: "See what a border could do for your driveway",
-    ctaBody: "Upload a photo of your driveway and get an AI-generated preview.",
+    ctaBody: "Upload a photo of your driveway and see what a cobblestone border could look like in your space.",
   },
   {
     slug: "pool-deck-broom-finish",
@@ -89,7 +89,7 @@ export const inspirationPages: InspirationPage[] = [
     targetKeywords: ["broom finish pool deck", "concrete pool deck", "pool surround ideas"],
     pillar: "patio",
     ctaHeadline: "See it around your pool",
-    ctaBody: "Upload a photo of your pool area and get an AI preview in seconds.",
+    ctaBody: "Upload a photo of your pool deck and see what a broom-finish concrete surround could look like in your space.",
   },
   {
     slug: "stamped-concrete-walkway-grey",
@@ -100,11 +100,11 @@ export const inspirationPages: InspirationPage[] = [
     ogImage: "/og/inspiration-grey-stamped-walkway.jpg",
     heroAlt: "Grey stamped concrete front walkway leading to home entrance",
     contentBlock:
-      "Grey stamped concrete might be the most versatile walkway finish available. It reads as modern without being trendy, pairs with brick, siding, stucco, and stone exteriors equally well, and ages attractively as the sealer weathers and develops a natural patina. The key design decision is pattern choice. Ashlar slate in charcoal gray feels contemporary and structured. Random flagstone in a medium gray feels more traditional and relaxed. Herringbone brick in a cooler gray tone has an almost European quality. All three are excellent choices — the right one depends on your home's architectural style. Color consistency is also important: make sure your contractor uses UV-stable pigments and applies a quality penetrating sealer, since gray tones are the most likely to fade or mottle if the sealer isn't maintained.",
+      "Grey stamped concrete might be the most versatile walkway finish available. It reads as modern without being trendy, pairs with brick, siding, stucco, and stone exteriors equally well, and ages attractively as the sealer weathers and develops a natural patina.\n\nThe key design decision is pattern choice. Ashlar slate in charcoal gray feels contemporary and structured — a natural match for modern and transitional homes. Random flagstone in a medium gray feels more traditional and relaxed, softening the approach to a craftsman or cottage-style home. Herringbone brick in a cooler gray tone has an almost European quality and suits formal traditional architecture particularly well. All three are strong choices; the right one is the one that reads as continuous with your home's exterior rather than competing with it.\n\nFrom a practical standpoint, grey stamped concrete walkways cost $12–18 per sq ft installed, and the color holds for 5–10 years with a quality sealer. Resealing every 2–3 years is the main maintenance requirement. UV-stable pigments are worth specifying for south- or west-facing walkways that get full afternoon sun, since gray is among the colors most prone to fading without UV protection in the sealer. PatioCanvas can show you how different grey tones and stamp patterns would look on your specific front path.",
     targetKeywords: ["stamped concrete walkway", "grey concrete walkway", "front path ideas"],
     pillar: "walkway",
     ctaHeadline: "Preview your walkway",
-    ctaBody: "Upload a photo of your front path and see what stamped concrete could look like.",
+    ctaBody: "Upload a photo of your front path and see what grey stamped concrete could look like in your space.",
   },
   {
     slug: "patio-wood-plank-concrete",
