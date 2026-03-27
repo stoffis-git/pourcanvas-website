@@ -90,7 +90,7 @@ const ArticlePage = () => {
         <div className="mt-12">
           <InspirationUpsellTile
             headline="Ready to visualize your project?"
-            body="PatioCanvas turns your photo into a concrete design preview. Free to try, no account needed."
+            body="PourCanvas turns your photo into a concrete design preview. Free to try, no account needed."
           />
         </div>
 

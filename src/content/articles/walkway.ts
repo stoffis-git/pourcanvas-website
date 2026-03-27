@@ -32,7 +32,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Exposed Aggregate with Smooth Borders",
-        body: "A textured exposed-aggregate field with smooth concrete borders gives the walkway a finished, designed appearance. The border delineates the path from the lawn cleanly and adds definition without the full stamping premium. Exposed aggregate runs $8–14/sq ft — between plain and stamped in both cost and visual impact. PatioCanvas can show you how different finish combinations would look on your specific front approach.",
+        body: "A textured exposed-aggregate field with smooth concrete borders gives the walkway a finished, designed appearance. The border delineates the path from the lawn cleanly and adds definition without the full stamping premium. Exposed aggregate runs $8–14/sq ft — between plain and stamped in both cost and visual impact. PourCanvas can show you how different finish combinations would look on your specific front approach.",
       },
     ],
     relatedSlugs: ["flagstone-vs-concrete-walkway", "concrete-walkway-cost"],
@@ -287,7 +287,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Sealing and Long-Term Care",
-        body: "Concrete steps take more wear than any other hardscape surface — foot traffic, freeze-thaw cycling, and deicing salt all concentrate on the same small area. Sealing every 2 years with a penetrating sealer protects the surface and extends finish life. In cold climates, use magnesium chloride rather than rock salt for ice control — sodium chloride degrades concrete surface over time, especially on stamped or colored finishes. Tools like PatioCanvas can show you how different step finishes would look at your specific entry before you commit to a contractor.",
+        body: "Concrete steps take more wear than any other hardscape surface — foot traffic, freeze-thaw cycling, and deicing salt all concentrate on the same small area. Sealing every 2 years with a penetrating sealer protects the surface and extends finish life. In cold climates, use magnesium chloride rather than rock salt for ice control — sodium chloride degrades concrete surface over time, especially on stamped or colored finishes. Tools like PourCanvas can show you how different step finishes would look at your specific entry before you commit to a contractor.",
       },
     ],
     relatedSlugs: ["front-walkway-ideas", "concrete-walkway-cost"],
@@ -340,7 +340,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Fixture Style: What Pairs with Your Surface Finish",
-        body: "Warm brass or bronze fixtures pair naturally with stamped concrete in earth tones (buff, sandstone, aged brick colors). Matte black fixtures suit contemporary driveways with charcoal or dark grey concrete. Stainless or brushed nickel suits modern homes with cool-grey aggregate finishes. The lighting fixture style should reinforce the surface finish choice — if you're deciding on a walkway finish and want to add lighting, choosing the finish first makes the fixture selection easier. PatioCanvas can help you visualize what your walkway surface will look like in different finishes before you commit to a material that may limit your fixture options.",
+        body: "Warm brass or bronze fixtures pair naturally with stamped concrete in earth tones (buff, sandstone, aged brick colors). Matte black fixtures suit contemporary driveways with charcoal or dark grey concrete. Stainless or brushed nickel suits modern homes with cool-grey aggregate finishes. The lighting fixture style should reinforce the surface finish choice — if you're deciding on a walkway finish and want to add lighting, choosing the finish first makes the fixture selection easier. PourCanvas can help you visualize what your walkway surface will look like in different finishes before you commit to a material that may limit your fixture options.",
       },
     ],
     relatedSlugs: ["front-walkway-ideas", "concrete-steps-ideas"],
@@ -390,7 +390,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Ground Cover Between Pads",
-        body: "What you put between stepping pads changes the entire character of the path. Decomposed granite or fine gravel is the most low-maintenance option — stable, weed-suppressible with landscape fabric, and available in tones that complement concrete. Grass between pads looks great initially but requires careful mowing around each pad. Creeping thyme, Irish moss, and creeping Jenny are the most popular living ground covers — they fill in over a season, suppress weeds, and handle light foot traffic if the path isn't walked heavily. PatioCanvas can show you how different pad styles and spacing would look in your specific yard before you commit.",
+        body: "What you put between stepping pads changes the entire character of the path. Decomposed granite or fine gravel is the most low-maintenance option — stable, weed-suppressible with landscape fabric, and available in tones that complement concrete. Grass between pads looks great initially but requires careful mowing around each pad. Creeping thyme, Irish moss, and creeping Jenny are the most popular living ground covers — they fill in over a season, suppress weeds, and handle light foot traffic if the path isn't walked heavily. PourCanvas can show you how different pad styles and spacing would look in your specific yard before you commit.",
       },
       {
         heading: "DIY Poured Stepping Pads",

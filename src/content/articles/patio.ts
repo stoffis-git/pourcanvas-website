@@ -32,7 +32,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Cobblestone Border",
-        body: "Rather than stamping the entire patio, consider a cobblestone stamp border with a smooth-finished interior. It frames the space cleanly and costs less since you're stamping a smaller area. Tools like PatioCanvas let you preview what a bordered vs. fully-stamped patio would look like on your actual space before committing to either approach.",
+        body: "Rather than stamping the entire patio, consider a cobblestone stamp border with a smooth-finished interior. It frames the space cleanly and costs less since you're stamping a smaller area. Tools like PourCanvas let you preview what a bordered vs. fully-stamped patio would look like on your actual space before committing to either approach.",
       },
     ],
     relatedSlugs: ["concrete-patio-cost", "patio-color-ideas"],
@@ -236,7 +236,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Use Larger Fake Stones",
-        body: "Counterintuitively, larger stamp patterns (big flagstone, large plank) make small spaces feel bigger. Smaller, busier patterns (cobblestone, small brick) chop up the surface visually and make the space read smaller. PatioCanvas lets you preview different pattern scales on your actual space before committing.",
+        body: "Counterintuitively, larger stamp patterns (big flagstone, large plank) make small spaces feel bigger. Smaller, busier patterns (cobblestone, small brick) chop up the surface visually and make the space read smaller. PourCanvas lets you preview different pattern scales on your actual space before committing.",
       },
       {
         heading: "Light Colors Expand Space",
@@ -277,7 +277,7 @@ export const patioArticles: Article[] = [
     sections: [
       {
         heading: "Why Sealing Matters More for Some Finishes",
-        body: "Plain broom-finish concrete benefits from sealing — it reduces water infiltration and staining — but it won't look dramatically different before vs. after. Stamped and colored concrete is different: a quality sealer enhances color depth and gives the surface a wet-look or satin sheen that makes the finish look significantly better. If you have stamped or integrally colored concrete, sealing isn't optional maintenance — it's part of how the finish is supposed to look. Tools like PatioCanvas can show you how different sealer sheen levels (matte, satin, wet-look gloss) would change the appearance of your specific patio finish.",
+        body: "Plain broom-finish concrete benefits from sealing — it reduces water infiltration and staining — but it won't look dramatically different before vs. after. Stamped and colored concrete is different: a quality sealer enhances color depth and gives the surface a wet-look or satin sheen that makes the finish look significantly better. If you have stamped or integrally colored concrete, sealing isn't optional maintenance — it's part of how the finish is supposed to look. Tools like PourCanvas can show you how different sealer sheen levels (matte, satin, wet-look gloss) would change the appearance of your specific patio finish.",
       },
       {
         heading: "Penetrating Sealer vs. Film-Forming Sealer: Which to Choose",
@@ -402,7 +402,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Pool Deck Cost Summary: 500 sq ft",
-        body: "Budget guide for a 500 sq ft pool deck in 2026: broom-finish plain concrete, $3,000–5,000; exposed aggregate, $4,000–7,000; stamped concrete (travertine, flagstone, or slate patterns), $6,000–9,000. Add 15–25% for demo of an existing deck. A quality sealer costs $150–400 to apply professionally on a 500 sq ft deck and should be reapplied every 2–3 years for stamped finishes and every 3–5 years for plain or aggregate surfaces. Tools like PatioCanvas let you see how different finishes and tones would look around your specific pool layout before you commit to a contractor.",
+        body: "Budget guide for a 500 sq ft pool deck in 2026: broom-finish plain concrete, $3,000–5,000; exposed aggregate, $4,000–7,000; stamped concrete (travertine, flagstone, or slate patterns), $6,000–9,000. Add 15–25% for demo of an existing deck. A quality sealer costs $150–400 to apply professionally on a 500 sq ft deck and should be reapplied every 2–3 years for stamped finishes and every 3–5 years for plain or aggregate surfaces. Tools like PourCanvas let you see how different finishes and tones would look around your specific pool layout before you commit to a contractor.",
       },
     ],
     relatedSlugs: ["concrete-patio-cost", "concrete-patio-resurfacing"],
@@ -451,7 +451,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "DIY vs. Hiring a Contractor for Crack Repair",
-        body: "DIY crack repair is appropriate for hairline and stable cracks under 1/8\": the materials are inexpensive, the technique is straightforward, and the stakes are low if you don't get it perfect the first time. Cracks 1/8\"–1/4\" can be DIY'd but benefit from a contractor's v-groove preparation and injection technique, which extends repair longevity. Shifting cracks and resurfacing work should be left to contractors — both require proper diagnosis and execution that significantly impacts long-term results. For context: a professional resurfacing overlay on a 300 sq ft patio runs $900–4,500, compared to $1,800–5,400 for full replacement. Tools like PatioCanvas can help you visualize what your patio would look like with a fresh overlay or a new surface before committing to either approach.",
+        body: "DIY crack repair is appropriate for hairline and stable cracks under 1/8\": the materials are inexpensive, the technique is straightforward, and the stakes are low if you don't get it perfect the first time. Cracks 1/8\"–1/4\" can be DIY'd but benefit from a contractor's v-groove preparation and injection technique, which extends repair longevity. Shifting cracks and resurfacing work should be left to contractors — both require proper diagnosis and execution that significantly impacts long-term results. For context: a professional resurfacing overlay on a 300 sq ft patio runs $900–4,500, compared to $1,800–5,400 for full replacement. Tools like PourCanvas can help you visualize what your patio would look like with a fresh overlay or a new surface before committing to either approach.",
       },
       {
         heading: "Preventing Future Cracking",

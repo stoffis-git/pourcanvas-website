@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const flagstonePage: MaterialPage = {
   slug: "flagstone",
-  title: "Flagstone: Types, Cost, and How It Compares to Concrete | PatioCanvas",
+  title: "Flagstone: Types, Cost, and How It Compares to Concrete | PourCanvas",
   headline: "Flagstone",
   summary:
     "Natural flagstone is the premium choice for walkways and patios — authentic texture, long lifespan, but high cost and significant maintenance. Here's the honest tradeoff.",

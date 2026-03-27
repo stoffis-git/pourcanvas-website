@@ -10,7 +10,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-5 py-3">
         <a href="/">
-          <img src="/patiocanvas_logo-full.png" alt="PatioCanvas" className="h-8 w-auto" />
+          <img src="/patiocanvas_logo-full.png" alt="PourCanvas" className="h-8 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-2">

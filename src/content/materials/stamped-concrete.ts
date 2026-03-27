@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const stampedConcretePage: MaterialPage = {
   slug: "stamped-concrete",
-  title: "Stamped Concrete: What It Is, What It Costs, and When to Use It | PatioCanvas",
+  title: "Stamped Concrete: What It Is, What It Costs, and When to Use It | PourCanvas",
   headline: "Stamped Concrete",
   summary:
     "Stamped concrete mimics the look of stone, brick, and wood at a fraction of the cost. The most versatile decorative concrete finish for patios, driveways, and walkways.",

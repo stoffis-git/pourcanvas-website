@@ -1,7 +1,7 @@
 import { Head } from "vite-react-ssg";
 import type { FAQ } from "@/content/types";
 
-const SITE_URL = "https://patiocanvas.com";
+const SITE_URL = "https://pourcanvas.com";
 
 interface SeoHeadProps {
   title: string;

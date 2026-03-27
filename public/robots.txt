@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://patiocanvas.com/sitemap.xml
+Sitemap: https://pourcanvas.com/sitemap.xml

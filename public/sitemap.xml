@@ -3,77 +3,77 @@
 
   <!-- Core pages -->
   <url>
-    <loc>https://patiocanvas.com/</loc>
+    <loc>https://pourcanvas.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog</loc>
+    <loc>https://pourcanvas.com/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/materials</loc>
+    <loc>https://pourcanvas.com/materials</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Pillar pages -->
   <url>
-    <loc>https://patiocanvas.com/blog/patio</loc>
+    <loc>https://pourcanvas.com/blog/patio</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/driveway</loc>
+    <loc>https://pourcanvas.com/blog/driveway</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/walkway</loc>
+    <loc>https://pourcanvas.com/blog/walkway</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Patio articles -->
   <url>
-    <loc>https://patiocanvas.com/blog/patio/concrete-patio-sealing</loc>
+    <loc>https://pourcanvas.com/blog/patio/concrete-patio-sealing</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/patio/stamped-concrete-ideas</loc>
+    <loc>https://pourcanvas.com/blog/patio/stamped-concrete-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/patio/concrete-patio-cost</loc>
+    <loc>https://pourcanvas.com/blog/patio/concrete-patio-cost</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/patio/patio-color-ideas</loc>
+    <loc>https://pourcanvas.com/blog/patio/patio-color-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/patio/concrete-patio-vs-pavers</loc>
+    <loc>https://pourcanvas.com/blog/patio/concrete-patio-vs-pavers</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/patio/small-patio-ideas</loc>
+    <loc>https://pourcanvas.com/blog/patio/small-patio-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/patio/concrete-patio-resurfacing</loc>
+    <loc>https://pourcanvas.com/blog/patio/concrete-patio-resurfacing</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -81,43 +81,43 @@
 
   <!-- Driveway articles -->
   <url>
-    <loc>https://patiocanvas.com/blog/driveway/modern-driveway-ideas</loc>
+    <loc>https://pourcanvas.com/blog/driveway/modern-driveway-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/driveway/concrete-driveway-vs-asphalt</loc>
+    <loc>https://pourcanvas.com/blog/driveway/concrete-driveway-vs-asphalt</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/driveway/stamped-concrete-driveway</loc>
+    <loc>https://pourcanvas.com/blog/driveway/stamped-concrete-driveway</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/driveway/exposed-aggregate-driveway</loc>
+    <loc>https://pourcanvas.com/blog/driveway/exposed-aggregate-driveway</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/driveway/concrete-driveway-cost</loc>
+    <loc>https://pourcanvas.com/blog/driveway/concrete-driveway-cost</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/driveway/driveway-resurfacing</loc>
+    <loc>https://pourcanvas.com/blog/driveway/driveway-resurfacing</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/driveway/circular-driveway-ideas</loc>
+    <loc>https://pourcanvas.com/blog/driveway/circular-driveway-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -125,49 +125,49 @@
 
   <!-- Walkway articles -->
   <url>
-    <loc>https://patiocanvas.com/blog/walkway/walkway-lighting-ideas</loc>
+    <loc>https://pourcanvas.com/blog/walkway/walkway-lighting-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/walkway/concrete-steps-ideas</loc>
+    <loc>https://pourcanvas.com/blog/walkway/concrete-steps-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/walkway/stepping-stone-walkway-ideas</loc>
+    <loc>https://pourcanvas.com/blog/walkway/stepping-stone-walkway-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/walkway/front-walkway-ideas</loc>
+    <loc>https://pourcanvas.com/blog/walkway/front-walkway-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/walkway/flagstone-vs-concrete-walkway</loc>
+    <loc>https://pourcanvas.com/blog/walkway/flagstone-vs-concrete-walkway</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/walkway/backyard-walkway-ideas</loc>
+    <loc>https://pourcanvas.com/blog/walkway/backyard-walkway-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/walkway/concrete-walkway-cost</loc>
+    <loc>https://pourcanvas.com/blog/walkway/concrete-walkway-cost</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/blog/walkway/curved-walkway-ideas</loc>
+    <loc>https://pourcanvas.com/blog/walkway/curved-walkway-ideas</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -175,55 +175,55 @@
 
   <!-- Material pages -->
   <url>
-    <loc>https://patiocanvas.com/materials/stamped-concrete</loc>
+    <loc>https://pourcanvas.com/materials/stamped-concrete</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/materials/exposed-aggregate</loc>
+    <loc>https://pourcanvas.com/materials/exposed-aggregate</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/materials/broom-finish</loc>
+    <loc>https://pourcanvas.com/materials/broom-finish</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/materials/colored-concrete</loc>
+    <loc>https://pourcanvas.com/materials/colored-concrete</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/materials/concrete-pavers</loc>
+    <loc>https://pourcanvas.com/materials/concrete-pavers</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/materials/flagstone</loc>
+    <loc>https://pourcanvas.com/materials/flagstone</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/materials/travertine</loc>
+    <loc>https://pourcanvas.com/materials/travertine</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/materials/polished-concrete</loc>
+    <loc>https://pourcanvas.com/materials/polished-concrete</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/materials/concrete-overlay</loc>
+    <loc>https://pourcanvas.com/materials/concrete-overlay</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -231,91 +231,91 @@
 
   <!-- Inspiration pages -->
   <url>
-    <loc>https://patiocanvas.com/inspiration/flagstone-walkway-natural</loc>
+    <loc>https://pourcanvas.com/inspiration/flagstone-walkway-natural</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/exposed-aggregate-driveway-grey</loc>
+    <loc>https://pourcanvas.com/inspiration/exposed-aggregate-driveway-grey</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/stamped-concrete-steps-entry</loc>
+    <loc>https://pourcanvas.com/inspiration/stamped-concrete-steps-entry</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/modern-black-concrete-driveway</loc>
+    <loc>https://pourcanvas.com/inspiration/modern-black-concrete-driveway</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/concrete-pool-deck-grey</loc>
+    <loc>https://pourcanvas.com/inspiration/concrete-pool-deck-grey</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/stamped-concrete-patio-grey</loc>
+    <loc>https://pourcanvas.com/inspiration/stamped-concrete-patio-grey</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/herringbone-brick-patio</loc>
+    <loc>https://pourcanvas.com/inspiration/herringbone-brick-patio</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/pool-deck-travertine</loc>
+    <loc>https://pourcanvas.com/inspiration/pool-deck-travertine</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/modern-driveway-concrete</loc>
+    <loc>https://pourcanvas.com/inspiration/modern-driveway-concrete</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/cobblestone-driveway-border</loc>
+    <loc>https://pourcanvas.com/inspiration/cobblestone-driveway-border</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/pool-deck-broom-finish</loc>
+    <loc>https://pourcanvas.com/inspiration/pool-deck-broom-finish</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/stamped-concrete-walkway-grey</loc>
+    <loc>https://pourcanvas.com/inspiration/stamped-concrete-walkway-grey</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/patio-wood-plank-concrete</loc>
+    <loc>https://pourcanvas.com/inspiration/patio-wood-plank-concrete</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/exposed-aggregate-patio-white</loc>
+    <loc>https://pourcanvas.com/inspiration/exposed-aggregate-patio-white</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://patiocanvas.com/inspiration/circle-patio-pattern</loc>
+    <loc>https://pourcanvas.com/inspiration/circle-patio-pattern</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

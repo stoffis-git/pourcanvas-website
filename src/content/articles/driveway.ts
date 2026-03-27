@@ -28,7 +28,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Exposed Aggregate Borders",
-        body: "Consider a smooth or lightly textured stamped field with exposed aggregate borders. This two-finish approach adds visual definition and is easier to maintain since the border can be refinished independently. It's also a cost strategy: stamped borders with a plain field run $8–14/sq ft versus $12–20 for a fully stamped surface. Tools like PatioCanvas let you preview border-versus-full-stamp layouts on your actual driveway before committing.",
+        body: "Consider a smooth or lightly textured stamped field with exposed aggregate borders. This two-finish approach adds visual definition and is easier to maintain since the border can be refinished independently. It's also a cost strategy: stamped borders with a plain field run $8–14/sq ft versus $12–20 for a fully stamped surface. Tools like PourCanvas let you preview border-versus-full-stamp layouts on your actual driveway before committing.",
       },
       {
         heading: "What to Ask Your Contractor",
@@ -236,7 +236,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Sizing: The One Rule You Can't Ignore",
-        body: "A functional circular driveway needs a minimum inside radius of 18–20 feet to accommodate standard vehicles comfortably. The driveway lanes should be at least 10–12 feet wide. These minimums mean a circular driveway requires meaningful frontage — it's not a design for narrow urban lots. If you're also planning a patio in the rear, PatioCanvas can help you visualize how both projects might look together before committing to either.",
+        body: "A functional circular driveway needs a minimum inside radius of 18–20 feet to accommodate standard vehicles comfortably. The driveway lanes should be at least 10–12 feet wide. These minimums mean a circular driveway requires meaningful frontage — it's not a design for narrow urban lots. If you're also planning a patio in the rear, PourCanvas can help you visualize how both projects might look together before committing to either.",
       },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
@@ -289,7 +289,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Stamped Concrete in a Modern Context",
-        body: "If you want a stamped driveway that reads as modern rather than traditional, avoid cobblestone and small brick patterns. The patterns that work in a modern context are: linear plank (wide rectangular bands running perpendicular to the house), large-format ashlar in a single dark tone without accent color, and simple grid scoring with a contrasting border. PatioCanvas lets you preview how different stamp patterns and color combinations would look on your specific driveway before you commit to a contractor.",
+        body: "If you want a stamped driveway that reads as modern rather than traditional, avoid cobblestone and small brick patterns. The patterns that work in a modern context are: linear plank (wide rectangular bands running perpendicular to the house), large-format ashlar in a single dark tone without accent color, and simple grid scoring with a contrasting border. PourCanvas lets you preview how different stamp patterns and color combinations would look on your specific driveway before you commit to a contractor.",
       },
       {
         heading: "Driveway Apron Design: Where Modern Driveways Fail or Succeed",
@@ -343,7 +343,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Appearance and Finish Options",
-        body: "Concrete has the clear advantage on aesthetics. Plain broom-finish concrete looks clean and intentional. Stamped concrete ($12–20/sq ft) adds pattern and color that asphalt simply can't replicate. Asphalt is available in standard black — which looks good when freshly sealed but fades to gray-brown over time. If curb appeal matters, concrete wins on every available finish option. Tools like PatioCanvas let you preview how different concrete finishes would look on your specific driveway before you commit.",
+        body: "Concrete has the clear advantage on aesthetics. Plain broom-finish concrete looks clean and intentional. Stamped concrete ($12–20/sq ft) adds pattern and color that asphalt simply can't replicate. Asphalt is available in standard black — which looks good when freshly sealed but fades to gray-brown over time. If curb appeal matters, concrete wins on every available finish option. Tools like PourCanvas let you preview how different concrete finishes would look on your specific driveway before you commit.",
       },
       {
         heading: "Maintenance: Asphalt Requires More Attention",
@@ -400,7 +400,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Black Concrete vs. Asphalt: Which Is Actually Darker",
-        body: "The most common question from homeowners considering a black driveway: is it really darker than asphalt? Fresh asphalt is deep black — often darker than even maximum-pigment concrete. But asphalt fades to an oxidized grey within a few years without seal coating; maintained asphalt cycles between dark and grey over time. Black concrete, maintained with a quality sealer, holds a consistent deep charcoal that reads darker than weathered asphalt and more intentional than sealed asphalt's inconsistent sheen. The key difference is aesthetic consistency: black concrete looks designed; maintained asphalt looks maintained. For the same visual result with more design control, black concrete is the stronger choice. See how different dark tones would look on your specific driveway with tools like PatioCanvas before committing to a color.",
+        body: "The most common question from homeowners considering a black driveway: is it really darker than asphalt? Fresh asphalt is deep black — often darker than even maximum-pigment concrete. But asphalt fades to an oxidized grey within a few years without seal coating; maintained asphalt cycles between dark and grey over time. Black concrete, maintained with a quality sealer, holds a consistent deep charcoal that reads darker than weathered asphalt and more intentional than sealed asphalt's inconsistent sheen. The key difference is aesthetic consistency: black concrete looks designed; maintained asphalt looks maintained. For the same visual result with more design control, black concrete is the stronger choice. See how different dark tones would look on your specific driveway with tools like PourCanvas before committing to a color.",
       },
       {
         heading: "What Black Driveways Work Best With",

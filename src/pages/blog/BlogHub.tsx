@@ -26,7 +26,7 @@ const pillars: { id: Pillar; label: string; description: string }[] = [
 const BlogHub = () => (
   <>
     <SeoHead
-      title="Concrete Patio, Driveway & Walkway Ideas | PatioCanvas Blog"
+      title="Concrete Patio, Driveway & Walkway Ideas | PourCanvas Blog"
       description="Design guides, cost breakdowns, and concrete inspiration for patios, driveways, and walkways. Browse by topic."
       canonical="/blog"
     />

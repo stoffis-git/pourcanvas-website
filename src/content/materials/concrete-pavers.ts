@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const concretePagersPage: MaterialPage = {
   slug: "concrete-pavers",
-  title: "Concrete Pavers: Cost, Styles, and How They Compare to Poured Concrete | PatioCanvas",
+  title: "Concrete Pavers: Cost, Styles, and How They Compare to Poured Concrete | PourCanvas",
   headline: "Concrete Pavers",
   summary:
     "Concrete pavers are individual units laid in a pattern — not poured concrete. Higher upfront cost than a poured slab, but easier to repair and available in hundreds of colors and shapes.",

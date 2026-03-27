@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const exposedAggregatePage: MaterialPage = {
   slug: "exposed-aggregate",
-  title: "Exposed Aggregate Concrete: Finish Guide for Driveways, Patios & Pools | PatioCanvas",
+  title: "Exposed Aggregate Concrete: Finish Guide for Driveways, Patios & Pools | PourCanvas",
   headline: "Exposed Aggregate Concrete",
   summary:
     "Exposed aggregate reveals the decorative stone beneath the concrete surface for a textured, slip-resistant finish. A practical choice for driveways and pool decks where grip matters.",

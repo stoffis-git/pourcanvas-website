@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const broomFinishPage: MaterialPage = {
   slug: "broom-finish",
-  title: "Broom Finish Concrete: The Standard Surface Explained | PatioCanvas",
+  title: "Broom Finish Concrete: The Standard Surface Explained | PourCanvas",
   headline: "Broom Finish Concrete",
   summary:
     "Broom finish is the default concrete surface — practical, affordable, and more versatile than it's given credit for. The right choice when durability and value matter more than decorative pattern.",

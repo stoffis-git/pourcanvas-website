@@ -26,19 +26,19 @@ export const articlesByPillar: Record<Pillar, Article[]> = {
 
 export const pillarMeta: Record<Pillar, { title: string; description: string; headline: string }> = {
   patio: {
-    title: "Patio Design Ideas & Concrete Inspiration | PatioCanvas",
+    title: "Patio Design Ideas & Concrete Inspiration | PourCanvas",
     headline: "Patio Design Ideas",
     description:
       "Explore stamped concrete patterns, patio colors, and cost guides for your next patio project.",
   },
   driveway: {
-    title: "Driveway Design Ideas & Concrete Inspiration | PatioCanvas",
+    title: "Driveway Design Ideas & Concrete Inspiration | PourCanvas",
     headline: "Driveway Design Ideas",
     description:
       "Stamped concrete driveways, exposed aggregate finishes, and curb appeal ideas for every budget.",
   },
   walkway: {
-    title: "Walkway Design Ideas & Concrete Inspiration | PatioCanvas",
+    title: "Walkway Design Ideas & Concrete Inspiration | PourCanvas",
     headline: "Walkway Design Ideas",
     description:
       "Front path ideas, flagstone patterns, and concrete walkway guides for every home style.",

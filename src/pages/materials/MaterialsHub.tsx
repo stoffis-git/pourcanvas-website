@@ -163,7 +163,7 @@ function MaterialSwatch({ slug }: { slug: string }) {
 const MaterialsHub = () => (
   <>
     <SeoHead
-      title="Concrete Materials Guide: Finishes, Costs & Comparisons | PatioCanvas"
+      title="Concrete Materials Guide: Finishes, Costs & Comparisons | PourCanvas"
       description="Everything homeowners need to know about outdoor concrete finishes — stamped concrete, exposed aggregate, broom finish, colored concrete, pavers, and more."
       canonical="/materials"
     />

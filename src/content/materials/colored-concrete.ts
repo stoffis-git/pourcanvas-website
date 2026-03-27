@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const coloredConcretePage: MaterialPage = {
   slug: "colored-concrete",
-  title: "Colored Concrete: Integral Color vs Stain vs Dye Explained | PatioCanvas",
+  title: "Colored Concrete: Integral Color vs Stain vs Dye Explained | PourCanvas",
   headline: "Colored Concrete",
   summary:
     "Color transforms plain concrete from utilitarian to designed. Three methods with different costs, durability profiles, and color options — here's how to choose.",

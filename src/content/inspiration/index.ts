@@ -3,14 +3,14 @@ import type { InspirationPage } from "../types";
 export const inspirationPages: InspirationPage[] = [
   {
     slug: "stamped-concrete-patio-grey",
-    title: "Grey Stamped Concrete Patio Inspiration | PatioCanvas",
+    title: "Grey Stamped Concrete Patio Inspiration | PourCanvas",
     headline: "Grey Stamped Concrete Patio",
     metaDescription:
       "See how a grey stamped concrete patio can transform your backyard. Clean, modern, low-maintenance — and a fraction of the cost of natural stone.",
     ogImage: "/og/inspiration-grey-stamped-patio.jpg",
     heroAlt: "Grey stamped concrete patio with modern outdoor furniture",
     contentBlock:
-      "Grey stamped concrete is one of the most popular choices for modern backyards — and for good reason. The neutral tone pairs with virtually any home exterior, reads as clean and intentional, and ages gracefully without showing staining or wear the way lighter colors do. The stamped texture adds depth without the maintenance complexity of actual stone or pavers.\n\nFrom a visual standpoint, grey works because it's a recessive color — it makes the furniture, planting, and architectural details read more strongly than a competing surface color would. Whether you're going for an ashlar slate pattern, random flagstone, or a clean geometric grid, grey gives you the foundation. The right shade matters: charcoal reads as contemporary and bold, medium grey is the safe all-rounder, and a light silver-grey suits coastal and Scandinavian-influenced homes.\n\nOn the practical side, grey stamped concrete costs $12–18 per sq ft installed — roughly half the cost of natural stone pavers for the same look. It requires resealing every 2–3 years to maintain color depth and protect the surface. UV-stable pigments are worth specifying if your patio gets full afternoon sun. PatioCanvas can generate a realistic preview of how different grey tones and patterns would look on your specific patio before you commit.",
+      "Grey stamped concrete is one of the most popular choices for modern backyards — and for good reason. The neutral tone pairs with virtually any home exterior, reads as clean and intentional, and ages gracefully without showing staining or wear the way lighter colors do. The stamped texture adds depth without the maintenance complexity of actual stone or pavers.\n\nFrom a visual standpoint, grey works because it's a recessive color — it makes the furniture, planting, and architectural details read more strongly than a competing surface color would. Whether you're going for an ashlar slate pattern, random flagstone, or a clean geometric grid, grey gives you the foundation. The right shade matters: charcoal reads as contemporary and bold, medium grey is the safe all-rounder, and a light silver-grey suits coastal and Scandinavian-influenced homes.\n\nOn the practical side, grey stamped concrete costs $12–18 per sq ft installed — roughly half the cost of natural stone pavers for the same look. It requires resealing every 2–3 years to maintain color depth and protect the surface. UV-stable pigments are worth specifying if your patio gets full afternoon sun. PourCanvas can generate a realistic preview of how different grey tones and patterns would look on your specific patio before you commit.",
     targetKeywords: ["grey stamped concrete patio", "stamped concrete ideas", "modern patio"],
     pillar: "patio",
     ctaHeadline: "See this in your own backyard",
@@ -18,14 +18,14 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "herringbone-brick-patio",
-    title: "Herringbone Brick Pattern Patio Ideas | PatioCanvas",
+    title: "Herringbone Brick Pattern Patio Ideas | PourCanvas",
     headline: "Herringbone Brick Patio",
     metaDescription:
       "Herringbone brick stamped concrete gives your patio a classic, upscale look without the cost of real brick pavers. See real examples and get inspired.",
     ogImage: "/og/inspiration-herringbone-patio.jpg",
     heroAlt: "Herringbone brick pattern stamped concrete patio",
     contentBlock:
-      "The herringbone brick pattern has been used in outdoor spaces for centuries — and it still looks as good as ever. The interlocking diagonal layout creates a sense of movement and visual interest that a simple grid can't match. In stamped concrete form, you get all the aesthetic of traditional brick without the weed-prone joints, the uneven settling, or the higher installation cost.\n\nWhat makes herringbone work visually is the directionality. The 45-degree angle of each \"brick\" draws the eye across the surface and makes a patio feel larger than it is. Color choice is decisive: warm buff or sandstone tones pair well with craftsman and colonial homes; charcoal or aged-brick stains suit more contemporary or transitional exteriors.\n\nFrom a practical standpoint, herringbone-stamped concrete runs $12–18 per sq ft — significantly less than real brick pavers ($20–35/sq ft) for a nearly identical look from any normal viewing distance. It's one of the few stamped patterns that holds its visual crispness as it weathers, which is part of why it photographs so well years after installation. PatioCanvas can show you how herringbone in different tones would look on your specific patio before you book a contractor.",
+      "The herringbone brick pattern has been used in outdoor spaces for centuries — and it still looks as good as ever. The interlocking diagonal layout creates a sense of movement and visual interest that a simple grid can't match. In stamped concrete form, you get all the aesthetic of traditional brick without the weed-prone joints, the uneven settling, or the higher installation cost.\n\nWhat makes herringbone work visually is the directionality. The 45-degree angle of each \"brick\" draws the eye across the surface and makes a patio feel larger than it is. Color choice is decisive: warm buff or sandstone tones pair well with craftsman and colonial homes; charcoal or aged-brick stains suit more contemporary or transitional exteriors.\n\nFrom a practical standpoint, herringbone-stamped concrete runs $12–18 per sq ft — significantly less than real brick pavers ($20–35/sq ft) for a nearly identical look from any normal viewing distance. It's one of the few stamped patterns that holds its visual crispness as it weathers, which is part of why it photographs so well years after installation. PourCanvas can show you how herringbone in different tones would look on your specific patio before you book a contractor.",
     targetKeywords: ["herringbone patio", "brick pattern patio", "stamped concrete herringbone"],
     pillar: "patio",
     ctaHeadline: "Visualize it in your space",
@@ -33,14 +33,14 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "pool-deck-travertine",
-    title: "Travertine Pool Deck: How It Looks in Real Yards | PatioCanvas",
+    title: "Travertine Pool Deck: How It Looks in Real Yards | PourCanvas",
     headline: "Travertine Pool Deck",
     metaDescription:
       "Travertine pool decks stay cool underfoot and look stunning. See real-yard examples and learn how to get the look with concrete for less.",
     ogImage: "/og/inspiration-travertine-pool-deck.jpg",
     heroAlt: "Travertine-look pool deck with natural stone finish",
     contentBlock:
-      "Travertine is the gold standard for pool decks — it stays cooler underfoot than most materials, doesn't get slippery when wet, and has that unmistakable warm, natural look. The surface's natural porosity and light-colored stone scatter heat rather than absorbing it, which matters when you're walking barefoot on a surface that gets full afternoon sun.\n\nThe downside is cost: natural travertine installation runs $20–40 per square foot, and it requires sealing and occasional re-grouting to keep the joints from harboring algae or cracking. For homeowners who want the look without the price, travertine-stamped concrete is a compelling alternative at $12–18 per sq ft. Modern stamping techniques can replicate the vein texture and slightly pitted surface of travertine closely enough that most visitors won't know the difference.\n\nThe practical advantages of stamped concrete over natural travertine around a pool are significant: no joint gaps to harbor algae, no porous surface to stain, and a sealed finish that's easier to clean after heavy use. It also handles pool chemical splashing better over time. For a 500 sq ft pool deck, that's a potential $4,000–11,000 in savings over natural stone. PatioCanvas can show you how travertine-stamped concrete would look around your specific pool layout.",
+      "Travertine is the gold standard for pool decks — it stays cooler underfoot than most materials, doesn't get slippery when wet, and has that unmistakable warm, natural look. The surface's natural porosity and light-colored stone scatter heat rather than absorbing it, which matters when you're walking barefoot on a surface that gets full afternoon sun.\n\nThe downside is cost: natural travertine installation runs $20–40 per square foot, and it requires sealing and occasional re-grouting to keep the joints from harboring algae or cracking. For homeowners who want the look without the price, travertine-stamped concrete is a compelling alternative at $12–18 per sq ft. Modern stamping techniques can replicate the vein texture and slightly pitted surface of travertine closely enough that most visitors won't know the difference.\n\nThe practical advantages of stamped concrete over natural travertine around a pool are significant: no joint gaps to harbor algae, no porous surface to stain, and a sealed finish that's easier to clean after heavy use. It also handles pool chemical splashing better over time. For a 500 sq ft pool deck, that's a potential $4,000–11,000 in savings over natural stone. PourCanvas can show you how travertine-stamped concrete would look around your specific pool layout.",
     targetKeywords: ["travertine pool deck", "pool deck ideas", "concrete pool deck"],
     pillar: "patio",
     ctaHeadline: "See it around your pool",
@@ -48,14 +48,14 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "modern-driveway-concrete",
-    title: "Modern Concrete Driveway Ideas for 2026 | PatioCanvas",
+    title: "Modern Concrete Driveway Ideas for 2026 | PourCanvas",
     headline: "Modern Concrete Driveway",
     metaDescription:
       "Modern concrete driveways are clean, durable, and increasingly popular. These 2026 ideas show what's working — and how to get the look.",
     ogImage: "/og/inspiration-modern-driveway.jpg",
     heroAlt: "Modern minimalist concrete driveway with clean lines",
     contentBlock:
-      "The modern concrete driveway has moved well beyond the plain grey slab. Today's versions feature charcoal color washes, subtle broom finishes, clean expansion joint placement, and border details that tie the driveway visually to the landscape. The key design principle is restraint: wide, clean surfaces with minimal texture variation and intentional edge detailing.\n\nA crisp dark border strip — typically a contrasting color band 12–18 inches wide — can make an otherwise plain driveway look designed rather than just poured. The expansion joints become part of the aesthetic rather than an afterthought: evenly spaced, scored cleanly, and aligned with the house lines. Charcoal and dark graphite tones dominate the modern driveway palette right now because they read as grounded and confident against white or light-colored home exteriors.\n\nFrom a cost standpoint, a modern broom-finish driveway with a color wash and scored border runs $6–12 per sq ft — significantly less than a fully stamped surface. It's one of the most design-efficient approaches available: maximum visual impact relative to installation cost. Properly sealed with a quality penetrating sealer, the color holds for 5–7 years before needing a refresh. PatioCanvas can show you how a modern concrete finish would look on your specific driveway before you commit to a contractor.",
+      "The modern concrete driveway has moved well beyond the plain grey slab. Today's versions feature charcoal color washes, subtle broom finishes, clean expansion joint placement, and border details that tie the driveway visually to the landscape. The key design principle is restraint: wide, clean surfaces with minimal texture variation and intentional edge detailing.\n\nA crisp dark border strip — typically a contrasting color band 12–18 inches wide — can make an otherwise plain driveway look designed rather than just poured. The expansion joints become part of the aesthetic rather than an afterthought: evenly spaced, scored cleanly, and aligned with the house lines. Charcoal and dark graphite tones dominate the modern driveway palette right now because they read as grounded and confident against white or light-colored home exteriors.\n\nFrom a cost standpoint, a modern broom-finish driveway with a color wash and scored border runs $6–12 per sq ft — significantly less than a fully stamped surface. It's one of the most design-efficient approaches available: maximum visual impact relative to installation cost. Properly sealed with a quality penetrating sealer, the color holds for 5–7 years before needing a refresh. PourCanvas can show you how a modern concrete finish would look on your specific driveway before you commit to a contractor.",
     targetKeywords: ["modern concrete driveway", "contemporary driveway", "driveway ideas 2026"],
     pillar: "driveway",
     ctaHeadline: "Preview your driveway redesign",
@@ -63,14 +63,14 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "cobblestone-driveway-border",
-    title: "Cobblestone Border Driveway Ideas | PatioCanvas",
+    title: "Cobblestone Border Driveway Ideas | PourCanvas",
     headline: "Cobblestone Border Driveway",
     metaDescription:
       "A cobblestone border instantly elevates a plain concrete driveway. See how it's done and what it costs in 2026.",
     ogImage: "/og/inspiration-cobblestone-border-driveway.jpg",
     heroAlt: "Concrete driveway with cobblestone stamped border detail",
     contentBlock:
-      "Adding a cobblestone-stamped border to an otherwise simple concrete driveway is one of the most cost-effective curb appeal upgrades available. Instead of stamping the entire surface — which adds significant labor cost — you stamp only the perimeter band, typically 12–24 inches wide. The result is a driveway that looks intentionally designed without the full stamped-concrete price tag.\n\nThe cobblestone pattern reads as upscale and traditional, making it a natural fit for colonial, craftsman, and Tudor-style homes. In a darker color wash (charcoal, aged iron, or slate), it also works well on contemporary homes where you want a defined edge without ornamentation. The border approach costs roughly $8–12 per linear foot versus the $12–20/sq ft premium for fully stamping the entire surface — a meaningful savings on a two-car driveway.\n\nFor durability, the cobblestone border holds up particularly well to edge loading and snowplow contact because the stamp pattern adds surface texture that resists chipping better than a smooth finish. Sealing the border annually extends the color depth and prevents staining from oil and road salt. If you're debating between a full-stamp and a border-only approach, a border treatment on a quality plain-finish driveway consistently delivers the better return per dollar spent. PatioCanvas can show you how a cobblestone border would look on your specific driveway layout.",
+      "Adding a cobblestone-stamped border to an otherwise simple concrete driveway is one of the most cost-effective curb appeal upgrades available. Instead of stamping the entire surface — which adds significant labor cost — you stamp only the perimeter band, typically 12–24 inches wide. The result is a driveway that looks intentionally designed without the full stamped-concrete price tag.\n\nThe cobblestone pattern reads as upscale and traditional, making it a natural fit for colonial, craftsman, and Tudor-style homes. In a darker color wash (charcoal, aged iron, or slate), it also works well on contemporary homes where you want a defined edge without ornamentation. The border approach costs roughly $8–12 per linear foot versus the $12–20/sq ft premium for fully stamping the entire surface — a meaningful savings on a two-car driveway.\n\nFor durability, the cobblestone border holds up particularly well to edge loading and snowplow contact because the stamp pattern adds surface texture that resists chipping better than a smooth finish. Sealing the border annually extends the color depth and prevents staining from oil and road salt. If you're debating between a full-stamp and a border-only approach, a border treatment on a quality plain-finish driveway consistently delivers the better return per dollar spent. PourCanvas can show you how a cobblestone border would look on your specific driveway layout.",
     targetKeywords: ["cobblestone driveway border", "driveway border ideas", "stamped concrete border"],
     pillar: "driveway",
     ctaHeadline: "See what a border could do for your driveway",
@@ -78,14 +78,14 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "pool-deck-broom-finish",
-    title: "Broom Finish Pool Deck Ideas | PatioCanvas",
+    title: "Broom Finish Pool Deck Ideas | PourCanvas",
     headline: "Broom Finish Pool Deck",
     metaDescription:
       "A broom-finish concrete pool deck is slip-resistant, affordable, and cleaner-looking than most people expect. See how it looks in real yards.",
     ogImage: "/og/inspiration-broom-finish-pool.jpg",
     heroAlt: "Broom finish concrete pool deck surrounding a modern pool",
     contentBlock:
-      "The broom finish is the original concrete pool deck surface — and for good reason. The light texture left by dragging a stiff broom across fresh concrete creates just enough grip to be safe when wet, without the discomfort of coarser aggregate finishes underfoot. What surprises most homeowners is how clean a well-done broom finish looks. In a cool gray or warm buff color, it reads as intentional rather than default. It also pairs exceptionally well with modern pool coping and tile because it doesn't compete visually with the water or the pool surround design. For a pool deck that needs to handle heavy foot traffic, chemical splashing, and daily wet/dry cycles, a sealed broom-finish slab is one of the most durable and lowest-maintenance surfaces you can install. PatioCanvas can show you how different color and finish options might look around your specific pool shape.",
+      "The broom finish is the original concrete pool deck surface — and for good reason. The light texture left by dragging a stiff broom across fresh concrete creates just enough grip to be safe when wet, without the discomfort of coarser aggregate finishes underfoot. What surprises most homeowners is how clean a well-done broom finish looks. In a cool gray or warm buff color, it reads as intentional rather than default. It also pairs exceptionally well with modern pool coping and tile because it doesn't compete visually with the water or the pool surround design. For a pool deck that needs to handle heavy foot traffic, chemical splashing, and daily wet/dry cycles, a sealed broom-finish slab is one of the most durable and lowest-maintenance surfaces you can install. PourCanvas can show you how different color and finish options might look around your specific pool shape.",
     targetKeywords: ["broom finish pool deck", "concrete pool deck", "pool surround ideas"],
     pillar: "patio",
     ctaHeadline: "See it around your pool",
@@ -93,14 +93,14 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "stamped-concrete-walkway-grey",
-    title: "Grey Stamped Concrete Walkway Inspiration | PatioCanvas",
+    title: "Grey Stamped Concrete Walkway Inspiration | PourCanvas",
     headline: "Grey Stamped Concrete Walkway",
     metaDescription:
       "A grey stamped concrete walkway pairs with almost any home exterior. See how different patterns and shades look in real yards.",
     ogImage: "/og/inspiration-grey-stamped-walkway.jpg",
     heroAlt: "Grey stamped concrete front walkway leading to home entrance",
     contentBlock:
-      "Grey stamped concrete might be the most versatile walkway finish available. It reads as modern without being trendy, pairs with brick, siding, stucco, and stone exteriors equally well, and ages attractively as the sealer weathers and develops a natural patina.\n\nThe key design decision is pattern choice. Ashlar slate in charcoal gray feels contemporary and structured — a natural match for modern and transitional homes. Random flagstone in a medium gray feels more traditional and relaxed, softening the approach to a craftsman or cottage-style home. Herringbone brick in a cooler gray tone has an almost European quality and suits formal traditional architecture particularly well. All three are strong choices; the right one is the one that reads as continuous with your home's exterior rather than competing with it.\n\nFrom a practical standpoint, grey stamped concrete walkways cost $12–18 per sq ft installed, and the color holds for 5–10 years with a quality sealer. Resealing every 2–3 years is the main maintenance requirement. UV-stable pigments are worth specifying for south- or west-facing walkways that get full afternoon sun, since gray is among the colors most prone to fading without UV protection in the sealer. PatioCanvas can show you how different grey tones and stamp patterns would look on your specific front path.",
+      "Grey stamped concrete might be the most versatile walkway finish available. It reads as modern without being trendy, pairs with brick, siding, stucco, and stone exteriors equally well, and ages attractively as the sealer weathers and develops a natural patina.\n\nThe key design decision is pattern choice. Ashlar slate in charcoal gray feels contemporary and structured — a natural match for modern and transitional homes. Random flagstone in a medium gray feels more traditional and relaxed, softening the approach to a craftsman or cottage-style home. Herringbone brick in a cooler gray tone has an almost European quality and suits formal traditional architecture particularly well. All three are strong choices; the right one is the one that reads as continuous with your home's exterior rather than competing with it.\n\nFrom a practical standpoint, grey stamped concrete walkways cost $12–18 per sq ft installed, and the color holds for 5–10 years with a quality sealer. Resealing every 2–3 years is the main maintenance requirement. UV-stable pigments are worth specifying for south- or west-facing walkways that get full afternoon sun, since gray is among the colors most prone to fading without UV protection in the sealer. PourCanvas can show you how different grey tones and stamp patterns would look on your specific front path.",
     targetKeywords: ["stamped concrete walkway", "grey concrete walkway", "front path ideas"],
     pillar: "walkway",
     ctaHeadline: "Preview your walkway",
@@ -108,7 +108,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "patio-wood-plank-concrete",
-    title: "Wood Plank Concrete Patio Inspiration | PatioCanvas",
+    title: "Wood Plank Concrete Patio Inspiration | PourCanvas",
     headline: "Wood Plank Concrete Patio",
     metaDescription:
       "Stamped wood-plank concrete looks like real wood but lasts decades without warping, splinters, or annual maintenance. See how it looks in real backyards.",
@@ -123,7 +123,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "exposed-aggregate-patio-white",
-    title: "White Exposed Aggregate Patio Inspiration | PatioCanvas",
+    title: "White Exposed Aggregate Patio Inspiration | PourCanvas",
     headline: "White Exposed Aggregate Patio",
     metaDescription:
       "White exposed aggregate gives a patio a clean, bright finish that holds up well and looks great with modern landscaping. See real examples.",
@@ -138,14 +138,14 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "exposed-aggregate-driveway-grey",
-    title: "Grey Exposed Aggregate Driveway Ideas | PatioCanvas",
+    title: "Grey Exposed Aggregate Driveway Ideas | PourCanvas",
     headline: "Grey Exposed Aggregate Driveway",
     metaDescription:
       "Grey exposed aggregate driveways cost $8–14/sq ft and stay sharp for decades. See what the finish looks like and whether it suits your home.",
     ogImage: "/og/inspiration-exposed-aggregate-driveway-grey.jpg",
     heroAlt: "Grey exposed aggregate concrete driveway with clean border edging",
     contentBlock:
-      "Grey exposed aggregate is quietly one of the most practical driveway finishes available — and one of the most underrated visually. The washed surface reveals the pebble and stone aggregate below, creating a texture that's slip-resistant, hides tire marks, and ages without looking worn. In a cool grey or charcoal tone, it reads as clean and deliberate rather than decorative.\n\nThe grey palette works because it's flexible. A lighter silver-grey suits coastal and contemporary homes with white or light board-and-batten exteriors. Charcoal aggregate gives a more grounded, urban look that pairs well with dark timber, black window frames, and modern landscaping. The finish has no directional pattern, which means it handles curved driveways and irregular layouts more naturally than stamped concrete — no alignment decisions, no pattern interruptions at the curves.\n\nFrom a cost standpoint, grey exposed aggregate driveways run $8–14 per sq ft installed — the middle ground between plain broom finish ($6–10) and stamped concrete ($12–20). On a standard two-car driveway (400–500 sq ft), that's $3,200–7,000. Maintenance is straightforward: seal every 2–3 years with a penetrating sealer to protect the aggregate from staining and keep the color depth. The finish holds its character well over time — unlike stamped concrete, there's no color wash that fades unevenly. PatioCanvas can show you how a grey exposed aggregate finish would look on your specific driveway before you commit.",
+      "Grey exposed aggregate is quietly one of the most practical driveway finishes available — and one of the most underrated visually. The washed surface reveals the pebble and stone aggregate below, creating a texture that's slip-resistant, hides tire marks, and ages without looking worn. In a cool grey or charcoal tone, it reads as clean and deliberate rather than decorative.\n\nThe grey palette works because it's flexible. A lighter silver-grey suits coastal and contemporary homes with white or light board-and-batten exteriors. Charcoal aggregate gives a more grounded, urban look that pairs well with dark timber, black window frames, and modern landscaping. The finish has no directional pattern, which means it handles curved driveways and irregular layouts more naturally than stamped concrete — no alignment decisions, no pattern interruptions at the curves.\n\nFrom a cost standpoint, grey exposed aggregate driveways run $8–14 per sq ft installed — the middle ground between plain broom finish ($6–10) and stamped concrete ($12–20). On a standard two-car driveway (400–500 sq ft), that's $3,200–7,000. Maintenance is straightforward: seal every 2–3 years with a penetrating sealer to protect the aggregate from staining and keep the color depth. The finish holds its character well over time — unlike stamped concrete, there's no color wash that fades unevenly. PourCanvas can show you how a grey exposed aggregate finish would look on your specific driveway before you commit.",
     targetKeywords: ["exposed aggregate driveway", "grey driveway ideas", "textured concrete driveway"],
     pillar: "driveway",
     ctaHeadline: "Preview this finish on your driveway",
@@ -153,14 +153,14 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "flagstone-walkway-natural",
-    title: "Natural Flagstone Walkway Ideas & Inspiration | PatioCanvas",
+    title: "Natural Flagstone Walkway Ideas & Inspiration | PourCanvas",
     headline: "Natural Flagstone Walkway",
     metaDescription:
       "Natural flagstone walkways blend organic texture with lasting durability. See real examples, cost ranges, and how to get the look in your yard.",
     ogImage: "/og/inspiration-flagstone-walkway-natural.jpg",
     heroAlt: "Natural flagstone walkway winding through a landscaped front yard",
     contentBlock:
-      "A natural flagstone walkway is one of the few hardscape choices that improves visually with age. The irregular edges, earthy tones, and subtle surface variation give it a warmth and authenticity that stamped or poured concrete can approximate but never fully replicate. Each slab reads as its own — which is what makes the path feel like it belongs in the landscape rather than imposed on it.\n\nThe design is in the gaps. Tight-set flagstone with a sand or polymeric joint looks formal and structured — suited to a traditional front entry. Loose-set flagstone with creeping thyme or moss in the joints feels naturalistic and relaxed, better for a cottage garden or casual backyard path. Both approaches work in the same material; the joint width and fill is the decision.\n\nOn the practical side, natural flagstone walkways run $20–40 per sq ft installed — significantly more than concrete alternatives. Flagstone-stamped concrete delivers a very similar visual at $12–18 per sq ft for homeowners who want the look without the cost. Natural flagstone is worth the premium when authenticity matters and the walkway is a prominent design feature. Both options require periodic maintenance: natural flagstone needs joint re-setting every few years as frost and roots shift the slabs; stamped concrete needs resealing every 2–3 years. PatioCanvas can show you how natural flagstone and stamped flagstone would compare side by side on your specific front path.",
+      "A natural flagstone walkway is one of the few hardscape choices that improves visually with age. The irregular edges, earthy tones, and subtle surface variation give it a warmth and authenticity that stamped or poured concrete can approximate but never fully replicate. Each slab reads as its own — which is what makes the path feel like it belongs in the landscape rather than imposed on it.\n\nThe design is in the gaps. Tight-set flagstone with a sand or polymeric joint looks formal and structured — suited to a traditional front entry. Loose-set flagstone with creeping thyme or moss in the joints feels naturalistic and relaxed, better for a cottage garden or casual backyard path. Both approaches work in the same material; the joint width and fill is the decision.\n\nOn the practical side, natural flagstone walkways run $20–40 per sq ft installed — significantly more than concrete alternatives. Flagstone-stamped concrete delivers a very similar visual at $12–18 per sq ft for homeowners who want the look without the cost. Natural flagstone is worth the premium when authenticity matters and the walkway is a prominent design feature. Both options require periodic maintenance: natural flagstone needs joint re-setting every few years as frost and roots shift the slabs; stamped concrete needs resealing every 2–3 years. PourCanvas can show you how natural flagstone and stamped flagstone would compare side by side on your specific front path.",
     targetKeywords: ["flagstone walkway ideas", "natural stone walkway", "flagstone path"],
     pillar: "walkway",
     ctaHeadline: "See flagstone on your walkway",
@@ -168,14 +168,14 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "stamped-concrete-steps-entry",
-    title: "Stamped Concrete Entry Steps Inspiration | PatioCanvas",
+    title: "Stamped Concrete Entry Steps Inspiration | PourCanvas",
     headline: "Stamped Concrete Entry Steps",
     metaDescription:
       "Stamped concrete entry steps cost $1,500–4,500 and instantly upgrade your home's first impression. See design ideas that work with any exterior.",
     ogImage: "/og/inspiration-stamped-concrete-steps-entry.jpg",
     heroAlt: "Stamped concrete front entry steps with decorative border detail",
     contentBlock:
-      "Entry steps are the first hardscape element a visitor interacts with — which makes them one of the highest-impact upgrades you can make relative to square footage. Stamped concrete steps deliver the visual quality of stone or brick at a fraction of the material cost, and when done well they set the tone for the entire exterior.\n\nThe most effective step designs extend the pattern language of the front walkway. If the walkway is ashlar slate, the steps use the same stamp. If the path is flagstone, the steps follow. This continuity is what separates a designed exterior from a piecemeal one. Riser height and tread depth are the functional baseline: standard 7\" risers and 11–12\" treads work for most entry applications. Going wider (14–16\" treads) on a prominent front entry creates a more generous, welcoming feel — and gives the pattern more surface to read on each tread.\n\nCost ranges for stamped concrete entry steps depend heavily on the number of steps and whether a landing is included. A simple 3-step stoop with a small landing runs $1,500–3,000 installed; a larger 5–6 step entry with a full landing can reach $3,500–6,000. Both options are significantly less expensive than natural bluestone or limestone steps at $200–400 per step installed. Resealing every 2–3 years keeps the color sharp and prevents deicing salt damage in cold climates. PatioCanvas can show you how different stamp patterns and color washes would look on your specific entry before you commit to a contractor.",
+      "Entry steps are the first hardscape element a visitor interacts with — which makes them one of the highest-impact upgrades you can make relative to square footage. Stamped concrete steps deliver the visual quality of stone or brick at a fraction of the material cost, and when done well they set the tone for the entire exterior.\n\nThe most effective step designs extend the pattern language of the front walkway. If the walkway is ashlar slate, the steps use the same stamp. If the path is flagstone, the steps follow. This continuity is what separates a designed exterior from a piecemeal one. Riser height and tread depth are the functional baseline: standard 7\" risers and 11–12\" treads work for most entry applications. Going wider (14–16\" treads) on a prominent front entry creates a more generous, welcoming feel — and gives the pattern more surface to read on each tread.\n\nCost ranges for stamped concrete entry steps depend heavily on the number of steps and whether a landing is included. A simple 3-step stoop with a small landing runs $1,500–3,000 installed; a larger 5–6 step entry with a full landing can reach $3,500–6,000. Both options are significantly less expensive than natural bluestone or limestone steps at $200–400 per step installed. Resealing every 2–3 years keeps the color sharp and prevents deicing salt damage in cold climates. PourCanvas can show you how different stamp patterns and color washes would look on your specific entry before you commit to a contractor.",
     targetKeywords: ["stamped concrete steps", "concrete entry steps", "front door steps ideas"],
     pillar: "walkway",
     ctaHeadline: "Preview stamped steps at your entry",
@@ -183,7 +183,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "circle-patio-pattern",
-    title: "Circle Pattern Stamped Patio Inspiration | PatioCanvas",
+    title: "Circle Pattern Stamped Patio Inspiration | PourCanvas",
     headline: "Circle Pattern Stamped Patio",
     metaDescription:
       "A circular stamped concrete pattern turns an ordinary patio into a design feature. See how it works and what it costs.",
@@ -198,13 +198,13 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "concrete-pool-deck-grey",
-    title: "Grey Concrete Pool Deck Ideas & Inspiration | PatioCanvas",
+    title: "Grey Concrete Pool Deck Ideas & Inspiration | PourCanvas",
     headline: "Grey Concrete Pool Deck",
     metaDescription: "A grey concrete pool deck stays cool underfoot and pairs with any pool style. See the best grey tones and finishes for 2026.",
     ogImage: "/og/inspiration-concrete-pool-deck-grey.jpg",
     heroAlt: "Grey concrete pool deck with cool-toned finish surrounding a modern pool",
     contentBlock:
-      "Grey is the dominant color choice for concrete pool decks in 2026 — and the range within 'grey' is wider than most homeowners realize. A warm silver-grey with exposed aggregate reads as coastal and relaxed, pairing naturally with light-toned coping and white or cream home exteriors. A cool charcoal broom-finish or lightly stamped surface reads as architectural and grounded, suited to contemporary homes with dark window frames and structured landscaping. Both are the same material; the tone and finish choice is what changes the entire mood.\n\nThe practical case for grey pool decks is strong. Lighter grey tones reflect more heat than darker surfaces — an important consideration for any surface you walk across barefoot. A medium-grey exposed aggregate or lightly stamped concrete stays 15–20 degrees cooler underfoot than the same finish in charcoal or charcoal-black on a hot summer afternoon. It also doesn't show chemical splash staining as readily as very light white or cream tones.\n\nFrom a cost standpoint, a grey broom-finish or lightly textured pool deck runs $6–10 per sq ft installed. Exposed aggregate in grey tones adds $2–4 per sq ft over plain finish. Stamped grey concrete — especially the popular cool-grey flagstone patterns — runs $12–18 per sq ft. On a 500 sq ft pool deck, that's $3,000–9,000 depending on finish. Sealing every 2 years maintains color depth and protects against chemical degradation. PatioCanvas can show you how different grey tones and finishes would look around your specific pool layout.",
+      "Grey is the dominant color choice for concrete pool decks in 2026 — and the range within 'grey' is wider than most homeowners realize. A warm silver-grey with exposed aggregate reads as coastal and relaxed, pairing naturally with light-toned coping and white or cream home exteriors. A cool charcoal broom-finish or lightly stamped surface reads as architectural and grounded, suited to contemporary homes with dark window frames and structured landscaping. Both are the same material; the tone and finish choice is what changes the entire mood.\n\nThe practical case for grey pool decks is strong. Lighter grey tones reflect more heat than darker surfaces — an important consideration for any surface you walk across barefoot. A medium-grey exposed aggregate or lightly stamped concrete stays 15–20 degrees cooler underfoot than the same finish in charcoal or charcoal-black on a hot summer afternoon. It also doesn't show chemical splash staining as readily as very light white or cream tones.\n\nFrom a cost standpoint, a grey broom-finish or lightly textured pool deck runs $6–10 per sq ft installed. Exposed aggregate in grey tones adds $2–4 per sq ft over plain finish. Stamped grey concrete — especially the popular cool-grey flagstone patterns — runs $12–18 per sq ft. On a 500 sq ft pool deck, that's $3,000–9,000 depending on finish. Sealing every 2 years maintains color depth and protects against chemical degradation. PourCanvas can show you how different grey tones and finishes would look around your specific pool layout.",
     targetKeywords: ["grey pool deck concrete", "concrete pool deck grey", "pool deck ideas grey"],
     pillar: "patio",
     ctaHeadline: "See grey concrete around your pool",
@@ -212,13 +212,13 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "herringbone-walkway-concrete",
-    title: "Herringbone Concrete Walkway Ideas & Inspiration | PatioCanvas",
+    title: "Herringbone Concrete Walkway Ideas & Inspiration | PourCanvas",
     headline: "Herringbone Concrete Walkway",
     metaDescription: "A herringbone-stamped concrete walkway adds a classic, upscale look to any front entry. See how it looks in real yards and what it costs.",
     ogImage: "/og/inspiration-herringbone-walkway-concrete.jpg",
     heroAlt: "Herringbone pattern stamped concrete walkway leading to a front door",
     contentBlock:
-      "The herringbone pattern is one of the oldest and most enduring hardscape designs — and it translates exceptionally well to concrete walkways. The diagonal interlocking \"brick\" layout creates a sense of movement and formality that draws visitors naturally toward the front door. In stamped concrete, you get the full visual effect of traditional herringbone brick without the joint maintenance, weed pressure, or uneven settling that real brick brings over time.\n\nColor choice defines the look entirely. A warm buff or sandstone wash suits craftsman, colonial, and traditional homes — it reads as classic and warm, complementing red brick facades and painted wood trim. A cooler charcoal or slate grey shifts the same pattern toward contemporary territory, working well with modern and transitional home styles. The 45-degree angle of the herringbone layout also optically widens a narrow walkway, making it an especially strong choice for front paths where the width is constrained.\n\nFrom a cost standpoint, herringbone-stamped concrete walkways run $12–18 per sq ft installed — identical to other stamped patterns but significantly less than real brick pavers at $20–35 per sq ft. On a typical 4-foot-wide, 30-foot front walkway (120 sq ft), that's $1,440–2,160. The pattern holds its visual crispness as it weathers and reseals, which is why herringbone walkways consistently photograph well years after installation. Sealing every 2–3 years maintains color depth and keeps the pattern sharp. PatioCanvas can show you how herringbone in different color washes would look on your specific front path before you book a contractor.",
+      "The herringbone pattern is one of the oldest and most enduring hardscape designs — and it translates exceptionally well to concrete walkways. The diagonal interlocking \"brick\" layout creates a sense of movement and formality that draws visitors naturally toward the front door. In stamped concrete, you get the full visual effect of traditional herringbone brick without the joint maintenance, weed pressure, or uneven settling that real brick brings over time.\n\nColor choice defines the look entirely. A warm buff or sandstone wash suits craftsman, colonial, and traditional homes — it reads as classic and warm, complementing red brick facades and painted wood trim. A cooler charcoal or slate grey shifts the same pattern toward contemporary territory, working well with modern and transitional home styles. The 45-degree angle of the herringbone layout also optically widens a narrow walkway, making it an especially strong choice for front paths where the width is constrained.\n\nFrom a cost standpoint, herringbone-stamped concrete walkways run $12–18 per sq ft installed — identical to other stamped patterns but significantly less than real brick pavers at $20–35 per sq ft. On a typical 4-foot-wide, 30-foot front walkway (120 sq ft), that's $1,440–2,160. The pattern holds its visual crispness as it weathers and reseals, which is why herringbone walkways consistently photograph well years after installation. Sealing every 2–3 years maintains color depth and keeps the pattern sharp. PourCanvas can show you how herringbone in different color washes would look on your specific front path before you book a contractor.",
     targetKeywords: ["herringbone walkway", "herringbone concrete walkway", "brick pattern walkway"],
     pillar: "walkway",
     ctaHeadline: "See herringbone on your front path",
@@ -226,14 +226,14 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "modern-black-concrete-driveway",
-    title: "Black Concrete Driveway Ideas & Inspiration | PatioCanvas",
+    title: "Black Concrete Driveway Ideas & Inspiration | PourCanvas",
     headline: "Black Concrete Driveway",
     metaDescription:
       "A black concrete driveway makes a bold, modern statement. See how integral dark pigment works, what it costs, and how it looks on real homes.",
     ogImage: "/og/inspiration-modern-black-concrete-driveway.jpg",
     heroAlt: "Black integrally colored concrete driveway with modern home exterior",
     contentBlock:
-      "A black concrete driveway is one of the boldest curb appeal choices available — and increasingly one of the most searched. The look is achieved through integral dark pigment mixed directly into the concrete pour, not a surface coating. That distinction matters: integral color runs all the way through the slab, so chips and surface wear don't expose a different-colored base beneath.\n\nThe visual case for black is strong. Against a white, light grey, or warm cream home exterior, a black driveway creates a high-contrast, architectural quality that reads as deliberate and high-end. It pairs naturally with black window frames, dark metal hardware, and structured landscaping. The effect is bold — which means it's decisive in both directions. It looks exceptional when the rest of the exterior is clean and coordinated; it can read as harsh if the surrounding materials are mismatched or the landscape is underdeveloped.\n\nOn the practical side, dark concrete absorbs significantly more heat than light-toned surfaces. In climates with hot summers, the surface can reach temperatures that are uncomfortable underfoot and slightly accelerate surface degradation over time. A quality UV-stable pigment and a penetrating sealer applied every 2–3 years are essential to maintain the depth of color — without sealer maintenance, dark integral color fades to a muted charcoal rather than a true black. Cost-wise, a black integrally colored plain driveway runs $6–12 per sq ft — $2–4 per sq ft above plain grey concrete for the pigment premium. On a standard 500 sq ft two-car driveway, that's $3,000–6,000 total. PatioCanvas can show you how a black concrete finish would look on your specific driveway before you commit.",
+      "A black concrete driveway is one of the boldest curb appeal choices available — and increasingly one of the most searched. The look is achieved through integral dark pigment mixed directly into the concrete pour, not a surface coating. That distinction matters: integral color runs all the way through the slab, so chips and surface wear don't expose a different-colored base beneath.\n\nThe visual case for black is strong. Against a white, light grey, or warm cream home exterior, a black driveway creates a high-contrast, architectural quality that reads as deliberate and high-end. It pairs naturally with black window frames, dark metal hardware, and structured landscaping. The effect is bold — which means it's decisive in both directions. It looks exceptional when the rest of the exterior is clean and coordinated; it can read as harsh if the surrounding materials are mismatched or the landscape is underdeveloped.\n\nOn the practical side, dark concrete absorbs significantly more heat than light-toned surfaces. In climates with hot summers, the surface can reach temperatures that are uncomfortable underfoot and slightly accelerate surface degradation over time. A quality UV-stable pigment and a penetrating sealer applied every 2–3 years are essential to maintain the depth of color — without sealer maintenance, dark integral color fades to a muted charcoal rather than a true black. Cost-wise, a black integrally colored plain driveway runs $6–12 per sq ft — $2–4 per sq ft above plain grey concrete for the pigment premium. On a standard 500 sq ft two-car driveway, that's $3,000–6,000 total. PourCanvas can show you how a black concrete finish would look on your specific driveway before you commit.",
     targetKeywords: ["black concrete driveway", "dark driveway ideas", "modern driveway color"],
     pillar: "driveway",
     ctaHeadline: "See black concrete on your driveway",

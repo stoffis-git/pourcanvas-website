@@ -8,7 +8,7 @@ interface InspirationUpsellTileProps {
 export const InspirationUpsellTile = ({
   headline,
   body,
-  ctaLabel = "Try PatioCanvas Free",
+  ctaLabel = "Try PourCanvas Free",
   ctaHref = "/",
 }: InspirationUpsellTileProps) => (
   <div className="rounded-2xl bg-primary/10 border border-primary/20 px-6 py-8 md:px-10 md:py-10 flex flex-col md:flex-row md:items-center gap-6">
