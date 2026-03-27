@@ -413,4 +413,62 @@ export const walkwayArticles: Article[] = [
       },
     ],
   },
+  {
+    slug: "concrete-walkway-patterns",
+    pillar: "walkway",
+    title: "Concrete Walkway Patterns: 6 Options and Costs",
+    headline: "Concrete Walkway Patterns Compared: Cost, Look, and When to Choose Each",
+    metaDescription:
+      "Concrete walkway patterns range from $6/sq ft broom finish to $18/sq ft stamped designs. Compare 6 patterns, their costs, and which suits your home style.",
+    targetKeywords: ["concrete walkway patterns", "concrete walkway design", "concrete walkway ideas"],
+    ogImage: "/og/walkway-concrete-patterns.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Concrete walkway patterns range from $6–10/sq ft for a plain broom finish to $12–18/sq ft for stamped designs — a cost gap that often surprises homeowners mid-project. The right pattern depends on your home's architecture, how visible the path is from the street, and whether you want low maintenance or a designed statement. Here are the six most common choices with honest cost ranges and when each makes sense.",
+    sections: [
+      {
+        heading: "Broom Finish: The Practical Default",
+        body: "Broom-finish concrete is the most installed walkway surface in North America — and for good reason. A contractor drags a broom across the surface before it cures, creating parallel lines that provide slip resistance without visual noise. Cost: $6–10/sq ft installed. It reads as clean and appropriate on most homes when executed well; the difference between cheap-looking and intentional usually comes down to edge detail and color. A dark grey color wash or charcoal pigment ($0.50–1.50/sq ft added cost) makes a plain broom-finish walk look significantly more considered without adding pattern complexity.",
+      },
+      {
+        heading: "Exposed Aggregate: Texture Without Pattern",
+        body: "Exposed aggregate concrete uses small stones (pea gravel, river rock, or decorative aggregate) embedded in the surface and revealed by washing away the top layer of cement paste before it fully cures. Cost: $8–14/sq ft installed. The result is a slip-resistant, textured surface that looks natural and ages well — the aggregate weathers rather than fading or cracking visibly. It's the best-performing walkway surface in wet climates and for areas with tree root heave risk, since its texture hides minor imperfections. Aggregate color choice matters: warm tans and earthy browns suit traditional homes; grey-white aggregate reads as more modern.",
+      },
+      {
+        heading: "Stamped Concrete: Designed at a Price",
+        body: "Stamped walkways use rubber mats pressed into fresh concrete to mimic stone, brick, slate, or wood grain. Cost: $12–18/sq ft installed — the premium pays for skilled labor timing and the color work required to make the stamp convincing. The most popular walkway patterns are random flagstone, ashlar slate, and running-bond brick. Random flagstone suits cottage and craftsman homes; ashlar slate suits contemporary and transitional styles; running-bond brick is the default for traditional colonial exteriors. The upgrade over plain concrete is visually significant when the rest of the property is maintained — but stamped concrete on an otherwise unfinished yard can feel out of place.",
+      },
+      {
+        heading: "Herringbone and Geometric Stamps",
+        body: "Herringbone is the most recognized geometric walkway pattern — diagonal interlocking bricks at 45° that create motion and visual interest along the path's length. It's slightly more labor-intensive than running bond ($1–3/sq ft more) because aligning the geometry consistently takes more time. Geometric patterns generally suit formal entries and contemporary homes better than informal garden paths. A herringbone stamp in a buff or warm grey tone is the most Pinterest-friendly concrete walkway pattern — it photographs well and reads as designed from the street.",
+      },
+      {
+        heading: "Flagstone-Set-in-Concrete vs. Stamped Flagstone",
+        body: "A cheaper alternative to natural flagstone is cutting real flagstone pieces and setting them into a concrete base — the flagstone sits proud of the surface for a genuine texture feel. Cost: $15–25/sq ft installed, depending on stone type and availability. This is more expensive than stamped concrete but uses real stone without mortar joints to maintain. For homeowners who want authentic texture, flagstone-in-concrete is the middle ground between fully stamped ($12–18) and full natural stone flagging ($20–40/sq ft for quality stone). If you're also upgrading a patio, matching flagstone patterns across both surfaces adds strong visual coherence.",
+      },
+      {
+        heading: "Stained and Colored Concrete",
+        body: "Acid staining or integral color pigment transforms any of the above patterns with color depth. Integral color (pigment mixed into the pour) costs $1–3/sq ft extra and is permanent — it colors the entire slab, so chips and cracks show the same color throughout. Acid stain (applied after curing) costs $2–4/sq ft and creates mottled, translucent color effects that look more organic than flat pigment. Charcoal, slate blue, and warm terra cotta are the most popular stain colors for walkways. Tools like PourCanvas let you preview stain colors on your specific walkway layout before committing to a pour. Resealing every 2–3 years maintains the color depth regardless of whether you use integral pigment or an acid-stain topcoat.",
+      },
+    ],
+    relatedSlugs: ["front-walkway-ideas", "concrete-walkway-cost"],
+    faqs: [
+      {
+        question: "What is the most popular concrete walkway pattern?",
+        answer: "Random flagstone stamping is the most installed patterned concrete walkway in North America — it suits almost every home style, and the irregular layout is forgiving of slight color variation between sections. Broom finish (plain, no pattern) is the most installed concrete walkway surface overall by volume. For formal entries, running-bond brick stamp and herringbone are the most common upgrade choices.",
+      },
+      {
+        question: "How much does a patterned concrete walkway cost per square foot?",
+        answer: "Concrete walkway costs by pattern: broom finish $6–10/sq ft, exposed aggregate $8–14/sq ft, stamped concrete $12–18/sq ft, flagstone-in-concrete $15–25/sq ft. Integral color adds $1–3/sq ft to any of these; acid stain adds $2–4/sq ft applied after curing. A standard 4-foot-wide, 30-foot front walk (120 sq ft) runs $720–2,160 for broom finish or $1,440–2,160 for stamped.",
+      },
+      {
+        question: "Which concrete walkway pattern is easiest to maintain?",
+        answer: "Broom finish requires the least maintenance — no resealing required for basic durability, and repairs are easy to patch and retexture. Exposed aggregate is the most slip-resistant and hides surface wear well, though the aggregate can loosen over decades in freeze-thaw climates. Stamped concrete requires resealing every 2–3 years to maintain color depth and prevent surface scaling. Stained concrete (acid-stained) should also be resealed every 2–3 years.",
+      },
+    ],
+    // GEO: FAQ candidates
+    // 1. What is the most popular concrete walkway pattern?
+    // 2. How much does a patterned concrete walkway cost per square foot?
+    // 3. Which concrete walkway pattern is easiest to maintain?
+  },
 ];
