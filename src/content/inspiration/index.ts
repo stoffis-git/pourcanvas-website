@@ -137,6 +137,51 @@ export const inspirationPages: InspirationPage[] = [
     ctaBody: "Upload a photo of your outdoor space and see what white aggregate concrete could look like.",
   },
   {
+    slug: "exposed-aggregate-driveway-grey",
+    title: "Grey Exposed Aggregate Driveway Ideas | PatioCanvas",
+    headline: "Grey Exposed Aggregate Driveway",
+    metaDescription:
+      "Grey exposed aggregate driveways cost $8–14/sq ft and stay sharp for decades. See what the finish looks like and whether it suits your home.",
+    ogImage: "/og/inspiration-exposed-aggregate-driveway-grey.jpg",
+    heroAlt: "Grey exposed aggregate concrete driveway with clean border edging",
+    contentBlock:
+      "Grey exposed aggregate is quietly one of the most practical driveway finishes available — and one of the most underrated visually. The washed surface reveals the pebble and stone aggregate below, creating a texture that's slip-resistant, hides tire marks, and ages without looking worn. In a cool grey or charcoal tone, it reads as clean and deliberate rather than decorative.\n\nThe grey palette works because it's flexible. A lighter silver-grey suits coastal and contemporary homes with white or light board-and-batten exteriors. Charcoal aggregate gives a more grounded, urban look that pairs well with dark timber, black window frames, and modern landscaping. The finish has no directional pattern, which means it handles curved driveways and irregular layouts more naturally than stamped concrete — no alignment decisions, no pattern interruptions at the curves.\n\nFrom a cost standpoint, grey exposed aggregate driveways run $8–14 per sq ft installed — the middle ground between plain broom finish ($6–10) and stamped concrete ($12–20). On a standard two-car driveway (400–500 sq ft), that's $3,200–7,000. Maintenance is straightforward: seal every 2–3 years with a penetrating sealer to protect the aggregate from staining and keep the color depth. The finish holds its character well over time — unlike stamped concrete, there's no color wash that fades unevenly. PatioCanvas can show you how a grey exposed aggregate finish would look on your specific driveway before you commit.",
+    targetKeywords: ["exposed aggregate driveway", "grey driveway ideas", "textured concrete driveway"],
+    pillar: "driveway",
+    ctaHeadline: "Preview this finish on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what grey exposed aggregate concrete could look like in your space.",
+  },
+  {
+    slug: "flagstone-walkway-natural",
+    title: "Natural Flagstone Walkway Ideas & Inspiration | PatioCanvas",
+    headline: "Natural Flagstone Walkway",
+    metaDescription:
+      "Natural flagstone walkways blend organic texture with lasting durability. See real examples, cost ranges, and how to get the look in your yard.",
+    ogImage: "/og/inspiration-flagstone-walkway-natural.jpg",
+    heroAlt: "Natural flagstone walkway winding through a landscaped front yard",
+    contentBlock:
+      "A natural flagstone walkway is one of the few hardscape choices that improves visually with age. The irregular edges, earthy tones, and subtle surface variation give it a warmth and authenticity that stamped or poured concrete can approximate but never fully replicate. Each slab reads as its own — which is what makes the path feel like it belongs in the landscape rather than imposed on it.\n\nThe design is in the gaps. Tight-set flagstone with a sand or polymeric joint looks formal and structured — suited to a traditional front entry. Loose-set flagstone with creeping thyme or moss in the joints feels naturalistic and relaxed, better for a cottage garden or casual backyard path. Both approaches work in the same material; the joint width and fill is the decision.\n\nOn the practical side, natural flagstone walkways run $20–40 per sq ft installed — significantly more than concrete alternatives. Flagstone-stamped concrete delivers a very similar visual at $12–18 per sq ft for homeowners who want the look without the cost. Natural flagstone is worth the premium when authenticity matters and the walkway is a prominent design feature. Both options require periodic maintenance: natural flagstone needs joint re-setting every few years as frost and roots shift the slabs; stamped concrete needs resealing every 2–3 years. PatioCanvas can show you how natural flagstone and stamped flagstone would compare side by side on your specific front path.",
+    targetKeywords: ["flagstone walkway ideas", "natural stone walkway", "flagstone path"],
+    pillar: "walkway",
+    ctaHeadline: "See flagstone on your walkway",
+    ctaBody: "Upload a photo of your front path and see what a natural flagstone walkway could look like in your space.",
+  },
+  {
+    slug: "stamped-concrete-steps-entry",
+    title: "Stamped Concrete Entry Steps Inspiration | PatioCanvas",
+    headline: "Stamped Concrete Entry Steps",
+    metaDescription:
+      "Stamped concrete entry steps cost $1,500–4,500 and instantly upgrade your home's first impression. See design ideas that work with any exterior.",
+    ogImage: "/og/inspiration-stamped-concrete-steps-entry.jpg",
+    heroAlt: "Stamped concrete front entry steps with decorative border detail",
+    contentBlock:
+      "Entry steps are the first hardscape element a visitor interacts with — which makes them one of the highest-impact upgrades you can make relative to square footage. Stamped concrete steps deliver the visual quality of stone or brick at a fraction of the material cost, and when done well they set the tone for the entire exterior.\n\nThe most effective step designs extend the pattern language of the front walkway. If the walkway is ashlar slate, the steps use the same stamp. If the path is flagstone, the steps follow. This continuity is what separates a designed exterior from a piecemeal one. Riser height and tread depth are the functional baseline: standard 7\" risers and 11–12\" treads work for most entry applications. Going wider (14–16\" treads) on a prominent front entry creates a more generous, welcoming feel — and gives the pattern more surface to read on each tread.\n\nCost ranges for stamped concrete entry steps depend heavily on the number of steps and whether a landing is included. A simple 3-step stoop with a small landing runs $1,500–3,000 installed; a larger 5–6 step entry with a full landing can reach $3,500–6,000. Both options are significantly less expensive than natural bluestone or limestone steps at $200–400 per step installed. Resealing every 2–3 years keeps the color sharp and prevents deicing salt damage in cold climates. PatioCanvas can show you how different stamp patterns and color washes would look on your specific entry before you commit to a contractor.",
+    targetKeywords: ["stamped concrete steps", "concrete entry steps", "front door steps ideas"],
+    pillar: "walkway",
+    ctaHeadline: "Preview stamped steps at your entry",
+    ctaBody: "Upload a photo of your front entry and see what stamped concrete steps could look like in your space.",
+  },
+  {
     slug: "circle-patio-pattern",
     title: "Circle Pattern Stamped Patio Inspiration | PatioCanvas",
     headline: "Circle Pattern Stamped Patio",

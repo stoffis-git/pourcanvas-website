@@ -160,7 +160,7 @@ export const patioArticles: Article[] = [
     title: "Concrete Patio vs Pavers: Which Wins in 2026?",
     headline: "Concrete Patio vs Pavers: An Honest Comparison",
     metaDescription:
-      "Concrete patios cost less upfront. Pavers are easier to repair. Here's a straight comparison of both materials so you can make the right call for your backyard.",
+      "Concrete patio vs pavers: concrete costs $6–18/sq ft, pavers run $15–30. Straight comparison so you can make the right call for your backyard.",
     targetKeywords: ["concrete patio vs pavers", "patio materials comparison", "pavers cost"],
     ogImage: "/og/patio-concrete-vs-pavers.jpg",
     publishedAt: "2026-03-27",

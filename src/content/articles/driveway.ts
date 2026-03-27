@@ -255,4 +255,62 @@ export const drivewayArticles: Article[] = [
       },
     ],
   },
+  {
+    slug: "concrete-driveway-vs-asphalt",
+    pillar: "driveway",
+    title: "Concrete vs Asphalt Driveway: Which Is Right for You?",
+    headline: "Concrete vs Asphalt Driveway: An Honest Comparison",
+    metaDescription:
+      "Concrete driveways cost $4–8/sq ft; asphalt runs $3–6. But upfront cost isn't the whole story. Here's which material wins on your priorities.",
+    targetKeywords: ["concrete vs asphalt driveway", "concrete driveway vs asphalt", "driveway material comparison"],
+    ogImage: "/og/driveway-concrete-vs-asphalt.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Concrete driveways cost $4–8 per sq ft installed; asphalt runs $3–6. On a 500 sq ft driveway, concrete costs $500–1,000 more upfront — but lasts 30–50 years versus 15–30 for asphalt. Which wins depends on your climate, budget, and how much ongoing maintenance you're willing to do.",
+    sections: [
+      {
+        heading: "Upfront Cost: Asphalt Wins",
+        body: "Asphalt driveways cost $3–6 per sq ft installed; concrete runs $4–8 per sq ft. On a standard two-car driveway (400–600 sq ft), asphalt saves roughly $500–1,200 upfront. If budget is the primary constraint, asphalt is the practical choice. The cost gap narrows significantly over time once you factor in asphalt's maintenance requirements — seal coating every 3–5 years and occasional crack filling add $200–600 per round.",
+      },
+      {
+        heading: "Lifespan: Concrete Wins",
+        body: "A properly installed concrete driveway lasts 30–50 years with minimal maintenance. Asphalt typically lasts 15–30 years before requiring replacement. In equivalent climates with equivalent installation quality, you'll replace an asphalt driveway once or twice in the time a concrete one still has years left. Over a 30-year horizon, the total cost of ownership often tilts toward concrete despite the higher upfront price.",
+      },
+      {
+        heading: "Climate Matters: Asphalt Handles Cold Better",
+        body: "This is where asphalt has a genuine advantage. Asphalt is flexible — it contracts and expands with freeze-thaw cycles without cracking as easily as rigid concrete. In climates with harsh winters and repeated freeze-thaw cycles, asphalt holds up better to that stress. Concrete in those climates requires properly placed expansion joints and quality installation to avoid surface cracking. If you're in Minnesota, Wisconsin, or similar climates, asphalt's flexibility is a meaningful advantage.",
+      },
+      {
+        heading: "Hot Climates: Concrete Wins",
+        body: "In hot, sunny climates, the equation reverses. Asphalt softens in extreme heat — it can become tacky underfoot in direct summer sun and is prone to rutting under heavy vehicle weight. Concrete holds its structure in heat and stays harder underfoot. In Arizona, Nevada, or the deep South, concrete's stability in heat is the more important variable. Lighter-colored concrete also reflects more heat, reducing surface temperature compared to black asphalt.",
+      },
+      {
+        heading: "Appearance and Finish Options",
+        body: "Concrete has the clear advantage on aesthetics. Plain broom-finish concrete looks clean and intentional. Stamped concrete ($12–20/sq ft) adds pattern and color that asphalt simply can't replicate. Asphalt is available in standard black — which looks good when freshly sealed but fades to gray-brown over time. If curb appeal matters, concrete wins on every available finish option. Tools like PatioCanvas let you preview how different concrete finishes would look on your specific driveway before you commit.",
+      },
+      {
+        heading: "Maintenance: Asphalt Requires More Attention",
+        body: "Concrete needs resealing every 5–10 years; prompt attention to cracks prevents water infiltration. Asphalt needs seal coating every 3–5 years, crack filling as needed, and eventual resurfacing. Asphalt's maintenance cycle is more frequent and more involved. Both materials require crack repair — but concrete cracks are more difficult to make invisible, while asphalt patches are more forgiving. If you're also planning a patio or walkway in concrete, bundling all projects with one contractor typically saves 10–15% on mobilization.",
+      },
+      {
+        heading: "Which Should You Choose?",
+        body: "Choose concrete if: you're in a hot or mild climate, want design options beyond plain black, and plan to stay in the home long enough to recoup the upfront premium. Choose asphalt if: you're in a cold climate with hard freeze-thaw cycles, want the lowest possible upfront cost, or plan to sell within 5–10 years. The higher upfront cost of concrete makes the most sense as a long-term investment — asphalt makes sense when the budget ceiling is firm and climate conditions favor flexibility.",
+      },
+    ],
+    relatedSlugs: ["concrete-driveway-cost", "stamped-concrete-driveway"],
+    faqs: [
+      {
+        question: "Is concrete or asphalt cheaper for a driveway?",
+        answer: "Asphalt is cheaper upfront at $3–6 per sq ft vs. $4–8 for concrete. On a 500 sq ft driveway, that's roughly $500–1,000 in upfront savings. Over 30 years, concrete's longer lifespan (30–50 years vs. 15–30 for asphalt) and lower maintenance frequency often make the total cost of ownership comparable or lower than asphalt.",
+      },
+      {
+        question: "Does concrete or asphalt last longer for a driveway?",
+        answer: "Concrete lasts 30–50 years; asphalt typically lasts 15–30 years. With proper installation and maintenance, a concrete driveway will outlast an asphalt one by 10–20 years in most climates. Asphalt holds up better in cold climates with hard freeze-thaw cycles due to its flexibility; concrete outperforms in hot climates where asphalt can soften and rut under vehicle weight.",
+      },
+      {
+        question: "What are the pros and cons of concrete vs asphalt driveways?",
+        answer: "Concrete pros: longer lifespan (30–50 years), design options (stamped, colored), better in hot climates, minimal maintenance. Concrete cons: higher upfront cost ($4–8/sq ft), cracks are harder to repair invisibly, more vulnerable in severe freeze-thaw climates. Asphalt pros: lower upfront cost ($3–6/sq ft), flexible in cold climates, easier to repair. Asphalt cons: shorter lifespan (15–30 years), frequent seal coating required, no finish options beyond black.",
+      },
+    ],
+  },
 ];
