@@ -8,6 +8,7 @@ import ArticlePage from "./pages/blog/ArticlePage";
 import InspirationPage from "./pages/InspirationPage";
 import MaterialsHub from "./pages/materials/MaterialsHub";
 import MaterialPage from "./pages/materials/MaterialPage";
+import ConcreteDrivewayGuide from "./pages/guides/ConcreteDrivewayGuide";
 import { allArticles, inspirationPages, allMaterialPages } from "./content";
 
 export const routes: RouteRecord[] = [
@@ -32,6 +33,7 @@ export const routes: RouteRecord[] = [
         element: <InspirationPage />,
         getStaticPaths: () => inspirationPages.map((p) => `inspiration/${p.slug}`),
       },
+      { path: "guides/concrete-driveway", element: <ConcreteDrivewayGuide /> },
       { path: "materials", element: <MaterialsHub /> },
       {
         path: "materials/:slug",
