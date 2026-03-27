@@ -109,4 +109,116 @@ export const patioArticles: Article[] = [
     ],
     relatedSlugs: ["stamped-concrete-ideas", "concrete-patio-cost"],
   },
+  {
+    slug: "concrete-patio-vs-pavers",
+    pillar: "patio",
+    title: "Concrete Patio vs Pavers: Which Wins in 2025?",
+    headline: "Concrete Patio vs Pavers: An Honest Comparison",
+    metaDescription:
+      "Concrete patios cost less upfront. Pavers are easier to repair. Here's a straight comparison of both materials so you can make the right call for your backyard.",
+    targetKeywords: ["concrete patio vs pavers", "patio materials comparison", "pavers cost"],
+    ogImage: "/og/patio-concrete-vs-pavers.jpg",
+    publishedAt: "2025-05-01",
+    intro:
+      "Concrete patios and pavers each have real advantages — and real drawbacks. This comparison doesn't pick a winner arbitrarily. It looks at the factors that actually matter for your situation.",
+    sections: [
+      {
+        heading: "Cost: Concrete Wins",
+        body: "A poured concrete patio runs $6–18 per sq ft installed depending on finish. Paver patios cost $15–30 per sq ft. On a 400 sq ft patio, that's a difference of $3,600–$4,800 at minimum. Concrete's lower cost is the single biggest reason most homeowners choose it.",
+      },
+      {
+        heading: "Repairs: Pavers Win",
+        body: "This is where pavers pull ahead. A cracked concrete slab is difficult and expensive to repair invisibly — patches almost always show. A cracked paver can be lifted and replaced with a matching unit in an hour. If you're in a climate with hard freeze-thaw cycles, that repairability matters.",
+      },
+      {
+        heading: "Maintenance: Draw",
+        body: "Both require periodic maintenance. Concrete needs resealing every 2–3 years. Pavers need joint sand replenishment and occasional re-leveling of sunken units. Neither is maintenance-free — but neither requires significant ongoing expense if you stay on schedule.",
+      },
+      {
+        heading: "Appearance: Depends on Finish",
+        body: "Plain concrete looks plain. Stamped and colored concrete can look exceptional. Pavers naturally have variation and texture. Up close, high-quality pavers have a depth and authenticity that stamped concrete doesn't fully replicate — but from a normal outdoor viewing distance, the difference shrinks considerably.",
+      },
+      {
+        heading: "Longevity",
+        body: "Both last 25–50 years with proper installation and maintenance. Concrete is more vulnerable to cracking from tree roots and soil movement. Pavers flex slightly and tend to handle ground movement better — individual units shift rather than the whole surface cracking.",
+      },
+      {
+        heading: "The Bottom Line",
+        body: "Choose concrete if: you have a moderate budget, want a clean/modern look, and aren't in a severe freeze-thaw climate. Choose pavers if: you're willing to pay more upfront, want easy long-term repairability, or have an irregular space where the flexibility of individual units is an installation advantage.",
+      },
+    ],
+    relatedSlugs: ["stamped-concrete-ideas", "concrete-patio-cost"],
+  },
+  {
+    slug: "small-patio-ideas",
+    pillar: "patio",
+    title: "Small Concrete Patio Ideas That Make Any Backyard Feel Bigger",
+    headline: "Small Concrete Patio Ideas That Actually Work",
+    metaDescription:
+      "A small patio doesn't have to feel cramped. These concrete design ideas use layout, pattern, and scale to make compact outdoor spaces feel intentional and spacious.",
+    targetKeywords: ["small patio ideas", "small backyard patio", "compact patio design"],
+    ogImage: "/og/patio-small-ideas.jpg",
+    publishedAt: "2025-05-08",
+    intro:
+      "Small patios succeed or fail based on decisions about proportion, pattern direction, and how the edge meets the landscape. Here are ideas that punch above their square footage.",
+    sections: [
+      {
+        heading: "Run Patterns Diagonally",
+        body: "Stamped concrete patterns laid at 45 degrees to the house read as larger than the same pattern laid parallel. The diagonal pulls the eye toward the corners of the space, which makes the area feel wider. This works especially well with a running bond brick or plank pattern.",
+      },
+      {
+        heading: "Eliminate Borders",
+        body: "A decorative border adds visual weight and effectively shrinks the usable area. On a small patio, skip the border — or use a very thin, same-color score line instead. Let the slab read as one continuous surface.",
+      },
+      {
+        heading: "Extend Into the Lawn",
+        body: "Consider stepping stones or a poured extension that reaches into the lawn rather than a hard rectangular cutoff. This blurs the boundary between patio and yard, making both feel larger.",
+      },
+      {
+        heading: "Use Larger Fake Stones",
+        body: "Counterintuitively, larger stamp patterns (big flagstone, large plank) make small spaces feel bigger. Smaller, busier patterns (cobblestone, small brick) chop up the surface visually and make the space read smaller.",
+      },
+      {
+        heading: "Light Colors Expand Space",
+        body: "Light gray, buff, or sandstone color washes reflect more light and make the space feel more open. Charcoal and dark colors absorb light and visually tighten the space. In a small patio, err lighter unless you have a specific design reason for contrast.",
+      },
+    ],
+    relatedSlugs: ["concrete-patio-vs-pavers", "patio-color-ideas"],
+  },
+  {
+    slug: "concrete-patio-resurfacing",
+    pillar: "patio",
+    title: "Concrete Patio Resurfacing: When It's Worth It and When to Replace",
+    headline: "Should You Resurface or Replace Your Concrete Patio?",
+    metaDescription:
+      "Resurfacing costs less but isn't always the right call. Here's how to assess your existing concrete slab and decide whether to resurface, repair, or replace.",
+    targetKeywords: ["concrete patio resurfacing", "patio renovation", "resurface concrete"],
+    ogImage: "/og/patio-resurfacing.jpg",
+    publishedAt: "2025-05-15",
+    intro:
+      "A worn or cracked concrete patio doesn't automatically need to be torn out. Resurfacing is a legitimate option — but only under the right conditions. Here's how to know which applies to you.",
+    sections: [
+      {
+        heading: "What Resurfacing Actually Is",
+        body: "Concrete resurfacing means applying a thin overlay (typically 1/4\"–3/8\") of a polymer-modified concrete mix over your existing slab. The overlay bonds to the existing surface and can be stamped, textured, or stained to look like new concrete.",
+      },
+      {
+        heading: "When Resurfacing Works",
+        body: "Resurfacing is appropriate when: the existing slab is structurally sound (no major cracks, no heaving), the surface is just cosmetically worn, stained, or spalled, and the slab is level and properly draining. Cosmetic deterioration is what overlays fix — not structural problems.",
+      },
+      {
+        heading: "When to Replace Instead",
+        body: "Replace the slab if: there are cracks wider than 1/4\" or cracks that are shifting (indicating soil movement), the slab has heaved or settled unevenly, water pools on the surface (drainage problem), or more than 25% of the surface is spalled or deteriorated. Overlaying a bad slab just delays the inevitable.",
+      },
+      {
+        heading: "Cost Comparison",
+        body: "Resurfacing typically costs $3–7 per sq ft for a basic overlay, or $8–15 per sq ft for a decorative stamped overlay. Full replacement runs $6–18 per sq ft. On a 300 sq ft patio, resurfacing saves $900–3,000 over replacement — a meaningful difference if the slab qualifies.",
+      },
+      {
+        heading: "DIY vs Contractor",
+        body: "Basic resurfacing products exist for DIY use, but the prep work (cleaning, etching, crack repair) determines whether the overlay bonds and lasts. Poorly prepped surfaces delaminate within a year. Decorative overlays with stamping or staining are almost always contractor work — the timing and technique require experience.",
+      },
+    ],
+    relatedSlugs: ["concrete-patio-cost", "concrete-patio-vs-pavers"],
+  },
 ];

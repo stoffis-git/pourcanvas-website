@@ -76,4 +76,79 @@ export const inspirationPages: InspirationPage[] = [
     ctaHeadline: "See what a border could do for your driveway",
     ctaBody: "Upload a photo of your driveway and get an AI-generated preview.",
   },
+  {
+    slug: "pool-deck-broom-finish",
+    title: "Broom Finish Pool Deck Ideas | PatioCanvas",
+    headline: "Broom Finish Pool Deck",
+    metaDescription:
+      "A broom-finish concrete pool deck is slip-resistant, affordable, and cleaner-looking than most people expect. See how it looks in real yards.",
+    ogImage: "/og/inspiration-broom-finish-pool.jpg",
+    heroAlt: "Broom finish concrete pool deck surrounding a modern pool",
+    contentBlock:
+      "The broom finish is the original concrete pool deck surface — and for good reason. The light texture left by dragging a stiff broom across fresh concrete creates just enough grip to be safe when wet, without the discomfort of coarser aggregate finishes underfoot. What surprises most homeowners is how clean a well-done broom finish looks. In a cool gray or warm buff color, it reads as intentional rather than default. It also pairs exceptionally well with modern pool coping and tile because it doesn't compete visually with the water or the pool surround design. For a pool deck that needs to handle heavy foot traffic, chemical splashing, and daily wet/dry cycles, a sealed broom-finish slab is one of the most durable and lowest-maintenance surfaces you can install. PatioCanvas can show you how different color and finish options might look around your specific pool shape.",
+    targetKeywords: ["broom finish pool deck", "concrete pool deck", "pool surround ideas"],
+    pillar: "patio",
+    ctaHeadline: "See it around your pool",
+    ctaBody: "Upload a photo of your pool area and get an AI preview in seconds.",
+  },
+  {
+    slug: "stamped-concrete-walkway-grey",
+    title: "Grey Stamped Concrete Walkway Inspiration | PatioCanvas",
+    headline: "Grey Stamped Concrete Walkway",
+    metaDescription:
+      "A grey stamped concrete walkway pairs with almost any home exterior. See how different patterns and shades look in real yards.",
+    ogImage: "/og/inspiration-grey-stamped-walkway.jpg",
+    heroAlt: "Grey stamped concrete front walkway leading to home entrance",
+    contentBlock:
+      "Grey stamped concrete might be the most versatile walkway finish available. It reads as modern without being trendy, pairs with brick, siding, stucco, and stone exteriors equally well, and ages attractively as the sealer weathers and develops a natural patina. The key design decision is pattern choice. Ashlar slate in charcoal gray feels contemporary and structured. Random flagstone in a medium gray feels more traditional and relaxed. Herringbone brick in a cooler gray tone has an almost European quality. All three are excellent choices — the right one depends on your home's architectural style. Color consistency is also important: make sure your contractor uses UV-stable pigments and applies a quality penetrating sealer, since gray tones are the most likely to fade or mottle if the sealer isn't maintained.",
+    targetKeywords: ["stamped concrete walkway", "grey concrete walkway", "front path ideas"],
+    pillar: "walkway",
+    ctaHeadline: "Preview your walkway",
+    ctaBody: "Upload a photo of your front path and see what stamped concrete could look like.",
+  },
+  {
+    slug: "patio-wood-plank-concrete",
+    title: "Wood Plank Concrete Patio Inspiration | PatioCanvas",
+    headline: "Wood Plank Concrete Patio",
+    metaDescription:
+      "Stamped wood-plank concrete looks like real wood but lasts decades without warping, splinters, or annual maintenance. See how it looks in real backyards.",
+    ogImage: "/og/inspiration-wood-plank-patio.jpg",
+    heroAlt: "Stamped concrete patio with realistic wood plank pattern",
+    contentBlock:
+      "Wood plank stamped concrete is one of the most impressive finishes in the concrete contractor's toolkit — and one of the most misunderstood. Done well, it looks remarkably like real wood decking from a distance. Done poorly, it looks like concrete with lines in it. The difference comes down to color layering. A single-color pour stamped with a plank pattern reads as fake immediately. A skilled contractor applies a base color, stamps the pattern, then adds hand-applied accent colors in varying tones to replicate the natural grain variation of real wood. The result can be genuinely convincing. The practical advantages over real wood are significant: no warping, no splinters, no annual refinishing, and it holds up around pools without the moisture damage that degrades real timber. If you've ever wanted the look of a wood deck without the maintenance commitment, this is the finish worth considering.",
+    targetKeywords: ["wood plank concrete patio", "stamped wood concrete", "concrete deck ideas"],
+    pillar: "patio",
+    ctaHeadline: "See how this would look in your backyard",
+    ctaBody: "Upload a photo of your space and get an AI-generated wood plank concrete preview.",
+  },
+  {
+    slug: "exposed-aggregate-patio-white",
+    title: "White Exposed Aggregate Patio Inspiration | PatioCanvas",
+    headline: "White Exposed Aggregate Patio",
+    metaDescription:
+      "White exposed aggregate gives a patio a clean, bright finish that holds up well and looks great with modern landscaping. See real examples.",
+    ogImage: "/og/inspiration-white-aggregate-patio.jpg",
+    heroAlt: "White exposed aggregate concrete patio with modern outdoor setting",
+    contentBlock:
+      "White or light-toned exposed aggregate is having a moment in contemporary outdoor design — and it makes sense why. The combination of a bright base concrete with white quartz or white marble aggregate produces a surface that feels clean and modern without the flatness of smooth white concrete. The texture of the exposed stones catches light differently throughout the day, giving the surface a subtle visual depth. It pairs particularly well with dark-framed windows, black metal furniture, and green plantings — the contrast is striking and very photogenic. From a practical standpoint, white aggregate stays cooler underfoot than dark surfaces in direct sun, which matters for pool decks and outdoor dining areas in warm climates. The one maintenance consideration: white surfaces show staining from leaves, rust, and organic matter more readily than darker finishes. A penetrating sealer applied annually significantly reduces this issue.",
+    targetKeywords: ["exposed aggregate patio", "white concrete patio", "modern patio finish"],
+    pillar: "patio",
+    ctaHeadline: "See this finish in your backyard",
+    ctaBody: "Upload a photo of your outdoor space and see what white aggregate concrete could look like.",
+  },
+  {
+    slug: "circle-patio-pattern",
+    title: "Circle Pattern Stamped Patio Inspiration | PatioCanvas",
+    headline: "Circle Pattern Stamped Patio",
+    metaDescription:
+      "A circular stamped concrete pattern turns an ordinary patio into a design feature. See how it works and what it costs.",
+    ogImage: "/og/inspiration-circle-pattern-patio.jpg",
+    heroAlt: "Stamped concrete patio with decorative circular medallion pattern",
+    contentBlock:
+      "A circular or fan-pattern medallion in stamped concrete is one of the most striking design choices you can make for a patio — and also one of the most committed. Unlike a repeating tile or flagstone pattern, a circle design has a visual center of gravity that organizes the entire space around it. Furniture placement, planting, and even the house's relationship to the patio all get pulled toward that center. When it works, it's exceptional. The circle usually occupies the main gathering area of the patio, with a contrasting border and then a field pattern extending to the edges. Color contrast between the circle and the surrounding surface is what makes the design readable — too similar and the pattern disappears, too contrasting and it feels busy. This is a design that rewards time spent with a contractor reviewing their previous circle-pattern work before committing.",
+    targetKeywords: ["circle pattern patio", "circular stamped concrete", "patio medallion design"],
+    pillar: "patio",
+    ctaHeadline: "Visualize a circle pattern in your space",
+    ctaBody: "Upload a photo of your patio and see what a circular stamped design could look like.",
+  },
 ];

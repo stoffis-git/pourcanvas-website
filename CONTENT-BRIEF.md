@@ -25,9 +25,9 @@ Articles live at `/blog/[pillar]/[slug]`. Each is a pillar-linked content piece 
 | `stamped-concrete-ideas` | 15 Stamped Concrete Patio Ideas for 2025 | 15 Stamped Concrete Patio Ideas That Look Expensive | stamped concrete patio ideas | stamped concrete patterns, outdoor patio design | 900 | **LIVE** |
 | `concrete-patio-cost` | How Much Does a Concrete Patio Cost in 2025? | Concrete Patio Cost: What Homeowners Actually Pay | concrete patio cost | patio installation price, concrete slab cost | 900 | **LIVE** |
 | `patio-color-ideas` | Best Concrete Patio Colors for a Modern Backyard | The Best Concrete Patio Colors (With Real Examples) | concrete patio colors | colored concrete, patio stain colors | 900 | **LIVE** |
-| `concrete-patio-vs-pavers` | Concrete Patio vs Pavers: Which Wins in 2025? | Concrete Patio vs Pavers: An Honest Comparison | concrete patio vs pavers | patio materials comparison, pavers cost | 1000 | TODO |
-| `small-patio-ideas` | Small Concrete Patio Ideas That Make Any Backyard Feel Bigger | Small Concrete Patio Ideas That Actually Work | small patio ideas | small backyard patio, compact patio design | 800 | TODO |
-| `concrete-patio-resurfacing` | Concrete Patio Resurfacing: When It's Worth It and When to Replace | Should You Resurface or Replace Your Concrete Patio? | concrete patio resurfacing | patio renovation, resurface concrete | 900 | TODO |
+| `concrete-patio-vs-pavers` | Concrete Patio vs Pavers: Which Wins in 2025? | Concrete Patio vs Pavers: An Honest Comparison | concrete patio vs pavers | patio materials comparison, pavers cost | 1000 | **LIVE** |
+| `small-patio-ideas` | Small Concrete Patio Ideas That Make Any Backyard Feel Bigger | Small Concrete Patio Ideas That Actually Work | small patio ideas | small backyard patio, compact patio design | 800 | **LIVE** |
+| `concrete-patio-resurfacing` | Concrete Patio Resurfacing: When It's Worth It and When to Replace | Should You Resurface or Replace Your Concrete Patio? | concrete patio resurfacing | patio renovation, resurface concrete | 900 | **LIVE** |
 
 ### Pillar: Driveway — `/blog/driveway`
 
@@ -35,9 +35,9 @@ Articles live at `/blog/[pillar]/[slug]`. Each is a pillar-linked content piece 
 |------|-------|-------------|-----------------|-------------------|--------------|--------|
 | `stamped-concrete-driveway` | Stamped Concrete Driveway Ideas: 12 Styles Worth Considering | Stamped Concrete Driveways That Boost Curb Appeal | stamped concrete driveway | driveway design ideas, decorative concrete | 900 | **LIVE** |
 | `exposed-aggregate-driveway` | Exposed Aggregate Driveway: Pros, Cons, and Best Uses | Is an Exposed Aggregate Driveway Right for You? | exposed aggregate driveway | aggregate finish, textured driveway | 900 | **LIVE** |
-| `concrete-driveway-cost` | Concrete Driveway Cost: What to Budget in 2025 | How Much Does a Concrete Driveway Cost? | concrete driveway cost | driveway installation price | 900 | TODO |
-| `driveway-resurfacing` | Driveway Resurfacing: Concrete vs Asphalt vs Overlay | Driveway Resurfacing: What's Worth the Money? | driveway resurfacing | concrete overlay, driveway repair | 900 | TODO |
-| `circular-driveway-ideas` | Circular Driveway Ideas: Concrete Designs That Add Curb Appeal | Circular Driveway Designs That Actually Work | circular driveway ideas | round driveway, curved driveway design | 800 | TODO |
+| `concrete-driveway-cost` | Concrete Driveway Cost: What to Budget in 2025 | How Much Does a Concrete Driveway Cost? | concrete driveway cost | driveway installation price | 900 | **LIVE** |
+| `driveway-resurfacing` | Driveway Resurfacing: Concrete vs Asphalt vs Overlay | Driveway Resurfacing: What's Worth the Money? | driveway resurfacing | concrete overlay, driveway repair | 900 | **LIVE** |
+| `circular-driveway-ideas` | Circular Driveway Ideas: Concrete Designs That Add Curb Appeal | Circular Driveway Designs That Actually Work | circular driveway ideas | round driveway, curved driveway design | 800 | **LIVE** |
 
 ### Pillar: Walkway — `/blog/walkway`
 
@@ -45,9 +45,9 @@ Articles live at `/blog/[pillar]/[slug]`. Each is a pillar-linked content piece 
 |------|-------|-------------|-----------------|-------------------|--------------|--------|
 | `front-walkway-ideas` | 10 Concrete Front Walkway Ideas for Any Home Style | Concrete Front Walkway Ideas That Actually Look Good | concrete walkway ideas | front path ideas, walkway design | 900 | **LIVE** |
 | `flagstone-vs-concrete-walkway` | Flagstone vs Concrete Walkway: Which Is Worth the Cost? | Flagstone vs Concrete Walkway: An Honest Comparison | flagstone vs concrete walkway | walkway materials comparison | 900 | **LIVE** |
-| `backyard-walkway-ideas` | Backyard Walkway Ideas That Connect Your Outdoor Spaces | Backyard Walkway Ideas for Every Landscape Style | backyard walkway ideas | garden path, stepping stone walkway | 800 | TODO |
-| `concrete-walkway-cost` | Concrete Walkway Cost: What Homeowners Pay in 2025 | How Much Does a Concrete Walkway Cost? | concrete walkway cost | walkway installation price | 800 | TODO |
-| `curved-walkway-ideas` | Curved Walkway Ideas: When a Straight Path Isn't the Right Call | Curved Walkway Designs That Make Your Yard Feel Designed | curved walkway ideas | curved garden path, winding walkway | 800 | TODO |
+| `backyard-walkway-ideas` | Backyard Walkway Ideas That Connect Your Outdoor Spaces | Backyard Walkway Ideas for Every Landscape Style | backyard walkway ideas | garden path, stepping stone walkway | 800 | **LIVE** |
+| `concrete-walkway-cost` | Concrete Walkway Cost: What Homeowners Pay in 2025 | How Much Does a Concrete Walkway Cost? | concrete walkway cost | walkway installation price | 800 | **LIVE** |
+| `curved-walkway-ideas` | Curved Walkway Ideas: When a Straight Path Isn't the Right Call | Curved Walkway Designs That Make Your Yard Feel Designed | curved walkway ideas | curved garden path, winding walkway | 800 | **LIVE** |
 
 ---
 
@@ -64,11 +64,11 @@ Inspiration pages live at `/inspiration/[slug]`. These are thin-content conversi
 | `pool-deck-travertine` | Travertine Pool Deck | travertine pool deck | `inspiration-travertine-pool-deck.jpg` | **LIVE** |
 | `modern-driveway-concrete` | Modern Concrete Driveway | modern concrete driveway | `inspiration-modern-driveway.jpg` | **LIVE** |
 | `cobblestone-driveway-border` | Cobblestone Border Driveway | cobblestone driveway border | `inspiration-cobblestone-border-driveway.jpg` | **LIVE** |
-| `pool-deck-broom-finish` | Broom Finish Pool Deck | broom finish pool deck | `inspiration-broom-finish-pool.jpg` | TODO |
-| `stamped-concrete-walkway-grey` | Grey Stamped Concrete Walkway | stamped concrete walkway | `inspiration-grey-stamped-walkway.jpg` | TODO |
-| `patio-wood-plank-concrete` | Wood Plank Concrete Patio | wood plank concrete patio | `inspiration-wood-plank-patio.jpg` | TODO |
-| `exposed-aggregate-patio-white` | White Exposed Aggregate Patio | exposed aggregate patio | `inspiration-white-aggregate-patio.jpg` | TODO |
-| `circle-patio-pattern` | Circle Pattern Stamped Patio | circle pattern patio | `inspiration-circle-pattern-patio.jpg` | TODO |
+| `pool-deck-broom-finish` | Broom Finish Pool Deck | broom finish pool deck | `inspiration-broom-finish-pool.jpg` | **LIVE** |
+| `stamped-concrete-walkway-grey` | Grey Stamped Concrete Walkway | stamped concrete walkway | `inspiration-grey-stamped-walkway.jpg` | **LIVE** |
+| `patio-wood-plank-concrete` | Wood Plank Concrete Patio | wood plank concrete patio | `inspiration-wood-plank-patio.jpg` | **LIVE** |
+| `exposed-aggregate-patio-white` | White Exposed Aggregate Patio | exposed aggregate patio | `inspiration-white-aggregate-patio.jpg` | **LIVE** |
+| `circle-patio-pattern` | Circle Pattern Stamped Patio | circle pattern patio | `inspiration-circle-pattern-patio.jpg` | **LIVE** |
 
 **To add a new inspiration page:**
 Add an entry to `src/content/inspiration/index.ts` and its OG image to `public/og/`. That's it — the template and route are already wired.
