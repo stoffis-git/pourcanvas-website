@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationUpsellTile } from "@/components/inspiration/InspirationUpsellTile";
+import { FAQSection } from "@/components/FAQSection";
 import { articlesBySlug } from "@/content";
 
 const materialLabels: Record<string, string> = {
@@ -36,6 +37,7 @@ const ArticlePage = () => {
         canonical={`/blog/${article.pillar}/${article.slug}`}
         publishedAt={article.publishedAt}
         keywords={article.targetKeywords}
+        faqs={article.faqs}
       />
       <Header />
       <main className="max-w-3xl mx-auto px-5 py-28 md:py-36">
@@ -91,6 +93,10 @@ const ArticlePage = () => {
             body="PatioCanvas turns your photo into a concrete design preview. Free to try, no account needed."
           />
         </div>
+
+        {article.faqs && article.faqs.length > 0 && (
+          <FAQSection faqs={article.faqs} />
+        )}
 
         {article.relatedMaterials && article.relatedMaterials.length > 0 && (
           <div className="mt-10 border-t pt-8">

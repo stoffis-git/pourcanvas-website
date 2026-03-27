@@ -37,11 +37,21 @@ export const patioArticles: Article[] = [
     ],
     relatedSlugs: ["concrete-patio-cost", "patio-color-ideas"],
     relatedMaterials: ["stamped-concrete"],
+    faqs: [
+      {
+        question: "What stamped concrete patterns look most like real stone?",
+        answer: "Ashlar slate and random flagstone are the closest approximations. Ashlar replicates cut stone with geometric rectangular blocks; random flagstone mimics irregular natural stone with organic shapes. Both look convincing from normal viewing distances when multi-layer color is applied — a single pour color without accent tones gives away the stamp.",
+      },
+      {
+        question: "How much does stamped concrete cost per square foot in 2026?",
+        answer: "Stamped concrete costs $12–18 per sq ft installed in 2026. The range reflects pattern complexity and regional labor — cobblestone and intricate multi-stamp designs sit at the high end; simpler patterns like running bond brick are closer to $12–14. Plain broom-finish concrete runs $6–10/sq ft for comparison.",
+      },
+      {
+        question: "Which stamped concrete pattern works best for small patios?",
+        answer: "Large-scale patterns — ashlar slate, wide wood planks, or large flagstone — make small spaces read as bigger. Small, busy patterns like cobblestone or fine brick chop up the surface and emphasize limited square footage. Running the pattern diagonally at 45 degrees to the house also expands the perceived size without changing the material.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. What stamped concrete patterns look most like real stone?
-  // 2. How much does stamped concrete cost per square foot in 2026?
-  // 3. Which stamped concrete pattern works best for small patios?
   {
     slug: "concrete-patio-cost",
     pillar: "patio",
@@ -78,11 +88,21 @@ export const patioArticles: Article[] = [
     ],
     relatedSlugs: ["stamped-concrete-ideas", "patio-color-ideas"],
     relatedMaterials: ["broom-finish", "exposed-aggregate", "colored-concrete"],
+    faqs: [
+      {
+        question: "How much does a 300 sq ft concrete patio cost?",
+        answer: "A 300 sq ft patio costs $1,800–3,000 for plain broom finish, $3,600–5,400 for stamped concrete, and $2,400–4,200 for exposed aggregate — all installed. These ranges assume a standard flat site with good access. Site prep, demo of an existing surface, and regional labor can push costs 20–50% higher.",
+      },
+      {
+        question: "Is stamped concrete worth the extra cost over plain concrete?",
+        answer: "Stamped concrete ($12–18/sq ft) costs roughly double plain ($6–10/sq ft) and makes the most sense when the rest of your outdoor space is polished — mature landscaping, quality fencing, outdoor furniture. On an otherwise unfinished property, the stamped premium is harder to justify visually. The upgrade pays off most on patios visible from the street or used as an extension of the living space.",
+      },
+      {
+        question: "What's the cheapest concrete patio option?",
+        answer: "Plain broom-finish concrete at $6–10/sq ft installed is the cheapest option. It's durable, low-maintenance, and looks clean with quality sealing. If appearance matters but budget is tight, adding an integral color wash brings the total to $8–14/sq ft — still well below stamped pricing — and makes a plain slab look intentional rather than utilitarian.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. How much does a 300 sq ft concrete patio cost?
-  // 2. Is stamped concrete worth the extra cost over plain concrete?
-  // 3. What's the cheapest concrete patio option?
   {
     slug: "patio-color-ideas",
     pillar: "patio",
@@ -119,11 +139,21 @@ export const patioArticles: Article[] = [
     ],
     relatedSlugs: ["stamped-concrete-ideas", "concrete-patio-cost"],
     relatedMaterials: ["colored-concrete"],
+    faqs: [
+      {
+        question: "What is the most popular concrete patio color in 2026?",
+        answer: "Charcoal gray is the most-searched concrete patio color right now. It pairs with virtually any house exterior, reads as modern without being trendy, and hides surface staining better than lighter shades. It's available as an integral pigment (mixed into the pour) for $2–4/sq ft above plain concrete pricing.",
+      },
+      {
+        question: "Does concrete patio color fade over time?",
+        answer: "Yes — both integral pigments and surface stains fade without proper sealing. UV exposure is the main culprit, particularly for blue and terracotta tones. Resealing every 2–3 years with a quality penetrating sealer significantly slows fading. Specifying UV-stable pigments at the time of pour gives the best long-term color retention.",
+      },
+      {
+        question: "Charcoal vs. sandstone concrete patio: which is better?",
+        answer: "Charcoal is better for cooler climates and contemporary homes — it reads as modern and hides staining well, but absorbs heat and can be uncomfortably hot barefoot in full afternoon sun. Sandstone or buff is better for hot climates and traditional homes — it reflects heat, feels cooler underfoot, and pairs well with warm brick or wood exteriors. Both colors cost the same to apply.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. What is the most popular concrete patio color in 2026?
-  // 2. Does concrete patio color fade over time?
-  // 3. Charcoal vs sandstone concrete patio: which is better?
   {
     slug: "concrete-patio-vs-pavers",
     pillar: "patio",
@@ -164,11 +194,21 @@ export const patioArticles: Article[] = [
     ],
     relatedSlugs: ["stamped-concrete-ideas", "concrete-patio-cost"],
     relatedMaterials: ["concrete-pavers", "flagstone"],
+    faqs: [
+      {
+        question: "Is concrete or pavers cheaper for a patio?",
+        answer: "Concrete is significantly cheaper. A poured concrete patio runs $6–18 per sq ft depending on finish; paver patios cost $15–30 per sq ft. On a 400 sq ft patio, that's a minimum difference of $3,600. Concrete's cost advantage holds at every project size.",
+      },
+      {
+        question: "How long do concrete patios last compared to pavers?",
+        answer: "Both last 25–50 years with proper installation and maintenance. Concrete is more vulnerable to cracking from soil movement and freeze-thaw cycles, and patches are difficult to make invisible. Pavers handle ground movement better since individual units shift rather than the whole surface cracking — and a damaged paver can be replaced in an hour.",
+      },
+      {
+        question: "Which is easier to repair: a concrete or paver patio?",
+        answer: "Pavers are far easier to repair. A cracked paver can be lifted and replaced with a matching unit at minimal cost. A cracked concrete slab requires cutting, removal, and re-pouring a section — and the patch almost always shows due to color variation between old and new concrete. In freeze-thaw climates, this repairability advantage makes pavers worth the higher upfront cost for some homeowners.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. Is concrete or pavers cheaper for a patio?
-  // 2. How long do concrete patios last vs pavers?
-  // 3. Which is easier to repair: concrete or paver patio?
   {
     slug: "small-patio-ideas",
     pillar: "patio",
@@ -204,11 +244,21 @@ export const patioArticles: Article[] = [
       },
     ],
     relatedSlugs: ["concrete-patio-cost", "patio-color-ideas"],
+    faqs: [
+      {
+        question: "How do you make a small patio look bigger?",
+        answer: "Three moves have the most impact: run the stamp pattern diagonally at 45 degrees to expand perceived width, skip the decorative border so the slab reads as one continuous surface, and use a light color wash (buff, light gray, sandstone) to reflect light and open the space. Extending the patio edge into the lawn with stepping stones also blurs the boundary and makes both areas feel larger.",
+      },
+      {
+        question: "What concrete pattern is best for a small patio?",
+        answer: "Large-scale patterns — ashlar slate, random flagstone, or wide wood planks — work better than fine or busy patterns on small patios. Large stamps make the space read as bigger; cobblestone and small brick patterns chop up the surface visually and emphasize limited square footage.",
+      },
+      {
+        question: "What color makes a small patio feel larger?",
+        answer: "Light colors — buff, light gray, or sandstone — reflect more light and make outdoor spaces feel more open. Dark colors like charcoal absorb light and visually tighten the space. On a small patio, lighter tones are the default recommendation unless there's a specific design reason for contrast.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. How do you make a small patio look bigger?
-  // 2. What concrete pattern is best for a small patio?
-  // 3. What color makes a small patio feel larger?
   {
     slug: "concrete-patio-resurfacing",
     pillar: "patio",
@@ -245,9 +295,19 @@ export const patioArticles: Article[] = [
     ],
     relatedSlugs: ["concrete-patio-cost", "concrete-patio-vs-pavers"],
     relatedMaterials: ["concrete-overlay"],
+    faqs: [
+      {
+        question: "How much does it cost to resurface a concrete patio?",
+        answer: "Concrete patio resurfacing costs $3–7 per sq ft for a basic overlay, or $8–15 per sq ft for a decorative stamped overlay. On a 300 sq ft patio, that's $900–4,500 — compared to $1,800–5,400 for full replacement. The savings are real, but only if the existing slab qualifies: structurally sound, no major cracks, properly draining.",
+      },
+      {
+        question: "When should you replace a concrete patio instead of resurfacing it?",
+        answer: "Replace the slab if it has cracks wider than 1/4\", heaving or settling, pooling water, or more than 25% of the surface is spalled or deteriorated. These are structural problems that an overlay won't fix — it will only delay and amplify them. Resurfacing is only appropriate for cosmetic wear on a sound base.",
+      },
+      {
+        question: "Can you resurface a concrete patio yourself?",
+        answer: "Basic resurfacing products exist for DIY use, but success depends almost entirely on prep work — cleaning, etching, and filling cracks properly before the overlay goes down. Poorly prepped surfaces delaminate within a year. Decorative overlays with stamping or staining are almost always better left to contractors, where timing and technique require hands-on experience.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. How much does it cost to resurface a concrete patio?
-  // 2. When should you replace a concrete patio instead of resurfacing?
-  // 3. Can you resurface a cracked concrete patio?
 ];

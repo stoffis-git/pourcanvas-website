@@ -1,5 +1,10 @@
 export type Pillar = "patio" | "driveway" | "walkway";
 
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
 export type Material =
   | "stamped-concrete"
   | "exposed-aggregate"
@@ -57,6 +62,7 @@ export interface Article {
   sections: ArticleSection[];
   relatedSlugs?: string[];
   relatedMaterials?: Material[];
+  faqs?: FAQ[];
 }
 
 export interface InspirationPage {
@@ -71,4 +77,5 @@ export interface InspirationPage {
   pillar?: Pillar;
   ctaHeadline: string;
   ctaBody: string;
+  faqs?: FAQ[];
 }

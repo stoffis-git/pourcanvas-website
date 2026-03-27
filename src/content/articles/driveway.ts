@@ -37,11 +37,21 @@ export const drivewayArticles: Article[] = [
     ],
     relatedSlugs: ["exposed-aggregate-driveway", "concrete-driveway-cost"],
     relatedMaterials: ["stamped-concrete"],
+    faqs: [
+      {
+        question: "How much does a stamped concrete driveway cost per square foot?",
+        answer: "Stamped concrete driveways cost $12–20 per sq ft installed. For a standard two-car driveway (400–500 sq ft), expect $4,800–10,000. The range reflects pattern complexity and labor skill — cobblestone and detailed multi-stamp designs sit at the high end; simpler patterns like running bond brick are closer to $12–14/sq ft.",
+      },
+      {
+        question: "What is the most popular stamped concrete pattern for driveways?",
+        answer: "Cobblestone is the most popular driveway stamp pattern. It reads as upscale, suits traditional and craftsman homes, and the sealed surface handles oil stains and freeze-thaw cycles better than actual cobblestone. An aged-iron or charcoal color wash is the standard pairing. Ashlar slate is the second most common choice for a more contemporary look.",
+      },
+      {
+        question: "How long does a stamped concrete driveway last?",
+        answer: "A properly installed and maintained stamped concrete driveway lasts 25–40 years. The surface requires resealing every 2–3 years to maintain color and protect against staining and UV fade. Skipping sealer maintenance is the most common reason stamped concrete deteriorates prematurely.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. How much does a stamped concrete driveway cost per square foot?
-  // 2. What is the most popular stamped concrete pattern for driveways?
-  // 3. How long does a stamped concrete driveway last?
   {
     slug: "exposed-aggregate-driveway",
     pillar: "driveway",
@@ -74,11 +84,21 @@ export const drivewayArticles: Article[] = [
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
     relatedMaterials: ["exposed-aggregate"],
+    faqs: [
+      {
+        question: "How much does an exposed aggregate driveway cost per square foot?",
+        answer: "Exposed aggregate driveways cost $8–14 per sq ft installed — more than plain broom finish ($6–10/sq ft) but less than stamped concrete ($12–20/sq ft). On a 400–500 sq ft two-car driveway, budget $3,200–7,000. The aggregate type (pea gravel, river stone, recycled glass) affects cost at the upper end of the range.",
+      },
+      {
+        question: "Is exposed aggregate or stamped concrete better for a driveway?",
+        answer: "Exposed aggregate wins on durability, traction, and low maintenance — it hides tire marks, handles freeze-thaw cycles well, and ages without requiring color upkeep. Stamped concrete wins on visual variety if you want a specific designed look. Choose exposed aggregate for reliable performance with minimal attention; choose stamped if visual outcome is the priority.",
+      },
+      {
+        question: "Does an exposed aggregate driveway need sealing?",
+        answer: "Yes. Sealing every 2–3 years protects the exposed aggregate from staining (oil, rust, leaf tannins), reduces water absorption, and extends the finish life. A quality penetrating sealer is the right product — it protects without altering the texture or creating a slippery surface when wet.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. How much does an exposed aggregate driveway cost per square foot?
-  // 2. Is exposed aggregate or stamped concrete better for a driveway?
-  // 3. Does exposed aggregate driveway need sealing?
   {
     slug: "concrete-driveway-cost",
     pillar: "driveway",
@@ -119,11 +139,21 @@ export const drivewayArticles: Article[] = [
     ],
     relatedSlugs: ["stamped-concrete-driveway", "exposed-aggregate-driveway"],
     relatedMaterials: ["broom-finish", "stamped-concrete", "exposed-aggregate"],
+    faqs: [
+      {
+        question: "How much does a two-car concrete driveway cost in 2026?",
+        answer: "A two-car driveway (400–600 sq ft) costs $1,600–4,800 for plain broom finish, $4,800–12,000 for stamped concrete, and $3,200–8,400 for exposed aggregate — all installed in 2026. Demo of an existing driveway adds $400–1,800. Labor rates in California, New York, and the Pacific Northwest run 30–60% above national averages.",
+      },
+      {
+        question: "What is the cheapest concrete driveway finish?",
+        answer: "Plain broom-finish concrete at $4–8/sq ft installed is the cheapest option. It's durable, low-maintenance, and functional. If appearance matters but budget is tight, adding an integral color wash brings the total to $6–12/sq ft — still well below stamped pricing — and makes a plain driveway look intentional.",
+      },
+      {
+        question: "How much more does stamped concrete cost vs. plain for a driveway?",
+        answer: "Stamped concrete ($12–20/sq ft) costs roughly 2–3x more than plain broom finish ($4–8/sq ft). On a 500 sq ft driveway, that's an additional $4,000–6,000. The premium covers skilled labor, release agents, stamps, and sealing. The labor markup is proportionally higher on smaller driveways since setup costs are similar regardless of size.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. How much does a two-car concrete driveway cost in 2026?
-  // 2. What is the cheapest concrete driveway finish?
-  // 3. How much more does a stamped concrete driveway cost vs plain?
   {
     slug: "driveway-resurfacing",
     pillar: "driveway",
@@ -135,7 +165,7 @@ export const drivewayArticles: Article[] = [
     ogImage: "/og/driveway-resurfacing.jpg",
     publishedAt: "2026-03-27",
     intro:
-      "Driveway resurfacing costs $2–8 per sq ft depending on method. Full replacement runs $4–20 per sq ft. On a 400 sq ft driveway, resurfacing saves $800–4,800 over replacement — if the base qualifies. The key word is "if": overlaying a failing base just delays the problem. Here's a straight comparison of concrete overlay, asphalt resurfacing, and full replacement so you can make the right call. The same structural assessment logic applies to patios and walkways.",
+      "Driveway resurfacing costs $2–8 per sq ft depending on method. Full replacement runs $4–20 per sq ft. On a 400 sq ft driveway, resurfacing saves $800–4,800 over replacement — if the base qualifies. The key word is \"if\": overlaying a failing base just delays the problem. Here's a straight comparison of concrete overlay, asphalt resurfacing, and full replacement so you can make the right call. The same structural assessment logic applies to patios and walkways.",
     sections: [
       {
         heading: "Concrete Overlay",
@@ -160,11 +190,21 @@ export const drivewayArticles: Article[] = [
     ],
     relatedSlugs: ["concrete-driveway-cost", "stamped-concrete-driveway"],
     relatedMaterials: ["concrete-overlay"],
+    faqs: [
+      {
+        question: "How much does it cost to resurface a concrete driveway?",
+        answer: "Concrete driveway resurfacing costs $3–8 per sq ft for an overlay. On a 400 sq ft driveway, that's $1,200–3,200 — compared to $1,600–8,000 for full replacement. The savings are significant, but only if the existing base is structurally sound. Overlaying a failing base just delays and amplifies the problem.",
+      },
+      {
+        question: "When should you replace a driveway instead of resurfacing it?",
+        answer: "Replace the driveway if cracks are wider than 1/4\" or actively shifting, the surface heaves or settles unevenly, or water pools on the surface. These are structural or drainage failures that no overlay can fix. Resurfacing is only appropriate when the base is intact and the deterioration is purely cosmetic.",
+      },
+      {
+        question: "Can you resurface an asphalt driveway with concrete?",
+        answer: "Yes, with conditions. A concrete overlay can be applied over structurally sound asphalt that is relatively flat and without significant cracking. However, asphalt and concrete expand and contract at different rates, which can cause the overlay to crack over time — particularly in climates with large temperature swings. Full concrete replacement is more reliable long-term if the budget allows.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. How much does it cost to resurface a concrete driveway?
-  // 2. When should you replace a driveway instead of resurfacing it?
-  // 3. Can you resurface an asphalt driveway with concrete?
   {
     slug: "circular-driveway-ideas",
     pillar: "driveway",
@@ -200,9 +240,19 @@ export const drivewayArticles: Article[] = [
       },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
+    faqs: [
+      {
+        question: "How much does a circular concrete driveway cost?",
+        answer: "A circular concrete driveway typically costs $15,000–40,000 installed, depending on size, finish, and site conditions. The cost reflects the larger square footage (typically 800–1,500 sq ft) plus a complexity premium for curved forming. Cobblestone-stamped finishes ($14–20/sq ft) and a landscaped center island ($2,000–8,000) push the high end.",
+      },
+      {
+        question: "What concrete finish works best for a circular driveway?",
+        answer: "Exposed aggregate ($8–14/sq ft) handles curved edges most cleanly because it has no directional pattern — the finish reads the same regardless of curve angle. Cobblestone stamping is the most popular choice for visual impact but requires precise pattern alignment at the curves. Two-tone plain concrete with a contrasting border is the most budget-efficient design approach.",
+      },
+      {
+        question: "How much space do you need for a circular driveway?",
+        answer: "A functional circular driveway requires a minimum inside radius of 18–20 feet to accommodate standard vehicles, with driveway lanes at least 10–12 feet wide. This means a minimum usable frontage of roughly 50–60 feet — it's not practical for narrow urban lots. Factor in the center island and approach lanes when assessing whether your property has sufficient space.",
+      },
+    ],
   },
-  // GEO: FAQ candidates
-  // 1. How much does a circular concrete driveway cost?
-  // 2. What concrete finish is best for a circular driveway?
-  // 3. How much space do you need for a circular driveway?
 ];
