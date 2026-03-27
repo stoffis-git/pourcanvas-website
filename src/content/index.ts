@@ -5,7 +5,8 @@ import type { Article, Pillar } from "./types";
 
 export { patioArticles, drivewayArticles, walkwayArticles };
 export { inspirationPages } from "./inspiration";
-export type { Article, ArticleSection, InspirationPage, Pillar } from "./types";
+export { allMaterialPages, materialsBySlug } from "./materials";
+export type { Article, ArticleSection, InspirationPage, Pillar, MaterialPage, Material } from "./types";
 
 export const allArticles: Article[] = [
   ...patioArticles,

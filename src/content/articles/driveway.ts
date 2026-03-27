@@ -32,6 +32,7 @@ export const drivewayArticles: Article[] = [
       },
     ],
     relatedSlugs: ["exposed-aggregate-driveway"],
+    relatedMaterials: ["stamped-concrete"],
   },
   {
     slug: "exposed-aggregate-driveway",
@@ -64,6 +65,7 @@ export const drivewayArticles: Article[] = [
       },
     ],
     relatedSlugs: ["stamped-concrete-driveway"],
+    relatedMaterials: ["exposed-aggregate"],
   },
   {
     slug: "concrete-driveway-cost",
@@ -104,6 +106,7 @@ export const drivewayArticles: Article[] = [
       },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "exposed-aggregate-driveway"],
+    relatedMaterials: ["broom-finish", "stamped-concrete", "exposed-aggregate"],
   },
   {
     slug: "driveway-resurfacing",

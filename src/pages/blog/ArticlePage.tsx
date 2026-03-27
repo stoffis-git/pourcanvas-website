@@ -6,6 +6,16 @@ import { SeoHead } from "@/components/SeoHead";
 import { InspirationUpsellTile } from "@/components/inspiration/InspirationUpsellTile";
 import { articlesBySlug } from "@/content";
 
+const materialLabels: Record<string, string> = {
+  "stamped-concrete": "Stamped Concrete",
+  "exposed-aggregate": "Exposed Aggregate",
+  "broom-finish": "Broom Finish",
+  "colored-concrete": "Colored Concrete",
+  "concrete-pavers": "Concrete Pavers",
+  flagstone: "Flagstone",
+  travertine: "Travertine",
+};
+
 const ArticlePage = () => {
   const { pillar, slug } = useParams<{ pillar: string; slug: string }>();
   const article = articlesBySlug.get(`${pillar}/${slug}`);
@@ -79,6 +89,26 @@ const ArticlePage = () => {
             body="PatioCanvas turns your photo into a concrete design preview. Free to try, no account needed."
           />
         </div>
+
+        {article.relatedMaterials && article.relatedMaterials.length > 0 && (
+          <div className="mt-10 border-t pt-8">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-4">
+              Material guides
+            </h3>
+            <ul className="space-y-2">
+              {article.relatedMaterials.map((slug) => (
+                <li key={slug}>
+                  <Link
+                    to={`/materials/${slug}`}
+                    className="text-sm text-primary hover:underline"
+                  >
+                    {materialLabels[slug] ?? slug}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </main>
       <Footer />
     </>

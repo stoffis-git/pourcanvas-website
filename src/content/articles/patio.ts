@@ -36,6 +36,7 @@ export const patioArticles: Article[] = [
       },
     ],
     relatedSlugs: ["concrete-patio-cost", "patio-color-ideas"],
+    relatedMaterials: ["stamped-concrete"],
   },
   {
     slug: "concrete-patio-cost",
@@ -72,6 +73,7 @@ export const patioArticles: Article[] = [
       },
     ],
     relatedSlugs: ["stamped-concrete-ideas", "patio-color-ideas"],
+    relatedMaterials: ["broom-finish", "exposed-aggregate", "colored-concrete"],
   },
   {
     slug: "patio-color-ideas",
@@ -108,6 +110,7 @@ export const patioArticles: Article[] = [
       },
     ],
     relatedSlugs: ["stamped-concrete-ideas", "concrete-patio-cost"],
+    relatedMaterials: ["colored-concrete"],
   },
   {
     slug: "concrete-patio-vs-pavers",

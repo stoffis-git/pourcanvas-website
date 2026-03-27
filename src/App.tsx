@@ -6,7 +6,9 @@ import BlogHub from "./pages/blog/BlogHub";
 import PillarPage from "./pages/blog/PillarPage";
 import ArticlePage from "./pages/blog/ArticlePage";
 import InspirationPage from "./pages/InspirationPage";
-import { allArticles, inspirationPages } from "./content";
+import MaterialsHub from "./pages/materials/MaterialsHub";
+import MaterialPage from "./pages/materials/MaterialPage";
+import { allArticles, inspirationPages, allMaterialPages } from "./content";
 
 export const routes: RouteRecord[] = [
   {
@@ -29,6 +31,12 @@ export const routes: RouteRecord[] = [
         path: "inspiration/:slug",
         element: <InspirationPage />,
         getStaticPaths: () => inspirationPages.map((p) => `inspiration/${p.slug}`),
+      },
+      { path: "materials", element: <MaterialsHub /> },
+      {
+        path: "materials/:slug",
+        element: <MaterialPage />,
+        getStaticPaths: () => allMaterialPages.map((m) => `materials/${m.slug}`),
       },
       { path: "*", element: <NotFound /> },
     ],

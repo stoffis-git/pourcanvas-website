@@ -1,5 +1,40 @@
 export type Pillar = "patio" | "driveway" | "walkway";
 
+export type Material =
+  | "stamped-concrete"
+  | "exposed-aggregate"
+  | "broom-finish"
+  | "colored-concrete"
+  | "concrete-pavers"
+  | "flagstone"
+  | "travertine";
+
+export interface MaterialRelatedArticle {
+  pillar: Pillar;
+  slug: string;
+}
+
+export interface MaterialProCon {
+  pros: string[];
+  cons: string[];
+}
+
+export interface MaterialPage {
+  slug: Material;
+  title: string;
+  headline: string;
+  summary: string;
+  metaDescription: string;
+  targetKeywords: string[];
+  ogImage: string;
+  publishedAt: string;
+  intro: string;
+  sections: ArticleSection[];
+  prosAndCons?: MaterialProCon;
+  relatedPillars: Pillar[];
+  relatedArticles?: MaterialRelatedArticle[];
+}
+
 export interface ArticleSection {
   heading: string;
   body: string;
@@ -19,6 +54,7 @@ export interface Article {
   intro: string;
   sections: ArticleSection[];
   relatedSlugs?: string[];
+  relatedMaterials?: Material[];
 }
 
 export interface InspirationPage {
