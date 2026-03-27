@@ -14,6 +14,8 @@ const materialLabels: Record<string, string> = {
   "concrete-pavers": "Concrete Pavers",
   flagstone: "Flagstone",
   travertine: "Travertine",
+  "polished-concrete": "Polished Concrete",
+  "concrete-overlay": "Concrete Overlay",
 };
 
 const ArticlePage = () => {

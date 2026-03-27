@@ -7,7 +7,9 @@ export type Material =
   | "colored-concrete"
   | "concrete-pavers"
   | "flagstone"
-  | "travertine";
+  | "travertine"
+  | "polished-concrete"
+  | "concrete-overlay";
 
 export interface MaterialRelatedArticle {
   pillar: Pillar;

@@ -143,6 +143,7 @@ export const drivewayArticles: Article[] = [
       },
     ],
     relatedSlugs: ["concrete-driveway-cost", "stamped-concrete-driveway"],
+    relatedMaterials: ["concrete-overlay"],
   },
   {
     slug: "circular-driveway-ideas",

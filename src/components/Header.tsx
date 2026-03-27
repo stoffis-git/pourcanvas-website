@@ -17,6 +17,7 @@ const Header = () => {
           <a href="#how-it-works" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">How It Works</a>
           <a href="#projects" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">Projects</a>
           <Link to="/blog" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
+          <Link to="/materials" className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors">Materials</Link>
           <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-body rounded-full px-6">
             Get Inspired
           </Button>
@@ -36,6 +37,7 @@ const Header = () => {
           <a href="#how-it-works" onClick={() => setMobileOpen(false)} className="text-sm font-body text-muted-foreground">How It Works</a>
           <a href="#projects" onClick={() => setMobileOpen(false)} className="text-sm font-body text-muted-foreground">Projects</a>
           <Link to="/blog" onClick={() => setMobileOpen(false)} className="text-sm font-body text-muted-foreground">Blog</Link>
+          <Link to="/materials" onClick={() => setMobileOpen(false)} className="text-sm font-body text-muted-foreground">Materials</Link>
           <Button size="sm" className="bg-primary text-primary-foreground font-body rounded-full w-full">
             Get Inspired
           </Button>

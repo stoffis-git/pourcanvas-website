@@ -151,6 +151,7 @@ export const patioArticles: Article[] = [
       },
     ],
     relatedSlugs: ["stamped-concrete-ideas", "concrete-patio-cost"],
+    relatedMaterials: ["concrete-pavers", "flagstone"],
   },
   {
     slug: "small-patio-ideas",
@@ -223,5 +224,6 @@ export const patioArticles: Article[] = [
       },
     ],
     relatedSlugs: ["concrete-patio-cost", "concrete-patio-vs-pavers"],
+    relatedMaterials: ["concrete-overlay"],
   },
 ];

@@ -72,6 +72,7 @@ export const walkwayArticles: Article[] = [
       },
     ],
     relatedSlugs: ["front-walkway-ideas"],
+    relatedMaterials: ["flagstone"],
   },
   {
     slug: "backyard-walkway-ideas",

@@ -31,12 +31,12 @@ The four most-searched concrete finish terms. These are already written and live
 
 ## Phase 2 — Comparison Materials + Nav Link
 
-Add these after Phase 1 is indexed and receiving traffic. Also add a "Materials" link to the site header nav when this phase goes live.
+Add these after Phase 1 is indexed and receiving traffic. "Materials" nav link added to site header alongside Phase 2.
 
 | Slug | Headline | Primary Keyword | Related Articles | Target Words | Status |
 |------|----------|-----------------|-----------------|--------------|--------|
-| `concrete-pavers` | Concrete Pavers | concrete pavers | patio/concrete-patio-vs-pavers | 900 | TODO |
-| `flagstone` | Flagstone | flagstone walkway | walkway/flagstone-vs-concrete-walkway, patio/concrete-patio-vs-pavers | 900 | TODO |
+| `concrete-pavers` | Concrete Pavers | concrete pavers | patio/concrete-patio-vs-pavers | 900 | **LIVE** |
+| `flagstone` | Flagstone | flagstone walkway | walkway/flagstone-vs-concrete-walkway, patio/concrete-patio-vs-pavers | 900 | **LIVE** |
 
 ### Content spec for Phase 2
 
@@ -54,9 +54,9 @@ Phase 3 adds lower-volume but high-intent material pages, plus optional matrix p
 
 | Slug | Headline | Primary Keyword | Target Words | Status |
 |------|----------|-----------------|--------------|--------|
-| `travertine` | Travertine Pool Deck | travertine pool deck | 800 | TODO |
-| `polished-concrete` | Polished Concrete Outdoor | polished concrete outdoor | 800 | TODO |
-| `concrete-overlay` | Concrete Overlay | concrete overlay | 900 | TODO |
+| `travertine` | Travertine Pool Deck | travertine pool deck | 800 | **LIVE** |
+| `polished-concrete` | Polished Concrete Outdoor | polished concrete outdoor | 800 | **LIVE** |
+| `concrete-overlay` | Concrete Overlay | concrete overlay | 900 | **LIVE** |
 
 ### Phase 3b — Matrix pages (optional, high SEO value)
 
@@ -107,7 +107,7 @@ All OG/hero images go in `public/og/`.
 - `/materials` is a **parallel dimension** to `/blog` — not a sub-section of it. The URL structure reflects this: no nesting under `/blog`.
 - Material pages target **material-intent queries** ("what is stamped concrete", "stamped concrete pros cons", "exposed aggregate cost"). Blog articles target **project-intent queries** ("stamped concrete patio ideas", "driveway resurfacing").
 - **Bidirectional linking** between the two dimensions is what builds authority. Every material hub links out to 2+ project articles. Every project article with a `relatedMaterials` field links back to its material hubs.
-- No header nav link for `/materials` until Phase 2 — let Phase 1 pages accumulate inbound links from blog articles first.
+- Header nav link for `/materials` added at Phase 2.
 
 ---
 
