@@ -370,4 +370,57 @@ export const drivewayArticles: Article[] = [
       },
     ],
   },
+  {
+    slug: "black-concrete-driveway",
+    pillar: "driveway",
+    title: "Black Concrete Driveway: Cost, Pros, Cons & Real Results",
+    headline: "Black Concrete Driveway: What to Expect Before You Commit",
+    metaDescription: "Black concrete driveways cost $6–12/sq ft and look striking — but heat absorption and fade are real concerns. Here's the full picture for 2026.",
+    targetKeywords: ["black concrete driveway", "dark concrete driveway", "black driveway ideas"],
+    ogImage: "/og/driveway-black-concrete.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "A black integrally colored concrete driveway costs $6–12 per sq ft installed — $2–4 per sq ft above plain grey concrete for the pigment. On a 500 sq ft two-car driveway, that's $3,000–6,000. The look is bold and increasingly popular, but it comes with real practical tradeoffs around heat absorption, fading, and sealer maintenance that most contractors don't volunteer upfront. Here's what you actually need to know before committing. If you're also planning a front walkway, the same dark-pigment considerations apply.",
+    sections: [
+      {
+        heading: "How Black Concrete Is Made — and Why It Matters",
+        body: "Black concrete achieves its color through integral pigment — iron oxide or carbon black dye mixed directly into the concrete pour before it's placed. This is different from a surface stain or coating: the color runs through the full depth of the slab, so chips and surface wear expose the same color beneath rather than a grey base. Integral pigment is the only method worth considering for a driveway where vehicle traffic and edge impacts are routine. Surface stains ($1–3/sq ft) fade and chip within a few years under driveway conditions; integral color is the durable approach. The pigment premium adds $2–4 per sq ft over plain concrete — a relatively modest cost for a result that holds.",
+      },
+      {
+        heading: "The Heat Problem: What Black Driveways Do in Summer",
+        body: "Dark concrete absorbs significantly more solar radiation than light-colored surfaces. A black driveway in direct afternoon sun can reach 140–160°F on a 90°F day — 40–50°F hotter than the air temperature. That's uncomfortable to walk across barefoot, can soften asphalt edging strips or adjacent materials, and puts more thermal stress on the slab over time through repeated expansion and contraction. In climates with hot summers (zones 8–11, much of the South and Southwest), this is a serious consideration. In moderate or northern climates, it's less consequential — and the heat absorption can even be a slight advantage for ice melt in winter. If you're committed to a dark driveway in a hot climate, a deep charcoal (not true black) and a UV-reflective penetrating sealer reduce surface temperatures by 10–15°F.",
+      },
+      {
+        heading: "Black vs. Charcoal: The Practical Distinction",
+        body: "True black concrete — fully saturated carbon black or iron oxide at maximum loading — is striking but the hardest to maintain. Over time, UV exposure breaks down the pigment binder and the surface fades to an uneven brownish-grey. Charcoal (dark grey with strong saturation) is a more forgiving choice: it reads as nearly black from the street, fades more gracefully and uniformly, and costs the same. If your goal is a bold, dark driveway that looks good for years with normal sealer maintenance, specify a charcoal or graphite integral color rather than maximum-black loading. Most contractors with experience in dark concrete will steer you this direction — it's worth asking why if they don't.",
+      },
+      {
+        heading: "Sealer Maintenance: Non-Negotiable for Dark Concrete",
+        body: "A penetrating sealer is required for dark concrete driveways — applied at installation and every 3–5 years thereafter. Without it, UV degradation fades the surface from deep charcoal to a washed-out mid-grey within 3–5 years. Penetrating sealers (silane-siloxane or siliconate formula) are the right product: they protect color depth without adding surface sheen, and they don't require stripping before reapplication. Film-forming sealers (acrylic, polyurethane) add a gloss that some homeowners want but creates a surface that looks worn when the film breaks down — more visible on dark surfaces than light ones. Budget $150–300 per application for a professional resealing, or $40–80 in product for a DIY job on a 500 sq ft driveway.",
+      },
+      {
+        heading: "Black Concrete vs. Asphalt: Which Is Actually Darker",
+        body: "The most common question from homeowners considering a black driveway: is it really darker than asphalt? Fresh asphalt is deep black — often darker than even maximum-pigment concrete. But asphalt fades to an oxidized grey within a few years without seal coating; maintained asphalt cycles between dark and grey over time. Black concrete, maintained with a quality sealer, holds a consistent deep charcoal that reads darker than weathered asphalt and more intentional than sealed asphalt's inconsistent sheen. The key difference is aesthetic consistency: black concrete looks designed; maintained asphalt looks maintained. For the same visual result with more design control, black concrete is the stronger choice. See how different dark tones would look on your specific driveway with tools like PatioCanvas before committing to a color.",
+      },
+      {
+        heading: "What Black Driveways Work Best With",
+        body: "A black or charcoal concrete driveway makes the strongest visual impact against a light home exterior — white, light grey, cream, or warm beige. The high contrast reads as architectural and deliberate. Against a dark home exterior (dark grey, navy, dark brown), the contrast disappears and the driveway blends rather than anchors. Light-toned window frames and trim, structured landscaping, and clean edge detailing amplify the effect. Where black driveways fail: underdeveloped landscapes, mismatched exterior materials, or homes that need other maintenance first. A bold driveway in a cluttered setting looks out of place, not elevated. If you're also redoing a front walkway or patio, extending the dark concrete theme across all three surfaces creates the most cohesive result — though a slightly lighter tone on the walkway and patio avoids the heat issues of full black on pedestrian surfaces.",
+      },
+    ],
+    relatedSlugs: ["modern-driveway-ideas", "concrete-driveway-cost"],
+    faqs: [
+      {
+        question: "How much does a black concrete driveway cost?",
+        answer: "A black integrally colored concrete driveway costs $6–12 per sq ft installed — $2–4 per sq ft above plain grey concrete for the pigment premium. On a standard 500 sq ft two-car driveway, that's $3,000–6,000. Add resealing every 3–5 years at $40–80 DIY or $150–300 professionally applied to maintain color depth.",
+      },
+      {
+        question: "Does black concrete fade?",
+        answer: "Yes — without sealer maintenance, black concrete fades to a washed-out mid-grey within 3–5 years from UV exposure. A penetrating sealer applied at installation and every 3–5 years significantly slows fading. Specifying charcoal or graphite integral color (rather than maximum-loading true black) also produces more graceful, even fading over time. UV-stable pigments and a quality penetrating sealer are both worth specifying at the time of pour.",
+      },
+      {
+        question: "Is black concrete hotter than regular concrete?",
+        answer: "Yes. Dark concrete absorbs more solar radiation — a black driveway can reach 140–160°F in direct afternoon sun on a 90°F day, versus 110–120°F for a light grey surface. In hot climates (zones 8–11), this is a real consideration. In northern climates, the heat absorption has minimal impact in summer and a slight advantage for winter ice melt. A deep charcoal rather than true black, combined with a UV-reflective penetrating sealer, reduces surface temperatures by 10–15°F.",
+      },
+    ],
+  },
 ];

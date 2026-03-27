@@ -368,4 +368,110 @@ export const patioArticles: Article[] = [
       },
     ],
   },
+  {
+    slug: "pool-deck-ideas-concrete",
+    pillar: "patio",
+    title: "Concrete Pool Deck Ideas: Finishes, Costs & Comparisons",
+    headline: "Pool Deck Concrete Ideas: What to Choose and What to Spend",
+    metaDescription: "Concrete pool deck finishes run $6–18/sq ft. Broom finish, exposed aggregate, stamped — here's which works best and what a 500 sq ft deck costs.",
+    targetKeywords: ["pool deck ideas concrete", "concrete pool deck", "pool deck finishes"],
+    ogImage: "/og/patio-pool-deck-ideas-concrete.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "A concrete pool deck costs $6–18 per sq ft installed depending on finish — $3,000–9,000 for a typical 500 sq ft deck. Broom finish is the most practical choice; stamped delivers the most visual impact; exposed aggregate splits the difference on both cost and performance. The right finish depends on how much slip resistance you need, how hot your climate is, and how much maintenance you're willing to do. Here's a straight comparison of every concrete pool deck option available in 2026.",
+    sections: [
+      {
+        heading: "Broom Finish: The Practical Baseline",
+        body: "A broom-finish concrete pool deck costs $6–10 per sq ft installed. For a standard 500 sq ft deck, that's $3,000–5,000. The broom texture provides enough grip for wet feet without the harshness of coarser aggregate finishes, and it's easy to clean with a pressure washer. In a cool grey or warm buff color, it reads as clean and intentional — not like a default choice. It's also the easiest finish to repair and extend if you add a pool house or landscaping later, since color-matching plain concrete is straightforward. The main limitation: broom finish offers fewer visual options than stamped or aggregate surfaces.",
+      },
+      {
+        heading: "Exposed Aggregate: Slip Resistance Without the Stamp Premium",
+        body: "Exposed aggregate pool decks cost $8–14 per sq ft — the middle ground between plain and stamped. The washed surface reveals the stone aggregate below, creating a texture that's more slip-resistant than broom finish and holds up to pool chemical splash better than most surfaces. In a pea gravel or river stone mix, it looks genuinely attractive. The trade-off: coarser aggregate surfaces can be rough underfoot for bare feet, particularly in medium-stone sizes. Specify a fine aggregate (pea gravel) if comfort is the priority. Also hides chemical staining and organic debris better than smooth surfaces — a practical advantage for a surface that sees daily water splash.",
+      },
+      {
+        heading: "Stamped Concrete: Maximum Visual Impact",
+        body: "Stamped concrete pool decks run $12–18 per sq ft. The most popular patterns around pools are travertine-look stamps (neutral, warm tones that complement water and tile), ashlar slate in grey or buff, and large-format flagstone. The visual impact is significant — a well-done stamped deck reads as natural stone from any normal distance. The practical consideration: film-forming sealers required to maintain stamped finishes can become slippery when wet if the wrong product is used. Specify a sealer with added anti-slip additive, or use a matte-finish sealer rather than a high-gloss wet-look product. Pool deck stamping is higher-stakes work than patio stamping — ask for pool-specific references.",
+      },
+      {
+        heading: "Broom Finish vs. Exposed Aggregate vs. Stamped: Which to Choose",
+        body: "Choose broom finish if: budget is the primary constraint, or you want the easiest long-term maintenance and repair. Choose exposed aggregate if: you want better slip resistance than broom finish, more visual texture, and a finish that ages gracefully without color maintenance. Choose stamped concrete if: visual impact is the priority, you're willing to maintain the sealer annually, and your contractor has direct pool deck stamping experience. In hot climates, lighter tones of all three finishes stay cooler underfoot — dark stamped concrete in a hot Arizona sun can reach temperatures uncomfortable for bare feet.",
+      },
+      {
+        heading: "Heat and Barefoot Comfort: The Climate Factor",
+        body: "Any dark concrete surface — charcoal broom finish, dark aggregate, dark-stamped finishes — absorbs significantly more heat than lighter tones. In climates with hot summers, a dark pool deck can reach 40–60°F above air temperature in direct afternoon sun — uncomfortable and potentially damaging to bare feet. Lighter grey, buff, and white-aggregate finishes stay noticeably cooler. This is one of the more consequential design decisions for a pool deck: go 2–3 shades lighter than you think you need if your pool gets full afternoon sun. Travertine-stamped concrete in a warm ivory or buff tone is the most heat-conscious stamped option.",
+      },
+      {
+        heading: "Pool Deck Cost Summary: 500 sq ft",
+        body: "Budget guide for a 500 sq ft pool deck in 2026: broom-finish plain concrete, $3,000–5,000; exposed aggregate, $4,000–7,000; stamped concrete (travertine, flagstone, or slate patterns), $6,000–9,000. Add 15–25% for demo of an existing deck. A quality sealer costs $150–400 to apply professionally on a 500 sq ft deck and should be reapplied every 2–3 years for stamped finishes and every 3–5 years for plain or aggregate surfaces. Tools like PatioCanvas let you see how different finishes and tones would look around your specific pool layout before you commit to a contractor.",
+      },
+    ],
+    relatedSlugs: ["concrete-patio-cost", "concrete-patio-resurfacing"],
+    faqs: [
+      {
+        question: "What is the best concrete finish for a pool deck?",
+        answer: "Exposed aggregate is the most practical pool deck finish — it provides excellent slip resistance, hides chemical staining well, and ages attractively without requiring color maintenance. Broom finish is the most budget-friendly at $6–10/sq ft. Stamped concrete delivers the best visual impact at $12–18/sq ft but requires anti-slip sealer and pool-experienced contractors. In hot climates, all three finishes should be specified in lighter tones to keep surface temperatures manageable barefoot.",
+      },
+      {
+        question: "How much does a concrete pool deck cost?",
+        answer: "A 500 sq ft concrete pool deck costs $3,000–5,000 for broom finish, $4,000–7,000 for exposed aggregate, and $6,000–9,000 for stamped concrete — all installed in 2026. Demo of an existing deck adds 15–25%. Regional labor in California and the Northeast runs 30–50% above these national averages. Sealing adds $150–400 per application, needed every 2–3 years for stamped and every 3–5 years for plain finishes.",
+      },
+      {
+        question: "Is stamped concrete slippery around a pool?",
+        answer: "Stamped concrete can be slippery around a pool if the wrong sealer is used. High-gloss wet-look sealers create a slippery surface when wet — a serious safety concern for a pool deck. Specify a matte or satin sealer with an anti-slip additive for any stamped pool deck. Properly sealed with the right product, stamped concrete provides adequate traction. Exposed aggregate is naturally more slip-resistant and doesn't require a slip-additive.",
+      },
+    ],
+  },
+  {
+    slug: "concrete-patio-crack-repair",
+    pillar: "patio",
+    title: "Concrete Patio Crack Repair: Fix or Resurface?",
+    headline: "Concrete Patio Cracks: How to Fix Them and When to Replace",
+    metaDescription: "Concrete patio crack repair costs $100–500 DIY or $300–1,500 hired out. Here's how to assess your cracks and pick the right fix.",
+    targetKeywords: ["concrete patio crack repair", "patio crack fix", "concrete crack repair"],
+    ogImage: "/og/patio-concrete-crack-repair.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Concrete patio crack repair costs $100–500 in materials for a DIY job, or $300–1,500 for a professional repair depending on the number and severity of cracks. Whether you repair or replace depends on two things: crack width and whether the slabs on either side of the crack are level. Hairline and stable cracks can be repaired invisibly. Shifting or wide cracks signal a structural problem that repair won't solve. Here's how to read your cracks and make the right call — the same assessment applies to concrete driveways and walkways.",
+    sections: [
+      {
+        heading: "Hairline Cracks: Fix Them Now, Cheaply",
+        body: "Hairline cracks (under 1/8\" wide, slabs level on both sides) are the easiest repair — and the most important to catch early. Water infiltrating a hairline crack expands during freeze-thaw cycles, widening the crack from the inside. A quality polyurethane crack filler or concrete caulk costs $15–30 per tube at any hardware store and is a DIY job. One tube handles 10–15 linear feet of hairline cracks. Apply to a clean, dry surface, tool flush with the surrounding concrete, and let cure for 24 hours before foot traffic. Early treatment at this stage prevents a $20 repair from becoming a $2,000 replacement.",
+      },
+      {
+        heading: "Cracks Under 1/4\": Repair or Resurface",
+        body: "Cracks up to 1/4\" wide with slabs sitting level are repairable, but they're at the threshold where the repair will be visible. A v-grooved crack (widened slightly with a grinder for better product adhesion) filled with epoxy injection or flexible polyurethane filler holds longer than a surface-applied filler on a wider crack. Professional crack repair in this range typically costs $150–400 per crack, including surface prep and the repair compound. For a patio with multiple cracks in this range, a resurfacing overlay ($3–7/sq ft) may be more cost-effective than individual repairs — it addresses all of them at once and creates a uniform surface.",
+      },
+      {
+        heading: "Shifting or Wide Cracks: Replace, Don't Repair",
+        body: "If the slab sections on either side of a crack are at different heights — even 1/4\" of differential — the soil or base beneath the slab has moved. Filling the crack surface is not a fix; it's a cosmetic cover that will reopen within a season or two. The same is true for cracks wider than 1/4\" that are actively growing. These conditions require either mudjacking (injecting grout beneath the slab to re-level it, $500–1,500 for a patio) or full slab replacement ($6–18/sq ft). A contractor can assess whether the base movement is ongoing or stable — if stable, mudjacking is a legitimate repair; if active, replacement is the only durable solution.",
+      },
+      {
+        heading: "Resurface vs. Repair: When an Overlay Makes More Sense",
+        body: "If your patio has multiple cracks, surface spalling, or significant staining in addition to cracks, a concrete overlay ($3–7/sq ft for plain; $8–15/sq ft for decorative) addresses all problems at once rather than chasing individual repairs. The overlay bonds to the existing slab, creates a fresh surface, and can be stamped or colored to transform the patio's appearance entirely. The condition for this to work: the existing slab must be structurally sound and level — no shifting, no significant heaving. An overlay on a moving slab will crack in the same locations within a year.",
+      },
+      {
+        heading: "DIY vs. Hiring a Contractor for Crack Repair",
+        body: "DIY crack repair is appropriate for hairline and stable cracks under 1/8\": the materials are inexpensive, the technique is straightforward, and the stakes are low if you don't get it perfect the first time. Cracks 1/8\"–1/4\" can be DIY'd but benefit from a contractor's v-groove preparation and injection technique, which extends repair longevity. Shifting cracks and resurfacing work should be left to contractors — both require proper diagnosis and execution that significantly impacts long-term results. For context: a professional resurfacing overlay on a 300 sq ft patio runs $900–4,500, compared to $1,800–5,400 for full replacement. Tools like PatioCanvas can help you visualize what your patio would look like with a fresh overlay or a new surface before committing to either approach.",
+      },
+      {
+        heading: "Preventing Future Cracking",
+        body: "Most patio cracking is preventable. Proper control joint placement (every 8–12 feet in each direction) gives the slab a place to crack along planned lines rather than randomly. A 4\" slab with a well-compacted gravel base handles freeze-thaw cycles significantly better than a thin pour on unstable soil. Sealing every 2–3 years (or 4–5 years for plain surfaces) prevents water infiltration that drives freeze-thaw cracking. And keeping tree roots away from the slab edge — or installing root barriers at pour time — prevents the most common cause of heaving and crack propagation in established landscapes. If you're also planning a driveway, the same base prep and joint standards apply.",
+      },
+    ],
+    relatedSlugs: ["concrete-patio-resurfacing", "concrete-patio-sealing"],
+    faqs: [
+      {
+        question: "How much does concrete patio crack repair cost?",
+        answer: "DIY crack repair costs $15–30 per tube of crack filler for hairline cracks — one tube covers 10–15 linear feet. Professional crack repair runs $150–400 per crack for cracks under 1/4\", including surface prep and injection technique. A full resurfacing overlay, which addresses multiple cracks at once, costs $900–4,500 for a 300 sq ft patio ($3–15/sq ft). Full replacement runs $1,800–5,400 for the same area.",
+      },
+      {
+        question: "When should you replace a concrete patio instead of repairing cracks?",
+        answer: "Replace the patio if slab sections on either side of the crack are at different heights (differential settlement), cracks are wider than 1/4\" and actively growing, or more than 25% of the surface is damaged. These indicate a structural or base failure that crack repair can't fix — it will just reopen. Hairline cracks and stable cracks under 1/4\" on level slabs are repairable and don't require replacement.",
+      },
+      {
+        question: "Can you fix cracks in a concrete patio yourself?",
+        answer: "Yes, for hairline cracks and stable cracks under 1/8\". Apply a polyurethane crack filler or concrete caulk to a clean, dry surface, tool flush, and let cure 24 hours. Wider cracks (1/8\"–1/4\") benefit from contractor v-groove prep and epoxy injection for longer-lasting results. Shifting cracks, mudjacking, and resurfacing overlays should be left to contractors — improper execution shortens repair life significantly.",
+      },
+    ],
+  },
 ];

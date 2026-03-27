@@ -211,6 +211,20 @@ export const inspirationPages: InspirationPage[] = [
     ctaBody: "Upload a photo of your pool deck and see what grey concrete could look like in your space.",
   },
   {
+    slug: "herringbone-walkway-concrete",
+    title: "Herringbone Concrete Walkway Ideas & Inspiration | PatioCanvas",
+    headline: "Herringbone Concrete Walkway",
+    metaDescription: "A herringbone-stamped concrete walkway adds a classic, upscale look to any front entry. See how it looks in real yards and what it costs.",
+    ogImage: "/og/inspiration-herringbone-walkway-concrete.jpg",
+    heroAlt: "Herringbone pattern stamped concrete walkway leading to a front door",
+    contentBlock:
+      "The herringbone pattern is one of the oldest and most enduring hardscape designs — and it translates exceptionally well to concrete walkways. The diagonal interlocking \"brick\" layout creates a sense of movement and formality that draws visitors naturally toward the front door. In stamped concrete, you get the full visual effect of traditional herringbone brick without the joint maintenance, weed pressure, or uneven settling that real brick brings over time.\n\nColor choice defines the look entirely. A warm buff or sandstone wash suits craftsman, colonial, and traditional homes — it reads as classic and warm, complementing red brick facades and painted wood trim. A cooler charcoal or slate grey shifts the same pattern toward contemporary territory, working well with modern and transitional home styles. The 45-degree angle of the herringbone layout also optically widens a narrow walkway, making it an especially strong choice for front paths where the width is constrained.\n\nFrom a cost standpoint, herringbone-stamped concrete walkways run $12–18 per sq ft installed — identical to other stamped patterns but significantly less than real brick pavers at $20–35 per sq ft. On a typical 4-foot-wide, 30-foot front walkway (120 sq ft), that's $1,440–2,160. The pattern holds its visual crispness as it weathers and reseals, which is why herringbone walkways consistently photograph well years after installation. Sealing every 2–3 years maintains color depth and keeps the pattern sharp. PatioCanvas can show you how herringbone in different color washes would look on your specific front path before you book a contractor.",
+    targetKeywords: ["herringbone walkway", "herringbone concrete walkway", "brick pattern walkway"],
+    pillar: "walkway",
+    ctaHeadline: "See herringbone on your front path",
+    ctaBody: "Upload a photo of your front walkway and see what a herringbone stamped concrete pattern could look like in your space.",
+  },
+  {
     slug: "modern-black-concrete-driveway",
     title: "Black Concrete Driveway Ideas & Inspiration | PatioCanvas",
     headline: "Black Concrete Driveway",
