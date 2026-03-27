@@ -15,9 +15,11 @@ export const routes: RouteRecord[] = [
     children: [
       { index: true, element: <Index /> },
       { path: "blog", element: <BlogHub /> },
-      { path: "blog/patio", element: <PillarPage /> },
-      { path: "blog/driveway", element: <PillarPage /> },
-      { path: "blog/walkway", element: <PillarPage /> },
+      {
+        path: "blog/:pillar",
+        element: <PillarPage />,
+        getStaticPaths: () => ["blog/patio", "blog/driveway", "blog/walkway"],
+      },
       {
         path: "blog/:pillar/:slug",
         element: <ArticlePage />,
