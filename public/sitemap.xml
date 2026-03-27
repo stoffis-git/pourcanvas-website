@@ -75,6 +75,12 @@
 
   <!-- Driveway articles -->
   <url>
+    <loc>https://patiocanvas.com/blog/driveway/concrete-driveway-vs-asphalt</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://patiocanvas.com/blog/driveway/stamped-concrete-driveway</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -194,6 +200,24 @@
   </url>
 
   <!-- Inspiration pages -->
+  <url>
+    <loc>https://patiocanvas.com/inspiration/flagstone-walkway-natural</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patiocanvas.com/inspiration/exposed-aggregate-driveway-grey</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patiocanvas.com/inspiration/stamped-concrete-steps-entry</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://patiocanvas.com/inspiration/stamped-concrete-patio-grey</loc>
     <lastmod>2026-03-27</lastmod>
