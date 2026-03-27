@@ -9,7 +9,7 @@ const steps = [
   {
     icon: Sparkles,
     title: "Get AI Inspiration",
-    description: "We generate beautiful design ideas tailored to your space.",
+    description: "See your space in stamped concrete, exposed aggregate, pavers, and more — generated in seconds.",
   },
   {
     icon: Heart,
@@ -43,6 +43,16 @@ const HowItWorks = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <a
+            href="#try-it"
+            className="inline-block rounded-full px-8 py-3 font-semibold text-sm border-0 hover:opacity-90 transition-opacity"
+            style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
+          >
+            Try It Yourself →
+          </a>
         </div>
       </div>
     </section>

@@ -18,14 +18,21 @@ const HeroSection = () => {
       <div className="max-w-6xl mx-auto relative">
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
           <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-3">
-            Your Patio, Reimagined
+            AI Concrete Patio & Driveway Visualizer
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-5">
             See What Your Patio <span className="gradient-text">Could Be</span>
           </h1>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Discover stunning concrete design ideas for your outdoor space. Drag the slider to reveal the transformation.
+            See how stamped concrete, exposed aggregate, or colored pavers would transform your patio, driveway, or walkway — before you commit to anything.
           </p>
+          <a
+            href="#try-it"
+            className="inline-block mt-6 rounded-full px-8 py-3 font-semibold text-sm border-0 hover:opacity-90 transition-opacity"
+            style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
+          >
+            Try It Free →
+          </a>
         </div>
 
         <div className="max-w-4xl mx-auto">
