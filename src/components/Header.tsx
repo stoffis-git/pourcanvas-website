@@ -52,13 +52,13 @@ const Header = () => {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border px-5 py-4 flex flex-col gap-1">
+        <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border px-5 py-5 flex flex-col gap-2">
           {navLinks.map(({ label, to }) => (
             <Link
               key={to}
               to={to}
               onClick={() => setMobileOpen(false)}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-xl px-3 py-2 transition-all"
+              className="text-base font-medium text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-xl px-3 py-3 transition-all"
             >
               {label}
             </Link>
