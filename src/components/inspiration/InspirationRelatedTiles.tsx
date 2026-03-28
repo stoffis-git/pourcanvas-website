@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import { inspirationPages } from "@/content";
 import type { Pillar } from "@/content/types";
+import { InspirationTile } from "./InspirationTile";
 
 const pillarLabel: Record<Pillar, string> = {
   patio: "Patio",
@@ -33,25 +33,13 @@ export const InspirationRelatedTiles = ({
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {related.map((page) => (
-          <Link
+          <InspirationTile
             key={page.slug}
-            to={`/inspiration/${page.slug}`}
-            className="group block rounded-xl overflow-hidden hover:opacity-90 transition-opacity"
-          >
-            {page.ogImage.startsWith("https://") ? (
-              <img
-                src={page.ogImage}
-                alt={page.heroAlt}
-                className="w-full aspect-[2/3] object-cover rounded-xl"
-                draggable={false}
-              />
-            ) : (
-              <div className="w-full aspect-[2/3] rounded-xl bg-muted" />
-            )}
-            <p className="mt-2 text-sm font-body font-medium text-foreground leading-snug line-clamp-2">
-              {page.headline}
-            </p>
-          </Link>
+            slug={page.slug}
+            ogImage={page.ogImage}
+            heroAlt={page.heroAlt}
+            headline={page.headline}
+          />
         ))}
       </div>
     </div>

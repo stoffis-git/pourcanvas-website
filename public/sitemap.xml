@@ -26,6 +26,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://pourcanvas.com/blog/driveway/concrete-driveway-color-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://pourcanvas.com/blog/driveway/concrete-driveway-cost</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -37,6 +42,11 @@
   </url>
   <url>
     <loc>https://pourcanvas.com/blog/driveway/driveway-border-ideas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/driveway/driveway-edging-ideas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -61,7 +71,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://pourcanvas.com/blog/driveway/stamped-concrete-driveway-cost</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://pourcanvas.com/blog/patio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/best-concrete-finish-pool-deck</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -136,6 +156,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://pourcanvas.com/blog/walkway/concrete-walkway-patterns</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://pourcanvas.com/blog/walkway/curved-walkway-ideas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -161,12 +186,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://pourcanvas.com/driveway</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/guides/concrete-driveway</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/brushed-concrete-driveway-charcoal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pourcanvas.com/inspiration/circle-patio-pattern</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pourcanvas.com/inspiration/cobblestone-driveway-border</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/concrete-patio-ideas-modern-grey</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -181,6 +226,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://pourcanvas.com/inspiration/exposed-aggregate-driveway-tan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pourcanvas.com/inspiration/exposed-aggregate-patio-white</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -191,12 +241,22 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://pourcanvas.com/inspiration/flagstone-patio-grey</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pourcanvas.com/inspiration/flagstone-walkway-natural</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pourcanvas.com/inspiration/herringbone-brick-patio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/herringbone-brick-walkway-red</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -231,7 +291,37 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://pourcanvas.com/inspiration/salt-finish-driveway-tan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/stained-concrete-driveway-slate-blue</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/stained-concrete-driveway-walnut</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/stained-concrete-walkway-blue-grey</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/stamped-concrete-driveway-ashlar-slate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pourcanvas.com/inspiration/stamped-concrete-driveway-cobblestone</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/stamped-concrete-driveway-cream</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -246,7 +336,27 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://pourcanvas.com/inspiration/stamped-concrete-walkway-buff</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pourcanvas.com/inspiration/stamped-concrete-walkway-grey</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/terracotta-stamped-concrete-driveway</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/terracotta-stamped-patio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/inspiration/white-exposed-aggregate-driveway</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -299,5 +409,15 @@
     <loc>https://pourcanvas.com/materials/travertine</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/patio</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/walkway</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

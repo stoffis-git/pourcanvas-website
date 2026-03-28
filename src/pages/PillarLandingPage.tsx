@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { PillarConversionBlock } from "@/components/inspiration/PillarConversionBlock";
+import { InspirationTile } from "@/components/inspiration/InspirationTile";
 import { inspirationByPillar, articlesByPillar, pillarMeta } from "@/content";
 import type { Pillar } from "@/content/types";
 
@@ -66,21 +67,13 @@ const PillarLandingPage = ({ pillar }: { pillar: Pillar }) => {
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
               {inspirations.map((page) => (
-                <Link
+                <InspirationTile
                   key={page.slug}
-                  to={`/inspiration/${page.slug}`}
-                  className="group block rounded-2xl overflow-hidden hover:opacity-90 transition-opacity"
-                >
-                  <img
-                    src={page.ogImage}
-                    alt={page.heroAlt}
-                    className="w-full aspect-[2/3] object-cover"
-                    draggable={false}
-                  />
-                  <p className="mt-3 text-sm md:text-base font-body font-medium text-foreground leading-snug">
-                    {page.headline}
-                  </p>
-                </Link>
+                  slug={page.slug}
+                  ogImage={page.ogImage}
+                  heroAlt={page.heroAlt}
+                  headline={page.headline}
+                />
               ))}
             </div>
           </div>
