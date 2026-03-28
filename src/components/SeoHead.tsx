@@ -1,4 +1,4 @@
-import { Head } from "vite-react-ssg";
+import { Helmet } from "react-helmet-async";
 import type { FAQ } from "@/content/types";
 
 const SITE_URL = "https://pourcanvas.com";
@@ -46,7 +46,7 @@ export const SeoHead = ({
       : null;
 
   return (
-    <Head>
+    <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
       {absoluteCanonical && <link rel="canonical" href={absoluteCanonical} />}
@@ -62,6 +62,6 @@ export const SeoHead = ({
       {faqSchema && (
         <script type="application/ld+json">{faqSchema}</script>
       )}
-    </Head>
+    </Helmet>
   );
 };

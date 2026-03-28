@@ -1,4 +1,5 @@
-import type { RouteRecord } from "vite-react-ssg";
+import { useRoutes } from "react-router-dom";
+import type { RouteObject } from "react-router-dom";
 import RootLayout from "./components/RootLayout";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -11,38 +12,40 @@ import MaterialPage from "./pages/materials/MaterialPage";
 import ConcreteDrivewayGuide from "./pages/guides/ConcreteDrivewayGuide";
 import { allArticles, inspirationPages, allMaterialPages } from "./content";
 
-export const routes: RouteRecord[] = [
+export const routes: RouteObject[] = [
   {
     path: "/",
     element: <RootLayout />,
     children: [
       { index: true, element: <Index /> },
       { path: "blog", element: <BlogHub /> },
-      {
-        path: "blog/:pillar",
-        element: <PillarPage />,
-        getStaticPaths: () => ["blog/patio", "blog/driveway", "blog/walkway"],
-      },
-      {
-        path: "blog/:pillar/:slug",
-        element: <ArticlePage />,
-        getStaticPaths: () => allArticles.map((a) => `blog/${a.pillar}/${a.slug}`),
-      },
-      {
-        path: "inspiration/:slug",
-        element: <InspirationPage />,
-        getStaticPaths: () => inspirationPages.map((p) => `inspiration/${p.slug}`),
-      },
+      { path: "blog/:pillar", element: <PillarPage /> },
+      { path: "blog/:pillar/:slug", element: <ArticlePage /> },
+      { path: "inspiration/:slug", element: <InspirationPage /> },
       { path: "guides/concrete-driveway", element: <ConcreteDrivewayGuide /> },
       { path: "materials", element: <MaterialsHub /> },
-      {
-        path: "materials/:slug",
-        element: <MaterialPage />,
-        getStaticPaths: () => allMaterialPages.map((m) => `materials/${m.slug}`),
-      },
+      { path: "materials/:slug", element: <MaterialPage /> },
       { path: "*", element: <NotFound /> },
     ],
   },
 ];
 
-export default routes;
+export const staticPaths = [
+  "/",
+  "/blog",
+  "/blog/patio",
+  "/blog/driveway",
+  "/blog/walkway",
+  "/guides/concrete-driveway",
+  "/materials",
+];
+
+export const dynamicPaths = [
+  ...allArticles.map((a) => `/blog/${a.pillar}/${a.slug}`),
+  ...inspirationPages.map((p) => `/inspiration/${p.slug}`),
+  ...allMaterialPages.map((m) => `/materials/${m.slug}`),
+];
+
+export default function App() {
+  return useRoutes(routes);
+}
