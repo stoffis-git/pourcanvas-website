@@ -8,7 +8,7 @@ interface InspirationHeroProps {
 export const InspirationHero = ({ image, alt, headline, subheadline }: InspirationHeroProps) => (
   <div className="w-full">
     <div
-      className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-2xl select-none"
+      className="relative w-full aspect-[2/3] md:aspect-[4/3] overflow-hidden rounded-2xl select-none"
       onContextMenu={(e) => e.preventDefault()}
     >
       {image?.startsWith("https://") && (
