@@ -7,6 +7,7 @@ import BlogHub from "./pages/blog/BlogHub";
 import PillarPage from "./pages/blog/PillarPage";
 import ArticlePage from "./pages/blog/ArticlePage";
 import InspirationPage from "./pages/InspirationPage";
+import PillarLandingPage from "./pages/PillarLandingPage";
 import MaterialsHub from "./pages/materials/MaterialsHub";
 import MaterialPage from "./pages/materials/MaterialPage";
 import ConcreteDrivewayGuide from "./pages/guides/ConcreteDrivewayGuide";
@@ -18,6 +19,9 @@ export const routes: RouteObject[] = [
     element: <RootLayout />,
     children: [
       { index: true, element: <Index /> },
+      { path: "patio", element: <PillarLandingPage pillar="patio" /> },
+      { path: "driveway", element: <PillarLandingPage pillar="driveway" /> },
+      { path: "walkway", element: <PillarLandingPage pillar="walkway" /> },
       { path: "blog", element: <BlogHub /> },
       { path: "blog/:pillar", element: <PillarPage /> },
       { path: "blog/:pillar/:slug", element: <ArticlePage /> },
@@ -32,6 +36,9 @@ export const routes: RouteObject[] = [
 
 export const staticPaths = [
   "/",
+  "/patio",
+  "/driveway",
+  "/walkway",
   "/blog",
   "/blog/patio",
   "/blog/driveway",

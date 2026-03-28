@@ -49,6 +49,15 @@ const ArticlePage = () => {
           </Link>
         </div>
 
+        {article.ogImage?.startsWith("https://") && (
+          <img
+            src={article.ogImage}
+            alt={article.headline}
+            className="w-full rounded-2xl object-cover aspect-[2/3] md:aspect-[4/3] mb-8"
+            draggable={false}
+          />
+        )}
+
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground leading-tight mb-4">
           {article.headline}
         </h1>

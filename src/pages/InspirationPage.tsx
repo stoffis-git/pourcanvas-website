@@ -4,7 +4,9 @@ import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationHero } from "@/components/inspiration/InspirationHero";
 import { InspirationContentBlock } from "@/components/inspiration/InspirationContentBlock";
-import { InspirationUpsellTile } from "@/components/inspiration/InspirationUpsellTile";
+import { PillarConversionBlock } from "@/components/inspiration/PillarConversionBlock";
+import { InspirationRelatedTiles } from "@/components/inspiration/InspirationRelatedTiles";
+import { FAQSection } from "@/components/FAQSection";
 import { inspirationPages } from "@/content";
 
 const inspirationBySlug = new Map(inspirationPages.map((p) => [p.slug, p]));
@@ -33,10 +35,11 @@ const InspirationPage = () => {
             headline={page.headline}
           />
           <InspirationContentBlock body={page.contentBlock} />
-          <InspirationUpsellTile
-            headline={page.ctaHeadline}
-            body={page.ctaBody}
-          />
+          <PillarConversionBlock pillar={page.pillar} />
+          <InspirationRelatedTiles currentSlug={page.slug} pillar={page.pillar} />
+          {page.faqs && page.faqs.length > 0 && (
+            <FAQSection faqs={page.faqs} />
+          )}
         </div>
       </main>
       <Footer />

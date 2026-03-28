@@ -1,7 +1,8 @@
 import { patioArticles } from "./articles/patio";
 import { drivewayArticles } from "./articles/driveway";
 import { walkwayArticles } from "./articles/walkway";
-import type { Article, Pillar } from "./types";
+import { inspirationPages } from "./inspiration";
+import type { Article, InspirationPage, Pillar } from "./types";
 
 export { patioArticles, drivewayArticles, walkwayArticles };
 export { inspirationPages } from "./inspiration";
@@ -22,6 +23,12 @@ export const articlesByPillar: Record<Pillar, Article[]> = {
   patio: patioArticles,
   driveway: drivewayArticles,
   walkway: walkwayArticles,
+};
+
+export const inspirationByPillar: Record<Pillar, InspirationPage[]> = {
+  patio:    inspirationPages.filter((p) => p.pillar === "patio"),
+  driveway: inspirationPages.filter((p) => p.pillar === "driveway"),
+  walkway:  inspirationPages.filter((p) => p.pillar === "walkway"),
 };
 
 export const pillarMeta: Record<Pillar, { title: string; description: string; headline: string }> = {
