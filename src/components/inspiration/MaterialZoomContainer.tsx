@@ -6,11 +6,11 @@ interface Props {
 export const MaterialZoomContainer = ({ image, alt }: Props) => {
   if (!image.startsWith("https://")) return null;
   return (
-    <div className="w-full aspect-[4/1] md:aspect-[2/1] rounded-2xl overflow-hidden">
+    <div className="w-full aspect-[2/1] rounded-2xl overflow-hidden">
       <img
         src={image}
         alt={alt}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover scale-150 md:scale-100"
         style={{ objectPosition: "50% 90%" }}
         draggable={false}
       />
