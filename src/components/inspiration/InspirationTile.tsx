@@ -19,7 +19,7 @@ export const InspirationTile = ({ slug, ogImage, heroAlt, headline }: Inspiratio
         <div className="w-full h-full bg-muted" />
       )}
       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent px-3 pt-10 pb-3 rounded-b-xl">
-        <p className="text-sm font-body font-semibold text-white leading-snug line-clamp-2">
+        <p className="text-base font-body font-semibold text-white leading-snug line-clamp-2">
           {headline}
         </p>
       </div>
