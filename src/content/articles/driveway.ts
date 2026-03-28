@@ -476,4 +476,61 @@ export const drivewayArticles: Article[] = [
       },
     ],
   },
+  {
+    slug: "concrete-driveway-color-guide",
+    pillar: "driveway",
+    title: "Concrete Driveway Color Guide: Every Option Compared",
+    headline: "Concrete Driveway Colors: What to Choose and Why",
+    metaDescription: "Concrete driveway color options range from integral pigment ($2–5/sq ft extra) to acid stain and color wash. Here's what each looks like and what it costs.",
+    targetKeywords: ["concrete driveway color", "concrete driveway color visualizer", "colored concrete driveway ideas"],
+    ogImage: "/og/driveway-concrete-driveway-color-guide.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Concrete driveways don't have to be grey. Integral pigment, color wash, acid stain, and decorative sealer each produce a distinct look at different price points — from $2–5 extra per sq ft for integral color to $8–14/sq ft for acid stain on an existing slab. Here's what each method produces, what it costs, and how to choose between them before you call a contractor.",
+    sections: [
+      {
+        heading: "Integral Pigment: Color That Goes All the Way Through",
+        body: "Integral pigment is mixed directly into the concrete before the pour. Because the color runs through the full depth of the slab, chips and surface wear don't expose a different-colored core — making it the most durable coloring method. The color range covers earth tones well: buff, tan, terracotta, charcoal, and grey are reliable; deep reds, blues, and blacks require more pigment and cost more to maintain. Cost premium: $2–5 per sq ft above plain concrete, depending on pigment concentration and color. On a 500 sq ft driveway, that's $1,000–2,500 added to the base pour cost. Integral-pigment driveways still benefit from sealing every 3–5 years to protect against UV fading — especially with warmer earth tones — but the underlying color remains intact even if the sealer wears off.",
+      },
+      {
+        heading: "Color Wash (Antiquing Release): Best for Stamped Surfaces",
+        body: "A color wash or antiquing agent is applied to the fresh concrete surface during stamping — it's the technique that gives stamped concrete its characteristic multi-tone, weathered look. It's not a single-color treatment; the wash pools in low spots and wipes thin on high surfaces, creating natural variation that makes stamped patterns read as stone or brick rather than plastic. Color washes are typically used in combination with integral pigment: a buff base pour with a charcoal or slate color wash on top produces the classic stamped driveway look. Cost: the wash is usually included in stamped concrete quotes ($12–18/sq ft total), not priced separately. If you're adding color to an already-poured stamped surface, a surface-applied color hardener runs $3–6 per sq ft. Tools like PourCanvas can show you how different base-and-wash combinations would look on your actual driveway before you finalize the color order.",
+      },
+      {
+        heading: "Acid Stain: Mottled Color for Existing Slabs",
+        body: "Acid staining works by chemically reacting with the calcium hydroxide in cured concrete, producing translucent, mottled color. The result is organic and varied — no two acid-stained driveways look identical. The standard palette covers earth tones (amber, brown, terracotta) and grey-green-blue tones well. Pure saturated colors aren't achievable with acid stain. Cost: $3–7 per sq ft for acid stain labor and materials on an existing slab, plus sealing. The process requires thorough prep (any oil stains or sealers must be removed first) and post-application sealing to protect the color. Acid stain is the go-to option when you want to add color to an existing concrete driveway without overlaying new concrete or replacing the slab.",
+      },
+      {
+        heading: "Water-Based Concrete Stain: More Color Range, Less Drama",
+        body: "Water-based stains penetrate cured concrete with pigment that bonds to the surface rather than chemically reacting with it. They offer a wider color range than acid stain — including more saturated tones and cooler greys — and produce a more consistent, less mottled finish. For driveways where you want a cleaner, more solid-color look, water-based stain outperforms acid stain. Cost: $2–4 per sq ft for labor and materials, plus sealing. It's a cost-effective way to update the color of an existing plain grey driveway. Longevity is the main limitation: water-based stains require resealing every 2–3 years to maintain color and should be reapplied every 5–8 years on high-traffic surfaces.",
+      },
+      {
+        heading: "Charcoal vs. Tan vs. Buff: Choosing a Tone That Ages Well",
+        body: "The color direction matters more than the specific shade. Warm tones (buff, tan, terracotta) suit craftsman, ranch, and Mediterranean homes; they read as organic and casual. Cool tones (charcoal, slate grey, blue-grey) suit contemporary and transitional homes; they read as clean and modern. Medium grey is the universal fallback — it works with almost anything but offers no visual distinction. Consider how the driveway will read in 10 years: charcoal integral pigment holds its depth well with UV-stable sealers. Tan and buff tones fade gradually toward lighter versions of themselves, which generally still looks intentional. Deep blacks and saturated earth reds are the most UV-vulnerable — expect noticeable fading in high-sun climates without annual sealing. For driveways with significant afternoon sun exposure, light-to-medium tones also stay 20–30°F cooler underfoot than dark pigments in summer — a real comfort factor if you're also planning a walkway that connects to entry areas.",
+      },
+      {
+        heading: "Colored Sealer vs. Full Color Treatment: When to Use Each",
+        body: "Colored penetrating sealers are a low-effort way to shift the appearance of an existing concrete driveway. They add a subtle tint — typically charcoal, slate, or tan — while sealing the surface for protection. The color effect is mild compared to integral pigment or stain; think of it as adjusting tone rather than changing color. Cost: $1–3 per sq ft, applied every 2–3 years. For homeowners who want a quick, reversible color refresh without a full re-pour or stain project, a colored sealer is the fastest path. For homeowners planning a new driveway or wanting a significant visual change, the investment in integral pigment or acid stain is worth it — the color depth and longevity are dramatically better than a sealer tint alone.",
+      },
+    ],
+    relatedSlugs: ["black-concrete-driveway", "concrete-driveway-cost"],
+    faqs: [
+      {
+        question: "How much does it cost to color a concrete driveway?",
+        answer: "Adding integral pigment to a new concrete pour costs $2–5 per sq ft extra. Acid staining an existing slab runs $3–7 per sq ft including labor and sealing. Water-based stain is $2–4 per sq ft. Colored penetrating sealer is the cheapest option at $1–3 per sq ft but provides the most subtle color change. On a 500 sq ft driveway, full coloring with integral pigment adds $1,000–2,500 to the pour cost.",
+      },
+      {
+        question: "What is the most durable color option for a concrete driveway?",
+        answer: "Integral pigment is the most durable because the color runs through the full depth of the slab — surface chips and wear don't expose a different-colored core. With UV-stable pigment and a penetrating sealer applied every 3–5 years, an integral-pigment driveway holds its color for 15–20+ years. Acid stain is next: the chemical bond penetrates the slab surface and resists peeling. Surface-applied color washes and colored sealers require the most frequent maintenance.",
+      },
+      {
+        question: "Can you change the color of an existing concrete driveway?",
+        answer: "Yes. Acid stain and water-based concrete stain both work on existing slabs and are the most common approaches. Acid stain produces mottled, organic color with an earth-tone palette; water-based stain offers a wider color range and more consistent coverage. Neither approach requires tearing out the existing slab. A full replacement with integral-pigment concrete gives the most control over the final color but costs $6–10+ per sq ft for a new pour.",
+      },
+    ],
+    // GEO: FAQ candidates
+    // 1. How much does it cost to color a concrete driveway?
+    // 2. What is the most durable color option for a concrete driveway?
+    // 3. Can you change the color of an existing concrete driveway?
+  },
 ];
