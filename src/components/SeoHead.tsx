@@ -24,7 +24,9 @@ export const SeoHead = ({
   keywords,
   faqs,
 }: SeoHeadProps) => {
-  const absoluteImage = ogImage ? `${SITE_URL}${ogImage}` : undefined;
+  const absoluteImage = ogImage
+    ? (ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`)
+    : undefined;
   const absoluteCanonical = canonical ? `${SITE_URL}${canonical}` : undefined;
 
   const faqSchema =

@@ -534,7 +534,7 @@ export const patioArticles: Article[] = [
     headline: "Pool Deck Concrete Finish Guide: 5 Options Compared",
     metaDescription: "The best concrete finish for a pool deck depends on slip resistance, heat, and budget. Here's how broom, aggregate, stamped, travertine-look, and cool-coat compare.",
     targetKeywords: ["best concrete finish for pool deck", "pool deck concrete finish", "concrete pool deck ideas"],
-    ogImage: "/og/patio-best-concrete-finish-pool-deck.jpg",
+    ogImage: "https://images.pourcanvas.com/patio-best-concrete-finish-pool-deck.jpg",
     publishedAt: "2026-03-27",
     intro:
       "The best concrete finish for a pool deck is exposed aggregate or travertine-stamped concrete for most homeowners — both stay cooler than smooth surfaces, provide reliable grip when wet, and hold up well to pool chemicals and sun. Broom finish is the budget choice. Stamped patterns add visual interest. Cool-coat overlays solve heat problems on existing slabs. Here's how each option compares on the five decisions that matter: slip resistance, heat absorption, cost, maintenance, and appearance.",

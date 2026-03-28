@@ -483,7 +483,7 @@ export const drivewayArticles: Article[] = [
     headline: "Concrete Driveway Colors: What to Choose and Why",
     metaDescription: "Concrete driveway color options range from integral pigment ($2–5/sq ft extra) to acid stain and color wash. Here's what each looks like and what it costs.",
     targetKeywords: ["concrete driveway color", "concrete driveway color visualizer", "colored concrete driveway ideas"],
-    ogImage: "/og/driveway-concrete-driveway-color-guide.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-concrete-driveway-color-guide.jpg",
     publishedAt: "2026-03-27",
     intro:
       "Concrete driveways don't have to be grey. Integral pigment, color wash, acid stain, and decorative sealer each produce a distinct look at different price points — from $2–5 extra per sq ft for integral color to $8–14/sq ft for acid stain on an existing slab. Here's what each method produces, what it costs, and how to choose between them before you call a contractor.",
@@ -545,7 +545,7 @@ export const drivewayArticles: Article[] = [
       "stamped concrete driveway cost per square foot",
       "how much does a stamped concrete driveway cost",
     ],
-    ogImage: "/og/driveway-stamped-concrete-driveway-cost.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-stamped-concrete-driveway-cost.jpg",
     publishedAt: "2026-03-27",
     intro:
       "A stamped concrete driveway costs $12–20 per sq ft installed, compared to $5–8 for plain concrete and $20–35 for natural stone pavers. For a standard two-car driveway (400–500 sq ft), total cost runs $4,800–10,000. Pattern complexity, regional labor rates, and color choices all shift the final number — here's how to read a quote before you sign.",
@@ -610,7 +610,7 @@ export const drivewayArticles: Article[] = [
       "driveway edge ideas",
       "concrete driveway edging",
     ],
-    ogImage: "/og/driveway-driveway-edging-ideas.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-driveway-edging-ideas.jpg",
     publishedAt: "2026-03-27",
     intro:
       "Driveway edging keeps the edge of a concrete or asphalt slab from cracking and crumbling over time, and it visually defines the boundary between driveway and lawn or landscaping. The six most practical edging materials each suit different budgets and aesthetics — here's what each costs, how long it lasts, and when to choose it.",
