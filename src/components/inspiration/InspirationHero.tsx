@@ -11,12 +11,14 @@ export const InspirationHero = ({ image, alt, headline, subheadline }: Inspirati
       className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-2xl select-none"
       onContextMenu={(e) => e.preventDefault()}
     >
-      <img
-        src={image}
-        alt={alt}
-        draggable={false}
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-      />
+      {image?.startsWith("https://") && (
+        <img
+          src={image}
+          alt={alt}
+          draggable={false}
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+        />
+      )}
       <div className="absolute inset-0 z-10" />
     </div>
     <div className="mt-6">
