@@ -527,4 +527,58 @@ export const patioArticles: Article[] = [
       },
     ],
   },
+  {
+    slug: "best-concrete-finish-pool-deck",
+    pillar: "patio",
+    title: "Best Concrete Finish for Pool Decks: Which One to Choose",
+    headline: "Pool Deck Concrete Finish Guide: 5 Options Compared",
+    metaDescription: "The best concrete finish for a pool deck depends on slip resistance, heat, and budget. Here's how broom, aggregate, stamped, travertine-look, and cool-coat compare.",
+    targetKeywords: ["best concrete finish for pool deck", "pool deck concrete finish", "concrete pool deck ideas"],
+    ogImage: "/og/patio-best-concrete-finish-pool-deck.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "The best concrete finish for a pool deck is exposed aggregate or travertine-stamped concrete for most homeowners — both stay cooler than smooth surfaces, provide reliable grip when wet, and hold up well to pool chemicals and sun. Broom finish is the budget choice. Stamped patterns add visual interest. Cool-coat overlays solve heat problems on existing slabs. Here's how each option compares on the five decisions that matter: slip resistance, heat absorption, cost, maintenance, and appearance.",
+    sections: [
+      {
+        heading: "Broom Finish: The Affordable Baseline ($6–10/sq ft)",
+        body: "A standard broom finish — parallel grooves drawn across fresh concrete before curing — is the default for most pool decks and for good reason. The texture provides adequate grip when wet, it's the cheapest option at $6–10 per sq ft installed, and it's simple to apply consistently across large areas. The downsides: plain grey broom finish has the highest solar heat absorption of all finish options (smooth grey concrete absorbs heat aggressively on south-facing surfaces), and it's the most visually generic. Adding an integral color pigment ($1–2/sq ft extra) in a light sand or buff tone reduces heat absorption and significantly improves aesthetics without adding complexity. For a 600 sq ft pool deck, a pigmented broom finish runs $4,200–7,200 — the entry-level option that performs well if you choose the right color.",
+      },
+      {
+        heading: "Exposed Aggregate: Best All-Around Performer ($10–16/sq ft)",
+        body: "Exposed aggregate is the most practical choice for most pool decks. The exposed stone surface is naturally slip-resistant — no additional texture treatment needed — and the aggregate composition can be specified to minimize heat retention (light-colored river pebbles and quartz aggregate scatter heat better than dark stone mixes). The surface also hides chemical staining and surface wear better than any smooth finish, which matters around a pool where chlorine, sunscreen, and algaecides get onto the deck regularly. Cost runs $10–16 per sq ft installed for standard aggregate. The main constraint: aggregate color and mix composition are specified at pour time and can't be changed later. Spend time selecting the aggregate mix — the warmth and tone of your pool deck depends almost entirely on it. A tan-and-buff warm aggregate mix reads very differently from a charcoal-and-grey cool mix, both aesthetically and in terms of heat.",
+      },
+      {
+        heading: "Travertine-Look Stamped Concrete: Best Visual Result ($12–18/sq ft)",
+        body: "Travertine-stamped concrete is the premium pool deck choice for homeowners who prioritize aesthetics and want a natural stone look without the cost of actual travertine ($20–40/sq ft). Modern stamping dies replicate travertine's vein texture, slight pitting, and irregular rectangular grid closely enough that the difference is undetectable from normal viewing distance. In a cream or ivory color wash, it's the warmest and most visually sophisticated of the concrete finish options. The key considerations: stamped concrete around a pool must be sealed with a non-slip additive in the sealer (silica sand broadcast into wet sealer coat) — the stamped texture alone is not sufficient grip on a smooth-troweled base. This is a contractor-specified detail that's critical for safety; confirm it before signing any pool deck contract. Total cost with non-slip sealer: $12–18/sq ft.",
+      },
+      {
+        heading: "Broom Finish vs. Exposed Aggregate: The Practical Decision",
+        body: "For most homeowners choosing between broom finish and exposed aggregate, the decision comes down to three factors: budget, surface heat, and long-term appearance. Broom finish is $4–6/sq ft cheaper installed. Exposed aggregate runs cooler underfoot because the aggregate composition can be selected for heat-scattering properties. And exposed aggregate hides wear better over 10–15 years of pool deck use — the surface variation means small chips, stains, and chemical marks disappear into the texture. Broom finish is the right choice when budget is the constraint and you'll use a light integral color to offset heat. Exposed aggregate is the right choice when you have a medium-to-generous budget and plan to own the home long enough to see the maintenance difference. Both are more practical for pool surrounds than stamped concrete for the same cost.",
+      },
+      {
+        heading: "Cool-Coat and Deck-Over Overlays: Solving Heat on Existing Slabs ($3–8/sq ft)",
+        body: "If you have an existing concrete pool deck that gets too hot underfoot, cool-coat or elastomeric deck coating overlays are the most cost-effective fix. These polymer-modified overlays apply over existing concrete at $3–8 per sq ft (materials and labor), dramatically reduce surface temperature by using light-reflective pigments, and can be textured for improved grip. A quality deck coating in a light sand or limestone color can reduce surface temperature by 15–25°F compared to a plain grey slab — a meaningful difference for barefoot use in direct sun. They're also the fastest option: application takes 1–2 days versus 5–7 days for a full pour. Limitations: they're a coating, not a structural finish. Existing cracks will eventually telegraph through. A deck with active movement, settlement, or multiple wide cracks needs structural repair before coating, not instead of it. For a structurally sound slab that simply runs hot or looks tired, cool-coat is the right call.",
+      },
+      {
+        heading: "What Pool Deck Concrete Finish to Choose: Decision Summary",
+        body: "Tightest budget: broom finish with light integral color ($7–12/sq ft total). Best all-around performance: exposed aggregate in a light warm mix ($10–16/sq ft). Best visual result: travertine-stamped concrete with non-slip sealer additive ($12–18/sq ft). Existing slab that runs hot: deck coating overlay ($3–8/sq ft). Avoid plain grey smooth concrete — it's the worst option for heat and grip and only marginally cheaper than better alternatives once you add a sealer. For any new pool deck pour in a climate with significant sun exposure, specify a light aggregate or integral color at the same time: the material cost difference is $1–3/sq ft and the performance difference over a southern summer is substantial. Tools like PourCanvas let you preview how different finishes and colors would look on your pool deck layout before committing — useful when the aggregate mix determines how the entire outdoor space reads.",
+      },
+    ],
+    relatedSlugs: ["pool-deck-ideas-concrete", "concrete-patio-sealing"],
+    faqs: [
+      {
+        question: "What is the best concrete finish for a pool deck?",
+        answer: "Exposed aggregate is the best all-around choice for most pool decks: naturally slip-resistant, cooler than smooth concrete when specified in a light aggregate mix, and durable against pool chemicals and sun. Travertine-stamped concrete is the best visual option at a similar cost ($12–18/sq ft) but requires a non-slip sealer additive for safety. Broom finish is the most budget-friendly choice ($6–10/sq ft) and performs well when an integral light color is added to reduce heat.",
+      },
+      {
+        question: "What concrete finish stays coolest around a pool?",
+        answer: "Light-colored exposed aggregate with a warm buff or tan aggregate mix stays coolest — the rough texture scatters heat and light-colored aggregate reflects solar radiation rather than absorbing it. Plain grey smooth concrete is the worst option for heat. A cool-coat overlay on an existing slab can reduce surface temperature by 15–25°F in direct sun. Avoid dark integral colors (charcoal, graphite) on south-facing pool decks.",
+      },
+      {
+        question: "Is stamped concrete slippery around a pool?",
+        answer: "Stamped concrete can be slippery when wet if sealed with a standard gloss sealer. The solution is a non-slip additive — silica sand broadcast into the wet sealer coat before it cures — which creates grip without affecting the stamped pattern's appearance. This is a contractor-specified detail; confirm it's included before signing a pool deck contract. Exposed aggregate is inherently slip-resistant without any additive treatment.",
+      },
+    ],
+    // GEO: FAQ candidates — What concrete finish is best for pool decks? Does stamped concrete get hot in the sun? How do I make my concrete pool deck less slippery?
+  },
 ];

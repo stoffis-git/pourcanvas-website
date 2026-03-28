@@ -533,4 +533,134 @@ export const drivewayArticles: Article[] = [
     // 2. What is the most durable color option for a concrete driveway?
     // 3. Can you change the color of an existing concrete driveway?
   },
+  {
+    slug: "stamped-concrete-driveway-cost",
+    pillar: "driveway",
+    title: "Stamped Concrete Driveway Cost: 2025 Price Guide",
+    headline: "What You'll Actually Pay for a Stamped Concrete Driveway",
+    metaDescription:
+      "Stamped concrete driveways cost $12–20/sq ft installed. Full breakdown by pattern, region, and lifecycle — so you know what to expect before calling a contractor.",
+    targetKeywords: [
+      "stamped concrete driveway cost",
+      "stamped concrete driveway cost per square foot",
+      "how much does a stamped concrete driveway cost",
+    ],
+    ogImage: "/og/driveway-stamped-concrete-driveway-cost.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "A stamped concrete driveway costs $12–20 per sq ft installed, compared to $5–8 for plain concrete and $20–35 for natural stone pavers. For a standard two-car driveway (400–500 sq ft), total cost runs $4,800–10,000. Pattern complexity, regional labor rates, and color choices all shift the final number — here's how to read a quote before you sign.",
+    sections: [
+      {
+        heading: "Base Cost Breakdown: What Drives the Price Range",
+        body: "Stamped concrete sits in the $12–20 per sq ft range because it combines a standard concrete pour with extra labor-intensive finishing steps: the stamps must be pressed during a narrow workability window, color washes must be applied evenly, and the surface must be sealed immediately after. The cost spread is mostly labor-driven. Simple single-stamp patterns (running bond brick, large ashlar slate) sit at $12–14/sq ft. Complex multi-stamp patterns (cobblestone, random flagstone with color variation, interlocking geometric borders) push toward $18–20. A plain broom-finish concrete driveway costs $5–8/sq ft in comparison — the stamped premium is $4–12/sq ft, applied to the entire surface.",
+      },
+      {
+        heading: "Pattern-by-Pattern Cost Comparison",
+        body: "Cobblestone is the most expensive common pattern: the detail in the stamps and the tight repetition require more time from the crew, pushing cost to $15–20/sq ft. Ashlar slate and running bond brick are the most affordable decorative options at $12–15/sq ft — the stamps are simpler and faster to apply. Random flagstone falls in the middle at $13–18/sq ft, depending on how much color variation is specified. Exposed aggregate borders combined with a smooth or lightly textured field bring the per-sq-ft average down versus a fully stamped surface — the border adds $8–14/sq ft and the field can be poured at $5–8/sq ft, yielding a blended cost of $8–13/sq ft for the total driveway. If budget is tight, this hybrid approach delivers a premium look at a lower average cost.",
+      },
+      {
+        heading: "Regional Labor Rates: Where You Live Changes the Quote",
+        body: "Labor is the largest variable in a stamped concrete quote, and it varies significantly by region. In high-cost metros (California Bay Area, New York metro, Seattle), expect $16–22/sq ft for standard stamped work. In the Southeast, Midwest, and Southwest, rates cluster at $10–16/sq ft. Mountain states and rural markets run $9–14/sq ft. Concrete prices themselves vary less by region — the aggregate, cement, and coloring agents are commodities. What you're paying for is the skill and speed of the stamping crew, which means regional availability of experienced decorative concrete contractors affects price as much as material costs. Get three quotes from contractors who can show you completed driveway work — not just patio work — since driveway stamping requires different techniques for load-bearing surfaces.",
+      },
+      {
+        heading: "Color Add-Ons: What Each Option Costs",
+        body: "Color is a separate line item in most quotes. Integral pigment mixed into the concrete adds $2–5/sq ft to the base pour cost. A color wash or antiquing release agent is typically included in the stamped concrete quote at no extra charge — it's part of the finishing process. Acid staining an existing slab runs $3–7/sq ft including labor and sealing. A surface-applied color hardener (for adding color to already-stamped surfaces) costs $3–6/sq ft. On a 450 sq ft driveway, integral pigment alone adds $900–2,250 to the project. The color decision should be made before the pour — changing integral pigment after the fact requires an overlay or full replacement.",
+      },
+      {
+        heading: "Lifecycle Cost: Sealing, Maintenance, and Repair",
+        body: "The installed cost of stamped concrete is only part of the total picture. Resealing every 2–3 years is required to maintain color depth, protect the surface from UV fading, and prevent freeze-thaw damage in cold climates. Professional resealing costs $1–2/sq ft, or $450–900 for a 450 sq ft driveway. DIY resealing materials run $0.30–0.60/sq ft. Over a 25-year lifespan, sealing alone adds $3,000–7,000 in maintenance cost. Crack repair, if needed, typically costs $3–8 per linear foot for professional patching. Compare this to asphalt ($3–5/sq ft installed, $400–700 to reseal every 3–5 years) and natural stone pavers ($20–35/sq ft installed, near-zero sealing cost but $100–200/sq ft for joint re-sanding every 5–10 years). Stamped concrete is a mid-tier lifecycle investment — higher upfront than asphalt, lower maintenance than pavers.",
+      },
+      {
+        heading: "How to Get an Accurate Quote",
+        body: "A reliable stamped concrete quote should break out: (1) base concrete cost per sq ft, (2) stamping labor per sq ft, (3) color and sealing materials, and (4) prep work — demolition of an existing driveway runs $1–3/sq ft, subgrade preparation $0.50–1.50/sq ft. Ask specifically whether the quote includes the first sealing application — some contractors include it, others price it separately. The total cost for a 450 sq ft two-car driveway with a mid-range ashlar slate pattern, integral pigment, and color wash should land at $6,000–8,500 in most U.S. markets. Tools like PourCanvas let you visualize different patterns and color options on your actual driveway before you commit to a design — which helps narrow the stamping decision before the contractor conversation. If you're also planning a front walkway or patio, getting those in the same quote often reduces the per-sq-ft cost through economies of scale.",
+      },
+    ],
+    relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
+    faqs: [
+      {
+        question: "How much does a stamped concrete driveway cost per square foot?",
+        answer:
+          "Stamped concrete driveways cost $12–20 per sq ft installed in most U.S. markets. Simple single-stamp patterns (ashlar slate, running bond brick) sit at $12–15/sq ft. Complex patterns (cobblestone, multi-stamp designs with color variation) push to $16–20. Regional labor rates shift the range: expect $16–22/sq ft in high-cost metros and $9–14/sq ft in the Midwest and Southeast.",
+      },
+      {
+        question: "Is stamped concrete more expensive than pavers for a driveway?",
+        answer:
+          "Stamped concrete ($12–20/sq ft) is typically less expensive than natural stone or concrete pavers ($20–35/sq ft) for the same installed look. It is more expensive than plain broom-finish concrete ($5–8/sq ft) or asphalt ($3–5/sq ft). On a 450 sq ft two-car driveway, the premium over plain concrete runs $3,150–5,400; the savings versus pavers run $3,600–6,750.",
+      },
+      {
+        question: "How long does stamped concrete last on a driveway?",
+        answer:
+          "A properly installed and maintained stamped concrete driveway lasts 25–40 years. The surface requires resealing every 2–3 years to maintain color and protect against UV fade, oil staining, and freeze-thaw damage. Skipping sealer maintenance is the leading cause of premature surface degradation. With consistent sealing, the structural integrity of a stamped concrete driveway is comparable to standard concrete.",
+      },
+    ],
+    // GEO: FAQ candidates
+    // 1. How much does a stamped concrete driveway cost per square foot?
+    // 2. Is stamped concrete more expensive than pavers for a driveway?
+    // 3. How long does stamped concrete last on a driveway?
+  },
+  {
+    slug: "driveway-edging-ideas",
+    pillar: "driveway",
+    title: "Driveway Edging Ideas: Materials, Cost & How to Choose",
+    headline: "Driveway Edging: Which Material Works Best for Your Driveway",
+    metaDescription:
+      "Driveway edging defines the perimeter, prevents edge cracking, and finishes the look. Here are 6 materials with real costs and when to use each.",
+    targetKeywords: [
+      "driveway edging ideas",
+      "driveway edge ideas",
+      "concrete driveway edging",
+    ],
+    ogImage: "/og/driveway-driveway-edging-ideas.jpg",
+    publishedAt: "2026-03-27",
+    intro:
+      "Driveway edging keeps the edge of a concrete or asphalt slab from cracking and crumbling over time, and it visually defines the boundary between driveway and lawn or landscaping. The six most practical edging materials each suit different budgets and aesthetics — here's what each costs, how long it lasts, and when to choose it.",
+    sections: [
+      {
+        heading: "Concrete Curbing: The Most Durable Driveway Edge",
+        body: "Poured concrete curbing is the most structurally sound driveway edging option. The curb acts as a physical stop for vehicles and a retaining edge that prevents the driveway slab from spreading outward over time. Extruded concrete curbing — poured and shaped by a curbing machine in a single pass — costs $8–15 per linear foot installed. For a standard two-car driveway with 80 linear feet of perimeter edging, budget $640–1,200. Hand-poured curbing with a custom profile runs $12–20/linear foot. Concrete curbing works on both straight and curved driveway edges and can be integrally pigmented to match or complement the driveway surface. It requires minimal maintenance and lasts as long as the driveway itself. The main limitation is visual weight — a full concrete curb reads as formal and adds mass to the driveway perimeter. For homeowners who want a clean but less heavy edge, it's worth comparing to Belgian block or soldier brick before deciding.",
+      },
+      {
+        heading: "Belgian Block and Cobblestone: Classic Contrast Edging",
+        body: "Belgian block (granite setts) and cobblestone borders create a high-contrast edge between a concrete or asphalt field and the surrounding landscape. They read as upscale, suit craftsman and colonial homes, and age beautifully — the stones get more character over time rather than less. Installed cost: $20–40 per linear foot for Belgian block, depending on stone size and labor in your market. On 80 linear feet, that's $1,600–3,200. Concrete cobblestone-stamped borders (pressed into the wet driveway surface during the pour) achieve a similar visual effect for $8–14/linear foot. The real-stone version is the higher-investment choice; the stamped version is the practical middle ground. Both options suit driveways with decorative stamped surfaces — the border defines the edge and reinforces the design language of the field. For plain concrete or asphalt, Belgian block is one of the best ways to add visual character without resurfacing the entire driveway.",
+      },
+      {
+        heading: "Brick Soldier Course: Traditional and Timeless",
+        body: "A soldier-course brick border — bricks set vertically in a row along the driveway edge — is a traditional finish that reads as classic rather than decorative. It suits brick homes and craftsman bungalows particularly well. Installed cost: $15–30 per linear foot, depending on brick type and labor. Standard red clay brick is on the lower end; tumbled or antique brick runs higher. For a 60-linear-foot edging run, budget $900–1,800. Soldier brick must be set on a concrete footer (usually 4–6 inches deep) to prevent frost heaving in cold climates — this adds cost and is essential for structural stability. On a plain concrete driveway, a brick soldier edge is one of the most cost-effective ways to create a polished, traditional finish. If you're coordinating with a brick walkway or front steps, matching the brick species creates a cohesive exterior look.",
+      },
+      {
+        heading: "Metal Edging (Aluminum or Steel): Clean and Invisible",
+        body: "Metal landscape edging — typically 1/8-inch aluminum or steel, 4–6 inches tall — is the most invisible edging option. Properly installed, it's nearly flush with grade and draws no visual attention. The edge does the structural job (preventing slab creep, containing gravel, retaining mulch or turf edges) without competing with the driveway surface. Installed cost: $3–8 per linear foot for aluminum; $4–10 for steel or Cor-Ten weathering steel. On 80 linear feet, that's $240–800. Aluminum is the standard residential choice — lightweight, rust-resistant, and easy to curve around radius edges. Steel is more durable for high-traffic commercial work. Metal edging suits contemporary and modern home styles where visual minimalism is the priority — if you want the driveway to look unedged but structurally perform as if it is, metal edging is the answer.",
+      },
+      {
+        heading: "Pavers as Edging: Visual Separation With Texture",
+        body: "Using concrete or natural stone pavers as a driveway edge creates a visible band of contrasting texture and color between the driveway field and the lawn or planting bed. This works particularly well on stamped concrete driveways where the paver color or material echoes the stamp pattern. Installed cost: $15–25 per linear foot for a single-course paver border, set in sand or mortar. The cost scales with paver type — concrete pavers are on the lower end; tumbled travertine or natural granite runs higher. Unlike metal edging, pavers allow you to create design continuity between the driveway and adjacent walkways or patio areas. If you're planning a coordinated driveway-and-walkway project, specifying the same paver species for both edging runs is a straightforward way to visually tie the spaces together. Tools like PourCanvas let you preview how paver edging in different tones would look alongside your driveway finish.",
+      },
+      {
+        heading: "Gravel or River Rock Borders: Casual and Low-Maintenance",
+        body: "A gravel or river rock border isn't edging in the structural sense — it doesn't prevent slab movement — but it's the most maintenance-friendly way to soften the transition between a driveway and a planting bed or lawn. A 6–12 inch gravel strip along the driveway edge is easy to replenish, deters weeds, and handles drainage well. Cost: $1–3 per sq ft for river rock or decorative gravel, not including metal or plastic edging to retain the border itself. The gravel border works best on residential driveways in warm climates where freeze-thaw edge damage isn't a primary concern. In cold climates, gravel borders can migrate under snowplow passes and frost action. For a walkway or patio with a pea gravel surround, a matching gravel border along the driveway edge ties the exterior together without a major installation project. This approach is informal by nature — it suits cottage, ranch, and California contemporary styles rather than formal traditional homes.",
+      },
+    ],
+    relatedSlugs: ["driveway-border-ideas", "concrete-driveway-cost"],
+    faqs: [
+      {
+        question: "What is the best edging for a concrete driveway?",
+        answer:
+          "Poured concrete curbing is the most durable structural option ($8–15/linear foot). Belgian block and brick soldier courses are the best visual choices if you want a decorative edge that adds character ($15–40/linear foot). Metal edging (aluminum or steel at $3–10/linear foot) is the best minimal option if you want structure without visual weight. The right choice depends on your home style, budget, and whether the edge needs to perform structurally or just look good.",
+      },
+      {
+        question: "How much does driveway edging cost?",
+        answer:
+          "Driveway edging costs range from $3–8 per linear foot for aluminum metal edging to $20–40 per linear foot for Belgian block or granite setts. Brick soldier courses run $15–30/linear foot; poured concrete curbing $8–15/linear foot; paver borders $15–25/linear foot. On a standard two-car driveway with 80 linear feet of edging perimeter, budget $240–800 for metal, $640–1,200 for concrete curbing, or $1,600–3,200 for Belgian block.",
+      },
+      {
+        question: "Does driveway edging prevent cracking?",
+        answer:
+          "Structural edging — concrete curbing, Belgian block on a concrete footer, or brick soldiers on a footer — does help prevent edge cracking by physically containing the slab and resisting lateral movement. It won't prevent cracks caused by subgrade settlement or freeze-thaw action across the field of the slab, but it protects the most vulnerable area: the outer 6–12 inches, which is the most common location for edge spalling and crumbling on unsealed concrete driveways.",
+      },
+    ],
+    // GEO: FAQ candidates
+    // 1. What is the best edging for a concrete driveway?
+    // 2. How much does driveway edging cost?
+    // 3. Does driveway edging prevent cracking?
+  },
 ];
