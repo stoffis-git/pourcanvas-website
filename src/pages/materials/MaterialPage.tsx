@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationUpsellTile } from "@/components/inspiration/InspirationUpsellTile";
+import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
 import { MaterialProConBlock } from "@/components/materials/MaterialProConBlock";
 import { MaterialRelatedArticles } from "@/components/materials/MaterialRelatedArticles";
 import { FAQSection } from "@/components/FAQSection";
@@ -74,6 +75,8 @@ const MaterialPage = () => {
             body="PourCanvas turns your photo into a concrete design preview. Free to try, no account needed."
           />
         </div>
+
+        <InspirationEmailCapture slug={slug ?? ''} />
 
         {material.faqs && material.faqs.length > 0 && (
           <FAQSection faqs={material.faqs} />

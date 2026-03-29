@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
+import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
 import { cn } from "@/lib/utils";
 
 const costRows = [
@@ -273,6 +274,10 @@ const ConcreteDrivewayGuide = () => (
         </h2>
         <FAQAccordion />
       </section>
+
+      <div className="mb-16">
+        <InspirationEmailCapture slug="concrete-driveway-guide" pillar="driveway" />
+      </div>
 
       {/* Final CTA */}
       <div className="rounded-2xl p-8 text-center border border-border">

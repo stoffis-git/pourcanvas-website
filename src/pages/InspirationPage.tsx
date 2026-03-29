@@ -2,8 +2,9 @@ import { useParams } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
-import { InspirationHero } from "@/components/inspiration/InspirationHero";
+import { InspirationImageCarousel } from "@/components/inspiration/InspirationImageCarousel";
 import { InspirationContentBlock } from "@/components/inspiration/InspirationContentBlock";
+import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
 import { PillarConversionBlock } from "@/components/inspiration/PillarConversionBlock";
 import { InspirationRelatedTiles } from "@/components/inspiration/InspirationRelatedTiles";
 import { MaterialZoomContainer } from "@/components/inspiration/MaterialZoomContainer";
@@ -18,6 +19,12 @@ const InspirationPage = () => {
 
   if (!page) return null;
 
+  const allImages = [
+    { url: page.ogImage, alt: page.heroAlt },
+    ...(page.additionalImages ?? []),
+  ];
+  const isMulti = allImages.length >= 2;
+
   return (
     <>
       <SeoHead
@@ -30,13 +37,12 @@ const InspirationPage = () => {
       <Header />
       <main className="max-w-4xl mx-auto px-5 py-28 md:py-36">
         <div className="space-y-8">
-          <InspirationHero
-            image={page.ogImage}
-            alt={page.heroAlt}
-            headline={page.headline}
-          />
+          <InspirationImageCarousel images={allImages} headline={page.headline} />
           <InspirationContentBlock body={page.contentBlock} />
-          <MaterialZoomContainer image={page.ogImage} alt={page.heroAlt} />
+          {!isMulti && (
+            <MaterialZoomContainer image={page.ogImage} alt={page.heroAlt} />
+          )}
+          <InspirationEmailCapture slug={page.slug} pillar={page.pillar} />
           <PillarConversionBlock pillar={page.pillar} />
           <InspirationRelatedTiles currentSlug={page.slug} pillar={page.pillar} />
           {page.faqs && page.faqs.length > 0 && (
