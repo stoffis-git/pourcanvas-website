@@ -79,7 +79,7 @@ const ImageCompareSlider = ({
           src={beforeImage}
           alt="Before transformation"
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ width: `${containerRef.current?.offsetWidth || 1000}px`, maxWidth: "none" }}
+          style={{ width: `${100 / (sliderPosition / 100)}%`, maxWidth: "none" }}
         />
       </div>
 
