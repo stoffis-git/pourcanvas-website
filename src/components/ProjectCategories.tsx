@@ -34,10 +34,10 @@ const ProjectCategories = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/10 to-transparent" />
               <div className="absolute bottom-4 left-4 text-left">
-                <p className="font-display text-lg font-semibold text-primary-foreground">
+                <p className="font-display text-lg font-semibold text-white">
                   {cat.label}
                 </p>
-                <p className="font-body text-xs text-primary-foreground/70">
+                <p className="font-body text-xs text-white/70">
                   {cat.count}
                 </p>
               </div>
