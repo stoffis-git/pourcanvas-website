@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const categories = [
-  { image: "https://images.pourcanvas.com/inspiration-grey-stamped-patio.jpg", label: "Patios", count: "2.4k ideas" },
-  { image: "https://images.pourcanvas.com/inspiration-modern-driveway.jpg", label: "Driveways", count: "1.1k ideas" },
-  { image: "https://images.pourcanvas.com/inspiration-concrete-pool-deck-grey.jpg", label: "Pool Decks", count: "890 ideas" },
-  { image: "https://images.pourcanvas.com/inspiration-herringbone-walkway-concrete.jpg", label: "Sidewalks", count: "640 ideas" },
+  { image: "https://images.pourcanvas.com/inspiration-grey-stamped-patio.jpg", label: "Patios", count: "2.4k ideas", to: "/patio" },
+  { image: "https://images.pourcanvas.com/inspiration-modern-driveway.jpg", label: "Driveways", count: "1.1k ideas", to: "/driveway" },
+  { image: "https://images.pourcanvas.com/inspiration-concrete-pool-deck-grey.jpg", label: "Pool Decks", count: "890 ideas", to: "/patio" },
+  { image: "https://images.pourcanvas.com/inspiration-herringbone-walkway-concrete.jpg", label: "Sidewalks", count: "640 ideas", to: "/walkway" },
 ];
 
 const ProjectCategories = () => {
@@ -20,8 +22,9 @@ const ProjectCategories = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {categories.map((cat, i) => (
-            <button
+            <Link
               key={i}
+              to={cat.to}
               className="group relative aspect-[3/4] rounded-3xl overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <img
@@ -41,7 +44,7 @@ const ProjectCategories = () => {
                   {cat.count}
                 </p>
               </div>
-            </button>
+            </Link>
           ))}
         </div>
       </div>

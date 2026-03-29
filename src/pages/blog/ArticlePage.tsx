@@ -3,7 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
-import { InspirationUpsellTile } from "@/components/inspiration/InspirationUpsellTile";
+import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
+import { ToolWaitlistBlock } from "@/components/ToolWaitlistBlock";
 import { FAQSection } from "@/components/FAQSection";
 import { articlesBySlug } from "@/content";
 
@@ -87,20 +88,14 @@ const ArticlePage = () => {
                 )}
               </div>
               {i === midpoint - 1 && (
-                <InspirationUpsellTile
-                  headline="See what this could look like in your space"
-                  body="Upload a photo of your patio, driveway, or walkway and get an AI-generated preview in seconds."
-                />
+                <InspirationEmailCapture slug={slug ?? ''} pillar={pillar ?? ''} source="inspire-pack-blog" />
               )}
             </Fragment>
           ))}
         </div>
 
         <div className="mt-12">
-          <InspirationUpsellTile
-            headline="Ready to visualize your project?"
-            body="PourCanvas turns your photo into a concrete design preview. Free to try, no account needed."
-          />
+          <ToolWaitlistBlock source="tool-waitlist-blog" />
         </div>
 
         {article.faqs && article.faqs.length > 0 && (

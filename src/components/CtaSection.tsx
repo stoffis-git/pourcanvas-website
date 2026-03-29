@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ToolWaitlistBlock } from "@/components/ToolWaitlistBlock";
 
 const CtaSection = () => {
   return (
@@ -11,13 +10,7 @@ const CtaSection = () => {
         <p className="text-muted-foreground mb-8 leading-relaxed">
           Join thousands of homeowners finding inspiration for their next concrete project. It's free to start.
         </p>
-        <Button
-          size="lg"
-          className="rounded-full px-8 text-base gap-2 font-semibold border-0 hover:opacity-90 transition-opacity"
-          style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
-        >
-          Start Exploring <ArrowRight className="w-4 h-4" />
-        </Button>
+        <ToolWaitlistBlock source="tool-waitlist-cta" />
       </div>
     </section>
   );

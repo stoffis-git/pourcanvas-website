@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 
 export const config = { runtime: 'edge' };
 
-async function writeToAirtable(email: string, slug: string, pillar: string) {
+async function writeToAirtable(email: string, slug: string, pillar: string, source: string) {
   const baseId = process.env.AIRTABLE_INSPIRE_BASE_ID;
   const tableId = process.env.AIRTABLE_INSPIRE_TABLE_ID;
   const pat = process.env.AIRTABLE_PAT;
@@ -20,7 +20,7 @@ async function writeToAirtable(email: string, slug: string, pillar: string) {
           Email: email,
           Slug: slug,
           Pillar: pillar,
-          Source: 'inspire-page',
+          Source: source,
         },
       }],
     }),
@@ -54,21 +54,21 @@ export default async function handler(request: Request): Promise<Response> {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405 });
   }
 
-  let body: { email?: string; slug?: string; pillar?: string };
+  let body: { email?: string; slug?: string; pillar?: string; source?: string };
   try {
     body = await request.json();
   } catch {
     return new Response(JSON.stringify({ error: 'Invalid JSON' }), { status: 400 });
   }
 
-  const { email, slug = '', pillar = '' } = body;
+  const { email, slug = '', pillar = '', source = 'inspire-pack' } = body;
 
   if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return new Response(JSON.stringify({ error: 'Valid email required' }), { status: 400 });
   }
 
   await Promise.allSettled([
-    writeToAirtable(email, slug, pillar),
+    writeToAirtable(email, slug, pillar, source),
     sendConfirmationEmail(email),
   ]);
 
