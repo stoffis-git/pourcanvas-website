@@ -97,13 +97,7 @@ const ImageCompareSlider = ({
         </div>
       </div>
 
-      {/* Labels */}
-      <span className="absolute top-4 left-4 bg-foreground/70 text-primary-foreground text-xs font-body font-medium px-3 py-1 rounded-full z-20">
-        {beforeLabel}
-      </span>
-      <span className="absolute top-4 right-4 bg-primary/90 text-primary-foreground text-xs font-body font-medium px-3 py-1 rounded-full z-20">
-        {afterLabel}
-      </span>
+
     </div>
   );
 };

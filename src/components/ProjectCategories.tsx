@@ -1,13 +1,8 @@
-import categoryPatio from "@/assets/category-patio.jpg";
-import categoryDriveway from "@/assets/category-driveway.jpg";
-import categoryPooldeck from "@/assets/category-pooldeck.jpg";
-import categorySidewalk from "@/assets/category-sidewalk.jpg";
-
 const categories = [
-  { image: categoryPatio, label: "Patios", count: "2.4k ideas" },
-  { image: categoryDriveway, label: "Driveways", count: "1.1k ideas" },
-  { image: categoryPooldeck, label: "Pool Decks", count: "890 ideas" },
-  { image: categorySidewalk, label: "Sidewalks", count: "640 ideas" },
+  { image: "https://images.pourcanvas.com/inspiration-grey-stamped-patio.jpg", label: "Patios", count: "2.4k ideas" },
+  { image: "https://images.pourcanvas.com/inspiration-modern-driveway.jpg", label: "Driveways", count: "1.1k ideas" },
+  { image: "https://images.pourcanvas.com/inspiration-concrete-pool-deck-grey.jpg", label: "Pool Decks", count: "890 ideas" },
+  { image: "https://images.pourcanvas.com/inspiration-herringbone-walkway-concrete.jpg", label: "Sidewalks", count: "640 ideas" },
 ];
 
 const ProjectCategories = () => {
