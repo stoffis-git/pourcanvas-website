@@ -23,7 +23,7 @@ export function InspirationPopup({ slug, pillar = "" }: Props) {
 
   useEffect(() => {
     if (sessionStorage.getItem(SESSION_KEY)) return;
-    timerRef.current = setTimeout(() => setOpen(true), 8000);
+    timerRef.current = setTimeout(() => setOpen(true), 4000);
     return () => {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
