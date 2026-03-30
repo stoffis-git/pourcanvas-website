@@ -43,8 +43,8 @@ const InspirationPage = () => {
             <MaterialZoomContainer image={page.ogImage} alt={page.heroAlt} />
           )}
           <InspirationEmailCapture slug={page.slug} pillar={page.pillar} />
-          <PillarConversionBlock pillar={page.pillar} />
           <InspirationRelatedTiles currentSlug={page.slug} pillar={page.pillar} />
+          <PillarConversionBlock pillar={page.pillar} />
           {page.faqs && page.faqs.length > 0 && (
             <FAQSection faqs={page.faqs} />
           )}
