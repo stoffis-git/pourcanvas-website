@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationImageCarousel } from "@/components/inspiration/InspirationImageCarousel";
 import { InspirationContentBlock } from "@/components/inspiration/InspirationContentBlock";
-import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
+import { InspirationPopup } from "@/components/inspiration/InspirationPopup";
 import { PillarConversionBlock } from "@/components/inspiration/PillarConversionBlock";
 import { InspirationRelatedTiles } from "@/components/inspiration/InspirationRelatedTiles";
 import { MaterialZoomContainer } from "@/components/inspiration/MaterialZoomContainer";
@@ -42,7 +42,7 @@ const InspirationPage = () => {
           {!isMulti && (
             <MaterialZoomContainer image={page.ogImage} alt={page.heroAlt} />
           )}
-          <InspirationEmailCapture slug={page.slug} pillar={page.pillar} />
+          <InspirationPopup slug={page.slug} pillar={page.pillar} />
           <InspirationRelatedTiles currentSlug={page.slug} pillar={page.pillar} />
           <PillarConversionBlock pillar={page.pillar} />
           {page.faqs && page.faqs.length > 0 && (
