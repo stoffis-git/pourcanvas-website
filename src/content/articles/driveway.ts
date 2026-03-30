@@ -34,6 +34,22 @@ export const drivewayArticles: Article[] = [
         heading: "What to Ask Your Contractor",
         body: "Stamped concrete requires precise timing during the pour — the stamps must be pressed while the concrete is in a narrow workability window. Ask to see photos of the contractor's completed driveway work, not just patio work. Driveways experience heavier loading and different weathering than patios, and not every stamped-concrete crew has equal experience with both surfaces.",
       },
+      {
+        heading: "Sealing and Long-Term Maintenance",
+        body: "A stamped concrete driveway requires resealing every 2–3 years to maintain color depth and protect the surface from UV fading, oil staining, and freeze-thaw damage. A penetrating silane-siloxane sealer ($0.20–0.40/sq ft DIY) is the right product for vehicle surfaces — it resists oil and chemical penetration without adding gloss that can become slippery when wet. Film-forming acrylic sealers enhance color depth but can create traction issues on driveways if applied too thickly; use a matte or low-gloss acrylic if you want the color enhancement. Professional resealing of a 500 sq ft stamped driveway runs $250–500 per application. Budget this as a recurring cost when comparing stamped concrete to plain — the premium for decorative finishes includes an ongoing maintenance commitment.",
+      },
+      {
+        heading: "Stamped Concrete Driveway vs. Paver Driveway",
+        body: "The most direct comparison is stamped concrete ($12–20/sq ft) versus concrete or natural stone paver driveways ($20–35/sq ft). Stamped concrete wins on upfront cost — the difference on a 500 sq ft two-car driveway is $4,000–7,500. Pavers win on repairability: a cracked stamped concrete section is difficult to patch invisibly, while a cracked paver is replaced individually in an hour. In freeze-thaw climates, paver driveways handle repeated ground movement better since individual units shift rather than the whole slab cracking. For most residential applications in moderate climates, stamped concrete is the stronger value. In harsh northern climates where freeze-thaw cracking is frequent, the paver premium may be worth considering. PourCanvas can show you how stamped concrete patterns would look on your specific driveway before you commit to either direction.",
+      },
+      {
+        heading: "Connecting Driveway Design to Front Walkway and Patio",
+        body: "A stamped driveway that connects visually to the front walkway and patio creates a cohesive exterior that reads as intentional rather than assembled piecemeal. The most effective approach: use the same stamp pattern or pattern family across all three surfaces, and keep the color direction consistent. On a cobblestone-stamped driveway, a cobblestone-stamped front walkway or entry steps in a matching color wash creates strong visual continuity. The exact surface color will vary slightly between pours — concrete batches are never identical — but tonal harmony is achievable and is what most buyers and visitors register. Plan all three surfaces together before calling any contractor; the bundled quote will also typically save 10–15% over three separate contracts.",
+      },
+      {
+        heading: "Stamped Driveway Resale Value",
+        body: "A well-maintained stamped concrete driveway adds meaningful curb appeal and is among the hardscape upgrades most frequently mentioned by real estate agents as boosting buyer first impressions. Most agents in suburban markets report a cobblestone or ashlar slate stamped driveway adds $5,000–15,000 in perceived value on a mid-to-high price point home. The key word is \"maintained\" — a faded, unsealed stamped driveway with peeling color wash reads as deferred maintenance and can actually reduce buyer confidence. Keep the sealer current, fill hairline cracks promptly each fall, and the surface will perform well for 25+ years and reward both aesthetic enjoyment and resale value. Front walkway and entry steps in the same finish amplify the curb appeal effect.",
+      },
     ],
     relatedSlugs: ["exposed-aggregate-driveway", "concrete-driveway-cost"],
     relatedMaterials: ["stamped-concrete"],
@@ -58,7 +74,7 @@ export const drivewayArticles: Article[] = [
     title: "Exposed Aggregate Driveway: Pros, Cons, and Cost",
     headline: "Is an Exposed Aggregate Driveway Right for You?",
     metaDescription:
-      "Exposed aggregate driveways cost $8–14/sq ft — less than stamped concrete, more than plain. Here's what to know before choosing this finish.",
+      "Exposed aggregate driveway costs $8–14/sq ft — between plain broom finish and stamped. Pros, cons, aggregate options, and when this finish makes sense.",
     targetKeywords: ["exposed aggregate driveway", "aggregate finish", "textured driveway"],
     ogImage: "/og/driveway-exposed-aggregate.jpg",
     publishedAt: "2026-03-27",
@@ -80,6 +96,26 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Cons",
         body: "Harder to patch seamlessly than smooth concrete — the aggregate mix and weathering make exact matches difficult. Edges chip if heavy equipment hits them. And it's not compatible with snowblower blades, which catch on the texture. If you live in a heavy snow region and use a snowblower, smooth concrete or stamped concrete is a better fit.",
+      },
+      {
+        heading: "Aggregate Type and Color: The Most Important Specification",
+        body: "The aggregate mix choice is the single most consequential decision in an exposed aggregate driveway — more than the concrete base color or the sealer. Pea gravel (3/8\" round stones) gives a fine, uniform texture that reads as contemporary and suits modern homes. River stone (mixed sizes, 1/4\"–3/4\") gives more visual variation with a naturalistic feel. Crushed granite in a consistent color is the premium option for a clean, designed look. Aggregate color determines how the driveway reads from the street: warm tan-buff aggregate looks traditional and organic; grey-white aggregate reads as modern and clean; charcoal basalt gives a bold, urban look. Specify the aggregate type and source material in your contract — \"exposed aggregate\" without a specification leaves the contractor to choose the cheapest available mix, which may not match your intent.",
+      },
+      {
+        heading: "Sealing Exposed Aggregate: Do It Right",
+        body: "Exposed aggregate driveways need a penetrating sealer applied at installation and every 2–3 years thereafter. The right product is a silane-siloxane penetrating sealer — it soaks into the concrete, repels water and oil, and doesn't fill the texture or create a slippery surface. Avoid film-forming sealers (acrylic, polyurethane) on exposed aggregate driveways: they coat the aggregate rather than penetrate, can become slippery when wet, and eventually delaminate from the surface texture rather than breaking down uniformly. The penetrating sealer protects the aggregate from oil staining and prevents the concrete base from absorbing water that freezes and spalls the surface in cold climates. DIY application costs $0.20–0.40/sq ft in product on a 400–500 sq ft driveway.",
+      },
+      {
+        heading: "Exposed Aggregate Driveway vs. Patio vs. Walkway",
+        body: "Exposed aggregate is one of the few finishes that works equally well on all three surfaces — driveway, patio, and walkway. The traction advantage makes it particularly suitable for the front walkway (wet from rain, morning dew) and pool deck adjacent areas. On a driveway, the texture hides tire marks and surface wear more effectively than any smooth finish. On a patio, it stays cooler underfoot in direct sun than dark stamped surfaces and ages without the color maintenance that stamped finishes require. If you're planning all three surfaces, exposed aggregate in a consistent aggregate color across all three is the most maintenance-efficient approach — one sealer product, one maintenance schedule, zero color-matching headaches.",
+      },
+      {
+        heading: "Cost Comparison: Exposed Aggregate vs. Other Driveway Finishes",
+        body: "On a standard 500 sq ft two-car driveway: plain broom finish runs $2,000–4,000; exposed aggregate runs $4,000–7,000; stamped concrete runs $6,000–10,000; natural stone or paver driveways run $10,000–17,500+. Exposed aggregate sits in the middle on both cost and visual impact — it's the choice for homeowners who want a step above plain but don't want the maintenance commitment of stamped finishes or the upfront cost of pavers. On a per-year basis over a 25-year lifespan, exposed aggregate and plain broom finish have similar total cost of ownership; the aggregate premium is justified by the better appearance and lower maintenance complexity.",
+      },
+      {
+        heading: "Front Walkway in Exposed Aggregate: Extending the Look",
+        body: "If you're choosing exposed aggregate for the driveway, extending the same finish to the front walkway creates a strongly cohesive exterior. The aggregate species and color should match between surfaces — specifying from the same supplier and the same aggregate batch is the most reliable way to achieve this. Where some variation is acceptable on a large driveway, the walkway is viewed at close range by every visitor and scrutinized more carefully. A pea gravel aggregate walkway in the same warmth direction as the driveway aggregate ties both surfaces together without being matchy-matchy. The patio can use a slightly different finish — a complementary stamped or stained surface — while still reading as part of the same material family.",
       },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
@@ -136,6 +172,26 @@ export const drivewayArticles: Article[] = [
         heading: "Regional Price Variation",
         body: "Labor rates vary significantly by region. California, New York, and the Pacific Northwest run 30–60% above national averages. The South and Midwest tend to be at or below the national average. Always get three quotes — driveway pricing varies more than most home improvement categories. The same regional markup applies to patios and walkways, so if you're pricing multiple concrete projects at once, regional labor is the biggest shared variable.",
       },
+      {
+        heading: "How Driveway Size Affects Cost per Square Foot",
+        body: "Concrete contractor mobilization costs — crew travel, equipment delivery, concrete truck minimums — are roughly fixed regardless of project size. On a small driveway (200–300 sq ft), those fixed costs represent a larger share of the total quote, pushing the effective per-sq-ft cost up. On a standard two-car driveway (400–600 sq ft), the mobilization is spread across a larger surface and per-sq-ft costs are more competitive. If you're replacing or upgrading a smaller single-car driveway, consider extending the scope to include a front walkway, entry steps, or a small apron expansion — adding those surfaces to the same pour often costs less than the stand-alone mobilization would.",
+      },
+      {
+        heading: "Reinforcement: Rebar vs. Wire Mesh vs. Fiber",
+        body: "Concrete driveways require internal reinforcement to manage cracking under vehicle loads and freeze-thaw stress. Rebar (1/2\" steel at 18\" on center) is the strongest option and is required for driveways that will see heavy vehicles, RVs, or delivery trucks. Wire mesh (6x6 welded wire) is the minimum standard for passenger vehicle driveways and costs less to install. Synthetic fiber reinforcement (polypropylene or steel fibers mixed into the concrete) supplements but doesn't replace rebar — it controls shrinkage cracking during the cure but doesn't add structural strength under load. For most residential two-car driveways, rebar at 18\" centers is the right specification and is worth the $0.50–1.00/sq ft premium over wire mesh alone. Ask your contractor which reinforcement they use before signing — the answer matters more than the spec sheet.",
+      },
+      {
+        heading: "Concrete Driveway vs. Asphalt: Cost Over Time",
+        body: "Plain concrete driveways ($4–8/sq ft) cost 30–60% more upfront than asphalt ($3–6/sq ft) on a 500 sq ft driveway. But asphalt requires seal coating every 3–5 years at $200–500 per application, plus crack filling and occasional resurfacing. Over a 25-year period, the total cost of a properly maintained concrete driveway is often lower than asphalt — the lower maintenance frequency and longer base lifespan offset the higher installation cost. The calculation tips toward asphalt only in climates with very harsh freeze-thaw cycles (where concrete cracking is frequent) or when upfront cost is the binding constraint. For driveways that connect to a patio or walkway project, the aesthetic consistency of concrete across all surfaces also adds value that pure cost comparisons don't capture.",
+      },
+      {
+        heading: "Permits and Setbacks",
+        body: "Most municipalities require a building permit for a new concrete driveway, particularly if the apron connects to a public road or if significant grading is involved. Setback requirements limit how close the driveway can be to the property line — typically 2–5 feet in most residential zones. Before pouring any concrete, check local ordinances, especially if you're widening an existing driveway or adding a circular layout that changes the footprint significantly. Permit fees range from $50–300 for a typical residential driveway. The permit inspection usually covers sub-base preparation before the pour — the one stage where an independent check on the contractor's base work is genuinely valuable.",
+      },
+      {
+        heading: "How Finish Choice Affects Long-Term Costs",
+        body: "The finish you choose at installation determines your maintenance cost for the next 30 years. Plain broom finish has the lowest ongoing costs: penetrating sealer every 5–7 years at $0.20–0.40/sq ft DIY. Stamped and colored concrete requires film-forming resealing every 2–3 years at $1–2/sq ft professional — $500–1,000 per cycle on a 500 sq ft driveway. Exposed aggregate falls between: penetrating sealer every 3–4 years at $0.25–0.45/sq ft. Over 30 years, the maintenance cost difference between plain and stamped concrete is $5,000–12,000 on a standard two-car driveway. Factor this into the finish decision alongside the upfront cost — it changes the total cost comparison significantly, particularly for homeowners on a fixed long-term budget.",
+      },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "exposed-aggregate-driveway"],
     relatedMaterials: ["broom-finish", "stamped-concrete", "exposed-aggregate"],
@@ -187,6 +243,26 @@ export const drivewayArticles: Article[] = [
         heading: "Crack Repair Before Resurfacing",
         body: "Any resurfacing job requires crack repair as a first step. Cracks filled with polyurethane or epoxy filler must cure before the overlay goes down. Skipping this step leads to the cracks reflecting through the new surface — the most common reason resurfacing jobs fail early.",
       },
+      {
+        heading: "Driveway Resurfacing Cost vs. Full Replacement",
+        body: "On a 500 sq ft concrete driveway: resurfacing with a plain overlay costs $1,500–4,000; a decorative stamped overlay runs $4,000–7,500; full replacement costs $2,000–10,000 depending on finish. The resurfacing savings are meaningful at the low end — a $3/sq ft plain overlay saves $1,500–3,000 versus a new pour. At the decorative end, the savings shrink: a stamped overlay at $12–15/sq ft isn't much cheaper than a new stamped pour at $12–20/sq ft, and the overlay won't perform or last as long. The decision rule: use resurfacing for cosmetic renewal of a structurally sound slab; use full replacement for any slab with structural issues, drainage problems, or significant thickness inconsistency.",
+      },
+      {
+        heading: "Resurfacing a Driveway in Conjunction with a Patio or Walkway",
+        body: "If the driveway, front walkway, and patio were poured at different times with different finishes, a resurfacing project is an opportunity to unify them visually. A coordinated overlay across all three surfaces using the same material, color, and texture creates the visual coherence of a planned exterior — even if the underlying slabs are different ages. The overlay cost for all three surfaces bundled in one project is typically 15–20% lower per-sq-ft than three separate jobs. The timing window matters: all three surfaces need to be resurfaced in the same season for the color to match, since even the same product applied months apart will show some variation in weathering.",
+      },
+      {
+        heading: "When to Resurface vs. Replace: A 4-Question Test",
+        body: "Answer these four questions before calling a resurfacing contractor. (1) Are any cracks wider than 1/4\" or showing height differential between sides? If yes, the base has moved — overlay won't fix it. (2) Does water pool on the surface? If yes, drainage is compromised — overlay won't fix it. (3) Is more than 25% of the surface spalled, pitted, or deteriorated to depth? If yes, structural integrity is insufficient for overlay adhesion. (4) Does the surface flex when driven on? (rare, but indicates base failure.) Pass all four: resurfacing is viable. Fail any one: replace the slab. Most driveways that are just cosmetically worn — dull color, minor surface crazing, light staining — pass all four and are ideal resurfacing candidates.",
+      },
+      {
+        heading: "Asphalt Driveway Resurfacing vs. Concrete",
+        body: "Asphalt driveways can be resurfaced (new asphalt layer over existing) for $2–5/sq ft — less than a concrete overlay. But asphalt-over-asphalt resurfacing doesn't address base problems and doesn't change the surface to a more durable material. Converting an asphalt driveway to concrete requires full removal of the existing asphalt before pouring — you can't overlay concrete on asphalt reliably, as the two materials expand and contract at different rates and the overlay cracks within 1–3 years. Budget full removal at $1–3/sq ft on top of the new concrete cost. The total cost of asphalt removal plus a new concrete driveway is higher than replacing asphalt with new asphalt, but the concrete result lasts 30–50 years versus 15–20 for asphalt — often the better long-term value on a property you plan to hold long-term.",
+      },
+      {
+        heading: "Bundling Driveway Resurfacing with Walkway and Patio Work",
+        body: "If you're already calling a concrete contractor for driveway resurfacing, it's worth getting quotes for the front walkway and patio at the same time. Mobilization costs — equipment transport, crew travel, mix truck minimums — are fixed per job regardless of surface area. Bundling three surfaces into one project typically reduces per-sq-ft cost by 10–20% compared to three separate jobs. It also ensures color and texture match across the connected surfaces, which is hard to guarantee if you space jobs out over multiple seasons. A coordinated driveway, walkway, and patio resurfacing project is one of the most cost-effective ways to unify an exterior's appearance in a single season.",
+      },
     ],
     relatedSlugs: ["concrete-driveway-cost", "stamped-concrete-driveway"],
     relatedMaterials: ["concrete-overlay"],
@@ -211,7 +287,7 @@ export const drivewayArticles: Article[] = [
     title: "Circular Driveway Ideas: Concrete Designs",
     headline: "Circular Driveway Designs That Actually Work",
     metaDescription:
-      "Circular concrete driveways cost $15,000–40,000+ depending on size and finish. Here are design ideas that balance curb appeal with real-world function.",
+      "Circular driveway ideas in concrete: $15,000–40,000 installed depending on size and finish. Design options, sizing rules, and landscaping tips for 2026.",
     targetKeywords: ["circular driveway ideas", "round driveway", "curved driveway design"],
     ogImage: "/og/driveway-circular-ideas.jpg",
     publishedAt: "2026-03-27",
@@ -238,6 +314,22 @@ export const drivewayArticles: Article[] = [
         heading: "Sizing: The One Rule You Can't Ignore",
         body: "A functional circular driveway needs a minimum inside radius of 18–20 feet to accommodate standard vehicles comfortably. The driveway lanes should be at least 10–12 feet wide. These minimums mean a circular driveway requires meaningful frontage — it's not a design for narrow urban lots. If you're also planning a patio in the rear, PourCanvas can help you visualize how both projects might look together before committing to either.",
       },
+      {
+        heading: "Drainage Planning for Circular Driveways",
+        body: "A circular driveway creates a large impervious surface that generates significant stormwater runoff. Most municipalities require demonstration of adequate drainage before permitting a circular driveway installation. Options include directing runoff to existing storm drain connections, installing a French drain system around the driveway perimeter ($15–30/linear foot installed), or grading the center island for infiltration if soil conditions allow. The drainage plan should be developed before the final layout is finalized — the driveway slope and grading must direct water away from the home foundation and toward the permitted drainage outlet. Budget $1,500–5,000 for drainage infrastructure on a typical circular driveway project; this is separate from the concrete cost and is rarely optional.",
+      },
+      {
+        heading: "Circular Driveway Maintenance: What to Budget",
+        body: "A circular driveway with 1,000–1,500 sq ft of stamped or colored concrete requires resealing every 2–3 years at $300–750 per application professionally applied. The center island landscaping needs seasonal maintenance (pruning, mulching, irrigation if installed). Edge cracking is more likely on a circular driveway than a straight one because curved slabs have more complex stress patterns — inspect the outer edge radius annually and fill hairline cracks before winter in freeze-thaw climates. Over a 10-year period, budget $2,000–5,000 in maintenance costs for a well-maintained circular stamped concrete driveway — roughly 5–10% of the installation cost. Connect the driveway to a front walkway using the same finish material to complete the curb appeal picture.",
+      },
+      {
+        heading: "Circular Driveway ROI and Resale Considerations",
+        body: "A circular driveway adds significant perceived value to a property when it suits the home's scale — a circular drive on a larger traditional home can add $15,000–40,000 in perceived value according to real estate agents who work in affluent suburban markets. The return on a smaller home or a suburban property that doesn't have the frontage to make the circular layout look natural is minimal, and it can actually read as overbuilt for the setting. The ROI calculus depends on the property price point: on a $400,000 home, a $35,000 circular driveway is difficult to recover at resale. On a $900,000+ home, the same investment is more proportionate to the property tier and buyer expectation. Use PourCanvas to visualize what the circular layout looks like in the context of your actual home and frontage before committing to the investment.",
+      },
+      {
+        heading: "Front Walkway Integration on a Circular Driveway Property",
+        body: "Properties with circular driveways typically have a front entry that's accessed from the center of the circular loop rather than from the street. The front walkway on these properties often functions as a short, formal connection from the island to the front door — 10–20 feet rather than the typical 30–40 foot front path. The walkway finish should match the driveway finish for visual continuity; on a cobblestone circular drive, a matching cobblestone-stamped walkway from the inner island to the front door reads as intentional and complete. The patio, if present, is typically at the rear and can use a different but related finish — the front exterior cohesion is the priority for a circular drive property.",
+      },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
     faqs: [
@@ -260,7 +352,8 @@ export const drivewayArticles: Article[] = [
     pillar: "driveway",
     title: "Modern Driveway Ideas: What's Working in 2026",
     headline: "Modern Concrete Driveway Designs for 2026",
-    metaDescription: "Modern driveways in 2026 use charcoal washes, clean score lines, and border details. Here are 10 ideas that look great and hold their value.",
+    metaDescription:
+      "Modern driveway ideas in 2026: charcoal integral color, scored borders, and dark exposed aggregate. 10 approaches from $6–20/sq ft with real cost ranges.",
     targetKeywords: ["modern driveway ideas", "contemporary driveway design", "modern concrete driveway"],
     ogImage: "/og/driveway-modern-ideas.jpg",
     publishedAt: "2026-03-27",
@@ -295,6 +388,18 @@ export const drivewayArticles: Article[] = [
         heading: "Driveway Apron Design: Where Modern Driveways Fail or Succeed",
         body: "The apron — the transition from street to the main driveway surface — is where most driveway designs break down. A modern driveway should have a clean, defined edge at the street with consistent surface texture all the way to the curb. Avoid: saw-cut decorative patterns only on the apron (looks like an afterthought), mismatched concrete color between the apron and main surface (happens when aprons are poured separately), or brick or cobblestone inserts at the street transition (dated by 2026 standards). If you're also planning a front walkway, the apron is the best place to establish the material language that carries through to the walk.",
       },
+      {
+        heading: "Garage Door Integration",
+        body: "The modern driveway reads differently depending on how it connects to the garage. A flush, single-color slab extending to the garage threshold is the cleanest look. A textured transition strip — a 12\" band of contrasting aggregate or score line — at the garage edge adds visual definition without being decorative. The garage door color and finish should be considered in the driveway color choice: a charcoal driveway under a white garage door reads as bold and high-contrast; the same charcoal under a dark grey or black garage door creates a monolithic, cohesive look. Most contemporary home remodels are moving toward dark garage doors and dark driveways — the combination has the most visual weight and reads as the most deliberate design choice.",
+      },
+      {
+        heading: "Modern vs. Traditional: How Your Driveway Sets the Tone",
+        body: "The driveway is the first hardscape element visible from the street — it establishes the exterior's design vocabulary before a visitor reaches the front door. A modern charcoal driveway signals clean, contemporary design; a cobblestone-stamped driveway in warm earth tones signals traditional or craftsman sensibility. Both are legitimate — but a mismatched combination (modern home with a fussy cobblestone driveway, or a traditional colonial with a stark dark-grey minimal slab) creates visual dissonance. Survey your home's exterior style before selecting a driveway finish. If you're also choosing a front walkway finish, the driveway leads and the walkway follows — same material direction, slightly more refined execution.",
+      },
+      {
+        heading: "Modern Driveway Landscaping: What Completes the Look",
+        body: "A modern concrete driveway reads most effectively with landscaping that reinforces its design language. Low-maintenance gravel or decomposed granite borders (6–12 inches wide along the edges) complement a clean dark surface without competing. Ornamental grasses, low boxwood hedges, and architectural plants suit contemporary driveways — avoid busy mixed-color planting beds that fragment the visual line. Landscape lighting along the driveway edge (path lights at 8-foot intervals, $30–80 per fixture) extends the modern exterior into the evening. For front walkways and patios, the same landscape restraint applies — a designed concrete surface benefits from planting that frames it rather than clutters it.",
+      },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
     faqs: [
@@ -318,7 +423,7 @@ export const drivewayArticles: Article[] = [
     title: "Concrete vs Asphalt Driveway: Which Is Right for You?",
     headline: "Concrete vs Asphalt Driveway: An Honest Comparison",
     metaDescription:
-      "Concrete driveways cost $4–8/sq ft; asphalt runs $3–6. But upfront cost isn't the whole story. Here's which material wins on your priorities.",
+      "Concrete vs asphalt driveway: concrete costs $4–8/sq ft and lasts 30–50 years; asphalt $3–6/sq ft and lasts 15–30. Which wins depends on climate and budget.",
     targetKeywords: ["concrete vs asphalt driveway", "concrete driveway vs asphalt", "driveway material comparison"],
     ogImage: "/og/driveway-concrete-vs-asphalt.jpg",
     publishedAt: "2026-03-27",
@@ -347,11 +452,23 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Maintenance: Asphalt Requires More Attention",
-        body: "Concrete needs resealing every 5–10 years; prompt attention to cracks prevents water infiltration. Asphalt needs seal coating every 3–5 years, crack filling as needed, and eventual resurfacing. Asphalt's maintenance cycle is more frequent and more involved. Both materials require crack repair — but concrete cracks are more difficult to make invisible, while asphalt patches are more forgiving. If you're also planning a patio or walkway in concrete, bundling all projects with one contractor typically saves 10–15% on mobilization.",
+        body: "Concrete needs resealing every 5–10 years; prompt attention to cracks prevents water infiltration. Asphalt needs seal coating every 3–5 years ($200–500 per application), crack filling as needed, and eventual resurfacing. Asphalt's maintenance cycle is more frequent and more involved — over 25 years, seal coating alone adds $1,200–3,000 to total cost. Both materials require crack repair — but concrete cracks are more difficult to make invisible, while asphalt patches are more forgiving. If you're also planning a patio or walkway in concrete, bundling all projects with one contractor typically saves 10–15% on mobilization.",
       },
       {
         heading: "Which Should You Choose?",
         body: "Choose concrete if: you're in a hot or mild climate, want design options beyond plain black, and plan to stay in the home long enough to recoup the upfront premium. Choose asphalt if: you're in a cold climate with hard freeze-thaw cycles, want the lowest possible upfront cost, or plan to sell within 5–10 years. The higher upfront cost of concrete makes the most sense as a long-term investment — asphalt makes sense when the budget ceiling is firm and climate conditions favor flexibility.",
+      },
+      {
+        heading: "Total Cost of Ownership: 25-Year Comparison",
+        body: "On a 500 sq ft driveway over 25 years: concrete runs $2,000–4,000 installation + $500–1,500 maintenance = $2,500–5,500 total. Asphalt runs $1,500–3,000 installation + $2,000–5,000 seal coating + $1,000–2,000 resurfacing at year 15 = $4,500–10,000 total. The 25-year cost math typically favors concrete — but the assumption is no major cracking on the concrete side. In northern freeze-thaw climates, concrete cracking repair can add $1,000–3,000 to the 25-year total, narrowing the gap. Get a local contractor's input on which material performs better in your specific climate before making a decision based on national averages alone.",
+      },
+      {
+        heading: "Front Walkway and Patio: Concrete Keeps the Family Together",
+        body: "One of the practical advantages of choosing concrete for a driveway is that it creates material consistency with a concrete patio or front walkway — all surfaces can be maintained by the same contractor, on the same resealing schedule, with compatible products. An asphalt driveway adjacent to a concrete patio requires different maintenance products, different contractors, and produces an aesthetic mismatch that most homeowners notice even if they can't articulate why. If you're planning a driveway replacement alongside a patio or walkway project, concrete on all surfaces delivers the most cohesive result and simplifies long-term ownership.",
+      },
+      {
+        heading: "Asphalt or Concrete: What Buyers Prefer",
+        body: "Buyer preferences differ by market and home price point. In warm-climate markets (California, Florida, Texas), stamped or integrally colored concrete driveways are strongly preferred — they signal care and design intention. In northern markets where freeze-thaw cracking is common, some buyers view concrete driveways with skepticism and prefer asphalt for its flexibility and lower repair costs. Talking to a local real estate agent about driveway material preferences in your specific market before replacing a driveway is worthwhile — regional buyer preferences vary more than most homeowner guides acknowledge. For homes in the $500,000+ range in most markets, concrete is broadly preferred; below that threshold, the buyer pool is more accepting of asphalt as long as it's well-maintained.",
       },
     ],
     relatedSlugs: ["concrete-driveway-cost", "stamped-concrete-driveway"],
@@ -406,6 +523,10 @@ export const drivewayArticles: Article[] = [
         heading: "What Black Driveways Work Best With",
         body: "A black or charcoal concrete driveway makes the strongest visual impact against a light home exterior — white, light grey, cream, or warm beige. The high contrast reads as architectural and deliberate. Against a dark home exterior (dark grey, navy, dark brown), the contrast disappears and the driveway blends rather than anchors. Light-toned window frames and trim, structured landscaping, and clean edge detailing amplify the effect. Where black driveways fail: underdeveloped landscapes, mismatched exterior materials, or homes that need other maintenance first. A bold driveway in a cluttered setting looks out of place, not elevated. If you're also redoing a front walkway or patio, extending the dark concrete theme across all three surfaces creates the most cohesive result — though a slightly lighter tone on the walkway and patio avoids the heat issues of full black on pedestrian surfaces.",
       },
+      {
+        heading: "Comparing Black Concrete to Other Dark Driveway Options",
+        body: "Three ways to achieve a dark driveway: black integrally colored concrete ($6–12/sq ft), dark charcoal stamped concrete ($14–20/sq ft), and standard asphalt ($3–6/sq ft fresh, fades over time). Black integral concrete is the most design-intentional option — the color is consistent, goes all the way through, and stays dark with proper sealing. Dark stamped concrete adds pattern to the dark tone and suits homes where the decorative detail is part of the design intent. Asphalt is the default dark option, but its inconsistent color maintenance (dark when freshly sealed, faded grey when not) makes it a poor substitute for a genuinely designed dark surface. Use PourCanvas to preview how charcoal and true black concrete compare on your specific driveway before finalizing the pigment specification.",
+      },
     ],
     relatedSlugs: ["modern-driveway-ideas", "concrete-driveway-cost"],
     faqs: [
@@ -428,7 +549,8 @@ export const drivewayArticles: Article[] = [
     pillar: "driveway",
     title: "Driveway Border Ideas: 5 Styles and What They Cost",
     headline: "Driveway Border Ideas That Add Curb Appeal Without the Full Price Tag",
-    metaDescription: "Driveway borders cost $8–20 per linear foot and can transform a plain concrete slab. Here are 5 styles, real costs, and which homes they suit best.",
+    metaDescription:
+      "Driveway border ideas: cobblestone stamp ($8–12/lf), exposed aggregate strip, saw-cut score line, brick inlay. 5 styles with real costs and when to use each.",
     targetKeywords: ["driveway border ideas", "concrete driveway border", "stamped concrete border driveway"],
     ogImage: "/og/driveway-driveway-border-ideas.jpg",
     publishedAt: "2026-03-27",
@@ -459,6 +581,10 @@ export const drivewayArticles: Article[] = [
         heading: "Which Border Works Best for Your Home",
         body: "Matching the border style to your home's exterior is the deciding factor. Cobblestone stamp borders suit traditional architecture and brick facades. Exposed aggregate borders fit modern and contemporary homes with clean lines. Saw-cut score lines are best for strictly minimalist exteriors where any decoration would feel out of place. Brick inlay borders are the premium choice for traditional homes where material authenticity matters. Color band borders work with any style but require planning at the pour stage. Budget also matters: saw-cut score lines are $3–6/lf; brick inlay borders are $14–22/lf. A cobblestone stamp border at $8–12/lf is the best value option for most homeowners — significant visual impact, moderate cost, and no ongoing maintenance beyond the sealer schedule the rest of the driveway already requires.",
       },
+      {
+        heading: "Coordinating Driveway Border with Front Walkway and Patio",
+        body: "A driveway border that echoes the material language of the front walkway creates a visually connected exterior. The most effective pairing: a cobblestone-stamp border on the driveway plus a cobblestone-stamped front walkway — same stamp, same color wash, different surface. The walkway can go slightly richer in color depth than the driveway since it handles foot traffic rather than vehicle loads. If the patio also uses a decorative stamp or exposed aggregate finish, a simple saw-cut score line or matching color band on the driveway ties everything together without over-decorating the most utilitarian surface. Tools like PourCanvas let you preview how different border and walkway combinations look together in your specific exterior before committing to either.",
+      },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
     faqs: [
@@ -481,7 +607,8 @@ export const drivewayArticles: Article[] = [
     pillar: "driveway",
     title: "Concrete Driveway Color Guide: Every Option Compared",
     headline: "Concrete Driveway Colors: What to Choose and Why",
-    metaDescription: "Concrete driveway color options range from integral pigment ($2–5/sq ft extra) to acid stain and color wash. Here's what each looks like and what it costs.",
+    metaDescription:
+      "Concrete driveway color guide: integral pigment $2–5/sq ft extra, acid stain $3–7/sq ft on existing slabs. Every color method compared for 2026.",
     targetKeywords: ["concrete driveway color", "concrete driveway color visualizer", "colored concrete driveway ideas"],
     ogImage: "https://images.pourcanvas.com/driveway-concrete-driveway-color-guide.jpg",
     publishedAt: "2026-03-27",
@@ -512,6 +639,10 @@ export const drivewayArticles: Article[] = [
         heading: "Colored Sealer vs. Full Color Treatment: When to Use Each",
         body: "Colored penetrating sealers are a low-effort way to shift the appearance of an existing concrete driveway. They add a subtle tint — typically charcoal, slate, or tan — while sealing the surface for protection. The color effect is mild compared to integral pigment or stain; think of it as adjusting tone rather than changing color. Cost: $1–3 per sq ft, applied every 2–3 years. For homeowners who want a quick, reversible color refresh without a full re-pour or stain project, a colored sealer is the fastest path. For homeowners planning a new driveway or wanting a significant visual change, the investment in integral pigment or acid stain is worth it — the color depth and longevity are dramatically better than a sealer tint alone.",
       },
+      {
+        heading: "Matching Driveway Color to Front Walkway and Patio",
+        body: "When the driveway, front walkway, and patio are all planned in the same project window, color coordination across the three surfaces creates the most cohesive exterior result. The tonal direction should be consistent even if the exact finish differs: a charcoal integral driveway paired with a charcoal-wash stamped walkway and a charcoal exposed aggregate patio reads as designed. Exact color matching is rarely achievable across separate pours; tonal harmony is the realistic goal. PourCanvas can show you how different color directions look across all three surfaces before you finalize your color selections, which is particularly useful when you're trying to coordinate with an existing home exterior color that you're not changing.",
+      },
     ],
     relatedSlugs: ["black-concrete-driveway", "concrete-driveway-cost"],
     faqs: [
@@ -539,7 +670,7 @@ export const drivewayArticles: Article[] = [
     title: "Stamped Concrete Driveway Cost: 2025 Price Guide",
     headline: "What You'll Actually Pay for a Stamped Concrete Driveway",
     metaDescription:
-      "Stamped concrete driveways cost $12–20/sq ft installed. Full breakdown by pattern, region, and lifecycle — so you know what to expect before calling a contractor.",
+      "Stamped concrete driveway cost in 2026: $12–20/sq ft by pattern, $4,800–10,000 for a two-car driveway. Full breakdown by region, pattern, and lifecycle cost.",
     targetKeywords: [
       "stamped concrete driveway cost",
       "stamped concrete driveway cost per square foot",
@@ -574,6 +705,10 @@ export const drivewayArticles: Article[] = [
         heading: "How to Get an Accurate Quote",
         body: "A reliable stamped concrete quote should break out: (1) base concrete cost per sq ft, (2) stamping labor per sq ft, (3) color and sealing materials, and (4) prep work — demolition of an existing driveway runs $1–3/sq ft, subgrade preparation $0.50–1.50/sq ft. Ask specifically whether the quote includes the first sealing application — some contractors include it, others price it separately. The total cost for a 450 sq ft two-car driveway with a mid-range ashlar slate pattern, integral pigment, and color wash should land at $6,000–8,500 in most U.S. markets. Tools like PourCanvas let you visualize different patterns and color options on your actual driveway before you commit to a design — which helps narrow the stamping decision before the contractor conversation. If you're also planning a front walkway or patio, getting those in the same quote often reduces the per-sq-ft cost through economies of scale.",
       },
+      {
+        heading: "Warranty and Post-Installation Support",
+        body: "Most experienced stamped concrete contractors offer a 1-year warranty on installation defects — primarily covering significant cracking or color inconsistency that wasn't part of the specified design. Get the warranty terms in writing and confirm specifically what is and isn't covered. Common exclusions: hairline surface crazing (normal concrete shrinkage), color variation between separate pours, and surface wear from deicing chemical use. The warranty conversation also reveals contractor confidence: contractors who've done thousands of square feet of stamped driveway work typically offer clear, straightforward warranty terms. Contractors who hedge significantly or offer no written warranty are a red flag. Budget $250–500 for professional resealing every 2–3 years as a recurring maintenance cost on top of the installation — this is not covered under any warranty but is essential for the surface to perform as intended over its 25–40 year lifespan.",
+      },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
     faqs: [
@@ -604,7 +739,7 @@ export const drivewayArticles: Article[] = [
     title: "Driveway Edging Ideas: Materials, Cost & How to Choose",
     headline: "Driveway Edging: Which Material Works Best for Your Driveway",
     metaDescription:
-      "Driveway edging defines the perimeter, prevents edge cracking, and finishes the look. Here are 6 materials with real costs and when to use each.",
+      "Driveway edging ideas: concrete curbing $8–15/lf, Belgian block $20–40/lf, metal edging $3–8/lf. 6 materials compared with real costs and when each works best.",
     targetKeywords: [
       "driveway edging ideas",
       "driveway edge ideas",

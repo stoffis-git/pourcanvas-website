@@ -73,6 +73,7 @@ export interface InspirationPage {
   metaDescription: string;
   ogImage: string;
   heroAlt: string;
+  additionalImages?: { url: string; alt: string }[];
   contentBlock: string;
   targetKeywords: string[];
   pillar?: Pillar;

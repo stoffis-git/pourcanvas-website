@@ -479,4 +479,79 @@ export const inspirationPages: InspirationPage[] = [
     ctaHeadline: "See slate blue staining on your driveway",
     ctaBody: "Upload a photo of your driveway and see what slate blue water-based stained concrete could look like in your space.",
   },
+  {
+    slug: "wood-plank-stamped-walkway",
+    title: "Wood Plank Stamped Concrete Walkway Ideas | PourCanvas",
+    headline: "Wood Plank Concrete Walkway",
+    metaDescription:
+      "Wood plank stamped concrete walkways deliver a warm, natural look for any front path - durable underfoot and half the cost of real wood decking.",
+    ogImage: "/og/inspiration-wood-plank-stamped-walkway.jpg",
+    heroAlt: "Wood plank stamped concrete walkway with warm brown tone leading to craftsman home entry",
+    contentBlock:
+      "Wood plank stamped concrete is one of the most popular walkway finishes on Pinterest right now - and it's easy to see why homeowners keep saving it.\n\nThe pattern replicates the long, straight grain lines of hardwood decking in poured concrete, delivering a warm, organic feel that plain broom finish or smooth concrete simply cannot match. The effect is most convincing in a walnut, cedar, or warm grey color wash: the stamped grain detail catches directional light at dusk and in morning sun, giving the surface a genuinely textured appearance from any angle. At wider plank widths (4–6 inch plank spacing), the pattern also works as a strong visual guide down a front path, directing the eye toward the entry in a way that narrow brick or flagstone patterns don't.\n\nFrom a durability standpoint, it performs identically to any other stamped concrete walkway: the wood grain impression is in the surface relief, not in the material. It handles freeze-thaw cycles, ground settlement, and heavy foot traffic exactly as well as a plain slab. The only practical consideration is sealer choice — a semi-gloss or satin finish sealer enhances the grain texture and protects the color wash from UV fading without making the surface slippery. Resealing every 2–3 years keeps the plank detail crisp.\n\nCost runs $12–18 per sq ft for a stamped concrete walkway, compared to $30–60/sq ft for genuine hardwood decking on a ground-level path. For a standard 40-foot front walk at 4 feet wide, that's $1,900–2,900 for stamped concrete versus $4,800–9,600 for real wood. PourCanvas can preview how wood plank stamping in different tones would look on your specific front path before you commit.",
+    targetKeywords: ["wood plank concrete walkway", "stamped concrete walkway wood grain", "front path ideas"],
+    pillar: "walkway",
+    ctaHeadline: "See wood plank concrete on your front path",
+    ctaBody: "Upload a photo of your walkway and see what wood plank stamped concrete could look like in your space.",
+  },
+  {
+    slug: "flagstone-walkway-silver-grey",
+    title: "Silver Grey Flagstone Walkway Ideas | PourCanvas",
+    headline: "Silver Grey Flagstone Walkway",
+    metaDescription:
+      "Silver grey flagstone stamped concrete walkways suit modern and coastal homes. Clean stone texture, cool neutral tone, low maintenance.",
+    ogImage: "/og/inspiration-flagstone-walkway-silver-grey.jpg",
+    heroAlt: "Silver grey flagstone stamped concrete walkway leading to contemporary home front entry",
+    contentBlock:
+      "Silver grey flagstone is the walkway finish that suits contemporary homes the way buff flagstone suits traditional ones - it's clean, cool, and architecturally intentional.\n\nThe flagstone stamp pattern creates an irregular, organic surface texture that contrasts naturally against the straight lines of a modern facade. In a silver grey or cool charcoal color wash, that organic texture reads as deliberate rather than rustic. The result is a front path that looks like it was designed, not just poured. It's a particularly strong choice against white stucco, light grey lap siding, or dark charcoal brick exteriors - the cool grey-on-grey palette creates depth through texture contrast rather than color contrast.\n\nVisually, silver grey flagstone walkways photograph extremely well - the cool tone reads cleanly on cameras and prints, which is part of why this style circulates widely on Pinterest. The organic stone shapes give each project a slightly different character based on the stamp rotation, so no two driveways look identical even using the same stamp set and color wash. Light and shadow in morning and afternoon sun bring out the relief detail, making the surface look different at different times of day.\n\nPractically, flagstone-stamped concrete at $12–18 per sq ft is about one-third the cost of actual irregular flagstone set in mortar ($30–50/sq ft). It's also structurally simpler: no mortar joints to crack or repoint, no individual stones to settle independently, no gaps for weeds. A clear penetrating sealer with UV protection preserves the silver-grey tone and prevents the color wash from warming over time. PourCanvas can show you how silver grey flagstone stamping would look on your specific front walk.",
+    targetKeywords: ["silver grey flagstone walkway", "flagstone stamped concrete walkway", "modern walkway ideas"],
+    pillar: "walkway",
+    ctaHeadline: "See silver grey flagstone on your path",
+    ctaBody: "Upload a photo of your walkway and see what silver grey flagstone stamped concrete could look like in your space.",
+  },
+  {
+    slug: "acid-stained-concrete-walkway",
+    title: "Acid Stained Concrete Walkway Ideas | PourCanvas",
+    headline: "Acid Stained Concrete Walkway",
+    metaDescription:
+      "Acid stained concrete walkways have natural, mottled color variation that looks nothing like painted concrete. See how it looks on a real front path.",
+    ogImage: "/og/inspiration-acid-stained-concrete-walkway.jpg",
+    heroAlt: "Acid stained concrete walkway with warm amber-brown mottled tones leading to traditional home entry",
+    contentBlock:
+      "Acid stained concrete walkways produce a finish you genuinely cannot fake with any other coloring method - and that's exactly why homeowners who discover them tend to go all-in.\n\nThe acid staining process works by reacting with the calcium hydroxide in cured concrete. Diluted hydrochloric acid and metalite salts penetrate the concrete surface and create a chemical bond with the mineral content - the result is a mottled, variegated tone that changes across the surface based on the concrete's mineral density, pour date, and curing conditions. No two acid-stained slabs look identical. The most popular tones are amber, walnut, coffee brown, and terra cotta - earth tones that appear naturally in weathered stone and wood. Each one has a depth and variation that solid-color stains and integral pigments simply cannot replicate.\n\nFor a front walkway, this translates to a path that looks genuinely organic and considered. Amber and walnut tones suit craftsman, ranch, and traditional homes particularly well - the warm brown palette references natural wood and aged brick in a way that reads as intentional from the street. The mottled variation also means it doesn't show wear marks, footprints, or minor surface marks the way a solid-color finish would.\n\nCost on an existing slab runs $4–8 per sq ft for the acid stain application and sealing - one of the most affordable transformation options for an existing concrete walkway. On new concrete, add $6–10/sq ft for the slab itself. The key maintenance requirement is annual or biennial resealing: acid-stained concrete needs a penetrating sealer to prevent color fade and surface wear. A UV-stable sealer is essential for south-facing paths in direct sun. PourCanvas can preview acid-stained tones on your specific walkway before you choose a color.",
+    targetKeywords: ["acid stained concrete walkway", "stained concrete front path", "walkway color ideas"],
+    pillar: "walkway",
+    ctaHeadline: "See acid staining on your front path",
+    ctaBody: "Upload a photo of your walkway and see what acid stained concrete could look like in your space.",
+  },
+  {
+    slug: "cobblestone-stamped-walkway",
+    title: "Cobblestone Stamped Concrete Walkway Ideas | PourCanvas",
+    headline: "Cobblestone Stamped Walkway",
+    metaDescription:
+      "Cobblestone stamped concrete walkways give a classic European look to any front path - no weed joints, no shifting stones, half the cost of real cobble.",
+    ogImage: "/og/inspiration-cobblestone-stamped-walkway.jpg",
+    heroAlt: "Cobblestone stamped concrete walkway in warm buff tone leading to colonial home front entry",
+    contentBlock:
+      "Cobblestone stamped concrete is one of the most requested walkway patterns for traditional, colonial, and craftsman homes - and it consistently delivers one of the highest curb appeal returns per dollar spent.\n\nThe round-edged cobblestone stamp creates a pattern that references European street paving and aged manor entries. In a warm buff, sandstone, or aged-iron color wash, it reads as established and upscale - the kind of front path that looks as if it has been there for decades. Wider cobblestone spacing suits larger entry paths; a tighter, more densely packed pattern suits narrower walkways and garden paths where the smaller scale of the stamp feels more proportional.\n\nThe visual strength of cobblestone comes from the texture and shadow play - each stamped stone creates slight relief that catches directional light in early morning and late afternoon, making the surface genuinely three-dimensional from a normal viewing angle. Color wash selection is critical: a single-tone warm buff creates a clean, traditional look, while a two-tone antiquing wash (darker in the grout lines, lighter on the stone faces) gives a more aged, high-end appearance at roughly $2–4/sq ft extra in labor.\n\nCompared to actual cobblestone set in mortar ($25–45/sq ft), stamped concrete runs $12–18/sq ft and solves every practical problem: no individual stones to settle or heave, no mortar joints to crack or allow weed growth, and a sealed surface that handles freeze-thaw cycling without movement. Maintenance is a reseal every 2–3 years. For a coordinated look across the property, the same cobblestone stamp used on a front walkway can extend to a driveway border or entry landing. PourCanvas can show you how cobblestone stamping would look on your specific front path.",
+    targetKeywords: ["cobblestone stamped concrete walkway", "cobblestone front path ideas", "stamped walkway traditional"],
+    pillar: "walkway",
+    ctaHeadline: "See cobblestone stamping on your walkway",
+    ctaBody: "Upload a photo of your walkway and see what cobblestone stamped concrete could look like in your space.",
+  },
+  {
+    slug: "charcoal-salt-finish-patio",
+    title: "Charcoal Salt Finish Concrete Patio Ideas | PourCanvas",
+    headline: "Charcoal Salt Finish Patio",
+    metaDescription:
+      "A charcoal salt finish concrete patio has a subtle, pitted texture that reads as modern and refined. See how this finish looks on a real backyard patio.",
+    ogImage: "/og/inspiration-charcoal-salt-finish-patio.jpg",
+    heroAlt: "Charcoal salt finish concrete patio with subtle pitted texture and modern outdoor furniture",
+    contentBlock:
+      "Charcoal salt finish concrete is the understated choice for homeowners who want texture without pattern - and it photographs better than almost any other concrete finish.\n\nThe salt finish process involves broadcasting rock salt onto fresh concrete immediately after placement, pressing it lightly into the surface, and then washing it out after curing. Each salt crystal leaves a small, shallow pit in the surface - the result is a randomly pitted texture that reads as fine grain from a distance and shows genuine surface depth up close. In a charcoal or dark grey integral color, the pitting catches light as fine shadows, giving the slab a quality that plain broom finish or smooth concrete simply doesn't have.\n\nFrom a design standpoint, charcoal salt finish suits contemporary and transitional backyards particularly well. The dark neutral tone grounds outdoor furniture and landscaping without competing with it. Against light-colored home exteriors (white, cream, light grey), charcoal reads as bold and intentional - a contrast that makes the patio feel defined and designed. Against darker exteriors, it creates a tonal relationship that reads as sophisticated. The fine, non-directional texture of salt finish also scales gracefully: it looks equally good on a 200 sq ft urban courtyard and a 1,000 sq ft resort-scale pool deck.\n\nPractically, a salt finish concrete patio costs $8–14 per sq ft installed with integral color - more than plain broom finish ($6–10/sq ft) but less than stamped concrete ($12–18/sq ft). It's a mid-tier finish in cost terms but a top-tier finish in perceived quality. The pitting provides adequate slip resistance for most outdoor uses without additional texture treatment. A penetrating UV-stable sealer in a satin finish protects the integral color and enhances the surface depth. PourCanvas can preview charcoal salt finish on your specific patio before you commit to the color and finish combination.",
+    targetKeywords: ["charcoal salt finish patio", "salt finish concrete patio", "dark concrete patio ideas"],
+    pillar: "patio",
+    ctaHeadline: "See charcoal salt finish on your patio",
+    ctaBody: "Upload a photo of your patio and see what charcoal salt finish concrete could look like in your space.",
+  },
 ];
