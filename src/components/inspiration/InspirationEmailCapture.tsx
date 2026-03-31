@@ -4,9 +4,10 @@ interface Props {
   slug: string;
   pillar?: string;
   source?: string;
+  pageHeadline?: string;
 }
 
-export function InspirationEmailCapture({ slug, pillar = '', source = 'inspire-pack' }: Props) {
+export function InspirationEmailCapture({ slug, pillar = '', source = 'inspire-pack', pageHeadline }: Props) {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -33,6 +34,14 @@ export function InspirationEmailCapture({ slug, pillar = '', source = 'inspire-p
     }
   };
 
+  const heading = pageHeadline
+    ? `Get more ${pageHeadline} ideas — free.`
+    : "Get the full inspiration pack — free.";
+
+  const description = pageHeadline
+    ? `We'll send 20+ curated ${pillar} designs to your inbox.`
+    : "20+ curated patio, driveway and walkway design images delivered to your inbox.";
+
   if (submitted) {
     return (
       <div className="rounded-2xl border border-border bg-muted/30 px-6 py-6">
@@ -44,10 +53,8 @@ export function InspirationEmailCapture({ slug, pillar = '', source = 'inspire-p
 
   return (
     <div className="rounded-2xl border border-border bg-muted/30 px-6 py-6">
-      <p className="font-semibold text-foreground mb-1">Get the full inspiration pack — free.</p>
-      <p className="text-sm text-muted-foreground mb-4">
-        20+ curated patio, driveway and walkway design images delivered to your inbox.
-      </p>
+      <p className="font-semibold text-foreground mb-1">{heading}</p>
+      <p className="text-sm text-muted-foreground mb-4">{description}</p>
       <form onSubmit={handleSubmit} className="flex gap-2 flex-col sm:flex-row">
         <input
           type="email"

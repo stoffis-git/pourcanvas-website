@@ -5,7 +5,7 @@ import { SeoHead } from "@/components/SeoHead";
 import { InspirationImageCarousel } from "@/components/inspiration/InspirationImageCarousel";
 import { InspirationContentBlock } from "@/components/inspiration/InspirationContentBlock";
 import { InspirationPopup } from "@/components/inspiration/InspirationPopup";
-import { PillarConversionBlock } from "@/components/inspiration/PillarConversionBlock";
+import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
 import { InspirationRelatedTiles } from "@/components/inspiration/InspirationRelatedTiles";
 import { InspirationCrossSection } from "@/components/inspiration/InspirationCrossSection";
 import { MaterialZoomContainer } from "@/components/inspiration/MaterialZoomContainer";
@@ -45,7 +45,12 @@ const InspirationPage = () => {
           )}
           <InspirationPopup slug={page.slug} pillar={page.pillar} />
           <InspirationRelatedTiles currentSlug={page.slug} pillar={page.pillar} />
-          <PillarConversionBlock pillar={page.pillar} />
+          <InspirationEmailCapture
+            slug={page.slug}
+            pillar={page.pillar}
+            pageHeadline={page.headline}
+            source="inspire-pack-insp-inline"
+          />
           <InspirationCrossSection currentSlug={page.slug} currentPillar={page.pillar} />
           {page.faqs && page.faqs.length > 0 && (
             <FAQSection faqs={page.faqs} />
