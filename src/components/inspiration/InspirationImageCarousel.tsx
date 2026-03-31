@@ -40,7 +40,7 @@ export const InspirationImageCarousel = ({ images, headline, dominantColor }: Pr
       </div>
 
       {isMulti && (
-        <div className="flex flex-row gap-2 mt-3">
+        <div className="flex flex-row flex-wrap gap-2 mt-3">
           {images.map((img, i) => (
             <button
               key={i}
