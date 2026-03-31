@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { cfImage } from "@/lib/imageUrl";
 
 interface InspirationTileProps {
   slug: string;
@@ -14,7 +15,7 @@ export const InspirationTile = ({ slug, ogImage, heroAlt, headline }: Inspiratio
   >
     <div className="relative w-full aspect-[2/3] overflow-hidden rounded-xl">
       {ogImage.startsWith("https://") ? (
-        <img src={ogImage} alt={heroAlt} className="w-full h-full object-cover" draggable={false} />
+        <img src={cfImage(ogImage, 600)} alt={heroAlt} className="w-full h-full object-cover" draggable={false} loading="lazy" decoding="async" />
       ) : (
         <div className="w-full h-full bg-muted" />
       )}

@@ -49,9 +49,14 @@ for (const url of allPaths) {
     .filter(Boolean)
     .join("\n");
 
+  const heroMatch = html.match(/<img[^>]+src="(https:\/\/[^"]+)"[^>]*>/);
+  const preloadTag = heroMatch
+    ? `<link rel="preload" as="image" href="${heroMatch[1]}" fetchpriority="high">`
+    : "";
+
   const page = cleanTemplate
     .replace('<div id="root"></div>', `<div id="root">${html}</div>`)
-    .replace("</head>", `${headTags}\n</head>`);
+    .replace("</head>", `${headTags}\n${preloadTag}\n</head>`);
 
   const filePath =
     url === "/"

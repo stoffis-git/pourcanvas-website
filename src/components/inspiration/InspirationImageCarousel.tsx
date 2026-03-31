@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { cfImage } from "@/lib/imageUrl";
 
 interface ImageItem {
   url: string;
@@ -23,9 +24,11 @@ export const InspirationImageCarousel = ({ images, headline }: Props) => {
       >
         {selected?.url?.startsWith("https://") && (
           <img
-            src={selected.url}
+            src={cfImage(selected.url, 900)}
             alt={selected.alt}
             draggable={false}
+            fetchPriority="high"
+            decoding="async"
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           />
         )}
@@ -47,9 +50,11 @@ export const InspirationImageCarousel = ({ images, headline }: Props) => {
             >
               {img.url?.startsWith("https://") && (
                 <img
-                  src={img.url}
+                  src={cfImage(img.url, 128)}
                   alt={img.alt}
                   draggable={false}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover pointer-events-none"
                 />
               )}
