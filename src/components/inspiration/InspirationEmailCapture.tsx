@@ -44,17 +44,17 @@ export function InspirationEmailCapture({ slug, pillar = '', source = 'inspire-p
 
   if (submitted) {
     return (
-      <div className="rounded-2xl border border-border bg-muted/30 px-6 py-6">
-        <p className="font-semibold text-foreground">You're on the list.</p>
-        <p className="text-sm text-muted-foreground mt-1">Check your inbox shortly.</p>
+      <div className="rounded-2xl bg-black px-6 py-6">
+        <p className="font-semibold text-white">You're on the list.</p>
+        <p className="text-sm text-white/70 mt-1">Check your inbox shortly.</p>
       </div>
     );
   }
 
   return (
-    <div className="rounded-2xl border border-border bg-muted/30 px-6 py-6">
-      <p className="font-semibold text-foreground mb-1">{heading}</p>
-      <p className="text-sm text-muted-foreground mb-4">{description}</p>
+    <div className="rounded-2xl bg-black px-6 py-6">
+      <p className="font-semibold text-white mb-1">{heading}</p>
+      <p className="text-sm text-white/70 mb-4">{description}</p>
       <form onSubmit={handleSubmit} className="flex gap-2 flex-col sm:flex-row">
         <input
           type="email"
@@ -62,17 +62,17 @@ export function InspirationEmailCapture({ slug, pillar = '', source = 'inspire-p
           value={email}
           onChange={e => setEmail(e.target.value)}
           required
-          className="flex-1 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-ring"
+          className="flex-1 rounded-lg border border-white/20 bg-white/10 text-white placeholder:text-white/40 px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-white/50"
         />
         <button
           type="submit"
           disabled={submitting}
-          className="rounded-lg px-5 py-2 text-sm font-medium bg-foreground text-background hover:opacity-80 transition-opacity disabled:opacity-50 whitespace-nowrap"
+          className="rounded-lg px-5 py-2 text-sm font-medium bg-white text-black hover:opacity-80 transition-opacity disabled:opacity-50 whitespace-nowrap"
         >
           {submitting ? 'Sending…' : 'Send me the pack'}
         </button>
       </form>
-      {error && <p className="text-xs text-destructive mt-2">{error}</p>}
+      {error && <p className="text-xs text-red-400 mt-2">{error}</p>}
     </div>
   );
 }

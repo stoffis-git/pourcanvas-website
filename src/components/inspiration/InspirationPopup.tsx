@@ -59,7 +59,7 @@ export function InspirationPopup({ slug, pillar = "" }: Props) {
 
   return (
     <Dialog open={open} onOpenChange={(next) => { if (!next) dismiss(); }}>
-      <DialogContent className="max-w-md px-6 py-8">
+      <DialogContent className="max-w-md px-6 py-8 mx-4 rounded-2xl">
         {submitted ? (
           <>
             <DialogTitle className="text-lg font-semibold">You're on the list.</DialogTitle>
