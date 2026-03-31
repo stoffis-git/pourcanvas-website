@@ -7,6 +7,7 @@ import { InspirationContentBlock } from "@/components/inspiration/InspirationCon
 import { InspirationPopup } from "@/components/inspiration/InspirationPopup";
 import { PillarConversionBlock } from "@/components/inspiration/PillarConversionBlock";
 import { InspirationRelatedTiles } from "@/components/inspiration/InspirationRelatedTiles";
+import { InspirationCrossSection } from "@/components/inspiration/InspirationCrossSection";
 import { MaterialZoomContainer } from "@/components/inspiration/MaterialZoomContainer";
 import { FAQSection } from "@/components/FAQSection";
 import { inspirationPages } from "@/content";
@@ -45,6 +46,7 @@ const InspirationPage = () => {
           <InspirationPopup slug={page.slug} pillar={page.pillar} />
           <InspirationRelatedTiles currentSlug={page.slug} pillar={page.pillar} />
           <PillarConversionBlock pillar={page.pillar} />
+          <InspirationCrossSection currentSlug={page.slug} currentPillar={page.pillar} />
           {page.faqs && page.faqs.length > 0 && (
             <FAQSection faqs={page.faqs} />
           )}
