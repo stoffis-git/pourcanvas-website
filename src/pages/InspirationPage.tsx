@@ -38,11 +38,18 @@ const InspirationPage = () => {
       <Header />
       <main className="max-w-4xl mx-auto px-5 py-28 md:py-36">
         <div className="space-y-8">
-          <InspirationImageCarousel images={allImages} headline={page.headline} dominantColor={page.dominantColor} />
-          <InspirationContentBlock body={page.contentBlock} />
-          {!isMulti && (
-            <MaterialZoomContainer image={page.ogImage} alt={page.heroAlt} />
-          )}
+          <div className="md:grid md:grid-cols-2 md:gap-10 md:items-start">
+            <InspirationImageCarousel images={allImages} headline={page.headline} dominantColor={page.dominantColor} />
+            <div className="space-y-6">
+              <h1 className="hidden md:block text-4xl lg:text-5xl font-display font-bold text-foreground leading-tight">
+                {page.headline}
+              </h1>
+              <InspirationContentBlock body={page.contentBlock} />
+              {!isMulti && (
+                <MaterialZoomContainer image={page.ogImage} alt={page.heroAlt} />
+              )}
+            </div>
+          </div>
           <InspirationPopup slug={page.slug} pillar={page.pillar} />
           <InspirationRelatedTiles currentSlug={page.slug} pillar={page.pillar} />
           <InspirationEmailCapture

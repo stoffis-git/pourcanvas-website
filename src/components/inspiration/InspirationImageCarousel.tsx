@@ -20,7 +20,7 @@ export const InspirationImageCarousel = ({ images, headline, dominantColor }: Pr
   return (
     <div className="w-full">
       <div
-        className="relative w-full aspect-[2/3] md:aspect-[4/3] overflow-hidden rounded-2xl select-none"
+        className="relative w-full aspect-[2/3] overflow-hidden rounded-2xl select-none"
         style={{ backgroundColor: dominantColor ?? "#e5e0d8" }}
         onContextMenu={(e) => e.preventDefault()}
       >
@@ -67,8 +67,8 @@ export const InspirationImageCarousel = ({ images, headline, dominantColor }: Pr
         </div>
       )}
 
-      <div className="mt-6">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground leading-tight">
+      <div className="mt-6 md:hidden">
+        <h1 className="text-3xl font-display font-bold text-foreground leading-tight">
           {headline}
         </h1>
       </div>
