@@ -39,8 +39,8 @@ export function InspirationEmailCapture({ slug, pillar = '', source = 'inspire-p
     : "Get the full inspiration pack — free.";
 
   const description = pageHeadline
-    ? `We'll send 20+ curated ${pillar} designs to your inbox.`
-    : "20+ curated patio, driveway and walkway design images delivered to your inbox.";
+    ? `We'll send 30+ curated ${pillar} designs to your inbox.`
+    : "30+ curated patio, driveway and walkway design images delivered to your inbox.";
 
   if (submitted) {
     return (

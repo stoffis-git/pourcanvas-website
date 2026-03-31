@@ -73,7 +73,7 @@ export function InspirationPopup({ slug, pillar = "" }: Props) {
               Get the full inspiration pack — free.
             </DialogTitle>
             <DialogDescription className="mt-1 mb-5">
-              20+ curated patio, driveway and walkway design images delivered to your inbox.
+              30+ curated patio, driveway and walkway design images delivered to your inbox.
             </DialogDescription>
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
               <input
