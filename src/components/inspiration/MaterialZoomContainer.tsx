@@ -10,7 +10,7 @@ export const MaterialZoomContainer = ({ image, alt }: Props) => {
       <img
         src={image}
         alt={alt}
-        className="w-full h-full object-cover scale-150 md:scale-100"
+        className="w-full h-full object-cover scale-150 md:scale-[2]"
         style={{ objectPosition: "50% 90%" }}
         draggable={false}
       />

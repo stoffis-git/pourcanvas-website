@@ -39,7 +39,9 @@ const InspirationPage = () => {
       <main className="max-w-4xl mx-auto px-5 py-28 md:py-36">
         <div className="space-y-8">
           <div className="md:grid md:grid-cols-2 md:gap-10 md:items-start">
-            <InspirationImageCarousel images={allImages} headline={page.headline} dominantColor={page.dominantColor} />
+            <div className="md:sticky md:top-28">
+              <InspirationImageCarousel images={allImages} headline={page.headline} dominantColor={page.dominantColor} />
+            </div>
             <div className="space-y-6">
               <h1 className="hidden md:block text-4xl lg:text-5xl font-display font-bold text-foreground leading-tight">
                 {page.headline}
