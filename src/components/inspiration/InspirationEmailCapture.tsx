@@ -35,7 +35,7 @@ export function InspirationEmailCapture({ slug, pillar = '', source = 'inspire-p
   };
 
   const heading = pageHeadline
-    ? `Get more ${pageHeadline} ideas — free.`
+    ? `Get more ${pageHeadline} ideas. FREE`
     : "Get the full inspiration pack — free.";
 
   const description = pageHeadline
