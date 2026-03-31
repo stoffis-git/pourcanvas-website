@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { cfImage } from "@/lib/imageUrl";
 
 interface ImageItem {
@@ -14,11 +14,8 @@ interface Props {
 
 export const InspirationImageCarousel = ({ images, headline, dominantColor }: Props) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [loaded, setLoaded] = useState(false);
   const selected = images[selectedIndex];
   const isMulti = images.length >= 2;
-
-  useEffect(() => { setLoaded(false); }, [selectedIndex]);
 
   return (
     <div className="w-full">
@@ -36,8 +33,7 @@ export const InspirationImageCarousel = ({ images, headline, dominantColor }: Pr
             draggable={false}
             fetchPriority="high"
             decoding="async"
-            onLoad={() => setLoaded(true)}
-            className={`absolute inset-0 w-full h-full object-cover pointer-events-none transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           />
         )}
         <div className="absolute inset-0 z-10" />
