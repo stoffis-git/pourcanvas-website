@@ -37,7 +37,7 @@ const InspirationPage = () => {
       <Header />
       <main className="max-w-4xl mx-auto px-5 py-28 md:py-36">
         <div className="space-y-8">
-          <InspirationImageCarousel images={allImages} headline={page.headline} />
+          <InspirationImageCarousel images={allImages} headline={page.headline} dominantColor={page.dominantColor} />
           <InspirationContentBlock body={page.contentBlock} />
           {!isMulti && (
             <MaterialZoomContainer image={page.ogImage} alt={page.heroAlt} />

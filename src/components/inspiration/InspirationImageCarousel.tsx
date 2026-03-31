@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { cfImage } from "@/lib/imageUrl";
 
 interface ImageItem {
@@ -9,27 +9,35 @@ interface ImageItem {
 interface Props {
   images: ImageItem[];
   headline: string;
+  dominantColor?: string;
 }
 
-export const InspirationImageCarousel = ({ images, headline }: Props) => {
+export const InspirationImageCarousel = ({ images, headline, dominantColor }: Props) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [loaded, setLoaded] = useState(false);
   const selected = images[selectedIndex];
   const isMulti = images.length >= 2;
+
+  useEffect(() => { setLoaded(false); }, [selectedIndex]);
 
   return (
     <div className="w-full">
       <div
         className="relative w-full aspect-[2/3] md:aspect-[4/3] overflow-hidden rounded-2xl select-none"
+        style={{ backgroundColor: dominantColor ?? "#e5e0d8" }}
         onContextMenu={(e) => e.preventDefault()}
       >
         {selected?.url?.startsWith("https://") && (
           <img
             src={cfImage(selected.url, 900)}
+            srcSet={`${cfImage(selected.url, 450)} 450w, ${cfImage(selected.url, 900)} 900w`}
+            sizes="(max-width: 768px) 100vw, 896px"
             alt={selected.alt}
             draggable={false}
             fetchPriority="high"
             decoding="async"
-            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+            onLoad={() => setLoaded(true)}
+            className={`absolute inset-0 w-full h-full object-cover pointer-events-none transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}
           />
         )}
         <div className="absolute inset-0 z-10" />
