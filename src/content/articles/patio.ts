@@ -7,10 +7,10 @@ export const patioArticles: Article[] = [
     title: "15 Stamped Concrete Patio Ideas for 2026",
     headline: "15 Stamped Concrete Patio Ideas That Look Expensive",
     metaDescription:
-      "15 stamped concrete patio ideas with real cost ranges — from ashlar slate at $12–18/sq ft to wood plank and cobblestone. Find the pattern that suits your home.",
+      "15 stamped concrete patio ideas with real cost ranges — ashlar slate at $12–18/sq ft to wood plank and cobblestone. Find the pattern that fits your home.",
     targetKeywords: ["stamped concrete patio ideas", "stamped concrete patterns", "outdoor patio design"],
-    ogImage: "/og/patio-stamped-concrete-ideas.jpg",
-    publishedAt: "2026-03-27",
+    ogImage: "https://images.pourcanvas.com/patio-stamped-concrete-ideas.jpg",
+    publishedAt: "2026-03-31",
     intro:
       "Stamped concrete delivers the look of slate, stone, or brick on your patio at $12–18 per sq ft — roughly half the cost of natural materials. These 15 patterns cover every style from modern geometric to traditional cobblestone, with real cost ranges and tips for each. If you're also planning a driveway or front walkway, most of these patterns translate well to both surfaces.",
     sections: [
@@ -74,10 +74,10 @@ export const patioArticles: Article[] = [
     title: "How Much Does a Concrete Patio Cost in 2026?",
     headline: "Concrete Patio Cost: What Homeowners Actually Pay",
     metaDescription:
-      "Concrete patio cost in 2026: plain finish $6–10/sq ft, stamped $12–18/sq ft, exposed aggregate $8–14/sq ft. Full breakdown by finish, size, and what adds cost.",
+      "Concrete patio cost in 2026: plain finish $6–10/sq ft, stamped $12–18/sq ft, exposed aggregate $8–14/sq ft. Breakdown by finish, size, and cost drivers.",
     targetKeywords: ["concrete patio cost", "patio installation price", "concrete slab cost"],
-    ogImage: "/og/patio-concrete-cost.jpg",
-    publishedAt: "2026-03-27",
+    ogImage: "https://images.pourcanvas.com/patio-concrete-cost.jpg",
+    publishedAt: "2026-03-31",
     intro:
       "A plain concrete patio costs $6–10 per sq ft installed. Stamped finishes run $12–18, and colored or exposed aggregate options fall in between. On a 300 sq ft patio, that's a range of $1,800 to $5,400 depending on finish. Region, site conditions, and demo of an existing surface can shift these numbers significantly. Here's what drives each cost tier — and how to budget accurately for driveways and walkways using the same logic.",
     sections: [
@@ -149,10 +149,10 @@ export const patioArticles: Article[] = [
     title: "Best Concrete Patio Colors for 2026",
     headline: "The Best Concrete Patio Colors (With Real Examples)",
     metaDescription:
-      "Concrete patio colors in 2026: charcoal grey leads, but sandstone, terracotta, and slate blue each suit specific climates and home styles. Here's how to choose.",
+      "Concrete patio colors in 2026: charcoal grey leads, but sandstone, terracotta, and slate blue suit specific climates and home styles. How to choose.",
     targetKeywords: ["concrete patio colors", "colored concrete", "patio stain colors"],
-    ogImage: "/og/patio-color-ideas.jpg",
-    publishedAt: "2026-03-27",
+    ogImage: "https://images.pourcanvas.com/patio-color-ideas.jpg",
+    publishedAt: "2026-03-31",
     intro:
       "Charcoal gray is the most searched concrete patio color right now — and it costs the same as any other integral color, typically $2–4 per sq ft over plain concrete. But color choice isn't just aesthetic: lighter shades reflect heat (better for hot climates), darker shades hide staining, and some pigments fade faster than others. Here's what's working in 2026 and what to watch out for with each option. Similar decisions apply if you're also coloring a driveway or front walkway.",
     sections: [
@@ -222,7 +222,7 @@ export const patioArticles: Article[] = [
     metaDescription:
       "Concrete patio vs pavers: concrete costs $6–18/sq ft, pavers run $15–30. Straight comparison so you can make the right call for your backyard.",
     targetKeywords: ["concrete patio vs pavers", "patio materials comparison", "pavers cost"],
-    ogImage: "/og/patio-concrete-vs-pavers.jpg",
+    ogImage: "https://images.pourcanvas.com/patio-vs-pavers.jpg",
     publishedAt: "2026-03-27",
     intro:
       "Concrete patios cost $6–18 per sq ft installed. Paver patios run $15–30 per sq ft. On a 400 sq ft patio, that's a difference of $3,600–$4,800 at the low end — before you factor in repairs, maintenance, and longevity. Both materials are legitimate choices. This comparison tells you which is right given your budget, climate, and how much you care about long-term repairability. The same logic applies to concrete vs. paver driveways.",
@@ -297,7 +297,7 @@ export const patioArticles: Article[] = [
     metaDescription:
       "Small patio ideas in concrete: layout tricks, pattern choices, and color tips that make 100–150 sq ft feel intentional and spacious.",
     targetKeywords: ["small patio ideas", "small backyard patio", "compact patio design"],
-    ogImage: "/og/patio-small-ideas.jpg",
+    ogImage: "https://images.pourcanvas.com/patio-small-ideas.jpg",
     publishedAt: "2026-03-27",
     intro:
       "A small concrete patio — say 100–150 sq ft — costs $600–2,700 depending on finish. What separates one that feels intentional from one that feels like an afterthought has nothing to do with size and everything to do with pattern direction, color choice, and how the edge meets the yard. These ideas punch above their square footage. If you're also redoing a front walkway, the same proportion principles apply.",
@@ -367,7 +367,7 @@ export const patioArticles: Article[] = [
     metaDescription:
       "Concrete patio sealing costs $0.15–0.25/sq ft DIY or $1–3/sq ft professional. Which sealer type to use, when to apply it, and how often to reseal.",
     targetKeywords: ["concrete patio sealing", "best concrete sealer patio", "how to seal concrete patio"],
-    ogImage: "/og/patio-concrete-sealing.jpg",
+    ogImage: "https://images.pourcanvas.com/patio-sealing.jpg",
     publishedAt: "2026-03-27",
     intro:
       "Sealing a concrete patio costs $0.15–0.25 per sq ft in materials for a DIY job, or $1–3 per sq ft if you hire a contractor. On a 300 sq ft patio, that's $45–75 in product or $300–900 for professional application. The right sealer type depends on your finish — stamped and colored concrete need a different product than plain broom finish. Done correctly, sealing extends finish life by years and dramatically improves how the surface looks. Done wrong, it traps moisture and causes peeling.",
@@ -434,7 +434,7 @@ export const patioArticles: Article[] = [
     metaDescription:
       "Concrete patio resurfacing costs $3–15/sq ft vs. $6–18 for full replacement. How to assess your slab and decide which option makes financial sense.",
     targetKeywords: ["concrete patio resurfacing", "patio renovation", "resurface concrete"],
-    ogImage: "/og/patio-resurfacing.jpg",
+    ogImage: "https://images.pourcanvas.com/patio-resurfacing.jpg",
     publishedAt: "2026-03-27",
     intro:
       "Resurfacing a concrete patio costs $3–15 per sq ft depending on finish. Full replacement runs $6–18. On a 300 sq ft patio, that's a savings of $900–3,000 if the slab qualifies. The catch: resurfacing only works when the existing slab is structurally sound. Here's how to assess yours and make the right call — the same decision framework applies to concrete driveways.",
@@ -503,10 +503,10 @@ export const patioArticles: Article[] = [
     title: "Concrete Pool Deck Ideas: Finishes, Costs & Comparisons",
     headline: "Pool Deck Concrete Ideas: What to Choose and What to Spend",
     metaDescription:
-      "Pool deck ideas in concrete: broom finish $6–10/sq ft, exposed aggregate $8–14, stamped $12–18. Which finish works best and what a 500 sq ft deck actually costs.",
+      "Pool deck ideas in concrete: broom finish $6–10/sq ft, exposed aggregate $8–14, stamped $12–18. Best finish for your budget and a 500 sq ft cost breakdown.",
     targetKeywords: ["pool deck ideas concrete", "concrete pool deck", "pool deck finishes"],
-    ogImage: "/og/patio-pool-deck-ideas-concrete.jpg",
-    publishedAt: "2026-03-27",
+    ogImage: "https://images.pourcanvas.com/patio-pool-deck-ideas.jpg",
+    publishedAt: "2026-03-31",
     intro:
       "A concrete pool deck costs $6–18 per sq ft installed depending on finish — $3,000–9,000 for a typical 500 sq ft deck. Broom finish is the most practical choice; stamped delivers the most visual impact; exposed aggregate splits the difference on both cost and performance. The right finish depends on how much slip resistance you need, how hot your climate is, and how much maintenance you're willing to do. Here's a straight comparison of every concrete pool deck option available in 2026.",
     sections: [
@@ -567,7 +567,7 @@ export const patioArticles: Article[] = [
     metaDescription:
       "Concrete patio crack repair costs $15–30 DIY for hairline cracks, $150–400 per professional repair. How to assess your cracks and choose the right fix.",
     targetKeywords: ["concrete patio crack repair", "patio crack fix", "concrete crack repair"],
-    ogImage: "/og/patio-concrete-crack-repair.jpg",
+    ogImage: "https://images.pourcanvas.com/patio-crack-repair.jpg",
     publishedAt: "2026-03-27",
     intro:
       "Concrete patio crack repair costs $100–500 in materials for a DIY job, or $300–1,500 for a professional repair depending on the number and severity of cracks. Whether you repair or replace depends on two things: crack width and whether the slabs on either side of the crack are level. Hairline and stable cracks can be repaired invisibly. Shifting or wide cracks signal a structural problem that repair won't solve. Here's how to read your cracks and make the right call — the same assessment applies to concrete driveways and walkways.",
@@ -623,9 +623,9 @@ export const patioArticles: Article[] = [
     title: "Patio Lighting Ideas: Types, Costs, and What Works",
     headline: "Patio Lighting Ideas That Actually Change How the Space Feels",
     metaDescription:
-      "Patio lighting ideas with real costs: DIY solar $200–400, low-voltage professional $600–1,200, hardwired line-voltage $1,500–3,000. Placement rules that work.",
+      "Patio lighting ideas with real costs: DIY solar $200–400, low-voltage professional $800–2,500. Which systems work and which suits your patio style.",
     targetKeywords: ["patio lighting ideas", "outdoor patio lighting", "concrete patio lighting"],
-    ogImage: "/og/patio-patio-lighting-ideas.jpg",
+    ogImage: "https://images.pourcanvas.com/patio-lighting-ideas.jpg",
     publishedAt: "2026-03-29",
     intro:
       "Patio lighting costs $200–600 for a DIY solar or plug-in setup, or $800–2,500 for a professionally installed low-voltage system. The difference between a patio that looks finished at night and one that disappears isn't the amount of light — it's the placement and type. Most homeowners overlook lighting until after the concrete is poured, which eliminates the best options. Here's what to know before that decision gets made. The same lighting principles — offset placement, warm color temperature, perimeter uplighting — apply equally to front walkways and driveways when those surfaces are used after dark.",

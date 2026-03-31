@@ -9,7 +9,7 @@ export const drivewayArticles: Article[] = [
     metaDescription:
       "Stamped concrete driveways cost $12–20/sq ft and last 25+ years. Here are 12 styles that look great and handle daily vehicle traffic.",
     targetKeywords: ["stamped concrete driveway", "driveway design ideas", "decorative concrete"],
-    ogImage: "/og/driveway-stamped-concrete.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-stamped-concrete.jpg",
     publishedAt: "2026-03-27",
     intro:
       "Stamped concrete driveways cost $12–20 per sq ft installed — roughly double plain concrete, but far less than natural stone pavers at $20–35. For a standard two-car driveway (400–500 sq ft), budget $4,800–10,000. The pattern and color choice do most of the design work. These 12 styles are the most contractor-proven options for vehicle traffic. If you're also planning a patio or front walkway, most patterns translate well to both surfaces.",
@@ -76,7 +76,7 @@ export const drivewayArticles: Article[] = [
     metaDescription:
       "Exposed aggregate driveway costs $8–14/sq ft — between plain broom finish and stamped. Pros, cons, aggregate options, and when this finish makes sense.",
     targetKeywords: ["exposed aggregate driveway", "aggregate finish", "textured driveway"],
-    ogImage: "/og/driveway-exposed-aggregate.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-exposed-aggregate.jpg",
     publishedAt: "2026-03-27",
     intro:
       "Exposed aggregate driveways cost $8–14 per sq ft installed — the middle ground between plain broom finish ($6–10) and stamped concrete ($12–20). For a 400–500 sq ft two-car driveway, expect $3,200–7,000. It's the right choice when you want a durable, textured surface without committing to a decorative stamped pattern. Here's an honest look at what it delivers and where it falls short. If you're also planning a patio, exposed aggregate is one of the most low-maintenance finishes for that surface too.",
@@ -143,7 +143,7 @@ export const drivewayArticles: Article[] = [
     metaDescription:
       "A plain concrete driveway costs $4–8/sq ft. Stamped finishes run $12–20. Full cost breakdown by finish, size, and region for 2026.",
     targetKeywords: ["concrete driveway cost", "driveway installation price"],
-    ogImage: "/og/driveway-cost.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-concrete-cost.jpg",
     publishedAt: "2026-03-27",
     intro:
       "A plain concrete driveway costs $4–8 per sq ft installed. Stamped finishes run $12–20 per sq ft; exposed aggregate falls in between at $8–14. On a 400–500 sq ft two-car driveway, that's a range of $1,600 to $10,000 depending on finish and region. Finish type and local labor rates are the two biggest variables. If you're also pricing a patio or walkway, the same per-sq-ft logic applies — bundling projects with one contractor typically saves 10–15% on mobilization.",
@@ -218,7 +218,7 @@ export const drivewayArticles: Article[] = [
     metaDescription:
       "Driveway resurfacing costs $2–8/sq ft vs. $4–20 for replacement. Which option is right depends on your base condition — here's how to decide.",
     targetKeywords: ["driveway resurfacing", "concrete overlay", "driveway repair"],
-    ogImage: "/og/driveway-resurfacing.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-resurfacing.jpg",
     publishedAt: "2026-03-27",
     intro:
       "Driveway resurfacing costs $2–8 per sq ft depending on method. Full replacement runs $4–20 per sq ft. On a 400 sq ft driveway, resurfacing saves $800–4,800 over replacement — if the base qualifies. The key word is \"if\": overlaying a failing base just delays the problem. Here's a straight comparison of concrete overlay, asphalt resurfacing, and full replacement so you can make the right call. The same structural assessment logic applies to patios and walkways.",
@@ -289,7 +289,7 @@ export const drivewayArticles: Article[] = [
     metaDescription:
       "Circular driveway ideas in concrete: $15,000–40,000 installed depending on size and finish. Design options, sizing rules, and landscaping tips for 2026.",
     targetKeywords: ["circular driveway ideas", "round driveway", "curved driveway design"],
-    ogImage: "/og/driveway-circular-ideas.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-circular-ideas.jpg",
     publishedAt: "2026-03-27",
     intro:
       "A circular concrete driveway typically costs $15,000–40,000 installed, depending on size, finish, and site conditions. That's a significant investment — justified when the property has the frontage to support it and curb appeal is a real priority. Done well in stamped or exposed aggregate concrete, a circular driveway is one of the most visually distinctive exterior upgrades possible. These ideas cover pattern choices, layout decisions, and the one sizing rule you can't ignore. For context on costs, the same per-sq-ft pricing logic from standard driveway work applies — with a complexity premium for curved forming.",
@@ -355,7 +355,7 @@ export const drivewayArticles: Article[] = [
     metaDescription:
       "Modern driveway ideas in 2026: charcoal integral color, scored borders, and dark exposed aggregate. 10 approaches from $6–20/sq ft with real cost ranges.",
     targetKeywords: ["modern driveway ideas", "contemporary driveway design", "modern concrete driveway"],
-    ogImage: "/og/driveway-modern-ideas.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-modern-ideas.jpg",
     publishedAt: "2026-03-27",
     intro:
       "Modern concrete driveways in 2026 rely on three elements: clean geometry, intentional color, and edge definition. The cost range is wide — a charcoal-washed broom-finish driveway with scored border details runs $6–12 per sq ft, while a fully stamped modern design runs $14–20. The look that's resonating most right now is restraint: wide, dark surfaces with minimal decoration and crisp edge lines. These 10 ideas cover the full range from budget to premium. For reference, the same modern sensibility that's working on driveways in 2026 is equally effective on front walkways and patios.",
@@ -423,10 +423,10 @@ export const drivewayArticles: Article[] = [
     title: "Concrete vs Asphalt Driveway: Which Is Right for You?",
     headline: "Concrete vs Asphalt Driveway: An Honest Comparison",
     metaDescription:
-      "Concrete vs asphalt driveway: concrete costs $4–8/sq ft and lasts 30–50 years; asphalt $3–6/sq ft and lasts 15–30. Which wins depends on climate and budget.",
+      "Concrete vs asphalt driveway: concrete costs $4–8/sq ft, lasts 30–50 years; asphalt $3–6/sq ft, lasts 15–30. Which wins depends on climate and budget.",
     targetKeywords: ["concrete vs asphalt driveway", "concrete driveway vs asphalt", "driveway material comparison"],
-    ogImage: "/og/driveway-concrete-vs-asphalt.jpg",
-    publishedAt: "2026-03-27",
+    ogImage: "https://images.pourcanvas.com/driveway-vs-asphalt.jpg",
+    publishedAt: "2026-03-31",
     intro:
       "Concrete driveways cost $4–8 per sq ft installed; asphalt runs $3–6. On a 500 sq ft driveway, concrete costs $500–1,000 more upfront — but lasts 30–50 years versus 15–30 for asphalt. Which wins depends on your climate, budget, and how much ongoing maintenance you're willing to do.",
     sections: [
@@ -456,7 +456,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Which Should You Choose?",
-        body: "Choose concrete if: you're in a hot or mild climate, want design options beyond plain black, and plan to stay in the home long enough to recoup the upfront premium. Choose asphalt if: you're in a cold climate with hard freeze-thaw cycles, want the lowest possible upfront cost, or plan to sell within 5–10 years. The higher upfront cost of concrete makes the most sense as a long-term investment — asphalt makes sense when the budget ceiling is firm and climate conditions favor flexibility.",
+        body: "Choose concrete if: you're in a hot or mild climate, want design options beyond plain black, and plan to stay in the home long enough to recoup the upfront premium. Choose asphalt if: you're in a cold climate with hard freeze-thaw cycles, want the lowest possible upfront cost, or plan to sell within 5–10 years. The higher upfront cost of concrete makes the most sense as a long-term investment — asphalt makes sense when the budget ceiling is firm and climate conditions favor flexibility. One underrated factor: if you're also planning a concrete patio or front walkway, choosing concrete for the driveway keeps all surfaces in the same material family — same contractor, same sealer products, same maintenance schedule. An asphalt driveway adjacent to a concrete walkway creates an odd aesthetic discontinuity that most homeowners notice over time even if they can't pinpoint why.",
       },
       {
         heading: "Total Cost of Ownership: 25-Year Comparison",
@@ -494,7 +494,7 @@ export const drivewayArticles: Article[] = [
     headline: "Black Concrete Driveway: What to Expect Before You Commit",
     metaDescription: "Black concrete driveways cost $6–12/sq ft and look striking — but heat absorption and fade are real concerns. Here's the full picture for 2026.",
     targetKeywords: ["black concrete driveway", "dark concrete driveway", "black driveway ideas"],
-    ogImage: "/og/driveway-black-concrete.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-black-concrete.jpg",
     publishedAt: "2026-03-27",
     intro:
       "A black integrally colored concrete driveway costs $6–12 per sq ft installed — $2–4 per sq ft above plain grey concrete for the pigment. On a 500 sq ft two-car driveway, that's $3,000–6,000. The look is bold and increasingly popular, but it comes with real practical tradeoffs around heat absorption, fading, and sealer maintenance that most contractors don't volunteer upfront. Here's what you actually need to know before committing. If you're also planning a front walkway, the same dark-pigment considerations apply.",
@@ -550,10 +550,10 @@ export const drivewayArticles: Article[] = [
     title: "Driveway Border Ideas: 5 Styles and What They Cost",
     headline: "Driveway Border Ideas That Add Curb Appeal Without the Full Price Tag",
     metaDescription:
-      "Driveway border ideas: cobblestone stamp ($8–12/lf), exposed aggregate strip, saw-cut score line, brick inlay. 5 styles with real costs and when to use each.",
+      "Driveway border ideas: cobblestone stamp ($8–12/lf), exposed aggregate strip, saw-cut score line, brick inlay. 5 styles with costs and when to use each.",
     targetKeywords: ["driveway border ideas", "concrete driveway border", "stamped concrete border driveway"],
-    ogImage: "/og/driveway-driveway-border-ideas.jpg",
-    publishedAt: "2026-03-27",
+    ogImage: "https://images.pourcanvas.com/driveway-border-ideas.jpg",
+    publishedAt: "2026-03-31",
     intro:
       "A driveway border adds visual definition to a plain concrete slab without the cost of stamping the entire surface. Border treatments run $8–20 per linear foot installed — on a standard two-car driveway perimeter (roughly 160 linear feet), that's $1,280–3,200. Here are 5 border styles worth considering, with real cost ranges and the home styles they work best with.",
     sections: [
@@ -670,14 +670,14 @@ export const drivewayArticles: Article[] = [
     title: "Stamped Concrete Driveway Cost: 2025 Price Guide",
     headline: "What You'll Actually Pay for a Stamped Concrete Driveway",
     metaDescription:
-      "Stamped concrete driveway cost in 2026: $12–20/sq ft by pattern, $4,800–10,000 for a two-car driveway. Full breakdown by region, pattern, and lifecycle cost.",
+      "Stamped concrete driveway cost in 2026: $12–20/sq ft by pattern, $4,800–10,000 for a two-car driveway. Breakdown by region, pattern, and lifecycle cost.",
     targetKeywords: [
       "stamped concrete driveway cost",
       "stamped concrete driveway cost per square foot",
       "how much does a stamped concrete driveway cost",
     ],
     ogImage: "https://images.pourcanvas.com/driveway-stamped-concrete-driveway-cost.jpg",
-    publishedAt: "2026-03-27",
+    publishedAt: "2026-03-31",
     intro:
       "A stamped concrete driveway costs $12–20 per sq ft installed, compared to $5–8 for plain concrete and $20–35 for natural stone pavers. For a standard two-car driveway (400–500 sq ft), total cost runs $4,800–10,000. Pattern complexity, regional labor rates, and color choices all shift the final number — here's how to read a quote before you sign.",
     sections: [
@@ -739,14 +739,14 @@ export const drivewayArticles: Article[] = [
     title: "Driveway Edging Ideas: Materials, Cost & How to Choose",
     headline: "Driveway Edging: Which Material Works Best for Your Driveway",
     metaDescription:
-      "Driveway edging ideas: concrete curbing $8–15/lf, Belgian block $20–40/lf, metal edging $3–8/lf. 6 materials compared with real costs and when each works best.",
+      "Driveway edging ideas: concrete curbing $8–15/lf, Belgian block $20–40/lf, metal edging $3–8/lf. 6 materials compared with costs and when each works best.",
     targetKeywords: [
       "driveway edging ideas",
       "driveway edge ideas",
       "concrete driveway edging",
     ],
     ogImage: "https://images.pourcanvas.com/driveway-driveway-edging-ideas.jpg",
-    publishedAt: "2026-03-27",
+    publishedAt: "2026-03-31",
     intro:
       "Driveway edging keeps the edge of a concrete or asphalt slab from cracking and crumbling over time, and it visually defines the boundary between driveway and lawn or landscaping. The six most practical edging materials each suit different budgets and aesthetics — here's what each costs, how long it lasts, and when to choose it.",
     sections: [
