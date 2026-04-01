@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { cfImage } from "@/lib/imageUrl";
 
 interface ImageItem {
@@ -13,7 +14,10 @@ interface Props {
 }
 
 export const InspirationImageCarousel = ({ images, headline, dominantColor }: Props) => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [searchParams] = useSearchParams();
+  const imageParam = parseInt(searchParams.get("image") ?? "1", 10);
+  const initialIndex = Math.max(0, Math.min(imageParam - 1, images.length - 1));
+  const [selectedIndex, setSelectedIndex] = useState(initialIndex);
   const selected = images[selectedIndex];
   const isMulti = images.length >= 2;
 
