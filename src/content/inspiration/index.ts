@@ -16,6 +16,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See this in your own backyard",
     ctaBody: "Upload a photo of your patio and see what grey stamped concrete could look like in your space.",
+    additionalImages: [
+      { url: "https://images.pourcanvas.com/inspiration-grey-stamped-patio-v2.jpg", alt: "Grey stamped concrete patio - craftsman home with fall foliage background" },
+      { url: "https://images.pourcanvas.com/inspiration-grey-stamped-patio-v3.jpg", alt: "Grey stamped concrete patio - colonial home with pool adjacent setting" },
+    ],
   },
   {
     slug: "herringbone-brick-patio",
@@ -32,6 +36,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "Visualize it in your space",
     ctaBody: "Upload a photo of your patio and see what a herringbone brick pattern could look like in your space.",
+    additionalImages: [
+      { url: "https://images.pourcanvas.com/inspiration-herringbone-patio-v2.jpg", alt: "Herringbone brick patio - farmhouse home with summer evening light" },
+      { url: "https://images.pourcanvas.com/inspiration-herringbone-patio-v3.jpg", alt: "Herringbone brick patio - colonial home with garden edge setting" },
+    ],
   },
   {
     slug: "pool-deck-travertine",
@@ -48,6 +56,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See it around your pool",
     ctaBody: "Upload a photo of your pool deck and see what travertine-stamped concrete could look like in your space.",
+    additionalImages: [
+      { url: "https://images.pourcanvas.com/inspiration-travertine-pool-deck-v2.jpg", alt: "Travertine pool deck - morning light with lounge chairs and tropical planting" },
+      { url: "https://images.pourcanvas.com/inspiration-travertine-pool-deck-v3.jpg", alt: "Travertine pool deck - overcast light showcasing stone texture detail" },
+    ],
   },
   {
     slug: "modern-driveway-concrete",
@@ -586,5 +598,95 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See charcoal salt finish on your patio",
     ctaBody: "Upload a photo of your patio and see what charcoal salt finish concrete could look like in your space.",
+  },
+  {
+    slug: "acid-stained-concrete-patio",
+    title: "Acid Stained Concrete Patio Ideas | PourCanvas",
+    headline: "Acid Stained Concrete Patio",
+    metaDescription:
+      "Acid stained concrete patios have a mottled, translucent finish that looks like aged stone or leather. See real examples and how the look is achieved.",
+    ogImage: "/og/inspiration-acid-stained-concrete-patio.jpg",
+    heroAlt: "Acid stained concrete patio with warm amber and brown mottled tones in a backyard garden setting",
+    contentBlock:
+      "Acid staining transforms a plain concrete patio into something that looks genuinely unrepeatable - no two acid-stained surfaces look the same.\n\nThe process uses a diluted acid solution containing metallic salts that react chemically with the concrete's calcium compounds. The reaction creates a translucent, variegated color that ranges from amber and sienna to deep walnut and terra cotta, depending on the original concrete composition and how the acid is applied. Unlike paint or topical stain, acid staining doesn't sit on the surface - it becomes part of the concrete at a molecular level. The result is a depth of color and variation that no factory finish can replicate.\n\nVisually, acid-stained concrete reads like aged leather or natural stone. The mottled, organic tones complement both traditional and Mediterranean-influenced home styles. Warm amber-to-brown tones pair naturally with wood pergolas, stone retaining walls, and terracotta pots. For a more contemporary application, a cooler blue-grey acid stain (achieved with different metallic salts) suits modern homes and looks striking against charcoal furniture and white-painted walls.\n\nPractical considerations: acid staining costs $3–7 per sq ft applied over an existing slab, or $9–17 per sq ft on a new pour (including the concrete). It works only on uncolored concrete - an integral-pigmented slab won't react properly. The surface must be clean, open-pored, and free of sealers or residues before staining. Once applied and sealed with a penetrating or film-forming sealer, a stained patio requires resealing every 2–3 years to maintain color depth. PourCanvas can show you how warm and cool acid stain tones would look on your specific patio area.",
+    targetKeywords: ["acid stained concrete patio", "acid stain patio ideas", "stained concrete outdoor"],
+    pillar: "patio",
+    ctaHeadline: "See acid staining on your patio",
+    ctaBody: "Upload a photo of your patio and see what acid stained concrete could look like in your space.",
+  },
+  {
+    slug: "salt-finish-concrete-patio",
+    title: "Salt Finish Concrete Patio Ideas | PourCanvas",
+    headline: "Salt Finish Concrete Patio",
+    metaDescription:
+      "Salt finish concrete patios have a fine, pitted texture that improves traction and ages beautifully. See how this subtle finish looks in a real backyard.",
+    ogImage: "/og/inspiration-salt-finish-concrete-patio.jpg",
+    heroAlt: "Salt finish concrete patio with subtle pitted texture and warm buff tone in a garden setting",
+    contentBlock:
+      "Salt finish concrete is the most underrated patio surface in residential design - overlooked because it's subtle, and popular with contractors who know it performs.\n\nThe process is straightforward: rock salt is broadcast onto fresh concrete immediately after placement and lightly pressed into the surface. Once the concrete cures, the salt crystals are washed away, leaving behind a field of small, shallow depressions. The result is a fine, randomly pitted texture that catches light in a way smooth or broom-finish concrete cannot match.\n\nFrom ten feet away, a salt finish patio in a warm buff or natural grey tone reads as a clean, textured surface with a quality that's hard to define. Up close, the pitting creates genuine visual depth - the kind of surface texture that photographs well and holds up to scrutiny. It suits contemporary, transitional, and cottage-style homes equally well because the texture is non-directional and doesn't impose a design style.\n\nThe practical case for salt finish is strong: the pitting improves traction over smooth concrete without the aggressive texture of exposed aggregate. It's an ideal choice for patios adjacent to pools, where a surface that's both slip-resistant and visually refined is harder to find. Cost: $7–12 per sq ft installed with a color wash - between plain broom finish and stamped concrete. In a warm buff tone with a penetrating sealer, it ages to look like natural stone without any of the maintenance complexity that natural stone involves. A walkway or pool deck in the same salt finish extends the look cohesively across the property. PourCanvas can show you how salt finish in different color directions would look around your specific outdoor space.",
+    targetKeywords: ["salt finish concrete patio", "rock salt patio finish", "textured concrete patio ideas"],
+    pillar: "patio",
+    ctaHeadline: "See salt finish on your patio",
+    ctaBody: "Upload a photo of your patio and see what salt finish concrete could look like in your space.",
+  },
+  {
+    slug: "flagstone-stamped-patio-buff",
+    title: "Buff Flagstone Stamped Patio Ideas | PourCanvas",
+    headline: "Buff Flagstone Stamped Patio",
+    metaDescription:
+      "Warm buff flagstone stamped concrete patios suit craftsman, cottage, and ranch homes. See how this popular natural-stone look is achieved with stamped concrete.",
+    ogImage: "/og/inspiration-flagstone-stamped-patio-buff.jpg",
+    heroAlt: "Buff flagstone stamped concrete patio with warm sandstone tones and craftsman home backdrop in afternoon light",
+    contentBlock:
+      "Buff flagstone stamped concrete is the warm-toned answer to the more common grey flagstone patio - and for homes with traditional, craftsman, or cottage architecture, it's a more natural fit.\n\nThe irregular flagstone stamp mimics the organic shapes of natural cut stone. In a warm buff or sandstone color wash, it references aged limestone and natural fieldstone - materials that read as established, comfortable, and connected to the landscape. The random pattern means no two sections look the same, which is part of what makes flagstone stamping so photogenic and visually relaxed compared to more structured patterns like ashlar slate or herringbone brick.\n\nColor is everything with flagstone stamping. A warm buff base with a darker antiquing wash in the grout lines creates the most convincing stone effect - the contrast between the face tone and the joint tone replicates the visual complexity of real flagstone at normal viewing distance. Without the antiquing wash contrast, buff flagstone can look flat. Ask your contractor about a two-color application: base color matched to a warm sandstone chip, with a secondary aged-oak or terra cotta release agent for the joints.\n\nWarm buff flagstone stamping pairs naturally with craftsman homes (red brick accents, wood siding, earth-tone trim), ranch homes (low profiles, wide eaves, warm exteriors), and cottage gardens (irregular planting beds, climbing plants, informal furniture). It's the patio finish that reads as if it grew with the house rather than being added to it. Cost: $12–18 per sq ft installed, depending on the complexity of the color application. Real flagstone in buff limestone or sandstone runs $20–40 per sq ft, making stamped concrete a compelling alternative. PourCanvas can show you how warm buff flagstone stamping would look on your specific patio space.",
+    targetKeywords: ["buff flagstone stamped patio", "flagstone stamped concrete patio", "warm tone patio ideas"],
+    pillar: "patio",
+    ctaHeadline: "See buff flagstone stamping on your patio",
+    ctaBody: "Upload a photo of your patio and see what buff flagstone stamped concrete could look like in your space.",
+  },
+  {
+    slug: "exposed-aggregate-walkway-charcoal",
+    title: "Charcoal Exposed Aggregate Walkway Ideas | PourCanvas",
+    headline: "Charcoal Exposed Aggregate Walkway",
+    metaDescription:
+      "A charcoal exposed aggregate walkway makes a bold front entry statement with low maintenance. See how dark aggregate looks on a real front path.",
+    ogImage: "/og/inspiration-exposed-aggregate-walkway-charcoal.jpg",
+    heroAlt: "Charcoal exposed aggregate concrete walkway leading to a contemporary home entry in evening light",
+    contentBlock:
+      "A charcoal exposed aggregate walkway is one of the most confident design statements you can make at a front entry - dark, textured, and genuinely distinctive.\n\nExposed aggregate in dark tones relies on two elements: a charcoal or graphite integral base color in the concrete, and a dark aggregate species - black basalt, charcoal crushed granite, or dark river stone - washed to the surface. The combination creates a surface that reads as a rich, unified dark tone from the street while revealing genuine material texture up close. Unlike stamped concrete or plain coloring, the texture comes from the aggregate itself, not from a pattern or applied finish.\n\nVisually, charcoal aggregate suits contemporary, modern, and transitional homes particularly well - the dark grounded tone complements white or light grey painted exteriors and creates a high-contrast front entry that reads as deliberate and designed. It also photographs exceptionally well in the morning and evening when directional light rakes across the surface and picks up the aggregate texture as individual shadows.\n\nThe practical case is strong: exposed aggregate is one of the most durable walkway surfaces available. The texture provides excellent traction in wet conditions, making it appropriate for front paths in rainy climates where a smooth or polished surface would be a liability. The dark color hides dirt, leaf debris, and staining that would show on lighter surfaces. Cost: $8–14 per sq ft installed - between plain broom finish and stamped concrete, with durability closer to the higher end. A penetrating silane-siloxane sealer protects the concrete base and aggregate without adding surface sheen. Connecting a charcoal aggregate walkway to a similarly colored driveway creates a cohesive front exterior that reads as intentionally designed. PourCanvas can show you how charcoal exposed aggregate would look on your specific front path.",
+    targetKeywords: ["charcoal exposed aggregate walkway", "dark aggregate front path", "exposed aggregate walkway ideas"],
+    pillar: "walkway",
+    ctaHeadline: "See charcoal aggregate on your walkway",
+    ctaBody: "Upload a photo of your walkway and see what charcoal exposed aggregate concrete could look like in your space.",
+  },
+  {
+    slug: "brick-red-stamped-walkway",
+    title: "Brick Red Stamped Concrete Walkway Ideas | PourCanvas",
+    headline: "Brick Red Stamped Walkway",
+    metaDescription:
+      "A brick red stamped concrete walkway gives colonial and traditional homes a classic front entry. Costs $12-18/sq ft vs $25+ for real brick. See real examples.",
+    ogImage: "/og/inspiration-brick-red-stamped-walkway.jpg",
+    heroAlt: "Brick red stamped concrete walkway with classic pattern leading to a colonial home front door",
+    contentBlock:
+      "Brick red stamped concrete captures the warmth and tradition of real brick at roughly half the installation cost - without the weed joints, uneven settling, or frost heave that real brick mortared paths accumulate over time.\n\nThe red-toned brick stamp replicates the running bond or herringbone pattern of clay brick in a stamped concrete surface. The key to making it look convincing is the color: a warm, brick-red base color combined with an antiquing release in aged-iron or darker red-brown creates the natural color variation of real fired brick. Flat, single-tone red looks artificial; a multi-tone application with realistic mortar joint color reads as the real material.\n\nThis finish suits colonial, Georgian, Federal, and traditional home styles instinctively - the warm red tones complement white clapboard, red brick exteriors, black shutters, and brass hardware in a way that grey or charcoal concrete never quite achieves. It's the walkway that matches the vocabulary of older homes and established neighborhoods where grey or modern finishes would feel out of place.\n\nPractically, brick red stamped concrete costs $12–18 per sq ft installed - compared to $25–45 per sq ft for actual brick set in mortar. On a 40 linear foot front walkway (4 feet wide, 160 sq ft), that's $1,920–2,880 for stamped versus $4,000–7,200 for real brick. The sealed stamped surface also handles winter salt and freeze-thaw cycling better than mortared brick joints. Resealing every 2–3 years maintains the color depth. For a fully coordinated exterior, a matching brick red stamped border on the driveway creates visual continuity from the street to the front door. PourCanvas can show you how brick red stamped concrete would look on your specific front walkway.",
+    targetKeywords: ["brick red stamped walkway", "red stamped concrete walkway", "traditional front path ideas"],
+    pillar: "walkway",
+    ctaHeadline: "See brick red stamping on your walkway",
+    ctaBody: "Upload a photo of your walkway and see what brick red stamped concrete could look like in your space.",
+  },
+  {
+    slug: "light-grey-brushed-concrete-driveway",
+    title: "Light Grey Brushed Concrete Driveway Ideas | PourCanvas",
+    headline: "Light Grey Brushed Concrete Driveway",
+    metaDescription:
+      "A light grey brushed concrete driveway is clean, versatile, and pairs with almost any home style. See how this classic finish looks in real driveways.",
+    ogImage: "/og/inspiration-light-grey-brushed-concrete-driveway.jpg",
+    heroAlt: "Light grey brushed concrete driveway with clean broom finish texture in front of a contemporary home",
+    contentBlock:
+      "Light grey brushed concrete is the quiet achiever of driveway finishes - less dramatic than charcoal, less decorative than stamped, and more versatile than either.\n\nA broom finish in a light or medium grey integral color is the most timeless driveway surface available. It doesn't impose a design direction, doesn't date to a specific era, and pairs with virtually every home exterior color. The brushed texture creates a consistent fine-line pattern across the surface that improves traction and reduces glare in bright sun. In a light or silver grey tone, it reads as clean and neutral from the street - the driveway doesn't announce itself, which is often exactly what you want.\n\nThe visual case for light grey brushed concrete is strongest on homes with strong exterior features - red brick, stone cladding, bold paint colors, or architecturally interesting facades. Against these backdrops, a dark or heavily textured driveway competes. A clean light grey surface creates a canvas that lets the home's architecture lead. On simpler or more contemporary homes, a scored border detail in a slightly darker grey tone adds visual structure without adding pattern complexity.\n\nPractical advantages are significant: light grey hides bird droppings, concrete dust, and seasonal debris better than charcoal, and any oil staining is more visible and can be cleaned before it penetrates the sealer. Cost: $6–10 per sq ft installed for plain broom finish, or $8–12 per sq ft with integral grey coloring. This is the most affordable driveway finish that still looks intentional and well-maintained. A penetrating sealer applied at installation and refreshed every 5–7 years keeps the surface protected and the color consistent. For a cohesive exterior, a matching light grey brushed walkway completes the picture. PourCanvas can show you how different shades of grey would look on your specific driveway.",
+    targetKeywords: ["light grey concrete driveway", "brushed concrete driveway grey", "grey broom finish driveway"],
+    pillar: "driveway",
+    ctaHeadline: "See grey brushed concrete on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what light grey brushed concrete could look like in your space.",
   },
 ];

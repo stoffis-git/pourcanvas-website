@@ -20,19 +20,19 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Ashlar Slate",
-        body: "Ashlar slate patterns work particularly well on longer driveways where you want visual interest without the repetition becoming monotonous. Vary the color wash slightly between sections to add depth. Ashlar slate sits in the middle of the cost range — typically $13–17/sq ft — because the stamp is straightforward for experienced crews to work quickly.",
+        body: "Ashlar slate patterns work particularly well on longer driveways where you want visual interest without the repetition becoming monotonous. Vary the color wash slightly between sections to add depth. Ashlar slate sits in the middle of the cost range — typically $13–17/sq ft — because the stamp is straightforward for experienced crews to work quickly. A medium grey or charcoal color wash suits contemporary homes; warm buff suits traditional and colonial exteriors.",
       },
       {
         heading: "Brick Running Bond",
-        body: "Running bond brick is the approachable choice — familiar, timeless, and compatible with nearly every house style. It's also one of the easier patterns for contractors to stamp consistently at scale, which keeps quotes at the lower end of the range. A warm buff or sandstone tone pairs well with traditional and craftsman exteriors.",
+        body: "Running bond brick is the approachable choice — familiar, timeless, and compatible with nearly every house style. It's also one of the easier patterns for contractors to stamp consistently at scale, which keeps quotes at the lower end of the range — typically $12–15/sq ft. A warm buff or sandstone tone pairs well with traditional and craftsman exteriors; charcoal running bond suits modern homes. It's also a natural complement to a herringbone-brick patio if you want visual continuity across the property.",
       },
       {
         heading: "Exposed Aggregate Borders",
-        body: "Consider a smooth or lightly textured stamped field with exposed aggregate borders. This two-finish approach adds visual definition and is easier to maintain since the border can be refinished independently. It's also a cost strategy: stamped borders with a plain field run $8–14/sq ft versus $12–20 for a fully stamped surface. Tools like PourCanvas let you preview border-versus-full-stamp layouts on your actual driveway before committing.",
+        body: "Consider a smooth or lightly textured stamped field with exposed aggregate borders. This two-finish approach adds visual definition and is easier to maintain since the border can be refinished independently. It's also a cost strategy: stamped borders with a plain field run $8–14/sq ft versus $12–20 for a fully stamped surface. Tools like PourCanvas let you preview border-versus-full-stamp layouts on your actual driveway before committing. The same border approach works on a front walkway at a lower per-linear-foot cost than full stamping.",
       },
       {
         heading: "What to Ask Your Contractor",
-        body: "Stamped concrete requires precise timing during the pour — the stamps must be pressed while the concrete is in a narrow workability window. Ask to see photos of the contractor's completed driveway work, not just patio work. Driveways experience heavier loading and different weathering than patios, and not every stamped-concrete crew has equal experience with both surfaces.",
+        body: "Stamped concrete requires precise timing during the pour — the stamps must be pressed while the concrete is in a narrow workability window. Ask to see photos of the contractor's completed driveway work specifically, not just patio work. Driveways experience heavier vehicle loading and different weathering patterns than patios, and not every stamped-concrete crew has equal experience with both surfaces. Also ask about their concrete mix design — PSI, reinforcement type, and whether air-entrainment is included if you're in a freeze-thaw climate.",
       },
       {
         heading: "Sealing and Long-Term Maintenance",
@@ -83,15 +83,15 @@ export const drivewayArticles: Article[] = [
     sections: [
       {
         heading: "What It Is",
-        body: "Exposed aggregate concrete is poured normally, then the surface paste is washed away before it cures to reveal the decorative stone below. The aggregate (stone type and size) can be specified for color and texture. Pea gravel gives a fine, uniform texture; river stone and recycled glass offer more color variation.",
+        body: "Exposed aggregate concrete is poured normally, then the surface paste is washed away before it cures to reveal the decorative stone below. The aggregate (stone type and size) can be specified for color and texture. Pea gravel gives a fine, uniform texture; river stone and recycled glass offer more color variation. The process requires precise timing — the surface must be pressure-washed during a narrow window after the pour, before the concrete hardens enough to resist aggregate exposure.",
       },
       {
         heading: "Exposed Aggregate vs. Stamped Concrete: Which to Choose",
-        body: "Stamped concrete ($12–20/sq ft) wins on visual impact and design variety. Exposed aggregate ($8–14/sq ft) wins on durability, traction, and low maintenance. Choose stamped if you want a specific visual outcome. Choose exposed aggregate if you want a surface that handles weather and traffic with minimal fuss and ages gracefully without showing wear.",
+        body: "Stamped concrete ($12–20/sq ft) wins on visual impact and design variety — if a specific look is the goal, stamped gives more options. Exposed aggregate ($8–14/sq ft) wins on durability, traction, and low maintenance. Choose stamped if you want a specific visual outcome. Choose exposed aggregate if you want a surface that handles weather and vehicle traffic with minimal fuss and ages gracefully without requiring color upkeep. On driveways specifically, exposed aggregate's durability advantage over stamped is more significant than it is on patios.",
       },
       {
         heading: "Pros",
-        body: "Excellent slip resistance — far better than smooth concrete. Hides tire marks and surface imperfections. Stands up to freeze-thaw cycles well when properly sealed. And the pea gravel or river stone look is genuinely attractive without requiring color maintenance.",
+        body: "Excellent slip resistance — far better than smooth concrete, and comparable to broom finish without the directional texture. Hides tire marks and surface imperfections well. Stands up to freeze-thaw cycles well when properly sealed. The pea gravel or river stone look is genuinely attractive without requiring the color maintenance that stamped finishes demand. And unlike stamped concrete, exposed aggregate improves with light wear — the aggregate polishes subtly over time.",
       },
       {
         heading: "Cons",
@@ -225,23 +225,23 @@ export const drivewayArticles: Article[] = [
     sections: [
       {
         heading: "Concrete Overlay",
-        body: "A concrete micro-topping or overlay applied over an existing concrete or asphalt driveway costs $3–8 per sq ft. It bonds to the existing surface and can be stamped, stained, or textured. It works only on structurally sound bases — overlaying a cracked, heaving slab just delays the problem.",
+        body: "A concrete micro-topping or overlay applied over an existing concrete or asphalt driveway costs $3–8 per sq ft. It bonds to the existing surface and can be stamped, stained, or textured. It works only on structurally sound bases — overlaying a cracked, heaving slab just delays the problem. Minimum overlay thickness is typically 1/4\"–3/8\" for durability under vehicle traffic; thinner applications chip and delaminate faster.",
       },
       {
         heading: "Asphalt Resurfacing",
-        body: "Asphalt driveways can be resurfaced (new layer of asphalt over existing) for $2–5 per sq ft. It's the cheapest resurfacing option but doesn't address any base issues. It also won't help if the existing asphalt has significant cracking — those cracks will reflect through the new layer within a season or two.",
+        body: "Asphalt driveways can be resurfaced (new layer of asphalt over existing) for $2–5 per sq ft. It's the cheapest resurfacing option but doesn't address any base issues. It also won't help if the existing asphalt has significant cracking — those cracks will reflect through the new layer within a season or two. Asphalt resurfacing makes the most sense as a temporary measure when the driveway is structurally sound but aesthetically worn.",
       },
       {
         heading: "Full Concrete Replacement",
-        body: "If the existing surface or base is compromised, replacement is the right call. New concrete driveways cost $4–8 per sq ft for plain finish, $12–20 for stamped. It's more expensive upfront but avoids spending resurfacing money on a surface that continues to fail.",
+        body: "If the existing surface or base is compromised, replacement is the right call. New concrete driveways cost $4–8 per sq ft for plain broom finish, $8–14 for exposed aggregate, and $12–20 for stamped. It's more expensive upfront but avoids spending resurfacing money on a surface that continues to fail. If you're also planning a patio or front walkway upgrade, bundling all three into one replacement project saves on mobilization and ensures color consistency.",
       },
       {
         heading: "When to Resurface vs Replace",
-        body: "Resurface if: the driveway is cosmetically worn but structurally intact, cracks are hairline (under 1/4\" wide) and stable, and the surface drains correctly. Replace if: cracks are wider than 1/4\" or actively shifting, the surface heaves or settles, or drainage is compromised.",
+        body: "Resurface if: the driveway is cosmetically worn but structurally intact, cracks are hairline (under 1/4\" wide) and stable, and the surface drains correctly without pooling. Replace if: cracks are wider than 1/4\" or actively shifting, the surface heaves or settles creating height differentials, or drainage is compromised and water runs toward the foundation.",
       },
       {
         heading: "Crack Repair Before Resurfacing",
-        body: "Any resurfacing job requires crack repair as a first step. Cracks filled with polyurethane or epoxy filler must cure before the overlay goes down. Skipping this step leads to the cracks reflecting through the new surface — the most common reason resurfacing jobs fail early.",
+        body: "Any resurfacing job requires crack repair as a first step. Cracks filled with polyurethane or epoxy filler must cure for 24–48 hours before the overlay goes down. Skipping this step leads to the cracks telegraphing through the new surface — the most common reason resurfacing jobs fail within the first year. For cracks wider than 1/4\", saw-cutting and routing before filling creates a better bond.",
       },
       {
         heading: "Driveway Resurfacing Cost vs. Full Replacement",
@@ -304,11 +304,11 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Two-Tone Concrete",
-        body: "A two-tone approach uses one color for the main driveway lanes and a contrasting color for the circular center island. This defines the layout clearly and adds visual structure without requiring a complex stamp pattern. It's one of the more budget-friendly ways to achieve a designed look on a circular layout.",
+        body: "A two-tone approach uses one color for the main driveway lanes and a contrasting color for the circular center island border or the apron band. This defines the layout clearly and adds visual structure without requiring a complex stamp pattern. It's one of the more budget-friendly ways to achieve a designed look on a circular layout — typically $8–12/sq ft versus $14–20 for a fully stamped surface. A charcoal field with a light grey or buff border reads well from the street.",
       },
       {
         heading: "Landscaped Center Island",
-        body: "The center island of a circular driveway is its visual anchor. A raised island with structured planting (a single specimen tree, ornamental grasses, or a low hedge border) ties the driveway design to the landscape and prevents the center from feeling empty. Budget $2,000–8,000 for the island landscaping on top of the concrete work.",
+        body: "The center island of a circular driveway is its visual anchor — and the most commonly underinvested element. A raised island with structured planting (a single specimen tree, ornamental grasses, or a formal low-hedge border) ties the driveway design to the landscape and prevents the center from feeling like an empty concrete donut. Budget $2,000–8,000 for island landscaping on top of the concrete work. An irrigation system for the island, if needed, adds another $500–2,000 but is worth including while the concrete contractor is already mobilized.",
       },
       {
         heading: "Sizing: The One Rule You Can't Ignore",

@@ -503,7 +503,7 @@ export const patioArticles: Article[] = [
     title: "Concrete Pool Deck Ideas: Finishes, Costs & Comparisons",
     headline: "Pool Deck Concrete Ideas: What to Choose and What to Spend",
     metaDescription:
-      "Pool deck ideas in concrete: broom finish $6–10/sq ft, exposed aggregate $8–14, stamped $12–18. Best finish for your budget and a 500 sq ft cost breakdown.",
+      "Pool deck ideas concrete: broom finish $6–10/sq ft, exposed aggregate $8–14, stamped $12–18. Best finish for your budget and a 500 sq ft cost breakdown.",
     targetKeywords: ["pool deck ideas concrete", "concrete pool deck", "pool deck finishes"],
     ogImage: "https://images.pourcanvas.com/patio-pool-deck-ideas.jpg",
     publishedAt: "2026-03-31",
