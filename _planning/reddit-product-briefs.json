@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "generated": "2026-03-31",
+    "framework": "What would have prevented this person's problem if they'd had it before the problem happened?",
+    "source_file": "reddit-signal-results.json",
+    "total_briefs": 12
+  },
+  "briefs": [
+    {
+      "id": "pb_001",
+      "rank": 1,
+      "conviction": "highest",
+      "product_name": "ADA Website Compliance Scanner for SMBs",
+      "one_liner": "Scan your website for ADA/WCAG violations before a demand letter arrives — ranked by legal exposure with plain-language fix instructions.",
+      "problem": "Small business owners have no idea their website is non-compliant until a lawyer is already threatening them with a settlement.",
+      "prevention": "Knowing their website had ADA violations before the demand letter arrived, with a specific prioritized fix list.",
+      "product_detail": "Enter URL, get a report of violations ranked by legal exposure (missing alt text, color contrast, keyboard navigation, form labels). Subscription for ongoing monitoring. Positioned as ADA lawsuit protection, not accessibility tooling. Price point under $30/month — existing tools (accessiBe, AudioEye) are $490+/year and marketed to enterprise.",
+      "monetization": "Monthly subscription ~$20-30/month",
+      "signal_strength": "Two independent posts, 4 detailed follow-ups each, 775 total comments across both",
+      "source_posts": [
+        "https://reddit.com/r/smallbusiness/comments/1pc5ix4/my_friend_got_an_ada_demand_letter_and_showed_me/",
+        "https://reddit.com/r/smallbusiness/comments/1noer7j/just_got_a_letter_saying_my_website_violates_ada/"
+      ],
+      "subreddits": ["r/smallbusiness"],
+      "tags": ["compliance", "legal-risk", "website", "small-business"]
+    },
+    {
+      "id": "pb_002",
+      "rank": 2,
+      "conviction": "high",
+      "product_name": "No-Show Prevention System for Non-Enterprise Service Businesses",
+      "one_liner": "Automated SMS + email appointment reminders with 2-click confirmation and no-show deposit collection — priced for salons, not hospitals.",
+      "problem": "Service businesses lose significant revenue to no-shows but enterprise solutions (Dentrix, Weave) cost $300+/month with 12-month contracts.",
+      "prevention": "A multi-channel appointment confirmation system set up before no-shows became chronic and costly.",
+      "product_detail": "Automated reminders at 48h, 24h, 2h before appointment. 2-click confirmation reply. Reschedule link. No-show deposit collection. Target: hair salons, auto shops, dog groomers, tutors, massage therapists — businesses that post on r/smallbusiness, not r/dentalpractice.",
+      "monetization": "Monthly subscription ~$30/month",
+      "signal_strength": "4 detailed follow-ups, clear underserved price point in existing market",
+      "source_posts": [
+        "https://reddit.com/r/smallbusiness/comments/1rm6jq3/our_dental_clinic_cut_noshows_by_like_half_after/"
+      ],
+      "subreddits": ["r/smallbusiness"],
+      "tags": ["appointments", "service-business", "automation", "revenue-protection"]
+    },
+    {
+      "id": "pb_003",
+      "rank": 3,
+      "conviction": "high",
+      "product_name": "Death Folder Financial Documentation Kit",
+      "one_liner": "A guided, fillable template your family opens on day one — all accounts, policies, digital access, and instructions already organized.",
+      "problem": "Most people have no documented financial trail their family can follow. This is only discovered after someone dies.",
+      "prevention": "A comprehensive pre-filled document their family could navigate independently — before anyone dies.",
+      "product_detail": "Fillable PDF or Notion template with every section pre-named: bank accounts, investment accounts, insurance policies, digital logins, property docs, wishes, key contacts. Sold once. Framed as a gift to your family, not as estate planning (too intimidating). SEO angle: 'what to put in emergency folder for family.'",
+      "monetization": "One-time purchase $15-29",
+      "signal_strength": "4 detailed follow-ups, emotional urgency, 197 comments",
+      "source_posts": [
+        "https://reddit.com/r/personalfinance/comments/1px73c0/what_to_put_in_my_im_dead_folder_for_my_family/"
+      ],
+      "subreddits": ["r/personalfinance"],
+      "tags": ["estate-planning", "documentation", "personal-finance", "digital-product"]
+    },
+    {
+      "id": "pb_004",
+      "rank": 4,
+      "conviction": "high",
+      "product_name": "Payment Processor Account Health Monitor",
+      "one_liner": "Monitor your Stripe/PayPal/Square account health and get early warnings before a freeze happens.",
+      "problem": "Stripe freezes accounts based on internal risk signals. Owners have no visibility into those signals until the freeze has already happened and funds are locked.",
+      "prevention": "Early warning that account health was heading toward a freeze — so the owner could adjust behavior or move revenue to a backup processor.",
+      "product_detail": "Connects via API to Stripe, PayPal, Square. Tracks dispute rate, chargeback velocity, refund ratio, revenue growth rate — the signals processors use internally. Sends alerts when approaching thresholds. Includes a risk score dashboard. Secondary angle: a 'payment processor redundancy setup guide' for setting up a backup in 30 minutes.",
+      "monetization": "Monthly subscription ~$15-25/month",
+      "signal_strength": "3 detailed follow-ups, high financial pain ($8k+ frozen), 312 comments",
+      "source_posts": [
+        "https://reddit.com/r/smallbusiness/comments/1phlsw0/stripe_is_holding_8000_of_my_money_indefinitely/"
+      ],
+      "subreddits": ["r/smallbusiness"],
+      "tags": ["payments", "stripe", "risk-monitoring", "cash-flow"]
+    },
+    {
+      "id": "pb_005",
+      "rank": 5,
+      "conviction": "high",
+      "product_name": "Business Operations Playbook Builder",
+      "one_liner": "Document how your business runs without you — built before you need it for a vacation, health emergency, or sale.",
+      "problem": "Small business owners discover their business is entirely stored in their head only when they try to step away and everything breaks.",
+      "prevention": "Having operations documented and delegated before the test — SOPs, trained staff, decision trees for common situations.",
+      "product_detail": "Guided interview format: for each role, document recurring tasks, decisions made, tools used, and escalation contacts. Output is a structured operations manual. Positioned at the moment of 'I want to take a vacation' or 'I'm thinking about selling.' Target: solo operators and sub-10-person businesses.",
+      "monetization": "One-time purchase $49-99 or SaaS $19/month",
+      "signal_strength": "3 detailed follow-ups, 300 comments, universal latent fear for small business owners",
+      "source_posts": [
+        "https://reddit.com/r/smallbusiness/comments/1r9x049/tried_going_off_grid_for_5_days_to_see_if_my/"
+      ],
+      "subreddits": ["r/smallbusiness"],
+      "tags": ["operations", "delegation", "sop", "small-business", "scalability"]
+    },
+    {
+      "id": "pb_006",
+      "rank": 6,
+      "conviction": "medium-high",
+      "product_name": "Small Business Policy Library",
+      "one_liner": "Pre-written, plain-language policies for the edge cases small businesses face but never document until it's too late.",
+      "problem": "Small business owners have no written policies for uncomfortable situations — discretionary discounts, service refusal, disruptive patrons, expense fraud — and only discover they needed one mid-incident.",
+      "prevention": "Written policies existing before the situation occurs, giving the owner something objective to stand behind.",
+      "product_detail": "Bundle of 20-30 pre-written policies covering: discretionary discounts/goodwill offers, service refusal, disruptive patron management, service animal rules, loitering, complaint escalation, expense reimbursement, no-show deposits, photography in-store. Owner downloads, adds their business name, posts. Also includes staff script cards for enforcing policies without escalation.",
+      "monetization": "One-time bundle $39-79",
+      "signal_strength": "Three independent posts (#5, #11, #12) all point to the same gap from different angles",
+      "source_posts": [
+        "https://reddit.com/r/smallbusiness/comments/1o5mfjm/homeless_guy_abuses_free_burger_privilege_loses/",
+        "https://reddit.com/r/smallbusiness/comments/1n8j5r6/homeless_smell/",
+        "https://reddit.com/r/smallbusiness/comments/1pdax88/i_caught_an_employee_submitting_fake_expense/"
+      ],
+      "subreddits": ["r/smallbusiness"],
+      "tags": ["policies", "operations", "legal-protection", "small-business", "templates"]
+    },
+    {
+      "id": "pb_007",
+      "rank": 7,
+      "conviction": "medium",
+      "product_name": "FIRE Readiness Self-Assessment Calculator",
+      "one_liner": "A plain-language verdict on whether you're actually FI — beyond the 25x rule, before you post on Reddit.",
+      "problem": "People with significant NW can't self-assess their FI status and seek community validation instead. The frustration this generates (in 3 detailed comments) reveals the gap: no tool handles the real complexity.",
+      "prevention": "A self-assessment tool that answers the FI question definitively, so people know their number.",
+      "product_detail": "Inputs: spending, NW, asset allocation, withdrawal strategy, healthcare costs, geographic arbitrage option, sequence of returns risk. Output: plain-language verdict with reasoning. Monetized through affiliate links to brokerages or a paid detailed report. Could expand to a 'FI readiness score' product.",
+      "monetization": "Affiliate / freemium with paid report $9-19",
+      "signal_strength": "3 detailed follow-ups, 327 comments, indirect signal (frustration at missing tool)",
+      "source_posts": [
+        "https://reddit.com/r/financialindependence/comments/1nxe9aq/am_i_the_only_one_who_is_baffled_by_these_types/"
+      ],
+      "subreddits": ["r/financialindependence"],
+      "tags": ["fire", "calculator", "financial-independence", "self-assessment"]
+    },
+    {
+      "id": "pb_008",
+      "rank": 8,
+      "conviction": "medium",
+      "product_name": "Freelancer Negotiation Playbook",
+      "one_liner": "A reference doc with exact scripts for rate discussions, scope creep, counter-offers, and walking away — before you need them on a call.",
+      "problem": "Independent professionals have no negotiation framework and make it up every time, learning through lost deals instead of through preparation.",
+      "prevention": "Having practiced scripts and frameworks before the first difficult client conversation.",
+      "product_detail": "Not a course — a reference document. Specific scripts for: initial rate discussion, 'can you do it cheaper,' scope creep, the counter-offer moment, walking away cleanly. Plain language, exact phrasing. One-time purchase. Extension: AI roleplay tool to practice before a real call.",
+      "monetization": "One-time purchase $19-39",
+      "signal_strength": "2 detailed follow-ups, 240 comments, resonance through inverse pain (lost negotiations)",
+      "source_posts": [
+        "https://reddit.com/r/Entrepreneur/comments/1ntv20k/the_weird_way_i_win_clients_by_losing_negotiations/"
+      ],
+      "subreddits": ["r/entrepreneur"],
+      "tags": ["freelance", "negotiation", "consulting", "scripts", "pricing"]
+    },
+    {
+      "id": "pb_009",
+      "rank": 9,
+      "conviction": "medium",
+      "product_name": "First 90 Days Business Launch Guide",
+      "one_liner": "A structured checklist and decision tree for first-time entrepreneurs — designed to be completed alone, in order, without a mentor.",
+      "problem": "First-time entrepreneurs freeze without structure and become dependent on an experienced partner or mentor to make every early decision.",
+      "prevention": "A step-by-step framework that answers 'what do I actually do first' without requiring an experienced guide.",
+      "product_detail": "Not a 40-hour video course. A structured checklist: validate the idea (here's how), pick legal structure (here's the decision tree), get your first customer (here's the script), set up basic bookkeeping (here's the tool). Done alone, in order. Positioned at people making their first attempt, not people who've been 'thinking about it' for years.",
+      "monetization": "One-time purchase $29-49",
+      "signal_strength": "3 detailed follow-ups, 459 comments (high engagement), real relationship tension as proxy for the pain",
+      "source_posts": [
+        "https://reddit.com/r/Entrepreneur/comments/1nyrujd/wife_wants_to_start_a_business_but_is_relying_on/"
+      ],
+      "subreddits": ["r/entrepreneur"],
+      "tags": ["entrepreneurship", "beginners", "launch", "checklist", "first-business"]
+    }
+  ]
+}

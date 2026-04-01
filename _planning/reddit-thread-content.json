@@ -1,0 +1,222 @@
+{
+  "ada_friend": {
+    "key": "ada_friend",
+    "title": "My friend got an ada demand letter and showed me the actual settlement agreement they wanted him to sign, this is insane!",
+    "selftext": "My buddy runs a small shopify store, he got hit with an accessibility demand letter last month from some law firm. The initial demand was for $20k settlement plus legal fees, they sent over the actual settlement agreement template and the terms are wild beyond just the money.\nAgreement requires: bringing site into \"substantial compliance\" with wcag 2.2 level aa within the term of agreement, 24 month monitoring period where they can come back and check, if you breach any terms they can reopen the case, strict confidentiality clause so you can't even tell other business owners about the amount or terms.\nThe kicker is buried in section 4 about remediation, you have to make \"good faith efforts\" but there's no clear standard for what that means. So even after paying $20k+ and doing work, they could potentially argue you didn't try hard enough.\nI talked to a lawyer who said these agreements are designed to be vague so they can keep coming back, the confidentiality clause means most business owners can't even compare notes or warn each other.\nAnyone else seen agreements like this? Trying to figure out if these terms are standard or if this firm is extra aggressive.",
+    "score": 1235,
+    "num_comments": 345,
+    "url": "https://reddit.com/r/smallbusiness/comments/1pc5ix4/my_friend_got_an_ada_demand_letter_and_showed_me/",
+    "comments": [
+      {
+        "score": 1,
+        "body": "This is a friendly reminder that r/smallbusiness is a question and answer subreddit. You ask a question about starting, owning, and growing a small business and the community answers. Posts that violate the rules listed in the sidebar will be removed. A permanent or temporary ban may also be issued if you do not remove the offending post. Seeing this message does not mean your post was automatically removed. Please also note our new Rule 5- Posts with negative vote totals may be removed if they are deemed non-specific, or if they are repeats of questions designed to gather information rather than solve a small business problem.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/smallbusiness) if you have any questions or concerns.*"
+      },
+      {
+        "score": 869,
+        "body": "This needs to be upvoted so more American small business owners see it. It\u2019s very real and very scary."
+      },
+      {
+        "score": 352,
+        "body": "That confidentiality clause is doing exactly what it's supposed to - keeping business owners in the dark about how predatory these settlements really are\n\n  \nYour lawyer friend is spot on, the vague \"good faith efforts\" language is intentional so they can basically extort you twice if they feel like it"
+      },
+      {
+        "score": 249,
+        "body": "So we know this to be basically a legitimate scam at this point (ADA claims against small websites). What I suspect is that more people are actually fighting these claims and making the argument that the claimant is not actually being discriminated against, and this is just a cash grab due to poor ADA implementation.\n\nThus, these ongoing terms would be an attempt to legitimise the claim by making it appear that the suit really WAS about making the website compliant. I would strongly suspect that they would never even look at the website again, once a settlement was made.\n\nYour friend has a problem, because there's nothing they can do to fix their website - it's entirely down to Shopify and the theme designer to sort it, but you can bet there's terms and conditions that absolve them of any responsibility. I believe even the bits Shopify DO commit to are only WCAG 2.1 compliant, not 2.2 (which became a standard in Oct 2025, so very recently).\n\nI would check if ADA actually requires WCAG2.2 for starters, it would be unusual for them to have updated the rules so quickly after a standard became official. If not, then seek legal advice on what the implications of that are - they can't mandate you are more accessible than the law requires.\n\nI'd also petition every level of government you can, hard and frequently, about this. And get all of your small business, website-owning friends to do the same. At some point, this shit will come for them all, and the financial impact can be huge because it's almost always a open/shut technical win for the claimants.\n\nEdit: I forgot to share this, which is essentially Shopify's view on the matter: [https://www.shopify.com/news/accessibility-lawsuits](https://www.shopify.com/news/accessibility-lawsuits) \\- no answers, but an interesting read all the same."
+      },
+      {
+        "score": 79,
+        "body": "My company just settled a case exactly like this.  It is real, not a scam, but it absolutely is a shakedown.\n\nOur lawyers put together a settlement and release.  We paid low 5 figures to settle - the actual plaintiff received in the low hundreds, the lawyers kept the rest.  Disgusting.  On principle I would have loved to fight this\u2026 in reality we\u2019re more likely going to shut down our website due to compliance costs to avoid more of these."
+      },
+      {
+        "score": 69,
+        "body": "We have a similar situation here in Volusia county targeting business in NsB and Daytona. The taco shack in new Smyrna is hosting a group of owners to talk about what they can do. The attorney hired the woman in the wheelchair and sends her to all these businesses, they are in cahoots together."
+      },
+      {
+        "score": 64,
+        "body": "My insurance broker recommended a 3rd Party Claimant rider on an Employment Practices Insurance policy to help protect against these kinds of things. I've never seen it play out in real life, but making this an insurance company's problem at scale is the fastest way to get the law amended."
+      },
+      {
+        "score": 45,
+        "body": "These are crazy.  Have know multiple people that have been hit with these. This is akin to suing a car company because they created a car that cannot be driven by Ray Charles or Stevie Wonder. We need to go through the legal system and counter sue."
+      },
+      {
+        "score": 36,
+        "body": "Not legal expert... but: Shopify should have all accessibility options built-in. Second: If your buddy didn't sign anything he there is no \"confidentiality agreement\" between him and law firm. Maybe he may post the contract here on Reddit..."
+      },
+      {
+        "score": 29,
+        "body": "So ignore it, let it come before a judge.  Then you can get clear answers for everything and even stand a chance of having a say in how to fix the problem. \n\nMy advice is ignore it and move, but that's not always possible."
+      }
+    ]
+  },
+  "ada_letter": {
+    "key": "ada_letter",
+    "title": "Just got a letter saying my website violates ADA\u2026 Totally lost here \ud83d\ude2d",
+    "selftext": "Hey everyone,\nI run a small online boutique and today I received a demand letter claiming that my website isn\u2019t compliant with the ADA and WCAG standards.\nThey\u2019re threatening to sue unless I either pay a settlement or fix the issues right away.\nThe problem is, I honestly didn\u2019t even know this was a requirement. After some frantic Googling, I learned about WCAG levels, accessibility rules like alt text, keyboard navigation, and color contrast but honestly, it\u2019s all overwhelming.\nI don\u2019t have the budget to hire an expensive developer right now. Has anyone been through this before? What\u2019s a realistic way to handle this situation without going completely broke?",
+    "score": 638,
+    "num_comments": 430,
+    "url": "https://reddit.com/r/smallbusiness/comments/1noer7j/just_got_a_letter_saying_my_website_violates_ada/",
+    "comments": [
+      {
+        "score": 1,
+        "body": "This is a friendly reminder that r/smallbusiness is a question and answer subreddit. You ask a question about starting, owning, and growing a small business and the community answers. Posts that violate the rules listed in the sidebar will be removed. A permanent or temporary ban may also be issued if you do not remove the offending post. Seeing this message does not mean your post was automatically removed. Please also note our new Rule 5- Posts with negative vote totals may be removed if they are deemed non-specific, or if they are repeats of questions designed to gather information rather than solve a small business problem.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/smallbusiness) if you have any questions or concerns.*"
+      },
+      {
+        "score": 934,
+        "body": "This is a common (very real) shakedown. It mostly started in around NYC I think but there are lawfirms who specifically go after small businesses with online playforms. Usually ask for 5k outside court settlement.  \n\nRun your website through free ADA software. If you are able see id you can add accessibility plug-ins. On my website I also have an ADA section with a contact form about what people would like me to add.\n\nThere is no official ADA guidelines that are modern so it\u2019s a huge grey area. \n\nMost of the time it isn\u2019t even people interested in your stuff."
+      },
+      {
+        "score": 333,
+        "body": "This is not a scam in the sense that they are trying to get your money.\n\n\nThis is a scam in the sense that some lawyer will sue the fuck out of you.\n\n\nPay the money to your domain registrar to hide the ownership of your business.\n\n\nThen call your Web person and pay them to fix it. Or try to fix it yourself.\u00a0\n\n\nDon't ignore this. These lawyers are real scummy out here.\u00a0"
+      },
+      {
+        "score": 314,
+        "body": "You were targeted by a scummy lawyer looking for a quick settlement."
+      },
+      {
+        "score": 134,
+        "body": "This is something that a lot of business owners are not aware of. Under the Americans with Disabilities Act, as well as various state laws, your website is required to be accessible for those with disabilities just as your brick and mortar location is required to be.\n\nUnfortunately, scummy lawyers know both of these facts and are taking advantage of it to get money from small businesses.\n\nThere is still a lot of grey areas in the legal system about website accessibility but it's best to follow WCAG standards and meet AA conformity.\n\nGenerally, the two biggest issues to address are alt text on images and color contrast.\n\nAlt text is just a description that you give an image so that someone using a screen reader who can't see the image knows what the image is about. It's also beneficial for SEO.\n\nWith contrast, you need to make sure that the text is readable on whatever background color you are using. I use this site for checking contrasts: https://accessibleweb.com/color-contrast-checker/.\n\nWhile there are other accessibility issues to be aware of, these are the 2 low hanging fruits that the lawyers tend to look for and will do deeper dives if they find issues in these areas.\n\nYou can run WAVE, which I use regularly as a web developer, to see some of the issues that need to be addressed: https://wave.webaim.org/. You can also install this as an extension in Chrome and Firefox.\n\nEdit: Google PageSpeed Insights is also another good tool for identifying accessibility issues although I've found that it sometimes misses contrast issues."
+      },
+      {
+        "score": 133,
+        "body": "They are like patent trolls. But they will sue. Settlements are how they make a living. Temporarily take down the site with a message that explains why. Wait for them to lose interest and put it back up."
+      },
+      {
+        "score": 124,
+        "body": "A client of mine had this happened. He ignored it for a bit and then got a lawyer for $1500 (just searched the internet) the lawyer showed to court, but the other lawyer did not and was dismissed. They never go to court and just want to settle. It\u2019s hard to prove ADA compliance as the rules are so vague. \n\nGood luck."
+      },
+      {
+        "score": 65,
+        "body": "Write a letter that says, \u201cWe dispute your claims. If you intend to proceed, file in court.\u201d Send it to them. This is the professional way of telling them to fuck off. Chances are they will not file. Even if they do it\u2019ll need to be in your home state. You\u2019ll also be prepared for a judge to see the site by the time that might happens.\n\nThis week do the following:\n\n-Change all the pictures on your site to have alt text this week. Example: instead of the image being called IMG_1234, make it say what the product actually is. Red Sun dress with yellow daisies.\n\n-make sure the text isn\u2019t too light on the site and stands out. You can check this with WAVE or a chrome extension.\n\n-make sure your form has labels. \u201cName\u201d \u201cemail\u201d etc.\n\n- use the tab key when you\u2019re on the site. You need to be able to reach a button or link. If you used a website builder this will be cool.\n\n-lastly make a plain text accessibility page. You\u2019re basically saying, \u201chey if you have an issue accessing my site tell me what it is so I can fix it.\u201d\n\n(I just woke up so forgive my grammar and stuff. My braincell is asleep on the hamster wheel.)"
+      },
+      {
+        "score": 59,
+        "body": "So many wrong answers here. This is a real problem. The Americans with Disabilities Act requires commercial web sites to be accessible. \n\nThere are scummy people that sue immediately in order to get a settlement. This doesn\u2019t appear to be the case here since they\u2019ve asked you to correct the problem. \n\nYou need to fix it. Who created your web site? Companies like Wix have ADA compatible templates. \n     \nhttps://www.uschamber.com/co/run/technology/ada-website-accessibility-compliance\n      \nhttps://www.levelaccess.com/compliance-overview/americans-with-disabilities-act-ada-compliance/\n\nhttps://www.kmbc.com/article/ada-compliance-website-lawsuits-midwest-businesses/64908544"
+      },
+      {
+        "score": 57,
+        "body": "Layers, can't live with them.\n\nEdit: lol, I am not fixing that now."
+      },
+      {
+        "score": 30,
+        "body": "Need to pay that extra $8 to make sure domain ownership info stays private."
+      },
+      {
+        "score": 32,
+        "body": "If you're using WordPress, there are plugins that will help you identify/solve the issues.\u00a0 If you're on a modern CMS it should be pretty easy to fix.\u00a0\u00a0\n\n\nIf you paid someone to make the website for you, pay them a little more to make it compliant.\u00a0\n\n\nDo not pay off the people sending you a letter, even if it's a real law firm which it may or may not be.\u00a0 It doesn't do anything to solve your issue with the next person that sends you a demand letter."
+      }
+    ]
+  },
+  "noshows": {
+    "key": "noshows",
+    "title": "Our dental clinic cut no-shows by like half after we stopped relying on phone calls",
+    "selftext": "Okay so this is probably super specific but maybe some of you in healthcare admin are dealing with the same thing\n\nWe run a small dental practice and no-shows were genuinely killing us. Like not just annoying, we're talking lost revenue, wasted chair time, staff standing around. Our front desk would call patients to confirm appointments and just... get voicemail every time. People don't answer numbers they don't recognize, which is basically every clinic's number to them.\n\nSo they'd miss the appointment, we'd call again to reschedule, voicemail again. The whole cycle was maddening.\n\nTried doubling down on calls for a while. Didn't help. Tried email reminders, open\u00a0rates were tragic. At some point our receptionist was spending half her morning just leaving voicemails that nobody was listening to.\n\nEventually just switched to texting patients instead of calling. Sounds obvious in hindsight but we were so used to the old way that nobody questioned it.\n\nThe difference was kind of embarrassing honestly. People TEXT BACK like immediately. \"yes I'll be there\" or \"actually can we move to thursday\" done. no phone tag, no voicemails, no follow-up calls. Our confirmation rate went from whatever it was before (bad) to actually usable.\n\nWe set it up so the whole front desk team texts from one shared number so patients aren't getting messages from random staff personal phones. Whoever's available can pick up the conversation and respond. No chaos, no \"wait who texted this patient already.\"\n\nI've been doing it for about 4 months. No-shows are noticeably down, front desk is way less frazzled, and patients seem to appreciate that they can just shoot a quick text instead of having to call during office hours when they're at work anyway.\n\nDoes anyone else deal with this? Curious how other small practices handle confirmations because \"call everyone and pray someone picks up\" really can't be the industry standard still\n\n",
+    "score": 610,
+    "num_comments": 226,
+    "url": "https://reddit.com/r/smallbusiness/comments/1rm6jq3/our_dental_clinic_cut_noshows_by_like_half_after/",
+    "comments": [
+      {
+        "score": 1,
+        "body": "**Friendly Reminder**\n\nr/smallbusiness is a question and answer subreddit. Ask a question about starting, owning, and growing a small business and the community answers. Posts that violate the rules listed in the sidebar will be removed. \n\n**Please do not conduct market research on our community.**\n\nWe are not your focus group and asking us about our pain points, needs, what is hardest about X, etc. is not asking about how small business works or for real help with running your small business. \n\nThese posts are subject to removal and given the community's disgust with the constant spamming of these posts you might just destroy your brand and contaminate your company search results. \n\nSeeing this message does not mean your post was automatically removed. If you asked about pain points or are directly or indirectly promoting a product please remove your post. Come back to post an honest question or give a knowledgeable response to someone else's question and leave your company name in your own profile. We can tell if you know what you're doing and the community can reach out if they need to.\n\n**We welcome honest question posts, especially from newcomers.** \nThank you for your post.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/smallbusiness) if you have any questions or concerns.*"
+      },
+      {
+        "score": 450,
+        "body": "Text messages are durable, phone calls are not. Tomorrow if I say to myself\"when was that appointment again?\" If the reminder is a text I can look it up. If it was a call then I'm SOL and likely miss the appointment."
+      },
+      {
+        "score": 92,
+        "body": "What\u2019s with this script? Almost everything is the same script. Present issue then supposedly found a solution and ask if anyone else has same problem / solution. This is the 5th different script I\u2019ve seen this year and the user account age is very young."
+      },
+      {
+        "score": 89,
+        "body": "We have several dental clients and texting seems to the main form of outbound communication. "
+      },
+      {
+        "score": 89,
+        "body": "Text reminders work because they remove friction. People respond to texts quickly while calls feel like a commitment.\n\nMany clinics are moving to automated text confirmations for exactly this reason.\n\nTo automate this, we can automate the flow, using vibe coding tools like Runable / Emergent, for non-tech founders, where tech becomes friction and the process needs to be implemented quickly."
+      },
+      {
+        "score": 31,
+        "body": "Same situation here a while back. the voicemail cycle was killing our mornings until we switched to shared inbox texting. We use Textline, nothing fancy, but people actually respond and the no-shows dropped pretty fast\n\nWish we'd done it sooner tbh"
+      },
+      {
+        "score": 37,
+        "body": "Are you involved at all with the sales of the product you are using?"
+      },
+      {
+        "score": 15,
+        "body": "So tired of the spam"
+      },
+      {
+        "score": 15,
+        "body": "Thank you AI generated story from a one month old account. "
+      },
+      {
+        "score": 9,
+        "body": "Lol I was just thinking about this earlier today, I\u2019ve noticed alot of my mom\u2019s doctors have been texting me to remind me about her appointments or to confirm them and I love it I never answer phone calls and have a crazy busy schedule and yes sometimes I just forgot about the appointment, thank you for doing this!! The only time I got annoyed was when one clinic asked me to confirm like 30 times it started like 5 days before the appointment and I was highly irritated so finally responded \u201cI said I would f#ck#g be there\u201d and they stopped \ud83e\udd23"
+      },
+      {
+        "score": 7,
+        "body": "I never pick up when my dentist calls but I always text back right away, same for my doctor. It\u2019s a great system! Also better for remembering the date/time of appointment because I can just quickly look at my text history. "
+      },
+      {
+        "score": 8,
+        "body": "I'm not even a texter and I prefer receiving texts to calls from businesses. Notifications in particular aren't things which require a back-and-forth discussion."
+      },
+      {
+        "score": 7,
+        "body": "I\u2019ve been ghosting my dentist simply for the fact I don\u2019t want to call and talk to his bitchy front desk. Wish they\u2019d text \ud83d\ude02"
+      }
+    ]
+  },
+  "dead_folder": {
+    "key": "dead_folder",
+    "title": "What to put in my \u201cI\u2019m dead\u201d folder for my family",
+    "selftext": "Hi all, we had a death in the family and it\u2019s made me realize that while I am reasonably well organized financially, I am not organized enough.\n\nDoes anyone have or know of a good resource / outline of what I need to organize for my wife and kids.\n\nEverything from passwords for my phone and computer.  Last 5 years tax returns, will, etc.\n\nThanks.\n\nUpdate:  thank you all. This has been very helpful at a time of loss for my family and I\u2019m determined to make it as easy in my wife and kids as possible when it\u2019s my time.",
+    "score": 1356,
+    "num_comments": 197,
+    "url": "https://reddit.com/r/personalfinance/comments/1px73c0/what_to_put_in_my_im_dead_folder_for_my_family/",
+    "comments": [
+      {
+        "score": 1374,
+        "body": "One free resource that I've used is Erik Dewey's [Big Book of Everything](https://www.erikdewey.com/bigbook.htm). I use the Excel version and I set up the print formatting so that the footer includes the date a page was printed. Some don't have to be reprinted often (if ever), whereas some do have to be updated as expiration dates and such change. I keep everything printed in a binder. Why yes a burglar could make good use of the info, but realistically a burglar is going to go for the electronics and jewelry and not in the Lisa Frank-style binder in a pile of magazines and cookbooks and such. My sibling and my bestie know what and where it is. They also know how to access my password manager."
+      },
+      {
+        "score": 207,
+        "body": "Look into the NoK box and other things.\u00a0\n\nAt the least have will, list of accounts, burial plans, funeral plans, deeds, and such.\u00a0\n\nHere is a checklist from the Institute of aging. There is also a good one from the AARP if you search for it\n\nhttps://www.nia.nih.gov/health/advance-care-planning/getting-your-affairs-order-checklist-documents-prepare-future"
+      },
+      {
+        "score": 134,
+        "body": "Not directly finances related but if you have a password manager like bitwarden, the password to that. Passwords in general, my father passed recently and there was some stuff on his computer we wanted to save but it was locked down pretty tight.\u00a0"
+      },
+      {
+        "score": 108,
+        "body": "Recent statements for *everything* - update it every year. So, bills, retirement accounts, life insurance, etc."
+      },
+      {
+        "score": 100,
+        "body": "I used the Get it Together Book by Nolo. It breaks everything down into chapters, so then you can just update a chapter at a time when things change. I have each chapter in a Google Docs file on Drive. And then it's all in sheet protectors in a binder in my safe. If you buy their book, you get digital template files, but you could certainly make your own digital files easy enough. I rearranged some of the original book content to suit my needs. Here's my Table of Contents that I settled on:\n\n1. Instructions 1.1 Letter to Loved ones\n2. Secured Passwords\n3. Biographical Information\u00a0\n4. Identification -&gt; Social Security, Drivers License, Passport\n5. Education\n6. Marriage, Separation, and Divorce\n7. Pets and Livestock\n8. Current and Past Employment\n9. Memberships and Subscriptions\n10. Service Providers and Utility Accounts\n11. Health Insurance, Healthcare, Directives\n12. Durable Power of Attorney for Finances\n13. Organ or Body Donation, End of Life Wishes\n14. Burial or Cremation\n15. Funeral and Memorial Services\n16. Obituary\n17. Last Will and Testament\n18. Life Insurance\n19. Summary of Accounts of Value\n20. Bank Accounts\u00a0\n21. Brokerage/Bond Accounts\n22. Credit Cards and Other Debts\n23. Retirement Pension, IRAs, and Government Benefits\n24. Real Estate, Mortgage, and Home Insurance\n25. Previous Residences\n26. Vehicle, Insurance, Loan, Previous Vehicles\n27. Taxes\n28. Home Inventory\n29. Other Personal Property of Value/Digital Assets\n30. Firearms\n31. Miscellaneous Information 1) Appendix: Home Network Specifications 2) Appendix: Alexa Commands"
+      },
+      {
+        "score": 77,
+        "body": "They sell books that literally tell you everything you need to write down.. a death planner if you will. Pretty good concept."
+      },
+      {
+        "score": 64,
+        "body": "Also explanations of things that you do around the house (or car) that the rest of your family doesn\u2019t know how to work. (Is it necessary to change a filter in your refrigerator that no one is even aware that you do it?) Or bills that you pay that your family would need to keep up with. How to access old tax returns. Where should they look for the marriage certificate and passports and car title and other documents?"
+      },
+      {
+        "score": 39,
+        "body": "I\u2019m 62 and created my \u2018Death Binder\u2019 about 10 years ago and when I got divorced. I update it every 6 months and when I change all my passwords. My 3 adult children have been walked through it and know where it is and they have keys to my house and the safe w identitifying documents that are hard to get \u2014 birth certificate, passport, career licenses, etc.\n\nHere\u2019s what\u2019s in it:\n\nLiving Will &amp; Family Trust\n\nPOA | MPOA\n\nlist of every account + passwords\n\nFuneral + Burial wishes \n\nAll my assets and directions to trustees (kids w / equal power) are listed out in the will \u2014 home, car, earthly possessions, retirement accounts. Blah blah. \n\nIn addition to all the above, the past several years I have done a Swedish death cleanse of my entire house and life \u2014 minimalist living, zero clutter, readying living space for ease and cleanliness. \n\nIt seems sad. All of it. It is freeing and mainly I don\u2019t want my kids to suffer any undue stress."
+      },
+      {
+        "score": 25,
+        "body": "Not helpful but I'm hung up on \"I'm dead\".  I have a very high genetic risk for Alzheimer's and frankly my family will probably need the information before I'm dead.  I'm thinking of something like \"I've been taken by aliens\"."
+      },
+      {
+        "score": 24,
+        "body": "\\- Wishes for your funeral\n\n\\- Any insurance policies?\n\n\\- Account numbers and access instructions for any banks, brokerages, credit cards, financial firms \\*\n\n\\- login  instructions for computer, phones, tablets, watches and any other electronics \\*\n\n\\- Where to locate the original signed/notarized will?\n\n\\- Instructions for who else you should let know I've passed - people your kids might not know.\n\n\\- Any special instructions you might have\n\n\\* It really helps to have a password manager for this.  I use Bitwarden.\n\nOther things to keep in mind.\n\n\\- Definitely name a Power of Attorney and Health Care Proxy\n\n\\- Add your POA as a second signer for at least one cash flow account.    It will be hugely helpful because generally ALL accounts solely in the deceased's name will be frozen upon death and that can make paying any remaining estate bills a huge pain until the death certificate and executor certification has been provided.    The banks may even freeze electronic access on  the joint accounts depending on the institution.   But you'll stilll be able to transact via check and live at the bank."
+      }
+    ]
+  }
+}

@@ -1,0 +1,999 @@
+{
+  "meta": {
+    "generated": "2026-03-31",
+    "subreddits": [
+      "freelance",
+      "smallbusiness",
+      "personalfinance",
+      "landlord",
+      "entrepreneur",
+      "careerguidance",
+      "legaladvice",
+      "financialindependence"
+    ],
+    "criteria": {
+      "min_score": 500,
+      "max_score": 2000,
+      "min_date_utc": 1754006400
+    },
+    "total_posts": 107,
+    "product_briefs_file": "reddit-product-briefs.json"
+  },
+  "posts": [
+    {
+      "subreddit": "r/personalfinance",
+      "title": "7 years ago a dentist office did work I didn\u2019t authorize. I pointed out it wasn\u2019t in my treatment plan and refused to pay. They caved. Now the company that bought them sic\u2019d MCM on me.",
+      "score": 1972,
+      "date": "2025-09-21",
+      "url": "https://reddit.com/r/personalfinance/comments/1nmvey3/7_years_ago_a_dentist_office_did_work_i_didnt/",
+      "num_comments": 138,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/landlord",
+      "title": "[Landlord US-IL] Our tenant vacated as of yesterday, and I don't think he's going to be getting his security deposit back.",
+      "score": 1966,
+      "date": "2025-10-02",
+      "url": "https://reddit.com/r/Landlord/comments/1nw3sbx/landlord_usil_our_tenant_vacated_as_of_yesterday/",
+      "num_comments": 1703,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Old job accidentally overpaid me 45k",
+      "score": 1897,
+      "date": "2025-10-31",
+      "url": "https://reddit.com/r/personalfinance/comments/1okuie0/old_job_accidentally_overpaid_me_45k/",
+      "num_comments": 568,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "Moved back to my hometown to help my aging parents and it accidentally turbocharged my FI timeline",
+      "score": 1897,
+      "date": "2025-12-09",
+      "url": "https://reddit.com/r/financialindependence/comments/1phsqnb/moved_back_to_my_hometown_to_help_my_aging/",
+      "num_comments": 119,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Landlord asking for SSN to put my security deposit in an interest bearing bank account",
+      "score": 1889,
+      "date": "2025-12-15",
+      "url": "https://reddit.com/r/personalfinance/comments/1pn6ffw/landlord_asking_for_ssn_to_put_my_security/",
+      "num_comments": 584,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Just found out about a secret account with $76k in it, and I dont know what to do with it",
+      "score": 1864,
+      "date": "2025-08-23",
+      "url": "https://reddit.com/r/personalfinance/comments/1mxw81u/just_found_out_about_a_secret_account_with_76k_in/",
+      "num_comments": 449,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "My wife recently passed and I am trying to make the best financial decisions I can with the money that was left to me.",
+      "score": 1807,
+      "date": "2025-11-05",
+      "url": "https://reddit.com/r/personalfinance/comments/1op3bdn/my_wife_recently_passed_and_i_am_trying_to_make/",
+      "num_comments": 487,
+      "comment_signal": "Top comments are mostly sympathy/agreement with little personal detail. Weaker signal."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "I spent $47k and 18 months building an \"AI startup.\" Here's the brutal truth about why 90% of AI businesses are doomed.",
+      "score": 1797,
+      "date": "2025-08-06",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1mj1olw/i_spent_47k_and_18_months_building_an_ai_startup/",
+      "num_comments": 562,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Partner was just laid off - we are closing on a house THIS week.",
+      "score": 1775,
+      "date": "2025-10-08",
+      "url": "https://reddit.com/r/personalfinance/comments/1o1o4ju/partner_was_just_laid_off_we_are_closing_on_a/",
+      "num_comments": 462,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Kyle Bush lost his fortune with an Indexed Universal Life policy",
+      "score": 1770,
+      "date": "2025-11-02",
+      "url": "https://reddit.com/r/personalfinance/comments/1omrylp/kyle_bush_lost_his_fortune_with_an_indexed/",
+      "num_comments": 260,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Received letter from debt collector for medical debt. I asked for them to verify the debt and they did. However, I don\u2019t recognize the debt",
+      "score": 1750,
+      "date": "2025-09-04",
+      "url": "https://reddit.com/r/personalfinance/comments/1n7w8pm/received_letter_from_debt_collector_for_medical/",
+      "num_comments": 190,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Someone Drained Our Checking Account",
+      "score": 1742,
+      "date": "2025-10-21",
+      "url": "https://reddit.com/r/personalfinance/comments/1oc9g8d/someone_drained_our_checking_account/",
+      "num_comments": 405,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "IRS Announces New Contribution Limits",
+      "score": 1734,
+      "date": "2025-11-13",
+      "url": "https://reddit.com/r/personalfinance/comments/1ow4sjg/irs_announces_new_contribution_limits/",
+      "num_comments": 267,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "\"Friends end up blocking you\" - a damning indictment of the whole life insurance industry",
+      "score": 1713,
+      "date": "2025-11-24",
+      "url": "https://reddit.com/r/personalfinance/comments/1p5v7y4/friends_end_up_blocking_you_a_damning_indictment/",
+      "num_comments": 299,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "MIL has been taking my wife's late father's annuity that was given to my wife without her knowing",
+      "score": 1644,
+      "date": "2026-03-08",
+      "url": "https://reddit.com/r/personalfinance/comments/1rojapl/mil_has_been_taking_my_wifes_late_fathers_annuity/",
+      "num_comments": 209,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "I received $200 via Zelle to my bank acct from someone I don't know",
+      "score": 1643,
+      "date": "2025-08-05",
+      "url": "https://reddit.com/r/personalfinance/comments/1mihl68/i_received_200_via_zelle_to_my_bank_acct_from/",
+      "num_comments": 276,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "Just told my boss this morning that I\u2019m retiring in March",
+      "score": 1637,
+      "date": "2025-11-07",
+      "url": "https://reddit.com/r/financialindependence/comments/1oqzhco/just_told_my_boss_this_morning_that_im_retiring/",
+      "num_comments": 271,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "I scraped 25K comments to find which AI tools actually make people money or save time",
+      "score": 1630,
+      "date": "2025-08-30",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1n4a3wx/i_scraped_25k_comments_to_find_which_ai_tools/",
+      "num_comments": 293,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Death 12 years ago -  life insurance discovered",
+      "score": 1583,
+      "date": "2025-11-03",
+      "url": "https://reddit.com/r/personalfinance/comments/1one3kg/death_12_years_ago_life_insurance_discovered/",
+      "num_comments": 126,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Bank account has $10k and I owe $10k on my credit card\u2026",
+      "score": 1569,
+      "date": "2025-08-30",
+      "url": "https://reddit.com/r/personalfinance/comments/1n43bo7/bank_account_has_10k_and_i_owe_10k_on_my_credit/",
+      "num_comments": 329,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "One Rarely Mentioned Caveat: HCOL doesn't matter for retirement match if you move",
+      "score": 1549,
+      "date": "2025-08-05",
+      "url": "https://reddit.com/r/personalfinance/comments/1mi8htv/one_rarely_mentioned_caveat_hcol_doesnt_matter/",
+      "num_comments": 324,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Won Credit card dispute- now asking for payment",
+      "score": 1525,
+      "date": "2025-11-28",
+      "url": "https://reddit.com/r/personalfinance/comments/1p91nag/won_credit_card_dispute_now_asking_for_payment/",
+      "num_comments": 233,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "From $6M/year to near-bankruptcy overnight - and how it turned into a $50M pivot",
+      "score": 1517,
+      "date": "2025-08-21",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1mwfcdy/from_6myear_to_nearbankruptcy_overnight_and_how/",
+      "num_comments": 189,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "I am in such a deep hole and my life is falling apart.",
+      "score": 1505,
+      "date": "2026-01-05",
+      "url": "https://reddit.com/r/personalfinance/comments/1q4rxt7/i_am_in_such_a_deep_hole_and_my_life_is_falling/",
+      "num_comments": 481,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "I send 1k usd to my mom in Korea every month",
+      "score": 1424,
+      "date": "2026-02-24",
+      "url": "https://reddit.com/r/personalfinance/comments/1rdd7ou/i_send_1k_usd_to_my_mom_in_korea_every_month/",
+      "num_comments": 119,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Invested $50k in 2021 and it\u2019s now at $55k",
+      "score": 1422,
+      "date": "2026-01-13",
+      "url": "https://reddit.com/r/personalfinance/comments/1qbt6xk/invested_50k_in_2021_and_its_now_at_55k/",
+      "num_comments": 373,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "parents have been telling me not to file taxes",
+      "score": 1421,
+      "date": "2026-01-22",
+      "url": "https://reddit.com/r/personalfinance/comments/1qjftkr/parents_have_been_telling_me_not_to_file_taxes/",
+      "num_comments": 314,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "Am I the only one who is baffled by these types of posts:",
+      "score": 1372,
+      "date": "2025-10-03",
+      "url": "https://reddit.com/r/financialindependence/comments/1nxe9aq/am_i_the_only_one_who_is_baffled_by_these_types/",
+      "num_comments": 327,
+      "comment_signal": "3 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_007"
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "Employer has been pocketing my 401k contributions and wants to make it right",
+      "score": 1358,
+      "date": "2025-11-25",
+      "url": "https://reddit.com/r/personalfinance/comments/1p6ggzw/employer_has_been_pocketing_my_401k_contributions/",
+      "num_comments": 578,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/personalfinance",
+      "title": "What to put in my \u201cI\u2019m dead\u201d folder for my family",
+      "score": 1358,
+      "date": "2025-12-27",
+      "url": "https://reddit.com/r/personalfinance/comments/1px73c0/what_to_put_in_my_im_dead_folder_for_my_family/",
+      "num_comments": 197,
+      "comment_signal": "4 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_003"
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "Tai Lopez has fallen and I can't be happier.",
+      "score": 1348,
+      "date": "2025-09-25",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1nqc6g9/tai_lopez_has_fallen_and_i_cant_be_happier/",
+      "num_comments": 353,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Tried going off grid for 5 days to see if my business could run without me. It couldn't.",
+      "score": 1308,
+      "date": "2026-02-20",
+      "url": "https://reddit.com/r/smallbusiness/comments/1r9x049/tried_going_off_grid_for_5_days_to_see_if_my/",
+      "num_comments": 300,
+      "comment_signal": "3 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_005"
+    },
+    {
+      "subreddit": "r/careerguidance",
+      "title": "Is this really how big corporations operate? Because I\u2019m honestly shocked",
+      "score": 1304,
+      "date": "2025-10-23",
+      "url": "https://reddit.com/r/careerguidance/comments/1ods4zk/is_this_really_how_big_corporations_operate/",
+      "num_comments": 258,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "My friend got an ada demand letter and showed me the actual settlement agreement they wanted him to sign, this is insane!",
+      "score": 1234,
+      "date": "2025-12-02",
+      "url": "https://reddit.com/r/smallbusiness/comments/1pc5ix4/my_friend_got_an_ada_demand_letter_and_showed_me/",
+      "num_comments": 345,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_001"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Homeless guy abuses free burger privilege, loses it when I can't deliver",
+      "score": 1225,
+      "date": "2025-10-13",
+      "url": "https://reddit.com/r/smallbusiness/comments/1o5mfjm/homeless_guy_abuses_free_burger_privilege_loses/",
+      "num_comments": 375,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_006"
+    },
+    {
+      "subreddit": "r/careerguidance",
+      "title": "How common is it to earn over $100k in the US? (As a European, it feels unreal)",
+      "score": 1133,
+      "date": "2025-08-04",
+      "url": "https://reddit.com/r/careerguidance/comments/1mhtj1z/how_common_is_it_to_earn_over_100k_in_the_us_as_a/",
+      "num_comments": 1169,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Stripe is holding $8,000 of my money indefinitely. My post on r/stripe hit 16k views and was removed. Here are the receipts.",
+      "score": 1084,
+      "date": "2025-12-08",
+      "url": "https://reddit.com/r/smallbusiness/comments/1phlsw0/stripe_is_holding_8000_of_my_money_indefinitely/",
+      "num_comments": 312,
+      "comment_signal": "3 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_004"
+    },
+    {
+      "subreddit": "r/careerguidance",
+      "title": "Anyone who makes $300K or more per year. What do you do for a living? Feeling lost in my career. Any feedback helps",
+      "score": 1060,
+      "date": "2025-09-10",
+      "url": "https://reddit.com/r/careerguidance/comments/1ndrk9t/anyone_who_makes_300k_or_more_per_year_what_do/",
+      "num_comments": 1115,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "The weird way I win clients by \u201closing\u201d negotiations",
+      "score": 1045,
+      "date": "2025-09-29",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1ntv20k/the_weird_way_i_win_clients_by_losing_negotiations/",
+      "num_comments": 240,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_008"
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "Advice from a 9-figure entrepreneur",
+      "score": 1043,
+      "date": "2025-12-01",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1pbqs27/advice_from_a_9figure_entrepreneur/",
+      "num_comments": 510,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "I thought I wanted to be \u201crich\u201d. Turns out, I just wanted freedom. Here\u2019s how I burned out building my business and what I\u2019d do differently.",
+      "score": 991,
+      "date": "2025-08-20",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1mvmyc8/i_thought_i_wanted_to_be_rich_turns_out_i_just/",
+      "num_comments": 222,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/freelance",
+      "title": "Upwork newbie here, just ran straight-up malware from a \u201cclient\u201d project. What the actual f***",
+      "score": 988,
+      "date": "2026-01-07",
+      "url": "https://reddit.com/r/freelance/comments/1q6omig/upwork_newbie_here_just_ran_straightup_malware/",
+      "num_comments": 92,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "I had to fire someone I actually liked, and it messed with my head",
+      "score": 949,
+      "date": "2025-10-13",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1o5cwx8/i_had_to_fire_someone_i_actually_liked_and_it/",
+      "num_comments": 225,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "Why do people think tax write off\u2019s are this magical thing",
+      "score": 940,
+      "date": "2026-01-11",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1qa2ow9/why_do_people_think_tax_write_offs_are_this/",
+      "num_comments": 604,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "The Millionaire Who Left Wall Street to Become a Paramedic",
+      "score": 932,
+      "date": "2025-09-03",
+      "url": "https://reddit.com/r/financialindependence/comments/1n7g7b2/the_millionaire_who_left_wall_street_to_become_a/",
+      "num_comments": 133,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "A lesson from my 72 year old uncle - listen to the market",
+      "score": 929,
+      "date": "2025-08-14",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1mq2g0z/a_lesson_from_my_72_year_old_uncle_listen_to_the/",
+      "num_comments": 168,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "The Reason I rejected a large order that would have tripled my revenue",
+      "score": 927,
+      "date": "2025-08-07",
+      "url": "https://reddit.com/r/smallbusiness/comments/1mk3we6/the_reason_i_rejected_a_large_order_that_would/",
+      "num_comments": 191,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "I'm 46yo (47 in a few months), been a teacher since the early 00s. Thanks to all of your advice, i put in my notice today that i will be leaving the school at the completion of this school year and retiring early.",
+      "score": 926,
+      "date": "2026-01-07",
+      "url": "https://reddit.com/r/financialindependence/comments/1q65weh/im_46yo_47_in_a_few_months_been_a_teacher_since/",
+      "num_comments": 162,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "This is fucking too hard.",
+      "score": 894,
+      "date": "2025-09-17",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1nj421k/this_is_fucking_too_hard/",
+      "num_comments": 356,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Finally stopped offering discounts \u201cjust to be nice\u201d",
+      "score": 887,
+      "date": "2025-10-22",
+      "url": "https://reddit.com/r/smallbusiness/comments/1od7j5k/finally_stopped_offering_discounts_just_to_be_nice/",
+      "num_comments": 126,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "My 'favorite' client just sent me a 1-star review because I started charging for extra work",
+      "score": 867,
+      "date": "2026-01-15",
+      "url": "https://reddit.com/r/smallbusiness/comments/1qdmgaj/my_favorite_client_just_sent_me_a_1star_review/",
+      "num_comments": 225,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "UPDATE: Raised rates 50% on nightmare client, went silence. Then this counter offer",
+      "score": 851,
+      "date": "2025-10-30",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1ojqqgb/update_raised_rates_50_on_nightmare_client_went/",
+      "num_comments": 271,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "I've kept 200 people employed for years. A tariff might end that overnight.",
+      "score": 845,
+      "date": "2025-08-24",
+      "url": "https://reddit.com/r/smallbusiness/comments/1mywp7p/ive_kept_200_people_employed_for_years_a_tariff/",
+      "num_comments": 332,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "Meta just fired 16,000 people to fund tech that keeps flopping",
+      "score": 836,
+      "date": "2026-03-15",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1rukpc0/meta_just_fired_16000_people_to_fund_tech_that/",
+      "num_comments": 271,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "My best client referred me to their friend. That referral just cost me my best client",
+      "score": 824,
+      "date": "2026-01-17",
+      "url": "https://reddit.com/r/smallbusiness/comments/1qfdosp/my_best_client_referred_me_to_their_friend_that/",
+      "num_comments": 181,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "From \u201cblocked by a top creator\u201d to a working X growth system",
+      "score": 818,
+      "date": "2025-08-21",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1mw23aq/from_blocked_by_a_top_creator_to_a_working_x/",
+      "num_comments": 24,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "I dream of no longer being the CEO",
+      "score": 799,
+      "date": "2026-02-03",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1qufcn1/i_dream_of_no_longer_being_the_ceo/",
+      "num_comments": 510,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "I just sent a client a quote for 20K.",
+      "score": 798,
+      "date": "2025-08-15",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1mr423t/i_just_sent_a_client_a_quote_for_20k/",
+      "num_comments": 134,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "NYT Article - \"Her Stocks Were Quietly Stolen From Her I.R.A.\"",
+      "score": 791,
+      "date": "2025-10-04",
+      "url": "https://reddit.com/r/financialindependence/comments/1nxzuz8/nyt_article_her_stocks_were_quietly_stolen_from/",
+      "num_comments": 147,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "Stopped sharing my projects with my wife after years of failed ideas",
+      "score": 782,
+      "date": "2025-09-18",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1nkal8g/stopped_sharing_my_projects_with_my_wife_after/",
+      "num_comments": 418,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/careerguidance",
+      "title": "What are some good, STABLE \u201cstarting over in your 30s\u201d careers that pay really well and don\u2019t require you to go to a top school? Willing to change my undergrad major + go to grad school. Money is no object.",
+      "score": 776,
+      "date": "2025-10-09",
+      "url": "https://reddit.com/r/careerguidance/comments/1o1tle1/what_are_some_good_stable_starting_over_in_your/",
+      "num_comments": 622,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "0 to $1M in 3 years: What it really takes",
+      "score": 772,
+      "date": "2025-09-02",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1n6mlx6/0_to_1m_in_3_years_what_it_really_takes/",
+      "num_comments": 154,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "I made it. Can't tell anyone I know so I figured I'd share here",
+      "score": 772,
+      "date": "2025-11-03",
+      "url": "https://reddit.com/r/financialindependence/comments/1onbzmb/i_made_it_cant_tell_anyone_i_know_so_i_figured_id/",
+      "num_comments": 163,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/landlord",
+      "title": "[Landlord US-CA] My tenant overpaid rent by $36,000 and is requesting a refund via wire/cheque. Wells Fargo Corporate Fraud told me not to return funds.",
+      "score": 747,
+      "date": "2025-11-06",
+      "url": "https://reddit.com/r/Landlord/comments/1opqg8a/landlord_usca_my_tenant_overpaid_rent_by_36000/",
+      "num_comments": 715,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "Wife wants to start a business, but is relying on me to start it",
+      "score": 743,
+      "date": "2025-10-05",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1nyrujd/wife_wants_to_start_a_business_but_is_relying_on/",
+      "num_comments": 459,
+      "comment_signal": "3 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_009"
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "Owning a business in Texas made me think differently about marriage",
+      "score": 741,
+      "date": "2025-11-04",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1oo6k1v/owning_a_business_in_texas_made_me_think/",
+      "num_comments": 240,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "I made my first $1.... from farts",
+      "score": 724,
+      "date": "2025-10-06",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1nznqc5/i_made_my_first_1_from_farts/",
+      "num_comments": 189,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "TIL there\u2019s a secretive 20-person VC firm that quietly backed SpaceX, Neuralink, xAI, and even the Twitter/X acquisition and they\u2019ve beaten the S&amp;P 500 for a decade.",
+      "score": 720,
+      "date": "2025-11-21",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1p2ru91/til_theres_a_secretive_20person_vc_firm_that/",
+      "num_comments": 115,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "I recently sold my company for $600K. AMA!",
+      "score": 718,
+      "date": "2025-09-14",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1ngzfhh/i_recently_sold_my_company_for_600k_ama/",
+      "num_comments": 203,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "Number of Liquid Millionaire Households in USA",
+      "score": 704,
+      "date": "2025-10-27",
+      "url": "https://reddit.com/r/financialindependence/comments/1oh0e99/number_of_liquid_millionaire_households_in_usa/",
+      "num_comments": 267,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Found out my \"broke\" client is actually loaded and now I feel like an idiot",
+      "score": 696,
+      "date": "2025-11-19",
+      "url": "https://reddit.com/r/smallbusiness/comments/1p17d8b/found_out_my_broke_client_is_actually_loaded_and/",
+      "num_comments": 388,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "Sold my business",
+      "score": 693,
+      "date": "2025-10-19",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1ob44d8/sold_my_business/",
+      "num_comments": 444,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "Did $1.7M in under 12 months in 2023. Sold the company for 8 figures. Ask me anything.",
+      "score": 677,
+      "date": "2025-08-14",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1mq1ijr/did_17m_in_under_12_months_in_2023_sold_the/",
+      "num_comments": 746,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "My \u201ccrazy\u201d idea worked. Now they\u2019re calling it teamwork.",
+      "score": 669,
+      "date": "2025-10-09",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1o2blbe/my_crazy_idea_worked_now_theyre_calling_it/",
+      "num_comments": 98,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/freelance",
+      "title": "The reason I still occasionally browse freelancer.com",
+      "score": 667,
+      "date": "2026-03-27",
+      "url": "https://reddit.com/r/freelance/comments/1s4vxzx/the_reason_i_still_occasionally_browse/",
+      "num_comments": 89,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "Meanwhile..., One Year Later..., She's Over A Million, A Lower Class Millionaire Heading for Two!",
+      "score": 642,
+      "date": "2025-09-30",
+      "url": "https://reddit.com/r/financialindependence/comments/1ntzeu9/meanwhile_one_year_later_shes_over_a_million_a/",
+      "num_comments": 145,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Just got a letter saying my website violates ADA\u2026 Totally lost here \ud83d\ude2d",
+      "score": 641,
+      "date": "2025-09-23",
+      "url": "https://reddit.com/r/smallbusiness/comments/1noer7j/just_got_a_letter_saying_my_website_violates_ada/",
+      "num_comments": 430,
+      "comment_signal": "4 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_001"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Nobody prepares you for how unpredictable income feels when you\u2019re self employed",
+      "score": 639,
+      "date": "2025-10-24",
+      "url": "https://reddit.com/r/smallbusiness/comments/1oez2al/nobody_prepares_you_for_how_unpredictable_income/",
+      "num_comments": 117,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Should I fire a client that's 50% of my revenue? Losing my mind here",
+      "score": 625,
+      "date": "2025-10-17",
+      "url": "https://reddit.com/r/smallbusiness/comments/1o8zqpq/should_i_fire_a_client_thats_50_of_my_revenue/",
+      "num_comments": 572,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/landlord",
+      "title": "[Landlord US-UT] Having to evict a family who is soon to have 2 newborns (who will be born in a few weeks)",
+      "score": 618,
+      "date": "2025-11-17",
+      "url": "https://reddit.com/r/Landlord/comments/1ozsbau/landlord_usut_having_to_evict_a_family_who_is/",
+      "num_comments": 168,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "Pulled the trigger yesterday",
+      "score": 617,
+      "date": "2025-11-26",
+      "url": "https://reddit.com/r/financialindependence/comments/1p7ndyi/pulled_the_trigger_yesterday/",
+      "num_comments": 104,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Our dental clinic cut no-shows by like half after we stopped relying on phone calls",
+      "score": 616,
+      "date": "2026-03-06",
+      "url": "https://reddit.com/r/smallbusiness/comments/1rm6jq3/our_dental_clinic_cut_noshows_by_like_half_after/",
+      "num_comments": 226,
+      "comment_signal": "4 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_002"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "PSA: Rippling and Wishpond, companies with negative reviews here, seem to be attacking the sub",
+      "score": 613,
+      "date": "2025-11-10",
+      "url": "https://reddit.com/r/smallbusiness/comments/1ot2azu/psa_rippling_and_wishpond_companies_with_negative/",
+      "num_comments": 6,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Homeless Smell",
+      "score": 598,
+      "date": "2025-09-04",
+      "url": "https://reddit.com/r/smallbusiness/comments/1n8j5r6/homeless_smell/",
+      "num_comments": 206,
+      "comment_signal": "3 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_006"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "I caught an employee submitting fake expense reports",
+      "score": 590,
+      "date": "2025-12-03",
+      "url": "https://reddit.com/r/smallbusiness/comments/1pdax88/i_caught_an_employee_submitting_fake_expense/",
+      "num_comments": 235,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem.",
+      "product_brief_id": "pb_006"
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "Just a reminder to live life now in addition to planning for the future",
+      "score": 589,
+      "date": "2025-09-22",
+      "url": "https://reddit.com/r/financialindependence/comments/1nntjix/just_a_reminder_to_live_life_now_in_addition_to/",
+      "num_comments": 58,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Thank you for crushing my dreams",
+      "score": 588,
+      "date": "2025-10-11",
+      "url": "https://reddit.com/r/smallbusiness/comments/1o3qimp/thank_you_for_crushing_my_dreams/",
+      "num_comments": 158,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "I made my first $300 online, and it completely changed how I see money.",
+      "score": 582,
+      "date": "2025-10-14",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1o6a2jg/i_made_my_first_300_online_and_it_completely/",
+      "num_comments": 93,
+      "comment_signal": "Top comments are mostly sympathy/agreement with little personal detail. Weaker signal."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "FIRE Update: One Year Ago I Quit My Job With a 935K NW - Here's How It's Going",
+      "score": 571,
+      "date": "2026-01-04",
+      "url": "https://reddit.com/r/financialindependence/comments/1q3xyuv/fire_update_one_year_ago_i_quit_my_job_with_a/",
+      "num_comments": 114,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Am I being \"rude\" for wanting to charge no-show deposits? My uncle thinks I'm ruining our family business.",
+      "score": 569,
+      "date": "2026-02-21",
+      "url": "https://reddit.com/r/smallbusiness/comments/1rb2lh4/am_i_being_rude_for_wanting_to_charge_noshow/",
+      "num_comments": 529,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "The dark secret of entrepreneurship that no one tells you about, and how to deal with it",
+      "score": 569,
+      "date": "2025-08-28",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1n2dt12/the_dark_secret_of_entrepreneurship_that_no_one/",
+      "num_comments": 166,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "7 Years FIRE'd and My First Romance (42M)",
+      "score": 567,
+      "date": "2026-01-16",
+      "url": "https://reddit.com/r/financialindependence/comments/1qehdjt/7_years_fired_and_my_first_romance_42m/",
+      "num_comments": 178,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "i swear entrepreneurship is just waking up every day and choosing delusion",
+      "score": 560,
+      "date": "2025-12-01",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1pbiiil/i_swear_entrepreneurship_is_just_waking_up_every/",
+      "num_comments": 173,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "New advisor short circuited about FIRE",
+      "score": 556,
+      "date": "2026-02-28",
+      "url": "https://reddit.com/r/financialindependence/comments/1rh8pdp/new_advisor_short_circuited_about_fire/",
+      "num_comments": 103,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "It's Official: 457b/401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500",
+      "score": 553,
+      "date": "2025-11-13",
+      "url": "https://reddit.com/r/financialindependence/comments/1ow8xrg/its_official_457b401k_limit_increases_to_24500/",
+      "num_comments": 77,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "I joined Reddit a year ago and now my small business is thriving \ud83d\ude2d",
+      "score": 548,
+      "date": "2025-08-29",
+      "url": "https://reddit.com/r/smallbusiness/comments/1n2v0by/i_joined_reddit_a_year_ago_and_now_my_small/",
+      "num_comments": 216,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "the SaaS model is quietly falling apart for small businesses and nobody in tech wants to admit it",
+      "score": 547,
+      "date": "2026-03-27",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1s5i577/the_saas_model_is_quietly_falling_apart_for_small/",
+      "num_comments": 359,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "My \"biggest competitor\" wants to buy wholesale from me",
+      "score": 545,
+      "date": "2025-12-10",
+      "url": "https://reddit.com/r/smallbusiness/comments/1pipe5f/my_biggest_competitor_wants_to_buy_wholesale_from/",
+      "num_comments": 112,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "Leased a gas station for 5 years",
+      "score": 544,
+      "date": "2025-09-02",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1n6b3ez/leased_a_gas_station_for_5_years/",
+      "num_comments": 144,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "just got back from an industry conference and genuinely feel like i lit $4k on fire",
+      "score": 538,
+      "date": "2026-03-07",
+      "url": "https://reddit.com/r/smallbusiness/comments/1rnlf9p/just_got_back_from_an_industry_conference_and/",
+      "num_comments": 152,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "We're making money in the wedding industry and here's what nobody told us before we started",
+      "score": 537,
+      "date": "2026-03-18",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1rwrhuf/were_making_money_in_the_wedding_industry_and/",
+      "num_comments": 143,
+      "comment_signal": "2 of top comments add personal detail or similar experiences. Strong community resonance \u2014 multiple people share the same problem."
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Lost a client worth 30% of my revenue, then spotted him on Reddit DIY-ing the project",
+      "score": 531,
+      "date": "2025-11-21",
+      "url": "https://reddit.com/r/smallbusiness/comments/1p31e3z/lost_a_client_worth_30_of_my_revenue_then_spotted/",
+      "num_comments": 155,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "Happy post - I hit 1M",
+      "score": 522,
+      "date": "2025-08-06",
+      "url": "https://reddit.com/r/financialindependence/comments/1mjh4mu/happy_post_i_hit_1m/",
+      "num_comments": 57,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/smallbusiness",
+      "title": "Today\u2019s massive outage proves one thing the internet is way too centralized",
+      "score": 521,
+      "date": "2025-10-20",
+      "url": "https://reddit.com/r/smallbusiness/comments/1obl6uj/todays_massive_outage_proves_one_thing_the/",
+      "num_comments": 51,
+      "comment_signal": "Insufficient comment data to assess signal depth."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "Telling Co-Workers of RE",
+      "score": 506,
+      "date": "2025-09-26",
+      "url": "https://reddit.com/r/financialindependence/comments/1nrehwc/telling_coworkers_of_re/",
+      "num_comments": 160,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "subreddit": "r/entrepreneur",
+      "title": "I validated my startup idea with just a landing page",
+      "score": 505,
+      "date": "2025-10-02",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1nwejy6/i_validated_my_startup_idea_with_just_a_landing/",
+      "num_comments": 120,
+      "comment_signal": "Mixed signal: 1 detailed follow-up story, rest mostly sympathy. Moderate demand signal."
+    },
+    {
+      "subreddit": "r/financialindependence",
+      "title": "2026 ACA prices are live on Healthcare.gov for those who use the ACA or are curious about the state of FIRE health insurance.",
+      "score": 501,
+      "date": "2025-10-29",
+      "url": "https://reddit.com/r/financialindependence/comments/1oj4dmr/2026_aca_prices_are_live_on_healthcaregov_for/",
+      "num_comments": 191,
+      "comment_signal": "Could not fetch comments: HTTP Error 429: Too Many Requests"
+    }
+  ]
+}
