@@ -55,7 +55,7 @@ After launching, say: "Pinterest pipeline running - output below."
 2. Read `image-gen/master-pin-tracker.csv`. Compute:
    - `IMG_PENDING`: rows where `image_generated = pending` and `page_type != text-pin`
    - `IMG_ERROR`: rows where `image_generated = error`
-   - `PIN_PENDING`: rows where `pinned = pending` and `image_generated = completed`
+   - `PIN_PENDING`: rows where `pinned = pending` and `image_generated = completed` and `page_created = yes`
    - `PIN_LIVE_NEW`: rows where `pinned = live` and `pin_date = today or yesterday` - freshly confirmed pins
    - `VAR_MAX`: for each slug, the maximum `variation_num` present
    - `PAGES_WITHOUT_VAR2`: count of inspiration page slugs where `VAR_MAX = 1`
@@ -514,7 +514,7 @@ Rows ready to pin (image_generated=completed, pinned=pending): [N]
 
 ### Pin Queue - post these 4 today
 
-Read `image-gen/master-pin-tracker.csv` now. Filter rows where `pinned = pending` AND `image_generated = completed`. From that filtered list, select 4 rows prioritising pillar diversity: pick 1 patio row, 1 driveway row, 1 walkway row, then 1 any. If a pillar has no eligible rows, fill with the next available.
+Read `image-gen/master-pin-tracker.csv` now. Filter rows where `pinned = pending` AND `image_generated = completed` AND `page_created = yes`. From that filtered list, select 4 rows prioritising pillar diversity: pick 1 patio row, 1 driveway row, 1 walkway row, then 1 any. If a pillar has no eligible rows, fill with the next available.
 
 Output the 4 rows as a literal copy-paste block with real values from the CSV - no placeholders:
 
