@@ -1,3 +1,5 @@
+import { cfImage } from "@/lib/imageUrl";
+
 interface Props {
   image: string;
   alt: string;
@@ -8,7 +10,7 @@ export const MaterialZoomContainer = ({ image, alt }: Props) => {
   return (
     <div className="w-full aspect-[2/1] rounded-2xl overflow-hidden">
       <img
-        src={image}
+        src={cfImage(image, 1200)}
         alt={alt}
         className="w-full h-full object-cover scale-150 md:scale-[2]"
         style={{ objectPosition: "50% 90%" }}
