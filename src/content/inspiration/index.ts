@@ -780,4 +780,79 @@ export const inspirationPages: InspirationPage[] = [
     ctaHeadline: "See cobblestone stamping on your patio",
     ctaBody: "Upload a photo of your patio and see what cobblestone stamped concrete could look like in your space.",
   },
+  {
+    slug: "grey-stamped-concrete-patio-craftsman",
+    title: "Grey Stamped Concrete Patio for Craftsman Homes | PourCanvas",
+    headline: "Grey Stamped Patio, Craftsman Style",
+    metaDescription:
+      "Grey ashlar stamped concrete patio paired with a craftsman home - geometric stone pattern that echoes the natural materials craftsman architecture favours.",
+    ogImage: "https://images.pourcanvas.com/inspiration-grey-stamped-patio-craftsman.jpg",
+    heroAlt: "Grey ashlar stamped concrete patio beside a craftsman home with wide covered porch and mature landscaping",
+    contentBlock:
+      "Craftsman homes are built around natural materials - wood, stone, brick - and grey ashlar stamped concrete translates that same material logic into a durable, low-maintenance patio surface. The irregular stone-cut geometry of the ashlar pattern echoes the natural stone columns and clinker brick details that define the craftsman style, while the grey palette sits comfortably alongside cedar, painted sage, and warm wood trim. The result reads as intentional rather than generic.\n\nAt $10-16 per sq ft installed, stamped concrete delivers the ashlar look at roughly half the cost of real cut stone. The pattern also holds up well in climates with freeze-thaw cycles, which often coincide with the older neighbourhoods where craftsman homes are concentrated. Sealing every 2-3 years maintains colour and surface integrity. PourCanvas can show you how grey ashlar stamping would look on your specific patio before you contact a contractor.",
+    targetKeywords: ["craftsman patio ideas", "grey stamped concrete patio craftsman home", "ashlar patio design"],
+    pillar: "patio",
+    ctaHeadline: "See how it looks on your patio",
+    ctaBody: "Upload a photo of your patio and see what grey stamped concrete could look like alongside your craftsman home.",
+  },
+  {
+    slug: "herringbone-brick-patio-colonial",
+    title: "Herringbone Brick Patio for Colonial Homes | PourCanvas",
+    headline: "Herringbone Brick Patio, Colonial Pairing",
+    metaDescription:
+      "Herringbone brick stamped concrete patio on a colonial home - interlocked pattern and formal symmetry reinforcing the period architecture.",
+    ogImage: "https://images.pourcanvas.com/inspiration-herringbone-brick-patio-colonial.jpg",
+    heroAlt: "Herringbone brick stamped concrete patio extending from a colonial red brick home with formal hedged garden borders",
+    contentBlock:
+      "Colonial homes are defined by formal symmetry - centred entries, evenly spaced windows, structured gardens - and herringbone brick stamped concrete carries that formal logic directly into the patio. The interlocking 45-degree pattern creates a surface with strong directional geometry and visual order, qualities that read as natural extensions of the colonial home's compositional rigour. The brick pattern also creates a subtle visual continuity with the red or buff brick facade, without requiring an exact match.\n\nA colonial patio in herringbone brick stamped concrete looks as though it was planned at the same time as the house, not added later. At $12-18 per sq ft installed, it's significantly more affordable than real clay brick pavers ($15-25/sq ft) with better performance in freeze-thaw conditions and no weed joint maintenance. Sealing every 2-3 years maintains colour fidelity. PourCanvas can show you how herringbone brick stamped concrete would look on your colonial home's patio before you speak to a contractor.",
+    targetKeywords: ["colonial home patio ideas", "herringbone brick patio colonial", "formal patio design"],
+    pillar: "patio",
+    ctaHeadline: "See the pairing on your patio",
+    ctaBody: "Upload a photo of your patio and see what herringbone brick stamped concrete could look like on your colonial home.",
+  },
+  {
+    slug: "modern-driveway-concrete-farmhouse",
+    title: "Modern Concrete Driveway for Farmhouse Homes | PourCanvas",
+    headline: "Modern Concrete Driveway, Farmhouse Setting",
+    metaDescription:
+      "Modern grey concrete driveway on a white farmhouse - clean smooth surface that lets board-and-batten and black accents lead the visual story.",
+    ogImage: "https://images.pourcanvas.com/inspiration-modern-driveway-farmhouse.jpg",
+    heroAlt: "Modern smooth grey concrete driveway approaching a white board-and-batten farmhouse with black metal accents and carriage garage door",
+    contentBlock:
+      "The modern farmhouse aesthetic is built on contrast - white painted wood against black metal, rough texture against smooth surface, rural scale with clean geometry. A modern smooth concrete driveway plays into that contrast deliberately. Where a stamped or decorative finish would compete with the graphic simplicity of board-and-batten siding and black window frames, a plain smooth concrete in medium grey recedes and lets the architecture lead.\n\nThe wide driveway slab also suits the open, horizontal proportions typical of farmhouse settings - it reads as a natural arrival court rather than a narrow urban approach. Broom-finish or exposed aggregate options exist if some texture is wanted without losing the minimalist palette. At $6-12 per sq ft installed for a standard broom-finish or smooth finish, it's the most cost-efficient option in the driveway category. PourCanvas can show you how modern concrete would look on your farmhouse driveway before you commit to a contractor.",
+    targetKeywords: ["modern farmhouse driveway ideas", "concrete driveway farmhouse", "white farmhouse driveway"],
+    pillar: "driveway",
+    ctaHeadline: "See it on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what modern concrete could look like on your farmhouse home.",
+  },
+  {
+    slug: "stamped-concrete-walkway-grey-ranch",
+    title: "Stamped Concrete Walkway for Ranch Homes | PourCanvas",
+    headline: "Grey Stamped Walkway for Ranch Homes",
+    metaDescription:
+      "Grey stamped concrete walkway for a ranch home - wide horizontal path echoing the low roofline, slate pattern grounding the wide front yard.",
+    ogImage: "https://images.pourcanvas.com/inspiration-stamped-walkway-grey-ranch.jpg",
+    heroAlt: "Grey slate stamped concrete front walkway approaching a low-slung ranch home with wide front yard and mature trees",
+    contentBlock:
+      "Ranch homes sit low and wide on their lots, and the front walkway has to match that scale. A narrow path leading to a wide ranch facade looks proportionally wrong - underscaled and tentative. A wide grey stamped concrete walkway in a slate or ashlar pattern fills the approach properly, sweeping from the street to the entry in a way that echoes the horizontal emphasis of the roofline above.\n\nThe grey slate pattern suits the earthy, understated material palette that most ranch exteriors use - brick, painted wood, stone veneer, or stucco. The stamped surface adds visual interest without demanding attention. At $10-16 per sq ft installed, stamped concrete is the practical way to get the wide, finished walkway a ranch home needs without the cost of natural flagstone. A 4-foot or 5-foot width is typical; a 6-foot width is worth considering on lots with wider frontages. PourCanvas can show you how grey stamped concrete would look on your ranch home's walkway before you commit.",
+    targetKeywords: ["ranch home walkway ideas", "stamped concrete walkway ranch", "wide front path ideas"],
+    pillar: "walkway",
+    ctaHeadline: "See it on your walkway",
+    ctaBody: "Upload a photo of your walkway and see what grey stamped concrete could look like on your ranch home.",
+  },
+  {
+    slug: "exposed-aggregate-driveway-grey-contemporary",
+    title: "Exposed Aggregate Driveway for Contemporary Homes | PourCanvas",
+    headline: "Exposed Aggregate Driveway, Contemporary Home",
+    metaDescription:
+      "Grey exposed aggregate driveway on a contemporary home - scattered pebble texture against angular lines and dark metal cladding.",
+    ogImage: "https://images.pourcanvas.com/inspiration-exposed-aggregate-driveway-contemporary.jpg",
+    heroAlt: "Grey exposed aggregate concrete driveway approaching an angular contemporary home with large windows and dark metal cladding",
+    contentBlock:
+      "Contemporary homes are built on precise geometry - flat rooflines, floor-to-ceiling glass, dark metal or fibre cement cladding with tight tolerances. Against that precision, exposed aggregate concrete introduces a deliberate textural contrast. The scattered pebble surface is organic and tactile where the architecture is smooth and angular, creating the kind of material tension that contemporary design intentionally cultivates. A grey aggregate palette keeps the contrast tonal rather than chromatic - the surface reads as part of the same grey-and-dark material story the home is telling.\n\nExposed aggregate also delivers practical benefits well suited to larger contemporary driveways: excellent slip resistance, no sealing required, and surface longevity of 25+ years with minimal maintenance. At $8-14 per sq ft installed it sits in the mid range. Pea gravel or local river stone aggregate can be specified to fine-tune the texture scale. PourCanvas can show you how exposed aggregate would look on your contemporary home's driveway before you engage a contractor.",
+    targetKeywords: ["contemporary driveway ideas", "exposed aggregate driveway modern home", "grey aggregate driveway"],
+    pillar: "driveway",
+    ctaHeadline: "See the texture on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what exposed aggregate concrete could look like on your contemporary home.",
+  },
 ];
