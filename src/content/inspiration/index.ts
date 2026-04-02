@@ -700,4 +700,79 @@ export const inspirationPages: InspirationPage[] = [
     ctaHeadline: "See grey brushed concrete on your driveway",
     ctaBody: "Upload a photo of your driveway and see what light grey brushed concrete could look like in your space.",
   },
+  {
+    slug: "cream-stamped-concrete-walkway",
+    title: "Cream Stamped Concrete Walkway Ideas | PourCanvas",
+    headline: "Cream Stamped Concrete Walkway",
+    metaDescription:
+      "A cream stamped concrete walkway brings warm, inviting colour to your front entry. See how this classic finish looks with traditional and craftsman homes.",
+    ogImage: "https://images.pourcanvas.com/inspiration-cream-stamped-concrete-walkway.jpg",
+    heroAlt: "Cream stamped concrete walkway leading to a traditional home front door with warm buff tones",
+    contentBlock:
+      "Cream and warm buff stamped concrete is the front walkway finish that makes a house feel like a home the moment you approach it. Where grey concrete is neutral and charcoal is dramatic, cream occupies the sweet spot: warm without being loud, traditional without being dated.\n\nThe colour comes from an integral buff or cream pigment in the concrete mix, combined with an antiquing release agent in a slightly darker warm brown. The result is a surface with natural tonal variation that reads as stone or clay tile from a short distance. The warmth of the cream palette pairs naturally with red brick facades, painted white clapboard, natural wood trim, and the earthy tones that craftsman and colonial homes favour. It's a finish that looks as though it was always meant to be there.\n\nFrom a practical standpoint, cream stamped concrete holds its tone better than you might expect. A quality penetrating sealer applied at installation and refreshed every 2–3 years maintains the warmth of the colour and prevents surface dust from reading as grey over time. Cost runs $12–18 per sq ft installed — identical to other stamped walkway options — making it a competitive choice against real flagstone ($18–28/sq ft) or clay pavers ($15–25/sq ft). For a coordinated exterior, a matching cream or buff stamped border on the driveway apron or entry landing ties the front approach together. PourCanvas can show you how cream stamped concrete would look on your specific walkway before you commit to a contractor.",
+    targetKeywords: ["cream stamped concrete walkway", "buff walkway ideas", "warm concrete front path"],
+    pillar: "walkway",
+    ctaHeadline: "See cream stamping on your walkway",
+    ctaBody: "Upload a photo of your walkway and see what cream stamped concrete could look like in your space.",
+  },
+  {
+    slug: "salt-finish-concrete-walkway",
+    title: "Salt Finish Concrete Walkway Ideas | PourCanvas",
+    headline: "Salt Finish Concrete Walkway",
+    metaDescription:
+      "A salt finish concrete walkway creates subtle texture and natural slip resistance. See how this low-key finish works for front paths and entry walkways.",
+    ogImage: "https://images.pourcanvas.com/inspiration-salt-finish-concrete-walkway.jpg",
+    heroAlt: "Salt finish concrete walkway with fine pitted texture leading to a craftsman home entry",
+    contentBlock:
+      "Salt finish concrete is the finish that looks almost plain but rewards a closer look. The fine pitted texture — created by pressing rock salt into the fresh concrete surface and washing it away before the pour fully cures — gives the surface a delicate, consistent micro-pattern that plain broom finish doesn't have.\n\nOn a walkway, the salt finish serves two practical purposes beyond aesthetics. The fine surface voids improve wet-weather traction significantly compared to a smooth trowelled finish, and the texture breaks up reflected glare in direct sunlight. Both matter on a front path that gets used in all weather conditions, often by visitors who aren't watching where they step.\n\nThe aesthetic case is quiet and confident. A salt finish walkway in a medium grey or warm buff tone reads as understated and deliberate — it doesn't compete with the home's facade, garden, or front door the way a bold stamped pattern might. This makes it a particularly strong choice for homes with strong architectural character or detailed landscaping, where the walkway should frame the scene rather than star in it.\n\nCost is comparable to broom-finish concrete: $7–11 per sq ft installed, depending on region and site conditions. It sits between plain broom finish and stamped concrete in both price and visual interest. Sealing every 2–3 years maintains the texture and prevents the pits from accumulating surface staining. For a coordinated look, a matching salt finish on the driveway apron at the street creates a subtle thread of continuity across the front of the property. PourCanvas can visualise this finish on your specific walkway before you commit.",
+    targetKeywords: ["salt finish concrete walkway", "textured concrete front path", "pitted concrete walkway"],
+    pillar: "walkway",
+    ctaHeadline: "Visualise salt finish on your walkway",
+    ctaBody: "Upload a photo of your walkway and see what salt finish concrete could look like in your space.",
+  },
+  {
+    slug: "charcoal-broom-finish-walkway",
+    title: "Charcoal Broom Finish Walkway Ideas | PourCanvas",
+    headline: "Charcoal Broom Finish Walkway",
+    metaDescription:
+      "A charcoal broom finish walkway makes a bold, modern statement at the front entry. See how this dark concrete path looks against contemporary and white-exterior homes.",
+    ogImage: "https://images.pourcanvas.com/inspiration-charcoal-broom-finish-walkway.jpg",
+    heroAlt: "Charcoal broom finish concrete walkway with dark integral pigment leading to a modern home entry",
+    contentBlock:
+      "Charcoal is the most confident choice you can make in a concrete walkway. Where grey recedes and cream warms, charcoal asserts. A deep charcoal broom finish walkway creates a strong graphic line from the street to the front door — the kind of contrast that photographers chase and design-minded homeowners plan for.\n\nThe charcoal tone comes from a dark integral pigment added to the concrete mix, not a surface stain. Integral colour goes all the way through the pour, so chips and scratches reveal the same dark tone rather than exposing pale concrete beneath. Combined with a standard directional broom finish, the texture creates fine light-and-shadow lines across the surface that add depth without the cost or complexity of stamping.\n\nThe visual case is strongest against white, cream, or light grey home exteriors. The dark path creates strong foreground contrast that makes the home's facade read sharper from the street. Modern farmhouse, coastal contemporary, and Scandinavian-influenced homes all pair naturally with charcoal concrete. On a brick or dark-cladding exterior, the contrast is subtler — but the finish still adds intentionality that plain grey can't match.\n\nCost: $8–13 per sq ft installed for broom finish with integral charcoal pigment. This is moderately more expensive than plain grey broom finish ($6–10/sq ft) due to the pigment cost, but significantly less than stamped concrete ($12–18/sq ft). A penetrating sealer applied at installation and refreshed every 3–5 years maintains the colour depth and protects the surface from deicing salt damage in cold climates. PourCanvas can show you how charcoal broom finish would look on your specific walkway.",
+    targetKeywords: ["charcoal walkway concrete", "dark concrete front path", "charcoal broom finish walkway"],
+    pillar: "walkway",
+    ctaHeadline: "See charcoal concrete on your walkway",
+    ctaBody: "Upload a photo of your walkway and see what charcoal broom finish concrete could look like in your space.",
+  },
+  {
+    slug: "modern-large-slab-driveway",
+    title: "Modern Large Slab Concrete Driveway Ideas | PourCanvas",
+    headline: "Modern Large Slab Driveway",
+    metaDescription:
+      "Large format concrete slab driveways define the contemporary home aesthetic. See how wide-joint slab patterns look with modern and transitional exteriors.",
+    ogImage: "https://images.pourcanvas.com/inspiration-modern-large-slab-driveway.jpg",
+    heroAlt: "Modern large format concrete slab driveway with wide grass joints and contemporary home exterior",
+    contentBlock:
+      "Large format slab driveways are the defining hardscape feature of the contemporary home exterior. Two or three wide concrete panels running the length of the driveway, separated by grass, gravel, or steel-edging joints, create a clean geometric pattern that looks designed rather than poured.\n\nThe visual logic is architectural. Where a single poured concrete driveway reads as a functional surface, a two-strip or three-strip slab layout reads as a planned element of the exterior composition. The joint material matters enormously: grass turf strips create an organic, relaxed feel; white pea gravel reads as modern and precise; black river rock adds drama against a light grey slab. Each combination shifts the character of the same basic form.\n\nThis style works best with modern, contemporary, or clean transitional exteriors — homes with flat or low-pitch rooflines, horizontal cladding, and minimal decorative detail. The geometric simplicity of the slab pattern reinforces the architectural language rather than competing with it. It's a notably poor match for traditional or craftsman homes, where the hard geometry feels cold and out of place.\n\nCost varies more than conventional driveway pours because of the forming complexity. A two-strip slab with grass joints runs $12–20 per sq ft installed — the forming, joint installation, and finish work add cost over a single-pour conventional driveway. The result, however, is a driveway that reads as high-end from the street. LED strip joints, paired with blue-hour exterior lighting, push the effect further for homes where night-time curb appeal matters. PourCanvas can show you how a large slab layout would look on your specific property.",
+    targetKeywords: ["modern concrete driveway ideas", "large slab driveway", "contemporary driveway design"],
+    pillar: "driveway",
+    ctaHeadline: "See a large slab layout on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what a modern large slab layout could look like in your space.",
+  },
+  {
+    slug: "cobblestone-stamped-patio",
+    title: "Cobblestone Stamped Concrete Patio Ideas | PourCanvas",
+    headline: "Cobblestone Stamped Patio",
+    metaDescription:
+      "Cobblestone stamped concrete patio captures old-world texture and warmth at a fraction of real cobblestone cost. See how it looks on craftsman and traditional homes.",
+    ogImage: "https://images.pourcanvas.com/inspiration-cobblestone-stamped-patio.jpg",
+    heroAlt: "Cobblestone pattern stamped concrete patio with warm grey and buff tones in a traditional backyard setting",
+    contentBlock:
+      "Cobblestone stamped concrete brings centuries of visual history to a backyard patio — the rounded, irregular texture of antique European cobblestone, cast in durable concrete at a fraction of the cost of the real thing.\n\nWhat makes cobblestone stamping work visually is the depth of relief. A quality cobblestone stamp creates pronounced rounded surfaces between each stone, giving the patio a three-dimensional texture that reads clearly from any viewing angle. Combined with a multi-tone colour wash — typically warm greys, aged buff, and brown-gold antiquing — the result looks aged and substantial in a way that flat stamped patterns can't achieve.\n\nThe style pairs naturally with craftsman, colonial, Mediterranean, and traditional European-influenced home exteriors. The warm, earthy tones complement red brick, stone cladding, terracotta details, and painted wood trim. For a cohesive outdoor space, a cobblestone stamped patio border or patio edge strip paired with a plain grey field creates visual rhythm without requiring the full pattern across the whole surface.\n\nCost runs $14–20 per sq ft installed — slightly more than most other stamped patterns due to the heavier stamp and more complex colour work required to achieve the aged look convincingly. Compared to real granite cobblestone (where it's even available), which runs $40–80 per sq ft installed, it's the obvious practical choice for homeowners who want the look. Resealing every 2–3 years maintains the colour depth. PourCanvas can show you how cobblestone stamped concrete would look on your specific patio before you book a contractor.",
+    targetKeywords: ["cobblestone patio ideas", "cobblestone stamped concrete patio", "old-world patio design"],
+    pillar: "patio",
+    ctaHeadline: "See cobblestone stamping on your patio",
+    ctaBody: "Upload a photo of your patio and see what cobblestone stamped concrete could look like in your space.",
+  },
 ];
