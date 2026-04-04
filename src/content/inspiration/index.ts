@@ -737,7 +737,7 @@ export const inspirationPages: InspirationPage[] = [
     title: "Charcoal Broom Finish Walkway Ideas | PourCanvas",
     headline: "Charcoal Broom Finish Walkway",
     metaDescription:
-      "A charcoal broom finish walkway makes a bold, modern statement at the front entry. See how this dark concrete path looks against contemporary and white-exterior homes.",
+      "Charcoal broom-finish concrete walkway makes a bold statement at the front entry. See how this dark path looks on contemporary and white-exterior homes.",
     ogImage: "https://images.pourcanvas.com/inspiration-charcoal-broom-finish-walkway.jpg",
     heroAlt: "Charcoal broom finish concrete walkway with dark integral pigment leading to a modern home entry",
     dominantColor: "#363634",
@@ -769,7 +769,7 @@ export const inspirationPages: InspirationPage[] = [
     title: "Cobblestone Stamped Concrete Patio Ideas | PourCanvas",
     headline: "Cobblestone Stamped Patio",
     metaDescription:
-      "Cobblestone stamped concrete patio captures old-world texture and warmth at a fraction of real cobblestone cost. See how it looks on craftsman and traditional homes.",
+      "Cobblestone stamped concrete patio brings old-world texture to any backyard. See how it looks on craftsman homes for less than real cobblestone.",
     ogImage: "https://images.pourcanvas.com/inspiration-cobblestone-stamped-patio.jpg",
     heroAlt: "Cobblestone pattern stamped concrete patio with warm grey and buff tones in a traditional backyard setting",
     dominantColor: "#6c665c",
@@ -790,7 +790,7 @@ export const inspirationPages: InspirationPage[] = [
     heroAlt: "Grey ashlar stamped concrete patio beside a craftsman home with wide covered porch and mature landscaping",
     dominantColor: "#9a9c99",
     contentBlock:
-      "Craftsman homes are built around natural materials - wood, stone, brick - and grey ashlar stamped concrete translates that same material logic into a durable, low-maintenance patio surface. The irregular stone-cut geometry of the ashlar pattern echoes the natural stone columns and clinker brick details that define the craftsman style, while the grey palette sits comfortably alongside cedar, painted sage, and warm wood trim. The result reads as intentional rather than generic.\n\nAt $10-16 per sq ft installed, stamped concrete delivers the ashlar look at roughly half the cost of real cut stone. The pattern also holds up well in climates with freeze-thaw cycles, which often coincide with the older neighbourhoods where craftsman homes are concentrated. Sealing every 2-3 years maintains colour and surface integrity. PourCanvas can show you how grey ashlar stamping would look on your specific patio before you contact a contractor.",
+      "Grey ashlar stamped concrete patio - the craftsman home's natural material logic in a durable, sealed surface. The irregular stone-cut geometry echoes the natural stone columns and clinker brick details that define the craftsman style, while the grey palette sits comfortably alongside cedar siding, painted sage, and warm wood trim.\n\nWhat makes this combination work is the visual continuity between the patio surface and the home's existing material story. Where generic grey concrete reads as filler, grey ashlar stamping reads as a material choice that was considered at the same time as the facade. The pattern creates shadow lines and dimensional interest from any angle - not just in direct sunlight.\n\nAt $10-16 per sq ft installed, stamped concrete delivers the ashlar look at roughly half the cost of real cut stone. The pattern holds well in freeze-thaw climates, which often coincide with the older neighbourhoods where craftsman homes are concentrated - the sealed surface resists surface scaling better than unsealed concrete alternatives. A charcoal release agent on a medium grey base reads most authentically against typical craftsman brick and painted cedar. Resealing every 2-3 years maintains colour depth and the fine surface detail of the stamped pattern. PourCanvas can show you how grey ashlar stamping would look on your specific patio before you contact a contractor.",
     targetKeywords: ["craftsman patio ideas", "grey stamped concrete patio craftsman home", "ashlar patio design"],
     pillar: "patio",
     ctaHeadline: "See how it looks on your patio",
@@ -859,5 +859,65 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See the texture on your driveway",
     ctaBody: "Upload a photo of your driveway and see what exposed aggregate concrete could look like on your contemporary home.",
+  },
+  {
+    slug: "large-slab-driveway-grass-joints",
+    title: "Large Concrete Slab Driveway With Grass Joints | PourCanvas",
+    headline: "Large Slab Driveway With Grass Joints",
+    metaDescription:
+      "Large format concrete slab driveway with grass joints - the defining curb appeal upgrade for craftsman and contemporary homes. See how it looks.",
+    ogImage: "https://images.pourcanvas.com/inspiration-large-slab-driveway-grass-joints.jpg",
+    heroAlt: "Large format smooth concrete slab driveway with flush grass turf strips in joints approaching a craftsman home",
+    contentBlock:
+      "Large concrete slab driveways with grass joints are one of the most visually striking curb appeal upgrades available to homeowners right now. Two or three wide smooth concrete panels run the full driveway length, separated by flush grass or turf strips that read as deliberate green lines across the approach. The effect is architectural - the driveway looks designed rather than poured.\n\nThe visual logic is about contrast. The hard, precise geometry of the concrete slab plays against the soft, organic green of the turf joint, creating a pairing that's simultaneously modern and naturalistic. Against a craftsman home, the grass joints echo the garden-forward landscaping that the style favours. Against a contemporary home, the clean geometry reinforces the flat rooflines and horizontal cladding without competing.\n\nJoint width typically runs 2-4 inches for a planted grass strip, or up to 6 inches for a wider turf band. Real grass requires some maintenance in drought conditions - artificial turf strips are a practical alternative that maintain the look year-round without irrigation. The concrete panels themselves are standard broom-finish or smooth polish - the joint material carries the visual.\n\nCost runs $12-20 per sq ft installed for a two-strip layout with grass joints - higher than a conventional single-pour driveway due to the forming complexity and joint installation. The result is a driveway that earns consistent attention from neighbours and prospective buyers. PourCanvas can show you how a large slab layout with grass joints would look on your specific property before you engage a contractor.",
+    targetKeywords: ["large slab driveway grass joints", "modern concrete driveway ideas", "concrete driveway grass strips"],
+    pillar: "driveway",
+    ctaHeadline: "See a slab layout on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what a large slab concrete layout with grass joints could look like in your space.",
+  },
+  {
+    slug: "floating-concrete-walkway-turf",
+    title: "Floating Concrete Walkway in Artificial Turf | PourCanvas",
+    headline: "Floating Concrete Walkway in Turf",
+    metaDescription:
+      "Floating concrete stepping slabs in artificial turf - a clean, modern front walkway that makes the path feel like it belongs to the garden.",
+    ogImage: "https://images.pourcanvas.com/inspiration-floating-concrete-walkway-turf.jpg",
+    heroAlt: "Floating smooth concrete stepping slabs set in lush artificial turf leading to a modern stucco home entry",
+    contentBlock:
+      "Floating concrete walkways in artificial turf turn a front path into a landscape feature. Instead of a continuous concrete ribbon leading to the door, discrete smooth slabs appear to rest on the turf surface - each one framed by green, creating a stepping-stone rhythm that slows the approach and invites the eye to move through the space.\n\nThe tension between the hard, precise concrete slab and the soft turf surround is the whole visual point. It's a pairing that reads as intentionally designed - not a default path installation but a considered decision about how the front of the property should feel. The slabs can be square, rectangular, or cut to an irregular polygon for a more organic layout.\n\nArtificial turf is typically specified over real grass for this application because it maintains the green surround consistently through all seasons and requires no irrigation or mowing around the slab edges. The slab surface itself is smooth or lightly broom-finished - texture reads less here because the visual interest is in the form and spacing, not the surface detail.\n\nCost varies significantly with slab size and spacing. A standard floating walkway with 24-inch square slabs set 2-3 inches apart runs $15-24 per sq ft of total path coverage. Narrower paths with fewer slabs are at the lower end; wide sweeping approaches with polygon-cut slabs are higher. PourCanvas can show you how floating concrete slabs would look on your specific front yard layout before you commit to an installation.",
+    targetKeywords: ["floating concrete walkway turf", "stepping stone walkway artificial turf", "modern front walkway ideas"],
+    pillar: "walkway",
+    ctaHeadline: "See floating slabs on your front path",
+    ctaBody: "Upload a photo of your front yard and see what floating concrete stepping slabs in turf could look like in your space.",
+  },
+  {
+    slug: "scored-grid-concrete-patio",
+    title: "Scored Grid Concrete Patio With Gravel Inlay | PourCanvas",
+    headline: "Scored Grid Concrete Patio",
+    metaDescription:
+      "Scored grid concrete patio with white pea gravel channels - clean geometric pattern that works on contemporary and transitional home exteriors.",
+    ogImage: "https://images.pourcanvas.com/inspiration-scored-grid-concrete-patio.jpg",
+    heroAlt: "Smooth concrete patio with deep recessed grid score lines filled with white pea gravel, full outdoor dining set on patio beside a contemporary home",
+    contentBlock:
+      "A scored grid concrete patio with gravel-filled channels brings a graphic, architectural quality to an outdoor surface without requiring stamping or specialty finishes. The grid is cut into the cured concrete in a regular square or rectangular pattern - typically 18x18 inch or 24x24 inch modules - with recessed channels 1-2 inches wide. White pea gravel, black river rock, or charcoal aggregate fills the channels, creating a strong visual contrast between the smooth concrete field and the textured inlay.\n\nThe visual effect is closest to large-format tile - it reads as a premium, designed surface at first glance. The grid provides a sense of order and rhythm that makes even a large patio feel considered and intentional. Pea gravel channels also provide a natural drainage pathway across the surface, reducing ponding after rain and improving the patio's usability in wet conditions.\n\nColor choice in the gravel inlay defines the mood. White pea gravel against light grey concrete is crisp and contemporary - the go-to for homes with white or light grey exteriors. Black river rock against medium grey creates a higher-contrast, more dramatic effect suited to darker or more modern exteriors. Charcoal aggregate against buff concrete reads warmer and suits transitional and craftsman-adjacent styles.\n\nScored concrete with gravel inlay costs $10-16 per sq ft installed - meaningfully less than stamped patterns because the work involves cutting rather than stamping, with no colour release required. Resealing the concrete portion every 2-3 years maintains the surface finish. PourCanvas can show you how a scored grid layout would look on your specific patio before you commit.",
+    targetKeywords: ["scored concrete patio gravel inlay", "grid scored concrete patio", "modern concrete patio pattern"],
+    pillar: "patio",
+    ctaHeadline: "See the grid pattern on your patio",
+    ctaBody: "Upload a photo of your patio and see what a scored grid concrete layout with gravel channels could look like in your space.",
+  },
+  {
+    slug: "parallel-strip-driveway-white-gravel",
+    title: "Parallel Concrete Strip Driveway With White Gravel | PourCanvas",
+    headline: "Parallel Strip Driveway With White Gravel",
+    metaDescription:
+      "Parallel concrete strip driveway with white pea gravel between strips - a modern, design-forward approach for flat-roof and contemporary homes.",
+    ogImage: "https://images.pourcanvas.com/inspiration-parallel-strip-driveway-white-gravel.jpg",
+    heroAlt: "Parallel concrete slab strip driveway with white pea gravel infill between strips approaching a modern flat-roof home with contemporary flush garage door",
+    contentBlock:
+      "Parallel concrete strip driveways with white gravel channels are the most visually precise driveway format in current residential design. Two parallel concrete strips - wide enough to accommodate each wheel track - run the length of the driveway, separated by a band of white pea gravel that fills the centre channel and any side margins. The vehicle's tyres travel on concrete; the gravel provides drainage and visual separation.\n\nFrom the street, the effect is a bold graphic - two clean concrete lines framing a white gravel centre, with the geometry of the concrete strips echoing the horizontal lines of the home above. Against a flat-roof contemporary home with flush-panel garage doors and light-coloured cladding, this is one of the most cohesive driveway formats available. The restraint is the point: every element of the composition is working.\n\nPractically, the white gravel is low maintenance - it compacts under vehicle weight and rarely requires replenishment. The concrete strips themselves are smooth or lightly broom-finished; the visual interest comes from the composition, not surface detail. Drainage is naturally excellent because the gravel channel provides a permeable surface between the impervious concrete strips.\n\nCost runs $10-18 per sq ft of total driveway coverage, depending on strip width, gravel channel width, and edging specification. Narrower strips with a wider central gravel band are at the lower end. PourCanvas can show you how a parallel strip layout would look on your specific property before you engage a contractor.",
+    targetKeywords: ["parallel concrete strip driveway", "concrete driveway white gravel", "modern driveway gravel strips"],
+    pillar: "driveway",
+    ctaHeadline: "See parallel strips on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what parallel concrete strips with white gravel could look like in your space.",
   },
 ];
