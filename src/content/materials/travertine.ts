@@ -12,7 +12,7 @@ export const travertinePage: MaterialPage = {
   ogImage: "/og/material-travertine.jpg",
   publishedAt: "2025-06-15",
   intro:
-    "Travertine is limestone formed around natural hot springs — the same material used in ancient Roman architecture. As a pool deck surface, it has practical properties that most other materials don't: it stays measurably cooler underfoot than concrete or brick, it has a naturally non-slip surface, and it looks genuinely beautiful in a way that reads as high-end without trying.",
+    "Travertine is a natural limestone that costs $20–40 per sq ft installed on a pool deck or patio — roughly twice the cost of stamped concrete, but with thermal and grip properties that stamped concrete can't replicate. It stays 20–30°F cooler underfoot than dark concrete in direct sun, grips when wet without any added texture treatment, and has a depth of color variation that stamped imitations approximate but don't match.",
   sections: [
     {
       heading: "Why Travertine Works Around Pools",
@@ -56,7 +56,10 @@ export const travertinePage: MaterialPage = {
     ],
   },
   relatedPillars: ["patio"],
-  relatedArticles: [],
+  relatedArticles: [
+    { pillar: "patio", slug: "patio-color-ideas" },
+    { pillar: "patio", slug: "stamped-concrete-ideas" },
+  ],
   faqs: [
     {
       question: "How much does a travertine pool deck cost installed?",

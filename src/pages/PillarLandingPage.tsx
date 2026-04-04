@@ -103,12 +103,18 @@ const PillarLandingPage = ({ pillar }: { pillar: Pillar }) => {
                 </Link>
               ))}
             </div>
-            <div className="mt-6">
+            <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <Link
                 to={`/blog/${pillar}`}
                 className="text-sm font-body text-primary hover:underline"
               >
                 View all {pillar} guides →
+              </Link>
+              <Link
+                to="/materials"
+                className="text-sm font-body text-primary hover:underline"
+              >
+                Browse concrete finish guides →
               </Link>
             </div>
           </div>

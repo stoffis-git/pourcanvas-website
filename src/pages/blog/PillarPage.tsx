@@ -35,6 +35,9 @@ const PillarPage = () => {
             {meta.headline}
           </h1>
           <p className="text-base md:text-lg font-body text-muted-foreground">{meta.description}</p>
+          <p className="text-sm font-body text-muted-foreground mt-3">
+            {articles.length} articles &middot; <Link to="/materials" className="text-primary hover:underline">Browse concrete finish guides →</Link>
+          </p>
         </div>
 
         <div className="divide-y divide-border">

@@ -7,12 +7,12 @@ export const exposedAggregatePage: MaterialPage = {
   summary:
     "Exposed aggregate reveals the decorative stone beneath the concrete surface for a textured, slip-resistant finish. A practical choice for driveways and pool decks where grip matters.",
   metaDescription:
-    "Exposed aggregate concrete is durable, slip-resistant, and naturally attractive. Here's what homeowners need to know about this finish for driveways, patios, and pool decks.",
+    "Exposed aggregate concrete costs $8–14 per sq ft and delivers natural slip resistance by revealing decorative stone beneath the surface. Driveway, patio, and pool deck guide.",
   targetKeywords: ["exposed aggregate concrete", "aggregate finish", "exposed aggregate driveway"],
   ogImage: "/og/material-exposed-aggregate.jpg",
   publishedAt: "2025-06-01",
   intro:
-    "Exposed aggregate is the finish you choose when you want texture, grip, and a natural look without a stamped pattern. The stones become the design — and the result is durable, slip-resistant, and attractive without requiring skilled pattern-stamping labor.",
+    "Exposed aggregate concrete reveals the decorative stone beneath the surface by washing away the top paste during cure — it costs $8–14 per sq ft installed, less than stamped concrete. The embedded stones provide natural grip and visual depth, making it the go-to finish for driveways and pool decks where slip resistance matters more than pattern.",
   sections: [
     {
       heading: "How It's Made",

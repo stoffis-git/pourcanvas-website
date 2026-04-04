@@ -27,7 +27,7 @@ const BlogHub = () => (
   <>
     <SeoHead
       title="Concrete Patio, Driveway & Walkway Ideas | PourCanvas Blog"
-      description="Design guides, cost breakdowns, and concrete inspiration for patios, driveways, and walkways. Browse by topic."
+      description="30+ design guides and cost breakdowns for concrete patios, driveways, and walkways. Browse by topic or surface type."
       canonical="/blog"
     />
     <Header />
@@ -40,7 +40,7 @@ const BlogHub = () => (
           Concrete Design Blog
         </h1>
         <p className="text-base md:text-lg font-body text-muted-foreground">
-          Practical guides, design ideas, and cost breakdowns for homeowners planning an outdoor concrete project.
+          Practical guides, design ideas, and cost breakdowns for homeowners planning an outdoor concrete project. For finish-level detail, see the <Link to="/materials" className="text-primary hover:underline">concrete materials guide</Link>.
         </p>
       </div>
 

@@ -80,7 +80,7 @@ const ConcreteDrivewayGuide = () => (
   <>
     <SeoHead
       title="Concrete Driveway Design Guide: Finishes, Costs & Ideas | PourCanvas"
-      description="Everything you need to plan a concrete driveway — stamped, exposed aggregate, colored, or plain. Real cost data, finish comparisons, and design ideas."
+      description="Concrete driveway costs $4–20/sq ft installed depending on finish. Compare stamped, exposed aggregate, colored, and broom-finish options with real cost data."
       canonical="/guides/concrete-driveway"
     />
     <Header />
@@ -265,6 +265,23 @@ const ConcreteDrivewayGuide = () => (
             Full guide: Driveway Resurfacing — Concrete vs. Asphalt vs. Overlay →
           </Link>
         </p>
+      </section>
+
+      {/* Finish guides */}
+      <section className="mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          Concrete Finish Guides
+        </h2>
+        <p className="text-muted-foreground leading-relaxed mb-5">
+          Each finish has its own cost range, maintenance profile, and best-use cases. The guides below cover everything a homeowner needs to decide.
+        </p>
+        <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+          <Link to="/materials/stamped-concrete" className="text-primary hover:underline">Stamped Concrete: Patterns, Cost & Care →</Link>
+          <Link to="/materials/exposed-aggregate" className="text-primary hover:underline">Exposed Aggregate: What It Is and What It Costs →</Link>
+          <Link to="/materials/broom-finish" className="text-primary hover:underline">Broom Finish Concrete: The Standard That Still Works →</Link>
+          <Link to="/materials/colored-concrete" className="text-primary hover:underline">Colored Concrete: Integral Pigment, Stain & Wash →</Link>
+          <Link to="/materials/concrete-overlay" className="text-primary hover:underline">Concrete Overlay: When Resurfacing Makes Sense →</Link>
+        </div>
       </section>
 
       {/* FAQ */}

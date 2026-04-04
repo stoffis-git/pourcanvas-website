@@ -7,12 +7,12 @@ export const stampedConcretePage: MaterialPage = {
   summary:
     "Stamped concrete mimics the look of stone, brick, and wood at a fraction of the cost. The most versatile decorative concrete finish for patios, driveways, and walkways.",
   metaDescription:
-    "Stamped concrete delivers the look of natural stone, brick, or wood at lower cost and with less maintenance. Everything homeowners need to know about patterns, cost, and care.",
+    "Stamped concrete costs $12–18 per sq ft installed and mimics natural stone, brick, or wood. Patterns, colors, maintenance, and pros vs. pavers — complete homeowner guide.",
   targetKeywords: ["stamped concrete", "decorative concrete", "stamped concrete patterns"],
   ogImage: "/og/material-stamped-concrete.jpg",
   publishedAt: "2025-06-01",
   intro:
-    "Stamped concrete is the most popular decorative concrete finish in North America — and for good reason. It lets you get the look of natural stone, brick, or wood on your patio, driveway, or walkway without the cost or maintenance complexity of the real thing.",
+    "Stamped concrete is decorative concrete pressed with rubber stamps to mimic stone, brick, or wood — it runs $12–18 per sq ft installed, roughly half the cost of natural pavers. It's the most widely chosen decorative finish for patios, driveways, and walkways because it combines a custom look with a continuous sealed surface that needs no joint weeding.",
   sections: [
     {
       heading: "How Stamped Concrete Works",

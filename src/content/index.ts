@@ -38,18 +38,18 @@ export const pillarMeta: Record<Pillar, { title: string; description: string; he
     title: "Patio Design Ideas & Concrete Inspiration | PourCanvas",
     headline: "Patio Design Ideas",
     description:
-      "Explore stamped concrete patterns, patio colors, and cost guides for your next patio project.",
+      "Stamped concrete patterns and exposed aggregate finishes for outdoor patios — cost guides, color ideas, and real installs from $8 to $40 per sq ft.",
   },
   driveway: {
     title: "Driveway Design Ideas & Concrete Inspiration | PourCanvas",
     headline: "Driveway Design Ideas",
     description:
-      "Stamped concrete driveways, exposed aggregate finishes, and curb appeal ideas for every budget.",
+      "Stamped cobblestone and exposed aggregate driveways — curb appeal ideas and cost guides for every budget, from broom finish ($6/sq ft) to decorative patterns ($18+).",
   },
   walkway: {
     title: "Walkway Design Ideas & Concrete Inspiration | PourCanvas",
     headline: "Walkway Design Ideas",
     description:
-      "Front path ideas, flagstone patterns, and concrete walkway guides for every home style.",
+      "Stamped flagstone and broom finish walkway ideas for every home style — front path inspiration and concrete cost guides from $6 to $16 per sq ft.",
   },
 };

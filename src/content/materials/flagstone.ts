@@ -12,7 +12,7 @@ export const flagstonePage: MaterialPage = {
   ogImage: "/og/material-flagstone.jpg",
   publishedAt: "2025-06-15",
   intro:
-    "Flagstone is quarried natural rock cut into irregular slabs and used for patios, walkways, and pool decks. It's the material most homeowners mean when they say they want their outdoor space to look 'natural.' The look is hard to replicate — and so is the cost.",
+    "Flagstone runs $25–45 per sq ft installed — two to three times the cost of stamped concrete — and delivers something concrete can't fully replicate: genuine quarried stone with natural depth, variation, and texture. It's the premium choice for walkways, patios, and pool decks where material authenticity matters.",
   sections: [
     {
       heading: "Types of Flagstone",

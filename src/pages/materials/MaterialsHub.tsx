@@ -164,7 +164,7 @@ const MaterialsHub = () => (
   <>
     <SeoHead
       title="Concrete Materials Guide: Finishes, Costs & Comparisons | PourCanvas"
-      description="Everything homeowners need to know about outdoor concrete finishes — stamped concrete, exposed aggregate, broom finish, colored concrete, pavers, and more."
+      description="9 outdoor concrete finishes compared — stamped ($8–20/sq ft), exposed aggregate, broom finish, colored concrete, pavers, and more. Costs, pros, and cons."
       canonical="/materials"
     />
     <Header />
@@ -177,7 +177,7 @@ const MaterialsHub = () => (
           Concrete Finish Guide
         </h1>
         <p className="text-base md:text-lg font-body text-muted-foreground">
-          Deep-dive guides on every major outdoor concrete finish — what each one is, what it costs, and when to use it.
+          Deep-dive guides on every major outdoor concrete finish — what each one is, what it costs, and when to use it. See design ideas by surface: <Link to="/blog/patio" className="text-primary hover:underline">patio</Link>, <Link to="/blog/driveway" className="text-primary hover:underline">driveway</Link>, <Link to="/blog/walkway" className="text-primary hover:underline">walkway</Link>.
         </p>
       </div>
 

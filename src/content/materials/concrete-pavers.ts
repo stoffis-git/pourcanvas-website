@@ -7,12 +7,12 @@ export const concretePagersPage: MaterialPage = {
   summary:
     "Concrete pavers are individual units laid in a pattern — not poured concrete. Higher upfront cost than a poured slab, but easier to repair and available in hundreds of colors and shapes.",
   metaDescription:
-    "Concrete pavers cost more than poured concrete but are easier to repair and offer more design flexibility. Here's what homeowners need to know before choosing.",
+    "Concrete pavers cost $15–30/sq ft installed — roughly double poured concrete — but individual units replace in minutes. Compare styles, costs, and when pavers are worth it.",
   targetKeywords: ["concrete pavers", "paver patio", "concrete pavers vs poured concrete"],
   ogImage: "/og/material-concrete-pavers.jpg",
   publishedAt: "2025-06-15",
   intro:
-    "Concrete pavers are manufactured units — individual blocks or slabs laid in a pattern on a prepared base. They're not the same as poured concrete, and they're not the same as natural stone. Understanding what distinguishes them is the starting point for deciding whether they're right for your project.",
+    "Concrete pavers cost $15–30 per sq ft installed — roughly double the price of poured concrete — but they offer one advantage no poured slab can match: a cracked or damaged unit lifts out and replaces in minutes. They're factory-made individual blocks laid over a compacted base, available in hundreds of colors, shapes, and patterns.",
   sections: [
     {
       heading: "What Concrete Pavers Are",

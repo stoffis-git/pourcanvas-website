@@ -75,6 +75,23 @@ const MaterialPage = () => {
         {material.relatedArticles && material.relatedArticles.length > 0 && (
           <MaterialRelatedArticles articles={material.relatedArticles} />
         )}
+
+        {material.relatedPillars && material.relatedPillars.length > 0 && (
+          <div className="mt-8 pt-8 border-t border-border/40">
+            <p className="text-xs font-body text-muted-foreground mb-3">Use this finish on</p>
+            <div className="flex gap-4 flex-wrap">
+              {material.relatedPillars.map((pillar) => (
+                <Link
+                  key={pillar}
+                  to={`/${pillar}`}
+                  className="text-sm font-body font-medium text-primary hover:underline capitalize"
+                >
+                  {pillar} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
       </main>
       <Footer />
     </>

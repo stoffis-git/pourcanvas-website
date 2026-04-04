@@ -7,12 +7,12 @@ export const coloredConcretePage: MaterialPage = {
   summary:
     "Color transforms plain concrete from utilitarian to designed. Three methods with different costs, durability profiles, and color options — here's how to choose.",
   metaDescription:
-    "Integral color, surface stain, and concrete dye each produce different results at different price points. This guide explains the differences and helps you choose the right method.",
+    "Colored concrete costs $1–4/sq ft over plain concrete, using integral color, stain, or dye. This guide compares methods, durability, and color options to help you choose.",
   targetKeywords: ["colored concrete", "concrete color", "concrete stain", "integral color concrete"],
   ogImage: "/og/material-colored-concrete.jpg",
   publishedAt: "2025-06-01",
   intro:
-    "Color is the single most impactful design decision for any concrete surface. A well-chosen color makes a plain broom-finish slab look intentional; the wrong one makes an expensive stamped surface look cheap. There are three methods of coloring concrete — each with different costs, longevity, and appropriate use cases.",
+    "Colored concrete adds $1–4 per sq ft to a plain pour, using one of three methods: integral color mixed into the slab, surface stain applied after curing, or dye for vivid interior-grade color. Each method produces a different result at a different price point, with a different durability profile — the right choice depends on your use case and budget.",
   sections: [
     {
       heading: "Integral Color",

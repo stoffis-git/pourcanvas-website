@@ -7,12 +7,12 @@ export const broomFinishPage: MaterialPage = {
   summary:
     "Broom finish is the default concrete surface — practical, affordable, and more versatile than it's given credit for. The right choice when durability and value matter more than decorative pattern.",
   metaDescription:
-    "Broom finish concrete is the most common outdoor surface for a reason: it's durable, slip-resistant, affordable, and surprisingly clean-looking when done well.",
+    "Broom finish concrete costs $6–10 per sq ft — the most affordable concrete surface for driveways, patios, and walkways. Slip-resistant, durable, and upgradeable with color or stamps.",
   targetKeywords: ["broom finish concrete", "broom finish patio", "standard concrete finish"],
   ogImage: "/og/material-broom-finish.jpg",
   publishedAt: "2025-06-01",
   intro:
-    "Broom finish concrete doesn't get the same attention as stamped or exposed aggregate — but it's the most widely installed outdoor concrete surface for a reason. Done well, it's clean, durable, and a better-looking finish than most homeowners expect.",
+    "Broom finish concrete is the most affordable poured concrete surface at $6–10 per sq ft installed — a stiff brush dragged across fresh concrete leaves fine parallel lines that provide grip without decorative pattern. It's the default finish for driveways, walkways, and pool decks where durability and low cost matter, and it can be upgraded with integral color or stamped borders without starting over.",
   sections: [
     {
       heading: "What It Is",

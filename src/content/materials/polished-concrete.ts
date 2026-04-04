@@ -7,12 +7,12 @@ export const polishedConcretePage: MaterialPage = {
   summary:
     "Polished concrete is primarily an interior floor finish, but exterior applications exist for covered patios and sheltered surfaces. Here's what outdoor polished concrete actually involves.",
   metaDescription:
-    "Polished concrete outdoors requires specific conditions to hold up. This guide covers when it's appropriate, what it costs, and what the alternatives are for exposed outdoor surfaces.",
+    "Polished concrete costs $3–15/sq ft and works outdoors only on covered surfaces — it becomes dangerously slippery when wet. Learn when it's appropriate and what the alternatives are.",
   targetKeywords: ["polished concrete outdoor", "polished concrete patio", "outdoor polished concrete"],
   ogImage: "/og/material-polished-concrete.jpg",
   publishedAt: "2025-06-15",
   intro:
-    "Polished concrete is one of the most searched outdoor finishes — and one of the most misapplied. The process works beautifully inside, on protected slabs. Outside, on surfaces exposed to weather, freeze-thaw cycles, and UV radiation, the same finish requires significant qualification about what you can realistically expect.",
+    "Polished concrete costs $3–15 per sq ft and works outdoors only on covered, sheltered surfaces — roofed patios, outdoor kitchens, screened porches. On any surface exposed to rain, it becomes dangerously slippery when wet. Understanding that limitation upfront is the key to deciding whether polished concrete is right for your project.",
   sections: [
     {
       heading: "What Polished Concrete Actually Is",

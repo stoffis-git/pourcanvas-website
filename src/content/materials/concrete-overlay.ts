@@ -12,7 +12,7 @@ export const concreteOverlayPage: MaterialPage = {
   ogImage: "/og/material-concrete-overlay.jpg",
   publishedAt: "2025-06-15",
   intro:
-    "A concrete overlay is a thin layer of polymer-modified concrete applied over an existing surface. It bonds to the base slab, adds 1/4\"–3/8\" of new material, and can be textured, stamped, stained, or left smooth. It's the most cost-effective way to renovate a cosmetically worn concrete surface — assuming the base is sound.",
+    "A concrete overlay costs $3–15 per sq ft and can transform a worn or dated slab without demolition — a fraction of the $8–20/sq ft you'd spend on full replacement including demo. It's a thin polymer-modified layer bonded to the existing surface, which can be stamped, stained, or textured to any finish. It only works on structurally sound bases.",
   sections: [
     {
       heading: "How Overlays Work",
