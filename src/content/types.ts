@@ -82,3 +82,29 @@ export interface InspirationPage {
   ctaBody: string;
   faqs?: FAQ[];
 }
+
+export interface BeforeAfterPage {
+  slug: string;
+  title: string;
+  headline: string;
+  metaDescription: string;
+  ogImage: string;
+  heroAlt: string;
+  contentBlock: string;
+  pillar: Pillar;
+  ctaHeadline: string;
+  ctaBody: string;
+}
+
+export interface PalettePage {
+  slug: string;
+  title: string;
+  headline: string;
+  metaDescription: string;
+  ogImage: string;
+  heroAlt: string;
+  contentBlock: string;
+  pillar: Pillar;
+  ctaHeadline: string;
+  ctaBody: string;
+}
