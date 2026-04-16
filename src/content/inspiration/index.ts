@@ -988,4 +988,64 @@ export const inspirationPages: InspirationPage[] = [
     ctaHeadline: "See concrete strips on your front path",
     ctaBody: "Upload a photo of your front walkway and see what parallel concrete strips with turf between them could look like on your property.",
   },
+  {
+    slug: "herringbone-brick-driveway",
+    title: "Herringbone Brick Stamped Concrete Driveway Ideas | PourCanvas",
+    headline: "Herringbone Brick Driveway",
+    metaDescription:
+      "Herringbone brick stamped concrete driveway adds classic interlocked pattern and warm colour to any front approach. See how it looks with craftsman and colonial homes.",
+    ogImage: "https://images.pourcanvas.com/inspiration-herringbone-brick-driveway.jpg",
+    heroAlt: "Herringbone brick pattern stamped concrete driveway with warm buff and charcoal tones at a craftsman home with carriage house garage door in golden hour light",
+    contentBlock:
+      "Herringbone brick stamped driveway brings the visual logic of the classic masonry pattern to the full-width front approach - interlocked diagonal bricks running the length of the drive, warm buff or charcoal colour wash deepening the relief and shadow lines in afternoon light.\n\nThe pattern works on a driveway for the same reason it works on patios and walkways: the 45-degree diagonal creates directional energy that draws the eye toward the garage, strengthening the sense of arrival. At full driveway width - typically 16-20 feet - the herringbone geometry scales up convincingly, where smaller patterns can look busy or lost.\n\nThe finish pairs naturally with craftsman and colonial homes where brick is already present in the facade. The visual echo between the stamped pattern on the ground and the real brick on the wall creates a continuity that reads as intentional design. For homes without brick, a warm buff herringbone can stand on its own against painted wood, stucco, or stone veneer.\n\nFrom a practical standpoint, herringbone stamped concrete runs $12-18 per sq ft installed - significantly less than real brick paver driveways at $18-30 per sq ft, with comparable visual impact from the street and better resistance to freeze-thaw heave. Resealing every 2-3 years maintains the colour depth and protects the surface from deicing salt. PourCanvas can show you how herringbone brick stamped concrete would look on your specific driveway before you book a contractor.",
+    targetKeywords: ["herringbone brick driveway", "stamped concrete driveway ideas", "brick pattern driveway"],
+    pillar: "driveway",
+    ctaHeadline: "See herringbone on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what herringbone brick stamped concrete could look like in your space.",
+  },
+  {
+    slug: "scored-grid-walkway-white-gravel",
+    title: "Scored Grid Concrete Walkway With White Gravel Channels | PourCanvas",
+    headline: "Scored Grid Walkway With White Gravel",
+    metaDescription:
+      "Scored grid concrete walkway with white pea gravel channels - a clean geometric front path that suits contemporary and transitional home exteriors.",
+    ogImage: "https://images.pourcanvas.com/inspiration-scored-grid-walkway-white-gravel.jpg",
+    heroAlt: "Close-up of scored grid concrete walkway with white pea gravel filling the channel lines at a contemporary home entry in bright overcast light",
+    contentBlock:
+      "A scored grid walkway with white pea gravel channels turns a standard front path into a graphic element of the exterior composition. The concrete surface is scored in a regular square or rectangular grid - typically 18x18 or 24x24 inch modules - with recessed channels 1-2 inches wide. White pea gravel fills those channels, creating a crisp contrast between the smooth concrete field and the textured, bright inlay.\n\nThe visual effect is closest to large-format tile on the exterior. The grid provides order and proportion that a plain broom-finish walkway lacks, without the visual weight of a stamped pattern. White gravel specifically catches and redirects light across the path surface, creating a subtle luminosity that reads well in both daylight and low-light conditions.\n\nThis format suits contemporary homes with clean lines, coastal Scandinavian aesthetics, and any exterior where restraint is the visual strategy. The white gravel inlay coordinates naturally with white or cream home exteriors, dark window frames, and minimal planting schemes. Against a darker home, the bright channel lines provide foreground contrast that sharpens the overall composition.\n\nCost runs $10-16 per sq ft installed - less than most stamped walkway options because scoring requires no colour release and the cutting work is faster than stamping. Channel gravel requires occasional top-up as material settles or migrates. PourCanvas can show you how a scored grid walkway would look on your specific property before you commit to a contractor.",
+    targetKeywords: ["scored concrete walkway white gravel", "grid pattern concrete front path", "modern walkway ideas"],
+    pillar: "walkway",
+    ctaHeadline: "See the grid pattern on your walkway",
+    ctaBody: "Upload a photo of your front walkway and see what a scored grid concrete surface with white gravel channels could look like in your space.",
+  },
+  {
+    slug: "exposed-aggregate-patio-charcoal",
+    title: "Charcoal Exposed Aggregate Patio Ideas | PourCanvas",
+    headline: "Charcoal Exposed Aggregate Patio",
+    metaDescription:
+      "Charcoal exposed aggregate patio creates bold, textural contrast in any backyard. See how dark basalt aggregate looks on contemporary and modern homes.",
+    ogImage: "https://images.pourcanvas.com/inspiration-exposed-aggregate-patio-charcoal.jpg",
+    heroAlt: "Wide establishing shot of charcoal exposed aggregate concrete patio with dark basalt pebble texture beside a contemporary home with sectional outdoor furniture in morning light",
+    contentBlock:
+      "Charcoal exposed aggregate patio uses dark basalt or black river pebble to create a surface that is simultaneously tactile and visually bold. Where white exposed aggregate scatters light and reads as bright, charcoal aggregate absorbs it - the surface tone shifts as the angle of light changes across the day, and after rain the wet pebbles develop a deep gloss that transforms the backyard at close range.\n\nThe material logic suits contemporary homes where a dark exterior palette is already in play. Charcoal aggregate echoes dark metal cladding, black window frames, and charcoal board-and-batten siding without requiring a colour match. Against a lighter home exterior - white, cream, or soft grey - the dark aggregate creates the kind of foreground contrast that photographers and designers favour: the patio grounds the space and makes the home read stronger above it.\n\nFrom a practical standpoint, dark aggregate hides surface staining and debris between cleanings better than lighter finishes. The exposed surface provides excellent wet-weather slip resistance - the individual pebble texture prevents the smooth-surface hydroplaning that can occur on plain polished concrete. Cost runs $10-16 per sq ft installed. No sealing required, though a penetrating sealer applied every 3-5 years can deepen the stone colour if the visual intensity is valued. PourCanvas can show you how charcoal exposed aggregate would look on your specific patio area.",
+    targetKeywords: ["charcoal exposed aggregate patio", "dark aggregate patio ideas", "exposed aggregate backyard"],
+    pillar: "patio",
+    ctaHeadline: "See charcoal aggregate on your patio",
+    ctaBody: "Upload a photo of your patio and see what charcoal exposed aggregate concrete could look like in your backyard.",
+  },
+  {
+    slug: "ashlar-slate-patio-charcoal",
+    title: "Charcoal Ashlar Slate Stamped Patio Ideas | PourCanvas",
+    headline: "Charcoal Ashlar Slate Patio",
+    metaDescription:
+      "Charcoal ashlar slate stamped concrete patio makes a dramatic statement in any backyard. See how deep charcoal tone and geometric stone pattern look together.",
+    ogImage: "https://images.pourcanvas.com/inspiration-ashlar-slate-patio-charcoal.jpg",
+    heroAlt: "Charcoal ashlar slate stamped concrete patio with deep grey tone and geometric stone blocks beside a modern farmhouse home with outdoor dining furniture in golden hour light",
+    contentBlock:
+      "Charcoal ashlar slate stamped patio is the dark, dramatic alternative to the neutral grey stamped concrete most homeowners default to. The geometric block pattern and deep charcoal tone create a surface that commands the backyard - furniture, planting, and architectural details read in sharp relief against the dark ground plane.\n\nWhere medium grey ashlar stamping recedes and supports other visual elements, charcoal advances. The pattern casts deeper shadow lines in raking light, making the geometric relief of the ashlar stamp more pronounced and more dramatic at every time of day. At golden hour, the combination of warm directional light and dark concrete tone produces an effect that photographs significantly better than lighter alternatives.\n\nCharcoal ashlar suits modern farmhouse, contemporary, and transitional home styles. Against white or cream board-and-batten it creates maximum foreground contrast. Against a darker exterior - charcoal, navy, or deep green - it creates tonal unity. The key is avoiding medium grey or beige exteriors where the charcoal tone can read as heavy rather than intentional.\n\nThe practical case is strong. Integral charcoal pigment through the full slab depth means chips and scratches stay consistent in colour. The sealed surface resists staining better than lighter concrete - oil and tyre marks are less visible on a dark field. Cost runs $13-19 per sq ft installed for charcoal stamped concrete - slightly more than standard grey stamped due to the pigment cost. Resealing every 2-3 years maintains the depth of colour. PourCanvas can show you how charcoal ashlar stamping would look on your specific patio before you commit.",
+    targetKeywords: ["charcoal stamped concrete patio", "ashlar slate patio ideas", "dark stamped concrete backyard"],
+    pillar: "patio",
+    ctaHeadline: "See charcoal stamping on your patio",
+    ctaBody: "Upload a photo of your patio and see what charcoal ashlar slate stamped concrete could look like in your backyard.",
+  },
 ];
