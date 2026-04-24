@@ -1076,6 +1076,9 @@ export const inspirationPages: InspirationPage[] = [
       { url: "https://images.pourcanvas.com/premium-slab-032.jpg", alt: "Near-black broom poured concrete front patio, white weatherboard cottage, long afternoon shadows" },
       { url: "https://images.pourcanvas.com/premium-slab-043.jpg", alt: "Charcoal polished poured concrete patio, cantilevered flat-roof bungalow, late afternoon diagonal shadows" },
       { url: "https://images.pourcanvas.com/premium-slab-049.jpg", alt: "Near-black raw poured concrete courtyard patio, dark timber board-clad home, golden hour 3/4 angle" },
+      { url: "https://images.pourcanvas.com/premium-slab-058.jpg", alt: "Near-black broom finish poured concrete patio, low-profile single-storey home with dark painted t, clear blue-sky morning, even direct sun" },
+      { url: "https://images.pourcanvas.com/premium-slab-060.jpg", alt: "Light grey lightly polished poured concrete patio, single-storey white render home with a flat roof,, bright sunny midday, high sun, hard cris" },
+      { url: "https://images.pourcanvas.com/premium-slab-063.jpg", alt: "Light grey lightly polished poured concrete patio, single-storey white rendered bungalow with dark wi, bright sunny afternoon, crisp hard shado" },
     ],
   },
   {
@@ -1102,6 +1105,9 @@ export const inspirationPages: InspirationPage[] = [
       { url: "https://images.pourcanvas.com/premium-slab-047.jpg", alt: "Light grey polished poured concrete driveway, minimalist board-formed home, oblique camera angle" },
       { url: "https://images.pourcanvas.com/premium-slab-050.jpg", alt: "Light grey broom poured concrete driveway, white flat-roof home with glazing, white sedan, morning" },
       { url: "https://images.pourcanvas.com/premium-slab-053.jpg", alt: "Near-black polished poured concrete driveway, cantilevered bungalow with black steel frames, RAV4, midday" },
+      { url: "https://images.pourcanvas.com/premium-slab-057.jpg", alt: "Light grey lightly polished poured concrete driveway, minimalist single-storey home, board-formed concre, mid-morning sun with soft tree-canopy sh" },
+      { url: "https://images.pourcanvas.com/premium-slab-061.jpg", alt: "Charcoal smooth raw pour poured concrete driveway, single-storey flat-roof home with concrete-and-tim, mid-morning sun with soft tree-canopy sh" },
+      { url: "https://images.pourcanvas.com/premium-slab-064.jpg", alt: "Near-black smooth raw pour poured concrete driveway, low-profile bungalow with white render walls, blac, golden hour, warm low side light raking" },
     ],
   },
   {
@@ -1134,6 +1140,10 @@ export const inspirationPages: InspirationPage[] = [
       { url: "https://images.pourcanvas.com/premium-slab-051.jpg", alt: "Near-black polished poured concrete side-entry path, dark timber home, native grasses, golden hour" },
       { url: "https://images.pourcanvas.com/premium-slab-052.jpg", alt: "Charcoal polished poured concrete front path, board-formed minimalist home, 3/4 angle, midday" },
       { url: "https://images.pourcanvas.com/premium-slab-054.jpg", alt: "Near-black polished poured concrete side path, white flat-roof home with glazing, oblique angle, afternoon" },
+      { url: "https://images.pourcanvas.com/premium-slab-055.jpg", alt: "Charcoal lightly polished poured concrete covered entry porch, single-storey white render home with a flat roof,, clear blue-sky morning, even direct sun" },
+      { url: "https://images.pourcanvas.com/premium-slab-056.jpg", alt: "Light grey smooth raw pour poured concrete side-entry path, low-profile single-storey home with dark painted t, golden hour, warm low side light raking" },
+      { url: "https://images.pourcanvas.com/premium-slab-059.jpg", alt: "Light grey smooth raw pour poured concrete covered entry porch, single-storey white render home with a flat roof,, bright sunny afternoon, crisp hard shado" },
+      { url: "https://images.pourcanvas.com/premium-slab-062.jpg", alt: "Charcoal broom finish poured concrete open front stoop, dark grey fibre cement bungalow, black window fram, bright sunny midday, high sun, hard cris" },
     ],
   },
 ];
