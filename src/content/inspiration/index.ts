@@ -1052,4 +1052,88 @@ export const inspirationPages: InspirationPage[] = [
     ctaHeadline: "See charcoal stamping on your patio",
     ctaBody: "Upload a photo of your patio and see what charcoal ashlar slate stamped concrete could look like in your backyard.",
   },
+  {
+    slug: "poured-concrete-patio",
+    title: "Poured Concrete Patio Ideas | PourCanvas",
+    headline: "Poured Concrete Patio",
+    metaDescription:
+      "Raw and polished poured concrete patio ideas — charcoal, near-black and light grey finishes for modern bungalows and minimalist homes.",
+    ogImage: "https://images.pourcanvas.com/premium-slab-025.jpg",
+    heroAlt:
+      "Charcoal poured concrete backyard patio extending from a dark grey fibre cement bungalow, golden hour light",
+    dominantColor: "#62645b",
+    contentBlock:
+      "Poured concrete gives a patio a clean, permanent finish that no stamped pattern or paver can match — it reads as one continuous plane. Whether you go charcoal, near-black, or a lighter grey, the result fits modern bungalows, render homes, and minimalist flat-roof builds without competing with the architecture.\n\nA raw broom finish gives grip and a relaxed outdoor feel. A lightly polished surface picks up reflected light and looks sharper — better suited to enclosed courtyards or patios that extend directly from an indoor living space. Both hold up equally well; the difference is purely visual.\n\nCost ranges for poured concrete patios typically run $8–18/sq ft depending on region, finish complexity, and reinforcement. That places it above a plain gravel pour but well below large-format porcelain or natural stone.\n\nUpload a photo of your backyard or courtyard to PourCanvas and see what a poured concrete patio would look like in your specific space.",
+    targetKeywords: ["poured concrete patio", "raw concrete patio ideas", "charcoal concrete patio"],
+    pillar: "patio",
+    ctaHeadline: "See it in your backyard",
+    ctaBody: "Upload a photo of your patio and see what a poured concrete finish could look like in your space.",
+    additionalImages: [
+      { url: "https://images.pourcanvas.com/premium-slab-026.jpg", alt: "Near-black broom-finish poured concrete patio, cedar-clad home, bistro table, morning light" },
+      { url: "https://images.pourcanvas.com/premium-slab-028.jpg", alt: "Light grey raw poured concrete backyard patio, white rendered bungalow, dappled tree-canopy shade" },
+      { url: "https://images.pourcanvas.com/premium-slab-029.jpg", alt: "Charcoal raw poured concrete patio, flat-roof concrete-and-timber home, lounge chairs, afternoon sun" },
+      { url: "https://images.pourcanvas.com/premium-slab-031.jpg", alt: "Near-black polished poured concrete courtyard patio, grey fibre cement bungalow, golden hour" },
+      { url: "https://images.pourcanvas.com/premium-slab-032.jpg", alt: "Near-black broom poured concrete front patio, white weatherboard cottage, long afternoon shadows" },
+      { url: "https://images.pourcanvas.com/premium-slab-043.jpg", alt: "Charcoal polished poured concrete patio, cantilevered flat-roof bungalow, late afternoon diagonal shadows" },
+      { url: "https://images.pourcanvas.com/premium-slab-049.jpg", alt: "Near-black raw poured concrete courtyard patio, dark timber board-clad home, golden hour 3/4 angle" },
+    ],
+  },
+  {
+    slug: "poured-concrete-driveway",
+    title: "Poured Concrete Driveway Ideas | PourCanvas",
+    headline: "Poured Concrete Driveway",
+    metaDescription:
+      "Poured concrete driveway ideas in charcoal, near-black and light grey — raw, broom, and polished finishes for single and double-car approaches.",
+    ogImage: "https://images.pourcanvas.com/premium-slab-027.jpg",
+    heroAlt:
+      "Charcoal polished poured concrete driveway leading to a single-car garage on a red brick ranch home, golden hour",
+    dominantColor: "#737062",
+    contentBlock:
+      "A poured concrete driveway is the simplest way to get a clean, low-maintenance surface from street to garage. No individual units to shift, no gravel to redistribute — one continuous pour with control joints to manage cracking.\n\nFinish choice changes the character significantly. A raw or broom-finish in light grey reads as traditional and practical. Near-black or charcoal with a low polish looks architectural — works well against render, fibre cement, or board-formed concrete facades.\n\nControl joints are cut every 8–10 feet on a standard residential driveway and are part of the look, not a flaw. On a polished charcoal surface they read as intentional lines in the plane.\n\nExpect to pay $6–14/sq ft for a standard poured concrete driveway. Polished finishes and coloured integral pigment push toward the upper end. A plain grey broom finish sits at the lower range.\n\nUpload a photo of your driveway to PourCanvas to see how different finishes and tones would look against your home.",
+    targetKeywords: ["poured concrete driveway", "concrete driveway ideas", "dark concrete driveway"],
+    pillar: "driveway",
+    ctaHeadline: "See it on your driveway",
+    ctaBody: "Upload a photo of your driveway and see what a poured concrete finish could look like in your space.",
+    additionalImages: [
+      { url: "https://images.pourcanvas.com/premium-slab-030.jpg", alt: "Light grey raw poured concrete double driveway, ranch-style home, dappled morning shade" },
+      { url: "https://images.pourcanvas.com/premium-slab-036.jpg", alt: "Near-black raw poured concrete driveway, grey fibre cement bungalow, Toyota RAV4, midday sun" },
+      { url: "https://images.pourcanvas.com/premium-slab-040.jpg", alt: "Near-black raw poured concrete driveway, white rendered bungalow, Toyota RAV4, late afternoon shadows" },
+      { url: "https://images.pourcanvas.com/premium-slab-041.jpg", alt: "Light grey polished poured concrete double driveway, grey bungalow, Honda CR-V, golden hour" },
+      { url: "https://images.pourcanvas.com/premium-slab-047.jpg", alt: "Light grey polished poured concrete driveway, minimalist board-formed home, oblique camera angle" },
+      { url: "https://images.pourcanvas.com/premium-slab-050.jpg", alt: "Light grey broom poured concrete driveway, white flat-roof home with glazing, white sedan, morning" },
+      { url: "https://images.pourcanvas.com/premium-slab-053.jpg", alt: "Near-black polished poured concrete driveway, cantilevered bungalow with black steel frames, RAV4, midday" },
+    ],
+  },
+  {
+    slug: "poured-concrete-paths",
+    title: "Poured Concrete Path and Walkway Ideas | PourCanvas",
+    headline: "Poured Concrete Paths",
+    metaDescription:
+      "Poured concrete path and entry walkway ideas — front paths, side entries, and covered porches in charcoal, near-black, and light grey finishes.",
+    ogImage: "https://images.pourcanvas.com/premium-slab-033.jpg",
+    heroAlt:
+      "Light grey broom-finish poured concrete front porch with step down, cedar-clad home, late afternoon light",
+    dominantColor: "#87857c",
+    contentBlock:
+      "A poured concrete path connects street to door in one clean gesture. The surface is continuous — no joints between individual units, no shifting over time — and it takes the same finish as your driveway or patio if you want a consistent material language across the property.\n\nFor front paths and entry walkways, a broom finish in light grey is the safe, practical choice. Near-black or charcoal with a low polish reads more considered — especially against dark fibre cement, board-formed concrete, or Corten steel facades.\n\nSide-yard paths and covered entry porches follow the same logic. Under cover, a polished finish holds up well without weathering unevenly. Exposed paths benefit from a broom or raw trowel finish for grip in wet conditions.\n\nNarrow paths (900mm–1.2m) typically cost $5–10/sq ft poured. A wider front entry or covered porch pours at the same rate but often requires additional forming work, adding $2–4/sq ft.\n\nSee what a poured concrete path would look like leading to your front door — upload a photo of your entry on PourCanvas.",
+    targetKeywords: ["poured concrete path", "concrete entry walkway", "concrete front path ideas"],
+    pillar: "walkway",
+    ctaHeadline: "See it at your entry",
+    ctaBody: "Upload a photo of your front path or entry and see what poured concrete could look like in your space.",
+    additionalImages: [
+      { url: "https://images.pourcanvas.com/premium-slab-034.jpg", alt: "Light grey raw poured concrete side-entry path, ranch-style home, native grasses, golden hour" },
+      { url: "https://images.pourcanvas.com/premium-slab-035.jpg", alt: "Near-black broom poured concrete covered entry porch, flat-roof concrete-timber home, blue-sky morning" },
+      { url: "https://images.pourcanvas.com/premium-slab-037.jpg", alt: "Light grey polished poured concrete front path, Corten steel and render home, clear morning sun" },
+      { url: "https://images.pourcanvas.com/premium-slab-038.jpg", alt: "Charcoal polished poured concrete entry porch, white flat-roof home with floor-to-ceiling glazing, morning" },
+      { url: "https://images.pourcanvas.com/premium-slab-039.jpg", alt: "Charcoal raw poured concrete covered entry porch, dark timber board-clad home, late afternoon shadows" },
+      { url: "https://images.pourcanvas.com/premium-slab-042.jpg", alt: "Light grey raw poured concrete open front stoop, white rendered bungalow, late afternoon" },
+      { url: "https://images.pourcanvas.com/premium-slab-044.jpg", alt: "Light grey polished poured concrete front stoop, flat-roof concrete-and-timber home, morning sun" },
+      { url: "https://images.pourcanvas.com/premium-slab-045.jpg", alt: "Near-black polished poured concrete side path, Corten steel home, 3/4 angle, midday sun" },
+      { url: "https://images.pourcanvas.com/premium-slab-046.jpg", alt: "Near-black raw poured concrete side-entry path, white rendered bungalow, box hedges, afternoon light" },
+      { url: "https://images.pourcanvas.com/premium-slab-048.jpg", alt: "Near-black polished poured concrete side path, minimalist board-formed home, late afternoon" },
+      { url: "https://images.pourcanvas.com/premium-slab-051.jpg", alt: "Near-black polished poured concrete side-entry path, dark timber home, native grasses, golden hour" },
+      { url: "https://images.pourcanvas.com/premium-slab-052.jpg", alt: "Charcoal polished poured concrete front path, board-formed minimalist home, 3/4 angle, midday" },
+      { url: "https://images.pourcanvas.com/premium-slab-054.jpg", alt: "Near-black polished poured concrete side path, white flat-roof home with glazing, oblique angle, afternoon" },
+    ],
+  },
 ];
