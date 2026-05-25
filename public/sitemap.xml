@@ -196,6 +196,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://pourcanvas.com/blog/patio/stamped-concrete-vs-pavers</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/blog/patio/stained-concrete-patio-ideas</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://pourcanvas.com/blog/walkway</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -267,6 +279,16 @@
   </url>
   <url>
     <loc>https://pourcanvas.com/guides/concrete-driveway</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/guides/concrete-patio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pourcanvas.com/guides/concrete-walkway</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

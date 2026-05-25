@@ -13,6 +13,8 @@ import PillarLandingPage from "./pages/PillarLandingPage";
 import MaterialsHub from "./pages/materials/MaterialsHub";
 import MaterialPage from "./pages/materials/MaterialPage";
 import ConcreteDrivewayGuide from "./pages/guides/ConcreteDrivewayGuide";
+import ConcretePatioGuide from "./pages/guides/ConcretePatioGuide";
+import ConcreteWalkwayGuide from "./pages/guides/ConcreteWalkwayGuide";
 import { allArticles, inspirationPages, beforeAfterPages, palettePages, allMaterialPages } from "./content";
 
 export const routes: RouteObject[] = [
@@ -31,6 +33,8 @@ export const routes: RouteObject[] = [
       { path: "before-after/:slug", element: <BeforeAfterPage /> },
       { path: "palette/:slug", element: <PalettePage /> },
       { path: "guides/concrete-driveway", element: <ConcreteDrivewayGuide /> },
+      { path: "guides/concrete-patio", element: <ConcretePatioGuide /> },
+      { path: "guides/concrete-walkway", element: <ConcreteWalkwayGuide /> },
       { path: "materials", element: <MaterialsHub /> },
       { path: "materials/:slug", element: <MaterialPage /> },
       { path: "*", element: <NotFound /> },
@@ -48,6 +52,8 @@ export const staticPaths = [
   "/blog/driveway",
   "/blog/walkway",
   "/guides/concrete-driveway",
+  "/guides/concrete-patio",
+  "/guides/concrete-walkway",
   "/materials",
 ];
 
