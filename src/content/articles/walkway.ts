@@ -74,15 +74,30 @@ export const walkwayArticles: Article[] = [
     headline: "Flagstone vs Concrete Walkway: An Honest Comparison",
     metaDescription:
       "Flagstone vs concrete walkway: natural stone costs $25–45/sq ft vs. stamped concrete at $12–18/sq ft. Full comparison of cost, durability, and maintenance.",
-    targetKeywords: ["flagstone vs concrete walkway", "walkway materials comparison"],
+    targetKeywords: ["flagstone vs concrete walkway", "flagstone vs concrete patio", "flagstone walkway cost", "walkway materials comparison"],
     ogImage: "https://images.pourcanvas.com/walkway-flagstone-vs-concrete.jpg",
     publishedAt: "2026-03-31",
+    updatedAt: "2026-05-25",
     intro:
       "Natural flagstone walkways cost $25–45 per sq ft installed. Stamped concrete mimicking the same look runs $12–18 per sq ft. On a 150 sq ft front walkway, that's a $2,000–4,000 difference. Both materials are legitimate choices — the right one depends on your budget, climate, and how much you care about long-term repairability. This comparison cuts through the landscaping marketing to give you a straight answer. The same cost and performance logic applies when comparing flagstone to concrete on a patio or driveway.",
     sections: [
       {
         heading: "Cost Comparison",
         body: "Natural flagstone walkways run $25–45 per sq ft installed. A stamped concrete walkway mimicking the same look costs $12–18 per sq ft. On a 150 sq ft front walkway, that's a $2,000–4,000 difference. Stamped concrete wins on cost for every project size — the gap doesn't narrow at scale.",
+      },
+      {
+        heading: "Flagstone vs Concrete: Full Comparison",
+        body: `<p>Side-by-side comparison across the factors that matter most for a walkway decision.</p>
+<table>
+<tr><th>Factor</th><th>Natural Flagstone</th><th>Stamped Concrete</th><th>Plain Broom-Finish Concrete</th></tr>
+<tr><td>Cost per sq ft</td><td>$25–45</td><td>$12–18</td><td>$6–10</td></tr>
+<tr><td>Lifespan</td><td>25–40 years</td><td>25–40 years</td><td>30–50 years</td></tr>
+<tr><td>Annual maintenance cost</td><td>$150–300 (joint sand, re-leveling)</td><td>$50–150 (resealing)</td><td>$30–80 (resealing)</td></tr>
+<tr><td>Freeze-thaw performance</td><td>Fair — joints crack, stones can fissure</td><td>Good — with air-entrainment</td><td>Good — with air-entrainment</td></tr>
+<tr><td>Repair ease</td><td>Good — replace individual stones</td><td>Poor — color match is difficult</td><td>Fair — less visible on plain surface</td></tr>
+<tr><td>Visual authenticity</td><td>High — natural texture and variation</td><td>Medium — convincing from street distance</td><td>Low — utilitarian look</td></tr>
+<tr><td>Slip resistance when wet</td><td>Good — natural texture</td><td>Good — depends on stamp depth</td><td>Good — broom lines provide grip</td></tr>
+</table>`,
       },
       {
         heading: "Maintenance Over Time",
@@ -121,8 +136,8 @@ export const walkwayArticles: Article[] = [
         body: "Properties that mix flagstone and concrete — for example, a concrete driveway with a flagstone front walkway — need a well-designed transition joint at the point where the two materials meet. Without it, the different expansion rates of stone and concrete create stress cracking at the junction within 5–10 years. A properly specified expansion joint filled with a flexible backer rod and polyurethane caulk allows the two materials to move independently. This detail is often omitted on contractor bids — ask specifically about the transition joint treatment if you're mixing materials on the same project.",
       },
     ],
-    relatedSlugs: ["front-walkway-ideas", "concrete-walkway-cost"],
-    relatedMaterials: ["flagstone"],
+    relatedSlugs: ["front-walkway-ideas", "concrete-walkway-cost", "curved-walkway-ideas"],
+    relatedMaterials: ["flagstone", "stamped-concrete"],
     faqs: [
       {
         question: "Is flagstone or concrete cheaper for a walkway?",
@@ -135,6 +150,14 @@ export const walkwayArticles: Article[] = [
       {
         question: "Does stamped concrete look as good as real flagstone?",
         answer: "From street-view distance, well-executed stamped concrete is nearly indistinguishable from natural flagstone. Up close, there's a texture depth and material authenticity to real stone that stamping doesn't fully replicate. The visual difference matters most for high-end properties — at average home price points, the cost savings of stamped concrete outweigh the authenticity gap.",
+      },
+      {
+        question: "Is flagstone cheaper than pavers?",
+        answer: "No — natural flagstone is typically more expensive than concrete pavers. Flagstone walkways cost $25–45 per sq ft installed; concrete pavers run $10–25 per sq ft depending on the product and pattern. The price gap reflects both higher material costs (flagstone is quarried natural stone) and more labor-intensive installation. Concrete pavers are the mid-price option between plain poured concrete ($6–10/sq ft) and natural flagstone.",
+      },
+      {
+        question: "How much does flagstone cost per square foot?",
+        answer: "Natural flagstone costs $25–45 per sq ft installed for a walkway. Material alone runs $5–15 per sq ft depending on stone type and regional availability — Pennsylvania bluestone and Arizona flagstone are at the lower end, while premium irregular-cut sandstone or quartzite pushes toward the high end. Installation labor ($15–30/sq ft) accounts for most of the total because each stone is uniquely shaped and requires individual fitting.",
       },
     ],
   },

@@ -1,4 +1,4 @@
-import { readdirSync, writeFileSync } from "fs";
+import { readdirSync, readFileSync, writeFileSync } from "fs";
 import { join, relative } from "path";
 
 const BASE_URL = "https://pourcanvas.com";
@@ -35,12 +35,21 @@ function changefreq(url) {
   return depth <= 1 ? "weekly" : "monthly";
 }
 
-const urls = collectHtmlFiles(DIST_DIR).map(htmlToUrl).sort();
+function extractLastmod(filePath) {
+  const html = readFileSync(filePath, "utf-8");
+  const match = html.match(/<meta[^>]*property="article:modified_time"[^>]*content="([^"]+)"/);
+  return match ? match[1] : null;
+}
 
-const entries = urls
+const files = collectHtmlFiles(DIST_DIR);
+const urlData = files
+  .map((f) => ({ url: htmlToUrl(f), lastmod: extractLastmod(f) }))
+  .sort((a, b) => a.url.localeCompare(b.url));
+
+const entries = urlData
   .map(
-    (url) => `  <url>
-    <loc>${BASE_URL}${url}</loc>
+    ({ url, lastmod }) => `  <url>
+    <loc>${BASE_URL}${url}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ""}
     <changefreq>${changefreq(url)}</changefreq>
     <priority>${priority(url)}</priority>
   </url>`
@@ -56,4 +65,4 @@ ${entries}
 writeFileSync(join(DIST_DIR, "sitemap.xml"), xml);
 writeFileSync("public/sitemap.xml", xml);
 
-console.log(`[sitemap] ${urls.length} URLs written to dist/sitemap.xml`);
+console.log(`[sitemap] ${urlData.length} URLs written to dist/sitemap.xml`);

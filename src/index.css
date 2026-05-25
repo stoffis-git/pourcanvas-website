@@ -137,6 +137,25 @@
   .badge-lavender { color: #9b7bd9; background: #bba2eb33; }
 }
 
+.prose-table table {
+  @apply w-full border-collapse text-sm my-4;
+}
+.prose-table th {
+  @apply text-left font-semibold px-3 py-2 border-b border-border bg-card text-foreground;
+}
+.prose-table td {
+  @apply px-3 py-2 border-b border-border/40 text-foreground/80;
+}
+.prose-table tr:last-child td {
+  @apply border-b-0;
+}
+.prose-table p {
+  @apply mb-4;
+}
+.prose-table p:last-child {
+  @apply mb-0;
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   33%       { transform: translateY(-15px) rotate(2deg); }

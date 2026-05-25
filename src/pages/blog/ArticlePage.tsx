@@ -37,8 +37,14 @@ const ArticlePage = () => {
         ogType="article"
         canonical={`/blog/${article.pillar}/${article.slug}`}
         publishedAt={article.publishedAt}
+        updatedAt={article.updatedAt}
         keywords={article.targetKeywords}
         faqs={article.faqs}
+        breadcrumbs={[
+          { name: "Blog", url: "/blog" },
+          { name: article.pillar.charAt(0).toUpperCase() + article.pillar.slice(1), url: `/blog/${article.pillar}` },
+          { name: article.headline, url: `/blog/${article.pillar}/${article.slug}` },
+        ]}
       />
       <Header />
       <main className="max-w-3xl mx-auto px-5 py-28 md:py-36">
@@ -64,7 +70,9 @@ const ArticlePage = () => {
         </h1>
 
         <p className="text-xs font-body text-muted-foreground mb-8">
-          {new Date(article.publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+          {article.updatedAt
+            ? `Updated ${new Date(article.updatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`
+            : new Date(article.publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
         </p>
 
         <p className="text-base md:text-lg font-body text-foreground/80 leading-relaxed mb-10">
@@ -78,7 +86,7 @@ const ArticlePage = () => {
                 <h2 className="text-xl md:text-2xl font-display font-bold text-foreground mb-3">
                   {section.heading}
                 </h2>
-                <p className="font-body text-foreground/80 leading-relaxed">{section.body}</p>
+                <div className="font-body text-foreground/80 leading-relaxed prose-table" dangerouslySetInnerHTML={{ __html: section.body }} />
                 {section.image && (
                   <img
                     src={section.image}

@@ -3,6 +3,11 @@ import type { FAQ } from "@/content/types";
 
 const SITE_URL = "https://pourcanvas.com";
 
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
 interface SeoHeadProps {
   title: string;
   description: string;
@@ -10,8 +15,10 @@ interface SeoHeadProps {
   ogType?: "article" | "website";
   canonical?: string;
   publishedAt?: string;
+  updatedAt?: string;
   keywords?: string[];
   faqs?: FAQ[];
+  breadcrumbs?: BreadcrumbItem[];
 }
 
 export const SeoHead = ({
@@ -21,8 +28,10 @@ export const SeoHead = ({
   ogType = "website",
   canonical,
   publishedAt,
+  updatedAt,
   keywords,
   faqs,
+  breadcrumbs,
 }: SeoHeadProps) => {
   const absoluteImage = ogImage
     ? (ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`)
@@ -45,6 +54,36 @@ export const SeoHead = ({
         })
       : null;
 
+  const articleSchema =
+    ogType === "article"
+      ? JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: title,
+          description,
+          ...(absoluteCanonical && { url: absoluteCanonical }),
+          ...(absoluteImage && { image: absoluteImage }),
+          ...(publishedAt && { datePublished: publishedAt }),
+          dateModified: updatedAt ?? publishedAt ?? new Date().toISOString().split("T")[0],
+          author: { "@type": "Organization", name: "PourCanvas" },
+          publisher: { "@type": "Organization", name: "PourCanvas" },
+        })
+      : null;
+
+  const breadcrumbSchema =
+    breadcrumbs && breadcrumbs.length > 0
+      ? JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumbs.map((item, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: item.name,
+            item: `${SITE_URL}${item.url}`,
+          })),
+        })
+      : null;
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -58,9 +97,18 @@ export const SeoHead = ({
       <meta name="twitter:card" content="summary_large_image" />
       {absoluteImage && <meta name="twitter:image" content={absoluteImage} />}
       {publishedAt && <meta property="article:published_time" content={publishedAt} />}
+      {(updatedAt ?? publishedAt) && (
+        <meta property="article:modified_time" content={updatedAt ?? publishedAt!} />
+      )}
       {keywords?.length && <meta name="keywords" content={keywords.join(", ")} />}
       {faqSchema && (
         <script type="application/ld+json">{faqSchema}</script>
+      )}
+      {articleSchema && (
+        <script type="application/ld+json">{articleSchema}</script>
+      )}
+      {breadcrumbSchema && (
+        <script type="application/ld+json">{breadcrumbSchema}</script>
       )}
     </Helmet>
   );

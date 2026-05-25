@@ -35,6 +35,7 @@ export interface MaterialPage {
   targetKeywords: string[];
   ogImage: string;
   publishedAt: string;
+  updatedAt?: string;
   intro: string;
   sections: ArticleSection[];
   prosAndCons?: MaterialProCon;
@@ -59,6 +60,7 @@ export interface Article {
   targetKeywords: string[];
   ogImage: string;
   publishedAt: string;
+  updatedAt?: string;
   intro: string;
   sections: ArticleSection[];
   relatedSlugs?: string[];

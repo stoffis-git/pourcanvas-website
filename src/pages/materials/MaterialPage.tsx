@@ -27,8 +27,13 @@ const MaterialPage = () => {
         ogType="article"
         canonical={`/materials/${material.slug}`}
         publishedAt={material.publishedAt}
+        updatedAt={material.updatedAt}
         keywords={material.targetKeywords}
         faqs={material.faqs}
+        breadcrumbs={[
+          { name: "Materials", url: "/materials" },
+          { name: material.headline, url: `/materials/${material.slug}` },
+        ]}
       />
       <Header />
       <main className="max-w-3xl mx-auto px-5 py-28 md:py-36">
@@ -41,7 +46,9 @@ const MaterialPage = () => {
         </h1>
 
         <p className="text-xs font-body text-muted-foreground mb-8">
-          {new Date(material.publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+          {material.updatedAt
+            ? `Updated ${new Date(material.updatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`
+            : new Date(material.publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
         </p>
 
         <p className="text-base md:text-lg font-body text-foreground/80 leading-relaxed mb-10">
@@ -57,7 +64,7 @@ const MaterialPage = () => {
                 <h2 className="text-xl md:text-2xl font-display font-bold text-foreground mb-3">
                   {section.heading}
                 </h2>
-                <p className="font-body text-foreground/80 leading-relaxed">{section.body}</p>
+                <div className="font-body text-foreground/80 leading-relaxed prose-table" dangerouslySetInnerHTML={{ __html: section.body }} />
               </div>
               {i === midpoint - 1 && (
                 <ToolWaitlistBlock source="tool-waitlist-material" />

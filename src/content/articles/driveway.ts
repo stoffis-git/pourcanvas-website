@@ -350,13 +350,14 @@ export const drivewayArticles: Article[] = [
   {
     slug: "modern-driveway-ideas",
     pillar: "driveway",
-    title: "Modern Driveway Ideas: What's Working in 2026",
-    headline: "Modern Concrete Driveway Designs for 2026",
+    title: "Driveway Design Ideas for 2026: 10 Modern Looks That Work",
+    headline: "Driveway Design Ideas for 2026",
     metaDescription:
-      "Modern driveway ideas in 2026: charcoal integral color, scored borders, and dark exposed aggregate. 10 approaches from $6–20/sq ft with real cost ranges.",
-    targetKeywords: ["modern driveway ideas", "contemporary driveway design", "modern concrete driveway"],
+      "Driveway design ideas for 2026: charcoal integral color, scored borders, dark exposed aggregate. 10 concrete approaches from $6–20/sq ft with real cost ranges.",
+    targetKeywords: ["driveway design ideas", "driveway design ideas 2026", "modern driveway ideas", "driveway ideas 2026", "contemporary driveway design", "modern concrete driveway"],
     ogImage: "https://images.pourcanvas.com/driveway-modern-ideas.jpg",
     publishedAt: "2026-03-27",
+    updatedAt: "2026-05-25",
     intro:
       "Modern concrete driveways in 2026 rely on three elements: clean geometry, intentional color, and edge definition. The cost range is wide — a charcoal-washed broom-finish driveway with scored border details runs $6–12 per sq ft, while a fully stamped modern design runs $14–20. The look that's resonating most right now is restraint: wide, dark surfaces with minimal decoration and crisp edge lines. These 10 ideas cover the full range from budget to premium. For reference, the same modern sensibility that's working on driveways in 2026 is equally effective on front walkways and patios.",
     sections: [
@@ -397,11 +398,29 @@ export const drivewayArticles: Article[] = [
         body: "The driveway is the first hardscape element visible from the street — it establishes the exterior's design vocabulary before a visitor reaches the front door. A modern charcoal driveway signals clean, contemporary design; a cobblestone-stamped driveway in warm earth tones signals traditional or craftsman sensibility. Both are legitimate — but a mismatched combination (modern home with a fussy cobblestone driveway, or a traditional colonial with a stark dark-grey minimal slab) creates visual dissonance. Survey your home's exterior style before selecting a driveway finish. If you're also choosing a front walkway finish, the driveway leads and the walkway follows — same material direction, slightly more refined execution.",
       },
       {
+        heading: "Driveway Design Ideas at a Glance: Cost and Style Comparison",
+        body: `<p>Quick reference for the 10 approaches covered in this guide — cost per square foot, style category, and relative maintenance commitment.</p>
+<table>
+<tr><th>Design</th><th>Cost/sq ft</th><th>Style</th><th>Maintenance</th></tr>
+<tr><td>Charcoal broom finish + scored border</td><td>$6–12</td><td>Clean modern</td><td>Low</td></tr>
+<tr><td>Dark integral color (charcoal/graphite)</td><td>$8–12</td><td>Bold modern</td><td>Low–Medium</td></tr>
+<tr><td>Dark exposed aggregate</td><td>$8–14</td><td>Textured modern</td><td>Medium</td></tr>
+<tr><td>Two-tone border + field contrast</td><td>$10–16</td><td>Architectural</td><td>Low–Medium</td></tr>
+<tr><td>Linear plank stamp</td><td>$14–20</td><td>Contemporary</td><td>Medium</td></tr>
+<tr><td>Large-format ashlar stamp</td><td>$14–20</td><td>Transitional</td><td>Medium</td></tr>
+<tr><td>Grid scoring + contrasting border</td><td>$10–14</td><td>Geometric</td><td>Low</td></tr>
+<tr><td>Monolithic dark slab (flush to garage)</td><td>$8–12</td><td>Minimal</td><td>Low</td></tr>
+<tr><td>Charcoal + white garage high-contrast</td><td>$8–12</td><td>Statement</td><td>Low–Medium</td></tr>
+<tr><td>Full dark exterior (driveway + garage)</td><td>$8–14</td><td>Monolithic</td><td>Medium</td></tr>
+</table>`,
+      },
+      {
         heading: "Modern Driveway Landscaping: What Completes the Look",
         body: "A modern concrete driveway reads most effectively with landscaping that reinforces its design language. Low-maintenance gravel or decomposed granite borders (6–12 inches wide along the edges) complement a clean dark surface without competing. Ornamental grasses, low boxwood hedges, and architectural plants suit contemporary driveways — avoid busy mixed-color planting beds that fragment the visual line. Landscape lighting along the driveway edge (path lights at 8-foot intervals, $30–80 per fixture) extends the modern exterior into the evening. For front walkways and patios, the same landscape restraint applies — a designed concrete surface benefits from planting that frames it rather than clutters it.",
       },
     ],
-    relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
+    relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost", "black-concrete-driveway"],
+    relatedMaterials: ["exposed-aggregate", "broom-finish", "colored-concrete", "stamped-concrete"],
     faqs: [
       {
         question: "What makes a driveway look modern in 2026?",
@@ -493,9 +512,10 @@ export const drivewayArticles: Article[] = [
     title: "Black Concrete Driveway: Cost, Pros, Cons & Real Results",
     headline: "Black Concrete Driveway: What to Expect Before You Commit",
     metaDescription: "Black concrete driveways cost $6–12/sq ft and look striking — but heat absorption and fade are real concerns. Here's the full picture for 2026.",
-    targetKeywords: ["black concrete driveway", "dark concrete driveway", "black driveway ideas"],
+    targetKeywords: ["black concrete driveway", "dark concrete driveway", "black driveway ideas", "black stained concrete driveway", "charcoal concrete driveway"],
     ogImage: "https://images.pourcanvas.com/driveway-black-concrete.jpg",
     publishedAt: "2026-03-27",
+    updatedAt: "2026-05-25",
     intro:
       "A black integrally colored concrete driveway costs $6–12 per sq ft installed — $2–4 per sq ft above plain grey concrete for the pigment. On a 500 sq ft two-car driveway, that's $3,000–6,000. The look is bold and increasingly popular, but it comes with real practical tradeoffs around heat absorption, fading, and sealer maintenance that most contractors don't volunteer upfront. Here's what you actually need to know before committing. If you're also planning a front walkway, the same dark-pigment considerations apply.",
     sections: [
@@ -525,10 +545,19 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Comparing Black Concrete to Other Dark Driveway Options",
-        body: "Three ways to achieve a dark driveway: black integrally colored concrete ($6–12/sq ft), dark charcoal stamped concrete ($14–20/sq ft), and standard asphalt ($3–6/sq ft fresh, fades over time). Black integral concrete is the most design-intentional option — the color is consistent, goes all the way through, and stays dark with proper sealing. Dark stamped concrete adds pattern to the dark tone and suits homes where the decorative detail is part of the design intent. Asphalt is the default dark option, but its inconsistent color maintenance (dark when freshly sealed, faded grey when not) makes it a poor substitute for a genuinely designed dark surface. Use PourCanvas to preview how charcoal and true black concrete compare on your specific driveway before finalizing the pigment specification.",
+        body: `<p>Three ways to achieve a dark driveway: black integrally colored concrete ($6–12/sq ft), dark charcoal stamped concrete ($14–20/sq ft), and standard asphalt ($3–6/sq ft fresh, fades over time). Black integral concrete is the most design-intentional option — the color is consistent, goes all the way through, and stays dark with proper sealing. Dark stamped concrete adds pattern to the dark tone and suits homes where the decorative detail is part of the design intent. Asphalt is the default dark option, but its inconsistent color maintenance (dark when freshly sealed, faded grey when not) makes it a poor substitute for a genuinely designed dark surface. Use PourCanvas to preview how charcoal and true black concrete compare on your specific driveway before finalizing the pigment specification.</p>
+<table>
+<tr><th>Option</th><th>Cost/sq ft</th><th>Heat Absorption</th><th>Fade Rate</th><th>Maintenance</th></tr>
+<tr><td>Black integral concrete</td><td>$6–12</td><td>High (140–160°F)</td><td>Moderate with sealer</td><td>Reseal every 3–5 years</td></tr>
+<tr><td>Charcoal integral concrete</td><td>$6–12</td><td>Moderate-High</td><td>Low — fades gracefully</td><td>Reseal every 3–5 years</td></tr>
+<tr><td>Standard grey concrete</td><td>$4–8</td><td>Low (110–120°F)</td><td>Minimal</td><td>Reseal every 5–10 years</td></tr>
+<tr><td>Dark stamped concrete</td><td>$14–20</td><td>Moderate-High</td><td>Moderate</td><td>Reseal every 2–3 years</td></tr>
+<tr><td>Fresh asphalt</td><td>$3–6</td><td>High</td><td>High — fades to grey in 2–3 years</td><td>Seal coat every 3–5 years</td></tr>
+</table>`,
       },
     ],
-    relatedSlugs: ["modern-driveway-ideas", "concrete-driveway-cost"],
+    relatedSlugs: ["modern-driveway-ideas", "concrete-driveway-cost", "concrete-driveway-color-guide"],
+    relatedMaterials: ["colored-concrete", "exposed-aggregate"],
     faqs: [
       {
         question: "How much does a black concrete driveway cost?",
@@ -541,6 +570,14 @@ export const drivewayArticles: Article[] = [
       {
         question: "Is black concrete hotter than regular concrete?",
         answer: "Yes. Dark concrete absorbs more solar radiation — a black driveway can reach 140–160°F in direct afternoon sun on a 90°F day, versus 110–120°F for a light grey surface. In hot climates (zones 8–11), this is a real consideration. In northern climates, the heat absorption has minimal impact in summer and a slight advantage for winter ice melt. A deep charcoal rather than true black, combined with a UV-reflective penetrating sealer, reduces surface temperatures by 10–15°F.",
+      },
+      {
+        question: "Can you stain a concrete driveway black?",
+        answer: "Surface stain can darken a concrete driveway, but it's not the right method for driveways. Stains ($1–3/sq ft applied) sit on the surface and wear off under vehicle traffic within 2–4 years — tires, turning, and weather strip the color unevenly. Integral pigment mixed into the pour runs through the full slab depth and holds up to driveway conditions. If you're starting fresh, specify integral color. If you have an existing grey driveway, a penetrating reactive stain (acid stain) holds better than a film-forming stain, but it won't reach true black — expect a dark brown or charcoal tone.",
+      },
+      {
+        question: "What is the best shade of dark concrete for a driveway?",
+        answer: "Charcoal or graphite integral color is the most practical dark tone. True maximum-black pigment loading produces the most striking initial result but fades unevenly to a brownish-grey within 3–5 years without diligent sealer maintenance. Charcoal reads as nearly black from the street, fades more uniformly, and requires the same sealer schedule. Most experienced contractors recommend charcoal over true black for driveways — it delivers 90% of the visual impact with significantly less maintenance risk.",
       },
     ],
   },
