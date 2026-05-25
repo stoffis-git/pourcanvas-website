@@ -17,18 +17,22 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Cobblestone: The Most Popular Driveway Pattern",
         body: "Cobblestone stamping is the most popular driveway choice — it evokes an upscale European look while the sealed surface handles oil stains and freeze-thaw cycles much better than actual cobblestone. An aged-iron or charcoal color wash in a cobblestone stamp is the single most resale-effective driveway finish available. Expect the upper end of the $12–20/sq ft range for cobblestone work due to the detail in the stamps.",
+        inspirationSlugs: ["stamped-concrete-driveway-cobblestone", "cobblestone-driveway-border"],
       },
       {
         heading: "Ashlar Slate",
         body: "Ashlar slate patterns work particularly well on longer driveways where you want visual interest without the repetition becoming monotonous. Vary the color wash slightly between sections to add depth. Ashlar slate sits in the middle of the cost range — typically $13–17/sq ft — because the stamp is straightforward for experienced crews to work quickly. A medium grey or charcoal color wash suits contemporary homes; warm buff suits traditional and colonial exteriors.",
+        inspirationSlugs: ["stamped-concrete-driveway-ashlar-slate"],
       },
       {
         heading: "Brick Running Bond",
         body: "Running bond brick is the approachable choice — familiar, timeless, and compatible with nearly every house style. It's also one of the easier patterns for contractors to stamp consistently at scale, which keeps quotes at the lower end of the range — typically $12–15/sq ft. A warm buff or sandstone tone pairs well with traditional and craftsman exteriors; charcoal running bond suits modern homes. It's also a natural complement to a herringbone-brick patio if you want visual continuity across the property.",
+        inspirationSlugs: ["herringbone-brick-driveway"],
       },
       {
         heading: "Exposed Aggregate Borders",
         body: "Consider a smooth or lightly textured stamped field with exposed aggregate borders. This two-finish approach adds visual definition and is easier to maintain since the border can be refinished independently. It's also a cost strategy: stamped borders with a plain field run $8–14/sq ft versus $12–20 for a fully stamped surface. Tools like PourCanvas let you preview border-versus-full-stamp layouts on your actual driveway before committing. The same border approach works on a front walkway at a lower per-linear-foot cost than full stamping.",
+        inspirationSlugs: ["exposed-aggregate-driveway-grey", "exposed-aggregate-driveway-tan"],
       },
       {
         heading: "What to Ask Your Contractor",
@@ -45,6 +49,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Connecting Driveway Design to Front Walkway and Patio",
         body: "A stamped driveway that connects visually to the front walkway and patio creates a cohesive exterior that reads as intentional rather than assembled piecemeal. The most effective approach: use the same stamp pattern or pattern family across all three surfaces, and keep the color direction consistent. On a cobblestone-stamped driveway, a cobblestone-stamped front walkway or entry steps in a matching color wash creates strong visual continuity. The exact surface color will vary slightly between pours — concrete batches are never identical — but tonal harmony is achievable and is what most buyers and visitors register. Plan all three surfaces together before calling any contractor; the bundled quote will also typically save 10–15% over three separate contracts.",
+        inspirationSlugs: ["stamped-concrete-driveway-cream"],
       },
       {
         heading: "Stamped Driveway Resale Value",
@@ -84,14 +89,17 @@ export const drivewayArticles: Article[] = [
       {
         heading: "What It Is",
         body: "Exposed aggregate concrete is poured normally, then the surface paste is washed away before it cures to reveal the decorative stone below. The aggregate (stone type and size) can be specified for color and texture. Pea gravel gives a fine, uniform texture; river stone and recycled glass offer more color variation. The process requires precise timing — the surface must be pressure-washed during a narrow window after the pour, before the concrete hardens enough to resist aggregate exposure.",
+        inspirationSlugs: ["exposed-aggregate-driveway-grey", "exposed-aggregate-driveway-tan"],
       },
       {
         heading: "Exposed Aggregate vs. Stamped Concrete: Which to Choose",
         body: "Stamped concrete ($12–20/sq ft) wins on visual impact and design variety — if a specific look is the goal, stamped gives more options. Exposed aggregate ($8–14/sq ft) wins on durability, traction, and low maintenance. Choose stamped if you want a specific visual outcome. Choose exposed aggregate if you want a surface that handles weather and vehicle traffic with minimal fuss and ages gracefully without requiring color upkeep. On driveways specifically, exposed aggregate's durability advantage over stamped is more significant than it is on patios.",
+        inspirationSlugs: ["stamped-concrete-driveway-ashlar-slate"],
       },
       {
         heading: "Pros",
         body: "Excellent slip resistance — far better than smooth concrete, and comparable to broom finish without the directional texture. Hides tire marks and surface imperfections well. Stands up to freeze-thaw cycles well when properly sealed. The pea gravel or river stone look is genuinely attractive without requiring the color maintenance that stamped finishes demand. And unlike stamped concrete, exposed aggregate improves with light wear — the aggregate polishes subtly over time.",
+        inspirationSlugs: ["exposed-aggregate-driveway-grey-contemporary"],
       },
       {
         heading: "Cons",
@@ -100,6 +108,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Aggregate Type and Color: The Most Important Specification",
         body: "The aggregate mix choice is the single most consequential decision in an exposed aggregate driveway — more than the concrete base color or the sealer. Pea gravel (3/8\" round stones) gives a fine, uniform texture that reads as contemporary and suits modern homes. River stone (mixed sizes, 1/4\"–3/4\") gives more visual variation with a naturalistic feel. Crushed granite in a consistent color is the premium option for a clean, designed look. Aggregate color determines how the driveway reads from the street: warm tan-buff aggregate looks traditional and organic; grey-white aggregate reads as modern and clean; charcoal basalt gives a bold, urban look. Specify the aggregate type and source material in your contract — \"exposed aggregate\" without a specification leaves the contractor to choose the cheapest available mix, which may not match your intent.",
+        inspirationSlugs: ["white-exposed-aggregate-driveway", "exposed-aggregate-driveway-tan"],
       },
       {
         heading: "Sealing Exposed Aggregate: Do It Right",
@@ -108,6 +117,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Exposed Aggregate Driveway vs. Patio vs. Walkway",
         body: "Exposed aggregate is one of the few finishes that works equally well on all three surfaces — driveway, patio, and walkway. The traction advantage makes it particularly suitable for the front walkway (wet from rain, morning dew) and pool deck adjacent areas. On a driveway, the texture hides tire marks and surface wear more effectively than any smooth finish. On a patio, it stays cooler underfoot in direct sun than dark stamped surfaces and ages without the color maintenance that stamped finishes require. If you're planning all three surfaces, exposed aggregate in a consistent aggregate color across all three is the most maintenance-efficient approach — one sealer product, one maintenance schedule, zero color-matching headaches.",
+        inspirationSlugs: ["exposed-aggregate-patio-charcoal"],
       },
       {
         heading: "Cost Comparison: Exposed Aggregate vs. Other Driveway Finishes",
@@ -116,6 +126,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Front Walkway in Exposed Aggregate: Extending the Look",
         body: "If you're choosing exposed aggregate for the driveway, extending the same finish to the front walkway creates a strongly cohesive exterior. The aggregate species and color should match between surfaces — specifying from the same supplier and the same aggregate batch is the most reliable way to achieve this. Where some variation is acceptable on a large driveway, the walkway is viewed at close range by every visitor and scrutinized more carefully. A pea gravel aggregate walkway in the same warmth direction as the driveway aggregate ties both surfaces together without being matchy-matchy. The patio can use a slightly different finish — a complementary stamped or stained surface — while still reading as part of the same material family.",
+        inspirationSlugs: ["exposed-aggregate-walkway-tan"],
       },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
@@ -151,18 +162,22 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Plain Broom-Finish Driveway",
         body: "A standard broom-finish concrete driveway costs $4–8 per sq ft installed. For a typical two-car driveway (400–600 sq ft), budget $1,600–4,800. This includes site prep, forming, reinforcement (rebar or wire mesh), pouring, and finishing. It does not include demo of an existing driveway.",
+        inspirationSlugs: ["light-grey-brushed-concrete-driveway", "poured-concrete-driveway"],
       },
       {
         heading: "Stamped Concrete Driveway",
         body: "Stamped concrete driveways cost $12–20 per sq ft. The premium comes from skilled labor (stamping requires precise timing during the pour), release agents, and the stamps themselves. Expect $4,800–12,000 for a typical two-car driveway.",
+        inspirationSlugs: ["stamped-concrete-driveway-cobblestone", "stamped-concrete-driveway-cream"],
       },
       {
         heading: "Exposed Aggregate Driveway",
         body: "Exposed aggregate driveways cost $8–14 per sq ft — less than stamped concrete but more than plain. The aggregate type (pea gravel, river stone, recycled glass) affects the upper end of the price range.",
+        inspirationSlugs: ["exposed-aggregate-driveway-grey"],
       },
       {
         heading: "Colored Concrete",
         body: "Integral coloring adds $2–4 per sq ft over plain concrete. Surface staining adds $1–3 per sq ft but is less durable. Either option applied to a stamped surface stacks on top of the stamping premium.",
+        inspirationSlugs: ["stained-concrete-driveway-walnut"],
       },
       {
         heading: "Demo and Site Prep",
@@ -226,6 +241,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Concrete Overlay",
         body: "A concrete micro-topping or overlay applied over an existing concrete or asphalt driveway costs $3–8 per sq ft. It bonds to the existing surface and can be stamped, stained, or textured. It works only on structurally sound bases — overlaying a cracked, heaving slab just delays the problem. Minimum overlay thickness is typically 1/4\"–3/8\" for durability under vehicle traffic; thinner applications chip and delaminate faster.",
+        inspirationSlugs: ["poured-concrete-driveway"],
       },
       {
         heading: "Asphalt Resurfacing",
@@ -246,6 +262,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Driveway Resurfacing Cost vs. Full Replacement",
         body: "On a 500 sq ft concrete driveway: resurfacing with a plain overlay costs $1,500–4,000; a decorative stamped overlay runs $4,000–7,500; full replacement costs $2,000–10,000 depending on finish. The resurfacing savings are meaningful at the low end — a $3/sq ft plain overlay saves $1,500–3,000 versus a new pour. At the decorative end, the savings shrink: a stamped overlay at $12–15/sq ft isn't much cheaper than a new stamped pour at $12–20/sq ft, and the overlay won't perform or last as long. The decision rule: use resurfacing for cosmetic renewal of a structurally sound slab; use full replacement for any slab with structural issues, drainage problems, or significant thickness inconsistency.",
+        inspirationSlugs: ["stamped-concrete-driveway-cream"],
       },
       {
         heading: "Resurfacing a Driveway in Conjunction with a Patio or Walkway",
@@ -297,14 +314,17 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Cobblestone-Stamped Circle",
         body: "Cobblestone stamping on a circular driveway is the classic choice — it reads as upscale, suits traditional and colonial homes, and the curved layout emphasizes the pattern. Color wash in an aged-iron or antique gray tone pulls the look together. At $14–20/sq ft for cobblestone stamping, a 1,000–1,500 sq ft circular driveway runs $14,000–30,000 — before the landscaped island.",
+        inspirationSlugs: ["stamped-concrete-driveway-cobblestone", "cobblestone-driveway-border"],
       },
       {
         heading: "Stamped vs. Exposed Aggregate: Which Works Better on a Curve",
         body: "Stamped concrete on a circular driveway requires precise alignment at the curved edges — the pattern must be cut cleanly rather than wrapped. This adds forming complexity and labor cost. Exposed aggregate ($8–14/sq ft) handles curves more naturally because it has no directional pattern, and the textured surface reads well against the curved border. Choose stamped for maximum visual impact; choose exposed aggregate for a cleaner, lower-risk execution.",
+        inspirationSlugs: ["exposed-aggregate-driveway-grey-contemporary"],
       },
       {
         heading: "Two-Tone Concrete",
         body: "A two-tone approach uses one color for the main driveway lanes and a contrasting color for the circular center island border or the apron band. This defines the layout clearly and adds visual structure without requiring a complex stamp pattern. It's one of the more budget-friendly ways to achieve a designed look on a circular layout — typically $8–12/sq ft versus $14–20 for a fully stamped surface. A charcoal field with a light grey or buff border reads well from the street.",
+        inspirationSlugs: ["modern-driveway-concrete"],
       },
       {
         heading: "Landscaped Center Island",
@@ -364,6 +384,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Charcoal Broom Finish with Scored Border: The High-Value Entry Point",
         body: "The most cost-effective modern driveway look in 2026 is a charcoal-washed broom-finish slab with clean score lines running parallel to the house and a contrasting color border band 12–18 inches wide. No stamps, no complex patterns. The design work comes from geometry and color, not from decorative elements. Cost: $6–12 per sq ft. On a 500 sq ft two-car driveway, that's $3,000–6,000. This is the best return-on-investment modern driveway option available.",
+        inspirationSlugs: ["brushed-concrete-driveway-charcoal", "light-grey-brushed-concrete-driveway"],
       },
       {
         heading: "What's Dated in 2026 vs. What Looks Current",
@@ -372,18 +393,22 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Dark Integral Color: The Core Design Decision",
         body: "Integral color mixed into the pour is the foundation of modern driveway design. Charcoal, graphite, and dark slate tones are the dominant choices. They read as bold against light home exteriors, hold color more reliably than surface stains, and don't develop the patchy look of faded earth-tone pigments. Integral color adds $2–4 per sq ft over plain grey concrete. A quality UV-stable penetrating sealer applied on installation and every 3–5 years maintains depth without adding surface sheen.",
+        inspirationSlugs: ["modern-black-concrete-driveway", "stained-concrete-driveway-walnut", "stained-concrete-driveway-slate-blue"],
       },
       {
         heading: "Exposed Aggregate in Dark Tones",
         body: "Dark pea gravel or black basalt aggregate in a washed finish gives a modern, textured surface without any stamped pattern. The aggregate itself provides visual interest and the texture handles vehicle loads well without polish or decoration. Cost: $8–14 per sq ft. It's one of the cleanest modern looks when executed in a consistent dark tone — the aggregate color and concrete base color should be close to each other to avoid a spotty appearance.",
+        inspirationSlugs: ["exposed-aggregate-driveway-grey", "exposed-aggregate-driveway-grey-contemporary", "exposed-aggregate-driveway-tan", "white-exposed-aggregate-driveway"],
       },
       {
         heading: "Two-Tone Driveway: Border vs. Field Contrast",
         body: "A two-tone approach — dark field with a light border or vice versa — creates visual structure without pattern complexity. The most current execution: charcoal field, light grey or off-white border band, clean saw-cut scoring that aligns with house lines. This costs more than a single-color approach ($10–16/sq ft) but less than full stamped concrete. The design reads as intentional from the street without the maintenance complexity of stamped finishes.",
+        inspirationSlugs: ["cobblestone-driveway-border", "modern-driveway-concrete"],
       },
       {
         heading: "Stamped Concrete in a Modern Context",
         body: "If you want a stamped driveway that reads as modern rather than traditional, avoid cobblestone and small brick patterns. The patterns that work in a modern context are: linear plank (wide rectangular bands running perpendicular to the house), large-format ashlar in a single dark tone without accent color, and simple grid scoring with a contrasting border. PourCanvas lets you preview how different stamp patterns and color combinations would look on your specific driveway before you commit to a contractor.",
+        inspirationSlugs: ["stamped-concrete-driveway-ashlar-slate", "stamped-concrete-driveway-cobblestone", "stamped-concrete-driveway-cream"],
       },
       {
         heading: "Driveway Apron Design: Where Modern Driveways Fail or Succeed",
@@ -468,6 +493,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Appearance and Finish Options",
         body: "Concrete has the clear advantage on aesthetics. Plain broom-finish concrete looks clean and intentional. Stamped concrete ($12–20/sq ft) adds pattern and color that asphalt simply can't replicate. Asphalt is available in standard black — which looks good when freshly sealed but fades to gray-brown over time. If curb appeal matters, concrete wins on every available finish option. Tools like PourCanvas let you preview how different concrete finishes would look on your specific driveway before you commit.",
+        inspirationSlugs: ["modern-driveway-concrete", "brushed-concrete-driveway-charcoal"],
       },
       {
         heading: "Maintenance: Asphalt Requires More Attention",
@@ -522,6 +548,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "How Black Concrete Is Made — and Why It Matters",
         body: "Black concrete achieves its color through integral pigment — iron oxide or carbon black dye mixed directly into the concrete pour before it's placed. This is different from a surface stain or coating: the color runs through the full depth of the slab, so chips and surface wear expose the same color beneath rather than a grey base. Integral pigment is the only method worth considering for a driveway where vehicle traffic and edge impacts are routine. Surface stains ($1–3/sq ft) fade and chip within a few years under driveway conditions; integral color is the durable approach. The pigment premium adds $2–4 per sq ft over plain concrete — a relatively modest cost for a result that holds.",
+        inspirationSlugs: ["modern-black-concrete-driveway"],
       },
       {
         heading: "The Heat Problem: What Black Driveways Do in Summer",
@@ -530,6 +557,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Black vs. Charcoal: The Practical Distinction",
         body: "True black concrete — fully saturated carbon black or iron oxide at maximum loading — is striking but the hardest to maintain. Over time, UV exposure breaks down the pigment binder and the surface fades to an uneven brownish-grey. Charcoal (dark grey with strong saturation) is a more forgiving choice: it reads as nearly black from the street, fades more gracefully and uniformly, and costs the same. If your goal is a bold, dark driveway that looks good for years with normal sealer maintenance, specify a charcoal or graphite integral color rather than maximum-black loading. Most contractors with experience in dark concrete will steer you this direction — it's worth asking why if they don't.",
+        inspirationSlugs: ["brushed-concrete-driveway-charcoal", "modern-black-concrete-driveway"],
       },
       {
         heading: "Sealer Maintenance: Non-Negotiable for Dark Concrete",
@@ -542,6 +570,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "What Black Driveways Work Best With",
         body: "A black or charcoal concrete driveway makes the strongest visual impact against a light home exterior — white, light grey, cream, or warm beige. The high contrast reads as architectural and deliberate. Against a dark home exterior (dark grey, navy, dark brown), the contrast disappears and the driveway blends rather than anchors. Light-toned window frames and trim, structured landscaping, and clean edge detailing amplify the effect. Where black driveways fail: underdeveloped landscapes, mismatched exterior materials, or homes that need other maintenance first. A bold driveway in a cluttered setting looks out of place, not elevated. If you're also redoing a front walkway or patio, extending the dark concrete theme across all three surfaces creates the most cohesive result — though a slightly lighter tone on the walkway and patio avoids the heat issues of full black on pedestrian surfaces.",
+        inspirationSlugs: ["dark-concrete-home-exterior"],
       },
       {
         heading: "Comparing Black Concrete to Other Dark Driveway Options",
@@ -554,6 +583,7 @@ export const drivewayArticles: Article[] = [
 <tr><td>Dark stamped concrete</td><td>$14–20</td><td>Moderate-High</td><td>Moderate</td><td>Reseal every 2–3 years</td></tr>
 <tr><td>Fresh asphalt</td><td>$3–6</td><td>High</td><td>High — fades to grey in 2–3 years</td><td>Seal coat every 3–5 years</td></tr>
 </table>`,
+        inspirationSlugs: ["poured-concrete-driveway"],
       },
     ],
     relatedSlugs: ["modern-driveway-ideas", "concrete-driveway-cost", "concrete-driveway-color-guide"],
@@ -597,22 +627,27 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Cobblestone Stamp Border: The Most Popular Choice",
         body: "A cobblestone-stamped border strip — typically 12–24 inches wide — is the most widely used driveway border treatment. The pattern reads as traditional and upscale, making it a natural match for colonial, craftsman, and Tudor-style homes. In a darker color wash (charcoal, aged iron, or slate), it also works on contemporary homes where you want a defined edge without heavy ornamentation. Cost: $8–12 per linear foot for a border-only stamp treatment. Compare that to $12–20 per sq ft to stamp the entire surface — on a 500 sq ft two-car driveway, a border-only approach saves $4,000–8,000 while delivering most of the visual impact. The border approach works because the eye follows the edge of the driveway naturally; a defined perimeter reads as intentional even when the interior is plain-finish concrete.",
+        inspirationSlugs: ["cobblestone-driveway-border", "stamped-concrete-driveway-cobblestone"],
       },
       {
         heading: "Exposed Aggregate Border Strip",
         body: "An exposed aggregate border is a clean, modern alternative to stamped patterns. Instead of a stamp, the perimeter strip is finished with washed aggregate — pea gravel, white quartz, or crushed stone — while the interior remains smooth-broom or lightly textured. The contrast in texture reads as designed without being decorative. Cost: $10–16 per linear foot installed, depending on aggregate type (quartz and marble aggregate add $2–4/lf over standard pea gravel). This border style suits contemporary, transitional, and minimalist exteriors particularly well — it pairs with dark trim, concrete curbing, and structured landscaping. It's also one of the more durable border options since exposed aggregate doesn't rely on a color wash that fades over time.",
+        inspirationSlugs: ["exposed-aggregate-driveway-grey", "exposed-aggregate-driveway-tan"],
       },
       {
         heading: "Saw-Cut Score Line Border",
         body: "The simplest and least expensive border option is a saw-cut score line — a straight cut made 1–3 inches deep along the perimeter of the driveway, optionally filled with a contrasting color sealant or left as a shadow line. Cost: $3–6 per linear foot. This is not a decorative treatment in the traditional sense; it's a geometric definition tool. The score line creates a visual edge that separates the driveway from the lawn, curbing, or planting beds — much like a picture frame. In charcoal or black sealant fill, it reads as deliberate and architectural. Best for: modern and contemporary homes where the goal is clean lines over ornamentation.",
+        inspirationSlugs: ["scored-concrete-driveway-grass-channels"],
       },
       {
         heading: "Brick Inlay Border",
         body: "A real brick or concrete paver inlay border involves setting a course of bricks or pavers directly into the concrete perimeter — either during the original pour or by cutting and setting them into an existing slab. This is the most labor-intensive border option and the most visually substantial. Cost: $14–22 per linear foot depending on material (concrete pavers at the low end; natural clay brick at the high end). The result is a border with real material variation — actual brick or stone reading differently from the concrete field — not a simulation. Best for: traditional, craftsman, and colonial homes where a brick element ties the driveway to brick facade elements. It also holds up better to snowplow edge contact than a stamped border because the paver units resist chipping under impact.",
+        inspirationSlugs: ["herringbone-brick-driveway"],
       },
       {
         heading: "Color Band Border (Integral Pigment)",
         body: "A color band border uses a contrasting integral pigment in the perimeter strip versus the driveway field — for example, a charcoal perimeter band around a light grey driveway interior, or a warm buff edge around a cool grey field. The concrete is poured in two phases or using a divider form to keep colors separate. Cost: $10–16 per linear foot for the border strip, including the pigment premium. This approach requires careful planning before the pour — you can't easily add a pigment border to an existing driveway. Tools like PatioCanvas let you preview how different color band combinations would look on your specific driveway layout before the concrete is ordered. Best for: new pours where you want a two-tone effect that's highly durable with no stamping maintenance requirements. If you're also planning a front walkway, running a matching color band as a border on the path creates continuity across both surfaces.",
+        inspirationSlugs: ["modern-black-concrete-driveway", "light-grey-brushed-concrete-driveway"],
       },
       {
         heading: "Which Border Works Best for Your Home",
@@ -655,22 +690,27 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Integral Pigment: Color That Goes All the Way Through",
         body: "Integral pigment is mixed directly into the concrete before the pour. Because the color runs through the full depth of the slab, chips and surface wear don't expose a different-colored core — making it the most durable coloring method. The color range covers earth tones well: buff, tan, terracotta, charcoal, and grey are reliable; deep reds, blues, and blacks require more pigment and cost more to maintain. Cost premium: $2–5 per sq ft above plain concrete, depending on pigment concentration and color. On a 500 sq ft driveway, that's $1,000–2,500 added to the base pour cost. Integral-pigment driveways still benefit from sealing every 3–5 years to protect against UV fading — especially with warmer earth tones — but the underlying color remains intact even if the sealer wears off.",
+        inspirationSlugs: ["modern-black-concrete-driveway", "poured-concrete-driveway"],
       },
       {
         heading: "Color Wash (Antiquing Release): Best for Stamped Surfaces",
-        body: "A color wash or antiquing agent is applied to the fresh concrete surface during stamping — it's the technique that gives stamped concrete its characteristic multi-tone, weathered look. It's not a single-color treatment; the wash pools in low spots and wipes thin on high surfaces, creating natural variation that makes stamped patterns read as stone or brick rather than plastic. Color washes are typically used in combination with integral pigment: a buff base pour with a charcoal or slate color wash on top produces the classic stamped driveway look. Cost: the wash is usually included in stamped concrete quotes ($12–18/sq ft total), not priced separately. If you're adding color to an already-poured stamped surface, a surface-applied color hardener runs $3–6 per sq ft. Tools like PourCanvas can show you how different base-and-wash combinations would look on your actual driveway before you finalize the color order.",
+        body: "A color wash or antiquing agent is applied to the fresh concrete surface during stamping ��� it's the technique that gives stamped concrete its characteristic multi-tone, weathered look. It's not a single-color treatment; the wash pools in low spots and wipes thin on high surfaces, creating natural variation that makes stamped patterns read as stone or brick rather than plastic. Color washes are typically used in combination with integral pigment: a buff base pour with a charcoal or slate color wash on top produces the classic stamped driveway look. Cost: the wash is usually included in stamped concrete quotes ($12–18/sq ft total), not priced separately. If you're adding color to an already-poured stamped surface, a surface-applied color hardener runs $3–6 per sq ft. Tools like PourCanvas can show you how different base-and-wash combinations would look on your actual driveway before you finalize the color order.",
+        inspirationSlugs: ["stamped-concrete-driveway-cobblestone", "stamped-concrete-driveway-cream"],
       },
       {
         heading: "Acid Stain: Mottled Color for Existing Slabs",
         body: "Acid staining works by chemically reacting with the calcium hydroxide in cured concrete, producing translucent, mottled color. The result is organic and varied — no two acid-stained driveways look identical. The standard palette covers earth tones (amber, brown, terracotta) and grey-green-blue tones well. Pure saturated colors aren't achievable with acid stain. Cost: $3–7 per sq ft for acid stain labor and materials on an existing slab, plus sealing. The process requires thorough prep (any oil stains or sealers must be removed first) and post-application sealing to protect the color. Acid stain is the go-to option when you want to add color to an existing concrete driveway without overlaying new concrete or replacing the slab.",
+        inspirationSlugs: ["stained-concrete-driveway-walnut", "stained-concrete-driveway-slate-blue"],
       },
       {
         heading: "Water-Based Concrete Stain: More Color Range, Less Drama",
         body: "Water-based stains penetrate cured concrete with pigment that bonds to the surface rather than chemically reacting with it. They offer a wider color range than acid stain — including more saturated tones and cooler greys — and produce a more consistent, less mottled finish. For driveways where you want a cleaner, more solid-color look, water-based stain outperforms acid stain. Cost: $2–4 per sq ft for labor and materials, plus sealing. It's a cost-effective way to update the color of an existing plain grey driveway. Longevity is the main limitation: water-based stains require resealing every 2–3 years to maintain color and should be reapplied every 5–8 years on high-traffic surfaces.",
+        inspirationSlugs: ["stained-concrete-driveway-slate-blue"],
       },
       {
         heading: "Charcoal vs. Tan vs. Buff: Choosing a Tone That Ages Well",
         body: "The color direction matters more than the specific shade. Warm tones (buff, tan, terracotta) suit craftsman, ranch, and Mediterranean homes; they read as organic and casual. Cool tones (charcoal, slate grey, blue-grey) suit contemporary and transitional homes; they read as clean and modern. Medium grey is the universal fallback — it works with almost anything but offers no visual distinction. Consider how the driveway will read in 10 years: charcoal integral pigment holds its depth well with UV-stable sealers. Tan and buff tones fade gradually toward lighter versions of themselves, which generally still looks intentional. Deep blacks and saturated earth reds are the most UV-vulnerable — expect noticeable fading in high-sun climates without annual sealing. For driveways with significant afternoon sun exposure, light-to-medium tones also stay 20–30°F cooler underfoot than dark pigments in summer — a real comfort factor if you're also planning a walkway that connects to entry areas.",
+        inspirationSlugs: ["brushed-concrete-driveway-charcoal", "salt-finish-driveway-tan"],
       },
       {
         heading: "Colored Sealer vs. Full Color Treatment: When to Use Each",
@@ -721,10 +761,12 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Base Cost Breakdown: What Drives the Price Range",
         body: "Stamped concrete sits in the $12–20 per sq ft range because it combines a standard concrete pour with extra labor-intensive finishing steps: the stamps must be pressed during a narrow workability window, color washes must be applied evenly, and the surface must be sealed immediately after. The cost spread is mostly labor-driven. Simple single-stamp patterns (running bond brick, large ashlar slate) sit at $12–14/sq ft. Complex multi-stamp patterns (cobblestone, random flagstone with color variation, interlocking geometric borders) push toward $18–20. A plain broom-finish concrete driveway costs $5–8/sq ft in comparison — the stamped premium is $4–12/sq ft, applied to the entire surface.",
+        inspirationSlugs: ["stamped-concrete-driveway-cobblestone", "stamped-concrete-driveway-ashlar-slate"],
       },
       {
         heading: "Pattern-by-Pattern Cost Comparison",
         body: "Cobblestone is the most expensive common pattern: the detail in the stamps and the tight repetition require more time from the crew, pushing cost to $15–20/sq ft. Ashlar slate and running bond brick are the most affordable decorative options at $12–15/sq ft — the stamps are simpler and faster to apply. Random flagstone falls in the middle at $13–18/sq ft, depending on how much color variation is specified. Exposed aggregate borders combined with a smooth or lightly textured field bring the per-sq-ft average down versus a fully stamped surface — the border adds $8–14/sq ft and the field can be poured at $5–8/sq ft, yielding a blended cost of $8–13/sq ft for the total driveway. If budget is tight, this hybrid approach delivers a premium look at a lower average cost.",
+        inspirationSlugs: ["stamped-concrete-driveway-cream", "herringbone-brick-driveway"],
       },
       {
         heading: "Regional Labor Rates: Where You Live Changes the Quote",
@@ -733,6 +775,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Color Add-Ons: What Each Option Costs",
         body: "Color is a separate line item in most quotes. Integral pigment mixed into the concrete adds $2–5/sq ft to the base pour cost. A color wash or antiquing release agent is typically included in the stamped concrete quote at no extra charge — it's part of the finishing process. Acid staining an existing slab runs $3–7/sq ft including labor and sealing. A surface-applied color hardener (for adding color to already-stamped surfaces) costs $3–6/sq ft. On a 450 sq ft driveway, integral pigment alone adds $900–2,250 to the project. The color decision should be made before the pour — changing integral pigment after the fact requires an overlay or full replacement.",
+        inspirationSlugs: ["terracotta-stamped-concrete-driveway"],
       },
       {
         heading: "Lifecycle Cost: Sealing, Maintenance, and Repair",
@@ -790,18 +833,22 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Concrete Curbing: The Most Durable Driveway Edge",
         body: "Poured concrete curbing is the most structurally sound driveway edging option. The curb acts as a physical stop for vehicles and a retaining edge that prevents the driveway slab from spreading outward over time. Extruded concrete curbing — poured and shaped by a curbing machine in a single pass — costs $8–15 per linear foot installed. For a standard two-car driveway with 80 linear feet of perimeter edging, budget $640–1,200. Hand-poured curbing with a custom profile runs $12–20/linear foot. Concrete curbing works on both straight and curved driveway edges and can be integrally pigmented to match or complement the driveway surface. It requires minimal maintenance and lasts as long as the driveway itself. The main limitation is visual weight — a full concrete curb reads as formal and adds mass to the driveway perimeter. For homeowners who want a clean but less heavy edge, it's worth comparing to Belgian block or soldier brick before deciding.",
+        inspirationSlugs: ["modern-driveway-concrete"],
       },
       {
         heading: "Belgian Block and Cobblestone: Classic Contrast Edging",
         body: "Belgian block (granite setts) and cobblestone borders create a high-contrast edge between a concrete or asphalt field and the surrounding landscape. They read as upscale, suit craftsman and colonial homes, and age beautifully — the stones get more character over time rather than less. Installed cost: $20–40 per linear foot for Belgian block, depending on stone size and labor in your market. On 80 linear feet, that's $1,600–3,200. Concrete cobblestone-stamped borders (pressed into the wet driveway surface during the pour) achieve a similar visual effect for $8–14/linear foot. The real-stone version is the higher-investment choice; the stamped version is the practical middle ground. Both options suit driveways with decorative stamped surfaces — the border defines the edge and reinforces the design language of the field. For plain concrete or asphalt, Belgian block is one of the best ways to add visual character without resurfacing the entire driveway.",
+        inspirationSlugs: ["cobblestone-driveway-border"],
       },
       {
         heading: "Brick Soldier Course: Traditional and Timeless",
         body: "A soldier-course brick border — bricks set vertically in a row along the driveway edge — is a traditional finish that reads as classic rather than decorative. It suits brick homes and craftsman bungalows particularly well. Installed cost: $15–30 per linear foot, depending on brick type and labor. Standard red clay brick is on the lower end; tumbled or antique brick runs higher. For a 60-linear-foot edging run, budget $900–1,800. Soldier brick must be set on a concrete footer (usually 4–6 inches deep) to prevent frost heaving in cold climates — this adds cost and is essential for structural stability. On a plain concrete driveway, a brick soldier edge is one of the most cost-effective ways to create a polished, traditional finish. If you're coordinating with a brick walkway or front steps, matching the brick species creates a cohesive exterior look.",
+        inspirationSlugs: ["herringbone-brick-driveway"],
       },
       {
         heading: "Metal Edging (Aluminum or Steel): Clean and Invisible",
         body: "Metal landscape edging — typically 1/8-inch aluminum or steel, 4–6 inches tall — is the most invisible edging option. Properly installed, it's nearly flush with grade and draws no visual attention. The edge does the structural job (preventing slab creep, containing gravel, retaining mulch or turf edges) without competing with the driveway surface. Installed cost: $3–8 per linear foot for aluminum; $4–10 for steel or Cor-Ten weathering steel. On 80 linear feet, that's $240–800. Aluminum is the standard residential choice — lightweight, rust-resistant, and easy to curve around radius edges. Steel is more durable for high-traffic commercial work. Metal edging suits contemporary and modern home styles where visual minimalism is the priority — if you want the driveway to look unedged but structurally perform as if it is, metal edging is the answer.",
+        inspirationSlugs: ["modern-large-slab-driveway"],
       },
       {
         heading: "Pavers as Edging: Visual Separation With Texture",
@@ -810,6 +857,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Gravel or River Rock Borders: Casual and Low-Maintenance",
         body: "A gravel or river rock border isn't edging in the structural sense — it doesn't prevent slab movement — but it's the most maintenance-friendly way to soften the transition between a driveway and a planting bed or lawn. A 6–12 inch gravel strip along the driveway edge is easy to replenish, deters weeds, and handles drainage well. Cost: $1–3 per sq ft for river rock or decorative gravel, not including metal or plastic edging to retain the border itself. The gravel border works best on residential driveways in warm climates where freeze-thaw edge damage isn't a primary concern. In cold climates, gravel borders can migrate under snowplow passes and frost action. For a walkway or patio with a pea gravel surround, a matching gravel border along the driveway edge ties the exterior together without a major installation project. This approach is informal by nature — it suits cottage, ranch, and California contemporary styles rather than formal traditional homes.",
+        inspirationSlugs: ["large-slab-driveway-grass-joints"],
       },
     ],
     relatedSlugs: ["driveway-border-ideas", "concrete-driveway-cost"],

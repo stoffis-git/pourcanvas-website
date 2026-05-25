@@ -17,26 +17,32 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Straight and Wide: The Modern Default",
         body: "A straight 5-foot-wide walkway in broom-finish concrete costs $6–10/sq ft installed — about $900–1,500 for a typical 30-foot front walk. Add a slight bevel on the edges and a dark-gray color wash and it looks significantly more expensive than it is. The wider format (5 feet vs. the code minimum of 3) is worth the cost: it reads as generous and intentional.",
+        inspirationSlugs: ["charcoal-broom-finish-walkway", "light-grey-concrete-paths"],
       },
       {
         heading: "Curved Flagstone-Stamped Path",
         body: "A curved walkway with random flagstone stamping softens the approach to a traditional home and runs $12–18/sq ft. The curve also allows you to route around existing landscaping without removing mature plants. Budget 10–20% extra over a straight walkway of the same finish due to forming complexity. A gentle single arc — curving 2–3 feet off a straight center line — is easier to form than a winding S-curve and looks more composed in most front yard settings. Add a contrasting border strip in a darker tone to define the curve's outer edge and the path reads as designed rather than just bent. If you're also planning a curved driveway apron or patio edge, a consistent curve radius across all three elements creates cohesive geometry.",
+        inspirationSlugs: ["flagstone-walkway-natural", "flagstone-walkway-silver-grey"],
       },
       {
         heading: "Stamped vs. Plain: Which Finish Is Worth It for a Front Walkway",
         body: "Plain broom finish ($6–10/sq ft) is the practical choice: durable, easy to maintain, and perfectly appropriate for most homes. Stamped concrete ($12–18/sq ft) doubles the cost but transforms the walkway from functional to designed. The upgrade is worth it when the rest of the property is polished — less so when the walkway is the only design element getting attention.",
+        inspirationSlugs: ["stamped-concrete-walkway-grey", "cream-stamped-concrete-walkway"],
       },
       {
         heading: "Stepping-Stone Style",
         body: "Large individual pads (24\"×24\" or 24\"×36\") set into a gravel or grass surround give a modern, intentional look. Each pad can be poured and stamped individually. Cost varies widely — a simple DIY pour runs $50–150 per pad in materials; contractor installation typically runs $100–250 per pad including forming and finishing. The most effective front entry stepping-stone applications use consistently-sized square pads (24\"×24\" is the standard) spaced 18\"–20\" apart on center — close enough to feel like a cohesive path, not a hop-scotch course. Match the pad finish to any adjacent hardscape: if the driveway is charcoal broom finish, cast the stepping pads in the same base pigment for continuity. Decomposed granite ($30–60/cu yd) between pads looks cleaner than grass for a primary front entry.",
+        inspirationSlugs: ["floating-concrete-walkway-turf", "poured-concrete-paths"],
       },
       {
         heading: "Exposed Aggregate with Smooth Borders",
         body: "A textured exposed-aggregate field with smooth concrete borders gives the walkway a finished, designed appearance. The border delineates the path from the lawn cleanly and adds definition without the full stamping premium. Exposed aggregate runs $8–14/sq ft — between plain and stamped in both cost and visual impact. PourCanvas can show you how different finish combinations would look on your specific front approach.",
+        inspirationSlugs: ["exposed-aggregate-walkway-tan"],
       },
       {
         heading: "Coordinating Your Walkway with the Driveway and Patio",
         body: "The front walkway, driveway approach, and patio are the three hardscape surfaces most visible from the street. Coordinating their finishes and colors adds visual coherence that makes a property look intentionally designed rather than assembled piece by piece. The most effective approach is to choose a common palette — same base color, compatible textures — and apply it across all three. If the driveway is charcoal broom finish with a scored border, the front walkway in exposed aggregate with a grey-black tone reads as a intentional complement rather than a mismatch. The patio can then carry the stamped version of the same pattern for visual continuity throughout the outdoor space. A contractor who quotes all three surfaces in one project typically prices the combined work 10–20% lower per sq ft than three separate jobs.",
+        inspirationSlugs: ["dark-concrete-home-exterior"],
       },
       {
         heading: "Sealing and Maintenance for Front Walkways",
@@ -84,6 +90,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Cost Comparison",
         body: "Natural flagstone walkways run $25–45 per sq ft installed. A stamped concrete walkway mimicking the same look costs $12–18 per sq ft. On a 150 sq ft front walkway, that's a $2,000–4,000 difference. Stamped concrete wins on cost for every project size — the gap doesn't narrow at scale.",
+        inspirationSlugs: ["flagstone-walkway-natural", "stamped-concrete-walkway-buff"],
       },
       {
         heading: "Flagstone vs Concrete: Full Comparison",
@@ -110,6 +117,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Visual Authenticity",
         body: "Up close, natural flagstone looks different from stamped concrete — there's a texture, irregular edge relief, and surface depth that stamping doesn't fully replicate. Each natural stone slab has its own character and thickness variation; stamped concrete, even with multi-layer color work, reads as a manufactured pattern at arm's length. From a street-view distance, well-done stamped concrete is nearly indistinguishable. The authenticity advantage matters most for high-end homes where buyers inspect closely, or for settings where visitors walk slowly and closely — a garden courtyard or rear terrace where people linger and look down. For a primary front walkway viewed from the street, the visual gap between high-quality stamped flagstone concrete and natural stone is minimal once color layering is done well.",
+        inspirationSlugs: ["flagstone-walkway-silver-grey"],
       },
       {
         heading: "The Verdict",
@@ -177,14 +185,17 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Poured Concrete Path with Planting Gaps",
         body: "A poured concrete path with intentional gaps for ground cover plants (thyme, creeping Jenny, mondo grass) softens the hard edge of the concrete without sacrificing the clean, structured look. Plan the gaps into the pour by leaving out sections — don't try to cut them in after. The gap width matters: 4\"–6\" is wide enough for plants to fill in over a season without feeling like a tripping hazard; 8\"+ gaps feel unfinished until the ground cover matures. Creeping thyme is the most forgiving option — handles light foot traffic, suppresses weeds, and releases a faint scent when brushed. If you're using this approach on a path adjacent to a concrete patio, use the same base pigment for the path sections so the two surfaces read as a coordinated suite rather than separate projects.",
+        inspirationSlugs: ["parallel-strip-walkway-grass", "poured-concrete-paths"],
       },
       {
         heading: "Stepping Stones in Gravel",
         body: "Large concrete pads (20\"×20\" or 24\"×36\") set into a decomposed granite or gravel field is one of the lowest-cost backyard path options. The pads can be cast with a simple broom finish or a light exposed aggregate texture, and the gravel surround eliminates edge maintenance. Use landscape fabric under the gravel to suppress weeds — without it, the gravel path requires pulling weeds annually. Buff or tan decomposed granite ($30–60 per cubic yard) suits warm concrete tones; charcoal grit or grey granite fines suit cooler pigment. Lay the pads on a 2-inch compacted sand base to allow minor height adjustment. Match the pad color to your driveway or patio if they're visible from the same vantage point — even a simple broom-finish pad in the same grey tone as a broom-finish driveway creates visual cohesion at low cost.",
+        inspirationSlugs: ["light-grey-concrete-paths"],
       },
       {
         heading: "Curved Path to a Focal Point",
         body: "Curve your backyard path toward a specific destination — a seating area, a garden feature, or a gate — and the curve itself creates visual interest. A slight curve slows the eye and makes the path feel longer than it is, which makes small backyards feel more spacious.",
+        inspirationSlugs: ["flagstone-walkway-natural"],
       },
       {
         heading: "Poured Path vs. Stepping Pads: Which Is Right for Your Yard",
@@ -193,10 +204,12 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Rustic Flagstone-Look Pads",
         body: "Random flagstone stamping on individual poured pads gives a natural, organic feel that suits cottage-style and English garden landscapes. Space the pads slightly irregularly (varying by 1–2 inches) to avoid the too-perfect look of machine-placed pavers. For color, a warm buff or sandstone base with a charcoal color wash in the stamp recesses replicates the aged stone look convincingly — skip a single-tone flat pour, which reads as stamped concrete immediately. Each pad should be 18\"×18\" minimum; smaller pads look flimsy and out of scale in most yards. You can cast these yourself: a wood form, a standard stamped-concrete pour, and a borrowed stamp from a local rental house turns a weekend into $150–300 worth of materials for a 10–12 pad path.",
+        inspirationSlugs: ["flagstone-walkway-silver-grey"],
       },
       {
         heading: "Connecting the Backyard Path to the Patio",
         body: "A backyard walkway's most important design decision is how it terminates. If it leads to a concrete patio, the path and patio finish should match — or at minimum share a palette. The clearest way to achieve this is to pour the path and patio in the same project, using the same mix and sealer. If the patio was poured separately, a concrete overlay or acid stain application can bring the two surfaces into visual alignment without full replacement. The connection point where the path meets the patio is where a mismatch is most visible — this is also where you want a cleanly formed transition joint rather than a rough butt joint. A contractor experienced in both surfaces will plan this joint from the start.",
+        inspirationSlugs: ["scored-grid-walkway-white-gravel"],
       },
       {
         heading: "Sealing and Weed Management for Concrete Paths",
@@ -247,14 +260,17 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Plain Broom-Finish Walkway",
         body: "A standard broom-finish concrete walkway costs $6–10 per sq ft installed. A 4-foot-wide, 30-foot-long front walkway (120 sq ft) runs $720–1,200. This includes forming, pouring, finishing, and basic site prep. Adding an integral pigment color ($0.50–1.50/sq ft extra) lifts the look from utilitarian to intentional without approaching stamped pricing. Dark charcoal pigment on a broom-finish slab with clean beveled edges is one of the best-value curb appeal upgrades available — it reads as designed at a fraction of stamped concrete cost. On a 120 sq ft walkway, that's $60–180 in color premium for a visually significant upgrade. If you're also pouring a driveway or patio, matching the pigment direction across all surfaces is worth specifying upfront.",
+        inspirationSlugs: ["charcoal-broom-finish-walkway", "salt-finish-concrete-walkway"],
       },
       {
         heading: "Stamped Concrete Walkway",
         body: "Stamped walkways run $12–18 per sq ft — double the plain concrete price. The same 120 sq ft front walkway in stamped concrete costs $1,440–2,160. The stamping labor premium is relatively larger on small projects since the setup cost is similar regardless of size. A stamped pattern requires the right crew and timing: stamps must be pressed into the concrete during a narrow workability window, typically 2–4 hours after the pour in normal weather. This is skilled work — ask contractors for photos of completed walkway stamping projects specifically, not just patios. Walkway stampwork on narrow forms can develop uneven pressure at the edges if the crew isn't experienced. The most practical stamped pattern for a front walkway: random flagstone or herringbone brick. Both photograph well and hold their visual crispness as they age.",
+        inspirationSlugs: ["stamped-concrete-walkway-grey", "stamped-concrete-walkway-buff"],
       },
       {
         heading: "Exposed Aggregate",
         body: "Exposed aggregate walkways cost $8–14 per sq ft. The finish is more slip-resistant than smooth concrete — an advantage for a front walkway exposed to rain and morning dew — and it hides surface wear better over time. The texture also masks minor surface imperfections and age-related micro-cracking that make plain broom-finish concrete look worn. Aggregate color matters more than most homeowners expect: warm tan or buff aggregate suits traditional and craftsman homes; cool grey-white aggregate suits contemporary and transitional styles. Fine pea gravel aggregate is the most comfortable underfoot; larger stone aggregate gives more grip but has a rougher feel in bare feet. For a front walkway, pea gravel or fine river stone in a tone that complements the home's exterior is the standard recommendation.",
+        inspirationSlugs: ["exposed-aggregate-walkway-tan"],
       },
       {
         heading: "Width Matters More Than Length",
@@ -317,6 +333,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Gentle Arc vs Winding Path",
         body: "A gentle single arc (front door to driveway or street) is the most elegant and easiest to execute. A winding path with multiple direction changes works in larger gardens but requires more careful planning — too many turns and it reads as chaotic rather than designed. For a front walkway, a single gentle arc (curving 2–4 feet off the straight centerline over a 25–30 foot run) is the optimal choice: subtle enough that it reads as intentional rather than evasive, and dramatic enough to distinguish the path from a straight pour. For a rear garden or backyard path connecting a patio to a gate or outbuilding, a slightly more pronounced winding course is appropriate — especially if the path needs to navigate around planting beds or a lawn feature. A well-formed single arc front walkway costs $6–10/sq ft (plain) or $12–18/sq ft (stamped) — the curve adds 10–20% for forming but the total budget impact on a 120 sq ft walkway is $100–400.",
+        inspirationSlugs: ["flagstone-walkway-natural"],
       },
       {
         heading: "Let Existing Landscaping Dictate the Curve",
@@ -329,6 +346,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Patterns That Suit Curves",
         body: "Random flagstone and organic patterns (irregular shapes, natural textures) suit curved walkways naturally. Geometric patterns like herringbone brick or linear planks fight the curve and can look awkward at the bends. If you want a geometric stamp, keep it a simple grid and accept that the pattern will cut at an angle at the edges.",
+        inspirationSlugs: ["flagstone-walkway-silver-grey", "cobblestone-stamped-walkway"],
       },
       {
         heading: "Edge Detailing",
@@ -341,6 +359,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Designing Curves That Connect Front and Back",
         body: "The most effective landscape walkway systems use a consistent curve vocabulary throughout the property — the front walk, side yard path, and backyard path share the same general radius and arc style. This doesn't mean every path looks the same; it means the outdoor hardscape reads as a unified plan rather than unrelated projects. If you're designing a front curved walkway, think at the property scale: where does the path system ultimately lead, and how do the curves of one surface flow visually into the next? For properties where the front walk, side yard, and patio are all connected, a contractor who plans all three surfaces simultaneously can create a cohesive flow that's much harder to achieve when each surface is designed independently.",
+        inspirationSlugs: ["stamped-concrete-walkway-grey-ranch"],
       },
       {
         heading: "Curved Walkways and Driveway Integration",
@@ -387,6 +406,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Stamped Concrete Steps vs. Plain Finish: Which Is Worth It",
         body: "Plain broom-finish steps ($150–250/step) are durable, slip-resistant, and appropriate for most homes. Stamped steps ($250–400/step) add pattern — typically an ashlar slate, flagstone, or cobblestone stamp on the treads — and match the front walkway finish if that surface is also stamped. The upgrade is worth it when the steps are a prominent design feature and the rest of the entry is polished. If the walkway is plain, stamped steps can look mismatched. Match the step finish to the walk finish: that consistency is what makes an entry look designed rather than assembled.",
+        inspirationSlugs: ["stamped-concrete-steps-entry", "tiered-concrete-slab-entry"],
       },
       {
         heading: "Riser and Tread Dimensions That Matter",
@@ -411,6 +431,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Coordinating Steps with the Front Walkway and Driveway",
         body: "Entry steps are the connection point between the front door, the walkway, and ultimately the driveway or street. Visual continuity across all three surfaces — steps, walkway, driveway — is what makes an exterior look designed rather than assembled. The most effective approach: choose one primary surface finish (stamped flagstone, exposed aggregate, or plain broom) and apply it consistently across all three surfaces. The steps can carry the same stamp as the walkway, with the landing matching the driveway color. If the three surfaces were poured at different times and don't match, a concrete overlay with consistent stain color is the most cost-effective way to unify them without full replacement.",
+        inspirationSlugs: ["stamped-concrete-walkway-grey-ranch"],
       },
     ],
     relatedSlugs: ["front-walkway-ideas", "concrete-walkway-cost"],
@@ -464,6 +485,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Fixture Style: What Pairs with Your Surface Finish",
         body: "Warm brass or bronze fixtures pair naturally with stamped concrete in earth tones (buff, sandstone, aged brick colors). Matte black fixtures suit contemporary driveways with charcoal or dark grey concrete. Stainless or brushed nickel suits modern homes with cool-grey aggregate finishes. The lighting fixture style should reinforce the surface finish choice — if you're deciding on a walkway finish and want to add lighting, choosing the finish first makes the fixture selection easier. PourCanvas can help you visualize what your walkway surface will look like in different finishes before you commit to a material that may limit your fixture options.",
+        inspirationSlugs: ["stamped-concrete-walkway-grey-ranch", "charcoal-broom-finish-walkway"],
       },
       {
         heading: "Lighting the Full Property: Walkway, Driveway, and Patio",
@@ -506,10 +528,12 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Stepping Stones vs. Poured Walkway: Which Is Right for Your Yard",
         body: "A continuous poured concrete walkway ($6–18/sq ft depending on finish) looks polished and handles daily traffic, snow shoveling, and heavy foot flow better. Stepping stones ($50–250/pad installed) cost less per linear foot for infrequent-use paths, suit informal garden settings, and require minimal site prep. Choose a continuous pour for your primary front entrance or any path you use daily; choose stepping stones for secondary garden routes, backyard connections, or paths where you want a more naturalistic feel.",
+        inspirationSlugs: ["floating-concrete-walkway-turf", "poured-concrete-paths"],
       },
       {
         heading: "Concrete vs. Natural Stone Stepping Pads",
         body: "Poured concrete pads ($50–150 each installed) can be cast in any shape and finished with broom texture, exposed aggregate, or a light stamp. They're durable, matchable across a project, and easy to DIY if you have basic concrete experience. Natural stone pavers and flagstones ($80–250 each installed for quality cut stone) have more visual texture and character but cost significantly more and vary in thickness, making level placement harder. Poured concrete wins on cost and consistency; natural stone wins on authentic texture for high-end landscapes.",
+        inspirationSlugs: ["light-grey-concrete-paths"],
       },
       {
         heading: "Spacing: The Rule That Changes Everything",
@@ -522,6 +546,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Ground Cover Between Pads",
         body: "What you put between stepping pads changes the entire character of the path. Decomposed granite or fine gravel is the most low-maintenance option — stable, weed-suppressible with landscape fabric, and available in tones that complement concrete. Buff or tan decomposed granite ($30–60 per cubic yard delivered) suits warm earth-tone pads; grey granite fines suit charcoal or cool-grey concrete. Grass between pads looks great initially but requires careful mowing around each pad and becomes a maintenance burden on a heavily-used path. Creeping thyme, Irish moss, and creeping Jenny are the most popular living ground covers — they fill in over a season, suppress weeds, and handle light foot traffic if the path isn't walked heavily. Creeping thyme is especially durable and releases a pleasant scent underfoot. PourCanvas can show you how different pad styles and spacing would look in your specific yard before you commit.",
+        inspirationSlugs: ["parallel-strip-walkway-grass"],
       },
       {
         heading: "DIY Poured Stepping Pads",
@@ -534,6 +559,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Stepping Stone Style Across the Full Yard",
         body: "Stepping stone paths work at any scale in the landscape — from a 6-pad herb garden path ($50–150 in materials) to a full-length backyard primary route (20+ pads at $1,000–5,000 installed). The most effective property-wide use of stepping pads is as a secondary circulation system that complements the primary front walkway. The front walk is poured concrete (continuous and polished); the backyard garden paths use stepping pads in the same color and texture as the front walkway. The matching finish across surfaces of different types — continuous pour and individual pads — creates visual coherence even when the forms are different. This is one of the most cost-effective ways to make a property's hardscape feel designed throughout. If you're also planning a concrete patio or resurfacing a driveway, spec the stepping pads in the same base pigment direction — charcoal stepping stones beside a charcoal driveway and a charcoal patio creates a consistent material language across the entire property for the cost of a few bags of integral color pigment.",
+        inspirationSlugs: ["scored-grid-walkway-white-gravel"],
       },
     ],
     relatedSlugs: ["backyard-walkway-ideas", "front-walkway-ideas"],
@@ -568,30 +594,37 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Broom Finish: The Practical Default",
         body: "Broom-finish concrete is the most installed walkway surface in North America — and for good reason. A contractor drags a broom across the surface before it cures, creating parallel lines that provide slip resistance without visual noise. Cost: $6–10/sq ft installed. It reads as clean and appropriate on most homes when executed well; the difference between cheap-looking and intentional usually comes down to edge detail and color. A dark grey color wash or charcoal pigment ($0.50–1.50/sq ft added cost) makes a plain broom-finish walk look significantly more considered without adding pattern complexity.",
+        inspirationSlugs: ["charcoal-broom-finish-walkway", "salt-finish-concrete-walkway"],
       },
       {
         heading: "Exposed Aggregate: Texture Without Pattern",
         body: "Exposed aggregate concrete uses small stones (pea gravel, river rock, or decorative aggregate) embedded in the surface and revealed by washing away the top layer of cement paste before it fully cures. Cost: $8–14/sq ft installed. The result is a slip-resistant, textured surface that looks natural and ages well — the aggregate weathers rather than fading or cracking visibly. It's the best-performing walkway surface in wet climates and for areas with tree root heave risk, since its texture hides minor imperfections. Aggregate color choice matters: warm tans and earthy browns suit traditional homes; grey-white aggregate reads as more modern.",
+        inspirationSlugs: ["exposed-aggregate-walkway-charcoal", "exposed-aggregate-walkway-tan"],
       },
       {
         heading: "Stamped Concrete: Designed at a Price",
         body: "Stamped walkways use rubber mats pressed into fresh concrete to mimic stone, brick, slate, or wood grain. Cost: $12–18/sq ft installed — the premium pays for skilled labor timing and the color work required to make the stamp convincing. The most popular walkway patterns are random flagstone, ashlar slate, and running-bond brick. Random flagstone suits cottage and craftsman homes; ashlar slate suits contemporary and transitional styles; running-bond brick is the default for traditional colonial exteriors. The upgrade over plain concrete is visually significant when the rest of the property is maintained — but stamped concrete on an otherwise unfinished yard can feel out of place.",
+        inspirationSlugs: ["stamped-concrete-walkway-grey", "stamped-concrete-walkway-buff"],
       },
       {
         heading: "Herringbone and Geometric Stamps",
         body: "Herringbone is the most recognized geometric walkway pattern — diagonal interlocking bricks at 45° that create motion and visual interest along the path's length. It's slightly more labor-intensive than running bond ($1–3/sq ft more) because aligning the geometry consistently takes more time. Geometric patterns generally suit formal entries and contemporary homes better than informal garden paths. A herringbone stamp in a buff or warm grey tone is the most Pinterest-friendly concrete walkway pattern — it photographs well and reads as designed from the street.",
+        inspirationSlugs: ["herringbone-walkway-concrete", "herringbone-brick-walkway-red"],
       },
       {
         heading: "Flagstone-Set-in-Concrete vs. Stamped Flagstone",
         body: "A cheaper alternative to natural flagstone is cutting real flagstone pieces and setting them into a concrete base — the flagstone sits proud of the surface for a genuine texture feel. Cost: $15–25/sq ft installed, depending on stone type and availability. This is more expensive than stamped concrete but uses real stone without mortar joints to maintain. For homeowners who want authentic texture, flagstone-in-concrete is the middle ground between fully stamped ($12–18) and full natural stone flagging ($20–40/sq ft for quality stone). If you're also upgrading a patio, matching flagstone patterns across both surfaces adds strong visual coherence.",
+        inspirationSlugs: ["flagstone-walkway-natural", "flagstone-walkway-silver-grey"],
       },
       {
         heading: "Stained and Colored Concrete",
         body: "Acid staining or integral color pigment transforms any of the above patterns with color depth. Integral color (pigment mixed into the pour) costs $1–3/sq ft extra and is permanent — it colors the entire slab, so chips and cracks show the same color throughout. Acid stain (applied after curing) costs $2–4/sq ft and creates mottled, translucent color effects that look more organic than flat pigment. Charcoal, slate blue, and warm terra cotta are the most popular stain colors for walkways. Tools like PourCanvas let you preview stain colors on your specific walkway layout before committing to a pour. Resealing every 2–3 years maintains the color depth regardless of whether you use integral pigment or an acid-stain topcoat.",
+        inspirationSlugs: ["acid-stained-concrete-walkway", "stained-concrete-walkway-blue-grey"],
       },
       {
         heading: "Pattern Consistency Across Walkway, Driveway, and Patio",
         body: "Choosing the same pattern family across the front walkway, driveway, and patio is the most powerful design decision in residential hardscape. You don't need to use the same stamp on every surface — but the pattern language should be related: flagstone-family patterns across all three, or brick-family patterns across all three. Mixing a herringbone driveway with a random flagstone walkway with a linear slate patio creates visual noise even if each individual surface looks fine in isolation. The easiest coordination strategy: choose your patio pattern first (since it has the largest surface area and is most visible while in use), then match the walkway and driveway to it. When all three surfaces are poured in the same project, the contractor can apply matching color releases and sealers for exact consistency.",
+        inspirationSlugs: ["dark-concrete-home-exterior"],
       },
       {
         heading: "How Long Do Concrete Walkway Patterns Last?",
@@ -617,5 +650,97 @@ export const walkwayArticles: Article[] = [
     // 1. What is the most popular concrete walkway pattern?
     // 2. How much does a patterned concrete walkway cost per square foot?
     // 3. Which concrete walkway pattern is easiest to maintain?
+  },
+  {
+    slug: "concrete-walkway-ideas",
+    pillar: "walkway",
+    title: "Concrete Walkway Ideas: 20+ Paths, Steps & Sidewalks for Every Home",
+    headline: "Concrete Walkway Ideas",
+    metaDescription:
+      "20+ concrete walkway ideas from $6/sq ft broom finish to $18/sq ft stamped stone — front paths, garden walks, and entry steps with real cost ranges.",
+    targetKeywords: [
+      "concrete walkway ideas",
+      "concrete sidewalk ideas",
+      "concrete path ideas",
+      "concrete front porch ideas",
+      "concrete steps ideas",
+    ],
+    ogImage: "https://images.pourcanvas.com/walkway-ideas-gallery.jpg",
+    publishedAt: "2026-05-25",
+    updatedAt: "2026-05-25",
+    intro:
+      "Concrete walkways cost $6–18 per sq ft installed depending on the finish — plain broom at the low end, stamped flagstone or cobblestone at the high end. A standard 4-foot-wide, 40-foot front walkway (160 sq ft) runs $960–2,880. This guide covers 20+ real installations across stamped, modern, flagstone-look, exposed aggregate, stained, entry steps, and stepping stone paths. Each section includes cost ranges and the finish details that separate a well-executed walkway from a generic pour.",
+    sections: [
+      {
+        heading: "Stamped Concrete Walkway Ideas",
+        body: "Stamped concrete walkways run $12–18/sq ft and deliver the highest visual impact per dollar for a front path. The most effective stamp patterns for walkways are cobblestone, random flagstone, and running-bond brick — all three photograph well from the street and hold their texture over time. Avoid deep-relief stamps (like rough-cut stone) on walkways: deep grooves catch heels, collect debris, and are harder to shovel in winter. A medium-depth stamp with a secondary color release in the recesses gives the surface dimension without creating functional problems. For front paths specifically, a buff or sandstone base with a charcoal release color is the most versatile combination — it suits traditional, craftsman, and transitional home styles. Apply a film-forming sealer at installation and reseal every 2–3 years to maintain color depth and prevent UV fading on the surface pigment.",
+        inspirationSlugs: ["stamped-concrete-walkway-grey", "stamped-concrete-walkway-buff", "cream-stamped-concrete-walkway", "cobblestone-stamped-walkway"],
+      },
+      {
+        heading: "Modern Concrete Walkway Designs",
+        body: "Modern concrete walkways use clean geometry and restrained finishes to create impact — no stamps, no faux stone. A broom-finish walkway in dark charcoal pigment ($8–14/sq ft) with crisp beveled edges and consistent 4–5 foot width reads as deliberately designed at a fraction of stamped pricing. Floating slab designs — individual rectangular pads separated by 2–4 inch strips of turf or gravel — are the signature modern walkway treatment. They cost $10–16/sq ft installed because each pad is formed and poured individually, but the visual result is distinctive. Diagonal scoring (X-pattern saw cuts at 45 degrees to the walk direction) on a single continuous pour is another high-impact modern detail at minimal added cost — $0.50–1/sq ft for the saw work. Dark tones dominate modern walkway design: charcoal, slate grey, and near-black pigments suit contemporary architecture and create strong contrast against green landscaping.",
+        inspirationSlugs: ["charcoal-broom-finish-walkway", "floating-concrete-walkway-turf", "parallel-strip-walkway-grass", "diagonal-x-scored-walkway"],
+      },
+      {
+        heading: "Flagstone Look Walkway Ideas",
+        body: "Natural flagstone walkways cost $25–45/sq ft installed — quarried stone, individually cut and set on a compacted base with mortar or polymeric sand joints. Stamped concrete mimicking the same flagstone look runs $12–18/sq ft, cutting the cost by 40–60% on a typical 150 sq ft front path. The visual difference: natural flagstone has irregular thickness variation, unique coloring per stone, and a surface texture that stamping can approximate but not fully replicate. From street-view distance, high-quality stamped flagstone is nearly indistinguishable. Up close, the authenticity gap is visible. The practical difference: natural flagstone joints require annual sand replenishment and weed management; stamped concrete has no joints to maintain. In freeze-thaw climates, natural stone joints are the first failure point — water infiltrates, expands, and loosens stones over repeated winter cycles. Stamped concrete with proper air entrainment handles freeze-thaw significantly better.",
+        inspirationSlugs: ["flagstone-walkway-natural", "flagstone-walkway-silver-grey"],
+      },
+      {
+        heading: "Exposed Aggregate Walkway Ideas",
+        body: "Exposed aggregate walkways cost $8–14/sq ft — between plain broom finish and stamped in both price and visual impact. The finish reveals natural stone embedded in the concrete surface, creating a textured, slip-resistant path that performs well in wet conditions and hides surface wear better than any smooth finish. Aggregate color selection drives the entire look: warm tan or buff pea gravel suits traditional and craftsman homes; cool grey-white river stone suits contemporary and modern styles; charcoal basalt aggregate creates a dramatic dark surface that reads as high-end. For garden paths specifically, exposed aggregate is the strongest all-around choice — it handles moisture, leaf litter, and biological staining better than stamped or colored concrete because the textured surface masks what smooth surfaces show. Fine pea gravel aggregate is the most comfortable underfoot; larger stone gives more grip but feels rougher on bare feet.",
+        inspirationSlugs: ["exposed-aggregate-walkway-charcoal", "exposed-aggregate-walkway-tan"],
+      },
+      {
+        heading: "Stained Concrete Walkway Ideas",
+        body: "Staining is the most cost-effective way to transform an existing concrete walkway — $1–4/sq ft for the stain application alone, compared to $6–18/sq ft for full demolition and replacement. Acid stains react chemically with the concrete to produce mottled, translucent color with natural variation — no two applications look identical. The most popular walkway acid stain colors are cola brown, desert amber, and blue-grey. Water-based stains offer more predictable, opaque coverage and a wider color palette including true greys and whites that acid stains cannot achieve. For new walkways, integral color pigment ($1–3/sq ft added to the pour cost) colors the entire slab through its full depth, so chips and wear never expose uncolored concrete beneath. For existing walkways in good structural condition, staining plus resealing is the highest-ROI refresh — it changes the entire character of the path for $150–600 on a standard front walk without any demolition.",
+        inspirationSlugs: ["acid-stained-concrete-walkway", "stained-concrete-walkway-blue-grey"],
+      },
+      {
+        heading: "Concrete Front Entry and Steps",
+        body: "Entry walkways that include steps cost $10–16/sq ft for the walkway portion plus $150–400 per step for the stair construction. A 3-step entry with a landing and 20-foot connecting walkway typically runs $2,500–5,000 for a stamped finish. Tiered slab entries — where the walkway ascends through two or three broad, shallow platforms rather than traditional steps — are a popular design for modern homes with moderate grade change. Each tier acts as both a step and a landing, creating a more gradual and visually generous approach. Safety on entry steps matters more than aesthetics: broom-finish treads provide the best slip resistance regardless of the riser pattern. Code requires handrails for stair runs of 4+ risers in most jurisdictions. For 3-step entries, handrails aren't required but are worth considering for accessibility — surface-mounted iron railings run $300–800 installed.",
+        inspirationSlugs: ["stamped-concrete-steps-entry", "tiered-concrete-slab-entry"],
+      },
+      {
+        heading: "Stepping Stone and Garden Paths",
+        body: "Individual concrete stepping pads cost $50–150 each installed, or $10–20 per pad in materials for a DIY pour. A 15-pad garden path runs $750–2,250 for contractor work or $150–300 in materials if you cast them yourself — making this the most budget-friendly and DIY-accessible concrete walkway option. Set pads 18–24 inches apart center-to-center for a comfortable stride. Decomposed granite between pads ($30–60/cu yd) is the lowest-maintenance surround; creeping thyme or Irish moss fills in over a season and handles light foot traffic. Square pads (18\"×18\" or 24\"×24\") suit modern landscapes; irregular shapes suit cottage and woodland gardens. For a cohesive property look, match the pad finish and pigment to your primary front walkway — even a simple broom-finish pad in the same charcoal tone as the driveway creates visual continuity at minimal cost.",
+        inspirationSlugs: ["stepping-stone-walkway-ideas", "light-grey-concrete-paths", "poured-concrete-paths"],
+      },
+    ],
+    relatedSlugs: [
+      "front-walkway-ideas",
+      "concrete-walkway-cost",
+      "flagstone-vs-concrete-walkway",
+      "curved-walkway-ideas",
+      "backyard-walkway-ideas",
+    ],
+    relatedMaterials: ["stamped-concrete", "flagstone", "broom-finish", "exposed-aggregate"],
+    faqs: [
+      {
+        question: "How much does a concrete walkway cost?",
+        answer:
+          "A concrete walkway costs $6–18 per sq ft installed depending on finish type. Plain broom finish runs $6–10/sq ft, exposed aggregate $8–14/sq ft, and stamped concrete $12–18/sq ft. A typical 50-foot front walkway (4 feet wide, 200 sq ft) costs $1,200–3,600. Adding steps costs $150–400 per step. Staining an existing walkway runs $1–4/sq ft — the lowest-cost upgrade option.",
+      },
+      {
+        question: "What is the best concrete finish for a walkway?",
+        answer:
+          "Broom finish is the best value — $6–10/sq ft, excellent slip resistance, and minimal maintenance. Stamped concrete ($12–18/sq ft) is the best choice for curb appeal when the rest of the property is polished. Exposed aggregate ($8–14/sq ft) is the strongest performer in wet climates and garden settings because the texture hides wear and provides natural grip. Flagstone-look stamped concrete is the best option for homeowners who want natural stone aesthetics without the $25–45/sq ft price of real flagstone.",
+      },
+      {
+        question: "How wide should a concrete walkway be?",
+        answer:
+          "A concrete walkway should be at least 3 feet wide for single-file passage and 4–5 feet wide for two people to walk side by side. ADA accessibility requires a minimum 36-inch clear width. For a primary front entrance, 4 feet is the functional minimum and 5 feet feels generous — the wider format is worth the 25% cost increase because it reads as intentional rather than cramped.",
+      },
+      {
+        question: "Can you pour concrete over an existing walkway?",
+        answer:
+          "Yes, if the existing slab is structurally sound, level, and free of major cracking. A concrete overlay runs $4–8/sq ft and adds 1–2 inches of new surface over the old walkway — enough to apply a fresh broom finish, stamp pattern, or stain. If the existing slab is heaved, cracked through, or settling unevenly, overlay will fail and full demolition plus replacement ($7–20/sq ft including demo) is the only reliable option.",
+      },
+      {
+        question: "How thick should a concrete walkway be?",
+        answer:
+          "A residential concrete walkway should be 4 inches thick poured over 4 inches of compacted gravel sub-base. This is the industry standard for pedestrian traffic and handles freeze-thaw cycling in most climates. Pour thicker (5–6 inches) at expansion joints, where the walkway meets the driveway, and at any point where vehicles might cross the path. Reinforcement with wire mesh or fiber mesh is recommended for walkways longer than 20 feet to control cracking.",
+      },
+    ],
   },
 ];

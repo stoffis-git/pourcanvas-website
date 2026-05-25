@@ -6,7 +6,8 @@ import { SeoHead } from "@/components/SeoHead";
 import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
 import { ToolWaitlistBlock } from "@/components/ToolWaitlistBlock";
 import { FAQSection } from "@/components/FAQSection";
-import { articlesBySlug } from "@/content";
+import { articlesBySlug, inspirationBySlug } from "@/content";
+import { InspirationTile } from "@/components/inspiration/InspirationTile";
 
 const materialLabels: Record<string, string> = {
   "stamped-concrete": "Stamped Concrete",
@@ -28,6 +29,12 @@ const ArticlePage = () => {
 
   const midpoint = Math.floor(article.sections.length / 2);
 
+  const galleryImages = article.sections
+    .flatMap((s) => s.inspirationSlugs ?? [])
+    .map((s) => inspirationBySlug.get(s))
+    .filter((p): p is NonNullable<typeof p> => !!p && p.ogImage.startsWith("https://"))
+    .map((p) => ({ url: p.ogImage, caption: p.headline }));
+
   return (
     <>
       <SeoHead
@@ -45,6 +52,7 @@ const ArticlePage = () => {
           { name: article.pillar.charAt(0).toUpperCase() + article.pillar.slice(1), url: `/blog/${article.pillar}` },
           { name: article.headline, url: `/blog/${article.pillar}/${article.slug}` },
         ]}
+        {...(galleryImages.length > 0 && { galleryImages })}
       />
       <Header />
       <main className="max-w-3xl mx-auto px-5 py-28 md:py-36">
@@ -93,6 +101,23 @@ const ArticlePage = () => {
                     alt={section.imageAlt ?? section.heading}
                     className="mt-4 w-full rounded-xl object-cover aspect-video"
                   />
+                )}
+                {section.inspirationSlugs && section.inspirationSlugs.length > 0 && (
+                  <div className="mt-5 grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {section.inspirationSlugs.map((s) => {
+                      const page = inspirationBySlug.get(s);
+                      if (!page || !page.ogImage.startsWith("https://")) return null;
+                      return (
+                        <InspirationTile
+                          key={s}
+                          slug={page.slug}
+                          ogImage={page.ogImage}
+                          heroAlt={page.heroAlt}
+                          headline={page.headline}
+                        />
+                      );
+                    })}
+                  </div>
                 )}
               </div>
               {i === midpoint - 1 && (

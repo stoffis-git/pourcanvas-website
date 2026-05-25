@@ -20,6 +20,10 @@ export const inspirationPages: InspirationPage[] = [
       { url: "https://images.pourcanvas.com/inspiration-grey-stamped-patio-v2.jpg", alt: "Grey stamped concrete patio - craftsman home with fall foliage background" },
       { url: "https://images.pourcanvas.com/inspiration-grey-stamped-patio-v3.jpg", alt: "Grey stamped concrete patio - colonial home with pool adjacent setting" },
     ],
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "herringbone-brick-patio",
@@ -39,6 +43,10 @@ export const inspirationPages: InspirationPage[] = [
     additionalImages: [
       { url: "https://images.pourcanvas.com/inspiration-herringbone-patio-v2.jpg", alt: "Herringbone brick patio - farmhouse home with summer evening light" },
       { url: "https://images.pourcanvas.com/inspiration-herringbone-patio-v3.jpg", alt: "Herringbone brick patio - colonial home with garden edge setting" },
+    ],
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "patio", slug: "concrete-patio-ideas" },
     ],
   },
   {
@@ -60,6 +68,9 @@ export const inspirationPages: InspirationPage[] = [
       { url: "https://images.pourcanvas.com/inspiration-travertine-pool-deck-v2.jpg", alt: "Travertine pool deck - morning light with lounge chairs and tropical planting" },
       { url: "https://images.pourcanvas.com/inspiration-travertine-pool-deck-v3.jpg", alt: "Travertine pool deck - overcast light showcasing stone texture detail" },
     ],
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "modern-driveway-concrete",
@@ -76,6 +87,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "Preview your driveway redesign",
     ctaBody: "Upload a photo of your current driveway and see what modern concrete could look like.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "cobblestone-driveway-border",
@@ -92,6 +107,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See what a border could do for your driveway",
     ctaBody: "Upload a photo of your driveway and see what a cobblestone border could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "pool-deck-broom-finish",
@@ -108,6 +127,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See it around your pool",
     ctaBody: "Upload a photo of your pool deck and see what a broom-finish concrete surround could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "stamped-concrete-walkway-grey",
@@ -124,6 +146,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "Preview your walkway",
     ctaBody: "Upload a photo of your front path and see what grey stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+    ],
   },
   {
     slug: "patio-wood-plank-concrete",
@@ -140,6 +166,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See how this would look in your backyard",
     ctaBody: "Upload a photo of your space and get an AI-generated wood plank concrete preview.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "exposed-aggregate-patio-white",
@@ -156,6 +186,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See this finish in your backyard",
     ctaBody: "Upload a photo of your outdoor space and see what white aggregate concrete could look like.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "exposed-aggregate-driveway-grey",
@@ -172,6 +205,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "Preview this finish on your driveway",
     ctaBody: "Upload a photo of your driveway and see what grey exposed aggregate concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "flagstone-walkway-natural",
@@ -188,6 +224,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See flagstone on your walkway",
     ctaBody: "Upload a photo of your front path and see what a natural flagstone walkway could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+    ],
   },
   {
     slug: "stamped-concrete-steps-entry",
@@ -204,6 +244,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "Preview stamped steps at your entry",
     ctaBody: "Upload a photo of your front entry and see what stamped concrete steps could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+    ],
   },
   {
     slug: "circle-patio-pattern",
@@ -220,6 +263,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "Visualize a circle pattern in your space",
     ctaBody: "Upload a photo of your patio and see what a circular stamped design could look like.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "concrete-pool-deck-grey",
@@ -235,6 +281,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See grey concrete around your pool",
     ctaBody: "Upload a photo of your pool deck and see what grey concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "herringbone-walkway-concrete",
@@ -250,6 +299,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See herringbone on your front path",
     ctaBody: "Upload a photo of your front walkway and see what a herringbone stamped concrete pattern could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+    ],
   },
   {
     slug: "modern-black-concrete-driveway",
@@ -266,6 +318,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See black concrete on your driveway",
     ctaBody: "Upload a photo of your driveway and see what a black integrally colored concrete finish could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "exposed-aggregate-walkway-tan",
@@ -281,6 +336,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See tan aggregate on your front path",
     ctaBody: "Upload a photo of your front walkway and see what tan exposed aggregate concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+    ],
   },
   {
     slug: "stamped-concrete-driveway-cobblestone",
@@ -296,6 +354,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See cobblestone on your driveway",
     ctaBody: "Upload a photo of your driveway and see what a cobblestone-stamped concrete finish could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "terracotta-stamped-patio",
@@ -311,6 +372,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See terracotta on your patio",
     ctaBody: "Upload a photo of your patio and see what a terracotta stamped concrete finish could look like in your outdoor space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+    ],
   },
   {
     slug: "salt-finish-driveway-tan",
@@ -326,6 +390,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See this finish on your driveway",
     ctaBody: "Upload a photo of your driveway and see what a tan salt-finish concrete surface could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "concrete-driveway-color-guide" },
+    ],
   },
   {
     slug: "stained-concrete-walkway-blue-grey",
@@ -341,6 +409,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See blue-grey stain on your walkway",
     ctaBody: "Upload a photo of your walkway and see what a blue-grey acid-stained concrete finish could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+    ],
   },
   {
     slug: "flagstone-patio-grey",
@@ -356,6 +427,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See flagstone on your patio",
     ctaBody: "Upload a photo of your patio and see what a grey flagstone-look stamped concrete finish could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "brushed-concrete-driveway-charcoal",
@@ -371,6 +446,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See charcoal finish on your driveway",
     ctaBody: "Upload a photo of your driveway and see what a charcoal broom-finish concrete surface could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "herringbone-brick-walkway-red",
@@ -386,6 +464,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See herringbone brick on your walkway",
     ctaBody: "Upload a photo of your walkway and see what a red herringbone brick-stamped concrete finish could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+    ],
   },
   {
     slug: "exposed-aggregate-driveway-tan",
@@ -401,6 +482,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See tan aggregate on your driveway",
     ctaBody: "Upload a photo of your driveway and see what a warm tan exposed aggregate finish could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "stamped-concrete-driveway-ashlar-slate",
@@ -417,6 +501,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See ashlar slate on your driveway",
     ctaBody: "Upload a photo of your driveway and see what ashlar slate stamped concrete in grey could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "stained-concrete-driveway-walnut",
@@ -433,6 +521,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See walnut staining on your driveway",
     ctaBody: "Upload a photo of your driveway and see what walnut acid-stained concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "concrete-patio-ideas-modern-grey",
@@ -448,6 +539,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See grey concrete on your patio",
     ctaBody: "Upload a photo of your patio and see what a smooth modern grey concrete finish could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "stamped-concrete-walkway-buff",
@@ -463,6 +558,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See buff stamped concrete on your walkway",
     ctaBody: "Upload a photo of your walkway and see what warm buff stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+    ],
   },
   {
     slug: "stamped-concrete-driveway-cream",
@@ -478,6 +577,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See cream stamped concrete on your driveway",
     ctaBody: "Upload a photo of your driveway and see what light cream stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "white-exposed-aggregate-driveway",
@@ -493,6 +596,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See white aggregate on your driveway",
     ctaBody: "Upload a photo of your driveway and see what white exposed aggregate concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "terracotta-stamped-concrete-driveway",
@@ -508,6 +614,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See terracotta stamped concrete on your driveway",
     ctaBody: "Upload a photo of your driveway and see what terracotta stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "stamped-concrete-driveway" },
+      { pillar: "driveway", slug: "concrete-driveway-color-guide" },
+    ],
   },
   {
     slug: "stained-concrete-driveway-slate-blue",
@@ -523,6 +633,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See slate blue staining on your driveway",
     ctaBody: "Upload a photo of your driveway and see what slate blue water-based stained concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "concrete-driveway-color-guide" },
+    ],
   },
   {
     slug: "wood-plank-stamped-walkway",
@@ -539,6 +653,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See wood plank concrete on your front path",
     ctaBody: "Upload a photo of your walkway and see what wood plank stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+    ],
   },
   {
     slug: "flagstone-walkway-silver-grey",
@@ -555,6 +673,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See silver grey flagstone on your path",
     ctaBody: "Upload a photo of your walkway and see what silver grey flagstone stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "flagstone-vs-concrete-walkway" },
+    ],
   },
   {
     slug: "acid-stained-concrete-walkway",
@@ -571,6 +693,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See acid staining on your front path",
     ctaBody: "Upload a photo of your walkway and see what acid stained concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "concrete-walkway-patterns" },
+    ],
   },
   {
     slug: "cobblestone-stamped-walkway",
@@ -587,6 +713,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See cobblestone stamping on your walkway",
     ctaBody: "Upload a photo of your walkway and see what cobblestone stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+    ],
   },
   {
     slug: "charcoal-salt-finish-patio",
@@ -603,6 +733,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See charcoal salt finish on your patio",
     ctaBody: "Upload a photo of your patio and see what charcoal salt finish concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+      { pillar: "patio", slug: "patio-color-ideas" },
+    ],
   },
   {
     slug: "acid-stained-concrete-patio",
@@ -619,6 +753,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See acid staining on your patio",
     ctaBody: "Upload a photo of your patio and see what acid stained concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+      { pillar: "patio", slug: "patio-color-ideas" },
+    ],
   },
   {
     slug: "salt-finish-concrete-patio",
@@ -635,6 +773,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See salt finish on your patio",
     ctaBody: "Upload a photo of your patio and see what salt finish concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+      { pillar: "patio", slug: "concrete-patio-cost" },
+    ],
   },
   {
     slug: "flagstone-stamped-patio-buff",
@@ -651,6 +793,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See buff flagstone stamping on your patio",
     ctaBody: "Upload a photo of your patio and see what buff flagstone stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "exposed-aggregate-walkway-charcoal",
@@ -667,6 +813,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See charcoal aggregate on your walkway",
     ctaBody: "Upload a photo of your walkway and see what charcoal exposed aggregate concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "concrete-walkway-patterns" },
+    ],
   },
   {
     slug: "brick-red-stamped-walkway",
@@ -683,6 +833,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See brick red stamping on your walkway",
     ctaBody: "Upload a photo of your walkway and see what brick red stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+    ],
   },
   {
     slug: "light-grey-brushed-concrete-driveway",
@@ -699,6 +853,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See grey brushed concrete on your driveway",
     ctaBody: "Upload a photo of your driveway and see what light grey brushed concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "concrete-driveway-cost" },
+    ],
   },
   {
     slug: "cream-stamped-concrete-walkway",
@@ -715,6 +873,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See cream stamping on your walkway",
     ctaBody: "Upload a photo of your walkway and see what cream stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+    ],
   },
   {
     slug: "salt-finish-concrete-walkway",
@@ -731,6 +893,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "Visualise salt finish on your walkway",
     ctaBody: "Upload a photo of your walkway and see what salt finish concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "concrete-walkway-cost" },
+    ],
   },
   {
     slug: "charcoal-broom-finish-walkway",
@@ -747,6 +913,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See charcoal concrete on your walkway",
     ctaBody: "Upload a photo of your walkway and see what charcoal broom finish concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "front-walkway-ideas" },
+    ],
   },
   {
     slug: "modern-large-slab-driveway",
@@ -763,6 +933,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See a large slab layout on your driveway",
     ctaBody: "Upload a photo of your driveway and see what a modern large slab layout could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "concrete-driveway-cost" },
+    ],
   },
   {
     slug: "cobblestone-stamped-patio",
@@ -779,6 +953,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See cobblestone stamping on your patio",
     ctaBody: "Upload a photo of your patio and see what cobblestone stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "grey-stamped-concrete-patio-craftsman",
@@ -795,6 +973,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See how it looks on your patio",
     ctaBody: "Upload a photo of your patio and see what grey stamped concrete could look like alongside your craftsman home.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "patio", slug: "stamped-concrete-ideas" },
+    ],
   },
   {
     slug: "herringbone-brick-patio-colonial",
@@ -811,6 +993,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See the pairing on your patio",
     ctaBody: "Upload a photo of your patio and see what herringbone brick stamped concrete could look like on your colonial home.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+    ],
   },
   {
     slug: "modern-driveway-concrete-farmhouse",
@@ -827,6 +1013,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See it on your driveway",
     ctaBody: "Upload a photo of your driveway and see what modern concrete could look like on your farmhouse home.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "concrete-driveway-cost" },
+    ],
   },
   {
     slug: "stamped-concrete-walkway-grey-ranch",
@@ -843,6 +1033,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See it on your walkway",
     ctaBody: "Upload a photo of your walkway and see what grey stamped concrete could look like on your ranch home.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "front-walkway-ideas" },
+    ],
   },
   {
     slug: "exposed-aggregate-driveway-grey-contemporary",
@@ -859,6 +1053,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See the texture on your driveway",
     ctaBody: "Upload a photo of your driveway and see what exposed aggregate concrete could look like on your contemporary home.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "exposed-aggregate-driveway" },
+    ],
   },
   {
     slug: "large-slab-driveway-grass-joints",
@@ -875,6 +1073,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See a slab layout on your driveway",
     ctaBody: "Upload a photo of your driveway and see what a large slab concrete layout with grass joints could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "concrete-driveway-cost" },
+    ],
   },
   {
     slug: "floating-concrete-walkway-turf",
@@ -891,6 +1093,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See floating slabs on your front path",
     ctaBody: "Upload a photo of your front yard and see what floating concrete stepping slabs in turf could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "stepping-stone-walkway-ideas" },
+    ],
   },
   {
     slug: "scored-grid-concrete-patio",
@@ -907,6 +1113,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See the grid pattern on your patio",
     ctaBody: "Upload a photo of your patio and see what a scored grid concrete layout with gravel channels could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+      { pillar: "patio", slug: "small-patio-ideas" },
+    ],
   },
   {
     slug: "parallel-strip-driveway-white-gravel",
@@ -923,6 +1133,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See parallel strips on your driveway",
     ctaBody: "Upload a photo of your driveway and see what parallel concrete strips with white gravel could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "concrete-driveway-cost" },
+    ],
   },
   {
     slug: "diagonal-x-scored-walkway",
@@ -939,6 +1153,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See the X-pattern on your walkway",
     ctaBody: "Upload a photo of your front walkway and see what a diagonal X-pattern scored concrete surface with charcoal aggregate could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "concrete-walkway-patterns" },
+    ],
   },
   {
     slug: "large-slab-patio-river-rock",
@@ -955,6 +1173,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See large slabs on your patio",
     ctaBody: "Upload a photo of your patio and see what large format concrete slabs with black river rock joints could look like in your outdoor space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+      { pillar: "patio", slug: "small-patio-ideas" },
+    ],
   },
   {
     slug: "polygon-slab-driveway-led",
@@ -971,6 +1193,9 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See polygon slabs on your driveway",
     ctaBody: "Upload a photo of your driveway and see what polygon-cut concrete slabs with LED joint lighting could look like on your property.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+    ],
   },
   {
     slug: "parallel-strip-walkway-grass",
@@ -987,6 +1212,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See concrete strips on your front path",
     ctaBody: "Upload a photo of your front walkway and see what parallel concrete strips with turf between them could look like on your property.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "stepping-stone-walkway-ideas" },
+    ],
   },
   {
     slug: "herringbone-brick-driveway",
@@ -1003,6 +1232,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See herringbone on your driveway",
     ctaBody: "Upload a photo of your driveway and see what herringbone brick stamped concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "stamped-concrete-driveway" },
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+    ],
   },
   {
     slug: "scored-grid-walkway-white-gravel",
@@ -1019,6 +1252,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See the grid pattern on your walkway",
     ctaBody: "Upload a photo of your front walkway and see what a scored grid concrete surface with white gravel channels could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "concrete-walkway-patterns" },
+    ],
   },
   {
     slug: "exposed-aggregate-patio-charcoal",
@@ -1035,6 +1272,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See charcoal aggregate on your patio",
     ctaBody: "Upload a photo of your patio and see what charcoal exposed aggregate concrete could look like in your backyard.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+      { pillar: "patio", slug: "concrete-patio-cost" },
+    ],
   },
   {
     slug: "ashlar-slate-patio-charcoal",
@@ -1051,6 +1292,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See charcoal stamping on your patio",
     ctaBody: "Upload a photo of your patio and see what charcoal ashlar slate stamped concrete could look like in your backyard.",
+    relatedArticles: [
+      { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "patio", slug: "stamped-concrete-ideas" },
+    ],
   },
   {
     slug: "poured-concrete-patio",
@@ -1079,6 +1324,10 @@ export const inspirationPages: InspirationPage[] = [
       { url: "https://images.pourcanvas.com/premium-slab-058.jpg", alt: "Near-black broom finish poured concrete patio, low-profile single-storey home with dark painted t, clear blue-sky morning, even direct sun" },
       { url: "https://images.pourcanvas.com/premium-slab-060.jpg", alt: "Light grey lightly polished poured concrete patio, single-storey white render home with a flat roof,, bright sunny midday, high sun, hard cris" },
       { url: "https://images.pourcanvas.com/premium-slab-063.jpg", alt: "Light grey lightly polished poured concrete patio, single-storey white rendered bungalow with dark wi, bright sunny afternoon, crisp hard shado" },
+    ],
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+      { pillar: "patio", slug: "concrete-patio-cost" },
     ],
   },
   {
@@ -1109,6 +1358,10 @@ export const inspirationPages: InspirationPage[] = [
       { url: "https://images.pourcanvas.com/premium-slab-061.jpg", alt: "Charcoal smooth raw pour poured concrete driveway, single-storey flat-roof home with concrete-and-tim, mid-morning sun with soft tree-canopy sh" },
       { url: "https://images.pourcanvas.com/premium-slab-064.jpg", alt: "Near-black smooth raw pour poured concrete driveway, low-profile bungalow with white render walls, blac, golden hour, warm low side light raking" },
     ],
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "concrete-driveway-cost" },
+    ],
   },
   {
     slug: "scored-concrete-driveway-grass-channels",
@@ -1124,6 +1377,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See this on your driveway",
     ctaBody: "Upload a photo of your driveway and see what a scored concrete finish with grass channels could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "driveway-border-ideas" },
+    ],
   },
   {
     slug: "concrete-strips-turf-driveway",
@@ -1139,6 +1396,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "driveway",
     ctaHeadline: "See this format on your driveway",
     ctaBody: "Upload a photo of your driveway and see what concrete strips with turf could look like in your space.",
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "concrete-driveway-cost" },
+    ],
   },
   {
     slug: "tiered-concrete-slab-entry",
@@ -1154,6 +1415,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     ctaHeadline: "See a tiered entry at your front door",
     ctaBody: "Upload a photo of your front entry and see what a tiered concrete slab approach could look like in your space.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "concrete-steps-ideas" },
+    ],
   },
   {
     slug: "warm-tan-broom-finish-patio",
@@ -1168,6 +1433,10 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "patio",
     ctaHeadline: "See warm tan concrete on your patio",
     ctaBody: "Upload a photo of your patio and see what a warm tan broom-finish concrete surface could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+      { pillar: "patio", slug: "patio-color-ideas" },
+    ],
   },
   {
     slug: "poured-concrete-paths",
@@ -1204,6 +1473,10 @@ export const inspirationPages: InspirationPage[] = [
       { url: "https://images.pourcanvas.com/premium-slab-059.jpg", alt: "Light grey smooth raw pour poured concrete covered entry porch, single-storey white render home with a flat roof,, bright sunny afternoon, crisp hard shado" },
       { url: "https://images.pourcanvas.com/premium-slab-062.jpg", alt: "Charcoal broom finish poured concrete open front stoop, dark grey fibre cement bungalow, black window fram, bright sunny midday, high sun, hard cris" },
     ],
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "front-walkway-ideas" },
+    ],
   },
   {
     slug: "light-grey-concrete-paths",
@@ -1227,6 +1500,10 @@ export const inspirationPages: InspirationPage[] = [
       { url: "https://images.pourcanvas.com/premium-slab-056.jpg", alt: "Light grey smooth raw pour concrete side-entry path, low-profile home with dark timber cladding, golden hour" },
       { url: "https://images.pourcanvas.com/premium-slab-059.jpg", alt: "Light grey smooth raw pour concrete covered entry porch, white render home with flat roof, bright afternoon" },
     ],
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "front-walkway-ideas" },
+    ],
   },
   {
     slug: "dark-concrete-home-exterior",
@@ -1249,6 +1526,11 @@ export const inspirationPages: InspirationPage[] = [
       { url: "https://images.pourcanvas.com/premium-slab-040.jpg", alt: "Near-black raw poured concrete driveway, white rendered bungalow, Toyota RAV4, late afternoon shadows" },
       { url: "https://images.pourcanvas.com/premium-slab-045.jpg", alt: "Near-black polished poured concrete side path, Corten steel home, 3/4 angle, midday sun" },
       { url: "https://images.pourcanvas.com/premium-slab-046.jpg", alt: "Near-black raw poured concrete side-entry path, white rendered bungalow, box hedges, afternoon light" },
+    ],
+    relatedArticles: [
+      { pillar: "driveway", slug: "modern-driveway-ideas" },
+      { pillar: "driveway", slug: "black-concrete-driveway" },
+      { pillar: "patio", slug: "patio-color-ideas" },
     ],
   },
 ];

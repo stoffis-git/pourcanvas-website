@@ -27,6 +27,10 @@ export const articlesByPillar: Record<Pillar, Article[]> = {
   walkway: walkwayArticles,
 };
 
+export const inspirationBySlug = new Map<string, InspirationPage>(
+  inspirationPages.map((p) => [p.slug, p])
+);
+
 export const inspirationByPillar: Record<Pillar, InspirationPage[]> = {
   patio:    inspirationPages.filter((p) => p.pillar === "patio"),
   driveway: inspirationPages.filter((p) => p.pillar === "driveway"),
@@ -35,21 +39,21 @@ export const inspirationByPillar: Record<Pillar, InspirationPage[]> = {
 
 export const pillarMeta: Record<Pillar, { title: string; description: string; headline: string }> = {
   patio: {
-    title: "Patio Design Ideas & Concrete Inspiration | PourCanvas",
-    headline: "Patio Design Ideas",
+    title: "Concrete Patio Ideas: 45+ Designs and Inspiration | PourCanvas",
+    headline: "Concrete Patio Ideas",
     description:
-      "Stamped concrete patterns and exposed aggregate finishes for outdoor patios — cost guides, color ideas, and real installs from $8 to $40 per sq ft.",
+      "45+ concrete patio ideas from $6/sq ft broom finish to $20/sq ft stamped stone — stamped patterns, exposed aggregate, modern slabs, pool decks, and budget designs.",
   },
   driveway: {
-    title: "Driveway Design Ideas & Concrete Inspiration | PourCanvas",
-    headline: "Driveway Design Ideas",
+    title: "Concrete Driveway Ideas: 25+ Designs for Every Budget | PourCanvas",
+    headline: "Concrete Driveway Ideas",
     description:
-      "Stamped cobblestone and exposed aggregate driveways — curb appeal ideas and cost guides for every budget, from broom finish ($6/sq ft) to decorative patterns ($18+).",
+      "25+ concrete driveway ideas from broom finish ($6/sq ft) to stamped ashlar slate ($18+) — charcoal, exposed aggregate, two-tone borders, and modern dark finishes.",
   },
   walkway: {
-    title: "Walkway Design Ideas & Concrete Inspiration | PourCanvas",
-    headline: "Walkway Design Ideas",
+    title: "Concrete Walkway Ideas: 20+ Paths, Steps and Sidewalks | PourCanvas",
+    headline: "Concrete Walkway Ideas",
     description:
-      "Stamped flagstone and broom finish walkway ideas for every home style — front path inspiration and concrete cost guides from $6 to $16 per sq ft.",
+      "20+ concrete walkway ideas from $6/sq ft broom finish to $18/sq ft stamped flagstone — front paths, garden walks, entry steps, and modern geometric designs.",
   },
 };

@@ -8,6 +8,11 @@ interface BreadcrumbItem {
   url: string;
 }
 
+interface GalleryImage {
+  url: string;
+  caption: string;
+}
+
 interface SeoHeadProps {
   title: string;
   description: string;
@@ -19,6 +24,7 @@ interface SeoHeadProps {
   keywords?: string[];
   faqs?: FAQ[];
   breadcrumbs?: BreadcrumbItem[];
+  galleryImages?: GalleryImage[];
 }
 
 export const SeoHead = ({
@@ -32,6 +38,7 @@ export const SeoHead = ({
   keywords,
   faqs,
   breadcrumbs,
+  galleryImages,
 }: SeoHeadProps) => {
   const absoluteImage = ogImage
     ? (ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`)
@@ -54,6 +61,14 @@ export const SeoHead = ({
         })
       : null;
 
+  const articleImage = galleryImages && galleryImages.length > 0
+    ? galleryImages.map((img) => ({
+        "@type": "ImageObject" as const,
+        url: img.url,
+        caption: img.caption,
+      }))
+    : absoluteImage;
+
   const articleSchema =
     ogType === "article"
       ? JSON.stringify({
@@ -62,7 +77,7 @@ export const SeoHead = ({
           headline: title,
           description,
           ...(absoluteCanonical && { url: absoluteCanonical }),
-          ...(absoluteImage && { image: absoluteImage }),
+          ...(articleImage && { image: articleImage }),
           ...(publishedAt && { datePublished: publishedAt }),
           dateModified: updatedAt ?? publishedAt ?? new Date().toISOString().split("T")[0],
           author: { "@type": "Organization", name: "PourCanvas" },

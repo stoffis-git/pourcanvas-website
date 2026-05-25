@@ -1,6 +1,7 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { articlesBySlug } from "@/content";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationImageCarousel } from "@/components/inspiration/InspirationImageCarousel";
 import { InspirationContentBlock } from "@/components/inspiration/InspirationContentBlock";
@@ -61,6 +62,26 @@ const InspirationPage = () => {
             source="inspire-pack-insp-inline"
           />
           <InspirationCrossSection currentSlug={page.slug} currentPillar={page.pillar} />
+          {page.relatedArticles && page.relatedArticles.length > 0 && (
+            <div className="pt-6 border-t border-border/40">
+              <p className="text-xs font-body text-muted-foreground mb-3">Featured in</p>
+              <div className="flex gap-3 flex-wrap">
+                {page.relatedArticles.map((ref) => {
+                  const article = articlesBySlug.get(`${ref.pillar}/${ref.slug}`);
+                  if (!article) return null;
+                  return (
+                    <Link
+                      key={ref.slug}
+                      to={`/blog/${ref.pillar}/${ref.slug}`}
+                      className="text-sm font-body font-medium text-primary hover:underline"
+                    >
+                      {article.headline} →
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          )}
           {page.faqs && page.faqs.length > 0 && (
             <FAQSection faqs={page.faqs} />
           )}

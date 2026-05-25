@@ -49,6 +49,7 @@ export interface ArticleSection {
   body: string;
   image?: string;
   imageAlt?: string;
+  inspirationSlugs?: string[];
 }
 
 export interface Article {
@@ -83,6 +84,7 @@ export interface InspirationPage {
   ctaHeadline: string;
   ctaBody: string;
   faqs?: FAQ[];
+  relatedArticles?: MaterialRelatedArticle[];
 }
 
 export interface BeforeAfterPage {
