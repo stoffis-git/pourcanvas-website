@@ -8,7 +8,7 @@ const CtaSection = () => {
           Ready to Reimagine Your Outdoor Space?
         </h2>
         <p className="text-muted-foreground mb-8 leading-relaxed">
-          Join thousands of homeowners finding inspiration for their next concrete project. It's free to start.
+          Join homeowners planning their next concrete project. Sign up for early access — free when we launch.
         </p>
         <ToolWaitlistBlock source="tool-waitlist-cta" />
       </div>

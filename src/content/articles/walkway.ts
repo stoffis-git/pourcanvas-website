@@ -743,4 +743,88 @@ export const walkwayArticles: Article[] = [
       },
     ],
   },
+  {
+    slug: "stained-concrete-walkway-ideas",
+    pillar: "walkway",
+    title: "Stained Concrete Walkway Ideas: Acid, Water-Based & Integral Color",
+    headline: "Stained Concrete Walkway Ideas",
+    metaDescription:
+      "Stained concrete walkways from $1/sq ft acid stain refresh to $14/sq ft integral color pour. 15+ ideas with real costs for front paths, garden walks, and steps.",
+    targetKeywords: [
+      "stained concrete walkway",
+      "acid stained concrete walkway",
+      "colored concrete walkway ideas",
+      "concrete walkway stain colors",
+      "stained concrete path",
+    ],
+    ogImage: "https://images.pourcanvas.com/stained-concrete-walkway-gallery.jpg",
+    publishedAt: "2026-05-26",
+    updatedAt: "2026-05-26",
+    intro:
+      "Staining is the widest-range concrete walkway treatment — from a $1/sq ft acid-stain refresh on an existing slab to a $14/sq ft integral-color new pour with a decorative finish. On a 120 sq ft front walk, that's $120 at the low end for a DIY acid stain to $1,680 for a full-depth pigmented pour. This guide covers acid stain, water-based stain, and integral color: how each works on walkways specifically, what they cost, which colors hold up to foot traffic and UV, and when staining beats demolition and replacement.",
+    sections: [
+      {
+        heading: "Acid Stain: Organic Color for Front Paths",
+        body: "Acid stain is a chemical reaction, not a coating — metallic salts in a hydrochloric acid carrier penetrate the concrete surface and react with the lime content to produce permanent, translucent color. The result is mottled and organic: no two applications look identical, which gives acid-stained walkways a character that flat paint or dye can't replicate. Cola brown, desert amber, and blue-grey are the three most popular acid stain colors for walkways. Cost: $3–7/sq ft on existing concrete including surface prep, stain application, neutralization, and sealing. On narrow walkway surfaces (3–4 feet wide), the color variation reads more dramatically than on a wide patio because the eye takes in the entire surface width at once — every shift in tone is visible. This makes application technique critical: uneven spraying or pooling shows on a walkway where it might blend in on a 300 sq ft patio. Hire an applicator with walkway-specific experience or test a 3-foot corner section before committing to the full run.",
+        inspirationSlugs: ["acid-stained-concrete-walkway", "stained-concrete-walkway-blue-grey"],
+      },
+      {
+        heading: "Water-Based Stain: Precision and Pattern Control",
+        body: "Water-based concrete stains sit on top of the surface rather than reacting chemically with it, producing more predictable, opaque color with a wider palette than acid stains — including true greys, whites, blacks, and bright tones that acid chemistry cannot achieve. Cost: $2–5/sq ft applied. The predictability makes water-based stains ideal for geometric patterns on walkways: tape off a 4-inch border in a darker tone to frame the path, or create alternating stripe sections that match your home's trim color. On a 4-foot-wide walkway, a centered 3-foot field in warm grey with 6-inch charcoal borders on each side creates a runner effect that makes the path look designed at modest cost. Water-based stains are also easier to apply evenly, making them the better DIY option. The trade-off is durability: water-based stains wear faster under foot traffic than acid stains and require recoating every 2–5 years depending on traffic volume and UV exposure.",
+      },
+      {
+        heading: "Integral Color for New Walkway Pours",
+        body: "Integral color is pigment mixed directly into the concrete before pouring — it colors the full depth of the slab, so chips, abrasion, and surface wear never reveal uncolored concrete beneath. Cost: $2–4/sq ft added to the base pour price, bringing a standard walkway pour to $8–14/sq ft total. Charcoal is the most popular integral color for front walkways at $2–3/sq ft added cost — it creates strong contrast against green lawn, suits any architectural style, and hides dirt better than light tones. Integral color is the only staining method that requires a new pour; it cannot be applied to existing concrete. For new construction or full walkway replacement, it's the most durable color option available — the pigment is literally part of the concrete and cannot fade, peel, or wear off. Pair integral color with a broom or salt finish for a walkway that looks intentional without the stamping premium.",
+        inspirationSlugs: ["charcoal-broom-finish-walkway", "salt-finish-concrete-walkway"],
+      },
+      {
+        heading: "Best Walkway Stain Colors",
+        body: "Warm grey is the safest walkway stain color — it complements any home exterior, hides dirt and leaf stains, and doesn't show foot-traffic wear patterns the way very dark or very light tones do. Charcoal is the most dramatic choice: it creates a modern, high-contrast look against lawn and landscaping, but shows every dried leaf, pollen deposit, and salt residue in winter — plan on more frequent cleaning. Cola brown suits brick and traditional homes and ages gracefully; it's the most forgiving color for uneven acid stain application because the mottled warm tones mask variation. Slate blue is distinctive and photographs well but requires UV-stable sealer reapplication every 2 years — blue pigments fade faster than earth tones under direct sun. Avoid bright or saturated colors on walkways: red, terracotta, and deep green show wear patterns from concentrated foot traffic within 1–2 years, creating visible pale lanes down the center of the path.",
+        inspirationSlugs: ["cream-stamped-concrete-walkway", "light-grey-concrete-paths"],
+      },
+      {
+        heading: "Staining Existing Walkways: The Cheapest Upgrade",
+        body: "Staining an existing concrete walkway is the lowest-cost hardscape improvement available — $3–7/sq ft transforms a sound but dull slab into a surface that looks like a deliberate design choice. On a 120 sq ft front walk, that's $360–840 total. Requirements: the existing slab must be structurally sound with no major through-cracks, heaving, or significant spalling. Old sealers must be stripped first ($1–3/sq ft if needed) because stain cannot penetrate a sealed surface. Test a corner section before committing — the concrete's age, original mix, and prior treatments all affect how stain color develops, and every slab reacts differently. For context, the alternatives to staining an existing walkway are: concrete overlay ($4–8/sq ft), or full demolition and replacement ($7–20/sq ft including demo). Staining is the only option that doesn't require equipment, demolition, or new concrete — and by far the cheapest path to a walkway that looks intentionally colored rather than weathered grey.",
+      },
+      {
+        heading: "Stained Steps and Transitions",
+        body: "Staining concrete entry steps costs $150–400 total for a typical 3-step entry — significantly less than replacing or overlaying them. Apply the same stain color to both the walkway and the steps for visual continuity; a stained walkway that terminates at unstained grey steps looks unfinished. Broom-finish treads should remain broom-finished regardless of stain color — the texture provides critical slip resistance on steps that a smooth stained surface does not. If the stained walkway meets an unstained porch or landing, use a 4–6 inch border band in a transitional tone (one shade lighter or darker than the main walkway stain) to create a deliberate color shift rather than an abrupt stop. This border detail costs $50–150 in additional stain and tape work and makes the transition look designed rather than like the applicator ran out of stain.",
+        inspirationSlugs: ["stamped-concrete-steps-entry", "tiered-concrete-slab-entry"],
+      },
+      {
+        heading: "Cost Comparison: Stained vs Stamped vs Plain Walkway",
+        body: "On a 160 sq ft walkway (4 feet wide, 40 feet long): plain broom finish costs $960–1,600 for a new pour, staining an existing slab costs $480–1,120, integral color on a new pour costs $1,280–2,240, and stamped concrete costs $1,920–2,880. Staining existing concrete is the only option that avoids demolition, new forming, and a concrete truck — it's a surface treatment on what's already there. That makes it the fastest and least disruptive walkway upgrade: most stain jobs are completed in 1–2 days with no heavy equipment. Stamped concrete delivers the most visual impact per square foot but at 2–3x the cost of staining and requires a full new pour. Integral color splits the difference — permanent, full-depth color at moderate premium — but also requires a new pour. For homeowners with a structurally sound existing walkway who want a visual transformation on a budget, staining is the clear winner.",
+        inspirationSlugs: ["poured-concrete-paths", "stamped-concrete-walkway-grey"],
+      },
+    ],
+    relatedSlugs: [
+      "concrete-walkway-ideas",
+      "front-walkway-ideas",
+      "concrete-walkway-cost",
+      "concrete-walkway-patterns",
+    ],
+    relatedMaterials: ["colored-concrete", "broom-finish"],
+    faqs: [
+      {
+        question: "How much does it cost to stain a concrete walkway?",
+        answer:
+          "Staining a concrete walkway costs $3–7/sq ft including surface prep, stain application, and sealing. A 120 sq ft front walk runs $360–840 total. Surface prep — stripping old sealer — adds $1–3/sq ft if needed. Acid stain is the most common method at $3–7/sq ft; water-based stain runs $2–5/sq ft. Integral color on a new pour adds $2–4/sq ft to the base pour cost.",
+      },
+      {
+        question: "How long does walkway stain last?",
+        answer:
+          "Acid stain lasts 5–10 years with resealing every 2–3 years — the color is a chemical reaction within the concrete and doesn't peel or flake. Integral color is permanent for the life of the slab. Water-based stain lasts 2–5 years before requiring recoating. UV exposure and foot traffic volume are the main fade factors; walkways in full sun and heavy daily use fade fastest.",
+      },
+      {
+        question: "Can you stain a walkway yourself?",
+        answer:
+          "Water-based stain is the easiest DIY option — predictable color, simple spray or roll application, and cleanup with water. Acid stain is moderate DIY difficulty: it requires proper protective equipment, careful spraying technique, neutralization after reaction, and sealing. Integral color requires a new concrete pour, which is not a typical DIY project. The biggest DIY risk on walkways specifically: uneven application on a narrow 3–4 foot surface shows more visibly than on a wide patio because the eye takes in the full width at once.",
+      },
+      {
+        question: "What's the best concrete stain color for a front walkway?",
+        answer:
+          "Warm grey or charcoal — both hide dirt, complement any home exterior, and don't show foot-traffic wear patterns. Warm grey is the safest all-around choice. Charcoal is more dramatic but shows leaf stains and salt residue. Avoid very dark colors like black (show every leaf and pollen deposit) and very light colors like white or cream (show dirt tracks within weeks). Cola brown is a strong alternative for traditional and brick homes.",
+      },
+    ],
+  },
 ];

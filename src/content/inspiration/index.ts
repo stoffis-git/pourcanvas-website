@@ -1533,4 +1533,42 @@ export const inspirationPages: InspirationPage[] = [
       { pillar: "patio", slug: "patio-color-ideas" },
     ],
   },
+  {
+    slug: "exposed-aggregate-patio-tan",
+    title: "Tan Exposed Aggregate Concrete Patio Inspiration | PourCanvas",
+    headline: "Tan Exposed Aggregate Patio",
+    metaDescription: "A tan exposed aggregate patio costs $10–16/sq ft and delivers a warm, natural stone look that suits craftsman and ranch-style homes. See real installations.",
+    ogImage: "https://images.pourcanvas.com/inspiration-exposed-aggregate-patio-tan.jpg",
+    heroAlt: "Tan exposed aggregate concrete patio with warm buff pea gravel surface, craftsman home with timber accents and mature landscaping",
+    dominantColor: "#c4a97d",
+    contentBlock:
+      "Tan exposed aggregate concrete gives your patio the texture and warmth of natural stone at a fraction of the cost — warm buff and honey-toned pea gravel embedded in a smooth concrete matrix that catches afternoon light and develops more character as it weathers.\n\nThe warm tone is what sets this apart from the more common grey and white aggregate options. Tan aggregate suits craftsman bungalows, ranch-style homes, and any exterior with natural wood, warm brick, or earth-toned siding. Against green landscaping — lawn, garden beds, mature trees — the warm surface creates a grounded, organic transition between built and natural elements that cool grey aggregate can't achieve.\n\nCost runs $10–16 per sq ft installed, depending on aggregate source and regional labour rates. The aggregate itself drives the tone: warm buff pea gravel produces a honey-gold surface; river-washed quartz in sandstone tones gives a subtler, more muted warmth. Specify your aggregate colour by sample, not by name — 'tan' means different things to different suppliers. On a 250 sq ft backyard patio, budget $2,500–4,000.\n\nMaintenance is minimal. The textured surface hides dirt, leaf stains, and furniture marks better than any smooth finish. Reseal every 3–5 years with a penetrating sealer to deepen the colour and protect against moisture penetration. Avoid film-forming sealers on aggregate — they yellow over time on warm tones and peel at the stone edges. PourCanvas can show you how tan exposed aggregate would look on your specific patio before you book a contractor.",
+    targetKeywords: ["exposed aggregate patio", "tan exposed aggregate concrete", "warm aggregate patio", "exposed aggregate patio ideas"],
+    pillar: "patio",
+    ctaHeadline: "See this finish on your patio",
+    ctaBody: "Upload a photo of your backyard and see what warm tan exposed aggregate concrete could look like in your space.",
+    relatedArticles: [
+      { pillar: "patio", slug: "concrete-patio-ideas" },
+      { pillar: "patio", slug: "concrete-patio-cost" },
+    ],
+  },
+  {
+    slug: "stained-concrete-steps-warm",
+    title: "Warm Brown Stained Concrete Entry Steps Inspiration | PourCanvas",
+    headline: "Warm Brown Stained Concrete Steps",
+    metaDescription: "Acid-stained concrete entry steps in warm brown tones cost $10–16/sq ft and transform a plain entry into an architectural detail. See real installations.",
+    ogImage: "https://images.pourcanvas.com/inspiration-stained-concrete-steps-warm.jpg",
+    heroAlt: "Warm brown acid-stained concrete entry steps with mottled walnut tone and broom-finish treads, craftsman home front entry with planted borders",
+    dominantColor: "#8b6f4e",
+    contentBlock:
+      "Warm brown acid-stained concrete steps turn a plain grey entry into something that looks like aged walnut wood — rich, mottled, and distinctly architectural without any of the maintenance real wood demands outdoors.\n\nAcid stain reacts with the minerals in cured concrete to produce translucent, variegated colour that penetrates the surface rather than sitting on top. On steps, the chemical reaction creates particularly striking results: the treads (which get more foot traffic and wear) develop a slightly different tone than the risers, giving each step its own character. Warm brown tones — cola, walnut, desert amber — are the most popular for entry steps because they complement virtually every home exterior colour and age gracefully rather than fading.\n\nThe practical detail that matters most: broom-finish treads are non-negotiable on stained steps. Acid stain doesn't change the surface texture, so the slip resistance comes entirely from the finish underneath. A broom-textured tread with acid stain provides excellent grip in wet conditions. Smooth-troweled treads with stain are a slip hazard — no exceptions.\n\nCost runs $10–16 per sq ft for the steps themselves (forming, pouring, and staining) or $150–400 per step when quoted individually. A 3-step entry with a landing pad and 15-foot connecting walkway in matching stain typically runs $1,800–3,200 total. For existing sound concrete steps, staining alone costs $3–7/sq ft — $45–105 per step for a standard 36-inch-wide entry — making it the most cost-effective entry upgrade available. PourCanvas can show you how warm brown staining would look on your specific entry steps before you commit.",
+    targetKeywords: ["stained concrete steps", "acid stained concrete steps", "brown concrete entry steps", "stained concrete front steps"],
+    pillar: "walkway",
+    ctaHeadline: "See stained steps at your front entry",
+    ctaBody: "Upload a photo of your front steps and see what warm brown acid-stained concrete could look like at your entry.",
+    relatedArticles: [
+      { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "concrete-steps-ideas" },
+    ],
+  },
 ];

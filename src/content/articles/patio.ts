@@ -1158,4 +1158,238 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       },
     ],
   },
+  {
+    slug: "exposed-aggregate-vs-broom-finish",
+    pillar: "patio",
+    title: "Exposed Aggregate vs Broom Finish Concrete: Cost, Look & Durability Compared",
+    headline: "Exposed Aggregate vs Broom Finish",
+    metaDescription:
+      "Exposed aggregate costs $8–14/sq ft vs $6–10 for broom finish — but they differ in slip resistance, appearance, and maintenance. Real comparison with costs.",
+    targetKeywords: [
+      "exposed aggregate vs broom finish",
+      "broom finish or exposed aggregate",
+      "exposed aggregate concrete pros and cons",
+      "broom finish concrete vs exposed aggregate",
+    ],
+    ogImage: "https://images.pourcanvas.com/exposed-aggregate-vs-broom.jpg",
+    publishedAt: "2026-05-26",
+    updatedAt: "2026-05-26",
+    intro:
+      "Exposed aggregate and broom finish are the two most common non-stamped concrete finishes — and they sit at different price points for good reason. Broom finish runs $6–10/sq ft installed; exposed aggregate costs $8–14/sq ft. On a 400 sq ft patio, that's a $800–1,600 difference. But cost isn't the only factor. Slip resistance, long-term appearance, maintenance effort, and how well each finish suits your specific use case all matter. Here's a direct comparison across every dimension that affects the decision.",
+    sections: [
+      {
+        heading: "Cost: Broom Finish Wins on Price",
+        body: "Broom-finish concrete costs $6–10/sq ft installed — it's the baseline concrete patio price because the finish requires no specialized technique beyond dragging a broom across the wet surface. Exposed aggregate runs $8–14/sq ft because the contractor must apply a surface retarder, then pressure-wash the top layer of cement paste to reveal the stone aggregate beneath — an extra step that adds 1–2 hours of labor on a typical 400 sq ft patio. On that 400 sq ft patio, broom finish totals $2,400–4,000; exposed aggregate totals $3,200–5,600. The $800–1,600 gap is real but narrower than the jump to stamped concrete at $12–18/sq ft. If budget is the primary constraint and you want a clean, functional surface, broom finish is the right call.",
+        inspirationSlugs: ["warm-tan-broom-finish-patio", "poured-concrete-patio"],
+      },
+      {
+        heading: "Appearance: Two Very Different Looks",
+        body: "Broom finish produces a clean, uniform surface with fine parallel texture lines — it reads as minimal, modern, and intentional when paired with quality edging and a good color wash. It's a blank canvas that lets landscaping and furniture define the space. Exposed aggregate is a fundamentally different aesthetic: the revealed stones create a textured, speckled surface with natural color variation that reads as organic, earthy, and high-end. The appearance depends heavily on the aggregate mix — river pebble produces a rounded, warm look; crushed granite gives angular, contemporary texture. Choosing a decorative aggregate blend (imported stone rather than standard local gravel) adds $1–3/sq ft but dramatically changes the visual result. If you want the concrete to be the visual feature, exposed aggregate delivers more interest per square foot.",
+        inspirationSlugs: ["exposed-aggregate-patio-white", "exposed-aggregate-patio-charcoal"],
+      },
+      {
+        heading: "Slip Resistance: Aggregate Has the Edge",
+        body: "Both finishes provide adequate traction when dry — the broom texture and the aggregate stone surface both grip well under normal conditions. The difference shows when wet. Exposed aggregate's protruding stone particles create a naturally rough surface that maintains grip in rain and around pool edges better than broom finish. Broom finish with deeper brush lines improves wet traction compared to a light broom, but it still can't match aggregate's inherent texture. For pool decks, patios adjacent to hot tubs, or regions with frequent rain, exposed aggregate's wet-surface grip is a meaningful functional advantage. The ASTM slip resistance coefficient for quality exposed aggregate typically exceeds 0.60 wet; broom finish ranges from 0.45–0.55 depending on broom depth.",
+      },
+      {
+        heading: "Maintenance Over 10 Years",
+        body: "Both finishes follow the same basic maintenance cycle: reseal every 3–5 years with a penetrating sealer ($0.15–0.25/sq ft DIY, $1–3/sq ft professional). The difference is in cleaning and repair. Broom finish is easy to sweep, mop, and pressure wash — the flat texture doesn't trap debris. Exposed aggregate's textured surface collects leaf tannins, dirt, and organic matter in the gaps between stones, requiring more careful cleaning; aggressive pressure washing can dislodge aggregate stones if the original wash was too deep. Patching broom finish is straightforward — a skim coat blends reasonably well. Patching exposed aggregate is nearly impossible to match because the stone pattern is random. Over 10 years, total maintenance cost is roughly similar — $600–1,200 for either finish on a 400 sq ft patio — but aggregate demands more attention to cleaning technique.",
+      },
+      {
+        heading: "Durability and Lifespan",
+        body: "Both finishes last 25–30+ years on a properly prepared base with adequate drainage. The practical difference is how they age visually. Exposed aggregate hides wear, surface staining, tire marks, and minor discoloration because the multicolored stone surface camouflages imperfections — a 15-year-old exposed aggregate patio can look nearly identical to a new one. Broom finish shows dirt, leaf stains, oil spots, and tire marks more visibly, especially on lighter colors. A white or light-grey broom-finish patio adjacent to a driveway will show tire tracking within months. For high-traffic areas or surfaces adjacent to driveways and parking, aggregate's visual forgiveness is a real advantage. For covered or low-traffic patios, broom finish stays clean with minimal effort.",
+      },
+      {
+        heading: "Best Use Cases: Patio, Driveway, Pool Deck, Walkway",
+        body: "Broom finish is the best choice for: budget-conscious projects where function matters more than decorative impact, pool decks where barefoot comfort is priority (aggregate stones can feel sharp underfoot in hot sun), and DIY-friendly projects where the homeowner is doing the finishing work. Exposed aggregate is the better choice for: driveways where tire marks and oil stains need to disappear into the surface, garden paths and walkway areas where the natural stone texture complements landscaping, and entertaining patios where the surface itself is a design element. The hybrid approach — exposed aggregate on the patio field with broom-finish borders, or aggregate walkways leading to a broom-finish pool deck — captures the strengths of both finishes and adds visual interest through contrast. Budget the border treatment at roughly the same per-sq-ft rate as the primary finish.",
+        inspirationSlugs: ["pool-deck-broom-finish", "charcoal-salt-finish-patio"],
+      },
+      {
+        heading: "The Verdict",
+        body: "Broom finish is the right default for homeowners who want a clean, affordable, low-maintenance surface that works everywhere. At $6–10/sq ft, it's the most cost-effective concrete finish available, and it looks sharp when paired with integral color and quality sealing. Exposed aggregate is the upgrade worth paying for when visual impact, stain concealment, and wet-surface traction matter — the $2–4/sq ft premium over broom finish adds genuine functional and aesthetic value that holds up over decades. On a 400 sq ft patio, the aggregate premium is $800–1,600 — a one-time cost spread over 25+ years of use. For most homeowners building a primary entertaining patio, exposed aggregate is the stronger long-term value. For secondary surfaces, utility slabs, and tight budgets, broom finish delivers everything you need.",
+        inspirationSlugs: ["concrete-patio-ideas-modern-grey", "exposed-aggregate-patio-charcoal"],
+      },
+    ],
+    relatedSlugs: ["concrete-patio-cost", "patio-color-ideas", "pool-deck-ideas-concrete", "best-concrete-finish-pool-deck"],
+    relatedMaterials: ["exposed-aggregate", "broom-finish"],
+    faqs: [
+      {
+        question: "Is exposed aggregate more expensive than broom finish?",
+        answer:
+          "Yes. Exposed aggregate costs $8–14/sq ft installed versus $6–10/sq ft for broom finish. On a 400 sq ft patio, the difference is $800–1,600. The premium covers the surface retarder application and pressure-washing step required to reveal the aggregate stones.",
+      },
+      {
+        question: "Which is more slip-resistant: exposed aggregate or broom finish?",
+        answer:
+          "Exposed aggregate is more slip-resistant, especially when wet. The protruding stone particles create a naturally rough surface with a wet slip resistance coefficient above 0.60, compared to 0.45–0.55 for broom finish. This makes aggregate the better choice for pool decks and rain-prone climates.",
+      },
+      {
+        question: "Can you combine exposed aggregate and broom finish on one patio?",
+        answer:
+          "Yes, and it's a popular approach. A common layout uses exposed aggregate on the main patio field with broom-finish borders, or broom finish on the pool deck area with aggregate on the surrounding patio. The contrast between textures adds visual interest and lets you optimize each zone for its specific use.",
+      },
+      {
+        question: "How long does exposed aggregate concrete last compared to broom finish?",
+        answer:
+          "Both last 25–30+ years with proper installation and sealing maintenance. The practical difference is visual aging: exposed aggregate hides wear, stains, and tire marks better because the multicolored stone surface camouflages imperfections. Broom finish shows dirt and staining more visibly, especially on lighter colors.",
+      },
+    ],
+  },
+  {
+    slug: "patio-resurfacing-cost",
+    pillar: "patio",
+    title: "Patio Resurfacing Cost: Overlays, Staining & Full Replacement Compared",
+    headline: "Patio Resurfacing Cost",
+    metaDescription:
+      "Patio resurfacing costs $4–8/sq ft for overlays vs $6–18/sq ft for full replacement. Breakdown of every method with real pricing for 200–400 sq ft patios.",
+    targetKeywords: [
+      "patio resurfacing cost",
+      "concrete patio overlay cost",
+      "patio resurfacing vs replacement",
+      "how much to resurface a patio",
+      "concrete patio resurfacing cost",
+    ],
+    ogImage: "https://images.pourcanvas.com/patio-resurfacing-cost.jpg",
+    publishedAt: "2026-05-26",
+    updatedAt: "2026-05-26",
+    intro:
+      "A concrete patio that's structurally sound but cosmetically tired has options short of full demolition. Resurfacing methods range from $3–10/sq ft depending on the technique, versus $8–18/sq ft for a complete tear-out and re-pour. On a 300 sq ft patio, that's the difference between a $900–3,000 refresh and a $2,400–5,400 replacement. The right method depends on what's wrong with the existing slab — cosmetic wear, minor cracks, or structural failure each point to a different solution and price tier.",
+    sections: [
+      {
+        heading: "Resurfacing vs Full Replacement: When Each Makes Sense",
+        body: "Resurfacing works when the existing slab is structurally sound — no major cracks running through the full depth, no heaving or settling that has shifted sections more than 1/4 inch relative to each other, and no active drainage problems causing ongoing damage. Cosmetic issues — surface spalling, discoloration, worn sealer, minor surface cracks under 1/8 inch — are all candidates for resurfacing. Full replacement is the right call when: cracks extend through the slab depth, sections have heaved or settled creating trip hazards, the sub-base has failed (evidenced by rocking or hollow-sounding sections), or tree roots have lifted portions of the slab. A contractor can assess slab condition in 15 minutes — the cost of a site visit ($0–150) is worth it before committing to a resurfacing method that won't hold on a compromised base.",
+      },
+      {
+        heading: "Microtopping and Skim Coat ($3–6/sq ft)",
+        body: "Microtoppings are the thinnest resurfacing option at 1/16 to 1/8 inch thick — a polymer-modified cement coating that bonds directly to the existing surface. At $3–6/sq ft installed, a 300 sq ft patio runs $900–1,800. Microtoppings create a smooth, fresh surface that can be integrally colored or stained after curing, but they're too thin to accept stamps or heavy texture. They cover surface discoloration, minor spalling, and cosmetic wear effectively. Lifespan is 5–10 years before recoating is needed, depending on traffic and weather exposure. The bond to the existing slab is the critical factor — proper surface prep (grinding, acid etching, or shot-blasting) is non-negotiable. A microtopping applied over a dirty or sealed surface delaminates within 1–2 seasons.",
+      },
+      {
+        heading: "Stamped Overlay ($6–10/sq ft)",
+        body: "Stamped overlays are thicker than microtoppings — 1/4 to 1/2 inch — and can accept stamp patterns that replicate slate, stone, brick, or wood plank textures. At $6–10/sq ft installed, a 300 sq ft patio runs $1,800–3,000. This is the resurfacing method that delivers the most dramatic visual transformation: a plain grey slab becomes a stamped stone patio without demolition. The overlay bonds mechanically and chemically to the existing surface through primer and the overlay material itself. Durability depends almost entirely on that bond — a properly prepped and primed surface holds 10–15 years; a poorly bonded overlay can lift in sections within 2–3 years. Stamped overlays require the same sealing maintenance as new stamped concrete: every 2–3 years with a film-forming acrylic sealer.",
+        inspirationSlugs: ["stamped-concrete-patio-grey"],
+      },
+      {
+        heading: "Staining Existing Concrete ($3–7/sq ft)",
+        body: "Staining doesn't add thickness — it changes only the color of the existing surface. Acid stain ($3–5/sq ft) chemically reacts with the concrete to produce translucent, mottled earth tones with a natural, organic quality. Water-based stain ($3–7/sq ft) sits on the surface and offers a wider color palette with more predictable, uniform coverage. On a 300 sq ft patio, staining runs $900–2,100 installed. It's the lowest-cost resurfacing option with the highest visual impact per dollar spent — but it requires a structurally sound, unsealed surface. Existing sealers must be stripped first ($1–3/sq ft additional). Staining works best on concrete that's in good structural condition but simply looks tired or dated. It won't hide cracks, spalling, or surface damage — it makes them more visible by adding color contrast.",
+        inspirationSlugs: ["acid-stained-concrete-patio"],
+      },
+      {
+        heading: "Full Replacement Cost ($8–18/sq ft Including Demo)",
+        body: "When the existing slab has failed structurally, resurfacing is a temporary fix at best. Full replacement — demolition of the old slab plus a new pour — costs $8–18/sq ft depending on finish. Demolition and disposal add $1–3/sq ft to the new-pour price. On a 300 sq ft patio, total replacement runs $2,400–5,400. The advantage: a new pour gives you full freedom on finish, pattern, color, and thickness. You get a fresh sub-base preparation, proper drainage grading, and a slab that starts its 25–30 year lifespan from zero. Full replacement is also the right call when the existing slab was poured too thin (under 4 inches), on inadequate base material, or without proper control joints — resurfacing those slabs delays failure rather than preventing it.",
+        inspirationSlugs: ["poured-concrete-patio", "cobblestone-stamped-patio"],
+      },
+      {
+        heading: "DIY vs Contractor for Each Method",
+        body: "Microtopping is a moderate DIY project — the materials are available at concrete supply houses, application is with a squeegee and trowel, and the learning curve is manageable on a small surface. Budget $1–2/sq ft in materials for DIY versus $3–6/sq ft installed. Stamped overlays are not a DIY project — the stamping window is tight (15–30 minutes), stamp alignment requires experience, and a failed stamp attempt on an overlay can't be easily redone. Staining is a good DIY candidate — acid stain application with a pump sprayer is straightforward, and mistakes blend into the natural mottled pattern. Budget $0.50–1.50/sq ft in materials. Full replacement is not a DIY project — forming, pouring, finishing, and curing a concrete slab requires equipment, experience, and timing that are beyond typical homeowner capability. The cost of a failed DIY pour (demolition plus a contractor re-pour) exceeds the savings.",
+      },
+      {
+        heading: "How to Get Accurate Quotes",
+        body: "Get a minimum of 3 quotes for any resurfacing project over $1,000. Each quote should itemize: surface preparation (grinding, etching, or shot-blasting), primer or bonding agent, overlay or stain material and thickness, sealer application, and cleanup. Ask whether the quote includes moving furniture and covering adjacent surfaces. Seasonal timing matters — fall quotes run 10–20% lower than spring in most markets because contractor demand drops after peak season. Bundling a patio resurface with driveway or walkway work from the same contractor typically saves 10–15% on mobilization costs. If multiple contractors recommend full replacement over resurfacing, the slab condition is likely worse than a visual inspection suggests — don't push for a cheaper resurfacing option when the professionals are telling you the base has failed.",
+      },
+    ],
+    relatedSlugs: ["concrete-patio-resurfacing", "concrete-patio-cost", "concrete-patio-crack-repair", "stained-concrete-patio-ideas"],
+    relatedMaterials: ["stamped-concrete", "colored-concrete", "concrete-overlay"],
+    faqs: [
+      {
+        question: "How much does it cost to resurface a 300 sq ft patio?",
+        answer:
+          "A 300 sq ft patio resurface costs $900–1,800 for a microtopping, $1,800–3,000 for a stamped overlay, or $900–2,100 for staining. Full replacement with demolition runs $2,400–5,400. The right method depends on the condition of the existing slab — cosmetic damage calls for resurfacing; structural failure requires replacement.",
+      },
+      {
+        question: "Is it cheaper to resurface or replace a concrete patio?",
+        answer:
+          "Resurfacing is significantly cheaper: $3–10/sq ft versus $8–18/sq ft for full replacement including demolition. On a 300 sq ft patio, resurfacing saves $1,500–2,400 minimum. But resurfacing only works on structurally sound slabs — if the base has failed, resurfacing delays the problem rather than solving it.",
+      },
+      {
+        question: "How long does a concrete patio overlay last?",
+        answer:
+          "A properly bonded stamped overlay lasts 10–15 years with regular sealing every 2–3 years. Microtoppings last 5–10 years. Both depend heavily on surface preparation quality — the bond to the existing slab is the single biggest factor in overlay longevity. A failed bond causes delamination within 1–3 years.",
+      },
+      {
+        question: "Can you resurface a cracked concrete patio?",
+        answer:
+          "Minor surface cracks under 1/8 inch can be filled and resurfaced successfully. Cracks that extend through the full slab depth, or sections that have shifted or heaved, indicate structural failure — resurfacing over those areas creates a temporary cosmetic fix that fails within 1–3 years. Full replacement is the right call for structurally compromised slabs.",
+      },
+    ],
+  },
+  {
+    slug: "concrete-patio-trends-2026",
+    pillar: "patio",
+    title: "Concrete Patio Trends for 2026: What's In, What's Out",
+    headline: "Concrete Patio Trends for 2026",
+    metaDescription:
+      "2026 concrete patio trends: dark integral color, scored geometric patterns, mixed-finish zones, and warm earth tones. What's in and what's fading.",
+    targetKeywords: [
+      "concrete patio trends 2026",
+      "modern patio ideas 2026",
+      "outdoor patio trends",
+      "patio design trends 2026",
+      "modern concrete patio ideas",
+    ],
+    ogImage: "https://images.pourcanvas.com/patio-trends-2026.jpg",
+    publishedAt: "2026-05-26",
+    updatedAt: "2026-05-26",
+    intro:
+      "Concrete patio design in 2026 has shifted decisively toward restraint. The dominant moves — dark integral color, scored geometric patterns, mixed-finish zones, and a return to warm earth tones — all share a common thread: less pattern complexity, more material honesty. The busy multi-color stamped patios of the last decade are giving way to surfaces that let the concrete itself be the design element. Here's what's current, what's emerging, and what's fading — with real costs for each trend.",
+    sections: [
+      {
+        heading: "Dark Integral Color Is the Dominant Move",
+        body: "Charcoal, graphite, and near-black integral pigments are the defining patio color direction of 2026. Dark integral color adds $2–4/sq ft to a standard pour — on a 400 sq ft patio, that's $800–1,600 for a finish that fundamentally changes how the surface reads. Dark concrete photographs dramatically, hides stains and wear marks better than any other color direction, and pairs with both modern and transitional architecture. The trend is being driven partly by social media aesthetics — dark patios pop in overhead drone shots and twilight photography that dominates design platforms. The functional benefit is real: charcoal concrete shows less dirt, leaf staining, and foot traffic wear than light grey or buff finishes. The trade-off is heat absorption — dark concrete in direct afternoon sun in Phoenix or Dallas gets uncomfortably hot barefoot. In temperate climates, the heat concern is minimal.",
+        inspirationSlugs: ["charcoal-salt-finish-patio", "concrete-patio-ideas-modern-grey"],
+      },
+      {
+        heading: "Scored Geometric Patterns Replace Busy Stamps",
+        body: "Clean saw-cut scoring is replacing elaborate stamp patterns as the preferred way to add visual interest to a concrete patio. Diagonal scoring, grid patterns, and asymmetric line work create a modern, architectural look at $0.50–1/sq ft — a fraction of the $12–18/sq ft for full stamped finishes. On a 400 sq ft patio, scoring adds $200–400 versus $4,800–7,200 for stamping. The aesthetic logic: scored lines let the concrete surface itself be the design element rather than imitating another material. A charcoal-pigmented slab with clean diagonal scoring reads as intentional and contemporary. The same slab with a stamped cobblestone pattern reads as concrete pretending to be stone. Scoring also ages better — there are no stamp edges to wear down or release agent to fade. The lines are cut into the slab and remain crisp indefinitely.",
+        inspirationSlugs: ["scored-grid-concrete-patio"],
+      },
+      {
+        heading: "Large-Format Floating Pad Designs",
+        body: "The signature 2026 patio layout: individual rectangular concrete pads (typically 3x5 or 4x6 feet) separated by 2–4 inch strips of turf, gravel, or ground cover. This floating-pad approach costs $10–16/sq ft installed because each pad requires individual forming and finishing — more labor than a single monolithic pour. On a 300 sq ft patio equivalent, budget $3,000–4,800. The visual effect is striking: the concrete reads as intentional landscape elements rather than a continuous slab, the gaps between pads provide natural drainage, and the turf or gravel strips add textural contrast. It photographs as high-end residential design and translates well from small urban courtyards to large suburban backyards. The maintenance trade-off is real — turf strips between pads require mowing and edging; gravel strips need periodic replenishment and weed management.",
+        inspirationSlugs: ["large-slab-patio-river-rock"],
+      },
+      {
+        heading: "Mixed-Finish Zones",
+        body: "Designers and contractors are increasingly zoning patios by finish rather than using one finish across the entire surface. A broom-finish dining area with an exposed aggregate surround, or a stamped border framing a smooth troweled field — each zone optimized for its function. The dining zone gets broom finish for chair-leg stability and easy cleaning under the table. The lounge zone gets exposed aggregate for visual interest and texture. The pool-adjacent zone gets salt finish for slip resistance. Mixed-finish patios cost $10–16/sq ft on average because each zone requires separate finishing technique and timing, but the result is a surface that looks custom rather than production. The control joints between finish zones double as design elements, creating intentional visual breaks.",
+        inspirationSlugs: ["exposed-aggregate-patio-charcoal", "warm-tan-broom-finish-patio"],
+      },
+      {
+        heading: "Warm Earth Tones Are Returning",
+        body: "After a decade where grey dominated concrete color choices — from light silver to deep charcoal — warm tones are making a measurable comeback. Buff, sandstone, terracotta, and warm tan integral pigments are appearing in design portfolios and contractor project galleries at increasing frequency. The shift reflects broader residential design trends: warm wood tones in interior flooring, natural stone in kitchens, and earth-toned exterior paint palettes all create demand for outdoor surfaces that continue the warm palette rather than contrasting it with cool grey. Warm integral color costs the same as grey ($2–4/sq ft), and the finish pairs naturally with brick, natural wood fencing, and stone landscaping elements. For homeowners with warm-toned exteriors who defaulted to grey concrete because it was the safe choice, 2026 is the year to match the patio to the house.",
+        inspirationSlugs: ["terracotta-stamped-patio", "salt-finish-concrete-patio"],
+      },
+      {
+        heading: "What's Fading: Busy Stamps, High-Gloss, Multi-Color",
+        body: "Three concrete patio trends are visibly declining in 2026. Full-field cobblestone and brick stamps that cover the entire surface in repetitive pattern are losing ground to simpler finishes — they read as dated, especially when the color release agent fades unevenly after 5–7 years. High-gloss wet-look sealers that give concrete an artificial shine are being replaced by matte and satin finishes that let the material look like concrete rather than lacquered stone. Multi-color release agent effects — the heavy brown-and-tan antiquing that was standard on stamped patios through the 2010s — are giving way to single-tone or subtle two-tone color approaches. The common thread: homeowners and designers are moving away from concrete that tries to look like something else and toward concrete that looks like well-executed concrete. The shift favors material honesty over imitation.",
+      },
+      {
+        heading: "How to Future-Proof Your Patio Investment",
+        body: "Trends fade; good materials don't. The most future-proof patio choices in 2026: neutral tones (charcoal, warm grey, natural buff) that work with any exterior color scheme and don't date to a specific era. Simple finishes (broom, salt, light scoring) that age gracefully rather than degrading visually as stamp edges wear and release colors fade. Quality materials — 4,000+ PSI concrete with fiber reinforcement, proper sub-base preparation, and consistent sealing — that ensure the slab itself lasts 30+ years regardless of surface fashion. A $4,000 patio in a neutral finish with quality materials will look appropriate in 2036. A $6,000 patio in a trendy finish with marginal materials may look dated and degraded by 2032. Invest in the slab, not the trend.",
+        inspirationSlugs: ["grey-stamped-concrete-patio-craftsman", "ashlar-slate-patio-charcoal"],
+      },
+    ],
+    relatedSlugs: ["stamped-concrete-ideas", "patio-color-ideas", "concrete-patio-cost", "small-patio-ideas"],
+    relatedMaterials: ["colored-concrete", "stamped-concrete", "exposed-aggregate"],
+    faqs: [
+      {
+        question: "What is the most popular concrete patio finish in 2026?",
+        answer:
+          "Dark integral color with simple finishing (broom, salt, or scored lines) is the dominant patio trend in 2026. Charcoal and graphite pigments add $2–4/sq ft and deliver a modern look that hides wear and photographs well. Elaborate stamped patterns are declining in favor of material-honest finishes.",
+      },
+      {
+        question: "Are stamped concrete patios going out of style?",
+        answer:
+          "Full-field stamped patterns — especially cobblestone and brick — are declining in popularity. Simple scored patterns, exposed aggregate, and salt-finish textures are replacing them. Stamped borders and accent zones remain popular, but the trend is away from covering the entire surface in a repetitive stamp pattern.",
+      },
+      {
+        question: "What concrete patio color is trending in 2026?",
+        answer:
+          "Charcoal and near-black lead the trend for modern and contemporary homes. Warm earth tones — buff, sandstone, terracotta — are returning after a decade of grey dominance, especially for traditional and craftsman-style homes. Multi-color release agent effects are fading in favor of single-tone or subtle two-tone approaches.",
+      },
+      {
+        question: "How much does a trendy concrete patio cost in 2026?",
+        answer:
+          "The trending finishes range widely: scored geometric patterns on pigmented concrete run $8–12/sq ft, large-format floating pads cost $10–16/sq ft, and mixed-finish zone patios average $10–16/sq ft. Basic dark integral color with broom finish — the most accessible current trend — costs just $8–14/sq ft.",
+      },
+    ],
+  },
 ];

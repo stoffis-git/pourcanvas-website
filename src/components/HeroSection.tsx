@@ -31,7 +31,7 @@ const HeroSection = () => {
             className="inline-block mt-6 rounded-full px-8 py-3 font-semibold text-sm border-0 hover:opacity-90 transition-opacity"
             style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
           >
-            Try It Free →
+            Get Early Access →
           </a>
         </div>
 

@@ -9,12 +9,12 @@ const steps = [
   {
     icon: Sparkles,
     title: "Get AI Inspiration",
-    description: "See your space in stamped concrete, exposed aggregate, pavers, and more — generated in seconds.",
+    description: "See your space in stamped concrete, exposed aggregate, pavers, and more — rendered in seconds.",
   },
   {
     icon: Heart,
     title: "Save & Share",
-    description: "Pin your favorites and share them with your contractor.",
+    description: "Download your favorites and share them with your contractor.",
   },
 ];
 
@@ -51,7 +51,7 @@ const HowItWorks = () => {
             className="inline-block rounded-full px-8 py-3 font-semibold text-sm border-0 hover:opacity-90 transition-opacity"
             style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
           >
-            Try It Yourself →
+            Get Early Access →
           </a>
         </div>
       </div>
