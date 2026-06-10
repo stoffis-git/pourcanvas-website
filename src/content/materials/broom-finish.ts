@@ -17,8 +17,13 @@ export const broomFinishPage: MaterialPage = {
     "broom finish vs stamped",
   ],
   ogImage: "/og/material-broom-finish.jpg",
+  images: [
+    { url: "https://images.pourcanvas.com/inspiration-warm-tan-broom-finish-patio.jpg", alt: "Warm tan broom finish concrete patio with fine linear texture" },
+    { url: "https://images.pourcanvas.com/inspiration-charcoal-broom-finish-walkway.jpg", alt: "Charcoal broom finish concrete walkway with anti-slip parallel lines" },
+    { url: "https://images.pourcanvas.com/inspiration-pool-deck-broom-finish.jpg", alt: "Light grey broom finish concrete pool deck with subtle texture" },
+  ],
   publishedAt: "2025-06-01",
-  updatedAt: "2026-05-25",
+  updatedAt: "2026-06-10",
   intro:
     "Broom finish concrete is the most affordable poured concrete surface at $6–10 per sq ft installed — a stiff brush dragged across fresh concrete leaves fine parallel lines that provide grip without decorative pattern. It's the default finish for driveways, walkways, and pool decks where durability and low cost matter, and it can be upgraded with integral color or stamped borders without starting over.",
   sections: [
@@ -117,6 +122,10 @@ export const broomFinishPage: MaterialPage = {
     {
       question: "Is broom finish or smooth finish better for a patio?",
       answer: "Broom finish is safer (better wet grip) and more forgiving (hides minor surface imperfections). Smooth trowel finish looks cleaner for covered patios and indoor-outdoor transitions but is slippery when wet and shows every blemish. For uncovered patios, broom finish is the practical choice; for covered or semi-enclosed spaces, smooth trowel can work if drainage keeps the surface dry.",
+    },
+    {
+      question: "How textured is broom finish concrete?",
+      answer: "Texture is adjustable, set by the broom and the timing of the pass. A light broom (often a horsehair broom) leaves fine lines that are barely visible from a few feet away and feel smooth underfoot — good for patios. A medium nylon-bristle broom is the residential default. A heavy stiff-bristle pass cuts deeper grooves for maximum grip on ramps, sloped driveways, and pool decks. Tell your contractor where the surface will be used and they'll match the broom to it.",
     },
   ],
 };

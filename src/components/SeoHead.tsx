@@ -13,6 +13,11 @@ interface GalleryImage {
   caption: string;
 }
 
+interface SeoImage {
+  url: string;
+  alt: string;
+}
+
 interface SeoHeadProps {
   title: string;
   description: string;
@@ -25,7 +30,11 @@ interface SeoHeadProps {
   faqs?: FAQ[];
   breadcrumbs?: BreadcrumbItem[];
   galleryImages?: GalleryImage[];
+  /** Emits an ImageGallery / ImageObject JSON-LD block — for image-led pages (inspiration, materials). */
+  imageGallery?: SeoImage[];
 }
+
+const absolutize = (url: string) => (url.startsWith("http") ? url : `${SITE_URL}${url}`);
 
 export const SeoHead = ({
   title,
@@ -39,6 +48,7 @@ export const SeoHead = ({
   faqs,
   breadcrumbs,
   galleryImages,
+  imageGallery,
 }: SeoHeadProps) => {
   const absoluteImage = ogImage
     ? (ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`)
@@ -85,6 +95,24 @@ export const SeoHead = ({
         })
       : null;
 
+  const imageGallerySchema =
+    imageGallery && imageGallery.length > 0
+      ? JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ImageGallery",
+          name: title,
+          description,
+          ...(absoluteCanonical && { url: absoluteCanonical }),
+          image: imageGallery.map((img) => ({
+            "@type": "ImageObject",
+            contentUrl: absolutize(img.url),
+            url: absolutize(img.url),
+            name: img.alt,
+            caption: img.alt,
+          })),
+        })
+      : null;
+
   const breadcrumbSchema =
     breadcrumbs && breadcrumbs.length > 0
       ? JSON.stringify({
@@ -124,6 +152,9 @@ export const SeoHead = ({
       )}
       {breadcrumbSchema && (
         <script type="application/ld+json">{breadcrumbSchema}</script>
+      )}
+      {imageGallerySchema && (
+        <script type="application/ld+json">{imageGallerySchema}</script>
       )}
     </Helmet>
   );

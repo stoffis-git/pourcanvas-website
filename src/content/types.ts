@@ -34,6 +34,8 @@ export interface MaterialPage {
   metaDescription: string;
   targetKeywords: string[];
   ogImage: string;
+  /** Real finish photos: images[0] renders as the hero, the rest as a gallery; all feed ImageGallery schema. */
+  images?: { url: string; alt: string }[];
   publishedAt: string;
   updatedAt?: string;
   intro: string;

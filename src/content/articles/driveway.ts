@@ -301,7 +301,7 @@ export const drivewayArticles: Article[] = [
   {
     slug: "circular-driveway-ideas",
     pillar: "driveway",
-    title: "Circular Driveway Ideas: Concrete Designs",
+    title: "Circular Driveway Ideas: Designs, Sizing & Cost (2026)",
     headline: "Circular Driveway Designs That Actually Work",
     metaDescription:
       "Circular driveway ideas in concrete: $15,000–40,000 installed depending on size and finish. Design options, sizing rules, and landscaping tips for 2026.",

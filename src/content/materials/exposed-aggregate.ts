@@ -17,8 +17,15 @@ export const exposedAggregatePage: MaterialPage = {
     "exposed aggregate vs stamped concrete",
   ],
   ogImage: "/og/material-exposed-aggregate.jpg",
+  images: [
+    { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-driveway-grey.jpg", alt: "Grey exposed aggregate concrete driveway with a smooth troweled border" },
+    { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-patio-charcoal.jpg", alt: "Charcoal exposed aggregate patio showing dark pebble texture" },
+    { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-walkway-tan.jpg", alt: "Tan exposed aggregate walkway with rounded river-stone finish" },
+    { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-driveway-tan.jpg", alt: "Tan exposed aggregate driveway with warm decorative stone" },
+    { url: "https://images.pourcanvas.com/inspiration-white-exposed-aggregate-driveway.jpg", alt: "White exposed aggregate driveway with light marble chips that stay cool underfoot" },
+  ],
   publishedAt: "2025-06-01",
-  updatedAt: "2026-05-25",
+  updatedAt: "2026-06-10",
   intro:
     "Exposed aggregate concrete reveals the decorative stone beneath the surface by washing away the top paste during cure — it costs $8–14 per sq ft installed, less than stamped concrete. The embedded stones provide natural grip and visual depth, making it the go-to finish for driveways and pool decks where slip resistance matters more than pattern.",
   sections: [
@@ -122,6 +129,10 @@ Both finishes require resealing every 2–3 years and both are difficult to patc
     {
       question: "Is exposed aggregate cheaper than stamped concrete?",
       answer: "Yes. Exposed aggregate typically costs $8–14 per sq ft installed, compared to $12–18 per sq ft for stamped concrete. The savings come from no stamp tooling rental, no multi-layer color hardener application, and simpler surface preparation. For a 400 sq ft driveway, that difference can mean $1,600–2,400 in savings.",
+    },
+    {
+      question: "Does exposed aggregate concrete get hot in the sun?",
+      answer: "It depends on the aggregate color. Light-colored stone — white quartz, marble chips, or cream pea gravel — stays noticeably cooler underfoot than dark concrete, often by 10–15°F on a hot afternoon, which is why it's a popular pool-deck choice. Dark aggregate (charcoal basalt, black river stone) looks dramatic but absorbs more heat. If barefoot comfort matters, specify a lighter aggregate.",
     },
   ],
 };

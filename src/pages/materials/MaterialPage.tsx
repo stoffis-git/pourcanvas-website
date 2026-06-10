@@ -30,6 +30,7 @@ const MaterialPage = () => {
         updatedAt={material.updatedAt}
         keywords={material.targetKeywords}
         faqs={material.faqs}
+        imageGallery={material.images}
         breadcrumbs={[
           { name: "Materials", url: "/materials" },
           { name: material.headline, url: `/materials/${material.slug}` },
@@ -50,6 +51,18 @@ const MaterialPage = () => {
             ? `Updated ${new Date(material.updatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`
             : new Date(material.publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
         </p>
+
+        {material.images && material.images.length > 0 && (
+          <figure className="mb-10 overflow-hidden rounded-2xl border border-border">
+            <img
+              src={material.images[0].url}
+              alt={material.images[0].alt}
+              width={1200}
+              height={675}
+              className="aspect-[16/9] w-full object-cover"
+            />
+          </figure>
+        )}
 
         <p className="text-base md:text-lg font-body text-foreground/80 leading-relaxed mb-10">
           {material.intro}
@@ -72,6 +85,31 @@ const MaterialPage = () => {
             </Fragment>
           ))}
         </div>
+
+        {material.images && material.images.length > 1 && (
+          <div className="mt-12">
+            <h2 className="text-xl md:text-2xl font-display font-bold text-foreground mb-5">
+              {material.headline} in the real world
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {material.images.slice(1).map((img) => (
+                <figure key={img.url} className="overflow-hidden rounded-xl border border-border">
+                  <img
+                    src={img.url}
+                    alt={img.alt}
+                    loading="lazy"
+                    width={600}
+                    height={450}
+                    className="aspect-[4/3] w-full object-cover"
+                  />
+                  <figcaption className="px-3 py-2 text-xs font-body text-muted-foreground">
+                    {img.alt}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        )}
 
         <InspirationEmailCapture slug={slug ?? ''} />
 

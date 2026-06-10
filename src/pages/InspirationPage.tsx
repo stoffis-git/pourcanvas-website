@@ -35,6 +35,8 @@ const InspirationPage = () => {
         ogImage={page.ogImage}
         canonical={`/inspiration/${page.slug}`}
         keywords={page.targetKeywords}
+        faqs={page.faqs}
+        imageGallery={allImages}
       />
       <Header />
       <main className="max-w-4xl mx-auto px-5 py-28 md:py-36">
