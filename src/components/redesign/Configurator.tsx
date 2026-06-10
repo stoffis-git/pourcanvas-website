@@ -16,9 +16,9 @@ import Paywall from "./Paywall";
 const CDN = "/studio";
 
 const EXAMPLES = [
-  { label: "Patio", url: `${CDN}/inspiration-grey-stamped-patio.jpg` },
-  { label: "Driveway", url: `${CDN}/inspiration-modern-driveway.jpg` },
-  { label: "Pool deck", url: `${CDN}/inspiration-concrete-pool-deck-grey.jpg` },
+  { label: "Cracked walkway", url: `${CDN}/example-cracked-walkway.jpg` },
+  { label: "Cracked slab", url: `${CDN}/example-cracked-slab.jpg` },
+  { label: "Weathered patio", url: `${CDN}/example-weathered-concrete.jpg` },
 ];
 
 const SURFACES = [
@@ -61,6 +61,7 @@ const Configurator = () => {
   const [surface, setSurface] = useState("Patio");
   const [mode, setMode] = useState("faithful");
   const [finish, setFinish] = useState("stamped");
+  const [finishEnabled, setFinishEnabled] = useState(false);
   const [numDesigns, setNumDesigns] = useState(2);
   const [intervention, setIntervention] = useState(1);
   const [customOn, setCustomOn] = useState(false);
@@ -185,7 +186,7 @@ const Configurator = () => {
               <h3 className="text-sm font-semibold text-zinc-100">Customize the pour</h3>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="space-y-4">
               <Field label="Surface type">
                 <Select value={surface} onValueChange={setSurface}>
                   <SelectTrigger className={triggerCls}>
@@ -220,37 +221,53 @@ const Configurator = () => {
               </Field>
             </div>
 
-            {/* Finish picker */}
-            <div className="mt-4">
-              <span className={labelCls}>Concrete finish</span>
-              <div className="mt-2 grid grid-cols-3 gap-2.5 sm:grid-cols-3">
-                {FINISHES.map((f) => {
-                  const active = finish === f.id;
-                  return (
-                    <button
-                      key={f.id}
-                      onClick={() => setFinish(f.id)}
-                      className={`group relative overflow-hidden rounded-xl ring-1 transition-all ${
-                        active ? "ring-2" : "ring-white/10 hover:ring-white/25"
-                      }`}
-                      style={active ? { boxShadow: `0 0 0 2px ${AMBER}` } : undefined}
-                    >
-                      <div className="aspect-[5/3] w-full">
-                        <img
-                          src={`${CDN}/${f.img}`}
-                          alt={f.label}
-                          loading="lazy"
-                          className="h-full w-full object-cover"
-                        />
-                      </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-                      <span className="absolute bottom-1 left-2 right-2 text-left text-[11px] font-medium leading-tight text-white">
-                        {f.label}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
+            {/* Finish picker — optional, off by default */}
+            <div className="mt-4 rounded-xl bg-white/[0.03] p-3.5 ring-1 ring-white/[0.06]">
+              <label className="flex cursor-pointer items-center justify-between">
+                <span className="text-sm font-medium text-zinc-200">
+                  Pick a specific finish <span className="font-normal text-zinc-500">(optional)</span>
+                </span>
+                <Switch
+                  checked={finishEnabled}
+                  onCheckedChange={setFinishEnabled}
+                  className="data-[state=checked]:bg-[#e0a45e]"
+                />
+              </label>
+
+              {!finishEnabled ? (
+                <p className="mt-2 text-xs text-zinc-500">
+                  Leave this off and the AI matches the best-looking finish to your space.
+                </p>
+              ) : (
+                <div className="mt-3 grid grid-cols-3 gap-2.5">
+                  {FINISHES.map((f) => {
+                    const active = finish === f.id;
+                    return (
+                      <button
+                        key={f.id}
+                        onClick={() => setFinish(f.id)}
+                        className={`group relative overflow-hidden rounded-xl ring-1 transition-all ${
+                          active ? "ring-2" : "ring-white/10 hover:ring-white/25"
+                        }`}
+                        style={active ? { boxShadow: `0 0 0 2px ${AMBER}` } : undefined}
+                      >
+                        <div className="aspect-[5/3] w-full">
+                          <img
+                            src={`${CDN}/${f.img}`}
+                            alt={f.label}
+                            loading="lazy"
+                            className="h-full w-full object-cover"
+                          />
+                        </div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+                        <span className="absolute bottom-1 left-2 right-2 text-left text-[11px] font-medium leading-tight text-white">
+                          {f.label}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
 
             <div className="mt-4 grid gap-4 sm:grid-cols-2">

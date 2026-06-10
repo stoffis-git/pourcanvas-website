@@ -35,7 +35,7 @@ const Testimonials = () => {
             Loved by homeowners and the pros they hire
           </h2>
           <p className="leading-relaxed text-muted-foreground">
-            Over 10,000 outdoor concrete designs generated and counting.
+            Over 50,000 outdoor concrete designs generated and counting.
           </p>
         </div>
 

@@ -73,12 +73,13 @@ const PricingCards = ({ compact = false }: PricingCardsProps) => {
         <button
           role="switch"
           aria-checked={yearly}
+          aria-label="Toggle yearly billing"
           onClick={() => setYearly((v) => !v)}
-          className="relative h-7 w-12 rounded-full bg-primary/30 transition-colors"
+          className="relative h-7 w-[52px] shrink-0 rounded-full bg-primary/25 transition-colors"
         >
           <span
-            className="absolute top-1 h-5 w-5 rounded-full bg-primary shadow transition-transform"
-            style={{ transform: yearly ? "translateX(22px)" : "translateX(4px)" }}
+            className="absolute left-1 top-1 h-5 w-5 rounded-full bg-primary shadow-sm transition-transform duration-200 ease-out"
+            style={{ transform: yearly ? "translateX(24px)" : "translateX(0px)" }}
           />
         </button>
         <span className={`text-sm font-medium ${yearly ? "text-foreground" : "text-muted-foreground"}`}>

@@ -4,7 +4,9 @@ import RedesignHero from "@/components/redesign/RedesignHero";
 import SocialProofBar from "@/components/SocialProofBar";
 import HowItWorks from "@/components/HowItWorks";
 import BeforeAfterShowcase from "@/components/BeforeAfterShowcase";
+import ComparisonSection from "@/components/ComparisonSection";
 import FinishesGallery from "@/components/FinishesGallery";
+import SocialProofStats from "@/components/SocialProofStats";
 import Testimonials from "@/components/Testimonials";
 import ProjectCategories from "@/components/ProjectCategories";
 import PricingSection from "@/components/PricingSection";
@@ -34,7 +36,9 @@ const Index = () => {
       <SocialProofBar />
       <HowItWorks />
       <BeforeAfterShowcase />
+      <ComparisonSection />
       <FinishesGallery />
+      <SocialProofStats />
       <Testimonials />
       <ProjectCategories />
       <PricingSection />

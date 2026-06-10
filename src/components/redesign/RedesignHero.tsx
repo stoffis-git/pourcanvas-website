@@ -20,9 +20,9 @@ const RedesignHero = () => {
         style={{ background: "#bba2eb", filter: "blur(36px)", animationDelay: "5s" }}
       />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
+      <div className="relative mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
         {/* Left — copy */}
-        <div className="text-center lg:text-left">
+        <div className="text-center lg:pt-2 lg:text-left">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
             AI Concrete Surface Visualizer
           </p>
@@ -46,12 +46,14 @@ const RedesignHero = () => {
           </ul>
 
           <div className="flex items-center justify-center gap-3 lg:justify-start">
-            <div className="flex -space-x-2">
-              {["#90d1bf", "#9dde90", "#bba2eb", "#e0a45e"].map((c) => (
-                <span
-                  key={c}
-                  className="h-8 w-8 rounded-full border-2 border-background"
-                  style={{ background: c }}
+            <div className="flex -space-x-2.5">
+              {["a1", "a2", "a3", "a4", "a5"].map((a) => (
+                <img
+                  key={a}
+                  src={`/avatars/${a}.jpg`}
+                  alt=""
+                  loading="lazy"
+                  className="h-9 w-9 rounded-full border-2 border-background object-cover"
                 />
               ))}
             </div>
@@ -61,7 +63,7 @@ const RedesignHero = () => {
                   <Star key={i} className="h-3.5 w-3.5 fill-current" />
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground">10,000+ designs poured</p>
+              <p className="text-xs text-muted-foreground">50,000+ designs poured</p>
             </div>
           </div>
         </div>
