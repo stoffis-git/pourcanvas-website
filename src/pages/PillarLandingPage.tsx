@@ -28,7 +28,7 @@ const PillarLandingPage = ({ pillar }: { pillar: Pillar }) => {
   const inspirations = inspirationByPillar[pillar].filter((p) =>
     p.ogImage.startsWith("https://")
   );
-  const articles = articlesByPillar[pillar].slice(0, 3);
+  const articles = articlesByPillar[pillar].slice(0, 6);
 
   return (
     <>
