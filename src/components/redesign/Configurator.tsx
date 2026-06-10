@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import * as SliderPrimitive from "@radix-ui/react-slider";
-import { Upload, Wand2, Check, Lock } from "lucide-react";
+import { Upload, Wand2, Check, Lock, X } from "lucide-react";
 import { toast } from "sonner";
 import {
   Select,
@@ -148,17 +148,42 @@ const Configurator = () => {
             </div>
 
             <div
-              onClick={() => inputRef.current?.click()}
+              onClick={source ? undefined : () => inputRef.current?.click()}
               onDrop={(e) => {
                 e.preventDefault();
                 const f = e.dataTransfer.files[0];
                 if (f) handleFile(f);
               }}
               onDragOver={(e) => e.preventDefault()}
-              className="flex cursor-pointer flex-col items-center justify-center rounded-xl border border-dashed border-white/15 bg-white/[0.02] px-4 py-7 text-center transition-colors hover:border-white/30 hover:bg-white/[0.04]"
+              className={`relative flex flex-col items-center justify-center rounded-xl border border-dashed border-white/15 bg-white/[0.02] px-4 py-7 text-center transition-colors ${
+                source ? "" : "cursor-pointer hover:border-white/30 hover:bg-white/[0.04]"
+              }`}
             >
-              {source && !EXAMPLES.some((e) => e.url === source) ? (
-                <img src={source} alt="Your upload" className="max-h-40 rounded-lg object-contain" />
+              {source ? (
+                <>
+                  <img src={source} alt="Selected space" className="max-h-44 rounded-lg object-contain" />
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSource(null);
+                    }}
+                    aria-label="Remove photo"
+                    className="absolute right-2 top-2 flex h-7 w-7 items-center justify-center rounded-full bg-black/60 text-white transition-colors hover:bg-black/80"
+                  >
+                    <X className="h-4 w-4" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      inputRef.current?.click();
+                    }}
+                    className="mt-3 text-xs text-zinc-400 underline-offset-2 transition-colors hover:text-zinc-200 hover:underline"
+                  >
+                    Replace with your own photo
+                  </button>
+                </>
               ) : (
                 <>
                   <Upload className="mb-2 h-5 w-5 text-zinc-500" />
@@ -210,14 +235,14 @@ const Configurator = () => {
                   <SelectContent className={contentCls}>
                     {MODES.map((m) => (
                       <SelectItem key={m.value} value={m.value} className={itemCls}>
-                        <span className="flex flex-col">
-                          <span>{m.label}</span>
-                          <span className="text-[11px] text-zinc-500">{m.hint}</span>
-                        </span>
+                        {m.label}
                       </SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
+                <p className="mt-1.5 text-[11px] text-zinc-500">
+                  {MODES.find((m) => m.value === mode)?.hint}
+                </p>
               </Field>
             </div>
 
