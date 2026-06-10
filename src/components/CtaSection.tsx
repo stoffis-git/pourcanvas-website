@@ -1,5 +1,3 @@
-import { ToolWaitlistBlock } from "@/components/ToolWaitlistBlock";
-
 const CtaSection = () => {
   return (
     <section className="gradient-hero section-padding">
@@ -8,9 +6,16 @@ const CtaSection = () => {
           Ready to Reimagine Your Outdoor Space?
         </h2>
         <p className="text-muted-foreground mb-8 leading-relaxed">
-          Join homeowners planning their next concrete project. Sign up for early access — free when we launch.
+          Upload a photo and see your concrete redesigned in seconds. Preview free —
+          pay only when you love the result.
         </p>
-        <ToolWaitlistBlock source="tool-waitlist-cta" />
+        <a
+          href="#redesign"
+          className="inline-block rounded-full px-8 py-3.5 font-semibold text-sm border-0 hover:opacity-90 transition-opacity"
+          style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
+        >
+          Start Your Redesign →
+        </a>
       </div>
     </section>
   );

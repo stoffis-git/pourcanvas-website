@@ -1,11 +1,13 @@
 import { SeoHead } from "@/components/SeoHead";
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import RedesignHero from "@/components/redesign/RedesignHero";
 import SocialProofBar from "@/components/SocialProofBar";
 import HowItWorks from "@/components/HowItWorks";
+import BeforeAfterShowcase from "@/components/BeforeAfterShowcase";
 import FinishesGallery from "@/components/FinishesGallery";
-import TryItSection from "@/components/TryItSection";
+import Testimonials from "@/components/Testimonials";
 import ProjectCategories from "@/components/ProjectCategories";
+import PricingSection from "@/components/PricingSection";
 import HomeFAQ from "@/components/HomeFAQ";
 import { homeFaqs } from "@/components/HomeFAQ";
 import CtaSection from "@/components/CtaSection";
@@ -22,18 +24,20 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoHead
-        title="AI Concrete Patio & Driveway Visualizer | PourCanvas"
-        description="See what stamped concrete, exposed aggregate, or pavers would look like on your patio, driveway, or walkway. AI concrete design visualizer — launching soon."
+        title="AI Concrete Visualizer — See Your Patio or Driveway Resurfaced | PourCanvas"
+        description="Upload a photo and see your patio, driveway, or walkway in stamped concrete, exposed aggregate, acid stain, and more. AI concrete surface visualizer — try it free."
         canonical="/"
         faqs={homeFaqs}
       />
       <Header />
-      <HeroSection />
+      <RedesignHero />
       <SocialProofBar />
       <HowItWorks />
+      <BeforeAfterShowcase />
       <FinishesGallery />
-      <TryItSection />
+      <Testimonials />
       <ProjectCategories />
+      <PricingSection />
       <HomeFAQ />
 
       {/* Guide hub links */}

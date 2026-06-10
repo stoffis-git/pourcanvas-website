@@ -31,7 +31,7 @@ const Header = () => {
               {label}
             </Link>
           ))}
-          <Link to="/" className="ml-3">
+          <a href="/#redesign" className="ml-3">
             <Button
               size="sm"
               className="rounded-full px-6 font-semibold text-sm border-0 hover:opacity-90 transition-opacity"
@@ -39,7 +39,7 @@ const Header = () => {
             >
               Try It Free →
             </Button>
-          </Link>
+          </a>
         </nav>
 
         <button
@@ -63,7 +63,7 @@ const Header = () => {
               {label}
             </Link>
           ))}
-          <Link to="/" onClick={() => setMobileOpen(false)} className="mt-2">
+          <a href="/#redesign" onClick={() => setMobileOpen(false)} className="mt-2">
             <Button
               size="sm"
               className="rounded-full w-full font-semibold border-0 hover:opacity-90 transition-opacity"
@@ -71,7 +71,7 @@ const Header = () => {
             >
               Try It Free →
             </Button>
-          </Link>
+          </a>
         </div>
       )}
     </header>
