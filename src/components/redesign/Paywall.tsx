@@ -23,10 +23,10 @@ const Paywall = ({ open, onOpenChange }: PaywallProps) => {
               <Sparkles className="h-6 w-6 text-foreground" />
             </div>
             <DialogTitle className="text-2xl font-bold">
-              Your design is ready to pour
+              Your new space is ready
             </DialogTitle>
             <DialogDescription className="text-base text-muted-foreground max-w-md mx-auto">
-              Subscribe to render this redesign in full resolution and keep generating —
+              Unlock this redesign in full resolution and keep exploring looks —
               pick the plan that fits your project.
             </DialogDescription>
           </DialogHeader>

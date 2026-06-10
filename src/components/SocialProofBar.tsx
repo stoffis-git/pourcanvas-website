@@ -1,5 +1,5 @@
 const stats = [
-  "50,000+ designs poured",
+  "50,000+ spaces reimagined",
   "3 free designs / day",
   "No sign-up required",
 ];

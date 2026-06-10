@@ -208,7 +208,7 @@ const Configurator = () => {
           <section>
             <div className="mb-4 flex items-center gap-2">
               <StepDot n={2} />
-              <h3 className="text-sm font-semibold text-zinc-100">Customize the pour</h3>
+              <h3 className="text-sm font-semibold text-zinc-100">Customize your design</h3>
             </div>
 
             <div className="space-y-4">

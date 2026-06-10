@@ -6,7 +6,7 @@ const CtaSection = () => {
           Ready to Reimagine Your Outdoor Space?
         </h2>
         <p className="text-muted-foreground mb-8 leading-relaxed">
-          Upload a photo and see your concrete redesigned in seconds. Preview free —
+          Upload a photo and see your space transformed in seconds. Preview free —
           pay only when you love the result.
         </p>
         <a

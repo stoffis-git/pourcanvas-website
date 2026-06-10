@@ -26,8 +26,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoHead
-        title="AI Concrete Visualizer — See Your Patio or Driveway Resurfaced | PourCanvas"
-        description="Upload a photo and see your patio, driveway, or walkway in stamped concrete, exposed aggregate, acid stain, and more. AI concrete surface visualizer — try it free."
+        title="Redesign Your Patio, Driveway & Backyard with AI | PourCanvas"
+        description="Upload a photo and instantly see your patio, driveway, or backyard redesigned with beautiful concrete finishes — stamped, exposed aggregate, stained, and more. Plan your outdoor project with confidence. Try it free."
         canonical="/"
         faqs={homeFaqs}
       />

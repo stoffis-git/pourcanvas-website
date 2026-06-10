@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 import Configurator from "./Configurator";
 
 const points = [
-  "Upload one photo of your space",
-  "Try stamped, exposed aggregate, stained & more",
-  "Photoreal results to hand your contractor",
+  "Just upload a photo — zero design skills needed",
+  "Compare a dozen looks side by side in seconds",
+  "Share photoreal plans with your contractor",
 ];
 
 const RedesignHero = () => {
@@ -24,14 +24,16 @@ const RedesignHero = () => {
         {/* Left — copy */}
         <div className="text-center lg:pt-2 lg:text-left">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            AI Concrete Surface Visualizer
+            AI Outdoor Space Visualizer
           </p>
           <h1 className="mb-5 text-4xl font-bold leading-tight text-foreground md:text-5xl lg:text-[3.4rem]">
-            See it poured <span className="gradient-text">before you pour it</span>
+            Redesign your outdoor space{" "}
+            <span className="gradient-text">before you spend a cent</span>
           </h1>
           <p className="mx-auto mb-6 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg lg:mx-0">
-            Upload a photo of your patio, driveway, or yard and watch AI resurface it in
-            stamped concrete, exposed aggregate, acid stain, and a dozen more finishes — in seconds.
+            Upload one photo of your patio, driveway, or backyard and watch AI transform it
+            with beautiful, real-world finishes — stamped, exposed aggregate, stained, and more.
+            See exactly how it'll look, then build it with confidence.
           </p>
 
           <ul className="mx-auto mb-7 max-w-md space-y-2.5 lg:mx-0">
@@ -63,7 +65,7 @@ const RedesignHero = () => {
                   <Star key={i} className="h-3.5 w-3.5 fill-current" />
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground">50,000+ designs poured</p>
+              <p className="text-xs text-muted-foreground">50,000+ outdoor spaces reimagined</p>
             </div>
           </div>
         </div>

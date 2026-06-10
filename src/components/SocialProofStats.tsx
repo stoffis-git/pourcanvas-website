@@ -1,7 +1,7 @@
 import { Star, Home, HardHat, Ruler } from "lucide-react";
 
 const stats = [
-  { value: "50,000+", label: "Designs poured" },
+  { value: "50,000+", label: "Designs created" },
   { value: "90+", label: "Countries" },
   { value: "3,500+", label: "Contractors & pros" },
   { value: "4.9/5", label: "Avg. rating" },
