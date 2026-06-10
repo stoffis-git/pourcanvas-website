@@ -46,8 +46,8 @@ const RedesignHero = () => {
           </ul>
 
           <div className="flex items-center justify-center gap-3 lg:justify-start">
-            <div className="flex -space-x-3.5">
-              {["a1", "a2", "a3", "a4", "a5"].map((a) => (
+            <div className="flex -space-x-4">
+              {["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8"].map((a) => (
                 <img
                   key={a}
                   src={`/avatars/${a}.jpg`}

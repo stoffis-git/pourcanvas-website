@@ -34,11 +34,11 @@ const Index = () => {
       <Header />
       <RedesignHero />
       <SocialProofBar />
+      <SocialProofStats />
       <HowItWorks />
       <BeforeAfterShowcase />
       <ComparisonSection />
       <FinishesGallery />
-      <SocialProofStats />
       <Testimonials />
       <ProjectCategories />
       <PricingSection />
