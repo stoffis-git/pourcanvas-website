@@ -308,6 +308,7 @@ export const drivewayArticles: Article[] = [
     targetKeywords: ["circular driveway ideas", "round driveway", "curved driveway design"],
     ogImage: "https://images.pourcanvas.com/driveway-circular-ideas.jpg",
     publishedAt: "2026-03-27",
+    updatedAt: "2026-06-10",
     intro:
       "A circular concrete driveway typically costs $15,000–40,000 installed, depending on size, finish, and site conditions. That's a significant investment — justified when the property has the frontage to support it and curb appeal is a real priority. Done well in stamped or exposed aggregate concrete, a circular driveway is one of the most visually distinctive exterior upgrades possible. These ideas cover pattern choices, layout decisions, and the one sizing rule you can't ignore. For context on costs, the same per-sq-ft pricing logic from standard driveway work applies — with a complexity premium for curved forming.",
     sections: [
@@ -621,6 +622,7 @@ export const drivewayArticles: Article[] = [
     targetKeywords: ["driveway border ideas", "concrete driveway border", "stamped concrete border driveway"],
     ogImage: "https://images.pourcanvas.com/driveway-border-ideas.jpg",
     publishedAt: "2026-03-31",
+    updatedAt: "2026-06-10",
     intro:
       "A driveway border adds visual definition to a plain concrete slab without the cost of stamping the entire surface. Border treatments run $8–20 per linear foot installed — on a standard two-car driveway perimeter (roughly 160 linear feet), that's $1,280–3,200. Here are 5 border styles worth considering, with real cost ranges and the home styles they work best with.",
     sections: [
@@ -646,7 +648,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Color Band Border (Integral Pigment)",
-        body: "A color band border uses a contrasting integral pigment in the perimeter strip versus the driveway field — for example, a charcoal perimeter band around a light grey driveway interior, or a warm buff edge around a cool grey field. The concrete is poured in two phases or using a divider form to keep colors separate. Cost: $10–16 per linear foot for the border strip, including the pigment premium. This approach requires careful planning before the pour — you can't easily add a pigment border to an existing driveway. Tools like PatioCanvas let you preview how different color band combinations would look on your specific driveway layout before the concrete is ordered. Best for: new pours where you want a two-tone effect that's highly durable with no stamping maintenance requirements. If you're also planning a front walkway, running a matching color band as a border on the path creates continuity across both surfaces.",
+        body: "A color band border uses a contrasting integral pigment in the perimeter strip versus the driveway field — for example, a charcoal perimeter band around a light grey driveway interior, or a warm buff edge around a cool grey field. The concrete is poured in two phases or using a divider form to keep colors separate. Cost: $10–16 per linear foot for the border strip, including the pigment premium. This approach requires careful planning before the pour — you can't easily add a pigment border to an existing driveway. Tools like PourCanvas let you preview how different color band combinations would look on your specific driveway layout before the concrete is ordered. Best for: new pours where you want a two-tone effect that's highly durable with no stamping maintenance requirements. If you're also planning a front walkway, running a matching color band as a border on the path creates continuity across both surfaces.",
         inspirationSlugs: ["modern-black-concrete-driveway", "light-grey-brushed-concrete-driveway"],
       },
       {
@@ -658,7 +660,8 @@ export const drivewayArticles: Article[] = [
         body: "A driveway border that echoes the material language of the front walkway creates a visually connected exterior. The most effective pairing: a cobblestone-stamp border on the driveway plus a cobblestone-stamped front walkway — same stamp, same color wash, different surface. The walkway can go slightly richer in color depth than the driveway since it handles foot traffic rather than vehicle loads. If the patio also uses a decorative stamp or exposed aggregate finish, a simple saw-cut score line or matching color band on the driveway ties everything together without over-decorating the most utilitarian surface. Tools like PourCanvas let you preview how different border and walkway combinations look together in your specific exterior before committing to either.",
       },
     ],
-    relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
+    relatedSlugs: ["driveway-edging-ideas", "stamped-concrete-driveway", "concrete-driveway-cost"],
+    relatedMaterials: ["colored-concrete", "stamped-concrete"],
     faqs: [
       {
         question: "How much does a driveway border cost?",
@@ -684,6 +687,7 @@ export const drivewayArticles: Article[] = [
     targetKeywords: ["concrete driveway color", "concrete driveway color visualizer", "colored concrete driveway ideas"],
     ogImage: "https://images.pourcanvas.com/driveway-concrete-driveway-color-guide.jpg",
     publishedAt: "2026-03-27",
+    updatedAt: "2026-06-10",
     intro:
       "Concrete driveways don't have to be grey. Integral pigment, color wash, acid stain, and decorative sealer each produce a distinct look at different price points — from $2–5 extra per sq ft for integral color to $8–14/sq ft for acid stain on an existing slab. Here's what each method produces, what it costs, and how to choose between them before you call a contractor.",
     sections: [
@@ -721,7 +725,8 @@ export const drivewayArticles: Article[] = [
         body: "When the driveway, front walkway, and patio are all planned in the same project window, color coordination across the three surfaces creates the most cohesive exterior result. The tonal direction should be consistent even if the exact finish differs: a charcoal integral driveway paired with a charcoal-wash stamped walkway and a charcoal exposed aggregate patio reads as designed. Exact color matching is rarely achievable across separate pours; tonal harmony is the realistic goal. PourCanvas can show you how different color directions look across all three surfaces before you finalize your color selections, which is particularly useful when you're trying to coordinate with an existing home exterior color that you're not changing.",
       },
     ],
-    relatedSlugs: ["black-concrete-driveway", "concrete-driveway-cost"],
+    relatedSlugs: ["black-concrete-driveway", "driveway-border-ideas", "concrete-driveway-cost"],
+    relatedMaterials: ["colored-concrete"],
     faqs: [
       {
         question: "How much does it cost to color a concrete driveway?",

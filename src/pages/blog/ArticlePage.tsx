@@ -6,7 +6,7 @@ import { SeoHead } from "@/components/SeoHead";
 import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
 import { ToolWaitlistBlock } from "@/components/ToolWaitlistBlock";
 import { FAQSection } from "@/components/FAQSection";
-import { articlesBySlug, inspirationBySlug } from "@/content";
+import { articlesBySlug, inspirationBySlug, allArticles } from "@/content";
 import { InspirationTile } from "@/components/inspiration/InspirationTile";
 
 const materialLabels: Record<string, string> = {
@@ -28,6 +28,10 @@ const ArticlePage = () => {
   if (!article) return null;
 
   const midpoint = Math.floor(article.sections.length / 2);
+
+  const relatedArticles = (article.relatedSlugs ?? [])
+    .map((s) => allArticles.find((a) => a.slug === s))
+    .filter((a): a is NonNullable<typeof a> => !!a);
 
   const galleryImages = article.sections
     .flatMap((s) => s.inspirationSlugs ?? [])
@@ -133,6 +137,26 @@ const ArticlePage = () => {
 
         {article.faqs && article.faqs.length > 0 && (
           <FAQSection faqs={article.faqs} />
+        )}
+
+        {relatedArticles.length > 0 && (
+          <div className="mt-10 border-t pt-8">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-4">
+              Related reading
+            </h3>
+            <ul className="space-y-2">
+              {relatedArticles.map((a) => (
+                <li key={a.slug}>
+                  <Link
+                    to={`/blog/${a.pillar}/${a.slug}`}
+                    className="text-sm text-primary hover:underline"
+                  >
+                    {a.headline}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
 
         {article.relatedMaterials && article.relatedMaterials.length > 0 && (
