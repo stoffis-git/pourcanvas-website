@@ -5,11 +5,11 @@ import type { FAQ } from "@/content/types";
 export const homeFaqs: FAQ[] = [
   {
     question: "What is PourCanvas?",
-    answer: "PourCanvas is an AI-powered visualizer that will show you what different concrete finishes — stamped, exposed aggregate, colored concrete, pavers, and more — would look like on your actual patio, driveway, or walkway. Upload a photo and see the transformation before you call a contractor. Most homeowners compare 3–5 finishes before settling on a direction.",
+    answer: "PourCanvas is an AI-powered visualizer that shows you what different concrete finishes — stamped, exposed aggregate, colored concrete, pavers, and more — would look like on your actual patio, driveway, or walkway. Upload a photo and see the transformation before you call a contractor. Most homeowners compare 3–5 finishes before settling on a direction.",
   },
   {
     question: "Is PourCanvas free to use?",
-    answer: "The visualizer tool is currently in development. Join the waitlist to get free early access when it launches — no credit card required.",
+    answer: "Yes — you get 3 free designs every 24 hours, no credit card required. If you need more, paid plans start at $9/month (billed yearly) for 100 designs a month, with a Contractor Pro plan for high-volume use. Cancel anytime.",
   },
   {
     question: "What surfaces can I design?",
@@ -17,11 +17,11 @@ export const homeFaqs: FAQ[] = [
   },
   {
     question: "What concrete finishes can I preview?",
-    answer: "Stamped concrete, exposed aggregate, broom finish, colored/integral-pigment concrete, concrete pavers, flagstone, travertine, and polished concrete — 8+ finishes planned at launch, with more added regularly.",
+    answer: "Stamped concrete, exposed aggregate, broom finish, colored/integral-pigment concrete, concrete pavers, flagstone, travertine, acid-stained, salt finish, ashlar slate, cobblestone, herringbone brick, and polished concrete — 16 finishes available, with more added regularly.",
   },
   {
     question: "How accurate is the AI visualization?",
-    answer: "The tool will show realistic texture, color, and pattern — not a cartoon rendering. Our goal is visualizations accurate enough to use as a contractor brief and make confident design decisions.",
+    answer: "The tool shows realistic texture, color, and pattern — not a cartoon rendering. Visualizations are accurate enough to use as a contractor brief and make confident design decisions.",
   },
   {
     question: "Can I share the visualization with my contractor?",
