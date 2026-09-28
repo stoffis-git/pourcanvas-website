@@ -79,9 +79,14 @@ const FAQAccordion = () => {
 const ConcretePatioGuide = () => (
   <>
     <SeoHead
-      title="Concrete Patio Design Guide: Finishes, Costs & Ideas | PourCanvas"
+      title="Concrete Patio Design Guide: Finishes, Costs & Ideas"
       description="Concrete patio costs $6–20/sq ft installed depending on finish. Compare stamped, exposed aggregate, stained, broom-finish, and decorative options with real cost data."
       canonical="/guides/concrete-patio"
+      faqs={faqs.map((f) => ({ question: f.q, answer: f.a }))}
+      breadcrumbs={[
+        { name: "Concrete Patio Ideas", url: "/patio" },
+        { name: "Concrete Patio Guide", url: "/guides/concrete-patio" },
+      ]}
     />
     <Header />
     <main className="max-w-4xl mx-auto px-5 py-28 md:py-36">

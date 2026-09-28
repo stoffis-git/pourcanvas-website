@@ -3,7 +3,7 @@ import type { BeforeAfterPage } from "../types";
 export const beforeAfterPages: BeforeAfterPage[] = [
   {
     slug: "concrete-slab-to-stamped-grey-patio",
-    title: "Plain Slab to Stamped Grey Patio - Before & After | PourCanvas",
+    title: "Plain Slab to Stamped Grey Patio - Before & After",
     headline: "Plain Slab to Stamped Grey Patio",
     metaDescription: "Plain concrete slab to stamped grey ashlar patio — stamped overlay at $8–14/sq ft, no demolition. See the before and after transformation.",
     ogImage: "https://images.pourcanvas.com/before-after-slab-to-stamped-grey.jpg",
@@ -15,7 +15,7 @@ export const beforeAfterPages: BeforeAfterPage[] = [
   },
   {
     slug: "plain-driveway-to-exposed-aggregate",
-    title: "Plain Driveway to Exposed Aggregate - Before & After | PourCanvas",
+    title: "Plain Driveway to Exposed Aggregate - Before & After",
     headline: "Plain Driveway to Exposed Aggregate",
     metaDescription: "Plain grey driveway to charcoal exposed aggregate — $6–12/sq ft installed, genuine texture and depth. Real before and after with cost context.",
     ogImage: "https://images.pourcanvas.com/before-after-plain-to-exposed-aggregate.jpg",
@@ -27,7 +27,7 @@ export const beforeAfterPages: BeforeAfterPage[] = [
   },
   {
     slug: "cracked-walkway-to-flagstone",
-    title: "Cracked Walkway to Flagstone Look - Before & After | PourCanvas",
+    title: "Cracked Walkway to Flagstone Look - Before & After",
     headline: "Cracked Walkway to Flagstone Look",
     metaDescription: "Cracked concrete walkway to stamped flagstone look — overlay at $10–16/sq ft, no excavation needed. See the before and after transformation.",
     ogImage: "https://images.pourcanvas.com/before-after-cracked-to-flagstone.jpg",
@@ -39,7 +39,7 @@ export const beforeAfterPages: BeforeAfterPage[] = [
   },
   {
     slug: "plain-patio-to-herringbone-brick",
-    title: "Plain Patio to Herringbone Brick Look - Before & After | PourCanvas",
+    title: "Plain Patio to Herringbone Brick Look - Before & After",
     headline: "Plain Patio to Herringbone Brick",
     metaDescription: "A plain concrete patio transformed into a herringbone brick stamped pattern. See the before and after and typical project cost.",
     ogImage: "https://images.pourcanvas.com/before-after-plain-to-herringbone-brick.jpg",
@@ -51,7 +51,7 @@ export const beforeAfterPages: BeforeAfterPage[] = [
   },
   {
     slug: "broom-finish-to-stamped-cobblestone-driveway",
-    title: "Broom Finish to Stamped Cobblestone Driveway - Before & After | PourCanvas",
+    title: "Broom Finish to Stamped Cobblestone Driveway - Before & After",
     headline: "Broom Finish to Stamped Cobblestone",
     metaDescription: "A standard broom-finish driveway transformed into a stamped cobblestone surface. See the visual impact and what the upgrade costs.",
     ogImage: "https://images.pourcanvas.com/before-after-broom-to-stamped-cobblestone.jpg",

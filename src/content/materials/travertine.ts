@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const travertinePage: MaterialPage = {
   slug: "travertine",
-  title: "Travertine Pool Deck: What It Costs, How It Holds Up, and What to Expect | PourCanvas",
+  title: "Travertine Pool Deck: Cost, Durability and What to Expect",
   headline: "Travertine Pool Deck",
   summary:
     "Travertine is the pool deck material most designers reach for first — it stays cool, doesn't slip, and looks exceptional. Here's what it costs and what ongoing ownership looks like.",

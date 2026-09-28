@@ -79,9 +79,14 @@ const FAQAccordion = () => {
 const ConcreteWalkwayGuide = () => (
   <>
     <SeoHead
-      title="Concrete Walkway Design Guide: Styles, Costs & Ideas | PourCanvas"
+      title="Concrete Walkway Design Guide: Styles, Costs & Ideas"
       description="Concrete walkway costs $6–18/sq ft depending on finish. Compare broom finish, stamped, exposed aggregate, stained, and stepping stone options with real costs."
       canonical="/guides/concrete-walkway"
+      faqs={faqs.map((f) => ({ question: f.q, answer: f.a }))}
+      breadcrumbs={[
+        { name: "Concrete Walkway Ideas", url: "/walkway" },
+        { name: "Concrete Walkway Guide", url: "/guides/concrete-walkway" },
+      ]}
     />
     <Header />
     <main className="max-w-4xl mx-auto px-5 py-28 md:py-36">

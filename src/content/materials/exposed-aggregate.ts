@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const exposedAggregatePage: MaterialPage = {
   slug: "exposed-aggregate",
-  title: "Exposed Aggregate Concrete: Finish Guide for Driveways, Patios & Pools | PourCanvas",
+  title: "Exposed Aggregate Concrete: Cost, Looks and Finish Guide",
   headline: "Exposed Aggregate Concrete",
   summary:
     "Exposed aggregate reveals the decorative stone beneath the concrete surface for a textured, slip-resistant finish. A practical choice for driveways and pool decks where grip matters.",
@@ -59,7 +59,7 @@ export const exposedAggregatePage: MaterialPage = {
     },
     {
       heading: "Exposed Aggregate Patio: Best Uses and Limitations",
-      body: "Exposed aggregate patios work best in outdoor entertaining areas, garden seating zones, and transitional spaces between lawn and structure. The natural stone texture complements plantings and hardscape borders in a way that stamped patterns often can't — it looks organic rather than manufactured. However, the rough texture that provides excellent grip also makes exposed aggregate a poor choice for barefoot dining areas or spaces where children play on the ground. Metal patio furniture legs sit well on the uneven surface without sliding, but fabric chair pads can snag on sharper aggregate. When integrating exposed aggregate with adjacent surfaces (pavers, smooth concrete, natural stone), use a clean control joint or metal divider strip at the transition — butting different surface types without a defined edge leads to cracking and an unfinished look. For covered patios, consider that the texture's grip advantage is less valuable where rain doesn't reach.",
+      body: "Exposed aggregate patios work best in outdoor entertaining areas, garden seating zones, and transitional spaces between lawn and structure. The natural stone texture complements plantings and hardscape borders in a way that stamped patterns often can't — it looks organic rather than manufactured. However, the rough texture that provides excellent grip also makes exposed aggregate a poor choice for barefoot dining areas or spaces where children play on the ground. Metal patio furniture legs sit well on the uneven surface without sliding, but fabric chair pads can snag on sharper aggregate. When integrating exposed aggregate with adjacent surfaces (pavers, smooth concrete, natural stone), use a clean control joint or metal divider strip at the transition — butting different surface types without a defined edge leads to cracking and an unfinished look. For covered patios, consider that the texture's grip advantage is less valuable where rain doesn't reach. Compare it with the standard finish in <a href='/blog/patio/exposed-aggregate-vs-broom-finish'>exposed aggregate vs broom finish</a>.",
     },
     {
       heading: "Exposed Aggregate vs Stamped Concrete",

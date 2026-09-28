@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const polishedConcretePage: MaterialPage = {
   slug: "polished-concrete",
-  title: "Polished Concrete Outdoors: When It Works and When It Doesn't | PourCanvas",
+  title: "Outdoor Polished Concrete: When It Works, When It Doesn't",
   headline: "Polished Concrete Outdoor",
   summary:
     "Polished concrete is primarily an interior floor finish, but exterior applications exist for covered patios and sheltered surfaces. Here's what outdoor polished concrete actually involves.",

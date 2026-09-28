@@ -35,29 +35,42 @@ function changefreq(url) {
   return depth <= 1 ? "weekly" : "monthly";
 }
 
-function extractLastmod(filePath) {
-  const html = readFileSync(filePath, "utf-8");
+function extractLastmod(html) {
   const match = html.match(/<meta[^>]*property="article:modified_time"[^>]*content="([^"]+)"/);
   return match ? match[1] : null;
 }
 
+function extractImages(html) {
+  const root = html.match(/<div id="root">([\s\S]*)<\/div>/);
+  const body = root ? root[1] : html;
+  const urls = [...body.matchAll(/<img[^>]+src="(https:\/\/images\.pourcanvas\.com\/[^"]+)"/g)].map((m) => m[1]);
+  return [...new Set(urls)].slice(0, 1000);
+}
+
+const escapeXml = (s) => s.replace(/&amp;/g, "&").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
 const files = collectHtmlFiles(DIST_DIR);
 const urlData = files
-  .map((f) => ({ url: htmlToUrl(f), lastmod: extractLastmod(f) }))
+  .map((f) => {
+    const html = readFileSync(f, "utf-8");
+    return { url: htmlToUrl(f), lastmod: extractLastmod(html), images: extractImages(html) };
+  })
   .sort((a, b) => a.url.localeCompare(b.url));
 
 const entries = urlData
   .map(
-    ({ url, lastmod }) => `  <url>
+    ({ url, lastmod, images }) => `  <url>
     <loc>${BASE_URL}${url}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ""}
     <changefreq>${changefreq(url)}</changefreq>
-    <priority>${priority(url)}</priority>
+    <priority>${priority(url)}</priority>${images
+      .map((img) => `\n    <image:image><image:loc>${escapeXml(img)}</image:loc></image:image>`)
+      .join("")}
   </url>`
   )
   .join("\n");
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${entries}
 </urlset>
 `;

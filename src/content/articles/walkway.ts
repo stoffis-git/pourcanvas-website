@@ -76,11 +76,11 @@ export const walkwayArticles: Article[] = [
   {
     slug: "flagstone-vs-concrete-walkway",
     pillar: "walkway",
-    title: "Flagstone vs Concrete Walkway: Which Is Worth the Cost?",
+    title: "Flagstone vs Concrete: Which Is Cheaper? Cost Compared",
     headline: "Flagstone vs Concrete Walkway: An Honest Comparison",
     metaDescription:
-      "Flagstone vs concrete walkway: natural stone costs $25–45/sq ft vs. stamped concrete at $12–18/sq ft. Full comparison of cost, durability, and maintenance.",
-    targetKeywords: ["flagstone vs concrete walkway", "flagstone vs concrete patio", "flagstone walkway cost", "walkway materials comparison"],
+      "Is flagstone cheaper than concrete? No: natural flagstone costs $25–45/sq ft vs. $12–18 for stamped concrete. Walkway and driveway costs, durability, and upkeep compared.",
+    targetKeywords: ["flagstone vs concrete", "is flagstone cheaper than concrete", "flagstone driveway cost", "flagstone walkway cost", "flagstone vs stamped concrete"],
     ogImage: "https://images.pourcanvas.com/walkway-flagstone-vs-concrete.jpg",
     publishedAt: "2026-03-31",
     updatedAt: "2026-05-25",
@@ -129,7 +129,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Applying the Same Decision to a Patio or Driveway",
-        body: "The flagstone vs. concrete trade-off for a walkway is identical when applied to a patio or driveway — just scaled up. A flagstone patio runs $25–45/sq ft vs. $12–18/sq ft for stamped concrete; a flagstone driveway is impractical for most vehicles. The cost and maintenance comparison holds at every surface size. If you're deciding on materials for multiple outdoor surfaces simultaneously, stamped concrete wins on value at every scale unless authentic material texture is a hard requirement for the property's sale price. Tools like PourCanvas let you visualize different surface finishes — including flagstone-look stamped concrete — on your actual space before committing to a material and contractor.",
+        body: "The flagstone vs. concrete trade-off for a walkway is identical when applied to a patio or driveway — just scaled up. A flagstone patio runs $25–45/sq ft vs. $12–18/sq ft for stamped concrete; a flagstone driveway is impractical for most vehicles. The cost and maintenance comparison holds at every surface size. If you're deciding on materials for multiple outdoor surfaces simultaneously, stamped concrete wins on value at every scale unless authentic material texture is a hard requirement for the property's sale price. Tools like PourCanvas let you visualize different surface finishes — including flagstone-look stamped concrete — on your actual space before committing to a material and contractor. If flagstone is out of budget, these <a href='/blog/walkway/concrete-walkway-ideas'>concrete pathway ideas</a> and <a href='/blog/walkway/stepping-stone-walkway-ideas'>stepping stone walkway ideas</a> get a similar look for less. For patios, compare <a href='/blog/patio/stamped-concrete-vs-pavers'>stamped concrete vs pavers</a>.",
       },
       {
         heading: "Resale Value: Does Flagstone Add More Than Concrete?",
@@ -259,7 +259,7 @@ export const walkwayArticles: Article[] = [
     sections: [
       {
         heading: "Plain Broom-Finish Walkway",
-        body: "A standard broom-finish concrete walkway costs $6–10 per sq ft installed. A 4-foot-wide, 30-foot-long front walkway (120 sq ft) runs $720–1,200. This includes forming, pouring, finishing, and basic site prep. Adding an integral pigment color ($0.50–1.50/sq ft extra) lifts the look from utilitarian to intentional without approaching stamped pricing. Dark charcoal pigment on a broom-finish slab with clean beveled edges is one of the best-value curb appeal upgrades available — it reads as designed at a fraction of stamped concrete cost. On a 120 sq ft walkway, that's $60–180 in color premium for a visually significant upgrade. If you're also pouring a driveway or patio, matching the pigment direction across all surfaces is worth specifying upfront.",
+        body: "A standard broom-finish concrete walkway costs $6–10 per sq ft installed. A 4-foot-wide, 30-foot-long front walkway (120 sq ft) runs $720–1,200. This includes forming, pouring, finishing, and basic site prep. Adding an integral pigment color ($0.50–1.50/sq ft extra) lifts the look from utilitarian to intentional without approaching stamped pricing. Dark charcoal pigment on a broom-finish slab with clean beveled edges is one of the best-value curb appeal upgrades available — it reads as designed at a fraction of stamped concrete cost. On a 120 sq ft walkway, that's $60–180 in color premium for a visually significant upgrade. If you're also pouring a driveway or patio, matching the pigment direction across all surfaces is worth specifying upfront. For design options at every price point, see our <a href='/blog/walkway/concrete-walkway-ideas'>concrete pathway ideas</a>.",
         inspirationSlugs: ["charcoal-broom-finish-walkway", "salt-finish-concrete-walkway"],
       },
       {
@@ -654,11 +654,12 @@ export const walkwayArticles: Article[] = [
   {
     slug: "concrete-walkway-ideas",
     pillar: "walkway",
-    title: "Concrete Walkway Ideas: 20+ Paths, Steps & Sidewalks for Every Home",
-    headline: "Concrete Walkway Ideas",
+    title: "Concrete Pathways: 20+ Walkway Ideas With Real Costs",
+    headline: "Concrete Pathways and Walkway Ideas",
     metaDescription:
-      "20+ concrete walkway ideas from $6/sq ft broom finish to $18/sq ft stamped stone — front paths, garden walks, and entry steps with real cost ranges.",
+      "20+ concrete pathway and walkway ideas from $6/sq ft broom finish to $18/sq ft stamped stone — front paths, garden walks, and entry steps with real costs.",
     targetKeywords: [
+      "concrete pathways",
       "concrete walkway ideas",
       "concrete sidewalk ideas",
       "concrete path ideas",
@@ -746,7 +747,7 @@ export const walkwayArticles: Article[] = [
   {
     slug: "stained-concrete-walkway-ideas",
     pillar: "walkway",
-    title: "Stained Concrete Walkway Ideas: Acid, Water-Based & Integral Color",
+    title: "Stained Concrete Walkway Ideas: Acid, Water-Based, Integral",
     headline: "Stained Concrete Walkway Ideas",
     metaDescription:
       "Stained concrete walkways from $1/sq ft acid stain refresh to $14/sq ft integral color pour. 15+ ideas with real costs for front paths, garden walks, and steps.",

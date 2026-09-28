@@ -79,9 +79,14 @@ const FAQAccordion = () => {
 const ConcreteDrivewayGuide = () => (
   <>
     <SeoHead
-      title="Concrete Driveway Design Guide: Finishes, Costs & Ideas | PourCanvas"
+      title="Concrete Driveway Design Guide: Finishes, Costs & Ideas"
       description="Concrete driveway costs $4–20/sq ft installed depending on finish. Compare stamped, exposed aggregate, colored, and broom-finish options with real cost data."
       canonical="/guides/concrete-driveway"
+      faqs={faqs.map((f) => ({ question: f.q, answer: f.a }))}
+      breadcrumbs={[
+        { name: "Concrete Driveway Ideas", url: "/driveway" },
+        { name: "Concrete Driveway Guide", url: "/guides/concrete-driveway" },
+      ]}
     />
     <Header />
     <main className="max-w-4xl mx-auto px-5 py-28 md:py-36">

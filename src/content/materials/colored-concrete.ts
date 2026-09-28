@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const coloredConcretePage: MaterialPage = {
   slug: "colored-concrete",
-  title: "Colored Concrete: Integral Color vs Stain vs Dye Explained | PourCanvas",
+  title: "Colored Concrete: Integral Color vs Stain vs Dye",
   headline: "Colored Concrete",
   summary:
     "Color transforms plain concrete from utilitarian to designed. Three methods with different costs, durability profiles, and color options — here's how to choose.",
@@ -62,7 +62,7 @@ For a 400 sq ft patio, integral color adds roughly $800–1,600 to the pour, whi
     },
     {
       heading: "Concrete Dye vs Stain: Which to Use",
-      body: "This is the most common point of confusion, and the distinction is real. A stain changes the concrete chemically or sits in its pores: acid stain reacts with the lime in the slab to create permanent, variegated, marble-like color, while water-based stain deposits pigment that bonds to the surface. Stains are translucent — they let the concrete's natural variation show through, which reads as organic. A dye, by contrast, is a fine colorant carried in water or solvent that penetrates fast and delivers intense, uniform color a stain can't match. The trade-off is UV stability: most dyes were developed for interior polished floors and will fade outdoors unless you specify a UV-stable exterior formula and reseal on schedule. Rule of thumb: outdoors, default to acid or water-based stain for durability; reach for dye only when you need a bold, even color and are willing to maintain the sealer. For a weathered slab you want to look natural, stain wins; for a modern, saturated statement surface, dye can be worth the upkeep.",
+      body: "This is the most common point of confusion, and the distinction is real. A stain changes the concrete chemically or sits in its pores: acid stain reacts with the lime in the slab to create permanent, variegated, marble-like color, while water-based stain deposits pigment that bonds to the surface. Stains are translucent — they let the concrete's natural variation show through, which reads as organic. A dye, by contrast, is a fine colorant carried in water or solvent that penetrates fast and delivers intense, uniform color a stain can't match. The trade-off is UV stability: most dyes were developed for interior polished floors and will fade outdoors unless you specify a UV-stable exterior formula and reseal on schedule. Rule of thumb: outdoors, default to acid or water-based stain for durability; reach for dye only when you need a bold, even color and are willing to maintain the sealer. For a weathered slab you want to look natural, stain wins; for a modern, saturated statement surface, dye can be worth the upkeep. For finished examples, see <a href='/blog/patio/stained-concrete-patio-ideas'>stained concrete patio ideas</a> and <a href='/blog/walkway/stained-concrete-walkway-ideas'>stained concrete walkway ideas</a>.",
     },
     {
       heading: "Coloring Existing Concrete",

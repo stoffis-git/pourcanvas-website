@@ -29,6 +29,7 @@ const BlogHub = () => (
       title="Concrete Patio, Driveway & Walkway Ideas | PourCanvas Blog"
       description="30+ design guides and cost breakdowns for concrete patios, driveways, and walkways. Browse by topic or surface type."
       canonical="/blog"
+      breadcrumbs={[{ name: "Blog", url: "/blog" }]}
     />
     <Header />
     <main className="max-w-6xl mx-auto px-5 py-28 md:py-36">

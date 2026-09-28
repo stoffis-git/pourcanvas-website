@@ -200,7 +200,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Integral Color vs. Surface Stain vs. Color Wash",
-        body: "Three ways to add color to concrete, three different price points and durability profiles. Integral pigment ($2–4/sq ft extra) is mixed into the pour and runs through the full slab depth — the most durable method, since chips and wear don't expose a different-colored base. Surface stain applied after curing adds $1–3/sq ft and is visible only at the surface — less durable under heavy traffic or freeze-thaw stress. Color wash (antiquing release) applied during stamping gives the characteristic multi-tone weathered look of stamped concrete — it's typically included in stamped concrete quotes and produces the richest-looking result of the three. For plain concrete without a stamp, integral pigment is the right choice; for stamped concrete, a combination of integral base color plus color wash gives the best result.",
+        body: "Three ways to add color to concrete, three different price points and durability profiles. Integral pigment ($2–4/sq ft extra) is mixed into the pour and runs through the full slab depth — the most durable method, since chips and wear don't expose a different-colored base. Surface stain applied after curing adds $1–3/sq ft and is visible only at the surface — less durable under heavy traffic or freeze-thaw stress. Color wash (antiquing release) applied during stamping gives the characteristic multi-tone weathered look of stamped concrete — it's typically included in stamped concrete quotes and produces the richest-looking result of the three. For plain concrete without a stamp, integral pigment is the right choice; for stamped concrete, a combination of integral base color plus color wash gives the best result. For stain-specific looks, see these <a href='/blog/patio/stained-concrete-patio-ideas'>stained concrete patio ideas</a>, or browse 45+ <a href='/blog/patio/concrete-patio-ideas'>concrete patio ideas</a> by finish and budget.",
         inspirationSlugs: ["acid-stained-concrete-patio"],
       },
       {
@@ -731,7 +731,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Broom Finish vs. Exposed Aggregate: The Practical Decision",
-        body: "For most homeowners choosing between broom finish and exposed aggregate, the decision comes down to three factors: budget, surface heat, and long-term appearance. Broom finish is $4–6/sq ft cheaper installed. Exposed aggregate runs cooler underfoot because the aggregate composition can be selected for heat-scattering properties. And exposed aggregate hides wear better over 10–15 years of pool deck use — the surface variation means small chips, stains, and chemical marks disappear into the texture. Broom finish is the right choice when budget is the constraint and you'll use a light integral color to offset heat. Exposed aggregate is the right choice when you have a medium-to-generous budget and plan to own the home long enough to see the maintenance difference. Both are more practical for pool surrounds than stamped concrete for the same cost.",
+        body: "For most homeowners choosing between broom finish and exposed aggregate, the decision comes down to three factors: budget, surface heat, and long-term appearance. Broom finish is $4–6/sq ft cheaper installed. Exposed aggregate runs cooler underfoot because the aggregate composition can be selected for heat-scattering properties. And exposed aggregate hides wear better over 10–15 years of pool deck use — the surface variation means small chips, stains, and chemical marks disappear into the texture. Broom finish is the right choice when budget is the constraint and you'll use a light integral color to offset heat. Exposed aggregate is the right choice when you have a medium-to-generous budget and plan to own the home long enough to see the maintenance difference. Both are more practical for pool surrounds than stamped concrete for the same cost. The same tradeoff away from the pool is covered in <a href='/blog/patio/exposed-aggregate-vs-broom-finish'>exposed aggregate vs broom finish</a>.",
       },
       {
         heading: "Cool-Coat and Deck-Over Overlays: Solving Heat on Existing Slabs ($3–8/sq ft)",
@@ -739,7 +739,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "What Pool Deck Concrete Finish to Choose: Decision Summary",
-        body: "Tightest budget: broom finish with light integral color ($7–12/sq ft total). Best all-around performance: exposed aggregate in a light warm mix ($10–16/sq ft). Best visual result: travertine-stamped concrete with non-slip sealer additive ($12–18/sq ft). Existing slab that runs hot: deck coating overlay ($3–8/sq ft). Avoid plain grey smooth concrete — it's the worst option for heat and grip and only marginally cheaper than better alternatives once you add a sealer. For any new pool deck pour in a climate with significant sun exposure, specify a light aggregate or integral color at the same time: the material cost difference is $1–3/sq ft and the performance difference over a southern summer is substantial. Tools like PourCanvas let you preview how different finishes and colors would look on your pool deck layout before committing — useful when the aggregate mix determines how the entire outdoor space reads. If you're also finishing a driveway or walkway, matching the aggregate color across all three surfaces creates a cohesive look that significantly lifts the whole property.",
+        body: "Tightest budget: broom finish with light integral color ($7–12/sq ft total). Best all-around performance: exposed aggregate in a light warm mix ($10–16/sq ft). Best visual result: travertine-stamped concrete with non-slip sealer additive ($12–18/sq ft). Existing slab that runs hot: deck coating overlay ($3–8/sq ft). Avoid plain grey smooth concrete — it's the worst option for heat and grip and only marginally cheaper than better alternatives once you add a sealer. For any new pool deck pour in a climate with significant sun exposure, specify a light aggregate or integral color at the same time: the material cost difference is $1–3/sq ft and the performance difference over a southern summer is substantial. Tools like PourCanvas let you preview how different finishes and colors would look on your pool deck layout before committing — useful when the aggregate mix determines how the entire outdoor space reads. If you're also finishing a driveway or walkway, matching the aggregate color across all three surfaces creates a cohesive look that significantly lifts the whole property. For layouts and photos, see these <a href='/blog/patio/pool-deck-ideas-concrete'>concrete pool deck ideas</a>.",
       },
     ],
     relatedSlugs: ["pool-deck-ideas-concrete", "concrete-patio-sealing"],
@@ -762,7 +762,7 @@ export const patioArticles: Article[] = [
   {
     slug: "stamped-concrete-patterns",
     pillar: "patio",
-    title: "Stamped Concrete Patterns: 30+ Designs for Patios, Driveways & Walkways",
+    title: "Stamped Concrete Patterns: 30+ Designs With Photos",
     headline: "Stamped Concrete Patterns",
     metaDescription:
       "Stamped concrete patterns from ashlar slate to herringbone — 30+ real installations with costs from $12–20/sq ft. See every pattern before you choose.",
@@ -994,7 +994,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
   {
     slug: "stamped-concrete-vs-pavers",
     pillar: "patio",
-    title: "Stamped Concrete vs Pavers: Cost, Durability & Appearance Compared",
+    title: "Stamped Concrete vs Pavers: Cost, Durability and Looks",
     headline: "Stamped Concrete vs Pavers",
     metaDescription:
       "Stamped concrete costs $12–18/sq ft vs $20–40 for pavers — but cost isn't everything. Real comparison of repair, durability, appearance, and 10-year ownership.",
@@ -1077,7 +1077,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
   {
     slug: "stained-concrete-patio-ideas",
     pillar: "patio",
-    title: "Stained Concrete Patio Ideas: Acid, Water-Based & Integral Color Options",
+    title: "Stained Concrete Patio Ideas: Acid, Water-Based & Integral",
     headline: "Stained Concrete Patio Ideas",
     metaDescription:
       "Stained concrete patios from $1/sq ft acid stain refresh to $14/sq ft full integral color pour — 15+ real installations with costs, color guides, and maintenance.",
@@ -1161,7 +1161,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
   {
     slug: "exposed-aggregate-vs-broom-finish",
     pillar: "patio",
-    title: "Exposed Aggregate vs Broom Finish Concrete: Cost, Look & Durability Compared",
+    title: "Exposed Aggregate vs Broom Finish: Cost, Look & Durability",
     headline: "Exposed Aggregate vs Broom Finish",
     metaDescription:
       "Exposed aggregate costs $8–14/sq ft vs $6–10 for broom finish — but they differ in slip resistance, appearance, and maintenance. Real comparison with costs.",
@@ -1238,7 +1238,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
   {
     slug: "patio-resurfacing-cost",
     pillar: "patio",
-    title: "Patio Resurfacing Cost: Overlays, Staining & Full Replacement Compared",
+    title: "Patio Resurfacing Cost: Overlay vs Stain vs Replacement",
     headline: "Patio Resurfacing Cost",
     metaDescription:
       "Patio resurfacing costs $4–8/sq ft for overlays vs $6–18/sq ft for full replacement. Breakdown of every method with real pricing for 200–400 sq ft patios.",

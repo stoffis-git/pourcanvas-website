@@ -2,13 +2,13 @@ import type { MaterialPage } from "../types";
 
 export const flagstonePage: MaterialPage = {
   slug: "flagstone",
-  title: "Flagstone: Types, Cost, and How It Compares to Concrete | PourCanvas",
+  title: "What Is Flagstone? Types, Uses and Setting Methods",
   headline: "Flagstone",
   summary:
     "Natural flagstone is the premium choice for walkways and patios — authentic texture, long lifespan, but high cost and significant maintenance. Here's the honest tradeoff.",
   metaDescription:
     "Natural flagstone costs $25–45/sq ft installed and requires more maintenance than concrete. This guide covers types, cost, setting methods, and when it's worth the premium.",
-  targetKeywords: ["flagstone", "flagstone patio", "flagstone walkway", "flagstone vs concrete"],
+  targetKeywords: ["flagstone", "what is flagstone", "flagstone types", "flagstone patio", "flagstone walkway"],
   ogImage: "/og/material-flagstone.jpg",
   publishedAt: "2025-06-15",
   intro:
@@ -36,7 +36,7 @@ export const flagstonePage: MaterialPage = {
     },
     {
       heading: "Flagstone vs Stamped Concrete",
-      body: "From across the yard, well-done stamped concrete flagstone pattern is nearly indistinguishable from the real thing. Up close, the difference is visible — natural stone has genuine depth, variation, and texture that stamping approximates but doesn't replicate. For most homeowners, the $10–25/sq ft premium for real flagstone isn't justified unless material authenticity matters to them or to future buyers at a price point where it's expected. For high-end properties where the detail gets noticed, natural flagstone is worth it.",
+      body: "From across the yard, well-done stamped concrete flagstone pattern is nearly indistinguishable from the real thing. Up close, the difference is visible — natural stone has genuine depth, variation, and texture that stamping approximates but doesn't replicate. For most homeowners, the $10–25/sq ft premium for real flagstone isn't justified unless material authenticity matters to them or to future buyers at a price point where it's expected. For high-end properties where the detail gets noticed, natural flagstone is worth it. For the full price breakdown, see our <a href='/blog/walkway/flagstone-vs-concrete-walkway'>flagstone vs concrete cost comparison</a>.",
     },
   ],
   prosAndCons: {

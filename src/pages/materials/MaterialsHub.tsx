@@ -163,9 +163,10 @@ function MaterialSwatch({ slug }: { slug: string }) {
 const MaterialsHub = () => (
   <>
     <SeoHead
-      title="Concrete Materials Guide: Finishes, Costs & Comparisons | PourCanvas"
+      title="Concrete Materials Guide: Finishes, Costs & Comparisons"
       description="9 outdoor concrete finishes compared — stamped ($8–20/sq ft), exposed aggregate, broom finish, colored concrete, pavers, and more. Costs, pros, and cons."
       canonical="/materials"
+      breadcrumbs={[{ name: "Concrete Materials", url: "/materials" }]}
     />
     <Header />
     <main className="max-w-6xl mx-auto px-5 py-28 md:py-36">

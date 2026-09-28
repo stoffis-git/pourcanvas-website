@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const broomFinishPage: MaterialPage = {
   slug: "broom-finish",
-  title: "Broom Finish Concrete: The Standard Surface Explained | PourCanvas",
+  title: "Broom Finish Concrete: Cost, Texture and Best Uses",
   headline: "Broom Finish Concrete",
   summary:
     "Broom finish is the default concrete surface — practical, affordable, and more versatile than it's given credit for. The right choice when durability and value matter more than decorative pattern.",
@@ -57,7 +57,7 @@ export const broomFinishPage: MaterialPage = {
     },
     {
       heading: "Broom Finish Concrete Patio",
-      body: "Broom finish works well for patios in casual outdoor spaces, pool surrounds, and utility areas where durability and budget matter more than decorative detail. It's a practical choice when the patio is primarily functional — a landing outside a back door, a pad for a grill and table, or a surface around a pool where slip resistance is the priority. Where broom finish falls short is on patios designed for entertaining and barefoot comfort — outdoor dining areas, lounge spaces, and surfaces where people walk without shoes regularly. In those cases, a smoother decorative finish is worth the upgrade. Texture options within broom finish itself offer some flexibility: a light broom pass creates a smoother, more comfortable feel suitable for patios, while a heavy broom pass maximizes grip for pool decks and sloped surfaces. The cost difference is meaningful at patio scale — a 300 sq ft broom-finish patio at $6–10/sq ft runs $1,800–3,000, compared to stamped at $12–18/sq ft ($3,600–5,400).",
+      body: "Broom finish works well for patios in casual outdoor spaces, pool surrounds, and utility areas where durability and budget matter more than decorative detail. It's a practical choice when the patio is primarily functional — a landing outside a back door, a pad for a grill and table, or a surface around a pool where slip resistance is the priority. Where broom finish falls short is on patios designed for entertaining and barefoot comfort — outdoor dining areas, lounge spaces, and surfaces where people walk without shoes regularly. In those cases, a smoother decorative finish is worth the upgrade. Texture options within broom finish itself offer some flexibility: a light broom pass creates a smoother, more comfortable feel suitable for patios, while a heavy broom pass maximizes grip for pool decks and sloped surfaces. The cost difference is meaningful at patio scale — a 300 sq ft broom-finish patio at $6–10/sq ft runs $1,800–3,000, compared to stamped at $12–18/sq ft ($3,600–5,400). For upgrade ideas, browse <a href='/blog/patio/concrete-patio-ideas'>concrete patio ideas</a> or <a href='/blog/patio/small-patio-ideas'>small patio ideas</a>.",
     },
     {
       heading: "Broom Finish vs Stamped Concrete",

@@ -76,9 +76,9 @@ export const InspirationImageCarousel = ({ images, headline, dominantColor }: Pr
       )}
 
       <div className="mt-6 md:hidden">
-        <h1 className="text-3xl font-display font-bold text-foreground leading-tight">
+        <p className="text-3xl font-display font-bold text-foreground leading-tight">
           {headline}
-        </h1>
+        </p>
       </div>
     </div>
   );

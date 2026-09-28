@@ -23,6 +23,11 @@ const BeforeAfterPage = () => {
         description={page.metaDescription}
         ogImage={page.ogImage}
         canonical={`/before-after/${page.slug}`}
+        breadcrumbs={[
+          { name: page.pillar.charAt(0).toUpperCase() + page.pillar.slice(1) + " Ideas", url: `/${page.pillar}` },
+          { name: page.headline, url: `/before-after/${page.slug}` },
+        ]}
+        imageGallery={[{ url: page.ogImage, alt: page.heroAlt }]}
       />
       <Header />
       <main className="max-w-4xl mx-auto px-5 py-28 md:py-36">

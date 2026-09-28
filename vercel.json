@@ -8,6 +8,12 @@
       "has": [{ "type": "host", "value": "www.pourcanvas.com" }],
       "destination": "https://pourcanvas.com/:path*",
       "permanent": true
-    }
+    },
+    { "source": "/blog/dark-concrete-driveway", "destination": "/blog/driveway/black-concrete-driveway", "permanent": true },
+    { "source": "/blog/dark-concrete-driveway-ideas", "destination": "/blog/driveway/black-concrete-driveway", "permanent": true },
+    { "source": "/blog/driveway/dark-concrete-driveway", "destination": "/blog/driveway/black-concrete-driveway", "permanent": true },
+    { "source": "/blog/driveway/black-concrete-dayway", "destination": "/blog/driveway/black-concrete-driveway", "permanent": true },
+    { "source": "/blog/driveway/modern-day-ideas", "destination": "/blog/driveway/modern-driveway-ideas", "permanent": true },
+    { "source": "/blog/walkway/flagstone-vs-flagstone-vs-concrete-walkway", "destination": "/blog/walkway/flagstone-vs-concrete-walkway", "permanent": true }
   ]
 }

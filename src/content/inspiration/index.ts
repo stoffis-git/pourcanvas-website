@@ -51,7 +51,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "pool-deck-travertine",
-    title: "Travertine Pool Deck: How It Looks in Real Yards | PourCanvas",
+    title: "Travertine Pool Deck: How It Looks in Real Yards",
     headline: "Travertine Pool Deck",
     metaDescription:
       "Travertine pool decks stay cool underfoot and look stunning. See real-yard examples and learn how to get the look with concrete for less.",
@@ -74,8 +74,8 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "modern-driveway-concrete",
-    title: "Modern Concrete Driveway Ideas for 2026 | PourCanvas",
-    headline: "Modern Concrete Driveway",
+    title: "Minimalist Charcoal Concrete Driveway With Clean Joints",
+    headline: "Minimalist Charcoal Concrete Driveway",
     metaDescription:
       "Modern concrete driveways are clean, durable, and increasingly popular. These 2026 ideas show what's working — and how to get the look.",
     ogImage: "https://images.pourcanvas.com/inspiration-modern-driveway.jpg",
@@ -83,7 +83,7 @@ export const inspirationPages: InspirationPage[] = [
     dominantColor: "#52524f",
     contentBlock:
       "The modern concrete driveway has moved well beyond the plain grey slab. Today's versions feature charcoal color washes, subtle broom finishes, clean expansion joint placement, and border details that tie the driveway visually to the landscape. The key design principle is restraint: wide, clean surfaces with minimal texture variation and intentional edge detailing.\n\nA crisp dark border strip — typically a contrasting color band 12–18 inches wide — can make an otherwise plain driveway look designed rather than just poured. The expansion joints become part of the aesthetic rather than an afterthought: evenly spaced, scored cleanly, and aligned with the house lines. Charcoal and dark graphite tones dominate the modern driveway palette right now because they read as grounded and confident against white or light-colored home exteriors.\n\nFrom a cost standpoint, a modern broom-finish driveway with a color wash and scored border runs $6–12 per sq ft — significantly less than a fully stamped surface. It's one of the most design-efficient approaches available: maximum visual impact relative to installation cost. Properly sealed with a quality penetrating sealer, the color holds for 5–7 years before needing a refresh. PourCanvas can show you how a modern concrete finish would look on your specific driveway before you commit to a contractor.",
-    targetKeywords: ["modern concrete driveway", "contemporary driveway", "driveway ideas 2026"],
+    targetKeywords: ["charcoal concrete driveway", "minimalist concrete driveway", "dark broom finish driveway"],
     pillar: "driveway",
     ctaHeadline: "Preview your driveway redesign",
     ctaBody: "Upload a photo of your current driveway and see what modern concrete could look like.",
@@ -287,7 +287,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "herringbone-walkway-concrete",
-    title: "Herringbone Concrete Walkway Ideas & Inspiration | PourCanvas",
+    title: "Herringbone Concrete Walkway Ideas & Inspiration",
     headline: "Herringbone Concrete Walkway",
     metaDescription: "A herringbone-stamped concrete walkway adds a classic, upscale look to any front entry. See how it looks in real yards and what it costs.",
     ogImage: "https://images.pourcanvas.com/inspiration-herringbone-walkway-concrete.jpg",
@@ -324,7 +324,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "exposed-aggregate-walkway-tan",
-    title: "Tan Exposed Aggregate Walkway Ideas & Inspiration | PourCanvas",
+    title: "Tan Exposed Aggregate Walkway Ideas & Inspiration",
     headline: "Tan Exposed Aggregate Walkway",
     metaDescription: "A tan exposed aggregate walkway adds warm texture to any front entry. See how this finish looks in real yards and what it costs to install.",
     ogImage: "https://images.pourcanvas.com/inspiration-exposed-aggregate-walkway-tan.jpg",
@@ -342,7 +342,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "stamped-concrete-driveway-cobblestone",
-    title: "Cobblestone Stamped Concrete Driveway Inspiration | PourCanvas",
+    title: "Cobblestone Stamped Concrete Driveway Inspiration",
     headline: "Cobblestone Stamped Concrete Driveway",
     metaDescription: "A cobblestone-stamped concrete driveway costs $12–20/sq ft and delivers the look of real stone pavers for less. See how it looks on real homes.",
     ogImage: "https://images.pourcanvas.com/inspiration-stamped-concrete-driveway-cobblestone.jpg",
@@ -1040,7 +1040,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "exposed-aggregate-driveway-grey-contemporary",
-    title: "Exposed Aggregate Driveway for Contemporary Homes | PourCanvas",
+    title: "Exposed Aggregate Driveway for Contemporary Homes",
     headline: "Exposed Aggregate Driveway, Contemporary Home",
     metaDescription:
       "Grey exposed aggregate driveway on a contemporary home - scattered pebble texture against angular lines and dark metal cladding.",
@@ -1120,7 +1120,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "parallel-strip-driveway-white-gravel",
-    title: "Parallel Concrete Strip Driveway With White Gravel | PourCanvas",
+    title: "Parallel Concrete Strip Driveway With White Gravel",
     headline: "Parallel Strip Driveway With White Gravel",
     metaDescription:
       "Parallel concrete strip driveway with white pea gravel between strips - a modern, design-forward approach for flat-roof and contemporary homes.",
@@ -1160,7 +1160,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "large-slab-patio-river-rock",
-    title: "Large Format Concrete Patio With River Rock Joints | PourCanvas",
+    title: "Large Format Concrete Patio With River Rock Joints",
     headline: "Large Slab Patio With River Rock Joints",
     metaDescription:
       "Large format concrete patio with black river rock filling all joints - a bold, low-maintenance surface that suits dark modern and contemporary homes.",
@@ -1219,7 +1219,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "herringbone-brick-driveway",
-    title: "Herringbone Brick Stamped Concrete Driveway Ideas | PourCanvas",
+    title: "Herringbone Brick Stamped Concrete Driveway Ideas",
     headline: "Herringbone Brick Driveway",
     metaDescription:
       "Herringbone brick stamped concrete driveway adds classic interlocked pattern and warm colour to any front approach. See how it looks with craftsman and colonial homes.",
@@ -1239,7 +1239,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "scored-grid-walkway-white-gravel",
-    title: "Scored Grid Concrete Walkway With White Gravel Channels | PourCanvas",
+    title: "Scored Grid Concrete Walkway With White Gravel Channels",
     headline: "Scored Grid Walkway With White Gravel",
     metaDescription:
       "Scored grid concrete walkway with white pea gravel channels - a clean geometric front path that suits contemporary and transitional home exteriors.",
@@ -1535,7 +1535,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "exposed-aggregate-patio-tan",
-    title: "Tan Exposed Aggregate Concrete Patio Inspiration | PourCanvas",
+    title: "Tan Exposed Aggregate Concrete Patio Inspiration",
     headline: "Tan Exposed Aggregate Patio",
     metaDescription: "A tan exposed aggregate patio costs $10–16/sq ft and delivers a warm, natural stone look that suits craftsman and ranch-style homes. See real installations.",
     ogImage: "https://images.pourcanvas.com/inspiration-exposed-aggregate-patio-tan.jpg",
@@ -1554,7 +1554,7 @@ export const inspirationPages: InspirationPage[] = [
   },
   {
     slug: "stained-concrete-steps-warm",
-    title: "Warm Brown Stained Concrete Entry Steps Inspiration | PourCanvas",
+    title: "Warm Brown Stained Concrete Entry Steps Inspiration",
     headline: "Warm Brown Stained Concrete Steps",
     metaDescription: "Acid-stained concrete entry steps in warm brown tones cost $10–16/sq ft and transform a plain entry into an architectural detail. See real installations.",
     ogImage: "https://images.pourcanvas.com/inspiration-stained-concrete-steps-warm.jpg",

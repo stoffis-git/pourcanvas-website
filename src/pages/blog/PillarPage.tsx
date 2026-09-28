@@ -2,14 +2,14 @@ import { useParams, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
-import { articlesByPillar, pillarMeta } from "@/content";
+import { articlesByPillar, blogPillarMeta } from "@/content";
 import type { Pillar } from "@/content";
 
 const PillarPage = () => {
   const { pillar } = useParams<{ pillar: string }>();
   const p = pillar as Pillar;
   const articles = articlesByPillar[p] ?? [];
-  const meta = pillarMeta[p];
+  const meta = blogPillarMeta[p];
 
   if (!meta) return null;
 
@@ -19,6 +19,10 @@ const PillarPage = () => {
         title={meta.title}
         description={meta.description}
         canonical={`/blog/${p}`}
+        breadcrumbs={[
+          { name: "Blog", url: "/blog" },
+          { name: meta.headline, url: `/blog/${p}` },
+        ]}
       />
       <Header />
       <main className="max-w-6xl mx-auto px-5 py-28 md:py-36">
@@ -36,7 +40,7 @@ const PillarPage = () => {
           </h1>
           <p className="text-base md:text-lg font-body text-muted-foreground">{meta.description}</p>
           <p className="text-sm font-body text-muted-foreground mt-3">
-            {articles.length} articles &middot; <Link to="/materials" className="text-primary hover:underline">Browse concrete finish guides →</Link>
+            {articles.length} articles &middot; <Link to={`/${p}`} className="text-primary hover:underline">See {p} photo ideas →</Link> &middot; <Link to="/materials" className="text-primary hover:underline">Browse concrete finish guides →</Link>
           </p>
         </div>
 

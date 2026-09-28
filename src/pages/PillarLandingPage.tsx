@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { PillarConversionBlock } from "@/components/inspiration/PillarConversionBlock";
 import { InspirationTile } from "@/components/inspiration/InspirationTile";
-import { inspirationByPillar, articlesByPillar, pillarMeta } from "@/content";
+import { inspirationByPillar, articlesByPillar, pillarMeta, beforeAfterPages, palettePages } from "@/content";
 import type { Pillar } from "@/content/types";
 
 const pillarHero: Record<Pillar, { headline: string; sub: string }> = {
@@ -29,6 +29,10 @@ const PillarLandingPage = ({ pillar }: { pillar: Pillar }) => {
     p.ogImage.startsWith("https://")
   );
   const articles = articlesByPillar[pillar].slice(0, 6);
+  const transformations = [
+    ...beforeAfterPages.filter((p) => p.pillar === pillar).map((p) => ({ to: `/before-after/${p.slug}`, label: p.headline })),
+    ...palettePages.filter((p) => p.pillar === pillar).map((p) => ({ to: `/palette/${p.slug}`, label: p.headline })),
+  ];
 
   return (
     <>
@@ -36,6 +40,8 @@ const PillarLandingPage = ({ pillar }: { pillar: Pillar }) => {
         title={meta.title}
         description={meta.description}
         canonical={`/${pillar}`}
+        breadcrumbs={[{ name: meta.headline, url: `/${pillar}` }]}
+        imageGallery={inspirations.map((p) => ({ url: p.ogImage, alt: p.heroAlt }))}
       />
       <Header />
 
@@ -43,10 +49,10 @@ const PillarLandingPage = ({ pillar }: { pillar: Pillar }) => {
       <section className="pt-28 md:pt-36 pb-16 md:pb-24 px-5">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight mb-4">
-            {hero.headline}
+            {meta.headline}
           </h1>
           <p className="text-lg md:text-xl font-body text-muted-foreground mb-8 max-w-2xl mx-auto">
-            {hero.sub}
+            {hero.headline}. {hero.sub}
           </p>
           <Link
             to="/"
@@ -117,6 +123,25 @@ const PillarLandingPage = ({ pillar }: { pillar: Pillar }) => {
                 Browse concrete finish guides →
               </Link>
             </div>
+          </div>
+        </section>
+      )}
+
+      {transformations.length > 0 && (
+        <section className="px-5 pb-16 md:pb-24">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
+              Before &amp; After and Color Palettes
+            </h2>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {transformations.map((t) => (
+                <li key={t.to}>
+                  <Link to={t.to} className="text-base font-body text-primary hover:underline">
+                    {t.label} →
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       )}

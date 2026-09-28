@@ -23,6 +23,11 @@ const PalettePage = () => {
         description={page.metaDescription}
         ogImage={page.ogImage}
         canonical={`/palette/${page.slug}`}
+        breadcrumbs={[
+          { name: page.pillar.charAt(0).toUpperCase() + page.pillar.slice(1) + " Ideas", url: `/${page.pillar}` },
+          { name: page.headline, url: `/palette/${page.slug}` },
+        ]}
+        imageGallery={[{ url: page.ogImage, alt: page.heroAlt }]}
       />
       <Header />
       <main className="max-w-4xl mx-auto px-5 py-28 md:py-36">

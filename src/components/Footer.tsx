@@ -39,6 +39,10 @@ const columns: { title: string; links: { label: string; to: string }[] }[] = [
       { label: "Concrete Driveway Cost", to: "/blog/driveway/concrete-driveway-cost" },
       { label: "Concrete Walkway Cost", to: "/blog/walkway/concrete-walkway-cost" },
       { label: "Best Patio Colors", to: "/blog/patio/patio-color-ideas" },
+      { label: "Concrete Patio Ideas", to: "/blog/patio/concrete-patio-ideas" },
+      { label: "Concrete Pathways", to: "/blog/walkway/concrete-walkway-ideas" },
+      { label: "Stamped Concrete Patterns", to: "/blog/patio/stamped-concrete-patterns" },
+      { label: "Stamped Concrete vs Pavers", to: "/blog/patio/stamped-concrete-vs-pavers" },
     ],
   },
 ];

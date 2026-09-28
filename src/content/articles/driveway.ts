@@ -205,7 +205,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "How Finish Choice Affects Long-Term Costs",
-        body: "The finish you choose at installation determines your maintenance cost for the next 30 years. Plain broom finish has the lowest ongoing costs: penetrating sealer every 5–7 years at $0.20–0.40/sq ft DIY. Stamped and colored concrete requires film-forming resealing every 2–3 years at $1–2/sq ft professional — $500–1,000 per cycle on a 500 sq ft driveway. Exposed aggregate falls between: penetrating sealer every 3–4 years at $0.25–0.45/sq ft. Over 30 years, the maintenance cost difference between plain and stamped concrete is $5,000–12,000 on a standard two-car driveway. Factor this into the finish decision alongside the upfront cost — it changes the total cost comparison significantly, particularly for homeowners on a fixed long-term budget.",
+        body: "The finish you choose at installation determines your maintenance cost for the next 30 years. Plain broom finish has the lowest ongoing costs: penetrating sealer every 5–7 years at $0.20–0.40/sq ft DIY. Stamped and colored concrete requires film-forming resealing every 2–3 years at $1–2/sq ft professional — $500–1,000 per cycle on a 500 sq ft driveway. Exposed aggregate falls between: penetrating sealer every 3–4 years at $0.25–0.45/sq ft. Over 30 years, the maintenance cost difference between plain and stamped concrete is $5,000–12,000 on a standard two-car driveway. Factor this into the finish decision alongside the upfront cost — it changes the total cost comparison significantly, particularly for homeowners on a fixed long-term budget. Resurfacing is often far cheaper than replacing: see <a href='/blog/driveway/driveway-resurfacing'>driveway resurfacing costs</a>.",
       },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "exposed-aggregate-driveway"],
@@ -398,7 +398,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Exposed Aggregate in Dark Tones",
-        body: "Dark pea gravel or black basalt aggregate in a washed finish gives a modern, textured surface without any stamped pattern. The aggregate itself provides visual interest and the texture handles vehicle loads well without polish or decoration. Cost: $8–14 per sq ft. It's one of the cleanest modern looks when executed in a consistent dark tone — the aggregate color and concrete base color should be close to each other to avoid a spotty appearance.",
+        body: "Dark pea gravel or black basalt aggregate in a washed finish gives a modern, textured surface without any stamped pattern. The aggregate itself provides visual interest and the texture handles vehicle loads well without polish or decoration. Cost: $8–14 per sq ft. It's one of the cleanest modern looks when executed in a consistent dark tone — the aggregate color and concrete base color should be close to each other to avoid a spotty appearance. Weighing it against a plain finish? Our <a href='/blog/patio/exposed-aggregate-vs-broom-finish'>exposed aggregate vs broom finish comparison</a> breaks down cost and grip.",
         inspirationSlugs: ["exposed-aggregate-driveway-grey", "exposed-aggregate-driveway-grey-contemporary", "exposed-aggregate-driveway-tan", "white-exposed-aggregate-driveway"],
       },
       {
@@ -408,7 +408,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Stamped Concrete in a Modern Context",
-        body: "If you want a stamped driveway that reads as modern rather than traditional, avoid cobblestone and small brick patterns. The patterns that work in a modern context are: linear plank (wide rectangular bands running perpendicular to the house), large-format ashlar in a single dark tone without accent color, and simple grid scoring with a contrasting border. PourCanvas lets you preview how different stamp patterns and color combinations would look on your specific driveway before you commit to a contractor.",
+        body: "If you want a stamped driveway that reads as modern rather than traditional, avoid cobblestone and small brick patterns. The patterns that work in a modern context are: linear plank (wide rectangular bands running perpendicular to the house), large-format ashlar in a single dark tone without accent color, and simple grid scoring with a contrasting border. PourCanvas lets you preview how different stamp patterns and color combinations would look on your specific driveway before you commit to a contractor. For every pattern and what it costs, see our <a href='/blog/patio/stamped-concrete-patterns'>stamped concrete patterns guide</a>.",
         inspirationSlugs: ["stamped-concrete-driveway-ashlar-slate", "stamped-concrete-driveway-cobblestone", "stamped-concrete-driveway-cream"],
       },
       {
@@ -536,9 +536,9 @@ export const drivewayArticles: Article[] = [
   {
     slug: "black-concrete-driveway",
     pillar: "driveway",
-    title: "Black Concrete Driveway: Cost, Pros, Cons & Real Results",
-    headline: "Black Concrete Driveway: What to Expect Before You Commit",
-    metaDescription: "Black concrete driveways cost $6–12/sq ft and look striking — but heat absorption and fade are real concerns. Here's the full picture for 2026.",
+    title: "Black Concrete Driveway Ideas: Photos, Cost, Pros & Cons",
+    headline: "Black Concrete Driveway Ideas: Photos, Cost and What to Expect",
+    metaDescription: "Black and charcoal concrete driveway ideas with photos — what they cost ($6–12/sq ft), how dark they stay, and the heat and fade tradeoffs to know first.",
     targetKeywords: ["black concrete driveway", "dark concrete driveway", "black driveway ideas", "black stained concrete driveway", "charcoal concrete driveway"],
     ogImage: "https://images.pourcanvas.com/driveway-black-concrete.jpg",
     publishedAt: "2026-03-27",
@@ -570,7 +570,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "What Black Driveways Work Best With",
-        body: "A black or charcoal concrete driveway makes the strongest visual impact against a light home exterior — white, light grey, cream, or warm beige. The high contrast reads as architectural and deliberate. Against a dark home exterior (dark grey, navy, dark brown), the contrast disappears and the driveway blends rather than anchors. Light-toned window frames and trim, structured landscaping, and clean edge detailing amplify the effect. Where black driveways fail: underdeveloped landscapes, mismatched exterior materials, or homes that need other maintenance first. A bold driveway in a cluttered setting looks out of place, not elevated. If you're also redoing a front walkway or patio, extending the dark concrete theme across all three surfaces creates the most cohesive result — though a slightly lighter tone on the walkway and patio avoids the heat issues of full black on pedestrian surfaces.",
+        body: "A black or charcoal concrete driveway makes the strongest visual impact against a light home exterior — white, light grey, cream, or warm beige. The high contrast reads as architectural and deliberate. Against a dark home exterior (dark grey, navy, dark brown), the contrast disappears and the driveway blends rather than anchors. Light-toned window frames and trim, structured landscaping, and clean edge detailing amplify the effect. Where black driveways fail: underdeveloped landscapes, mismatched exterior materials, or homes that need other maintenance first. A bold driveway in a cluttered setting looks out of place, not elevated. If you're also redoing a front walkway or patio, extending the dark concrete theme across all three surfaces creates the most cohesive result — though a slightly lighter tone on the walkway and patio avoids the heat issues of full black on pedestrian surfaces. Want pattern as well as color? See our <a href='/blog/driveway/stamped-concrete-driveway'>stamped concrete driveway guide</a>. Already have a grey slab? <a href='/blog/driveway/driveway-resurfacing'>Driveway resurfacing</a> can take a dark overlay without a full tear-out.",
         inspirationSlugs: ["dark-concrete-home-exterior"],
       },
       {

@@ -2,7 +2,7 @@ import type { MaterialPage } from "../types";
 
 export const concreteOverlayPage: MaterialPage = {
   slug: "concrete-overlay",
-  title: "Concrete Overlay: How It Works, What It Costs, and When to Use It | PourCanvas",
+  title: "Concrete Overlay: Cost, How It Works, When to Use It",
   headline: "Concrete Overlay",
   summary:
     "A concrete overlay is a thin resurfacing layer applied over an existing slab. It can restore a worn surface or add a decorative finish — but only works on structurally sound bases.",
