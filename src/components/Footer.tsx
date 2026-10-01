@@ -93,7 +93,11 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-border/60 pt-6">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} PourCanvas. All rights reserved.
+            © {new Date().getFullYear()} PourCanvas. Images licensed{" "}
+            <Link to="/terms#images" className="underline hover:text-foreground">
+              CC BY 4.0
+            </Link>
+            .
           </p>
         </div>
       </div>

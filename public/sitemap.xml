@@ -2056,6 +2056,11 @@
     <image:image><image:loc>https://images.pourcanvas.com/cdn-cgi/image/width=600,format=webp,quality=82/inspiration-exposed-aggregate-patio-tan.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pourcanvas.com/terms</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://pourcanvas.com/walkway</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

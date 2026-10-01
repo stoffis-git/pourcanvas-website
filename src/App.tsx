@@ -3,6 +3,7 @@ import type { RouteObject } from "react-router-dom";
 import RootLayout from "./components/RootLayout";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import TermsPage from "./pages/TermsPage";
 import BlogHub from "./pages/blog/BlogHub";
 import PillarPage from "./pages/blog/PillarPage";
 import ArticlePage from "./pages/blog/ArticlePage";
@@ -37,6 +38,7 @@ export const routes: RouteObject[] = [
       { path: "guides/concrete-walkway", element: <ConcreteWalkwayGuide /> },
       { path: "materials", element: <MaterialsHub /> },
       { path: "materials/:slug", element: <MaterialPage /> },
+      { path: "terms", element: <TermsPage /> },
       { path: "*", element: <NotFound /> },
     ],
   },
@@ -55,6 +57,7 @@ export const staticPaths = [
   "/guides/concrete-patio",
   "/guides/concrete-walkway",
   "/materials",
+  "/terms",
 ];
 
 export const dynamicPaths = [

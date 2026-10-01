@@ -36,6 +36,21 @@ interface SeoHeadProps {
 
 const absolutize = (url: string) => (url.startsWith("http") ? url : `${SITE_URL}${url}`);
 
+const imageObject = (url: string, text: string) => ({
+  "@type": "ImageObject" as const,
+  contentUrl: absolutize(url),
+  url: absolutize(url),
+  name: text,
+  description: text,
+  caption: text,
+  encodingFormat: "image/jpeg",
+  creator: { "@type": "Organization", name: "PourCanvas", url: SITE_URL },
+  creditText: "PourCanvas",
+  copyrightNotice: "© PourCanvas",
+  license: "https://creativecommons.org/licenses/by/4.0/",
+  acquireLicensePage: `${SITE_URL}/terms#images`,
+});
+
 export const SeoHead = ({
   title,
   description,
@@ -72,11 +87,7 @@ export const SeoHead = ({
       : null;
 
   const articleImage = galleryImages && galleryImages.length > 0
-    ? galleryImages.map((img) => ({
-        "@type": "ImageObject" as const,
-        url: img.url,
-        caption: img.caption,
-      }))
+    ? galleryImages.map((img) => imageObject(img.url, img.caption))
     : absoluteImage;
 
   const articleSchema =
@@ -103,13 +114,7 @@ export const SeoHead = ({
           name: title,
           description,
           ...(absoluteCanonical && { url: absoluteCanonical }),
-          image: imageGallery.map((img) => ({
-            "@type": "ImageObject",
-            contentUrl: absolutize(img.url),
-            url: absolutize(img.url),
-            name: img.alt,
-            caption: img.alt,
-          })),
+          image: imageGallery.map((img) => imageObject(img.url, img.alt)),
         })
       : null;
 
