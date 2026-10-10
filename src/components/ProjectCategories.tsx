@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { inspirationByPillar, inspirationPages } from "@/content";
 
 const categories = [
-  { image: "https://images.pourcanvas.com/inspiration-grey-stamped-patio.jpg", label: "Patios", count: "2.4k ideas", to: "/patio" },
-  { image: "https://images.pourcanvas.com/inspiration-modern-driveway.jpg", label: "Driveways", count: "1.1k ideas", to: "/driveway" },
-  { image: "https://images.pourcanvas.com/inspiration-concrete-pool-deck-grey.jpg", label: "Pool Decks", count: "890 ideas", to: "/patio" },
-  { image: "https://images.pourcanvas.com/inspiration-herringbone-walkway-concrete.jpg", label: "Sidewalks", count: "640 ideas", to: "/walkway" },
+  { image: "https://images.pourcanvas.com/inspiration-grey-stamped-patio.jpg", label: "Patios", count: `${inspirationByPillar.patio.length} ideas`, to: "/patio" },
+  { image: "https://images.pourcanvas.com/inspiration-modern-driveway.jpg", label: "Driveways", count: `${inspirationByPillar.driveway.length} ideas`, to: "/driveway" },
+  { image: "https://images.pourcanvas.com/inspiration-concrete-pool-deck-grey.jpg", label: "Pool Decks", count: `${inspirationPages.filter((p) => p.slug.includes("pool")).length} ideas`, to: "/blog/patio/pool-deck-ideas-concrete" },
+  { image: "https://images.pourcanvas.com/inspiration-herringbone-walkway-concrete.jpg", label: "Walkways", count: `${inspirationByPillar.walkway.length} ideas`, to: "/walkway" },
 ];
 
 const ProjectCategories = () => {

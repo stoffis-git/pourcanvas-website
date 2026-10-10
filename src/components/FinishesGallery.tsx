@@ -22,7 +22,7 @@ const FinishesGallery = () => (
           Which Finish Is Right for You?
         </h2>
         <p className="text-muted-foreground leading-relaxed">
-          From stamped concrete to natural flagstone — preview any finish in your own space before committing.
+          From stamped concrete to natural flagstone: what each finish costs, how it holds up, and where it works best.
         </p>
       </div>
 

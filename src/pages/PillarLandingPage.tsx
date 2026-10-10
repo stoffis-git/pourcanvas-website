@@ -2,30 +2,27 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
-import { PillarConversionBlock } from "@/components/inspiration/PillarConversionBlock";
 import { InspirationTile } from "@/components/inspiration/InspirationTile";
 import { inspirationByPillar, articlesByPillar, pillarMeta, beforeAfterPages, palettePages } from "@/content";
 import type { Pillar } from "@/content/types";
 import { ToolStrip } from "@/components/tools/ToolStrip";
+import { RelatedToolsList } from "@/components/tools/RelatedToolsList";
+import { PILLAR_TOOLS } from "@/content/tools/pillars";
 
-const pillarTools: Record<Pillar, string[]> = {
-  patio: ["paver-patio-cost-calculator", "patio-cost-calculator", "paver-calculator"],
-  walkway: ["paver-walkway-cost-calculator", "flagstone-calculator", "paver-calculator"],
-  driveway: ["paver-driveway-cost-calculator", "paver-base-calculator", "paver-calculator"],
-};
+const pillarTools = PILLAR_TOOLS;
 
 const pillarHero: Record<Pillar, { headline: string; sub: string }> = {
   patio: {
-    headline: "See What Your Patio Could Look Like",
-    sub: "Browse real concrete finishes, then preview them in your own space.",
+    headline: "Plan a Patio That Fits Your Budget and Climate",
+    sub: "Browse real concrete and paver finishes, then price your size with a free calculator.",
   },
   driveway: {
-    headline: "See What Your Driveway Could Look Like",
-    sub: "Explore curb appeal ideas from stamped concrete to exposed aggregate.",
+    headline: "Plan a Driveway That Lasts and Looks Right",
+    sub: "Curb appeal ideas from stamped concrete to exposed aggregate, plus finish and cost tools.",
   },
   walkway: {
-    headline: "See What Your Walkway Could Look Like",
-    sub: "Flagstone, stamped concrete, herringbone — see it before you build it.",
+    headline: "Plan a Walkway in Flagstone, Pavers or Concrete",
+    sub: "Flagstone, stamped concrete, herringbone: compare the looks and price your path.",
   },
 };
 
@@ -62,11 +59,11 @@ const PillarLandingPage = ({ pillar }: { pillar: Pillar }) => {
             {hero.headline}. {hero.sub}
           </p>
           <Link
-            to="/"
+            to={`/tools/${pillarTools[pillar][0]}`}
             className="inline-block font-body font-semibold px-8 py-4 rounded-full border-0 hover:opacity-90 transition-opacity text-base"
             style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
           >
-            Try It Free →
+            Price your project →
           </Link>
         </div>
       </section>
@@ -160,7 +157,7 @@ const PillarLandingPage = ({ pillar }: { pillar: Pillar }) => {
       {/* Pillar CTA */}
       <section className="px-5 pb-24">
         <div className="max-w-4xl mx-auto">
-          <PillarConversionBlock pillar={pillar} />
+          <RelatedToolsList slugs={pillarTools[pillar]} />
         </div>
       </section>
 

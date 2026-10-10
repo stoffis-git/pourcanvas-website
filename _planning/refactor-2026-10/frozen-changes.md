@@ -21,3 +21,11 @@ Not changed, because the data doesn't justify it:
 - stamped-concrete-patterns and stamped-concrete-driveway (low impressions, no clear signal)
 - inspiration/stamped-concrete-driveway-cobblestone (pos 1–4 on "stamped cobblestone driveway", CTR 1.9%)
 - colored-concrete (title already matches "dye vs stain")
+
+## 2026-10-10 (later): homepage rework (user decision: drop the visualizer pitch)
+
+| Page | Evidence | Before | After |
+|---|---|---|---|
+| / | User dropped the AI visualizer (generation was a stub; "50,000+ designs" and the testimonials were not real). Homepage GSC is negligible (343 impressions, no meaningful queries). | T: Redesign Your Patio, Driveway & Backyard with AI · Hero = configurator + paywall, pricing, social proof, testimonials, before/after "generated in seconds" | T: Free Paver, Patio & Driveway Calculators · Hero = tool pitch + live patio cost widget · Tool grid · How the numbers work (cited source count) · Project tiles (real counts) · Finishes · Guides · Tool FAQs |
+
+Sitewide: the header CTA is now "Free Calculators" (→ /tools); the footer CTA/blurb, landing-page heroes and CTAs, guide CTAs, and the waitlist blocks became tool links; visualizer promises were removed from content; 14 dead visualizer components were deleted.

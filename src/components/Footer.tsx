@@ -70,16 +70,16 @@ const Footer = () => {
               pourcanvas
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              See your patio, driveway, or backyard redesigned in real concrete finishes —
-              before you spend a cent.
+              Free calculators and guides for patios, driveways and walkways: what to order,
+              what it should cost, and which finish fits.
             </p>
-            <a
-              href="/#redesign"
+            <Link
+              to="/tools"
               className="mt-4 inline-block rounded-full px-5 py-2.5 text-sm font-semibold transition-opacity hover:opacity-90"
               style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
             >
-              Try the visualizer →
-            </a>
+              Browse free tools →
+            </Link>
           </div>
 
           {columns.map((col) => (

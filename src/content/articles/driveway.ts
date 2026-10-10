@@ -67,7 +67,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Exposed Aggregate Borders",
-        body: "Consider a smooth or lightly textured stamped field with exposed aggregate borders. This two-finish approach adds visual definition and is easier to maintain since the border can be refinished independently. It's also a cost strategy: stamped borders with a plain field run $8–14/sq ft versus $12–20 for a fully stamped surface. Tools like PourCanvas let you preview border-versus-full-stamp layouts on your actual driveway before committing. The same border approach works on a front walkway at a lower per-linear-foot cost than full stamping.",
+        body: "Consider a smooth or lightly textured stamped field with exposed aggregate borders. This two-finish approach adds visual definition and is easier to maintain since the border can be refinished independently. It's also a cost strategy: stamped borders with a plain field run $8–14/sq ft versus $12–20 for a fully stamped surface. The same border approach works on a front walkway at a lower per-linear-foot cost than full stamping.",
         inspirationSlugs: ["exposed-aggregate-driveway-grey", "exposed-aggregate-driveway-tan"],
       },
       {
@@ -80,7 +80,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Stamped Concrete Driveway vs. Paver Driveway",
-        body: `The most direct comparison is stamped concrete ($12–20/sq ft) versus concrete paver driveways (about ${paverDriveway}/sq ft) and natural stone paver driveways ($20–35/sq ft). Stamped concrete wins on upfront cost against natural stone — the difference on a 500 sq ft two-car driveway is $4,000–7,500. Pavers win on repairability: a cracked stamped concrete section is difficult to patch invisibly, while a cracked paver is replaced individually in an hour. In freeze-thaw climates, paver driveways handle repeated ground movement better since individual units shift rather than the whole slab cracking. For most residential applications in moderate climates, stamped concrete is the stronger value. In harsh northern climates where freeze-thaw cracking is frequent, the paver premium may be worth considering. PourCanvas can show you how stamped concrete patterns would look on your specific driveway before you commit to either direction.`,
+        body: `The most direct comparison is stamped concrete ($12–20/sq ft) versus concrete paver driveways (about ${paverDriveway}/sq ft) and natural stone paver driveways ($20–35/sq ft). Stamped concrete wins on upfront cost against natural stone — the difference on a 500 sq ft two-car driveway is $4,000–7,500. Pavers win on repairability: a cracked stamped concrete section is difficult to patch invisibly, while a cracked paver is replaced individually in an hour. In freeze-thaw climates, paver driveways handle repeated ground movement better since individual units shift rather than the whole slab cracking. For most residential applications in moderate climates, stamped concrete is the stronger value. In harsh northern climates where freeze-thaw cracking is frequent, the paver premium may be worth considering. To price the paver side, use the <a href='/tools/paver-driveway-cost-calculator'>paver driveway cost calculator</a>.`,
       },
       {
         heading: "Connecting Driveway Design to Front Walkway and Patio",
@@ -371,7 +371,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Sizing: The One Rule You Can't Ignore",
-        body: "A functional circular driveway needs a minimum inside radius of 18–20 feet to accommodate standard vehicles comfortably. The driveway lanes should be at least 10–12 feet wide. These minimums mean a circular driveway requires meaningful frontage — it's not a design for narrow urban lots. If you're also planning a patio in the rear, PourCanvas can help you visualize how both projects might look together before committing to either.",
+        body: "A functional circular driveway needs a minimum inside radius of 18–20 feet to accommodate standard vehicles comfortably. The driveway lanes should be at least 10–12 feet wide. These minimums mean a circular driveway requires meaningful frontage — it's not a design for narrow urban lots.",
       },
       {
         heading: "Drainage Planning for Circular Driveways",
@@ -383,7 +383,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Circular Driveway ROI and Resale Considerations",
-        body: "A circular driveway adds significant perceived value to a property when it suits the home's scale — a circular drive on a larger traditional home can add $15,000–40,000 in perceived value according to real estate agents who work in affluent suburban markets. The return on a smaller home or a suburban property that doesn't have the frontage to make the circular layout look natural is minimal, and it can actually read as overbuilt for the setting. The ROI calculus depends on the property price point: on a $400,000 home, a $35,000 circular driveway is difficult to recover at resale. On a $900,000+ home, the same investment is more proportionate to the property tier and buyer expectation. Use PourCanvas to visualize what the circular layout looks like in the context of your actual home and frontage before committing to the investment.",
+        body: "A circular driveway adds significant perceived value to a property when it suits the home's scale — a circular drive on a larger traditional home can add $15,000–40,000 in perceived value according to real estate agents who work in affluent suburban markets. The return on a smaller home or a suburban property that doesn't have the frontage to make the circular layout look natural is minimal, and it can actually read as overbuilt for the setting. The ROI calculus depends on the property price point: on a $400,000 home, a $35,000 circular driveway is difficult to recover at resale. On a $900,000+ home, the same investment is more proportionate to the property tier and buyer expectation.",
       },
       {
         heading: "Front Walkway Integration on a Circular Driveway Property",
@@ -446,7 +446,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Stamped Concrete in a Modern Context",
-        body: "If you want a stamped driveway that reads as modern rather than traditional, avoid cobblestone and small brick patterns. The patterns that work in a modern context are: linear plank (wide rectangular bands running perpendicular to the house), large-format ashlar in a single dark tone without accent color, and simple grid scoring with a contrasting border. PourCanvas lets you preview how different stamp patterns and color combinations would look on your specific driveway before you commit to a contractor. For every pattern and what it costs, see our <a href='/blog/patio/stamped-concrete-patterns'>stamped concrete patterns guide</a>.",
+        body: "If you want a stamped driveway that reads as modern rather than traditional, avoid cobblestone and small brick patterns. The patterns that work in a modern context are: linear plank (wide rectangular bands running perpendicular to the house), large-format ashlar in a single dark tone without accent color, and simple grid scoring with a contrasting border. For every pattern and what it costs, see our <a href='/blog/patio/stamped-concrete-patterns'>stamped concrete patterns guide</a>.",
         inspirationSlugs: ["stamped-concrete-driveway-ashlar-slate", "stamped-concrete-driveway-cobblestone", "stamped-concrete-driveway-cream"],
       },
       {
@@ -548,7 +548,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Appearance and Finish Options",
-        body: "Concrete has the clear advantage on aesthetics. Plain broom-finish concrete looks clean and intentional. Stamped concrete ($12–20/sq ft) adds pattern and color that asphalt simply can't replicate. Asphalt is available in standard black — which looks good when freshly sealed but fades to gray-brown over time. If curb appeal matters, concrete wins on every available finish option. Tools like PourCanvas let you preview how different concrete finishes would look on your specific driveway before you commit.",
+        body: "Concrete has the clear advantage on aesthetics. Plain broom-finish concrete looks clean and intentional. Stamped concrete ($12–20/sq ft) adds pattern and color that asphalt simply can't replicate. Asphalt is available in standard black — which looks good when freshly sealed but fades to gray-brown over time. If curb appeal matters, concrete wins on every available finish option. To narrow the finish, try the <a href='/tools/driveway-finish-selector'>driveway finish selector</a>.",
         inspirationSlugs: ["modern-driveway-concrete", "brushed-concrete-driveway-charcoal"],
       },
       {
@@ -621,7 +621,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Black Concrete vs. Asphalt: Which Is Actually Darker",
-        body: "The most common question from homeowners considering a black driveway: is it really darker than asphalt? Fresh asphalt is deep black — often darker than even maximum-pigment concrete. But asphalt fades to an oxidized grey within a few years without seal coating; maintained asphalt cycles between dark and grey over time. Black concrete, maintained with a quality sealer, holds a consistent deep charcoal that reads darker than weathered asphalt and more intentional than sealed asphalt's inconsistent sheen. The key difference is aesthetic consistency: black concrete looks designed; maintained asphalt looks maintained. For the same visual result with more design control, black concrete is the stronger choice. See how different dark tones would look on your specific driveway with tools like PourCanvas before committing to a color.",
+        body: "The most common question from homeowners considering a black driveway: is it really darker than asphalt? Fresh asphalt is deep black — often darker than even maximum-pigment concrete. But asphalt fades to an oxidized grey within a few years without seal coating; maintained asphalt cycles between dark and grey over time. Black concrete, maintained with a quality sealer, holds a consistent deep charcoal that reads darker than weathered asphalt and more intentional than sealed asphalt's inconsistent sheen. The key difference is aesthetic consistency: black concrete looks designed; maintained asphalt looks maintained. For the same visual result with more design control, black concrete is the stronger choice.",
       },
       {
         heading: "What Black Driveways Work Best With",
@@ -630,7 +630,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Comparing Black Concrete to Other Dark Driveway Options",
-        body: `<p>Three ways to achieve a dark driveway: black integrally colored concrete (${colored}/sq ft), dark charcoal stamped concrete ($14–20/sq ft), and standard asphalt ($3–6/sq ft fresh, fades over time). Black integral concrete is the most design-intentional option — the color is consistent, goes all the way through, and stays dark with proper sealing. Dark stamped concrete adds pattern to the dark tone and suits homes where the decorative detail is part of the design intent. Asphalt is the default dark option, but its inconsistent color maintenance (dark when freshly sealed, faded grey when not) makes it a poor substitute for a genuinely designed dark surface. Use PourCanvas to preview how charcoal and true black concrete compare on your specific driveway before finalizing the pigment specification.</p>
+        body: `<p>Three ways to achieve a dark driveway: black integrally colored concrete (${colored}/sq ft), dark charcoal stamped concrete ($14–20/sq ft), and standard asphalt ($3–6/sq ft fresh, fades over time). Black integral concrete is the most design-intentional option — the color is consistent, goes all the way through, and stays dark with proper sealing. Dark stamped concrete adds pattern to the dark tone and suits homes where the decorative detail is part of the design intent. Asphalt is the default dark option, but its inconsistent color maintenance (dark when freshly sealed, faded grey when not) makes it a poor substitute for a genuinely designed dark surface.</p>
 <table>
 <tr><th>Option</th><th>Cost/sq ft</th><th>Heat Absorption</th><th>Fade Rate</th><th>Maintenance</th></tr>
 <tr><td>Black integral concrete</td><td>${colored}</td><td>High (up to ~150°F at peak)</td><td>Moderate with sealer</td><td>Reseal every 3–5 years</td></tr>
@@ -733,7 +733,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Color Band Border (Integral Pigment)",
-        body: "A color band border uses a contrasting integral pigment in the perimeter strip versus the driveway field — for example, a charcoal perimeter band around a light grey driveway interior, or a warm buff edge around a cool grey field. The concrete is poured in two phases or using a divider form to keep colors separate. Cost: $10–16 per linear foot for the border strip, including the pigment premium. This approach requires careful planning before the pour — you can't easily add a pigment border to an existing driveway. Tools like PourCanvas let you preview how different color band combinations would look on your specific driveway layout before the concrete is ordered. Best for: new pours where you want a two-tone effect that's highly durable with no stamping maintenance requirements. If you're also planning a front walkway, running a matching color band as a border on the path creates continuity across both surfaces.",
+        body: "A color band border uses a contrasting integral pigment in the perimeter strip versus the driveway field — for example, a charcoal perimeter band around a light grey driveway interior, or a warm buff edge around a cool grey field. The concrete is poured in two phases or using a divider form to keep colors separate. Cost: $10–16 per linear foot for the border strip, including the pigment premium. This approach requires careful planning before the pour — you can't easily add a pigment border to an existing driveway. Best for: new pours where you want a two-tone effect that's highly durable with no stamping maintenance requirements. If you're also planning a front walkway, running a matching color band as a border on the path creates continuity across both surfaces.",
         inspirationSlugs: ["modern-black-concrete-driveway", "light-grey-brushed-concrete-driveway"],
       },
       {
@@ -742,7 +742,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Coordinating Driveway Border with Front Walkway and Patio",
-        body: "A driveway border that echoes the material language of the front walkway creates a visually connected exterior. The most effective pairing: a cobblestone-stamp border on the driveway plus a cobblestone-stamped front walkway — same stamp, same color wash, different surface. The walkway can go slightly richer in color depth than the driveway since it handles foot traffic rather than vehicle loads. If the patio also uses a decorative stamp or exposed aggregate finish, a simple saw-cut score line or matching color band on the driveway ties everything together without over-decorating the most utilitarian surface. Tools like PourCanvas let you preview how different border and walkway combinations look together in your specific exterior before committing to either.",
+        body: "A driveway border that echoes the material language of the front walkway creates a visually connected exterior. The most effective pairing: a cobblestone-stamp border on the driveway plus a cobblestone-stamped front walkway — same stamp, same color wash, different surface. The walkway can go slightly richer in color depth than the driveway since it handles foot traffic rather than vehicle loads. If the patio also uses a decorative stamp or exposed aggregate finish, a simple saw-cut score line or matching color band on the driveway ties everything together without over-decorating the most utilitarian surface.",
       },
     ],
     relatedSlugs: ["driveway-edging-ideas", "stamped-concrete-driveway", "concrete-driveway-cost"],
@@ -769,7 +769,7 @@ export const drivewayArticles: Article[] = [
     headline: "Concrete Driveway Colors: What to Choose and Why",
     metaDescription:
       `Concrete driveway color guide: integral pigment $2–5/sq ft extra, acid stain $3–7/sq ft on existing slabs. Every color method compared for ${CURRENT_YEAR}.`,
-    targetKeywords: ["concrete driveway color", "concrete driveway color visualizer", "colored concrete driveway ideas"],
+    targetKeywords: ["concrete driveway color", "colored concrete driveway ideas"],
     ogImage: "https://images.pourcanvas.com/driveway-concrete-driveway-color-guide.jpg",
     publishedAt: "2026-03-27",
     updatedAt: "2026-06-10",
@@ -783,7 +783,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Color Wash (Antiquing Release): Best for Stamped Surfaces",
-        body: "A color wash or antiquing agent is applied to the fresh concrete surface during stamping ��� it's the technique that gives stamped concrete its characteristic multi-tone, weathered look. It's not a single-color treatment; the wash pools in low spots and wipes thin on high surfaces, creating natural variation that makes stamped patterns read as stone or brick rather than plastic. Color washes are typically used in combination with integral pigment: a buff base pour with a charcoal or slate color wash on top produces the classic stamped driveway look. Cost: the wash is usually included in stamped concrete quotes ($12–18/sq ft total), not priced separately. If you're adding color to an already-poured stamped surface, a surface-applied color hardener runs $3–6 per sq ft. Tools like PourCanvas can show you how different base-and-wash combinations would look on your actual driveway before you finalize the color order.",
+        body: "A color wash or antiquing agent is applied to the fresh concrete surface during stamping ��� it's the technique that gives stamped concrete its characteristic multi-tone, weathered look. It's not a single-color treatment; the wash pools in low spots and wipes thin on high surfaces, creating natural variation that makes stamped patterns read as stone or brick rather than plastic. Color washes are typically used in combination with integral pigment: a buff base pour with a charcoal or slate color wash on top produces the classic stamped driveway look. Cost: the wash is usually included in stamped concrete quotes ($12–18/sq ft total), not priced separately. If you're adding color to an already-poured stamped surface, a surface-applied color hardener runs $3–6 per sq ft.",
         inspirationSlugs: ["stamped-concrete-driveway-cobblestone", "stamped-concrete-driveway-cream"],
       },
       {
@@ -807,7 +807,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Matching Driveway Color to Front Walkway and Patio",
-        body: "When the driveway, front walkway, and patio are all planned in the same project window, color coordination across the three surfaces creates the most cohesive exterior result. The tonal direction should be consistent even if the exact finish differs: a charcoal integral driveway paired with a charcoal-wash stamped walkway and a charcoal exposed aggregate patio reads as designed. Exact color matching is rarely achievable across separate pours; tonal harmony is the realistic goal. PourCanvas can show you how different color directions look across all three surfaces before you finalize your color selections, which is particularly useful when you're trying to coordinate with an existing home exterior color that you're not changing.",
+        body: "When the driveway, front walkway, and patio are all planned in the same project window, color coordination across the three surfaces creates the most cohesive exterior result. The tonal direction should be consistent even if the exact finish differs: a charcoal integral driveway paired with a charcoal-wash stamped walkway and a charcoal exposed aggregate patio reads as designed. Exact color matching is rarely achievable across separate pours; tonal harmony is the realistic goal.",
       },
     ],
     relatedSlugs: ["black-concrete-driveway", "driveway-border-ideas", "concrete-driveway-cost", "charcoal-concrete-driveway"],
@@ -873,7 +873,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "How to Get an Accurate Quote",
-        body: `A reliable stamped concrete quote should break out: (1) base concrete cost per sq ft, (2) stamping labor per sq ft, (3) color and sealing materials, and (4) prep work — demolition of an existing driveway runs ${removal}/sq ft, subgrade preparation $0.50–1.50/sq ft. Ask specifically whether the quote includes the first sealing application — some contractors include it, others price it separately. The total cost for a 450 sq ft two-car driveway with a mid-range ashlar slate pattern, integral pigment, and color wash should land at $6,000–8,500 in most U.S. markets. Tools like PourCanvas let you visualize different patterns and color options on your actual driveway before you commit to a design — which helps narrow the stamping decision before the contractor conversation. If you're also planning a front walkway or patio, getting those in the same quote often reduces the per-sq-ft cost through economies of scale.`,
+        body: `A reliable stamped concrete quote should break out: (1) base concrete cost per sq ft, (2) stamping labor per sq ft, (3) color and sealing materials, and (4) prep work — demolition of an existing driveway runs ${removal}/sq ft, subgrade preparation $0.50–1.50/sq ft. Ask specifically whether the quote includes the first sealing application — some contractors include it, others price it separately. The total cost for a 450 sq ft two-car driveway with a mid-range ashlar slate pattern, integral pigment, and color wash should land at $6,000–8,500 in most U.S. markets. If you're also planning a front walkway or patio, getting those in the same quote often reduces the per-sq-ft cost through economies of scale.`,
       },
       {
         heading: "Warranty and Post-Installation Support",
@@ -942,7 +942,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Pavers as Edging: Visual Separation With Texture",
-        body: "Using concrete or natural stone pavers as a driveway edge creates a visible band of contrasting texture and color between the driveway field and the lawn or planting bed. This works particularly well on stamped concrete driveways where the paver color or material echoes the stamp pattern. Installed cost: $15–25 per linear foot for a single-course paver border, set in sand or mortar. The cost scales with paver type — concrete pavers are on the lower end; tumbled travertine or natural granite runs higher. Unlike metal edging, pavers allow you to create design continuity between the driveway and adjacent walkways or patio areas. If you're planning a coordinated driveway-and-walkway project, specifying the same paver species for both edging runs is a straightforward way to visually tie the spaces together. Tools like PourCanvas let you preview how paver edging in different tones would look alongside your driveway finish.",
+        body: "Using concrete or natural stone pavers as a driveway edge creates a visible band of contrasting texture and color between the driveway field and the lawn or planting bed. This works particularly well on stamped concrete driveways where the paver color or material echoes the stamp pattern. Installed cost: $15–25 per linear foot for a single-course paver border, set in sand or mortar. The cost scales with paver type — concrete pavers are on the lower end; tumbled travertine or natural granite runs higher. Unlike metal edging, pavers allow you to create design continuity between the driveway and adjacent walkways or patio areas. If you're planning a coordinated driveway-and-walkway project, specifying the same paver species for both edging runs is a straightforward way to visually tie the spaces together.",
       },
       {
         heading: "Gravel or River Rock Borders: Casual and Low-Maintenance",

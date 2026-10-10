@@ -105,8 +105,6 @@ export interface InspirationPage {
   contentBlock: string;
   targetKeywords: string[];
   pillar?: Pillar;
-  ctaHeadline: string;
-  ctaBody: string;
   faqs?: FAQ[];
   relatedArticles?: MaterialRelatedArticle[];
 }
@@ -120,8 +118,6 @@ export interface BeforeAfterPage {
   heroAlt: string;
   contentBlock: string;
   pillar: Pillar;
-  ctaHeadline: string;
-  ctaBody: string;
 }
 
 export interface PalettePage {
@@ -133,8 +129,6 @@ export interface PalettePage {
   heroAlt: string;
   contentBlock: string;
   pillar: Pillar;
-  ctaHeadline: string;
-  ctaBody: string;
 }
 
 export type PavingView = "cost" | "pavers" | "base" | "sand" | "poly" | "flagstone" | "compare";

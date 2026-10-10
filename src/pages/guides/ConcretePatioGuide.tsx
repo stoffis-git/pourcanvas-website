@@ -141,14 +141,14 @@ const ConcretePatioGuide = () => (
       {/* CTA */}
       <div className="rounded-2xl p-7 mb-16 text-center" style={{ background: "linear-gradient(135deg, #90d1bf22, #9dde9022)" }}>
         <p className="font-semibold text-foreground mb-2">Not sure which finish fits your backyard?</p>
-        <p className="text-sm text-muted-foreground mb-5">Upload a photo of your patio and preview stamped, stained, or aggregate finishes on your actual surface.</p>
-        <a
-          href="/#try-it"
+        <p className="text-sm text-muted-foreground mb-5">Compare stamped, stained, and aggregate finishes by budget, climate, and upkeep.</p>
+        <Link
+          to="/tools/concrete-finish-selector"
           className="inline-block rounded-full px-7 py-3 font-semibold text-sm hover:opacity-90 transition-opacity"
           style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
         >
-          Try PourCanvas Free →
-        </a>
+          Try the Concrete Finish Selector →
+        </Link>
       </div>
 
       {/* Section 2: Stamped Concrete */}
@@ -264,17 +264,17 @@ const ConcretePatioGuide = () => (
 
       {/* Final CTA */}
       <div className="rounded-2xl p-8 text-center border border-border">
-        <h2 className="text-2xl font-bold text-foreground mb-3">See It Before You Pour It</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-3">Run the Numbers Before You Pour</h2>
         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-          Upload a photo of your patio and preview stamped concrete, exposed aggregate, stained finishes, and color options — free, no sign-up required.
+          Estimate your patio cost by size and finish with our free calculator — no sign-up required.
         </p>
-        <a
-          href="/#try-it"
+        <Link
+          to="/tools/patio-cost-calculator"
           className="inline-block rounded-full px-8 py-3 font-semibold text-sm hover:opacity-90 transition-opacity"
           style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
         >
-          Try PourCanvas Free →
-        </a>
+          Try the Patio Cost Calculator →
+        </Link>
       </div>
 
     </main>

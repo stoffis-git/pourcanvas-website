@@ -37,8 +37,8 @@ const TermsPage = () => (
         </p>
         <h3 className="mt-6 font-semibold text-foreground">Other uses</h3>
         <p className="mt-2 text-muted-foreground">
-          Logos and brand marks are not covered by this license. For anything else, contact us via
-          the visualizer.
+          Logos and brand marks are not covered by this license. Any other use requires our prior
+          permission.
         </p>
       </section>
     </main>

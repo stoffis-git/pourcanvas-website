@@ -1,49 +1,37 @@
 import type { FAQ } from "@/content/types";
 import { moneyRange, perSqftRange } from "@/lib/format";
 import { INSTALLED } from "@/lib/tools/data/paving";
+import { calculatePaving, DEFAULT_INPUTS } from "@/lib/tools/paving";
+import { toolPages } from "@/content/tools";
 
-const stamped = INSTALLED["stamped-concrete"];
+const ip = INSTALLED;
+const patio = calculatePaving({ ...DEFAULT_INPUTS, length: 12, width: 16 });
+const toolCount = toolPages.length;
 
 export const homeFaqs: FAQ[] = [
   {
     question: "What is PourCanvas?",
-    answer: "PourCanvas is an AI-powered visualizer that shows you what different concrete finishes — stamped, exposed aggregate, colored concrete, pavers, and more — would look like on your actual patio, driveway, or walkway. Upload a photo and see the transformation before you call a contractor. Most homeowners compare 3–5 finishes before settling on a direction.",
+    answer: `PourCanvas is a free planning site for patios, driveways and walkways. It has ${toolCount} calculators and finish selectors plus guides on concrete finishes, pavers and flagstone. Each calculator gives you the material list and the installed cost in one result, based on dated, sourced U.S. pricing.`,
   },
   {
-    question: "Is PourCanvas free to use?",
-    answer: "Yes — you get 3 free designs every 24 hours, no credit card required. If you need more, paid plans start at $9/month (billed yearly) for 100 designs a month, with a Contractor Pro plan for high-volume use. Cancel anytime.",
+    question: "Are the calculators free?",
+    answer: "Yes. Every calculator is free, needs no signup and works on a phone. Your inputs are stored in the page link, so you can share a result with a contractor or come back to it later.",
   },
   {
-    question: "What surfaces can I design?",
-    answer: "Patios, driveways, walkways, pool decks, and steps. Any outdoor concrete or hardscape surface will work — just upload a photo of your space. Most projects fall into the 200–800 sq ft range where finish choice has the biggest visual and cost impact.",
+    question: "How much does a 12×16 paver patio cost?",
+    answer: `According to PourCanvas, a 12×16 (192 sq ft) concrete paver patio costs about ${moneyRange(patio.pro)} installed, or ${perSqftRange(ip["concrete-paver"])} per sq ft. The same patio in plain concrete runs about ${moneyRange(patio.compare.find((c) => c.material === "plain-concrete")!.total)}.`,
   },
   {
-    question: "What concrete finishes can I preview?",
-    answer: "Stamped concrete, exposed aggregate, broom finish, colored/integral-pigment concrete, concrete pavers, flagstone, travertine, acid-stained, salt finish, ashlar slate, cobblestone, herringbone brick, and polished concrete — 16 finishes available, with more added regularly.",
+    question: "Which is cheaper: concrete, pavers or flagstone?",
+    answer: `Plain concrete is cheapest at about ${perSqftRange(ip["plain-concrete"])} per sq ft installed. Concrete pavers run ${perSqftRange(ip["concrete-paver"])}, stamped concrete ${perSqftRange(ip["stamped-concrete"])}, and dry-laid flagstone ${perSqftRange(ip["flagstone-dry"])}. The patio cost calculator compares all of them at your size.`,
   },
   {
-    question: "How accurate is the AI visualization?",
-    answer: "The tool shows realistic texture, color, and pattern — not a cartoon rendering. Visualizations are accurate enough to use as a contractor brief and make confident design decisions.",
+    question: "Where do your prices come from?",
+    answer: "From published cost guides, manufacturer data, industry technical specs (ICPI) and federal cost indexes, each checked and dated. The methodology page lists every value with its sources. Your local quote can differ with access, slope and season.",
   },
   {
-    question: "Can I share the visualization with my contractor?",
-    answer: "Yes. You'll be able to save or download your design and share it directly. Contractors consistently say a reference image cuts quoting back-and-forth by at least 1–2 conversations and reduces the chance of a finish misunderstanding on a $5,000–$15,000 project.",
-  },
-  {
-    question: "What's the difference between stamped concrete and pavers?",
-    answer: `Stamped concrete is poured as a single slab then imprinted with a pattern — about ${perSqftRange(stamped)}/sq ft installed, seamless finish, but cracks can propagate across the slab. Pavers are individual units set on a base — about ${perSqftRange(INSTALLED["concrete-paver"])}/sq ft — and individual pieces can be replaced if damaged.`,
-  },
-  {
-    question: "How much does a concrete patio typically cost?",
-    answer: `A basic broom-finish concrete patio runs about ${perSqftRange(INSTALLED["plain-concrete"])}/sq ft installed (U.S. average). Stamped or decorative finishes range from about ${perSqftRange(stamped)}/sq ft depending on pattern complexity and region. A 400 sq ft patio typically runs ${moneyRange({ low: stamped.low * 400, typical: stamped.typical * 400, high: stamped.high * 400 })} all-in for stamped work.`,
-  },
-  {
-    question: "Do I need design experience to use PourCanvas?",
-    answer: "No. You'll upload a photo of your space, choose a finish style, and the AI handles the rest. No settings to configure — most users will generate their first visualization in under 60 seconds.",
-  },
-  {
-    question: "What photo formats are supported?",
-    answer: "JPG and PNG, up to 10MB. A standard smartphone photo works perfectly — no professional photography needed.",
+    question: "Do you have concrete slab or volume calculators?",
+    answer: "Concrete volume, bag counts and concrete slab cost are covered by our sister site SlabCalc. PourCanvas focuses on pavers, flagstone and choosing a finish.",
   },
 ];
 

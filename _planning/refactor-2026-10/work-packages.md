@@ -65,5 +65,5 @@ Black-concrete additions (appended sections on FROZEN pages plus new guide pages
 - Independent QA review: 34 findings → code + copy fixed (hand-off params, UTC dates, number inputs, URL param preservation, finish weights, cannibalization retitles, inbound links from 13 indexed pages).
 - Numbers round: 3 verification agents; data file updated to fetched sources (12 installed-cost adjustments, regional factors from DoD ACF + BLS, gravel density 1.5, flagstone coverage, sod removal, basketweave waste, new bag/compactor constants (pending big-box check)); content corrected across ~20 files incl. minimal in-place number fixes on FROZEN bodies.
 - QA: 53 unit tests green; check-pages 169 pages, 0 failures; FROZEN title/meta/H1/intro/H2-order unchanged.
-- NOT committed / NOT deployed (awaiting user go).
+- Committed + deployed: e161881 (2026-10-10).
 - Open (needs user decision): FROZEN meta/intro numbers left as-is: black-concrete-driveway meta+intro "$6–12" (body now $8–16); modern-driveway-ideas meta "$6–20"/intro "$6–12"; best-concrete-finish-pool-deck H2s "($6–10/sq ft)" and "($3–8/sq ft)".

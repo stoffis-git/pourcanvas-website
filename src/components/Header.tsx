@@ -32,15 +32,15 @@ const Header = () => {
               {label}
             </Link>
           ))}
-          <a href="/#redesign" className="ml-3">
+          <Link to="/tools" className="ml-3">
             <Button
               size="sm"
               className="rounded-full px-6 font-semibold text-sm border-0 hover:opacity-90 transition-opacity"
               style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
             >
-              Try It Free →
+              Free Calculators →
             </Button>
-          </a>
+          </Link>
         </nav>
 
         <button
@@ -64,15 +64,15 @@ const Header = () => {
               {label}
             </Link>
           ))}
-          <a href="/#redesign" onClick={() => setMobileOpen(false)} className="mt-2">
+          <Link to="/tools" onClick={() => setMobileOpen(false)} className="mt-2">
             <Button
               size="sm"
               className="rounded-full w-full font-semibold border-0 hover:opacity-90 transition-opacity"
               style={{ background: "linear-gradient(135deg, #90d1bf, #9dde90)", color: "#2d2a26" }}
             >
-              Try It Free →
+              Free Calculators →
             </Button>
-          </a>
+          </Link>
         </div>
       )}
     </header>

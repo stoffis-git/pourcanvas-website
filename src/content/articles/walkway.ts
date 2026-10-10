@@ -42,7 +42,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Exposed Aggregate with Smooth Borders",
-        body: "A textured exposed-aggregate field with smooth concrete borders gives the walkway a finished, designed appearance. The border delineates the path from the lawn cleanly and adds definition without the full stamping premium. Exposed aggregate runs $8–14/sq ft — between plain and stamped in both cost and visual impact. PourCanvas can show you how different finish combinations would look on your specific front approach.",
+        body: "A textured exposed-aggregate field with smooth concrete borders gives the walkway a finished, designed appearance. The border delineates the path from the lawn cleanly and adds definition without the full stamping premium. Exposed aggregate runs $8–14/sq ft — between plain and stamped in both cost and visual impact.",
         inspirationSlugs: ["exposed-aggregate-walkway-tan"],
       },
       {
@@ -143,7 +143,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Applying the Same Decision to a Patio or Driveway",
-        body: "The flagstone vs. concrete trade-off for a walkway is identical when applied to a patio or driveway — just scaled up. A flagstone patio runs $25–45/sq ft vs. $12–18/sq ft for stamped concrete; a flagstone driveway is impractical for most vehicles. The cost and maintenance comparison holds at every surface size. If you're deciding on materials for multiple outdoor surfaces simultaneously, stamped concrete wins on value at every scale unless authentic material texture is a hard requirement for the property's sale price. Tools like PourCanvas let you visualize different surface finishes — including flagstone-look stamped concrete — on your actual space before committing to a material and contractor. If flagstone is out of budget, these <a href='/blog/walkway/concrete-walkway-ideas'>concrete pathway ideas</a> and <a href='/blog/walkway/stepping-stone-walkway-ideas'>stepping stone walkway ideas</a> get a similar look for less. For patios, compare <a href='/blog/patio/stamped-concrete-vs-pavers'>stamped concrete vs pavers</a>.",
+        body: "The flagstone vs. concrete trade-off for a walkway is identical when applied to a patio or driveway — just scaled up. A flagstone patio runs $25–45/sq ft vs. $12–18/sq ft for stamped concrete; a flagstone driveway is impractical for most vehicles. The cost and maintenance comparison holds at every surface size. If you're deciding on materials for multiple outdoor surfaces simultaneously, stamped concrete wins on value at every scale unless authentic material texture is a hard requirement for the property's sale price. If flagstone is out of budget, these <a href='/blog/walkway/concrete-walkway-ideas'>concrete pathway ideas</a> and <a href='/blog/walkway/stepping-stone-walkway-ideas'>stepping stone walkway ideas</a> get a similar look for less. For patios, compare <a href='/blog/patio/stamped-concrete-vs-pavers'>stamped concrete vs pavers</a>.",
       },
       {
         heading: "Resale Value: Does Flagstone Add More Than Concrete?",
@@ -441,7 +441,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Sealing and Long-Term Care",
-        body: "Concrete steps take more wear than any other hardscape surface — foot traffic, freeze-thaw cycling, and deicing salt all concentrate on the same small area. Sealing every 2 years with a penetrating sealer protects the surface and extends finish life. In cold climates, use magnesium chloride rather than rock salt for ice control — sodium chloride degrades concrete surface over time, especially on stamped or colored finishes. Tools like PourCanvas can show you how different step finishes would look at your specific entry before you commit to a contractor.",
+        body: "Concrete steps take more wear than any other hardscape surface — foot traffic, freeze-thaw cycling, and deicing salt all concentrate on the same small area. Sealing every 2 years with a penetrating sealer protects the surface and extends finish life. In cold climates, use magnesium chloride rather than rock salt for ice control — sodium chloride degrades concrete surface over time, especially on stamped or colored finishes.",
       },
       {
         heading: "Handrail Requirements for Concrete Steps",
@@ -503,7 +503,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Fixture Style: What Pairs with Your Surface Finish",
-        body: "Warm brass or bronze fixtures pair naturally with stamped concrete in earth tones (buff, sandstone, aged brick colors). Matte black fixtures suit contemporary driveways with charcoal or dark grey concrete. Stainless or brushed nickel suits modern homes with cool-grey aggregate finishes. The lighting fixture style should reinforce the surface finish choice — if you're deciding on a walkway finish and want to add lighting, choosing the finish first makes the fixture selection easier. PourCanvas can help you visualize what your walkway surface will look like in different finishes before you commit to a material that may limit your fixture options.",
+        body: "Warm brass or bronze fixtures pair naturally with stamped concrete in earth tones (buff, sandstone, aged brick colors). Matte black fixtures suit contemporary driveways with charcoal or dark grey concrete. Stainless or brushed nickel suits modern homes with cool-grey aggregate finishes. The lighting fixture style should reinforce the surface finish choice — if you're deciding on a walkway finish and want to add lighting, choosing the finish first makes the fixture selection easier.",
         inspirationSlugs: ["stamped-concrete-walkway-grey-ranch", "charcoal-broom-finish-walkway"],
       },
       {
@@ -564,7 +564,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Ground Cover Between Pads",
-        body: "What you put between stepping pads changes the entire character of the path. Decomposed granite or fine gravel is the most low-maintenance option — stable, weed-suppressible with landscape fabric, and available in tones that complement concrete. Buff or tan decomposed granite ($30–60 per cubic yard delivered) suits warm earth-tone pads; grey granite fines suit charcoal or cool-grey concrete. Grass between pads looks great initially but requires careful mowing around each pad and becomes a maintenance burden on a heavily-used path. Creeping thyme, Irish moss, and creeping Jenny are the most popular living ground covers — they fill in over a season, suppress weeds, and handle light foot traffic if the path isn't walked heavily. Creeping thyme is especially durable and releases a pleasant scent underfoot. PourCanvas can show you how different pad styles and spacing would look in your specific yard before you commit.",
+        body: "What you put between stepping pads changes the entire character of the path. Decomposed granite or fine gravel is the most low-maintenance option — stable, weed-suppressible with landscape fabric, and available in tones that complement concrete. Buff or tan decomposed granite ($30–60 per cubic yard delivered) suits warm earth-tone pads; grey granite fines suit charcoal or cool-grey concrete. Grass between pads looks great initially but requires careful mowing around each pad and becomes a maintenance burden on a heavily-used path. Creeping thyme, Irish moss, and creeping Jenny are the most popular living ground covers — they fill in over a season, suppress weeds, and handle light foot traffic if the path isn't walked heavily. Creeping thyme is especially durable and releases a pleasant scent underfoot.",
         inspirationSlugs: ["parallel-strip-walkway-grass"],
       },
       {
@@ -637,7 +637,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Stained and Colored Concrete",
-        body: "Acid staining or integral color pigment transforms any of the above patterns with color depth. Integral color (pigment mixed into the pour) costs $1–3/sq ft extra and is permanent — it colors the entire slab, so chips and cracks show the same color throughout. Acid stain (applied after curing) costs $2–4/sq ft and creates mottled, translucent color effects that look more organic than flat pigment. Charcoal, slate blue, and warm terra cotta are the most popular stain colors for walkways. Tools like PourCanvas let you preview stain colors on your specific walkway layout before committing to a pour. Resealing every 2–3 years maintains the color depth regardless of whether you use integral pigment or an acid-stain topcoat.",
+        body: "Acid staining or integral color pigment transforms any of the above patterns with color depth. Integral color (pigment mixed into the pour) costs $1–3/sq ft extra and is permanent — it colors the entire slab, so chips and cracks show the same color throughout. Acid stain (applied after curing) costs $2–4/sq ft and creates mottled, translucent color effects that look more organic than flat pigment. Charcoal, slate blue, and warm terra cotta are the most popular stain colors for walkways. Resealing every 2–3 years maintains the color depth regardless of whether you use integral pigment or an acid-stain topcoat.",
         inspirationSlugs: ["acid-stained-concrete-walkway", "stained-concrete-walkway-blue-grey"],
       },
       {

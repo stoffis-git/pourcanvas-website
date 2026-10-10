@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
-import { ToolWaitlistBlock } from "@/components/ToolWaitlistBlock";
 import { MaterialProConBlock } from "@/components/materials/MaterialProConBlock";
 import { MaterialRelatedArticles } from "@/components/materials/MaterialRelatedArticles";
 import { FAQSection } from "@/components/FAQSection";
@@ -83,12 +82,9 @@ const MaterialPage = () => {
                 </h2>
                 <div className="font-body text-foreground/80 leading-relaxed prose-table" dangerouslySetInnerHTML={{ __html: section.body }} />
               </div>
-              {i === midpoint - 1 &&
-                (material.relatedTools?.length ? (
-                  <RelatedToolsList slugs={material.relatedTools} />
-                ) : (
-                  <ToolWaitlistBlock source="tool-waitlist-material" />
-                ))}
+              {i === midpoint - 1 && (
+                <RelatedToolsList slugs={material.relatedTools?.length ? material.relatedTools : ["concrete-finish-selector", "patio-cost-calculator", "paver-patio-cost-calculator"]} />
+              )}
             </Fragment>
           ))}
         </div>

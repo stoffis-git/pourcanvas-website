@@ -46,7 +46,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Cobblestone Border",
-        body: "Rather than stamping the entire patio, a cobblestone stamp border with a smooth-finished interior frames the space cleanly and saves significant cost. On a 400 sq ft patio, stamping only the 18-inch border band rather than the full surface can reduce the stamping premium by 40–60%. The border runs roughly $8–12 per linear foot versus $12–18/sq ft for full coverage. Tools like PourCanvas let you preview what a bordered vs. fully-stamped patio would look like on your actual space before committing. The border approach also holds up better over time — the full field stays easy to patch, while the decorative perimeter provides all the visual interest.",
+        body: "Rather than stamping the entire patio, a cobblestone stamp border with a smooth-finished interior frames the space cleanly and saves significant cost. On a 400 sq ft patio, stamping only the 18-inch border band rather than the full surface can reduce the stamping premium by 40–60%. The border runs roughly $8–12 per linear foot versus $12–18/sq ft for full coverage. The border approach also holds up better over time — the full field stays easy to patch, while the decorative perimeter provides all the visual interest.",
         inspirationSlugs: ["cobblestone-stamped-patio", "cobblestone-driveway-border"],
       },
       {
@@ -144,7 +144,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Bundling Patio, Driveway, and Walkway Projects",
-        body: "If you're planning two or three concrete surfaces in the same project season, getting them quoted together produces meaningful savings. Mobilization costs (equipment rental, crew travel, concrete truck minimums) are split across a larger scope. Shared base prep work can be done in one pass rather than multiple visits. And a contractor who's already on site for a driveway can typically add a patio or walkway at a lower per-sq-ft rate than if each surface were a standalone job. On a combined driveway ($5,000) and patio ($4,000) project, bundling with one contractor often saves $800–1,500 versus two separate contracts. Use PourCanvas to plan how all three surfaces look together before you call contractors — it gives you a clearer brief and reduces scope changes mid-project. The concrete truck minimum delivery is usually 5 cubic yards ($600–900); a small patio that only needs 2–3 yards becomes significantly more cost-efficient when combined with another surface that brings the order above the truck minimum.",
+        body: "If you're planning two or three concrete surfaces in the same project season, getting them quoted together produces meaningful savings. Mobilization costs (equipment rental, crew travel, concrete truck minimums) are split across a larger scope. Shared base prep work can be done in one pass rather than multiple visits. And a contractor who's already on site for a driveway can typically add a patio or walkway at a lower per-sq-ft rate than if each surface were a standalone job. On a combined driveway ($5,000) and patio ($4,000) project, bundling with one contractor often saves $800–1,500 versus two separate contracts. The concrete truck minimum delivery is usually 5 cubic yards ($600–900); a small patio that only needs 2–3 yards becomes significantly more cost-efficient when combined with another surface that brings the order above the truck minimum.",
       },
     ],
     relatedSlugs: ["stamped-concrete-ideas", "patio-color-ideas"],
@@ -206,7 +206,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Color Consistency Over Time",
-        body: "Not all concrete pigments age equally. UV-stable iron oxide pigments (most earth tones — charcoal, buff, tan, terracotta) hold color best over time. Synthetic organic pigments used for blues, purples, and some greens are more UV-vulnerable and fade faster without aggressive sealing. If you're choosing a less common color direction — slate blue, sage, or deep red — specify UV-stable pigment explicitly and plan for resealing every 2 years rather than 3. The same applies to colored driveways and walkways: the maintenance schedule for non-neutral colors should be more frequent. PourCanvas can show you how different color directions would look on your specific patio before you finalize the color order with your contractor.",
+        body: "Not all concrete pigments age equally. UV-stable iron oxide pigments (most earth tones — charcoal, buff, tan, terracotta) hold color best over time. Synthetic organic pigments used for blues, purples, and some greens are more UV-vulnerable and fade faster without aggressive sealing. If you're choosing a less common color direction — slate blue, sage, or deep red — specify UV-stable pigment explicitly and plan for resealing every 2 years rather than 3. The same applies to colored driveways and walkways: the maintenance schedule for non-neutral colors should be more frequent.",
       },
       {
         heading: "Integral Color vs. Surface Stain vs. Color Wash",
@@ -215,11 +215,11 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Matching Patio Color to Driveway and Walkway",
-        body: "When all three hardscape surfaces — patio, driveway, and front walkway — are the same material and planned together, color coordination matters more than when they're done separately. The most common approach is to use the same integral pigment family (same tone direction) across all three surfaces, with the patio allowing for slightly more decorative finish and the driveway staying cleaner and more restrained. Exact color matching between surfaces is rarely achievable since each is poured separately with different concrete batches. Instead, aim for tonal harmony: a charcoal patio, charcoal driveway, and dark-grey walkway read as coordinated even without being identical. PourCanvas lets you preview how different color directions would look on each surface in your specific space.",
+        body: "When all three hardscape surfaces — patio, driveway, and front walkway — are the same material and planned together, color coordination matters more than when they're done separately. The most common approach is to use the same integral pigment family (same tone direction) across all three surfaces, with the patio allowing for slightly more decorative finish and the driveway staying cleaner and more restrained. Exact color matching between surfaces is rarely achievable since each is poured separately with different concrete batches. Instead, aim for tonal harmony: a charcoal patio, charcoal driveway, and dark-grey walkway read as coordinated even without being identical.",
       },
       {
         heading: "What Happens If You Choose the Wrong Color",
-        body: "A concrete patio color cannot be changed without significant effort after the pour. Surface staining over an integral-pigmented slab can shift tone slightly — going darker is more achievable than going lighter — but the change is limited and adds $1–3/sq ft. A full color correction requires a concrete overlay at $3–8/sq ft, which adds cost and reduces the durability margin. The practical implication: decide on color before the concrete is ordered, not while the crew is on site. Getting a concrete color chip from your contractor, viewing it in outdoor light at your home, and comparing it to exterior paint colors and trim before committing to the pour is the best way to avoid a costly color regret. If you're uncertain, PourCanvas can help you visualize how different colors will interact with your specific home exterior.",
+        body: "A concrete patio color cannot be changed without significant effort after the pour. Surface staining over an integral-pigmented slab can shift tone slightly — going darker is more achievable than going lighter — but the change is limited and adds $1–3/sq ft. A full color correction requires a concrete overlay at $3–8/sq ft, which adds cost and reduces the durability margin. The practical implication: decide on color before the concrete is ordered, not while the crew is on site. Getting a concrete color chip from your contractor, viewing it in outdoor light at your home, and comparing it to exterior paint colors and trim before committing to the pour is the best way to avoid a costly color regret.",
       },
     ],
     relatedSlugs: ["stamped-concrete-ideas", "concrete-patio-cost"],
@@ -354,7 +354,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Use Larger Fake Stones",
-        body: "Counterintuitively, larger stamp patterns (big flagstone, large plank) make small spaces feel bigger. Smaller, busier patterns (cobblestone, small brick) chop up the surface visually and make the space read smaller. PourCanvas lets you preview different pattern scales on your actual space before committing.",
+        body: "Counterintuitively, larger stamp patterns (big flagstone, large plank) make small spaces feel bigger. Smaller, busier patterns (cobblestone, small brick) chop up the surface visually and make the space read smaller.",
         inspirationSlugs: ["large-slab-patio-river-rock", "flagstone-stamped-patio-buff"],
       },
       {
@@ -381,7 +381,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Small Patio vs. Large Patio: When to Expand",
-        body: "A small patio that feels cramped for its intended use is better expanded at pour time than retrofitted later. Expanding a cured slab requires breaking the existing edge, installing new forms, and pouring an abutting slab — the color will rarely match exactly and the expansion joint between old and new concrete will be visible. On a 100 sq ft patio, adding 40 sq ft at the time of the original pour costs roughly $240–720 in additional concrete work. Adding the same 40 sq ft as a retrofit 2 years later costs $400–1,200 plus the visible joint. If you're debating whether to go small and expand later, the answer is almost always to go a step larger from the start — the marginal cost at pour time is far lower than retrofit expansion. PourCanvas can help you preview what a 140 sq ft version would look like in your yard versus a 100 sq ft layout before you finalize the scope.",
+        body: "A small patio that feels cramped for its intended use is better expanded at pour time than retrofitted later. Expanding a cured slab requires breaking the existing edge, installing new forms, and pouring an abutting slab — the color will rarely match exactly and the expansion joint between old and new concrete will be visible. On a 100 sq ft patio, adding 40 sq ft at the time of the original pour costs roughly $240–720 in additional concrete work. Adding the same 40 sq ft as a retrofit 2 years later costs $400–1,200 plus the visible joint. If you're debating whether to go small and expand later, the answer is almost always to go a step larger from the start — the marginal cost at pour time is far lower than retrofit expansion. To price both sizes, run them through the <a href='/tools/patio-cost-calculator'>patio cost calculator</a>.",
       },
     ],
     relatedSlugs: ["concrete-patio-cost", "patio-color-ideas"],
@@ -415,7 +415,7 @@ export const patioArticles: Article[] = [
     sections: [
       {
         heading: "Why Sealing Matters More for Some Finishes",
-        body: "Plain broom-finish concrete benefits from sealing — it reduces water infiltration and staining — but it won't look dramatically different before vs. after. Stamped and colored concrete is different: a quality sealer enhances color depth and gives the surface a wet-look or satin sheen that makes the finish look significantly better. If you have stamped or integrally colored concrete, sealing isn't optional maintenance — it's part of how the finish is supposed to look. Tools like PourCanvas can show you how different sealer sheen levels (matte, satin, wet-look gloss) would change the appearance of your specific patio finish.",
+        body: "Plain broom-finish concrete benefits from sealing — it reduces water infiltration and staining — but it won't look dramatically different before vs. after. Stamped and colored concrete is different: a quality sealer enhances color depth and gives the surface a wet-look or satin sheen that makes the finish look significantly better. If you have stamped or integrally colored concrete, sealing isn't optional maintenance — it's part of how the finish is supposed to look.",
         inspirationSlugs: ["stamped-concrete-patio-grey", "acid-stained-concrete-patio"],
       },
       {
@@ -512,7 +512,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Decorative Overlay Options for Patios",
-        body: "A resurfacing overlay isn't just a plain grey refresh — it can be stamped, stained, or given an exposed aggregate finish. Micro-topping overlays (1/8\"–3/16\" thick) applied with a trowel can accept acid stain or water-based stain after curing. Stampable overlays (3/8\"–1/2\" thick) can be stamped with any standard concrete pattern during the application window. Spray-applied textured coatings can replicate broom finish, aggregate texture, or a stone-spray appearance. The decorative options are genuinely broad — homeowners who assume resurfacing means \"plain grey patch\" are often surprised by what's achievable. PourCanvas can show you what different overlay finishes would look like on your specific patio before you commit to a contractor.",
+        body: "A resurfacing overlay isn't just a plain grey refresh — it can be stamped, stained, or given an exposed aggregate finish. Micro-topping overlays (1/8\"–3/16\" thick) applied with a trowel can accept acid stain or water-based stain after curing. Stampable overlays (3/8\"–1/2\" thick) can be stamped with any standard concrete pattern during the application window. Spray-applied textured coatings can replicate broom finish, aggregate texture, or a stone-spray appearance. The decorative options are genuinely broad — homeowners who assume resurfacing means \"plain grey patch\" are often surprised by what's achievable.",
         inspirationSlugs: ["stamped-concrete-patio-grey", "acid-stained-concrete-patio"],
       },
       {
@@ -579,7 +579,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Pool Deck Cost Summary: 500 sq ft",
-        body: "Budget guide for a 500 sq ft pool deck in 2026: broom-finish plain concrete, $3,000–5,000; exposed aggregate, $4,000–7,000; stamped concrete (travertine, flagstone, or slate patterns), $6,000–9,000. Add 15–25% for demo of an existing deck. A quality sealer costs $150–400 to apply professionally on a 500 sq ft deck and should be reapplied every 2–3 years for stamped finishes and every 3–5 years for plain or aggregate surfaces. Tools like PourCanvas let you see how different finishes and tones would look around your specific pool layout before you commit to a contractor.",
+        body: "Budget guide for a 500 sq ft pool deck in 2026: broom-finish plain concrete, $3,000–5,000; exposed aggregate, $4,000–7,000; stamped concrete (travertine, flagstone, or slate patterns), $6,000–9,000. Add 15–25% for demo of an existing deck. A quality sealer costs $150–400 to apply professionally on a 500 sq ft deck and should be reapplied every 2–3 years for stamped finishes and every 3–5 years for plain or aggregate surfaces.",
       },
       {
         heading: "Coordinating Pool Deck, Patio, and Walkway Finishes",
@@ -637,7 +637,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "DIY vs. Hiring a Contractor for Crack Repair",
-        body: "DIY crack repair is appropriate for hairline and stable cracks under 1/8\": the materials are inexpensive, the technique is straightforward, and the stakes are low if you don't get it perfect the first time. Cracks 1/8\"–1/4\" can be DIY'd but benefit from a contractor's v-groove preparation and injection technique, which extends repair longevity. Shifting cracks and resurfacing work should be left to contractors — both require proper diagnosis and execution that significantly impacts long-term results. For context: a professional resurfacing overlay on a 300 sq ft patio runs $900–4,500, compared to $1,800–5,400 for full replacement. Tools like PourCanvas can help you visualize what your patio would look like with a fresh overlay or a new surface before committing to either approach.",
+        body: "DIY crack repair is appropriate for hairline and stable cracks under 1/8\": the materials are inexpensive, the technique is straightforward, and the stakes are low if you don't get it perfect the first time. Cracks 1/8\"–1/4\" can be DIY'd but benefit from a contractor's v-groove preparation and injection technique, which extends repair longevity. Shifting cracks and resurfacing work should be left to contractors — both require proper diagnosis and execution that significantly impacts long-term results. For context: a professional resurfacing overlay on a 300 sq ft patio runs $900–4,500, compared to $1,800–5,400 for full replacement.",
       },
       {
         heading: "Preventing Future Cracking",
@@ -691,7 +691,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Lighting and Surface Finish: A Decision That Works Together",
-        body: "The surface finish you choose for your patio affects how lighting reads at night. Smooth or lightly textured concrete with a satin sealer reflects uplighting evenly — the surface holds the light and glows softly. Exposed aggregate surfaces scatter light more diffusely, reducing harsh reflection but also reducing the luminous quality. Stamped patterns with deep relief — cobblestone, ashlar slate — cast interesting shadows when lit from low angles, emphasizing the texture in a way flat lighting doesn't. Dark surfaces (charcoal, graphite) absorb more light and need higher-output fixtures than light surfaces. If you're choosing a surface finish while also planning a lighting system, it's worth running both decisions in parallel — a light-colored, smooth-finish patio with well-placed uplights is one of the most dramatic night-time outdoor settings available. PourCanvas lets you preview how different concrete finishes look in your specific space before committing, which also helps you anticipate how they'll interact with your lighting setup.",
+        body: "The surface finish you choose for your patio affects how lighting reads at night. Smooth or lightly textured concrete with a satin sealer reflects uplighting evenly — the surface holds the light and glows softly. Exposed aggregate surfaces scatter light more diffusely, reducing harsh reflection but also reducing the luminous quality. Stamped patterns with deep relief — cobblestone, ashlar slate — cast interesting shadows when lit from low angles, emphasizing the texture in a way flat lighting doesn't. Dark surfaces (charcoal, graphite) absorb more light and need higher-output fixtures than light surfaces. If you're choosing a surface finish while also planning a lighting system, it's worth running both decisions in parallel — a light-colored, smooth-finish patio with well-placed uplights is one of the most dramatic night-time outdoor settings available.",
         inspirationSlugs: ["concrete-patio-ideas-modern-grey", "charcoal-salt-finish-patio"],
       },
       {
@@ -765,7 +765,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "What Pool Deck Concrete Finish to Choose: Decision Summary",
-        body: "Tightest budget: broom finish with light integral color ($7–12/sq ft total). Best all-around performance: exposed aggregate in a light warm mix ($10–16/sq ft). Best visual result: travertine-stamped concrete with non-slip sealer additive ($12–18/sq ft). Existing slab that runs hot: deck coating overlay ($4–8/sq ft). Avoid plain grey smooth concrete — it's the worst option for heat and grip and only marginally cheaper than better alternatives once you add a sealer. For any new pool deck pour in a climate with significant sun exposure, specify a light aggregate or integral color at the same time: the material cost difference is $1–3/sq ft and the performance difference over a southern summer is substantial. Tools like PourCanvas let you preview how different finishes and colors would look on your pool deck layout before committing — useful when the aggregate mix determines how the entire outdoor space reads. If you're also finishing a driveway or walkway, matching the aggregate color across all three surfaces creates a cohesive look that significantly lifts the whole property. For layouts and photos, see these <a href='/blog/patio/pool-deck-ideas-concrete'>concrete pool deck ideas</a>.",
+        body: "Tightest budget: broom finish with light integral color ($7–12/sq ft total). Best all-around performance: exposed aggregate in a light warm mix ($10–16/sq ft). Best visual result: travertine-stamped concrete with non-slip sealer additive ($12–18/sq ft). Existing slab that runs hot: deck coating overlay ($4–8/sq ft). Avoid plain grey smooth concrete — it's the worst option for heat and grip and only marginally cheaper than better alternatives once you add a sealer. For any new pool deck pour in a climate with significant sun exposure, specify a light aggregate or integral color at the same time: the material cost difference is $1–3/sq ft and the performance difference over a southern summer is substantial. The <a href='/tools/pool-deck-finish-selector'>pool deck finish selector</a> can help narrow the choice. If you're also finishing a driveway or walkway, matching the aggregate color across all three surfaces creates a cohesive look that significantly lifts the whole property. For layouts and photos, see these <a href='/blog/patio/pool-deck-ideas-concrete'>concrete pool deck ideas</a>.",
       },
       {
         heading: "Pool Deck Finishes Compared: Slip, Heat and Upkeep",

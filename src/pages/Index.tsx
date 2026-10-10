@@ -1,21 +1,14 @@
 import { SeoHead } from "@/components/SeoHead";
 import Header from "@/components/Header";
-import RedesignHero from "@/components/redesign/RedesignHero";
-import SocialProofBar from "@/components/SocialProofBar";
-import HowItWorks from "@/components/HowItWorks";
-import BeforeAfterShowcase from "@/components/BeforeAfterShowcase";
-import ComparisonSection from "@/components/ComparisonSection";
+import HomeHero from "@/components/home/HomeHero";
+import ToolGrid from "@/components/home/ToolGrid";
+import TrustBand from "@/components/home/TrustBand";
 import FinishesGallery from "@/components/FinishesGallery";
-import SocialProofStats from "@/components/SocialProofStats";
-import Testimonials from "@/components/Testimonials";
 import ProjectCategories from "@/components/ProjectCategories";
-import PricingSection from "@/components/PricingSection";
 import HomeFAQ from "@/components/HomeFAQ";
 import { homeFaqs } from "@/components/HomeFAQ";
-import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import { ToolStrip } from "@/components/tools/ToolStrip";
 
 const guideLinks = [
   { to: "/guides/concrete-patio", label: "The Complete Guide to Concrete Patio Design" },
@@ -27,26 +20,17 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoHead
-        title="Redesign Your Patio, Driveway & Backyard with AI | PourCanvas"
-        description="Upload a photo and instantly see your patio, driveway, or backyard redesigned with beautiful concrete finishes — stamped, exposed aggregate, stained, and more. Plan your outdoor project with confidence. Try it free."
+        title="Free Paver, Patio & Driveway Calculators | PourCanvas"
+        description="Free paver, flagstone, patio and driveway calculators plus concrete finish selectors. Material lists and installed cost from sourced U.S. pricing. No signup."
         canonical="/"
         faqs={homeFaqs}
       />
       <Header />
-      <RedesignHero />
-      <div className="py-6">
-        <ToolStrip slugs={["paver-patio-cost-calculator", "patio-cost-calculator", "paver-calculator", "flagstone-calculator"]} />
-      </div>
-      <SocialProofBar />
-      <SocialProofStats />
-      <HowItWorks />
-      <BeforeAfterShowcase />
-      <ComparisonSection />
-      <FinishesGallery />
-      <Testimonials />
+      <HomeHero />
+      <ToolGrid />
+      <TrustBand />
       <ProjectCategories />
-      <PricingSection />
-      <HomeFAQ />
+      <FinishesGallery />
 
       {/* Guide hub links */}
       <section className="section-padding border-t border-border/50">
@@ -71,7 +55,7 @@ const Index = () => {
         </div>
       </section>
 
-      <CtaSection />
+      <HomeFAQ />
       <Footer />
     </div>
   );
