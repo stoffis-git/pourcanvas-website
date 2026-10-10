@@ -2,12 +2,19 @@ import type { MaterialPage } from "../types";
 
 export const broomFinishPage: MaterialPage = {
   slug: "broom-finish",
-  title: "Broom Finish Concrete: Cost, Texture and Best Uses",
+  toolWidget: {
+    tool: "concrete-finish-selector",
+    variant: "finish",
+    heading: "Is a broom finish right for your project?",
+    focusFinish: "broom",
+  },
+  relatedTools: ["concrete-finish-selector", "driveway-finish-selector", "pool-deck-finish-selector"],
+  title: "Broom Finish Concrete: Driveway & Patio Cost, Texture",
   headline: "Broom Finish Concrete",
   summary:
     "Broom finish is the default concrete surface — practical, affordable, and more versatile than it's given credit for. The right choice when durability and value matter more than decorative pattern.",
   metaDescription:
-    "Broom finish concrete costs $6–10 per sq ft — the most affordable concrete surface for driveways, patios, and walkways. Slip-resistant, durable, and upgradeable with color or stamps.",
+    "Broom finish concrete costs $6–12 per sq ft installed, the most affordable surface for driveways, patios and walkways. Texture, slip resistance and upgrades.",
   targetKeywords: [
     "broom finish concrete",
     "broom finish patio",
@@ -25,7 +32,7 @@ export const broomFinishPage: MaterialPage = {
   publishedAt: "2025-06-01",
   updatedAt: "2026-06-10",
   intro:
-    "Broom finish concrete is the most affordable poured concrete surface at $6–10 per sq ft installed — a stiff brush dragged across fresh concrete leaves fine parallel lines that provide grip without decorative pattern. It's the default finish for driveways, walkways, and pool decks where durability and low cost matter, and it can be upgraded with integral color or stamped borders without starting over.",
+    "Broom finish concrete is the most affordable poured concrete surface at $6–12 per sq ft installed — a stiff brush dragged across fresh concrete leaves fine parallel lines that provide grip without decorative pattern. It's the default finish for driveways, walkways, and pool decks where durability and low cost matter, and it can be upgraded with integral color or stamped borders without starting over.",
   sections: [
     {
       heading: "What It Is",

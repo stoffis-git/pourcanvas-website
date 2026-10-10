@@ -2,6 +2,18 @@ import { Link } from "react-router-dom";
 
 const columns: { title: string; links: { label: string; to: string }[] }[] = [
   {
+    title: "Free Tools",
+    links: [
+      { label: "Paver Patio Cost Calculator", to: "/tools/paver-patio-cost-calculator" },
+      { label: "Paver Calculator", to: "/tools/paver-calculator" },
+      { label: "Patio Cost Calculator", to: "/tools/patio-cost-calculator" },
+      { label: "Polymeric Sand Calculator", to: "/tools/polymeric-sand-calculator" },
+      { label: "Flagstone Calculator", to: "/tools/flagstone-calculator" },
+      { label: "Concrete Finish Selector", to: "/tools/concrete-finish-selector" },
+      { label: "All Tools", to: "/tools" },
+    ],
+  },
+  {
     title: "Explore",
     links: [
       { label: "Patios", to: "/patio" },
@@ -51,7 +63,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border bg-muted/20">
       <div className="mx-auto max-w-6xl px-5 py-14">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_repeat(4,1fr)]">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.4fr_repeat(5,1fr)]">
           {/* Brand + CTA */}
           <div className="max-w-xs">
             <Link to="/" className="font-display text-lg font-semibold text-foreground lowercase">

@@ -178,7 +178,7 @@ const MaterialsHub = () => (
           Concrete Finish Guide
         </h1>
         <p className="text-base md:text-lg font-body text-muted-foreground">
-          Deep-dive guides on every major outdoor concrete finish — what each one is, what it costs, and when to use it. See design ideas by surface: <Link to="/blog/patio" className="text-primary hover:underline">patio</Link>, <Link to="/blog/driveway" className="text-primary hover:underline">driveway</Link>, <Link to="/blog/walkway" className="text-primary hover:underline">walkway</Link>.
+          Deep-dive guides on every major outdoor concrete finish — what each one is, what it costs, and when to use it. See design ideas by surface: <Link to="/blog/patio" className="text-primary hover:underline">patio</Link>, <Link to="/blog/driveway" className="text-primary hover:underline">driveway</Link>, <Link to="/blog/walkway" className="text-primary hover:underline">walkway</Link>. Planning pavers or flagstone? Use the free <Link to="/tools/paver-calculator" className="text-primary hover:underline">paver calculator</Link>, <Link to="/tools/flagstone-calculator" className="text-primary hover:underline">flagstone calculator</Link> or <Link to="/tools/patio-cost-calculator" className="text-primary hover:underline">patio cost calculator</Link>.
         </p>
       </div>
 

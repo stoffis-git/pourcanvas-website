@@ -60,7 +60,7 @@ const PillarPage = () => {
                 </p>
               </div>
               <span className="text-xs font-body text-muted-foreground shrink-0 pt-1">
-                {new Date(article.publishedAt).toLocaleDateString("en-US", { month: "short", year: "numeric" })}
+                {new Date(article.publishedAt).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" })}
               </span>
             </Link>
           ))}

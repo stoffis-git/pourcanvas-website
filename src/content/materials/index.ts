@@ -8,6 +8,7 @@ import { flagstonePage } from "./flagstone";
 import { travertinePage } from "./travertine";
 import { polishedConcretePage } from "./polished-concrete";
 import { concreteOverlayPage } from "./concrete-overlay";
+import { saltFinishPage } from "./salt-finish";
 
 export {
   stampedConcretePage,
@@ -19,6 +20,7 @@ export {
   travertinePage,
   polishedConcretePage,
   concreteOverlayPage,
+  saltFinishPage,
 };
 
 export const allMaterialPages: MaterialPage[] = [
@@ -31,6 +33,7 @@ export const allMaterialPages: MaterialPage[] = [
   travertinePage,
   polishedConcretePage,
   concreteOverlayPage,
+  saltFinishPage,
 ];
 
 export const materialsBySlug = new Map<string, MaterialPage>(

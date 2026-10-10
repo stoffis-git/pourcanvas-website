@@ -1,10 +1,12 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
-import { cn } from "@/lib/utils";
+import { perSqftRange } from "@/lib/format";
+import { INSTALLED, REMOVAL_PER_SQFT } from "@/lib/tools/data/paving";
+
+const PAVERS = perSqftRange(INSTALLED["concrete-paver"]);
 
 const costRows = [
   { finish: "Broom finish (plain)",       cost: "$6–10/sq ft",                lifespan: "25–30 years" },
@@ -38,7 +40,7 @@ const faqs = [
   },
   {
     q: "Stamped concrete vs pavers for a patio?",
-    a: "Stamped: $12–18/sq ft, seamless look, resealing every 2–3 years, hard to repair individual cracks. Pavers: $20–40/sq ft, individual repairability, flexible joints handle freeze-thaw, genuine material depth. Budget favors stamped; repairability favors pavers.",
+    a: `Stamped: $12–18/sq ft, seamless look, resealing every 2–3 years, hard to repair individual cracks. Pavers: ${PAVERS}/sq ft for concrete pavers, more for brick or stone, individual repairability, flexible joints handle freeze-thaw, genuine material depth. Against brick or stone, budget favors stamped; repairability favors pavers.`,
   },
   {
     q: "What concrete patio finish hides dirt best?",
@@ -46,35 +48,26 @@ const faqs = [
   },
 ];
 
-const FAQAccordion = () => {
-  const [open, setOpen] = useState<number | null>(null);
-  return (
+const FAQAccordion = () => (
     <div className="space-y-2">
       {faqs.map((faq, i) => (
-        <div key={i} className="border border-border rounded-xl overflow-hidden">
-          <button
-            onClick={() => setOpen(open === i ? null : i)}
-            className="w-full flex items-center justify-between px-5 py-4 text-left font-medium text-foreground hover:bg-muted/50 transition-colors"
-            aria-expanded={open === i}
-          >
+        <details key={i} className="group border border-border rounded-xl overflow-hidden">
+          <summary className="w-full flex items-center justify-between px-5 py-4 text-left font-medium text-foreground hover:bg-muted/50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <span>{faq.q}</span>
             <svg
-              className={cn("w-4 h-4 shrink-0 ml-4 text-muted-foreground transition-transform", open === i && "rotate-180")}
+              className="w-4 h-4 shrink-0 ml-4 text-muted-foreground transition-transform group-open:rotate-180"
               fill="none" stroke="currentColor" viewBox="0 0 24 24"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
-          </button>
-          {open === i && (
-            <div className="px-5 pb-5 text-foreground/80 leading-relaxed text-sm md:text-base">
-              {faq.a}
-            </div>
-          )}
-        </div>
+          </summary>
+          <div className="px-5 pb-5 text-foreground/80 leading-relaxed text-sm md:text-base">
+            {faq.a}
+          </div>
+        </details>
       ))}
     </div>
-  );
-};
+);
 
 const ConcretePatioGuide = () => (
   <>
@@ -110,7 +103,7 @@ const ConcretePatioGuide = () => (
           How Much Does a Concrete Patio Cost?
         </h2>
         <p className="text-muted-foreground leading-relaxed mb-5">
-          Size is the biggest variable. A typical backyard patio runs 200–400 sq ft. Multiply the per-sq-ft ranges below by your area, then add 10–15% for site prep. If you're replacing an existing patio or removing old pavers, demo adds $1–3/sq ft to the total.
+          Size is the biggest variable. A typical backyard patio runs 200–400 sq ft. Multiply the per-sq-ft ranges below by your area, then add 10–15% for site prep. If you're replacing an existing patio or removing old pavers, demo adds {perSqftRange(REMOVAL_PER_SQFT.concrete)}/sq ft to the total.
         </p>
 
         {/* Cost table */}
@@ -239,7 +232,7 @@ const ConcretePatioGuide = () => (
           Concrete Patio vs Pavers
         </h2>
         <p className="text-muted-foreground leading-relaxed mb-4">
-          This is the most common decision homeowners face when planning a patio. Stamped concrete runs $12–18/sq ft installed; pavers run $20–40/sq ft depending on material and pattern complexity. On a 300 sq ft patio, that's a $2,400–6,600 difference in favor of concrete. Stamped concrete delivers a seamless surface with no joints to shift or settle, but individual crack repair is difficult — if one section cracks, the patch is visible.
+          This is the most common decision homeowners face when planning a patio. Stamped concrete runs $12–18/sq ft installed; concrete pavers run {PAVERS}/sq ft, and brick or stone pavers more, depending on material and pattern complexity. On a 300 sq ft patio, stamped concrete and basic concrete pavers land in a similar range; brick and stone cost more. Stamped concrete delivers a seamless surface with no joints to shift or settle, but individual crack repair is difficult — if one section cracks, the patch is visible.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-4">
           Pavers win on repairability: a single shifted or cracked paver can be lifted and replaced in minutes with no visible evidence. Paver joints are flexible, which means better performance in freeze-thaw climates where rigid concrete slabs can crack. Pavers also offer genuine material depth — real stone, brick, or porcelain has a tactile quality that stamped concrete mimics visually but can't replicate physically.

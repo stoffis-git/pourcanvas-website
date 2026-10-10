@@ -1,22 +1,30 @@
 import type { MaterialPage } from "../types";
+import { moneyRange, perSqftRange } from "@/lib/format";
+import { INSTALLED, MATERIAL_ONLY } from "@/lib/tools/data/paving";
+
+const tr = INSTALLED.travertine;
+const TRAV = perSqftRange(tr);
+const STONE = perSqftRange(MATERIAL_ONLY.travertine);
+const TRAV600 = moneyRange({ low: tr.low * 600, typical: tr.typical * 600, high: tr.high * 600 });
 
 export const travertinePage: MaterialPage = {
   slug: "travertine",
+    relatedTools: ["pool-deck-finish-selector", "paver-patio-cost-calculator"],
   title: "Travertine Pool Deck: Cost, Durability and What to Expect",
   headline: "Travertine Pool Deck",
   summary:
     "Travertine is the pool deck material most designers reach for first — it stays cool, doesn't slip, and looks exceptional. Here's what it costs and what ongoing ownership looks like.",
   metaDescription:
-    "Travertine pool decks stay cool underfoot, resist slipping, and look stunning. This guide covers cost ($20–40/sq ft), maintenance, and how it compares to concrete alternatives.",
+    `Travertine pool decks stay cool underfoot, resist slipping and look stunning. Cost (${TRAV}/sq ft installed), upkeep, and how it compares to concrete options.`,
   targetKeywords: ["travertine pool deck", "travertine patio", "pool deck materials"],
   ogImage: "/og/material-travertine.jpg",
   publishedAt: "2025-06-15",
   intro:
-    "Travertine is a natural limestone that costs $20–40 per sq ft installed on a pool deck or patio — roughly twice the cost of stamped concrete, but with thermal and grip properties that stamped concrete can't replicate. It stays 20–30°F cooler underfoot than dark concrete in direct sun, grips when wet without any added texture treatment, and has a depth of color variation that stamped imitations approximate but don't match.",
+    `Travertine is a natural limestone that costs about ${TRAV} per sq ft installed on a pool deck or patio — typically more than stamped concrete, but with thermal and grip properties that stamped concrete can't replicate. It stays noticeably cooler underfoot than dark concrete in direct sun, grips when wet without any added texture treatment, and has a depth of color variation that stamped imitations approximate but don't match.`,
   sections: [
     {
       heading: "Why Travertine Works Around Pools",
-      body: "The thermal properties of travertine are the practical argument. Its porous surface and light color reflect rather than absorb heat, keeping the surface 20–30°F cooler than dark concrete or brick on a hot day. The natural pitting of the surface also provides grip when wet — without the rough texture of broom finish that's uncomfortable barefoot. And unlike wood, it doesn't warp, splinter, or require annual refinishing.",
+      body: "The thermal properties of travertine are the practical argument. Its porous surface and light color reflect rather than absorb heat, keeping the surface noticeably cooler than dark concrete or brick on a hot day. The natural pitting of the surface also provides grip when wet — without the rough texture of broom finish that's uncomfortable barefoot. And unlike wood, it doesn't warp, splinter, or require annual refinishing.",
     },
     {
       heading: "Types and Finishes",
@@ -24,7 +32,7 @@ export const travertinePage: MaterialPage = {
     },
     {
       heading: "Cost",
-      body: "Travertine pool deck installation runs $20–40 per sq ft. The stone itself costs $5–12/sq ft; the rest is labor, base prep, and grouting. On a 600 sq ft pool deck, budget $12,000–24,000 installed. Compare to poured concrete ($8–18/sq ft), stamped concrete ($12–18/sq ft), or travertine-stamped concrete ($12–18/sq ft) which mimics the look at roughly half the cost. Natural travertine commands a premium because of the material and the care required during installation.",
+      body: `Travertine pool deck installation runs about ${TRAV} per sq ft. The stone itself costs ${STONE}/sq ft, with thicker 2-inch pool-deck pavers at the upper end; the rest is labor, base prep, and grouting. On a 600 sq ft pool deck, budget about ${TRAV600} installed. Compare to poured concrete ($8–18/sq ft), stamped concrete ($12–18/sq ft), or travertine-stamped concrete ($12–18/sq ft) which mimics the look at a lower cost. Natural travertine commands a premium because of the material and the care required during installation.`,
     },
     {
       heading: "Maintenance",
@@ -48,7 +56,7 @@ export const travertinePage: MaterialPage = {
       "Available in large formats for a contemporary, seamless look",
     ],
     cons: [
-      "Significantly more expensive than concrete alternatives ($20–40 vs $8–18/sq ft)",
+      `More expensive than most concrete alternatives (${TRAV} vs $8–18/sq ft)`,
       "Requires annual sealing around pools due to chemical and wet/dry exposure",
       "Porous surface stains readily without a sealer",
       "Moderate freeze-thaw vulnerability — requires sealed joints and good drainage",
@@ -63,11 +71,11 @@ export const travertinePage: MaterialPage = {
   faqs: [
     {
       question: "How much does a travertine pool deck cost installed?",
-      answer: "Travertine pool deck installation runs $20–40 per sq ft. The stone itself costs $5–12/sq ft; the rest is base prep, labor, and grouting. On a 600 sq ft pool deck, budget $12,000–24,000 installed. Compare to stamped concrete ($12–18/sq ft) or poured concrete ($8–18/sq ft), which can approximate the look at roughly half the cost.",
+      answer: `Travertine pool deck installation runs about ${TRAV} per sq ft. The stone itself costs ${STONE}/sq ft; the rest is base prep, labor, and grouting. On a 600 sq ft pool deck, budget about ${TRAV600} installed. Compare to stamped concrete ($12–18/sq ft) or poured concrete ($8–18/sq ft), which can approximate the look at a lower cost.`,
     },
     {
       question: "Does travertine get hot in the sun?",
-      answer: "No — travertine stays measurably cooler underfoot than concrete or brick. Its porous surface and light color reflect rather than absorb heat, keeping the surface 20–30°F cooler than dark concrete on a hot day. This thermal property, combined with its natural non-slip texture, is the primary reason travertine is the preferred pool deck material.",
+      answer: "No — travertine stays measurably cooler underfoot than concrete or brick. Its porous surface and light color reflect rather than absorb heat, keeping the surface noticeably cooler than dark concrete on a hot day. This thermal property, combined with its natural non-slip texture, is the primary reason travertine is the preferred pool deck material.",
     },
     {
       question: "How often does travertine need to be sealed?",

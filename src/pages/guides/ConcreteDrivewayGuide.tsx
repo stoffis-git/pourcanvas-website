@@ -1,14 +1,19 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
-import { cn } from "@/lib/utils";
+import { moneyRange, perSqftRange } from "@/lib/format";
+import { INSTALLED, REMOVAL_PER_SQFT, type Range } from "@/lib/tools/data/paving";
+
+const plainR = INSTALLED["plain-concrete"];
+const PLAIN = perSqftRange(plainR);
+/** Integral color adds about $2–4 per sq ft over plain concrete. */
+const COLORED = perSqftRange({ low: plainR.low + 2, typical: plainR.typical + 3, high: plainR.high + 4 } as Range);
 
 const costRows = [
-  { finish: "Broom finish (plain)",    cost: "$4–8/sq ft",       lifespan: "25–30 years" },
-  { finish: "Colored concrete",        cost: "$5–9/sq ft",       lifespan: "25–30 years" },
+  { finish: "Broom finish (plain)",    cost: `${PLAIN}/sq ft`,       lifespan: "25–30 years" },
+  { finish: "Colored concrete",        cost: `${COLORED}/sq ft`,       lifespan: "25–30 years" },
   { finish: "Exposed aggregate",       cost: "$8–14/sq ft",      lifespan: "30+ years"   },
   { finish: "Stamped concrete",        cost: "$12–20/sq ft",     lifespan: "25–30 years" },
   { finish: "Circular driveway",       cost: "$15,000–40,000",   lifespan: "25–30 years" },
@@ -18,7 +23,7 @@ const costRows = [
 const faqs = [
   {
     q: "What's the cheapest type of concrete driveway?",
-    a: "A plain broom-finish concrete driveway is the least expensive option at $4–8/sq ft installed. For a standard two-car driveway (400–500 sq ft), that's $1,600–4,000. If budget is the primary constraint, broom finish with a simple saw-cut score line border costs almost nothing extra and adds visible design intent.",
+    a: `A plain broom-finish concrete driveway is the least expensive option at ${PLAIN}/sq ft installed. For a standard two-car driveway (400–500 sq ft), that's ${moneyRange({ low: plainR.low * 400, typical: plainR.typical * 400, high: plainR.high * 500 })}. If budget is the primary constraint, broom finish with a simple saw-cut score line border costs almost nothing extra and adds visible design intent.`,
   },
   {
     q: "How long does a concrete driveway last?",
@@ -46,35 +51,26 @@ const faqs = [
   },
 ];
 
-const FAQAccordion = () => {
-  const [open, setOpen] = useState<number | null>(null);
-  return (
+const FAQAccordion = () => (
     <div className="space-y-2">
       {faqs.map((faq, i) => (
-        <div key={i} className="border border-border rounded-xl overflow-hidden">
-          <button
-            onClick={() => setOpen(open === i ? null : i)}
-            className="w-full flex items-center justify-between px-5 py-4 text-left font-medium text-foreground hover:bg-muted/50 transition-colors"
-            aria-expanded={open === i}
-          >
+        <details key={i} className="group border border-border rounded-xl overflow-hidden">
+          <summary className="w-full flex items-center justify-between px-5 py-4 text-left font-medium text-foreground hover:bg-muted/50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <span>{faq.q}</span>
             <svg
-              className={cn("w-4 h-4 shrink-0 ml-4 text-muted-foreground transition-transform", open === i && "rotate-180")}
+              className="w-4 h-4 shrink-0 ml-4 text-muted-foreground transition-transform group-open:rotate-180"
               fill="none" stroke="currentColor" viewBox="0 0 24 24"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
-          </button>
-          {open === i && (
-            <div className="px-5 pb-5 text-foreground/80 leading-relaxed text-sm md:text-base">
-              {faq.a}
-            </div>
-          )}
-        </div>
+          </summary>
+          <div className="px-5 pb-5 text-foreground/80 leading-relaxed text-sm md:text-base">
+            {faq.a}
+          </div>
+        </details>
       ))}
     </div>
-  );
-};
+);
 
 const ConcreteDrivewayGuide = () => (
   <>
@@ -136,7 +132,7 @@ const ConcreteDrivewayGuide = () => (
         </div>
 
         <p className="text-muted-foreground leading-relaxed mb-4">
-          Demo and removal of an existing asphalt driveway adds $1–3/sq ft. Regional labor differences can swing quotes by 20–30% — the Northeast and West Coast run at the top of these ranges; the South and Midwest tend toward the bottom. Request at least three quotes; stamped concrete pricing varies more between contractors than any other finish.
+          Demo and removal of an existing asphalt driveway adds {perSqftRange(REMOVAL_PER_SQFT.concrete)}/sq ft. Regional labor differences can swing quotes by 20–30% — the Northeast and West Coast run at the top of these ranges; the South and Midwest tend toward the bottom. Request at least three quotes; stamped concrete pricing varies more between contractors than any other finish.
         </p>
         <p className="text-sm text-muted-foreground">
           <Link to="/blog/driveway/concrete-driveway-cost" className="text-primary hover:underline">
@@ -188,7 +184,7 @@ const ConcreteDrivewayGuide = () => (
           If you want a durable, low-maintenance surface without committing to a stamped pattern, exposed aggregate is the right choice. The surface paste is washed away before curing to reveal decorative stone underneath — pea gravel gives a fine uniform texture, river stone adds color variation. At $8–14/sq ft it sits between plain and stamped, and it genuinely ages better than both.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-4">
-          Dark integral-color driveways (charcoal, black, deep brown) are the fastest-growing design category. A black integrally colored concrete driveway costs $6–12/sq ft and makes a strong architectural statement — but heat absorption is a real consideration in hot climates. Charcoal is often the better practical choice: similar visual impact, cooler surface temperature, and less fading over time. Black concrete vs. charcoal is a more important decision than most contractors discuss upfront.
+          Dark integral-color driveways (charcoal, black, deep brown) are the fastest-growing design category. A black integrally colored concrete driveway costs {COLORED}/sq ft and makes a strong architectural statement — but heat absorption is a real consideration in hot climates. Charcoal is often the better practical choice: similar visual impact, cooler surface temperature, and less fading over time. Black concrete vs. charcoal is a more important decision than most contractors discuss upfront.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-4">
           Driveway borders add curb appeal without the full cost of a decorative finish. A cobblestone stamp border with a plain broom-finish field runs $8–14/sq ft versus $12–20 for a fully stamped surface. A simple saw-cut score line border costs almost nothing extra. Brick inlay borders ($15–25/sq ft) add the most visual distinction but require the most maintenance.
@@ -212,7 +208,7 @@ const ConcreteDrivewayGuide = () => (
           Concrete vs. Asphalt: The Honest Comparison
         </h2>
         <p className="text-muted-foreground leading-relaxed mb-4">
-          Asphalt costs $3–6/sq ft installed — less than concrete upfront. But asphalt requires resurfacing every 15–20 years ($2–4/sq ft), annual crack sealing, and resealing every 3–5 years. Concrete at $4–8/sq ft installed lasts 25–40 years with only periodic resealing. Over a 30-year ownership horizon, concrete is typically cheaper per year of service life.
+          Asphalt costs $3–6/sq ft installed — less than concrete upfront. But asphalt requires resurfacing every 15–20 years ($2–4/sq ft), annual crack sealing, and resealing every 3–5 years. Concrete at {PLAIN}/sq ft installed lasts 25–40 years with only periodic resealing. Over a 30-year ownership horizon, concrete is typically cheaper per year of service life.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-4">
           Climate matters more than most guides admit. In severe freeze-thaw climates, both materials require proper sub-base preparation and joint design. Asphalt is more flexible and self-seals minor cracks; concrete with inadequate control joints can develop significant cracking in northern climates. In hot climates, asphalt softens — concrete holds up better but gets hotter underfoot.

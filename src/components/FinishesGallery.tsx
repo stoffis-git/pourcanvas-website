@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import { perSqftRange } from "@/lib/format";
+import { INSTALLED } from "@/lib/tools/data/paving";
 
 const finishes = [
   { slug: "stamped-concrete",  name: "Stamped Concrete",  color: "#caaa72", desc: "Patterns that mimic stone, brick, or wood — starting around $8–$12/sq ft." },
-  { slug: "exposed-aggregate", name: "Exposed Aggregate", color: "#b0a898", desc: "Pebbled texture with natural slip resistance — $6–$10/sq ft installed." },
-  { slug: "broom-finish",      name: "Broom Finish",      color: "#b4b4b4", desc: "The most common finish — clean, durable, and budget-friendly at $4–$7/sq ft." },
+  { slug: "exposed-aggregate", name: "Exposed Aggregate", color: "#b0a898", desc: `Pebbled texture with natural slip resistance — ${perSqftRange(INSTALLED["exposed-aggregate"])}/sq ft installed.` },
+  { slug: "broom-finish",      name: "Broom Finish",      color: "#b4b4b4", desc: `The most common finish — clean, durable, and budget-friendly at ${perSqftRange(INSTALLED["plain-concrete"])}/sq ft.` },
   { slug: "colored-concrete",  name: "Colored Concrete",  color: "#cc7a4a", desc: "Integral pigment throughout the slab — lasting color without surface fading." },
-  { slug: "concrete-pavers",   name: "Concrete Pavers",   color: "#a89060", desc: "Individual units that can be replaced if cracked — $10–$20/sq ft installed." },
+  { slug: "concrete-pavers",   name: "Concrete Pavers",   color: "#a89060", desc: "Individual units that can be replaced if cracked — $8–$22/sq ft installed." },
   { slug: "flagstone",         name: "Flagstone",         color: "#8a7a60", desc: "Natural irregular slabs with an earthy, high-end look — $15–$30/sq ft." },
 ];
 

@@ -57,25 +57,51 @@ const urlData = files
   })
   .sort((a, b) => a.url.localeCompare(b.url));
 
-const entries = urlData
-  .map(
-    ({ url, lastmod, images }) => `  <url>
+const SECTIONS = [
+  { name: "core", test: (u) => u.split("/").filter(Boolean).length <= 1 || /^\/(blog\/[^/]+|guides\/.+)$/.test(u) },
+  { name: "tools", test: (u) => u.startsWith("/tools/") },
+  { name: "blog", test: (u) => u.startsWith("/blog/") },
+  { name: "materials", test: (u) => u.startsWith("/materials/") },
+  { name: "inspiration", test: (u) => u.startsWith("/inspiration/") },
+  { name: "palette", test: (u) => u.startsWith("/palette/") },
+  { name: "before-after", test: (u) => u.startsWith("/before-after/") },
+];
+
+const sectionOf = (url) => (SECTIONS.find((s) => s.test(url)) ?? SECTIONS[0]).name;
+
+const toEntry = ({ url, lastmod, images }) => `  <url>
     <loc>${BASE_URL}${url}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ""}
     <changefreq>${changefreq(url)}</changefreq>
     <priority>${priority(url)}</priority>${images
       .map((img) => `\n    <image:image><image:loc>${escapeXml(img)}</image:loc></image:image>`)
       .join("")}
-  </url>`
-  )
-  .join("\n");
+  </url>`;
 
-const xml = `<?xml version="1.0" encoding="UTF-8"?>
+const today = new Date().toISOString().split("T")[0];
+const children = [];
+
+for (const { name } of SECTIONS) {
+  const items = urlData.filter((d) => d.url !== "/404" && sectionOf(d.url) === name);
+  if (items.length === 0) continue;
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-${entries}
+${items.map(toEntry).join("\n")}
 </urlset>
 `;
+  const file = `sitemap-${name}.xml`;
+  writeFileSync(join(DIST_DIR, file), xml);
+  writeFileSync(join("public", file), xml);
+  const lastmod = items.map((d) => d.lastmod).filter(Boolean).sort().pop() ?? today;
+  children.push({ file, lastmod, count: items.length });
+}
 
-writeFileSync(join(DIST_DIR, "sitemap.xml"), xml);
-writeFileSync("public/sitemap.xml", xml);
+const index = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${children.map((c) => `  <sitemap>\n    <loc>${BASE_URL}/${c.file}</loc>\n    <lastmod>${c.lastmod}</lastmod>\n  </sitemap>`).join("\n")}
+</sitemapindex>
+`;
 
-console.log(`[sitemap] ${urlData.length} URLs written to dist/sitemap.xml`);
+writeFileSync(join(DIST_DIR, "sitemap.xml"), index);
+writeFileSync("public/sitemap.xml", index);
+
+console.log(`[sitemap] index + ${children.map((c) => `${c.file} (${c.count})`).join(", ")}`);

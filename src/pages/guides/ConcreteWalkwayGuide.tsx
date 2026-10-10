@@ -1,10 +1,8 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
-import { cn } from "@/lib/utils";
 
 const costRows = [
   { finish: "Broom finish (plain)",    cost: "$6–10/sq ft",      lifespan: "25–30 years" },
@@ -46,35 +44,26 @@ const faqs = [
   },
 ];
 
-const FAQAccordion = () => {
-  const [open, setOpen] = useState<number | null>(null);
-  return (
+const FAQAccordion = () => (
     <div className="space-y-2">
       {faqs.map((faq, i) => (
-        <div key={i} className="border border-border rounded-xl overflow-hidden">
-          <button
-            onClick={() => setOpen(open === i ? null : i)}
-            className="w-full flex items-center justify-between px-5 py-4 text-left font-medium text-foreground hover:bg-muted/50 transition-colors"
-            aria-expanded={open === i}
-          >
+        <details key={i} className="group border border-border rounded-xl overflow-hidden">
+          <summary className="w-full flex items-center justify-between px-5 py-4 text-left font-medium text-foreground hover:bg-muted/50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
             <span>{faq.q}</span>
             <svg
-              className={cn("w-4 h-4 shrink-0 ml-4 text-muted-foreground transition-transform", open === i && "rotate-180")}
+              className="w-4 h-4 shrink-0 ml-4 text-muted-foreground transition-transform group-open:rotate-180"
               fill="none" stroke="currentColor" viewBox="0 0 24 24"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
-          </button>
-          {open === i && (
-            <div className="px-5 pb-5 text-foreground/80 leading-relaxed text-sm md:text-base">
-              {faq.a}
-            </div>
-          )}
-        </div>
+          </summary>
+          <div className="px-5 pb-5 text-foreground/80 leading-relaxed text-sm md:text-base">
+            {faq.a}
+          </div>
+        </details>
       ))}
     </div>
-  );
-};
+);
 
 const ConcreteWalkwayGuide = () => (
   <>

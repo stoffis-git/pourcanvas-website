@@ -9,6 +9,8 @@ import { MaterialProConBlock } from "@/components/materials/MaterialProConBlock"
 import { MaterialRelatedArticles } from "@/components/materials/MaterialRelatedArticles";
 import { FAQSection } from "@/components/FAQSection";
 import { materialsBySlug } from "@/content";
+import { LeanWidget } from "@/components/tools/LeanWidget";
+import { RelatedToolsList } from "@/components/tools/RelatedToolsList";
 
 const MaterialPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -48,8 +50,8 @@ const MaterialPage = () => {
 
         <p className="text-xs font-body text-muted-foreground mb-8">
           {material.updatedAt
-            ? `Updated ${new Date(material.updatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`
-            : new Date(material.publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+            ? `Updated ${new Date(material.updatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}`
+            : new Date(material.publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}
         </p>
 
         {material.images && material.images.length > 0 && (
@@ -68,6 +70,8 @@ const MaterialPage = () => {
           {material.intro}
         </p>
 
+        {material.toolWidget && <LeanWidget widget={material.toolWidget} source={`materials/${material.slug}`} />}
+
         {material.prosAndCons && <MaterialProConBlock data={material.prosAndCons} />}
 
         <div className="space-y-8">
@@ -79,9 +83,12 @@ const MaterialPage = () => {
                 </h2>
                 <div className="font-body text-foreground/80 leading-relaxed prose-table" dangerouslySetInnerHTML={{ __html: section.body }} />
               </div>
-              {i === midpoint - 1 && (
-                <ToolWaitlistBlock source="tool-waitlist-material" />
-              )}
+              {i === midpoint - 1 &&
+                (material.relatedTools?.length ? (
+                  <RelatedToolsList slugs={material.relatedTools} />
+                ) : (
+                  <ToolWaitlistBlock source="tool-waitlist-material" />
+                ))}
             </Fragment>
           ))}
         </div>

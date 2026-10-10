@@ -16,7 +16,11 @@ import MaterialPage from "./pages/materials/MaterialPage";
 import ConcreteDrivewayGuide from "./pages/guides/ConcreteDrivewayGuide";
 import ConcretePatioGuide from "./pages/guides/ConcretePatioGuide";
 import ConcreteWalkwayGuide from "./pages/guides/ConcreteWalkwayGuide";
+import ToolsHub from "./pages/tools/ToolsHub";
+import ToolPage from "./pages/tools/ToolPage";
+import MethodologyPage from "./pages/MethodologyPage";
 import { allArticles, inspirationPages, beforeAfterPages, palettePages, allMaterialPages } from "./content";
+import { toolPages } from "./content/tools";
 
 export const routes: RouteObject[] = [
   {
@@ -38,6 +42,9 @@ export const routes: RouteObject[] = [
       { path: "guides/concrete-walkway", element: <ConcreteWalkwayGuide /> },
       { path: "materials", element: <MaterialsHub /> },
       { path: "materials/:slug", element: <MaterialPage /> },
+      { path: "tools", element: <ToolsHub /> },
+      { path: "tools/:slug", element: <ToolPage /> },
+      { path: "methodology", element: <MethodologyPage /> },
       { path: "terms", element: <TermsPage /> },
       { path: "*", element: <NotFound /> },
     ],
@@ -57,6 +64,8 @@ export const staticPaths = [
   "/guides/concrete-patio",
   "/guides/concrete-walkway",
   "/materials",
+  "/tools",
+  "/methodology",
   "/terms",
 ];
 
@@ -66,6 +75,7 @@ export const dynamicPaths = [
   ...beforeAfterPages.map((p) => `/before-after/${p.slug}`),
   ...palettePages.map((p) => `/palette/${p.slug}`),
   ...allMaterialPages.map((m) => `/materials/${m.slug}`),
+  ...toolPages.map((t) => `/tools/${t.slug}`),
 ];
 
 export default function App() {

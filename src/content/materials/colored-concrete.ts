@@ -18,7 +18,7 @@ export const coloredConcretePage: MaterialPage = {
     { url: "https://images.pourcanvas.com/inspiration-acid-stained-concrete-walkway.jpg", alt: "Acid-stained concrete walkway with variegated, one-of-a-kind color" },
   ],
   publishedAt: "2025-06-01",
-  updatedAt: "2026-06-10",
+  updatedAt: "2026-10-10",
   intro:
     "Colored concrete adds $1–4 per sq ft to a plain pour, using one of three methods: integral color mixed into the slab, surface stain applied after curing, or dye for vivid interior-grade color. Each method produces a different result at a different price point, with a different durability profile — the right choice depends on your use case and budget.",
   sections: [
@@ -72,6 +72,10 @@ For a 400 sq ft patio, integral color adds roughly $800–1,600 to the pour, whi
       heading: "Best Concrete Colors for Driveways vs Patios",
       body: "The right color depends as much on use as on taste. Driveways favor mid-to-dark tones — charcoal, slate gray, walnut brown — because they hide tire marks, oil drips, and road grime that would stand out on a light slab. Very dark driveways do absorb more heat and show efflorescence (white mineral haze) more clearly, so a medium charcoal is usually the sweet spot. Patios pull in the opposite direction: lighter buff, sandstone, and warm tan tones stay cooler underfoot for barefoot use and feel more inviting in a living space, while charcoal remains popular where the patio reads as modern and is mostly used with shoes on. Whatever the surface, look at a sample in your own light before committing — color shifts with sun angle, dries lighter than the wet mix, and reads differently against your home's siding and roof than it does on a showroom chip.",
     },
+    {
+      heading: "Dye vs Stain vs Integral Color for Outdoor Concrete",
+      body: `<p>Outdoors, the question is which color survives sun, water and traffic. The <a href="https://www.concretenetwork.com/products-stains/compare.html" rel="nofollow noopener">Concrete Network coloring comparison chart</a> separates the three methods clearly:</p><table><thead><tr><th>Method</th><th>How it colors</th><th>Depth</th><th>UV and fade outdoors</th><th>New or existing slab</th></tr></thead><tbody><tr><td>Integral color</td><td>Pigment mixed into the concrete at the plant</td><td>Through the entire slab; will not wear away</td><td>Rated excellent; color can't wear off</td><td>New concrete only</td></tr><tr><td>Acid stain</td><td>Reacts with the cured concrete; earth tones and soft blue-greens</td><td>Penetrates the surface</td><td>Excellent UV stability and wear resistance</td><td>New or existing</td></tr><tr><td>Water-based stain</td><td>Deposits pigment in the surface; nearly unlimited colors</td><td>Penetrates the surface</td><td>Excellent UV stability and wear resistance</td><td>New or existing</td></tr><tr><td>Dye</td><td>Fine colorant carried in water or solvent</td><td>Very fine particles absorbed into the surface</td><td>Some dyes fade in direct sun and are not recommended outdoors; check the label</td><td>New or existing</td></tr></tbody></table><p><strong>New slab:</strong> integral color is the outdoor default. The color runs through the whole slab, so chips, wear and scaling don't expose gray. Add a stain on top if you want variation.</p><p><strong>Existing slab:</strong> integral color is no longer an option. Use an acid stain for mottled earth tones or a water-based stain for a wider palette. Use a dye outside only if the manufacturer rates it UV-resistant for exterior use.</p><p><strong>Heat:</strong> darker color absorbs more sun. In <a href="https://www.solomoncolors.com/tech-docs/pdf/solomon/Integral-Color-SRI-Values.pdf" rel="nofollow noopener">Solomon Colors test data</a>, light integral colors reflected 0.37–0.59 of sunlight (buff and sand to white), while dark tones such as slate, redwood and bark reflected only 0.15–0.22. That is roughly half. For pool decks and barefoot patios in hot sun, choose a light tone. The <a href="/tools/concrete-finish-selector">concrete finish selector</a> and <a href="/tools/driveway-finish-selector">driveway finish selector</a> factor color and climate into their rankings.</p>`,
+    },
   ],
   prosAndCons: {
     pros: [
@@ -119,5 +123,21 @@ For a 400 sq ft patio, integral color adds roughly $800–1,600 to the pour, whi
       question: "What's the best concrete color for a driveway?",
       answer: "Mid-to-dark tones — charcoal, slate gray, and walnut brown — work best for driveways because they hide tire marks, oil drips, and road grime. A medium charcoal is usually the sweet spot: very dark slabs absorb more heat and show white efflorescence more clearly. For patios, lighter buff and sandstone tones are often preferred because they stay cooler underfoot.",
     },
+    {
+      question: "Is concrete dye or stain better outdoors?",
+      answer:
+        "Stain. Acid and water-based stains penetrate the surface and are rated excellent for UV stability and wear in Concrete Network's coloring comparison. Some dyes fade in direct sunlight and are not recommended outdoors. Use a dye outside only if the manufacturer rates it UV-resistant. On a new slab, integral color is better still, because the color runs through the whole slab.",
+    },
+    {
+      question: "Does dark colored concrete get hotter?",
+      answer:
+        "Yes. In Solomon Colors test data, dark integral colors such as slate, redwood and bark reflected about 0.15–0.22 of sunlight, against 0.37–0.59 for buff, sand and white mixes. That is roughly half, so dark slabs absorb much more heat. Choose light tones for pool decks and barefoot patios in sunny climates.",
+    },
   ],
+  toolWidget: {
+    tool: "concrete-finish-selector",
+    variant: "finish",
+    heading: "Which concrete finish suits your project?",
+  },
+  relatedTools: ["concrete-finish-selector", "driveway-finish-selector"],
 };

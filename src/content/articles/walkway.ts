@@ -1,4 +1,10 @@
 import type { Article } from "../types";
+import { CURRENT_YEAR } from "@/lib/year";
+import { perSqftRange } from "@/lib/format";
+import { INSTALLED, REMOVAL_PER_SQFT } from "@/lib/tools/data/paving";
+import { materialComparison } from "@/lib/tools/tables";
+
+const removal = perSqftRange(REMOVAL_PER_SQFT.concrete);
 
 export const walkwayArticles: Article[] = [
   {
@@ -75,21 +81,29 @@ export const walkwayArticles: Article[] = [
   },
   {
     slug: "flagstone-vs-concrete-walkway",
+    toolWidget: {
+      tool: "patio-cost-calculator",
+      variant: "compare",
+      heading: "What would your walkway or patio cost in flagstone vs concrete?",
+      defaults: { length: 30, width: 4 },
+      compareMaterials: ["flagstone-dry", "stamped-concrete", "plain-concrete"],
+    },
+    relatedTools: ["patio-cost-calculator", "flagstone-calculator", "paver-walkway-cost-calculator"],
     pillar: "walkway",
     title: "Flagstone vs Concrete: Which Is Cheaper? Cost Compared",
     headline: "Flagstone vs Concrete Walkway: An Honest Comparison",
     metaDescription:
-      "Is flagstone cheaper than concrete? No: natural flagstone costs $25–45/sq ft vs. $12–18 for stamped concrete. Walkway and driveway costs, durability, and upkeep compared.",
+      `Is flagstone cheaper than concrete? No: flagstone runs ${perSqftRange(INSTALLED["flagstone-dry"])}/sq ft dry-laid and ${perSqftRange(INSTALLED["flagstone-mortared"])} mortared vs ${perSqftRange(INSTALLED["plain-concrete"])} for plain concrete. Costs and upkeep compared.`,
     targetKeywords: ["flagstone vs concrete", "is flagstone cheaper than concrete", "flagstone driveway cost", "flagstone walkway cost", "flagstone vs stamped concrete"],
     ogImage: "https://images.pourcanvas.com/walkway-flagstone-vs-concrete.jpg",
     publishedAt: "2026-03-31",
-    updatedAt: "2026-05-25",
+    updatedAt: "2026-10-10",
     intro:
-      "Natural flagstone walkways cost $25–45 per sq ft installed. Stamped concrete mimicking the same look runs $12–18 per sq ft. On a 150 sq ft front walkway, that's a $2,000–4,000 difference. Both materials are legitimate choices — the right one depends on your budget, climate, and how much you care about long-term repairability. This comparison cuts through the landscaping marketing to give you a straight answer. The same cost and performance logic applies when comparing flagstone to concrete on a patio or driveway.",
+      `Natural flagstone walkways cost ${perSqftRange(INSTALLED["flagstone-dry"])} per sq ft installed dry-laid and ${perSqftRange(INSTALLED["flagstone-mortared"])} mortared. Stamped concrete mimicking the same look runs ${perSqftRange(INSTALLED["stamped-concrete"])} per sq ft, most often $12–18. On a 150 sq ft front walkway, typical prices put flagstone about $1,000–2,300 above stamped concrete. Both materials are legitimate choices — the right one depends on your budget, climate, and how much you care about long-term repairability. This comparison cuts through the landscaping marketing to give you a straight answer. The same cost and performance logic applies when comparing flagstone to concrete on a patio or driveway.`,
     sections: [
       {
         heading: "Cost Comparison",
-        body: "Natural flagstone walkways run $25–45 per sq ft installed. A stamped concrete walkway mimicking the same look costs $12–18 per sq ft. On a 150 sq ft front walkway, that's a $2,000–4,000 difference. Stamped concrete wins on cost for every project size — the gap doesn't narrow at scale.",
+        body: `Natural flagstone walkways run ${perSqftRange(INSTALLED["flagstone-dry"])} per sq ft installed dry-laid and ${perSqftRange(INSTALLED["flagstone-mortared"])} mortared. A stamped concrete walkway mimicking the same look costs ${perSqftRange(INSTALLED["stamped-concrete"])} per sq ft, most often $12–18. On a 150 sq ft front walkway, typical prices put flagstone about $1,000–2,300 above stamped concrete. Plain concrete (${perSqftRange(INSTALLED["plain-concrete"])}) is cheaper still, and the gap doesn't narrow at scale.`,
         inspirationSlugs: ["flagstone-walkway-natural", "stamped-concrete-walkway-buff"],
       },
       {
@@ -143,13 +157,17 @@ export const walkwayArticles: Article[] = [
         heading: "Transition Joints Between Flagstone and Concrete",
         body: "Properties that mix flagstone and concrete — for example, a concrete driveway with a flagstone front walkway — need a well-designed transition joint at the point where the two materials meet. Without it, the different expansion rates of stone and concrete create stress cracking at the junction within 5–10 years. A properly specified expansion joint filled with a flexible backer rod and polyurethane caulk allows the two materials to move independently. This detail is often omitted on contractor bids — ask specifically about the transition joint treatment if you're mixing materials on the same project.",
       },
+      {
+        heading: `Dry-Laid vs Mortared Flagstone Cost (${CURRENT_YEAR} Update)`,
+        body: `<p>Laying method drives flagstone cost. Mortared flagstone is set in a mortar bed on a concrete slab; dry-laid flagstone on compacted gravel and sand costs less: about ${perSqftRange(INSTALLED["flagstone-dry"])} per sq ft installed, versus ${perSqftRange(INSTALLED["flagstone-mortared"])} for mortared work. Stamped concrete runs ${perSqftRange(INSTALLED["stamped-concrete"])} and plain concrete ${perSqftRange(INSTALLED["plain-concrete"])}.</p>${materialComparison(["flagstone-dry", "flagstone-mortared", "stamped-concrete", "plain-concrete"], [30, 4])}<p>Dry-laid flagstone can be cheaper than mortared work and close to stamped concrete at the low end, but it needs periodic re-leveling and joint refills. Price your own size with the <a href="/tools/patio-cost-calculator">patio cost calculator</a>, or get tons of stone with the <a href="/tools/flagstone-calculator">flagstone calculator</a>.</p>`,
+      },
     ],
     relatedSlugs: ["front-walkway-ideas", "concrete-walkway-cost", "curved-walkway-ideas"],
     relatedMaterials: ["flagstone", "stamped-concrete"],
     faqs: [
       {
         question: "Is flagstone or concrete cheaper for a walkway?",
-        answer: "Concrete is significantly cheaper. Natural flagstone runs $25–45 per sq ft installed; stamped concrete mimicking the same look costs $12–18 per sq ft. On a 150 sq ft front walkway, that's a $2,000–4,000 difference. The cost gap holds at every project size — it doesn't narrow at scale.",
+        answer: `Concrete is cheaper. Natural flagstone runs ${perSqftRange(INSTALLED["flagstone-dry"])} per sq ft installed dry-laid and ${perSqftRange(INSTALLED["flagstone-mortared"])} mortared; stamped concrete mimicking the same look costs ${perSqftRange(INSTALLED["stamped-concrete"])} per sq ft, most often $12–18, and plain concrete ${perSqftRange(INSTALLED["plain-concrete"])}. On a 150 sq ft front walkway, typical prices put flagstone about $1,000–2,300 above stamped concrete.`,
       },
       {
         question: "Which lasts longer: flagstone or concrete?",
@@ -246,6 +264,7 @@ export const walkwayArticles: Article[] = [
   },
   {
     slug: "concrete-walkway-cost",
+    relatedTools: ["paver-walkway-cost-calculator", "paver-base-calculator", "polymeric-sand-calculator"],
     pillar: "walkway",
     title: "Concrete Walkway Cost: What Homeowners Pay in 2026",
     headline: "How Much Does a Concrete Walkway Cost?",
@@ -278,7 +297,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Additional Cost Factors",
-        body: "Curved walkways cost 10–20% more than straight ones due to forming complexity. Significant grade change requires step construction ($150–400 per step). Removal of an existing walkway adds $1–3 per sq ft. Site access issues (back gate too narrow for equipment) can add a significant labor premium.",
+        body: `Curved walkways cost 10–20% more than straight ones due to forming complexity. Significant grade change requires step construction ($150–400 per step). Removal of an existing walkway adds ${removal} per sq ft. Site access issues (back gate too narrow for equipment) can add a significant labor premium.`,
       },
       {
         heading: "Concrete Walkway Cost by Region",
@@ -298,7 +317,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "What the Per-Sq-Ft Price Includes (and What It Doesn't)",
-        body: "Per-sq-ft contractor prices for concrete walkways typically include: sub-base prep on existing graded ground, forming, pour, finishing (broom, stamp, or aggregate as specified), curing, and one coat of sealer. They typically don't include: removal of an existing surface ($1–3/sq ft extra), significant regrading or fill work, step construction ($150–400 each), drainage work, or permit fees. Get a written scope of work that lists what's included before comparing quotes. Two $12/sq ft stamped walkway quotes can be very different projects if one includes demo and sealing and the other doesn't.",
+        body: `Per-sq-ft contractor prices for concrete walkways typically include: sub-base prep on existing graded ground, forming, pour, finishing (broom, stamp, or aggregate as specified), curing, and one coat of sealer. They typically don't include: removal of an existing surface (${removal}/sq ft extra), significant regrading or fill work, step construction ($150–400 each), drainage work, or permit fees. Get a written scope of work that lists what's included before comparing quotes. Two $12/sq ft stamped walkway quotes can be very different projects if one includes demo and sealing and the other doesn't.`,
       },
     ],
     relatedSlugs: ["front-walkway-ideas", "flagstone-vs-concrete-walkway"],
@@ -313,7 +332,7 @@ export const walkwayArticles: Article[] = [
       },
       {
         question: "What factors drive up the cost of a concrete walkway?",
-        answer: "Finish type is the biggest variable — stamped costs twice plain. Beyond that: curved layouts add 10–20% in forming labor; steps cost $150–400 each; removing an existing walkway adds $1–3/sq ft; and regional labor rates vary significantly (California and the Northeast run 30–50% above national averages). Site access — a back gate too narrow for equipment — can also add a meaningful labor premium.",
+        answer: `Finish type is the biggest variable — stamped costs twice plain. Beyond that: curved layouts add 10–20% in forming labor; steps cost $150–400 each; removing an existing walkway adds ${removal}/sq ft; and regional labor rates vary significantly (California and the Northeast run 30–50% above national averages). Site access — a back gate too narrow for equipment — can also add a meaningful labor premium.`,
       },
     ],
   },
@@ -653,6 +672,7 @@ export const walkwayArticles: Article[] = [
   },
   {
     slug: "concrete-walkway-ideas",
+    relatedTools: ["paver-walkway-cost-calculator", "paver-sand-calculator", "concrete-finish-selector"],
     pillar: "walkway",
     title: "Concrete Pathways: 20+ Walkway Ideas With Real Costs",
     headline: "Concrete Pathways and Walkway Ideas",
@@ -679,12 +699,12 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Modern Concrete Walkway Designs",
-        body: "Modern concrete walkways use clean geometry and restrained finishes to create impact — no stamps, no faux stone. A broom-finish walkway in dark charcoal pigment ($8–14/sq ft) with crisp beveled edges and consistent 4–5 foot width reads as deliberately designed at a fraction of stamped pricing. Floating slab designs — individual rectangular pads separated by 2–4 inch strips of turf or gravel — are the signature modern walkway treatment. They cost $10–16/sq ft installed because each pad is formed and poured individually, but the visual result is distinctive. Diagonal scoring (X-pattern saw cuts at 45 degrees to the walk direction) on a single continuous pour is another high-impact modern detail at minimal added cost — $0.50–1/sq ft for the saw work. Dark tones dominate modern walkway design: charcoal, slate grey, and near-black pigments suit contemporary architecture and create strong contrast against green landscaping.",
+        body: "Modern concrete walkways use clean geometry and restrained finishes to create impact — no stamps, no faux stone. A broom-finish walkway in dark charcoal pigment ($8–16/sq ft) with crisp beveled edges and consistent 4–5 foot width reads as deliberately designed at a fraction of stamped pricing. Floating slab designs — individual rectangular pads separated by 2–4 inch strips of turf or gravel — are the signature modern walkway treatment. They cost $10–16/sq ft installed because each pad is formed and poured individually, but the visual result is distinctive. Diagonal scoring (X-pattern saw cuts at 45 degrees to the walk direction) on a single continuous pour is another high-impact modern detail at minimal added cost — $0.50–1/sq ft for the saw work. Dark tones dominate modern walkway design: charcoal, slate grey, and near-black pigments suit contemporary architecture and create strong contrast against green landscaping.",
         inspirationSlugs: ["charcoal-broom-finish-walkway", "floating-concrete-walkway-turf", "parallel-strip-walkway-grass", "diagonal-x-scored-walkway"],
       },
       {
         heading: "Flagstone Look Walkway Ideas",
-        body: "Natural flagstone walkways cost $25–45/sq ft installed — quarried stone, individually cut and set on a compacted base with mortar or polymeric sand joints. Stamped concrete mimicking the same flagstone look runs $12–18/sq ft, cutting the cost by 40–60% on a typical 150 sq ft front path. The visual difference: natural flagstone has irregular thickness variation, unique coloring per stone, and a surface texture that stamping can approximate but not fully replicate. From street-view distance, high-quality stamped flagstone is nearly indistinguishable. Up close, the authenticity gap is visible. The practical difference: natural flagstone joints require annual sand replenishment and weed management; stamped concrete has no joints to maintain. In freeze-thaw climates, natural stone joints are the first failure point — water infiltrates, expands, and loosens stones over repeated winter cycles. Stamped concrete with proper air entrainment handles freeze-thaw significantly better.",
+        body: `Natural flagstone walkways cost ${perSqftRange(INSTALLED["flagstone-dry"])}/sq ft dry-laid and ${perSqftRange(INSTALLED["flagstone-mortared"])} mortared — quarried stone, individually cut and set on a compacted base with mortar or polymeric sand joints. Stamped concrete mimicking the same flagstone look runs $12–18/sq ft, typically cutting the cost by about a third on a 150 sq ft front path. The visual difference: natural flagstone has irregular thickness variation, unique coloring per stone, and a surface texture that stamping can approximate but not fully replicate. From street-view distance, high-quality stamped flagstone is nearly indistinguishable. Up close, the authenticity gap is visible. The practical difference: natural flagstone joints require annual sand replenishment and weed management; stamped concrete has no joints to maintain. In freeze-thaw climates, natural stone joints are the first failure point — water infiltrates, expands, and loosens stones over repeated winter cycles. Stamped concrete with proper air entrainment handles freeze-thaw significantly better.`,
         inspirationSlugs: ["flagstone-walkway-natural", "flagstone-walkway-silver-grey"],
       },
       {

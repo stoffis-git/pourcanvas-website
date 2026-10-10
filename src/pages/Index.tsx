@@ -15,6 +15,7 @@ import { homeFaqs } from "@/components/HomeFAQ";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import { ToolStrip } from "@/components/tools/ToolStrip";
 
 const guideLinks = [
   { to: "/guides/concrete-patio", label: "The Complete Guide to Concrete Patio Design" },
@@ -33,6 +34,9 @@ const Index = () => {
       />
       <Header />
       <RedesignHero />
+      <div className="py-6">
+        <ToolStrip slugs={["paver-patio-cost-calculator", "patio-cost-calculator", "paver-calculator", "flagstone-calculator"]} />
+      </div>
       <SocialProofBar />
       <SocialProofStats />
       <HowItWorks />

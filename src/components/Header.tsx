@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
+  { label: "Tools", to: "/tools" },
   { label: "Patios", to: "/patio" },
   { label: "Driveways", to: "/driveway" },
   { label: "Walkways", to: "/walkway" },

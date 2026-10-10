@@ -6,6 +6,13 @@ import { PillarConversionBlock } from "@/components/inspiration/PillarConversion
 import { InspirationTile } from "@/components/inspiration/InspirationTile";
 import { inspirationByPillar, articlesByPillar, pillarMeta, beforeAfterPages, palettePages } from "@/content";
 import type { Pillar } from "@/content/types";
+import { ToolStrip } from "@/components/tools/ToolStrip";
+
+const pillarTools: Record<Pillar, string[]> = {
+  patio: ["paver-patio-cost-calculator", "patio-cost-calculator", "paver-calculator"],
+  walkway: ["paver-walkway-cost-calculator", "flagstone-calculator", "paver-calculator"],
+  driveway: ["paver-driveway-cost-calculator", "paver-base-calculator", "paver-calculator"],
+};
 
 const pillarHero: Record<Pillar, { headline: string; sub: string }> = {
   patio: {
@@ -63,6 +70,10 @@ const PillarLandingPage = ({ pillar }: { pillar: Pillar }) => {
           </Link>
         </div>
       </section>
+
+      <div className="-mt-8 pb-12 md:pb-16">
+        <ToolStrip slugs={pillarTools[pillar]} />
+      </div>
 
       {/* Inspiration grid */}
       {inspirations.length > 0 && (

@@ -1,7 +1,13 @@
 import type { MaterialPage } from "../types";
+import { perSqftRange } from "@/lib/format";
+import { INSTALLED } from "@/lib/tools/data/paving";
+
+const PAV = perSqftRange(INSTALLED["concrete-paver"]);
+const STONE = `$${INSTALLED["flagstone-dry"].low}–${INSTALLED["flagstone-mortared"].high}`;
 
 export const stampedConcretePage: MaterialPage = {
   slug: "stamped-concrete",
+    relatedTools: ["patio-cost-calculator", "concrete-finish-selector"],
   title: "Stamped Concrete: Cost, Patterns and When to Use It",
   headline: "Stamped Concrete",
   summary:
@@ -73,7 +79,7 @@ export const stampedConcretePage: MaterialPage = {
     },
     {
       heading: "Stamped Concrete vs Pavers",
-      body: "Stamped concrete replicates the look of pavers at roughly half the installed cost — $12–18/sq ft for stamped vs $15–30/sq ft for concrete or natural stone pavers. The trade-off is repairability: individual pavers can be lifted and replaced without affecting the surrounding surface, while a cracked stamped slab requires patching that's almost always visible. Pavers also flex with minor ground movement because the joints absorb shifting, whereas stamped concrete is a rigid slab that must rely on control joints and a stable sub-base to prevent cracking. For freeze-thaw climates, pavers have a structural advantage — they don't spall the way sealed concrete can. Stamped concrete's advantages are speed of installation (a crew can stamp a 300 sq ft patio in a day vs 2–3 days for pavers), no weed-prone joints to maintain, and a seamless surface that's easier to shovel and sweep. We cover this comparison in depth in our full stamped concrete vs pavers article — the short version is that stamped wins on cost and low maintenance, pavers win on repairability and longevity. Full breakdown: <a href='/blog/patio/stamped-concrete-vs-pavers'>stamped concrete vs pavers</a>.",
+      body: `Stamped concrete replicates the look of pavers at a similar or lower installed cost — $12–18/sq ft for stamped vs ${PAV}/sq ft for concrete pavers and ${STONE}/sq ft for natural stone. The trade-off is repairability: individual pavers can be lifted and replaced without affecting the surrounding surface, while a cracked stamped slab requires patching that's almost always visible. Pavers also flex with minor ground movement because the joints absorb shifting, whereas stamped concrete is a rigid slab that must rely on control joints and a stable sub-base to prevent cracking. For freeze-thaw climates, pavers have a structural advantage — they don't spall the way sealed concrete can. Stamped concrete's advantages are speed of installation (a crew can stamp a 300 sq ft patio in a day vs 2–3 days for pavers), no weed-prone joints to maintain, and a seamless surface that's easier to shovel and sweep. We cover this comparison in depth in our full stamped concrete vs pavers article — the short version is that stamped usually wins on cost and low maintenance, pavers win on repairability and longevity. Full breakdown: <a href='/blog/patio/stamped-concrete-vs-pavers'>stamped concrete vs pavers</a>.`,
     },
     {
       heading: "DIY Stamped Concrete: Is It Realistic?",
@@ -112,7 +118,7 @@ export const stampedConcretePage: MaterialPage = {
     },
     {
       question: "Is stamped concrete cheaper than pavers?",
-      answer: "Yes, significantly. Stamped concrete runs $12–18/sq ft installed vs. $15–30/sq ft for concrete pavers. On a 300 sq ft patio that's a $900–3,600 difference. Stamped concrete also has no weed-prone joints. The trade-off: individual pavers are easier to repair than a cracked stamped slab.",
+      answer: `Not always. Stamped concrete runs $12–18/sq ft installed vs. ${PAV}/sq ft for concrete pavers, so the two overlap; natural stone pavers (${STONE}/sq ft) cost more. Stamped concrete also has no weed-prone joints. The trade-off: individual pavers are easier to repair than a cracked stamped slab.`,
     },
     {
       question: "Does stamped concrete crack?",

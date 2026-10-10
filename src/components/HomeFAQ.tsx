@@ -1,6 +1,8 @@
-import { useState } from "react";
-import { cn } from "@/lib/utils";
 import type { FAQ } from "@/content/types";
+import { moneyRange, perSqftRange } from "@/lib/format";
+import { INSTALLED } from "@/lib/tools/data/paving";
+
+const stamped = INSTALLED["stamped-concrete"];
 
 export const homeFaqs: FAQ[] = [
   {
@@ -29,11 +31,11 @@ export const homeFaqs: FAQ[] = [
   },
   {
     question: "What's the difference between stamped concrete and pavers?",
-    answer: "Stamped concrete is poured as a single slab then imprinted with a pattern — lower upfront cost ($8–$12/sq ft), seamless finish, but cracks can propagate across the slab. Pavers are individual units set on a base — more expensive ($10–$20/sq ft) but individual pieces can be replaced if damaged.",
+    answer: `Stamped concrete is poured as a single slab then imprinted with a pattern — about ${perSqftRange(stamped)}/sq ft installed, seamless finish, but cracks can propagate across the slab. Pavers are individual units set on a base — about ${perSqftRange(INSTALLED["concrete-paver"])}/sq ft — and individual pieces can be replaced if damaged.`,
   },
   {
     question: "How much does a concrete patio typically cost?",
-    answer: "A basic broom-finish concrete patio runs $4–$7/sq ft installed. Stamped or decorative finishes range from $8–$18/sq ft depending on pattern complexity and region. A 400 sq ft patio typically runs $3,200–$7,200 all-in for stamped work.",
+    answer: `A basic broom-finish concrete patio runs about ${perSqftRange(INSTALLED["plain-concrete"])}/sq ft installed (U.S. average). Stamped or decorative finishes range from about ${perSqftRange(stamped)}/sq ft depending on pattern complexity and region. A 400 sq ft patio typically runs ${moneyRange({ low: stamped.low * 400, typical: stamped.typical * 400, high: stamped.high * 400 })} all-in for stamped work.`,
   },
   {
     question: "Do I need design experience to use PourCanvas?",
@@ -46,8 +48,6 @@ export const homeFaqs: FAQ[] = [
 ];
 
 const HomeFAQ = () => {
-  const [open, setOpen] = useState<number | null>(null);
-
   return (
     <section className="section-padding border-t border-border/50">
       <div className="max-w-3xl mx-auto">
@@ -62,31 +62,20 @@ const HomeFAQ = () => {
 
         <div className="space-y-2">
           {homeFaqs.map((faq, i) => (
-            <div key={i} className="border border-border rounded-xl overflow-hidden">
-              <button
-                onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between px-5 py-4 text-left font-medium text-foreground hover:bg-muted/50 transition-colors"
-                aria-expanded={open === i}
-              >
-                <span>{faq.question}</span>
-                <svg
-                  className={cn(
-                    "w-4 h-4 shrink-0 ml-4 text-muted-foreground transition-transform",
-                    open === i && "rotate-180"
-                  )}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {open === i && (
-                <div className="px-5 pb-5 text-foreground/80 leading-relaxed text-sm md:text-base">
-                  {faq.answer}
-                </div>
-              )}
-            </div>
+        <details key={i} className="group border border-border rounded-xl overflow-hidden">
+          <summary className="w-full flex items-center justify-between px-5 py-4 text-left font-medium text-foreground hover:bg-muted/50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+            <span>{faq.question}</span>
+            <svg
+              className="w-4 h-4 shrink-0 ml-4 text-muted-foreground transition-transform group-open:rotate-180"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div className="px-5 pb-5 text-foreground/80 leading-relaxed text-sm md:text-base">
+            {faq.answer}
+          </div>
+        </details>
           ))}
         </div>
       </div>

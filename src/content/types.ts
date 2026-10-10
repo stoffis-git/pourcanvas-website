@@ -1,3 +1,8 @@
+import type { PavingInputs } from "@/lib/tools/paving";
+import type { AnyMaterial } from "@/lib/tools/data/paving";
+import type { FinishInputs } from "@/lib/tools/finish";
+import type { FinishId } from "@/lib/tools/data/finish";
+
 export type Pillar = "patio" | "driveway" | "walkway";
 
 export interface FAQ {
@@ -14,7 +19,8 @@ export type Material =
   | "flagstone"
   | "travertine"
   | "polished-concrete"
-  | "concrete-overlay";
+  | "concrete-overlay"
+  | "salt-finish";
 
 export interface MaterialRelatedArticle {
   pillar: Pillar;
@@ -44,6 +50,20 @@ export interface MaterialPage {
   relatedPillars: Pillar[];
   relatedArticles?: MaterialRelatedArticle[];
   faqs?: FAQ[];
+  toolWidget?: ToolWidgetRef;
+  relatedTools?: string[];
+}
+
+/** Lean tool widget embedded below the intro of a content page; hands off to /tools/{tool}. */
+export interface ToolWidgetRef {
+  tool: string;
+  variant: "compare" | "pavers" | "flagstone" | "finish";
+  heading: string;
+  defaults?: Partial<PavingInputs>;
+  compareMaterials?: AnyMaterial[];
+  finishDefaults?: Partial<FinishInputs>;
+  /** Finish selector widgets: also report this finish's rank in the teaser. */
+  focusFinish?: FinishId;
 }
 
 export interface ArticleSection {
@@ -69,6 +89,8 @@ export interface Article {
   relatedSlugs?: string[];
   relatedMaterials?: Material[];
   faqs?: FAQ[];
+  toolWidget?: ToolWidgetRef;
+  relatedTools?: string[];
 }
 
 export interface InspirationPage {
@@ -113,4 +135,34 @@ export interface PalettePage {
   pillar: Pillar;
   ctaHeadline: string;
   ctaBody: string;
+}
+
+export type PavingView = "cost" | "pavers" | "base" | "sand" | "poly" | "flagstone" | "compare";
+
+export interface ToolConfig {
+  slug: string;
+  engine: "paving" | "finish";
+  category: "paving" | "finish";
+  /** <title>, no site suffix (guide §3). */
+  title: string;
+  h1: string;
+  /** Hub card + Related Tools blurb. */
+  summary: string;
+  metaDescription: string;
+  /** 40–60 words, answer-first, numbers from the engine. The only text above the tool. */
+  intro: string;
+  datePublished: string;
+  lastUpdated: string;
+  pavingDefaults?: Partial<PavingInputs>;
+  pavingView?: PavingView;
+  finishDefaults?: Partial<FinishInputs>;
+  tips: string[];
+  sections: ArticleSection[];
+  faqs: FAQ[];
+  relatedTools: string[];
+  relatedGuides: { label: string; to: string }[];
+  nextStep?: { slug: string; label: string };
+  /** Text that must appear in the prerendered HTML (QA). */
+  expectedDefaultResult: string;
+  keywords: string[];
 }

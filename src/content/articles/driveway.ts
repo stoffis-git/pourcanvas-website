@@ -1,8 +1,44 @@
 import type { Article } from "../types";
+import { DRIVEWAY_MULTIPLIER, INSTALLED, REMOVAL_PER_SQFT, type CompareMaterial, type Range } from "@/lib/tools/data/paving";
+import { perSqftRange, moneyRange } from "@/lib/format";
+import { CURRENT_YEAR } from "@/lib/year";
+
+/** Black integral color = plain concrete + about $2–4/sq ft pigment premium (verified, see methodology). */
+const BLACK_PER_SQFT = { low: INSTALLED["plain-concrete"].low + 2, typical: INSTALLED["plain-concrete"].typical + 3, high: INSTALLED["plain-concrete"].high + 4 };
+
+const cite = (url: string, name: string) => `<a href="${url}" rel="nofollow noopener">${name}</a>`;
+const SRC = {
+  solomonCard: "https://www.solomoncolors.com/tech-docs/pdf/Color-Cards/dry-color-card.pdf",
+  solomonGuide: "https://www.solomoncolors.com/blog/concrete-color/guide.html",
+  solomonTint: "https://www.solomoncolors.com/blog/concrete-sealer/tinted.html",
+  lanxess: "https://www.semtu.ee/application/files/7817/1586/7706/Bayferrox_juhend-_varviline_betoon-_EN.pdf",
+  concreteDecor: "https://www.concretedecor.net/departments/building-with-concrete/black-is-black-or-is-it/",
+  cnTinted: "https://www.concretenetwork.com/products-sealer/tinted.html",
+  lbnl: "https://heatisland.lbl.gov/coolscience/cool-pavements",
+  epa: "https://www.epa.gov/sites/default/files/2014-08/documents/coolpavescompendium_ch5.pdf",
+  wrmca: "https://wrmca.com/consumer/consumer-information/proper-winter-care/",
+  brickformBlog: "https://www.brickform.com/blog/best-colors-for-stamped-concrete/",
+  brickformRelease: "https://www.brickform.com/product/antique-release/",
+  butterfieldGuide: "https://www.astrof-concrete-hardware.com/app/download/7248624105/Butterfield+Pattern+Selection+Guide.pdf",
+  butterfieldRelease: "https://www.butterfieldcolor.com/product-category/antiquing-and-release-agents/",
+};
+const sqft = (m: CompareMaterial) => perSqftRange(INSTALLED[m]);
+const total = (m: CompareMaterial, area: number) =>
+  moneyRange({ low: INSTALLED[m].low * area, typical: INSTALLED[m].typical * area, high: INSTALLED[m].high * area });
+const plainC = INSTALLED["plain-concrete"];
+/** Integral color adds about $2–4 per sq ft over plain concrete. */
+const coloredR: Range = { low: plainC.low + 2, typical: plainC.typical + 3, high: plainC.high + 4 };
+const colored = perSqftRange(coloredR);
+const removal = perSqftRange(REMOVAL_PER_SQFT.concrete);
+/** Total for an area span: low rate × small area to high rate × large area. */
+const span = (r: Range, a1: number, a2: number) => moneyRange({ low: r.low * a1, typical: r.typical * a1, high: r.high * a2 });
+const pm = DRIVEWAY_MULTIPLIER.pavers.value;
+const paverDriveway = perSqftRange({ low: INSTALLED["concrete-paver"].low * pm, typical: INSTALLED["concrete-paver"].typical * pm, high: INSTALLED["concrete-paver"].high * pm });
 
 export const drivewayArticles: Article[] = [
   {
     slug: "stamped-concrete-driveway",
+    relatedTools: ["driveway-finish-selector", "paver-driveway-cost-calculator"],
     pillar: "driveway",
     title: "Stamped Concrete Driveway Ideas: 12 Styles",
     headline: "Stamped Concrete Driveways That Boost Curb Appeal",
@@ -44,7 +80,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Stamped Concrete Driveway vs. Paver Driveway",
-        body: "The most direct comparison is stamped concrete ($12–20/sq ft) versus concrete or natural stone paver driveways ($20–35/sq ft). Stamped concrete wins on upfront cost — the difference on a 500 sq ft two-car driveway is $4,000–7,500. Pavers win on repairability: a cracked stamped concrete section is difficult to patch invisibly, while a cracked paver is replaced individually in an hour. In freeze-thaw climates, paver driveways handle repeated ground movement better since individual units shift rather than the whole slab cracking. For most residential applications in moderate climates, stamped concrete is the stronger value. In harsh northern climates where freeze-thaw cracking is frequent, the paver premium may be worth considering. PourCanvas can show you how stamped concrete patterns would look on your specific driveway before you commit to either direction.",
+        body: `The most direct comparison is stamped concrete ($12–20/sq ft) versus concrete paver driveways (about ${paverDriveway}/sq ft) and natural stone paver driveways ($20–35/sq ft). Stamped concrete wins on upfront cost against natural stone — the difference on a 500 sq ft two-car driveway is $4,000–7,500. Pavers win on repairability: a cracked stamped concrete section is difficult to patch invisibly, while a cracked paver is replaced individually in an hour. In freeze-thaw climates, paver driveways handle repeated ground movement better since individual units shift rather than the whole slab cracking. For most residential applications in moderate climates, stamped concrete is the stronger value. In harsh northern climates where freeze-thaw cracking is frequent, the paver premium may be worth considering. PourCanvas can show you how stamped concrete patterns would look on your specific driveway before you commit to either direction.`,
       },
       {
         heading: "Connecting Driveway Design to Front Walkway and Patio",
@@ -56,7 +92,7 @@ export const drivewayArticles: Article[] = [
         body: "A well-maintained stamped concrete driveway adds meaningful curb appeal and is among the hardscape upgrades most frequently mentioned by real estate agents as boosting buyer first impressions. Most agents in suburban markets report a cobblestone or ashlar slate stamped driveway adds $5,000–15,000 in perceived value on a mid-to-high price point home. The key word is \"maintained\" — a faded, unsealed stamped driveway with peeling color wash reads as deferred maintenance and can actually reduce buyer confidence. Keep the sealer current, fill hairline cracks promptly each fall, and the surface will perform well for 25+ years and reward both aesthetic enjoyment and resale value. Front walkway and entry steps in the same finish amplify the curb appeal effect.",
       },
     ],
-    relatedSlugs: ["exposed-aggregate-driveway", "concrete-driveway-cost"],
+    relatedSlugs: ["exposed-aggregate-driveway", "concrete-driveway-cost", "black-stamped-concrete"],
     relatedMaterials: ["stamped-concrete"],
     faqs: [
       {
@@ -148,20 +184,21 @@ export const drivewayArticles: Article[] = [
   },
   {
     slug: "concrete-driveway-cost",
+    relatedTools: ["driveway-finish-selector", "paver-driveway-cost-calculator"],
     pillar: "driveway",
     title: "Concrete Driveway Cost: What to Budget in 2026",
     headline: "How Much Does a Concrete Driveway Cost?",
     metaDescription:
-      "A plain concrete driveway costs $4–8/sq ft. Stamped finishes run $12–20. Full cost breakdown by finish, size, and region for 2026.",
+      `A plain concrete driveway costs ${sqft("plain-concrete")}/sq ft installed. Stamped finishes run $12–20. Full installed cost breakdown by finish, size, and region for 2026.`,
     targetKeywords: ["concrete driveway cost", "driveway installation price"],
     ogImage: "https://images.pourcanvas.com/driveway-concrete-cost.jpg",
     publishedAt: "2026-03-27",
     intro:
-      "A plain concrete driveway costs $4–8 per sq ft installed. Stamped finishes run $12–20 per sq ft; exposed aggregate falls in between at $8–14. On a 400–500 sq ft two-car driveway, that's a range of $1,600 to $10,000 depending on finish and region. Finish type and local labor rates are the two biggest variables. If you're also pricing a patio or walkway, the same per-sq-ft logic applies — bundling projects with one contractor typically saves 10–15% on mobilization.",
+      `A plain concrete driveway costs ${sqft("plain-concrete")} per sq ft installed. Stamped finishes run $12–20 per sq ft; exposed aggregate falls in between at $8–14. On a 400–500 sq ft two-car driveway, that's a range of $2,400 to $10,000 depending on finish and region. Finish type and local labor rates are the two biggest variables. If you're also pricing a patio or walkway, the same per-sq-ft logic applies — bundling projects with one contractor typically saves 10–15% on mobilization.`,
     sections: [
       {
         heading: "Plain Broom-Finish Driveway",
-        body: "A standard broom-finish concrete driveway costs $4–8 per sq ft installed. For a typical two-car driveway (400–600 sq ft), budget $1,600–4,800. This includes site prep, forming, reinforcement (rebar or wire mesh), pouring, and finishing. It does not include demo of an existing driveway.",
+        body: `A standard broom-finish concrete driveway costs ${sqft("plain-concrete")} per sq ft installed. For a typical two-car driveway (400–600 sq ft), budget ${span(plainC, 400, 600)}. This includes site prep, forming, reinforcement (rebar or wire mesh), pouring, and finishing. It does not include demo of an existing driveway.`,
         inspirationSlugs: ["light-grey-brushed-concrete-driveway", "poured-concrete-driveway"],
       },
       {
@@ -181,7 +218,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Demo and Site Prep",
-        body: "Removing an existing asphalt or concrete driveway adds $1–3 per sq ft. Poor soil conditions (expansive clay, high water table) add cost for sub-base work. Tree roots near the driveway edge may require root barriers.",
+        body: `Removing an existing asphalt or concrete driveway adds ${removal} per sq ft. Poor soil conditions (expansive clay, high water table) add cost for sub-base work. Tree roots near the driveway edge may require root barriers.`,
       },
       {
         heading: "Regional Price Variation",
@@ -197,7 +234,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Concrete Driveway vs. Asphalt: Cost Over Time",
-        body: "Plain concrete driveways ($4–8/sq ft) cost 30–60% more upfront than asphalt ($3–6/sq ft) on a 500 sq ft driveway. But asphalt requires seal coating every 3–5 years at $200–500 per application, plus crack filling and occasional resurfacing. Over a 25-year period, the total cost of a properly maintained concrete driveway is often lower than asphalt — the lower maintenance frequency and longer base lifespan offset the higher installation cost. The calculation tips toward asphalt only in climates with very harsh freeze-thaw cycles (where concrete cracking is frequent) or when upfront cost is the binding constraint. For driveways that connect to a patio or walkway project, the aesthetic consistency of concrete across all surfaces also adds value that pure cost comparisons don't capture.",
+        body: `Plain concrete driveways (${sqft("plain-concrete")}/sq ft) cost roughly twice as much upfront as asphalt ($3–6/sq ft) on a 500 sq ft driveway. But asphalt requires seal coating every 3–5 years at $200–500 per application, plus crack filling and occasional resurfacing. Over a 25-year period, the total cost of a properly maintained concrete driveway is often lower than asphalt — the lower maintenance frequency and longer base lifespan offset the higher installation cost. The calculation tips toward asphalt only in climates with very harsh freeze-thaw cycles (where concrete cracking is frequent) or when upfront cost is the binding constraint. For driveways that connect to a patio or walkway project, the aesthetic consistency of concrete across all surfaces also adds value that pure cost comparisons don't capture.`,
       },
       {
         heading: "Permits and Setbacks",
@@ -213,30 +250,31 @@ export const drivewayArticles: Article[] = [
     faqs: [
       {
         question: "How much does a two-car concrete driveway cost in 2026?",
-        answer: "A two-car driveway (400–600 sq ft) costs $1,600–4,800 for plain broom finish, $4,800–12,000 for stamped concrete, and $3,200–8,400 for exposed aggregate — all installed in 2026. Demo of an existing driveway adds $400–1,800. Labor rates in California, New York, and the Pacific Northwest run 30–60% above national averages.",
+        answer: `A two-car driveway (400–600 sq ft) costs ${span(plainC, 400, 600)} for plain broom finish, $4,800–12,000 for stamped concrete, and $3,200–8,400 for exposed aggregate — all installed in 2026. Demo of an existing driveway adds ${span(REMOVAL_PER_SQFT.concrete, 400, 600)}. Labor rates in California, New York, and the Pacific Northwest run 30–60% above national averages.`,
       },
       {
         question: "What is the cheapest concrete driveway finish?",
-        answer: "Plain broom-finish concrete at $4–8/sq ft installed is the cheapest option. It's durable, low-maintenance, and functional. If appearance matters but budget is tight, adding an integral color wash brings the total to $6–12/sq ft — still well below stamped pricing — and makes a plain driveway look intentional.",
+        answer: `Plain broom-finish concrete at ${sqft("plain-concrete")}/sq ft installed is the cheapest option. It's durable, low-maintenance, and functional. If appearance matters but budget is tight, adding an integral color wash brings the total to ${colored}/sq ft — still below most stamped pricing — and makes a plain driveway look intentional.`,
       },
       {
         question: "How much more does stamped concrete cost vs. plain for a driveway?",
-        answer: "Stamped concrete ($12–20/sq ft) costs roughly 2–3x more than plain broom finish ($4–8/sq ft). On a 500 sq ft driveway, that's an additional $4,000–6,000. The premium covers skilled labor, release agents, stamps, and sealing. The labor markup is proportionally higher on smaller driveways since setup costs are similar regardless of size.",
+        answer: `Stamped concrete ($12–20/sq ft) costs roughly 1.5–2x as much as plain broom finish (${sqft("plain-concrete")}/sq ft). On a 500 sq ft driveway, that's an additional $3,000–4,000. The premium covers skilled labor, release agents, stamps, and sealing. The labor markup is proportionally higher on smaller driveways since setup costs are similar regardless of size.`,
       },
     ],
   },
   {
     slug: "driveway-resurfacing",
+    relatedTools: ["driveway-finish-selector", "paver-driveway-cost-calculator"],
     pillar: "driveway",
     title: "Driveway Resurfacing: Concrete vs Asphalt vs Overlay",
     headline: "Driveway Resurfacing: What's Worth the Money?",
     metaDescription:
-      "Driveway resurfacing costs $2–8/sq ft vs. $4–20 for replacement. Which option is right depends on your base condition — here's how to decide.",
+      "Driveway resurfacing costs $2–8/sq ft vs. $6–20 for replacement. Which option is right depends on your base condition — here's how to decide.",
     targetKeywords: ["driveway resurfacing", "concrete overlay", "driveway repair"],
     ogImage: "https://images.pourcanvas.com/driveway-resurfacing.jpg",
     publishedAt: "2026-03-27",
     intro:
-      "Driveway resurfacing costs $2–8 per sq ft depending on method. Full replacement runs $4–20 per sq ft. On a 400 sq ft driveway, resurfacing saves $800–4,800 over replacement — if the base qualifies. The key word is \"if\": overlaying a failing base just delays the problem. Here's a straight comparison of concrete overlay, asphalt resurfacing, and full replacement so you can make the right call. The same structural assessment logic applies to patios and walkways.",
+      "Driveway resurfacing costs $2–8 per sq ft depending on method. Full replacement runs $6–20 per sq ft. On a 400 sq ft driveway, resurfacing saves $1,600–4,800 over replacement — if the base qualifies. The key word is \"if\": overlaying a failing base just delays the problem. Here's a straight comparison of concrete overlay, asphalt resurfacing, and full replacement so you can make the right call. The same structural assessment logic applies to patios and walkways.",
     sections: [
       {
         heading: "Concrete Overlay",
@@ -249,7 +287,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Full Concrete Replacement",
-        body: "If the existing surface or base is compromised, replacement is the right call. New concrete driveways cost $4–8 per sq ft for plain broom finish, $8–14 for exposed aggregate, and $12–20 for stamped. It's more expensive upfront but avoids spending resurfacing money on a surface that continues to fail. If you're also planning a patio or front walkway upgrade, bundling all three into one replacement project saves on mobilization and ensures color consistency.",
+        body: `If the existing surface or base is compromised, replacement is the right call. New concrete driveways cost ${sqft("plain-concrete")} per sq ft for plain broom finish, $8–14 for exposed aggregate, and $12–20 for stamped. It's more expensive upfront but avoids spending resurfacing money on a surface that continues to fail. If you're also planning a patio or front walkway upgrade, bundling all three into one replacement project saves on mobilization and ensures color consistency.`,
       },
       {
         heading: "When to Resurface vs Replace",
@@ -261,7 +299,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Driveway Resurfacing Cost vs. Full Replacement",
-        body: "On a 500 sq ft concrete driveway: resurfacing with a plain overlay costs $1,500–4,000; a decorative stamped overlay runs $4,000–7,500; full replacement costs $2,000–10,000 depending on finish. The resurfacing savings are meaningful at the low end — a $3/sq ft plain overlay saves $1,500–3,000 versus a new pour. At the decorative end, the savings shrink: a stamped overlay at $12–15/sq ft isn't much cheaper than a new stamped pour at $12–20/sq ft, and the overlay won't perform or last as long. The decision rule: use resurfacing for cosmetic renewal of a structurally sound slab; use full replacement for any slab with structural issues, drainage problems, or significant thickness inconsistency.",
+        body: "On a 500 sq ft concrete driveway: resurfacing with a plain overlay costs $1,500–4,000; a decorative stamped overlay runs $4,000–7,500; full replacement costs $3,000–10,000 depending on finish. The resurfacing savings are meaningful at the low end — a $3/sq ft plain overlay saves $1,500–4,500 versus a new pour. At the decorative end, the savings shrink: a stamped overlay at $12–15/sq ft isn't much cheaper than a new stamped pour at $12–20/sq ft, and the overlay won't perform or last as long. The decision rule: use resurfacing for cosmetic renewal of a structurally sound slab; use full replacement for any slab with structural issues, drainage problems, or significant thickness inconsistency.",
         inspirationSlugs: ["stamped-concrete-driveway-cream"],
       },
       {
@@ -274,7 +312,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Asphalt Driveway Resurfacing vs. Concrete",
-        body: "Asphalt driveways can be resurfaced (new asphalt layer over existing) for $2–5/sq ft — less than a concrete overlay. But asphalt-over-asphalt resurfacing doesn't address base problems and doesn't change the surface to a more durable material. Converting an asphalt driveway to concrete requires full removal of the existing asphalt before pouring — you can't overlay concrete on asphalt reliably, as the two materials expand and contract at different rates and the overlay cracks within 1–3 years. Budget full removal at $1–3/sq ft on top of the new concrete cost. The total cost of asphalt removal plus a new concrete driveway is higher than replacing asphalt with new asphalt, but the concrete result lasts 30–50 years versus 15–20 for asphalt — often the better long-term value on a property you plan to hold long-term.",
+        body: `Asphalt driveways can be resurfaced (new asphalt layer over existing) for $2–5/sq ft — less than a concrete overlay. But asphalt-over-asphalt resurfacing doesn't address base problems and doesn't change the surface to a more durable material. Converting an asphalt driveway to concrete requires full removal of the existing asphalt before pouring — you can't overlay concrete on asphalt reliably, as the two materials expand and contract at different rates and the overlay cracks within 1–3 years. Budget full removal at ${removal}/sq ft on top of the new concrete cost. The total cost of asphalt removal plus a new concrete driveway is higher than replacing asphalt with new asphalt, but the concrete result lasts 30–50 years versus 15–20 for asphalt — often the better long-term value on a property you plan to hold long-term.`,
       },
       {
         heading: "Bundling Driveway Resurfacing with Walkway and Patio Work",
@@ -286,7 +324,7 @@ export const drivewayArticles: Article[] = [
     faqs: [
       {
         question: "How much does it cost to resurface a concrete driveway?",
-        answer: "Concrete driveway resurfacing costs $3–8 per sq ft for an overlay. On a 400 sq ft driveway, that's $1,200–3,200 — compared to $1,600–8,000 for full replacement. The savings are significant, but only if the existing base is structurally sound. Overlaying a failing base just delays and amplifies the problem.",
+        answer: "Concrete driveway resurfacing costs $3–8 per sq ft for an overlay. On a 400 sq ft driveway, that's $1,200–3,200 — compared to $2,400–8,000 for full replacement. The savings are significant, but only if the existing base is structurally sound. Overlaying a failing base just delays and amplifies the problem.",
       },
       {
         question: "When should you replace a driveway instead of resurfacing it?",
@@ -371,16 +409,16 @@ export const drivewayArticles: Article[] = [
   {
     slug: "modern-driveway-ideas",
     pillar: "driveway",
-    title: "Driveway Design Ideas for 2026: 10 Modern Looks That Work",
-    headline: "Driveway Design Ideas for 2026",
+    title: `Modern Concrete Driveway Ideas: 10 Designs With Costs (${CURRENT_YEAR})`,
+    headline: `Modern Concrete Driveway Ideas for ${CURRENT_YEAR}`,
     metaDescription:
-      "Driveway design ideas for 2026: charcoal integral color, scored borders, dark exposed aggregate. 10 concrete approaches from $6–20/sq ft with real cost ranges.",
+      `Modern concrete driveway ideas for ${CURRENT_YEAR}: charcoal integral color, scored borders, dark exposed aggregate. 10 designs from ${perSqftRange({ low: INSTALLED["plain-concrete"].low, typical: 0, high: INSTALLED["stamped-concrete"].high })}/sq ft, with costs.`,
     targetKeywords: ["driveway design ideas", "driveway design ideas 2026", "modern driveway ideas", "driveway ideas 2026", "contemporary driveway design", "modern concrete driveway"],
     ogImage: "https://images.pourcanvas.com/driveway-modern-ideas.jpg",
     publishedAt: "2026-03-27",
-    updatedAt: "2026-05-25",
+    updatedAt: "2026-10-10",
     intro:
-      "Modern concrete driveways in 2026 rely on three elements: clean geometry, intentional color, and edge definition. The cost range is wide — a charcoal-washed broom-finish driveway with scored border details runs $6–12 per sq ft, while a fully stamped modern design runs $14–20. The look that's resonating most right now is restraint: wide, dark surfaces with minimal decoration and crisp edge lines. These 10 ideas cover the full range from budget to premium. For reference, the same modern sensibility that's working on driveways in 2026 is equally effective on front walkways and patios.",
+      `Modern concrete driveways in ${CURRENT_YEAR} rely on three elements: clean geometry, intentional color, and edge definition. The cost range is wide — a charcoal-colored broom-finish driveway with scored border details runs about ${perSqftRange(BLACK_PER_SQFT)} per sq ft, while a fully stamped modern design runs $15–28. The look that's resonating most right now is restraint: wide, dark surfaces with minimal decoration and crisp edge lines. These 10 ideas cover the full range from budget to premium. For reference, the same modern sensibility that's working on driveways in 2026 is equally effective on front walkways and patios.`,
     sections: [
       {
         heading: "Charcoal Broom Finish with Scored Border: The High-Value Entry Point",
@@ -444,9 +482,26 @@ export const drivewayArticles: Article[] = [
         heading: "Modern Driveway Landscaping: What Completes the Look",
         body: "A modern concrete driveway reads most effectively with landscaping that reinforces its design language. Low-maintenance gravel or decomposed granite borders (6–12 inches wide along the edges) complement a clean dark surface without competing. Ornamental grasses, low boxwood hedges, and architectural plants suit contemporary driveways — avoid busy mixed-color planting beds that fragment the visual line. Landscape lighting along the driveway edge (path lights at 8-foot intervals, $30–80 per fixture) extends the modern exterior into the evening. For front walkways and patios, the same landscape restraint applies — a designed concrete surface benefits from planting that frames it rather than clutters it.",
       },
+      {
+        heading: "Modern Concrete Driveway Finishes Compared",
+        body: `<p>Most modern driveways use one of seven finishes. The matrix below compares how each looks, how it grips, what it asks of you, and where it works best. Installed prices are national ranges per sq ft from our <a href="/methodology">methodology</a>: plain concrete runs ${sqft("plain-concrete")}, exposed aggregate ${sqft("exposed-aggregate")} and stamped concrete ${sqft("stamped-concrete")}. Finishes without their own data row are rated relative to plain concrete.</p>
+<table>
+<tr><th>Finish</th><th>Look</th><th>Slip resistance</th><th>Upkeep</th><th>Best climate</th><th>Relative cost</th></tr>
+<tr><td>Smooth / steel-troweled</td><td>Sleek, monolithic</td><td>Lowest; slick when wet or icy, poor on slopes</td><td>Shows tire marks and scuffs</td><td>Dry, low-freeze, flat sites</td><td>Plain concrete range (${sqft("plain-concrete")})</td></tr>
+<tr><td>Light broom</td><td>Clean, fine linear texture</td><td>Good</td><td>Low</td><td>All climates; the safe default where it freezes</td><td>Plain concrete range</td></tr>
+<tr><td>Saw-cut grid on broom</td><td>Architectural grid, large-format slab look</td><td>Good</td><td>Low; keep joints clear</td><td>All climates</td><td>Plain range plus saw-cutting labor</td></tr>
+<tr><td>Exposed aggregate</td><td>Textured, stone-flecked</td><td>Very good</td><td>Medium; reseal to hold the stone color</td><td>All climates; hides dirt well</td><td>${sqft("exposed-aggregate")}</td></tr>
+<tr><td>Charcoal integral color</td><td>Bold, dark, reads near-black</td><td>Same as the texture it is paired with</td><td>Medium; reseal to keep depth</td><td>Mild and cold climates; adds heat in hot sun</td><td>Plain range plus pigment</td></tr>
+<tr><td>Sandblasted</td><td>Matte, fine aggregate showing</td><td>Good</td><td>Low to medium</td><td>All climates</td><td>Plain range plus blasting labor</td></tr>
+<tr><td>Concrete strips with turf or gravel</td><td>Minimal, softened by green or gravel joints</td><td>Good on the strips; varies on the infill</td><td>Mowing or raking, weeding the joints</td><td>Moderate rainfall; joints help drainage</td><td>Less concrete than a full slab, plus infill</td></tr>
+</table>
+<p>The charcoal row carries the most trade-offs: for heat, fade and pigment choice, see our <a href="/blog/driveway/charcoal-concrete-driveway">charcoal concrete driveway guide</a>. To price a finish against pavers, run your size through the <a href="/tools/patio-cost-calculator">patio cost calculator</a> or the <a href="/tools/paver-driveway-cost-calculator">paver driveway cost calculator</a>.</p>`,
+        inspirationSlugs: ["light-grey-brushed-concrete-driveway", "modern-large-slab-driveway", "concrete-strips-turf-driveway", "parallel-strip-driveway-white-gravel"],
+      },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost", "black-concrete-driveway"],
     relatedMaterials: ["exposed-aggregate", "broom-finish", "colored-concrete", "stamped-concrete"],
+    relatedTools: ["paver-driveway-cost-calculator", "patio-cost-calculator"],
     faqs: [
       {
         question: "What makes a driveway look modern in 2026?",
@@ -468,16 +523,16 @@ export const drivewayArticles: Article[] = [
     title: "Concrete vs Asphalt Driveway: Which Is Right for You?",
     headline: "Concrete vs Asphalt Driveway: An Honest Comparison",
     metaDescription:
-      "Concrete vs asphalt driveway: concrete costs $4–8/sq ft, lasts 30–50 years; asphalt $3–6/sq ft, lasts 15–30. Which wins depends on climate and budget.",
+      `Concrete vs asphalt driveway: concrete costs ${sqft("plain-concrete")}/sq ft, lasts 30–50 years; asphalt $3–6/sq ft, lasts 15–30. Which wins depends on climate and budget.`,
     targetKeywords: ["concrete vs asphalt driveway", "concrete driveway vs asphalt", "driveway material comparison"],
     ogImage: "https://images.pourcanvas.com/driveway-vs-asphalt.jpg",
     publishedAt: "2026-03-31",
     intro:
-      "Concrete driveways cost $4–8 per sq ft installed; asphalt runs $3–6. On a 500 sq ft driveway, concrete costs $500–1,000 more upfront — but lasts 30–50 years versus 15–30 for asphalt. Which wins depends on your climate, budget, and how much ongoing maintenance you're willing to do.",
+      `Concrete driveways cost ${sqft("plain-concrete")} per sq ft installed; asphalt runs $3–6. On a 500 sq ft driveway, concrete costs $1,500–3,000 more upfront — but lasts 30–50 years versus 15–30 for asphalt. Which wins depends on your climate, budget, and how much ongoing maintenance you're willing to do.`,
     sections: [
       {
         heading: "Upfront Cost: Asphalt Wins",
-        body: "Asphalt driveways cost $3–6 per sq ft installed; concrete runs $4–8 per sq ft. On a standard two-car driveway (400–600 sq ft), asphalt saves roughly $500–1,200 upfront. If budget is the primary constraint, asphalt is the practical choice. The cost gap narrows significantly over time once you factor in asphalt's maintenance requirements — seal coating every 3–5 years and occasional crack filling add $200–600 per round.",
+        body: `Asphalt driveways cost $3–6 per sq ft installed; concrete runs ${sqft("plain-concrete")} per sq ft. On a standard two-car driveway (400–600 sq ft), asphalt saves roughly $1,200–3,600 upfront. If budget is the primary constraint, asphalt is the practical choice. The cost gap narrows significantly over time once you factor in asphalt's maintenance requirements — seal coating every 3–5 years and occasional crack filling add $200–600 per round.`,
       },
       {
         heading: "Lifespan: Concrete Wins",
@@ -506,7 +561,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Total Cost of Ownership: 25-Year Comparison",
-        body: "On a 500 sq ft driveway over 25 years: concrete runs $2,000–4,000 installation + $500–1,500 maintenance = $2,500–5,500 total. Asphalt runs $1,500–3,000 installation + $2,000–5,000 seal coating + $1,000–2,000 resurfacing at year 15 = $4,500–10,000 total. The 25-year cost math typically favors concrete — but the assumption is no major cracking on the concrete side. In northern freeze-thaw climates, concrete cracking repair can add $1,000–3,000 to the 25-year total, narrowing the gap. Get a local contractor's input on which material performs better in your specific climate before making a decision based on national averages alone.",
+        body: `On a 500 sq ft driveway over 25 years: concrete runs ${total("plain-concrete", 500)} installation + $500–1,500 maintenance = $3,500–7,500 total. Asphalt runs $1,500–3,000 installation + $2,000–5,000 seal coating + $1,000–2,000 resurfacing at year 15 = $4,500–10,000 total. The 25-year cost math typically favors concrete — but the assumption is no major cracking on the concrete side. In northern freeze-thaw climates, concrete cracking repair can add $1,000–3,000 to the 25-year total, narrowing the gap. Get a local contractor's input on which material performs better in your specific climate before making a decision based on national averages alone.`,
       },
       {
         heading: "Front Walkway and Patio: Concrete Keeps the Family Together",
@@ -521,7 +576,7 @@ export const drivewayArticles: Article[] = [
     faqs: [
       {
         question: "Is concrete or asphalt cheaper for a driveway?",
-        answer: "Asphalt is cheaper upfront at $3–6 per sq ft vs. $4–8 for concrete. On a 500 sq ft driveway, that's roughly $500–1,000 in upfront savings. Over 30 years, concrete's longer lifespan (30–50 years vs. 15–30 for asphalt) and lower maintenance frequency often make the total cost of ownership comparable or lower than asphalt.",
+        answer: `Asphalt is cheaper upfront at $3–6 per sq ft vs. ${sqft("plain-concrete")} for concrete. On a 500 sq ft driveway, that's roughly $1,500–3,000 in upfront savings. Over 30 years, concrete's longer lifespan (30–50 years vs. 15–30 for asphalt) and lower maintenance frequency often make the total cost of ownership comparable or lower than asphalt.`,
       },
       {
         question: "Does concrete or asphalt last longer for a driveway?",
@@ -529,22 +584,22 @@ export const drivewayArticles: Article[] = [
       },
       {
         question: "What are the pros and cons of concrete vs asphalt driveways?",
-        answer: "Concrete pros: longer lifespan (30–50 years), design options (stamped, colored), better in hot climates, minimal maintenance. Concrete cons: higher upfront cost ($4–8/sq ft), cracks are harder to repair invisibly, more vulnerable in severe freeze-thaw climates. Asphalt pros: lower upfront cost ($3–6/sq ft), flexible in cold climates, easier to repair. Asphalt cons: shorter lifespan (15–30 years), frequent seal coating required, no finish options beyond black.",
+        answer: `Concrete pros: longer lifespan (30–50 years), design options (stamped, colored), better in hot climates, minimal maintenance. Concrete cons: higher upfront cost (${sqft("plain-concrete")}/sq ft), cracks are harder to repair invisibly, more vulnerable in severe freeze-thaw climates. Asphalt pros: lower upfront cost ($3–6/sq ft), flexible in cold climates, easier to repair. Asphalt cons: shorter lifespan (15–30 years), frequent seal coating required, no finish options beyond black.`,
       },
     ],
   },
   {
     slug: "black-concrete-driveway",
     pillar: "driveway",
-    title: "Black Concrete Driveway Ideas: Photos, Cost, Pros & Cons",
+    title: "Black Concrete Driveway: Cost, Heat, Fading & Photos",
     headline: "Black Concrete Driveway Ideas: Photos, Cost and What to Expect",
-    metaDescription: "Black and charcoal concrete driveway ideas with photos — what they cost ($6–12/sq ft), how dark they stay, and the heat and fade tradeoffs to know first.",
+    metaDescription: `Black concrete driveways cost about ${perSqftRange(BLACK_PER_SQFT)}/sq ft installed (${moneyRange({ low: BLACK_PER_SQFT.low * 500, typical: 0, high: BLACK_PER_SQFT.high * 500 })} for 500 sq ft). Photos, charcoal vs black, summer surface heat and how to slow fading.`,
     targetKeywords: ["black concrete driveway", "dark concrete driveway", "black driveway ideas", "black stained concrete driveway", "charcoal concrete driveway"],
     ogImage: "https://images.pourcanvas.com/driveway-black-concrete.jpg",
     publishedAt: "2026-03-27",
-    updatedAt: "2026-05-25",
+    updatedAt: "2026-10-10",
     intro:
-      "A black integrally colored concrete driveway costs $6–12 per sq ft installed — $2–4 per sq ft above plain grey concrete for the pigment. On a 500 sq ft two-car driveway, that's $3,000–6,000. The look is bold and increasingly popular, but it comes with real practical tradeoffs around heat absorption, fading, and sealer maintenance that most contractors don't volunteer upfront. Here's what you actually need to know before committing. If you're also planning a front walkway, the same dark-pigment considerations apply.",
+      `A black integrally colored concrete driveway costs about ${perSqftRange(BLACK_PER_SQFT)} per sq ft installed — $2–4 per sq ft above plain grey concrete for the pigment. On a 500 sq ft two-car driveway, that's ${moneyRange({ low: BLACK_PER_SQFT.low * 500, typical: 0, high: BLACK_PER_SQFT.high * 500 })}. The look is bold and increasingly popular, but it comes with real practical tradeoffs around heat absorption, fading, and sealer maintenance that most contractors don't volunteer upfront. Here's what you actually need to know before committing. If you're also planning a front walkway, the same dark-pigment considerations apply.`,
     sections: [
       {
         heading: "How Black Concrete Is Made — and Why It Matters",
@@ -553,7 +608,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "The Heat Problem: What Black Driveways Do in Summer",
-        body: "Dark concrete absorbs significantly more solar radiation than light-colored surfaces. A black driveway in direct afternoon sun can reach 140–160°F on a 90°F day — 40–50°F hotter than the air temperature. That's uncomfortable to walk across barefoot, can soften asphalt edging strips or adjacent materials, and puts more thermal stress on the slab over time through repeated expansion and contraction. In climates with hot summers (zones 8–11, much of the South and Southwest), this is a serious consideration. In moderate or northern climates, it's less consequential — and the heat absorption can even be a slight advantage for ice melt in winter. If you're committed to a dark driveway in a hot climate, a deep charcoal (not true black) and a UV-reflective penetrating sealer reduce surface temperatures by 10–15°F.",
+        body: "Dark concrete absorbs significantly more solar radiation than light-colored surfaces. A black driveway in direct afternoon sun gets far hotter than the air: the EPA reports peak summer surface temperatures of 120–150°F for conventional pavements, and a black slab sits at the hot end of that range. That's uncomfortable to walk across barefoot, can soften asphalt edging strips or adjacent materials, and puts more thermal stress on the slab over time through repeated expansion and contraction. In climates with hot summers (zones 8–11, much of the South and Southwest), this is a serious consideration. In moderate or northern climates, it's less consequential — and the heat absorption can even be a slight advantage for ice melt in winter. If you're committed to a dark driveway in a hot climate, a deep charcoal (not true black) reflects more sunlight and runs cooler; LBNL researchers estimate about 7°F lower surface temperature for every 10-point gain in solar reflectance.",
       },
       {
         heading: "Black vs. Charcoal: The Practical Distinction",
@@ -575,24 +630,54 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Comparing Black Concrete to Other Dark Driveway Options",
-        body: `<p>Three ways to achieve a dark driveway: black integrally colored concrete ($6–12/sq ft), dark charcoal stamped concrete ($14–20/sq ft), and standard asphalt ($3–6/sq ft fresh, fades over time). Black integral concrete is the most design-intentional option — the color is consistent, goes all the way through, and stays dark with proper sealing. Dark stamped concrete adds pattern to the dark tone and suits homes where the decorative detail is part of the design intent. Asphalt is the default dark option, but its inconsistent color maintenance (dark when freshly sealed, faded grey when not) makes it a poor substitute for a genuinely designed dark surface. Use PourCanvas to preview how charcoal and true black concrete compare on your specific driveway before finalizing the pigment specification.</p>
+        body: `<p>Three ways to achieve a dark driveway: black integrally colored concrete (${colored}/sq ft), dark charcoal stamped concrete ($14–20/sq ft), and standard asphalt ($3–6/sq ft fresh, fades over time). Black integral concrete is the most design-intentional option — the color is consistent, goes all the way through, and stays dark with proper sealing. Dark stamped concrete adds pattern to the dark tone and suits homes where the decorative detail is part of the design intent. Asphalt is the default dark option, but its inconsistent color maintenance (dark when freshly sealed, faded grey when not) makes it a poor substitute for a genuinely designed dark surface. Use PourCanvas to preview how charcoal and true black concrete compare on your specific driveway before finalizing the pigment specification.</p>
 <table>
 <tr><th>Option</th><th>Cost/sq ft</th><th>Heat Absorption</th><th>Fade Rate</th><th>Maintenance</th></tr>
-<tr><td>Black integral concrete</td><td>$6–12</td><td>High (140–160°F)</td><td>Moderate with sealer</td><td>Reseal every 3–5 years</td></tr>
-<tr><td>Charcoal integral concrete</td><td>$6–12</td><td>Moderate-High</td><td>Low — fades gracefully</td><td>Reseal every 3–5 years</td></tr>
-<tr><td>Standard grey concrete</td><td>$4–8</td><td>Low (110–120°F)</td><td>Minimal</td><td>Reseal every 5–10 years</td></tr>
+<tr><td>Black integral concrete</td><td>${colored}</td><td>High (up to ~150°F at peak)</td><td>Moderate with sealer</td><td>Reseal every 3–5 years</td></tr>
+<tr><td>Charcoal integral concrete</td><td>${colored}</td><td>Moderate-High</td><td>Low — fades gracefully</td><td>Reseal every 3–5 years</td></tr>
+<tr><td>Standard grey concrete</td><td>${sqft("plain-concrete")}</td><td>Lower (reflects 30–50% of sunlight when new)</td><td>Minimal</td><td>Reseal every 5–10 years</td></tr>
 <tr><td>Dark stamped concrete</td><td>$14–20</td><td>Moderate-High</td><td>Moderate</td><td>Reseal every 2–3 years</td></tr>
 <tr><td>Fresh asphalt</td><td>$3–6</td><td>High</td><td>High — fades to grey in 2–3 years</td><td>Seal coat every 3–5 years</td></tr>
 </table>`,
         inspirationSlugs: ["poured-concrete-driveway"],
       },
+      {
+        heading: "Integral Color vs Stain vs Tinted Sealer for a Black Driveway",
+        body: `<p>There are three ways to make a driveway black, and they differ in where the color sits. Integral color is pigment mixed into the concrete before it is poured, so it runs through the whole slab. Stains and dyes are applied to the surface and can go on existing concrete (${cite(SRC.solomonGuide, "Solomon Colors")}). A tinted sealer carries the pigment in the sealer itself, so the color lasts only as long as the sealer film (${cite(SRC.solomonTint, "Solomon Colors: tinted sealer")}).</p>
+<p>The pigment type matters as much as the method. Black integral color is made from either black iron oxide or carbon black. LANXESS describes its Bayferrox iron oxides as "completely weather- and light-stable". In its maritime-climate trials, paving stones pigmented with carbon black faded after a relatively short time, while iron-oxide-black stones kept their color (${cite(SRC.lanxess, "LANXESS Bayferrox processing instructions")}). Carbon black has two to five times the tinting strength of iron oxide black, but it can leach out of exterior concrete and can lower the entrained air content of the mix (${cite(SRC.concreteDecor, "Concrete Decor")}). Solomon Colors recommends sealing any concrete made with its 908 Carbon Black and keeping that sealer maintained, because carbon "has a tendency to dissipate out of concrete over time" (${cite(SRC.solomonCard, "Solomon Colors integral color card")}).</p>
+<p>Pigment dosage is measured as a percentage of the weight of the cementitious material in the mix, not the total concrete. Solomon puts the optimum loading at 2–4%, the color saturation point at about 7%, and warns that more than 10% can reduce strength. Below 1% the color can look irregular and washed out (${cite(SRC.solomonCard, "Solomon Colors")}). LANXESS says additions above 5% of the binder are generally unnecessary for its iron oxides. Past the saturation point, extra pigment adds cost without making the slab noticeably darker.</p>
+<table>
+<tr><th>Method</th><th>How it works</th><th>How deep the color goes</th><th>Fade behavior</th><th>Cost relation</th><th>Best for</th></tr>
+<tr><td>Integral color, black iron oxide</td><td>Pigment mixed into the concrete at the plant</td><td>Full slab depth</td><td>Pigment is weather- and light-stable; wear exposes more aggregate over time</td><td>Added to the cost of the new pour; darker shades need more pigment per yard</td><td>New driveway</td></tr>
+<tr><td>Integral color, carbon black</td><td>Same, using carbon black</td><td>Full slab depth, but the pigment can migrate out</td><td>Can weather out unless the surface stays sealed</td><td>Less pigment for the same depth of color, plus an ongoing sealer commitment</td><td>New driveway, with a firm sealer schedule</td></tr>
+<tr><td>Penetrating stain or dye</td><td>Applied to the cured surface</td><td>Top layer of the surface only</td><td>Wears first in tire paths and turning areas</td><td>No new pour; surface labor and product only</td><td>Existing driveway</td></tr>
+<tr><td>Tinted sealer</td><td>Pigment carried in the sealer film</td><td>The sealer film only</td><td>Wears off; driveways show wear patterns sooner (${cite(SRC.cnTinted, "Concrete Network")}); most decorative acrylic sealers last about 2–3 years (Solomon)</td><td>Lowest upfront, recurring recoats</td><td>Existing driveway, color correction</td></tr>
+</table>
+<p>For a new pour, specify an iron oxide black or charcoal and get a pigment dosage in writing. Plain concrete runs ${sqft("plain-concrete")} per sq ft installed nationally before color (see our <a href="/methodology">methodology</a>); price your size in the <a href="/tools/patio-cost-calculator">patio cost calculator</a>. For an existing grey slab, stain, tinted sealer or a <a href="/blog/driveway/driveway-resurfacing">resurfacing overlay</a> are the options short of replacement. If a softer dark tone fits better, see our <a href="/blog/driveway/charcoal-concrete-driveway">charcoal concrete driveway guide</a>.</p>`,
+        inspirationSlugs: ["modern-black-concrete-driveway", "brushed-concrete-driveway-charcoal"],
+      },
+      {
+        heading: "How Black Concrete Fades by Climate",
+        body: `<p>Black concrete loses depth through several mechanisms, and climate decides which one dominates.</p>
+<p><strong>Sunbelt: high UV and hot summers.</strong> Iron oxide pigments are UV-stable (${cite(SRC.solomonGuide, "Solomon Colors")}), so sun alone rarely bleaches a properly dosed iron-oxide black. What changes is the surface: the thin cement layer on top weathers away over the years, exposing more aggregate, which then adds its own color to the overall shade (${cite(SRC.lanxess, "LANXESS")}). Sealers wear out in strong sun and traffic; Solomon puts most decorative acrylic sealers at two to three years (${cite(SRC.solomonTint, "Solomon Colors")}). Heat is the bigger trade-off. The EPA reports that conventional concrete and asphalt can reach peak summer surface temperatures of 120–150°F, and LBNL researchers estimated that every 10 percent increase in solar reflectance lowers surface temperature by about 7°F (${cite(SRC.epa, "EPA Cool Pavements Compendium")}). New grey concrete reflects 30–50% of sunlight and new asphalt about 5% (${cite(SRC.lbnl, "LBNL Heat Island Group")}). Black pigment moves concrete toward the asphalt end of that scale, and its surface temperature moves with it.</p>
+<p><strong>Freeze-thaw and deicer regions.</strong> Here the threat is surface damage, not pigment loss. The Wisconsin Ready Mixed Concrete Association calls deicers one of the most damaging things for new concrete, especially in the first winter. It says never to use deicers containing ammonium sulfate or ammonium nitrate, and that plain sand is the only safe traction material (${cite(SRC.wrmca, "WRMCA")}). Scaling strips away the colored surface paste. White lime deposits (efflorescence) are also more noticeable on colored concrete than on grey (${cite(SRC.lanxess, "LANXESS")}). Butterfield notes that surfaces exposed to car traffic and deicing salts may wear their sealer more quickly (${cite(SRC.butterfieldGuide, "Butterfield Color")}).</p>
+<p><strong>Coastal and rainy climates.</strong> Moisture is what carries carbon black out of unsealed concrete, and LANXESS's maritime-climate trials are where carbon-black stones faded. If your mix uses carbon black, your sealer schedule is your color schedule.</p>
+<table>
+<tr><th>Climate</th><th>Main cause of fading</th><th>What to specify</th><th>Resealing guidance</th></tr>
+<tr><td>Sunbelt (hot, high UV)</td><td>Sealer breakdown, surface wear, heat</td><td>Iron oxide charcoal rather than maximum black; UV-stable penetrating sealer</td><td>Inspect yearly; acrylic sealers typically last 2–3 years</td></tr>
+<tr><td>Freeze-thaw with deicers</td><td>Scaling, efflorescence</td><td>Iron oxide pigment; sealer applied after finishing; sand, not deicer, the first winter; no ammonium deicers</td><td>Reseal when wear shows; avoid sealer buildup</td></tr>
+<tr><td>Coastal / rainy</td><td>Carbon black washing out, efflorescence</td><td>Iron oxide black, or carbon black only with a sealer program</td><td>Keep the surface sealed without gaps</td></tr>
+</table>
+<p>Across all climates, reseal when wear shows rather than on a fixed calendar. Butterfield says stamped concrete usually does not need sealing every year and warns that sealer buildup can cause delamination. If heat or upkeep tips the decision, compare a dark paver driveway in the <a href="/tools/paver-driveway-cost-calculator">paver driveway cost calculator</a>, or see the <a href="/blog/driveway/black-stamped-concrete">black stamped concrete guide</a> for patterned options.</p>`,
+      },
     ],
-    relatedSlugs: ["modern-driveway-ideas", "concrete-driveway-cost", "concrete-driveway-color-guide"],
+    relatedSlugs: ["modern-driveway-ideas", "concrete-driveway-cost", "concrete-driveway-color-guide", "charcoal-concrete-driveway", "black-stamped-concrete"],
     relatedMaterials: ["colored-concrete", "exposed-aggregate"],
+    relatedTools: ["paver-driveway-cost-calculator", "patio-cost-calculator"],
     faqs: [
       {
         question: "How much does a black concrete driveway cost?",
-        answer: "A black integrally colored concrete driveway costs $6–12 per sq ft installed — $2–4 per sq ft above plain grey concrete for the pigment premium. On a standard 500 sq ft two-car driveway, that's $3,000–6,000. Add resealing every 3–5 years at $40–80 DIY or $150–300 professionally applied to maintain color depth.",
+        answer: `A black integrally colored concrete driveway costs ${colored} per sq ft installed — $2–4 per sq ft above plain grey concrete for the pigment premium. On a standard 500 sq ft two-car driveway, that's ${moneyRange({ low: coloredR.low * 500, typical: coloredR.typical * 500, high: coloredR.high * 500 })}. Add resealing every 3–5 years at $40–80 DIY or $150–300 professionally applied to maintain color depth.`,
       },
       {
         question: "Does black concrete fade?",
@@ -600,7 +685,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         question: "Is black concrete hotter than regular concrete?",
-        answer: "Yes. Dark concrete absorbs more solar radiation — a black driveway can reach 140–160°F in direct afternoon sun on a 90°F day, versus 110–120°F for a light grey surface. In hot climates (zones 8–11), this is a real consideration. In northern climates, the heat absorption has minimal impact in summer and a slight advantage for winter ice melt. A deep charcoal rather than true black, combined with a UV-reflective penetrating sealer, reduces surface temperatures by 10–15°F.",
+        answer: "Yes. Dark concrete absorbs more sunlight. The EPA reports peak summer surface temperatures of 120–150°F for conventional pavements, and a black driveway sits at the hot end of that range, while new grey concrete reflects 30–50% of sunlight (LBNL). In hot climates (zones 8–11) this is a real consideration; in northern climates it matters little in summer and helps slightly with winter ice melt. A deep charcoal rather than true black runs somewhat cooler: LBNL estimates about 7°F lower surface temperature for every 10-point gain in solar reflectance.",
       },
       {
         question: "Can you stain a concrete driveway black?",
@@ -683,7 +768,7 @@ export const drivewayArticles: Article[] = [
     title: "Concrete Driveway Color Guide: Every Option Compared",
     headline: "Concrete Driveway Colors: What to Choose and Why",
     metaDescription:
-      "Concrete driveway color guide: integral pigment $2–5/sq ft extra, acid stain $3–7/sq ft on existing slabs. Every color method compared for 2026.",
+      `Concrete driveway color guide: integral pigment $2–5/sq ft extra, acid stain $3–7/sq ft on existing slabs. Every color method compared for ${CURRENT_YEAR}.`,
     targetKeywords: ["concrete driveway color", "concrete driveway color visualizer", "colored concrete driveway ideas"],
     ogImage: "https://images.pourcanvas.com/driveway-concrete-driveway-color-guide.jpg",
     publishedAt: "2026-03-27",
@@ -725,7 +810,7 @@ export const drivewayArticles: Article[] = [
         body: "When the driveway, front walkway, and patio are all planned in the same project window, color coordination across the three surfaces creates the most cohesive exterior result. The tonal direction should be consistent even if the exact finish differs: a charcoal integral driveway paired with a charcoal-wash stamped walkway and a charcoal exposed aggregate patio reads as designed. Exact color matching is rarely achievable across separate pours; tonal harmony is the realistic goal. PourCanvas can show you how different color directions look across all three surfaces before you finalize your color selections, which is particularly useful when you're trying to coordinate with an existing home exterior color that you're not changing.",
       },
     ],
-    relatedSlugs: ["black-concrete-driveway", "driveway-border-ideas", "concrete-driveway-cost"],
+    relatedSlugs: ["black-concrete-driveway", "driveway-border-ideas", "concrete-driveway-cost", "charcoal-concrete-driveway"],
     relatedMaterials: ["colored-concrete"],
     faqs: [
       {
@@ -761,16 +846,16 @@ export const drivewayArticles: Article[] = [
     ogImage: "https://images.pourcanvas.com/driveway-stamped-concrete-driveway-cost.jpg",
     publishedAt: "2026-03-31",
     intro:
-      "A stamped concrete driveway costs $12–20 per sq ft installed, compared to $5–8 for plain concrete and $20–35 for natural stone pavers. For a standard two-car driveway (400–500 sq ft), total cost runs $4,800–10,000. Pattern complexity, regional labor rates, and color choices all shift the final number — here's how to read a quote before you sign.",
+      `A stamped concrete driveway costs $12–20 per sq ft installed, compared to ${sqft("plain-concrete")} for plain concrete and $20–35 for natural stone pavers. For a standard two-car driveway (400–500 sq ft), total cost runs $4,800–10,000. Pattern complexity, regional labor rates, and color choices all shift the final number — here's how to read a quote before you sign.`,
     sections: [
       {
         heading: "Base Cost Breakdown: What Drives the Price Range",
-        body: "Stamped concrete sits in the $12–20 per sq ft range because it combines a standard concrete pour with extra labor-intensive finishing steps: the stamps must be pressed during a narrow workability window, color washes must be applied evenly, and the surface must be sealed immediately after. The cost spread is mostly labor-driven. Simple single-stamp patterns (running bond brick, large ashlar slate) sit at $12–14/sq ft. Complex multi-stamp patterns (cobblestone, random flagstone with color variation, interlocking geometric borders) push toward $18–20. A plain broom-finish concrete driveway costs $5–8/sq ft in comparison — the stamped premium is $4–12/sq ft, applied to the entire surface.",
+        body: `Stamped concrete sits in the $12–20 per sq ft range because it combines a standard concrete pour with extra labor-intensive finishing steps: the stamps must be pressed during a narrow workability window, color washes must be applied evenly, and the surface must be sealed immediately after. The cost spread is mostly labor-driven. Simple single-stamp patterns (running bond brick, large ashlar slate) sit at $12–14/sq ft. Complex multi-stamp patterns (cobblestone, random flagstone with color variation, interlocking geometric borders) push toward $18–20. A plain broom-finish concrete driveway costs ${sqft("plain-concrete")}/sq ft in comparison — the stamped premium is roughly $6–8/sq ft, applied to the entire surface.`,
         inspirationSlugs: ["stamped-concrete-driveway-cobblestone", "stamped-concrete-driveway-ashlar-slate"],
       },
       {
         heading: "Pattern-by-Pattern Cost Comparison",
-        body: "Cobblestone is the most expensive common pattern: the detail in the stamps and the tight repetition require more time from the crew, pushing cost to $15–20/sq ft. Ashlar slate and running bond brick are the most affordable decorative options at $12–15/sq ft — the stamps are simpler and faster to apply. Random flagstone falls in the middle at $13–18/sq ft, depending on how much color variation is specified. Exposed aggregate borders combined with a smooth or lightly textured field bring the per-sq-ft average down versus a fully stamped surface — the border adds $8–14/sq ft and the field can be poured at $5–8/sq ft, yielding a blended cost of $8–13/sq ft for the total driveway. If budget is tight, this hybrid approach delivers a premium look at a lower average cost.",
+        body: `Cobblestone is the most expensive common pattern: the detail in the stamps and the tight repetition require more time from the crew, pushing cost to $15–20/sq ft. Ashlar slate and running bond brick are the most affordable decorative options at $12–15/sq ft — the stamps are simpler and faster to apply. Random flagstone falls in the middle at $13–18/sq ft, depending on how much color variation is specified. Exposed aggregate borders combined with a smooth or lightly textured field bring the per-sq-ft average down versus a fully stamped surface — the border adds $8–14/sq ft and the field can be poured at ${sqft("plain-concrete")}/sq ft, yielding a blended cost of $8–13/sq ft for the total driveway. If budget is tight, this hybrid approach delivers a premium look at a lower average cost.`,
         inspirationSlugs: ["stamped-concrete-driveway-cream", "herringbone-brick-driveway"],
       },
       {
@@ -788,7 +873,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "How to Get an Accurate Quote",
-        body: "A reliable stamped concrete quote should break out: (1) base concrete cost per sq ft, (2) stamping labor per sq ft, (3) color and sealing materials, and (4) prep work — demolition of an existing driveway runs $1–3/sq ft, subgrade preparation $0.50–1.50/sq ft. Ask specifically whether the quote includes the first sealing application — some contractors include it, others price it separately. The total cost for a 450 sq ft two-car driveway with a mid-range ashlar slate pattern, integral pigment, and color wash should land at $6,000–8,500 in most U.S. markets. Tools like PourCanvas let you visualize different patterns and color options on your actual driveway before you commit to a design — which helps narrow the stamping decision before the contractor conversation. If you're also planning a front walkway or patio, getting those in the same quote often reduces the per-sq-ft cost through economies of scale.",
+        body: `A reliable stamped concrete quote should break out: (1) base concrete cost per sq ft, (2) stamping labor per sq ft, (3) color and sealing materials, and (4) prep work — demolition of an existing driveway runs ${removal}/sq ft, subgrade preparation $0.50–1.50/sq ft. Ask specifically whether the quote includes the first sealing application — some contractors include it, others price it separately. The total cost for a 450 sq ft two-car driveway with a mid-range ashlar slate pattern, integral pigment, and color wash should land at $6,000–8,500 in most U.S. markets. Tools like PourCanvas let you visualize different patterns and color options on your actual driveway before you commit to a design — which helps narrow the stamping decision before the contractor conversation. If you're also planning a front walkway or patio, getting those in the same quote often reduces the per-sq-ft cost through economies of scale.`,
       },
       {
         heading: "Warranty and Post-Installation Support",
@@ -805,7 +890,7 @@ export const drivewayArticles: Article[] = [
       {
         question: "Is stamped concrete more expensive than pavers for a driveway?",
         answer:
-          "Stamped concrete ($12–20/sq ft) is typically less expensive than natural stone or concrete pavers ($20–35/sq ft) for the same installed look. It is more expensive than plain broom-finish concrete ($5–8/sq ft) or asphalt ($3–5/sq ft). On a 450 sq ft two-car driveway, the premium over plain concrete runs $3,150–5,400; the savings versus pavers run $3,600–6,750.",
+          `Stamped concrete ($12–20/sq ft) is typically less expensive than natural stone pavers ($20–35/sq ft) and overlaps with concrete paver driveways (about ${paverDriveway}/sq ft). It is more expensive than plain broom-finish concrete (${sqft("plain-concrete")}/sq ft) or asphalt ($3–5/sq ft). On a 450 sq ft two-car driveway, the premium over plain concrete runs $2,700–3,600; the savings versus natural stone pavers run $3,600–6,750.`,
       },
       {
         question: "How long does stamped concrete last on a driveway?",
@@ -887,5 +972,258 @@ export const drivewayArticles: Article[] = [
     // 1. What is the best edging for a concrete driveway?
     // 2. How much does driveway edging cost?
     // 3. Does driveway edging prevent cracking?
+  },
+  {
+    slug: "charcoal-concrete-driveway",
+    pillar: "driveway",
+    title: "Charcoal Concrete Driveway: Shades, Finishes and Cost",
+    headline: "Charcoal Concrete Driveway: Shades, Finishes, Cost and Care",
+    metaDescription: `A charcoal concrete driveway costs ${sqft("plain-concrete")}/sq ft installed plus pigment. Compare charcoal shades for heat, fade and dirt, and see how 3 finishes change the look.`,
+    targetKeywords: ["charcoal concrete driveway", "charcoal grey concrete driveway", "dark grey concrete driveway", "charcoal driveway", "charcoal integral color concrete"],
+    ogImage: "https://images.pourcanvas.com/inspiration-brushed-concrete-driveway-charcoal.jpg",
+    publishedAt: "2026-10-10",
+    intro: `A charcoal concrete driveway is plain concrete with dark grey integral color mixed in. As of ${CURRENT_YEAR}, plain concrete runs ${sqft("plain-concrete")} per sq ft installed, or ${total("plain-concrete", 500)} for a 500 sq ft driveway, before pigment. Charcoal reads nearly black from the street, needs far less pigment than a saturated black, and shows dust and efflorescence less.`,
+    sections: [
+      {
+        heading: "Charcoal or Black: Which Shade Fits Your Driveway?",
+        body: `<p>Charcoal and true black come from the same pigments at different doses. The difference shows up in three places: surface heat, how the color ages, and how much everyday dirt you see.</p>
+<table>
+<tr><th>Factor</th><th>Charcoal grey</th><th>True black</th></tr>
+<tr><td>Pigment needed</td><td>Low to mid loading (about 1–2% of cement weight)</td><td>High loading (about 4% and up, near the ~7% saturation point)</td></tr>
+<tr><td>Surface heat</td><td>Hot, but reflects more sunlight than black</td><td>Hottest; closest to asphalt</td></tr>
+<tr><td>Fade behavior</td><td>Changes are less visible against a mid-dark base</td><td>Any lightening, wear or lime bloom stands out</td></tr>
+<tr><td>Dirt and dust</td><td>Hides dust, sand and light tire marks</td><td>Shows pale dust, salt residue and efflorescence</td></tr>
+</table>
+<p>Loadings follow the Solomon Colors card, which shows its 920 black pigment at 1% (Slate), 2% (Smoke) and 4% (Onyx) of cement weight, with 7% as the saturation point (${cite(SRC.solomonCard, "Solomon Colors integral color card")}). On heat, new grey concrete reflects 30–50% of sunlight and new asphalt about 5% (${cite(SRC.lbnl, "LBNL Heat Island Group")}). LBNL researchers estimated that every 10 percent increase in solar reflectance lowers surface temperature by about 7°F (${cite(SRC.epa, "EPA Cool Pavements Compendium")}). Charcoal sits between grey and black on that scale, so it runs cooler than black but warmer than plain grey. On dirt, LANXESS notes that white lime deposits are more noticeable on colored concrete than on grey (${cite(SRC.lanxess, "LANXESS")}), and the darker the slab, the stronger that contrast. If you want true black rather than charcoal, our <a href="/blog/driveway/black-concrete-driveway">black concrete driveway guide</a> covers that look, its cost and its upkeep in full.</p>`,
+        inspirationSlugs: ["brushed-concrete-driveway-charcoal", "modern-black-concrete-driveway"],
+      },
+      {
+        heading: "Charcoal Grey Integral Color Shades and Dosage",
+        body: `<p>Integral color is sold by shade name, but what you are really choosing is a pigment and a dose. The Solomon Colors card is a useful reference because it shows the same pigment at three loadings:</p>
+<table>
+<tr><th>Shade (Solomon card)</th><th>Pigment</th><th>Loading</th><th>Bags (25 lb)</th><th>Reads as</th></tr>
+<tr><td>920 Slate</td><td>920 black</td><td>1%</td><td>1 per 4 yd</td><td>Mid grey</td></tr>
+<tr><td>920 Smoke</td><td>920 black</td><td>2%</td><td>1 per 2 yd</td><td>Charcoal grey</td></tr>
+<tr><td>920 Onyx</td><td>920 black</td><td>4%</td><td>1 per 1 yd</td><td>Near black</td></tr>
+<tr><td>908 Lunar Eclipse / Asphalt / Ultra Black</td><td>908 carbon black</td><td>Lower doses</td><td>1 per 4, 3 or 2 yd</td><td>Charcoal to black</td></tr>
+</table>
+<p>Two caveats from the same card matter for a driveway. The chips show unsealed concrete made with medium grey cement, and a sealer may darken the color, so the finished driveway will usually read darker than the chip. The 908 carbon black can reduce the entrained air in the mix, which matters where driveways freeze, and Solomon recommends sealing carbon-black concrete because the carbon tends to dissipate over time (${cite(SRC.solomonCard, "Solomon Colors")}). Carbon black has two to five times the tinting strength of iron oxide black but can weather out of exterior concrete (${cite(SRC.concreteDecor, "Concrete Decor")}). For a low-maintenance charcoal, ask for an iron oxide black at a stated dose and a test panel. To see charcoal next to trim and siding colors, browse the <a href="/palette/charcoal-driveway">charcoal driveway palette</a>.</p>`,
+      },
+      {
+        heading: "How Charcoal Reads on Broom, Exposed Aggregate and Smooth Finishes",
+        body: `<p>The same charcoal mix looks different depending on the finish. Texture changes how light hits the surface, and some finishes put aggregate, not paste, on top.</p>
+<table>
+<tr><th>Finish</th><th>How charcoal reads</th><th>Traction</th><th>Best use</th></tr>
+<tr><td>Light broom</td><td>Even mid-dark grey; the fine grooves soften the tone</td><td>Good</td><td>Most driveways, slopes, freeze-thaw areas</td></tr>
+<tr><td>Exposed aggregate</td><td>Charcoal paste behind visible stone; the stone color takes over</td><td>Very good</td><td>Busy driveways where dirt hiding matters</td></tr>
+<tr><td>Smooth / troweled</td><td>Deepest, most uniform charcoal</td><td>Lowest; slick when wet</td><td>Flat, dry-climate sites only</td></tr>
+</table>
+<p>LANXESS explains why exposed aggregate shifts: once the surface paste is removed or weathers away, the aggregate particles contribute more to the overall color (${cite(SRC.lanxess, "LANXESS")}). Pick a dark basalt or grey stone if you want the driveway to stay charcoal; a tan pea gravel pulls it warm. The same document notes that a higher water-cement ratio makes concrete look lighter, so a wet, sloppy pour can produce a washed-out charcoal. Solomon's card asks for a 4-inch slump and the same mix design, plant and materials for the whole job to keep color consistent (${cite(SRC.solomonCard, "Solomon Colors")}).</p>`,
+        inspirationSlugs: ["brushed-concrete-driveway-charcoal", "exposed-aggregate-driveway-grey", "exposed-aggregate-walkway-charcoal", "charcoal-broom-finish-walkway"],
+      },
+      {
+        heading: "Charcoal Concrete Driveway Cost: Plain, Exposed and Stamped",
+        body: `<p>Charcoal is a color, not a finish, so cost depends on the finish underneath. National installed ranges per sq ft (see our <a href="/methodology">methodology</a>) for patio and walkway work, before pigment:</p>
+<table>
+<tr><th>Finish</th><th>Installed per sq ft</th><th>300 sq ft single-car</th><th>500 sq ft two-car</th></tr>
+<tr><td>Plain concrete (broom or smooth)</td><td>${sqft("plain-concrete")}</td><td>${total("plain-concrete", 300)}</td><td>${total("plain-concrete", 500)}</td></tr>
+<tr><td>Exposed aggregate</td><td>${sqft("exposed-aggregate")}</td><td>${total("exposed-aggregate", 300)}</td><td>${total("exposed-aggregate", 500)}</td></tr>
+<tr><td>Stamped concrete</td><td>${sqft("stamped-concrete")}</td><td>${total("stamped-concrete", 300)}</td><td>${total("stamped-concrete", 500)}</td></tr>
+</table>
+<p>Add the pigment on top. Integral color is priced per bag and dosed per cubic yard, so a charcoal at a 2% loading uses half the pigment of the same color at 4% (${cite(SRC.solomonCard, "Solomon Colors")}); ask your contractor to quote color as a separate line. Driveway slabs are often thicker than patio slabs, which pushes costs toward the upper end of each range. Run your own dimensions in the <a href="/tools/patio-cost-calculator">patio cost calculator</a>, or compare a dark paver driveway in the <a href="/tools/paver-driveway-cost-calculator">paver driveway cost calculator</a>.</p>`,
+      },
+      {
+        heading: "House Styles That Pair With a Charcoal Driveway",
+        body: `<p>Charcoal is easier to pair than true black because it does not fight with grey roofs or dark window frames.</p>
+<table>
+<tr><th>House style</th><th>Charcoal approach</th><th>Why it works</th></tr>
+<tr><td>Modern / contemporary</td><td>Smooth-edged broom slab with saw-cut grid</td><td>Matches flat planes and black window frames</td></tr>
+<tr><td>Modern farmhouse</td><td>Charcoal broom with a lighter border band</td><td>Echoes white siding and black trim without going stark</td></tr>
+<tr><td>Craftsman / traditional</td><td>Charcoal exposed aggregate or ashlar stamp</td><td>Texture keeps it from feeling too minimal</td></tr>
+<tr><td>Mid-century ranch</td><td>Charcoal with wide scored panels</td><td>Low, horizontal lines suit the roofline</td></tr>
+<tr><td>Dark-sided homes</td><td>Lighter charcoal (low loading)</td><td>Keeps some contrast between house and driveway</td></tr>
+</table>
+<p>For more pairings, see the <a href="/palette/charcoal-driveway">charcoal driveway palette</a> and our <a href="/blog/driveway/modern-driveway-ideas">modern driveway ideas</a>.</p>`,
+        inspirationSlugs: ["modern-black-concrete-driveway", "modern-driveway-concrete-farmhouse", "dark-concrete-home-exterior"],
+      },
+      {
+        heading: "Charcoal Driveway Maintenance and Sealing",
+        body: `<p>A charcoal driveway needs the same care as any concrete driveway, with extra attention to the sealer, because the sealer controls how deep the color looks.</p>
+<ul>
+<li><strong>Seal after finishing.</strong> The Wisconsin Ready Mixed Concrete Association says a surface sealer should be applied after finishing (${cite(SRC.wrmca, "WRMCA")}).</li>
+<li><strong>Skip deicers the first winter.</strong> WRMCA calls deicers one of the most damaging things for new concrete, especially the first winter, and says never to use ammonium sulfate or ammonium nitrate products. Use plain sand for traction.</li>
+<li><strong>Reseal when wear shows.</strong> Butterfield warns that car traffic and deicing salts wear sealer faster, and that sealer buildup can cause delamination (${cite(SRC.butterfieldGuide, "Butterfield Color")}).</li>
+<li><strong>Keep carbon black sealed.</strong> If your mix used carbon black, keep up a sealer program to slow the pigment working its way out (${cite(SRC.solomonCard, "Solomon Colors")}).</li>
+<li><strong>Wash off lime bloom early.</strong> Efflorescence is usually temporary and weathers away, but it shows more on colored concrete (${cite(SRC.lanxess, "LANXESS")}).</li>
+</ul>`,
+      },
+      {
+        heading: "Making an Existing Grey Driveway Charcoal",
+        body: `<p>Integral color only works on a new pour. For an existing slab, the options are a penetrating stain, a tinted sealer, or an overlay. A tinted sealer is the fastest route: Solomon notes that grey concrete can be colored just by adding a tinted sealer, and that most decorative acrylic sealers last two to three years (${cite(SRC.solomonTint, "Solomon Colors")}). On driveways, wear patterns appear sooner, so plan on more frequent recoats and a clear topcoat (${cite(SRC.cnTinted, "Concrete Network")}). If the slab is worn or cracked, a <a href="/blog/driveway/driveway-resurfacing">resurfacing overlay</a> lets you add charcoal and a new texture in one step. For the full comparison of integral color, stain and tinted sealer, see the <a href="/blog/driveway/black-concrete-driveway">black concrete driveway guide</a>.</p>`,
+      },
+      {
+        heading: "Charcoal Driveway Ordering Checklist",
+        body: `<ul>
+<li>Name the pigment type (iron oxide or carbon black) and the dose as a percentage of cement weight in the quote.</li>
+<li>Ask for a test panel with the actual finish and sealer; sealer usually darkens the color.</li>
+<li>Use one ready-mix plant and one mix design for the whole driveway, and pour aprons with the same batch where possible.</li>
+<li>Choose broom or exposed aggregate on any slope; keep smooth troweling for flat, dry sites.</li>
+<li>Specify the sealer and the first-winter plan (sand, no deicers) before the pour.</li>
+</ul>
+<p>Want pattern as well as color? See our <a href="/blog/driveway/black-stamped-concrete">black stamped concrete guide</a>.</p>`,
+      },
+    ],
+    relatedSlugs: ["black-concrete-driveway", "black-stamped-concrete", "concrete-driveway-color-guide", "modern-driveway-ideas"],
+    relatedMaterials: ["colored-concrete", "broom-finish", "exposed-aggregate"],
+    relatedTools: ["paver-driveway-cost-calculator", "patio-cost-calculator"],
+    faqs: [
+      {
+        question: "Is charcoal or black better for a concrete driveway?",
+        answer: "According to PourCanvas, charcoal is the better choice for most driveways: at about a 2% pigment loading it uses half the pigment of a 4% near-black, runs cooler in sun, and hides dust and lime bloom better. True black suits shaded or cool-climate sites where the owner will keep it sealed.",
+      },
+      {
+        question: "How much does a charcoal concrete driveway cost?",
+        answer: `According to PourCanvas, plain concrete runs ${sqft("plain-concrete")} per sq ft installed, or ${total("plain-concrete", 500)} for a 500 sq ft two-car driveway, before the pigment. Exposed aggregate runs ${sqft("exposed-aggregate")} and stamped concrete ${sqft("stamped-concrete")} per sq ft.`,
+      },
+      {
+        question: "What is the difference between charcoal and dark grey concrete?",
+        answer: "Mostly the pigment dose. On the Solomon Colors card, the same black pigment reads mid grey at 1%, charcoal at 2% and near black at 4% of cement weight. Sealer and finish then shift the shade, so judge on a sealed test panel.",
+      },
+      {
+        question: "Does charcoal concrete fade?",
+        answer: "Iron oxide pigments are UV-stable, so the color itself holds. What changes is the surface: sealer wears, the top paste weathers and exposes aggregate, and efflorescence can leave a pale bloom. Carbon black pigments can also weather out if left unsealed.",
+      },
+      {
+        question: "Which finish makes a charcoal driveway look darkest?",
+        answer: "A smooth troweled finish looks darkest and most uniform but is slick when wet. Light broom is the practical choice for most driveways. Exposed aggregate lets the stone color dominate, so choose dark stone if you want it to stay charcoal.",
+      },
+      {
+        question: "Can I make my existing grey driveway charcoal?",
+        answer: "Yes, with a tinted sealer, a penetrating stain or an overlay. Tinted sealers are fastest but wear sooner on driveways, and most decorative acrylic sealers last two to three years. An overlay adds color and texture to a worn slab.",
+      },
+    ],
+  },
+  {
+    slug: "black-stamped-concrete",
+    pillar: "driveway",
+    title: "Black Stamped Concrete: Colors, Patterns and Cost",
+    headline: "Black Stamped Concrete for Driveways and Patios: Colors, Patterns and Cost",
+    metaDescription: `Black stamped concrete costs ${sqft("stamped-concrete")}/sq ft installed. See 8 base and release color pairings, the patterns that read best dark, and heat and sealer caveats.`,
+    targetKeywords: ["black stamped concrete", "black stamped concrete driveway", "black stamped concrete patio", "charcoal stamped concrete", "dark stamped concrete"],
+    ogImage: "https://images.pourcanvas.com/inspiration-stamped-concrete-driveway-ashlar-slate.jpg",
+    publishedAt: "2026-10-10",
+    intro: `Black stamped concrete is a dark base color pressed with a stone or slate pattern, usually with a dark release powder in the joints. As of ${CURRENT_YEAR}, stamped concrete runs ${sqft("stamped-concrete")} per sq ft installed, or ${total("stamped-concrete", 300)} for a 300 sq ft patio. Most "black" stamped work is really charcoal, because a dark release over a lighter base shows the pattern.`,
+    sections: [
+      {
+        heading: "How Stamped Concrete Gets a Black or Charcoal Look",
+        body: `<p>Stamped concrete gets its color in two layers. The base color goes into or onto the slab, either as integral color mixed into the concrete or as a color hardener worked into the surface. The release is a powder dusted on just before stamping. It stops the stamp from sticking and, after washing, leaves a second color in the texture (${cite(SRC.butterfieldRelease, "Butterfield Color")}). Brickform describes its Antique Release as a hydrophobic powder that adds color while acting as a bond breaker (${cite(SRC.brickformRelease, "Brickform")}).</p>
+<p>That two-layer system is why pure black is rare. Butterfield's pattern guide advises that "darker release agents over lighter base colors work best" (${cite(SRC.butterfieldGuide, "Butterfield pattern guide")}). A black base with a black release gives you a flat, dark slab where the pattern is hard to read. A grey or slate base with a deep charcoal release reads as black from a distance and still shows the stone. Brickform lists Carbon Black integral color, Dark Gray color hardener, and Dark Gray and Black release as its charcoal-and-black options. It notes these darker shades work well as accents or borders (${cite(SRC.brickformBlog, "Brickform")}).</p>`,
+        inspirationSlugs: ["stamped-concrete-driveway-ashlar-slate", "ashlar-slate-patio-charcoal"],
+      },
+      {
+        heading: "Base and Release Color Pairings for Black Stamped Concrete",
+        body: `<p>These pairings come straight from manufacturer pattern guides. Codes are Butterfield integral (U), hardener (P) and release (R) colors, and Brickform products.</p>
+<table>
+<tr><th>Pattern</th><th>Base color</th><th>Release color</th><th>Result</th><th>Source</th></tr>
+<tr><td>3' x 3' Slate</td><td>U18 Gull Gray</td><td>R13 Deep Charcoal</td><td>Light grey stone, near-black joints</td><td>Butterfield</td></tr>
+<tr><td>18" x 36" Bluestone</td><td>P28 Slate Gray</td><td>R13 Deep Charcoal</td><td>Dark blue-grey, charcoal texture</td><td>Butterfield</td></tr>
+<tr><td>Verona Cobblestone</td><td>U13 Millstone</td><td>R13 Deep Charcoal</td><td>Grey cobbles, dark joints</td><td>Butterfield</td></tr>
+<tr><td>Granite Herringbone</td><td>U13 Millstone</td><td>R13 Deep Charcoal</td><td>Grey stone, dark joints</td><td>Butterfield</td></tr>
+<tr><td>Majestic Ashlar</td><td>U35 Shadow Slate</td><td>R28 Slate Gray</td><td>Dark slate overall</td><td>Butterfield</td></tr>
+<tr><td>Ashlar Slate</td><td>U14 Pewter</td><td>R12 Storm Gray</td><td>Mid-dark grey slate</td><td>Butterfield</td></tr>
+<tr><td>Bluestone texture</td><td>Slate integral color</td><td>Dark Gray Antique Release</td><td>Dark blue-grey slate</td><td>Brickform</td></tr>
+<tr><td>Any pattern, darkest option</td><td>Carbon Black integral color</td><td>Black or Dark Gray release</td><td>Near-solid black</td><td>Brickform</td></tr>
+</table>
+<p>Sources: ${cite(SRC.butterfieldGuide, "Butterfield pattern selection guide")}, ${cite(SRC.brickformBlog, "Brickform color combinations")}. Butterfield's dark releases include Deep Charcoal, Storm Gray, Slate Gray, Smoke and Cape Cod Gray, and it warns not to choose colors from a computer screen (${cite(SRC.butterfieldRelease, "Butterfield Color")}). Ask your contractor for a sample panel. If you go with the Carbon Black integral, read the fading caveat below first.</p>`,
+      },
+      {
+        heading: "Stamped Patterns That Look Best in Black",
+        body: `<p>Dark colors flatten detail, so patterns with deep, irregular texture and clear joints hold up best in black or charcoal.</p>
+<table>
+<tr><th>Pattern</th><th>How it reads dark</th><th>Best for</th></tr>
+<tr><td>Ashlar slate</td><td>Rectangles of varied size; the slate skin catches the release</td><td>Driveways and patios, modern to transitional</td></tr>
+<tr><td>Slate texture (seamless)</td><td>No joints, just stone texture; very calm in charcoal</td><td>Modern patios, pool surrounds in mild climates</td></tr>
+<tr><td>Cobblestone</td><td>Deep joints carry the dark release; reads as old-world stone</td><td>Traditional driveways, courtyards</td></tr>
+<tr><td>Bluestone / large slab</td><td>Big units, clean lines; strong with charcoal joints</td><td>Contemporary driveways and patios</td></tr>
+<tr><td>Wood plank</td><td>Grain is lost in solid black; works in charcoal with lighter base</td><td>Patios and decks only</td></tr>
+</table>
+<p>For every pattern and its cost, see our <a href="/blog/patio/stamped-concrete-patterns">stamped concrete patterns guide</a> and the <a href="/materials/stamped-concrete">stamped concrete material page</a>.</p>`,
+        inspirationSlugs: ["stamped-concrete-driveway-ashlar-slate", "ashlar-slate-patio-charcoal", "stamped-concrete-driveway-cobblestone", "cobblestone-stamped-patio"],
+      },
+      {
+        heading: "Black Stamped Concrete Driveway vs Patio",
+        body: `<p>The same color behaves differently under cars and under bare feet.</p>
+<table>
+<tr><th>Factor</th><th>Driveway</th><th>Patio</th></tr>
+<tr><td>Main wear</td><td>Hot and turning tires, deicing salts</td><td>Foot traffic, furniture, sun</td></tr>
+<tr><td>Sealer stress</td><td>High; hot tires can damage sealer</td><td>Moderate</td></tr>
+<tr><td>Heat concern</td><td>Minor (vehicles)</td><td>Major (bare feet, pets)</td></tr>
+<tr><td>Best pattern</td><td>Ashlar slate, cobblestone, bluestone</td><td>Ashlar slate, slate texture</td></tr>
+<tr><td>Best shade</td><td>Charcoal with dark release</td><td>Lighter base with charcoal release</td></tr>
+</table>
+<p>Butterfield notes that hot car tires, or turning tires while a car is standing, may damage the sealer, and that surfaces exposed to car traffic or deicing salts wear faster (${cite(SRC.butterfieldGuide, "Butterfield Color")}). On a patio, heat matters more: Brickform notes that white stamped concrete stays cooler than dark colors because it reflects heat (${cite(SRC.brickformBlog, "Brickform")}). For a driveway built around a solid dark slab instead of a pattern, see our <a href="/blog/driveway/black-concrete-driveway">black concrete driveway guide</a> and <a href="/blog/driveway/stamped-concrete-driveway">stamped concrete driveway ideas</a>.</p>`,
+        inspirationSlugs: ["stamped-concrete-driveway-ashlar-slate", "ashlar-slate-patio-charcoal"],
+      },
+      {
+        heading: "Heat and Fade Caveats for Black Stamped Concrete",
+        body: `<p><strong>Heat.</strong> The EPA reports that conventional concrete and asphalt can reach peak summer surface temperatures of 120–150°F. LBNL researchers estimated that every 10 percent increase in solar reflectance lowers surface temperature by about 7°F (${cite(SRC.epa, "EPA Cool Pavements Compendium")}). New grey concrete reflects 30–50% of sunlight and new asphalt about 5% (${cite(SRC.lbnl, "LBNL Heat Island Group")}). A black stamped patio moves toward the asphalt end of that scale. In hot climates, keep black stamping to driveways or shaded areas, or use a lighter base with a charcoal release.</p>
+<p><strong>Fade.</strong> The pigment decides how the color ages. LANXESS calls its iron oxides weather- and light-stable, and found that carbon-black paving stones faded in a maritime climate while iron-oxide-black ones did not (${cite(SRC.lanxess, "LANXESS")}). Carbon black can leach out of exterior concrete (${cite(SRC.concreteDecor, "Concrete Decor")}), and Solomon recommends keeping carbon-black concrete sealed (${cite(SRC.solomonCard, "Solomon Colors")}). Release color is more forgiving: Butterfield says its Perma-Cast release color is permanently embedded in the textured surface (${cite(SRC.butterfieldRelease, "Butterfield Color")}).</p>`,
+      },
+      {
+        heading: "Sealer for Black Stamped Concrete",
+        body: `<p>Sealer is what makes black stamped concrete look black. Solomon's color card notes that its chips show unsealed concrete and that a sealer may darken the color (${cite(SRC.solomonCard, "Solomon Colors")}). Most decorative acrylic sealers last two to three years, less with heavy traffic and harsh weather (${cite(SRC.solomonTint, "Solomon Colors")}). Butterfield advises that stamped concrete usually does not need sealing every year, and that sealer buildup can cause delamination, so plan re-sealing with your contractor (${cite(SRC.butterfieldGuide, "Butterfield Color")}). On a driveway, ask for a sealer rated for vehicle traffic. Wash the surface with a mild detergent between coats, not solvent or acid cleaners. In freeze-thaw areas, avoid deicers the first winter and never use ammonium-based products (${cite(SRC.wrmca, "WRMCA")}). Our <a href="/blog/patio/concrete-patio-sealing">concrete patio sealing guide</a> covers products and timing.</p>`,
+      },
+      {
+        heading: "Black Stamped Concrete Cost",
+        body: `<p>Black and charcoal stamped work is priced like any stamped concrete; the dark color affects pigment, not labor. National installed ranges per sq ft (see our <a href="/methodology">methodology</a>):</p>
+<table>
+<tr><th>Surface</th><th>Per sq ft</th><th>300 sq ft patio</th><th>500 sq ft driveway</th></tr>
+<tr><td>Stamped concrete</td><td>${sqft("stamped-concrete")}</td><td>${total("stamped-concrete", 300)}</td><td>${total("stamped-concrete", 500)}</td></tr>
+<tr><td>Exposed aggregate</td><td>${sqft("exposed-aggregate")}</td><td>${total("exposed-aggregate", 300)}</td><td>${total("exposed-aggregate", 500)}</td></tr>
+<tr><td>Plain concrete</td><td>${sqft("plain-concrete")}</td><td>${total("plain-concrete", 300)}</td><td>${total("plain-concrete", 500)}</td></tr>
+</table>
+<p>Integral black pigment is dosed per cubic yard, so a near-black mix costs more in color than a charcoal (${cite(SRC.solomonCard, "Solomon Colors")}). Patterns with deep texture and multiple release colors take more labor and land toward the top of the stamped range. Compare stamped against pavers and plain concrete for your exact size in the <a href="/tools/patio-cost-calculator">patio cost calculator</a>, and see <a href="/blog/driveway/stamped-concrete-driveway-cost">stamped concrete driveway cost</a> for driveway-specific factors.</p>`,
+      },
+      {
+        heading: "Before You Order: Test Panel and Spec",
+        body: `<ul>
+<li>Pick colors from a physical sample, not a screen; Butterfield says its color charts are not for choosing colors as they appear on a computer display.</li>
+<li>Specify base color type (integral or hardener), pigment (iron oxide or carbon black), release color and sealer in writing.</li>
+<li>Pour a sealed test panel with the actual stamp and release.</li>
+<li>On hot, sunny patios, choose a lighter base with a charcoal release over a full black base.</li>
+<li>On driveways, plan the sealer for vehicle traffic and the first-winter plan before the pour.</li>
+</ul>
+<p>Prefer a smooth dark slab with no pattern? See the <a href="/blog/driveway/charcoal-concrete-driveway">charcoal concrete driveway guide</a>.</p>`,
+      },
+    ],
+    relatedSlugs: ["black-concrete-driveway", "charcoal-concrete-driveway", "stamped-concrete-driveway", "stamped-concrete-patterns", "stamped-concrete-driveway-cost"],
+    relatedMaterials: ["stamped-concrete", "colored-concrete"],
+    relatedTools: ["patio-cost-calculator", "paver-driveway-cost-calculator"],
+    faqs: [
+      {
+        question: "What colors make stamped concrete look black?",
+        answer: "According to PourCanvas, the most reliable black look is a grey or slate base with a deep charcoal release, such as Butterfield's Gull Gray or Slate Gray base with R13 Deep Charcoal. A full Carbon Black integral with a black release gives near-solid black but hides the pattern.",
+      },
+      {
+        question: "How much does black stamped concrete cost?",
+        answer: `According to PourCanvas, stamped concrete runs ${sqft("stamped-concrete")} per sq ft installed: ${total("stamped-concrete", 300)} for a 300 sq ft patio or ${total("stamped-concrete", 500)} for a 500 sq ft driveway. The dark color adds pigment cost, not labor.`,
+      },
+      {
+        question: "Is black stamped concrete too hot for a patio?",
+        answer: "It can be in full sun. The EPA reports conventional pavements reach 120–150°F at peak, and darker surfaces reflect less sunlight. Brickform notes that white stamped concrete stays cooler than dark colors. For sunny patios, use a lighter base with a charcoal release.",
+      },
+      {
+        question: "Does black stamped concrete fade?",
+        answer: "Iron oxide black pigments are weather- and light-stable, so fading mostly comes from worn sealer. Carbon black can leach out of exterior concrete unless it stays sealed. Release colors such as Butterfield's Perma-Cast are embedded in the texture.",
+      },
+      {
+        question: "What stamped pattern looks best in black?",
+        answer: "Ashlar slate, slate texture, cobblestone and large bluestone hold up best, because their deep texture and joints carry a dark release. Fine patterns like wood plank lose their detail in solid black.",
+      },
+      {
+        question: "How often should black stamped concrete be sealed?",
+        answer: "Reseal when wear shows. Most decorative acrylic sealers last two to three years, less on driveways with hot tires and deicing salts. Butterfield advises against sealing every year, because sealer buildup can cause delamination.",
+      },
+    ],
   },
 ];

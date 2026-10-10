@@ -32,6 +32,8 @@ interface SeoHeadProps {
   galleryImages?: GalleryImage[];
   /** Emits an ImageGallery / ImageObject JSON-LD block — for image-led pages (inspiration, materials). */
   imageGallery?: SeoImage[];
+  /** Extra JSON-LD objects (e.g. SoftwareApplication on tool pages). */
+  jsonLd?: object[];
 }
 
 const absolutize = (url: string) => (url.startsWith("http") ? url : `${SITE_URL}${url}`);
@@ -64,6 +66,7 @@ export const SeoHead = ({
   breadcrumbs,
   galleryImages,
   imageGallery,
+  jsonLd,
 }: SeoHeadProps) => {
   const absoluteImage = ogImage
     ? (ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`)
@@ -161,6 +164,9 @@ export const SeoHead = ({
       {imageGallerySchema && (
         <script type="application/ld+json">{imageGallerySchema}</script>
       )}
+      {jsonLd?.map((obj, i) => (
+        <script key={i} type="application/ld+json">{JSON.stringify(obj)}</script>
+      ))}
     </Helmet>
   );
 };

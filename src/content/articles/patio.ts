@@ -1,4 +1,14 @@
 import type { Article } from "../types";
+import { CURRENT_YEAR } from "@/lib/year";
+import { moneyRange, perSqftRange } from "@/lib/format";
+import { INSTALLED, REMOVAL_PER_SQFT } from "@/lib/tools/data/paving";
+import { scoreMatrix } from "@/lib/tools/finishTables";
+
+const pavers = perSqftRange(INSTALLED["concrete-paver"]);
+const plain = perSqftRange(INSTALLED["plain-concrete"]);
+const removal = perSqftRange(REMOVAL_PER_SQFT.concrete);
+const paversAt = (area: number) => moneyRange({ low: INSTALLED["concrete-paver"].low * area, typical: INSTALLED["concrete-paver"].typical * area, high: INSTALLED["concrete-paver"].high * area });
+const paverTypeHigh = Math.max(INSTALLED["clay-brick"].high, INSTALLED.travertine.high, INSTALLED.porcelain.high);
 
 export const patioArticles: Article[] = [
   {
@@ -21,7 +31,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Herringbone Brick",
-        body: "Classic herringbone brick stamping gives a traditional red-brick feel at roughly half the cost of real pavers ($15–30/sq ft for actual pavers vs. $12–18 for stamped). The interlocking diagonal layout also holds up better over time since there are no gaps for weeds or frost heave. A warm buff or sandstone color wash suits craftsman and colonial homes best.",
+        body: `Classic herringbone brick stamping gives a traditional red-brick feel for less than real brick pavers (${perSqftRange(INSTALLED["clay-brick"])}/sq ft for clay brick pavers vs. $12–18 for stamped). The interlocking diagonal layout also holds up better over time since there are no gaps for weeds or frost heave. A warm buff or sandstone color wash suits craftsman and colonial homes best.`,
         inspirationSlugs: ["herringbone-brick-patio", "herringbone-brick-patio-colonial"],
       },
       {
@@ -114,11 +124,11 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Demo of an Existing Patio",
-        body: "Removing an existing concrete patio adds $1–3 per sq ft — $300–900 for a 300 sq ft slab. Asphalt or paver removal costs roughly the same. Disposal fees vary by market but are usually included in demo quotes. If the existing slab is in structurally sound condition, a concrete overlay ($3–7/sq ft) may be an alternative to full demo — it saves disposal cost and demolition labor while giving you a fresh surface.",
+        body: `Removing an existing concrete patio adds ${removal} per sq ft — ${moneyRange({ low: REMOVAL_PER_SQFT.concrete.low * 300, typical: REMOVAL_PER_SQFT.concrete.typical * 300, high: REMOVAL_PER_SQFT.concrete.high * 300 })} for a 300 sq ft slab. Asphalt or paver removal costs roughly the same. Disposal fees vary by market but are usually included in demo quotes. If the existing slab is in structurally sound condition, a concrete overlay ($3–7/sq ft) may be an alternative to full demo — it saves disposal cost and demolition labor while giving you a fresh surface.`,
       },
       {
         heading: "Concrete Patio Cost vs. Pavers vs. Natural Stone",
-        body: "Poured concrete patios ($6–18/sq ft) consistently undercut paver patios ($15–30/sq ft) and natural stone ($25–50/sq ft). On a 400 sq ft patio, concrete saves $3,600–12,800 versus stone — with much of the same visual result at normal viewing distance. The trade-off is repairability: a cracked concrete slab is difficult to patch invisibly, while a cracked paver can be lifted and replaced. In freeze-thaw climates where cracking is more likely, pavers' repairability can justify the premium. In mild climates, concrete's cost advantage is harder to argue against. For front walkways, the same cost comparison holds — stamped concrete walkways run half the per-linear-foot cost of comparable stone options.",
+        body: `Poured concrete patios ($6–18/sq ft) generally undercut paver patios (${pavers}/sq ft for concrete pavers) and natural stone ($25–50/sq ft). On a 400 sq ft patio, concrete saves $3,600–12,800 versus stone — with much of the same visual result at normal viewing distance. The trade-off is repairability: a cracked concrete slab is difficult to patch invisibly, while a cracked paver can be lifted and replaced. In freeze-thaw climates where cracking is more likely, pavers' repairability can justify the premium. In mild climates, concrete's cost advantage is harder to argue against. For front walkways, the same cost comparison holds — stamped concrete walkways run half the per-linear-foot cost of comparable stone options.`,
       },
       {
         heading: "Seasonal Cost Variation",
@@ -157,15 +167,15 @@ export const patioArticles: Article[] = [
   {
     slug: "patio-color-ideas",
     pillar: "patio",
-    title: "Best Concrete Patio Colors for 2026",
+    title: `Best Concrete Patio Colors for ${CURRENT_YEAR}`,
     headline: "The Best Concrete Patio Colors (With Real Examples)",
     metaDescription:
-      "Concrete patio colors in 2026: charcoal grey leads, but sandstone, terracotta, and slate blue suit specific climates and home styles. How to choose.",
+      `Concrete patio colors in ${CURRENT_YEAR}: charcoal grey leads, but sandstone, terracotta, and slate blue suit specific climates and home styles. How to choose.`,
     targetKeywords: ["concrete patio colors", "colored concrete", "patio stain colors"],
     ogImage: "https://images.pourcanvas.com/patio-color-ideas.jpg",
     publishedAt: "2026-03-31",
     intro:
-      "Charcoal gray is the most searched concrete patio color right now — and it costs the same as any other integral color, typically $2–4 per sq ft over plain concrete. But color choice isn't just aesthetic: lighter shades reflect heat (better for hot climates), darker shades hide staining, and some pigments fade faster than others. Here's what's working in 2026 and what to watch out for with each option. Similar decisions apply if you're also coloring a driveway or front walkway.",
+      `Charcoal gray is the most searched concrete patio color right now — and it costs the same as any other integral color, typically $2–4 per sq ft over plain concrete. But color choice isn't just aesthetic: lighter shades reflect heat (better for hot climates), darker shades hide staining, and some pigments fade faster than others. Here's what's working in ${CURRENT_YEAR} and what to watch out for with each option. Similar decisions apply if you're also coloring a driveway or front walkway.`,
     sections: [
       {
         heading: "Charcoal Gray: Why It Dominates",
@@ -231,20 +241,27 @@ export const patioArticles: Article[] = [
   },
   {
     slug: "concrete-patio-vs-pavers",
+    toolWidget: {
+      tool: "patio-cost-calculator",
+      variant: "compare",
+      heading: "Price your patio both ways",
+      compareMaterials: ["concrete-paver", "plain-concrete"],
+    },
+    relatedTools: ["patio-cost-calculator", "paver-patio-cost-calculator", "paver-installation-cost-calculator", "paver-base-calculator"],
     pillar: "patio",
     title: "Concrete Patio vs Pavers: Which Wins in 2026?",
     headline: "Concrete Patio vs Pavers: An Honest Comparison",
     metaDescription:
-      "Concrete patio vs pavers: concrete costs $6–18/sq ft, pavers run $15–30. Straight comparison so you can make the right call for your backyard.",
+      `Concrete patio vs pavers: plain concrete costs ${plain}/sq ft installed, concrete pavers ${pavers}. A straight comparison to help you choose for your backyard.`,
     targetKeywords: ["concrete patio vs pavers", "patio materials comparison", "pavers cost"],
     ogImage: "https://images.pourcanvas.com/patio-vs-pavers.jpg",
     publishedAt: "2026-03-27",
     intro:
-      "Concrete patios cost $6–18 per sq ft installed. Paver patios run $15–30 per sq ft. On a 400 sq ft patio, that's a difference of $3,600–$4,800 at the low end — before you factor in repairs, maintenance, and longevity. Both materials are legitimate choices. This comparison tells you which is right given your budget, climate, and how much you care about long-term repairability. The same logic applies to concrete vs. paver driveways.",
+      `Concrete patios cost $6–18 per sq ft installed depending on finish (plain ${plain}). Concrete paver patios run ${pavers} per sq ft. On a 400 sq ft patio at typical prices, plain concrete costs about $2,000 less — before you factor in repairs, maintenance, and longevity. Both materials are legitimate choices. This comparison tells you which is right given your budget, climate, and how much you care about long-term repairability. The same logic applies to concrete vs. paver driveways.`,
     sections: [
       {
         heading: "Cost: Concrete Wins",
-        body: "A poured concrete patio runs $6–18 per sq ft installed depending on finish. Paver patios cost $15–30 per sq ft. On a 400 sq ft patio, that's a difference of $3,600–$4,800 at minimum. Concrete's lower cost is the single biggest reason most homeowners choose it.",
+        body: `A poured concrete patio runs $6–18 per sq ft installed depending on finish. Concrete paver patios cost ${pavers} per sq ft. On a 400 sq ft patio at typical prices, plain concrete costs about $2,000 less. Concrete's lower cost is the single biggest reason most homeowners choose it.`,
         inspirationSlugs: ["poured-concrete-patio", "stamped-concrete-patio-grey"],
       },
       {
@@ -296,7 +313,7 @@ export const patioArticles: Article[] = [
     faqs: [
       {
         question: "Is concrete or pavers cheaper for a patio?",
-        answer: "Concrete is significantly cheaper. A poured concrete patio runs $6–18 per sq ft depending on finish; paver patios cost $15–30 per sq ft. On a 400 sq ft patio, that's a minimum difference of $3,600. Concrete's cost advantage holds at every project size.",
+        answer: `Plain concrete is cheaper. A poured concrete patio runs $6–18 per sq ft depending on finish; concrete paver patios cost ${pavers} per sq ft. On a 400 sq ft patio at typical prices, plain concrete costs about $2,000 less. Decorative stamped concrete overlaps with paver pricing.`,
       },
       {
         question: "How long do concrete patios last compared to pavers?",
@@ -310,6 +327,7 @@ export const patioArticles: Article[] = [
   },
   {
     slug: "small-patio-ideas",
+    relatedTools: ["paver-patio-cost-calculator", "paver-calculator"],
     pillar: "patio",
     title: "Small Concrete Patio Ideas That Make Any Yard Feel Bigger",
     headline: "Small Concrete Patio Ideas That Actually Work",
@@ -572,7 +590,7 @@ export const patioArticles: Article[] = [
         body: "Pool decks age differently from patios because of two factors: pool chemical exposure and constant wet-dry cycling. Chlorine and pool algaecides that splash onto the deck surface degrade standard acrylic sealers faster than UV alone — a pool deck sealer typically needs reapplication every 1–2 years versus every 2–3 for a patio sealer. Penetrating silane-siloxane sealers are more resistant to chemical degradation than film-forming acrylics on pool deck surfaces, though they provide less color enhancement. The constant wet-dry cycling (pool use in summer, dry in winter) also creates more thermal movement in the slab than a sheltered patio experiences, which means control joint placement on a pool deck should be at tighter intervals — 8 feet rather than 10–12. Plan for these maintenance differences when budgeting a pool deck project.",
       },
     ],
-    relatedSlugs: ["concrete-patio-cost", "concrete-patio-resurfacing"],
+    relatedSlugs: ["concrete-patio-cost", "concrete-patio-resurfacing", "cool-deck-vs-kool-deck"],
     faqs: [
       {
         question: "What is the best concrete finish for a pool deck?",
@@ -703,19 +721,27 @@ export const patioArticles: Article[] = [
   },
   {
     slug: "best-concrete-finish-pool-deck",
+    toolWidget: {
+      tool: "pool-deck-finish-selector",
+      variant: "finish",
+      heading: "Find the best finish for your pool deck",
+      finishDefaults: { surface: "pool-deck", climate: "hot-sun" },
+    },
+    relatedTools: ["pool-deck-finish-selector", "concrete-finish-selector"],
     pillar: "patio",
-    title: "Best Concrete Finish for Pool Decks: Which One to Choose",
+    title: "Concrete Pool Deck Finishes Compared: Slip, Heat & Cost",
     headline: "Pool Deck Concrete Finish Guide: 5 Options Compared",
     metaDescription:
-      "Best concrete finish for pool decks: exposed aggregate for grip, travertine-stamped for looks, broom finish for budget. 2026 comparison.",
+      "Concrete finishes for pool decks compared: exposed aggregate for grip, light broom or salt for budget, stamped travertine for looks. Slip, heat and cost.",
     targetKeywords: ["best concrete finish for pool deck", "pool deck concrete finish", "concrete pool deck ideas"],
     ogImage: "https://images.pourcanvas.com/patio-best-concrete-finish-pool-deck.jpg",
     publishedAt: "2026-03-30",
+    updatedAt: "2026-10-10",
     intro:
       "The best concrete finish for a pool deck is exposed aggregate or travertine-stamped concrete for most homeowners — both stay cooler than smooth surfaces, provide reliable grip when wet, and hold up well to pool chemicals and sun. Broom finish is the budget choice. Stamped patterns add visual interest. Cool-coat overlays solve heat problems on existing slabs. Here's how each option compares on the five decisions that matter: slip resistance, heat absorption, cost, maintenance, and appearance.",
     sections: [
       {
-        heading: "Broom Finish: The Affordable Baseline ($6–10/sq ft)",
+        heading: `Broom Finish: The Affordable Baseline (${perSqftRange(INSTALLED["plain-concrete"])}/sq ft)`,
         body: "A standard broom finish — parallel grooves drawn across fresh concrete before curing — is the default for most pool decks and for good reason. The texture provides adequate grip when wet, it's the cheapest option at $6–10 per sq ft installed, and it's simple to apply consistently across large areas. The downsides: plain grey broom finish has the highest solar heat absorption of all finish options (smooth grey concrete absorbs heat aggressively on south-facing surfaces), and it's the most visually generic. Adding an integral color pigment ($1–2/sq ft extra) in a light sand or buff tone reduces heat absorption and significantly improves aesthetics without adding complexity. For a 600 sq ft pool deck, a pigmented broom finish runs $4,200–7,200 — the entry-level option that performs well if you choose the right color.",
         inspirationSlugs: ["pool-deck-broom-finish"],
       },
@@ -726,23 +752,27 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Travertine-Look Stamped Concrete: Best Visual Result ($12–18/sq ft)",
-        body: "Travertine-stamped concrete is the premium pool deck choice for homeowners who prioritize aesthetics and want a natural stone look without the cost of actual travertine ($20–40/sq ft). Modern stamping dies replicate travertine's vein texture, slight pitting, and irregular rectangular grid closely enough that the difference is undetectable from normal viewing distance. In a cream or ivory color wash, it's the warmest and most visually sophisticated of the concrete finish options. The key considerations: stamped concrete around a pool must be sealed with a non-slip additive in the sealer (silica sand broadcast into wet sealer coat) — the stamped texture alone is not sufficient grip on a smooth-troweled base. This is a contractor-specified detail that's critical for safety; confirm it before signing any pool deck contract. Total cost with non-slip sealer: $12–18/sq ft.",
+        body: `Travertine-stamped concrete is the premium pool deck choice for homeowners who prioritize aesthetics and want a natural stone look without the cost of actual travertine (${perSqftRange(INSTALLED.travertine)}/sq ft). Modern stamping dies replicate travertine's vein texture, slight pitting, and irregular rectangular grid closely enough that the difference is undetectable from normal viewing distance. In a cream or ivory color wash, it's the warmest and most visually sophisticated of the concrete finish options. The key considerations: stamped concrete around a pool must be sealed with a non-slip additive in the sealer (silica sand broadcast into wet sealer coat) — the stamped texture alone is not sufficient grip on a smooth-troweled base. This is a contractor-specified detail that's critical for safety; confirm it before signing any pool deck contract. Total cost with non-slip sealer: $12–18/sq ft.`,
         inspirationSlugs: ["pool-deck-travertine", "concrete-pool-deck-grey"],
       },
       {
         heading: "Broom Finish vs. Exposed Aggregate: The Practical Decision",
-        body: "For most homeowners choosing between broom finish and exposed aggregate, the decision comes down to three factors: budget, surface heat, and long-term appearance. Broom finish is $4–6/sq ft cheaper installed. Exposed aggregate runs cooler underfoot because the aggregate composition can be selected for heat-scattering properties. And exposed aggregate hides wear better over 10–15 years of pool deck use — the surface variation means small chips, stains, and chemical marks disappear into the texture. Broom finish is the right choice when budget is the constraint and you'll use a light integral color to offset heat. Exposed aggregate is the right choice when you have a medium-to-generous budget and plan to own the home long enough to see the maintenance difference. Both are more practical for pool surrounds than stamped concrete for the same cost. The same tradeoff away from the pool is covered in <a href='/blog/patio/exposed-aggregate-vs-broom-finish'>exposed aggregate vs broom finish</a>.",
+        body: "For most homeowners choosing between broom finish and exposed aggregate, the decision comes down to three factors: budget, surface heat, and long-term appearance. Broom finish is about $2–4/sq ft cheaper installed. Exposed aggregate runs cooler underfoot because the aggregate composition can be selected for heat-scattering properties. And exposed aggregate hides wear better over 10–15 years of pool deck use — the surface variation means small chips, stains, and chemical marks disappear into the texture. Broom finish is the right choice when budget is the constraint and you'll use a light integral color to offset heat. Exposed aggregate is the right choice when you have a medium-to-generous budget and plan to own the home long enough to see the maintenance difference. Both are more practical for pool surrounds than stamped concrete for the same cost. The same tradeoff away from the pool is covered in <a href='/blog/patio/exposed-aggregate-vs-broom-finish'>exposed aggregate vs broom finish</a>.",
       },
       {
-        heading: "Cool-Coat and Deck-Over Overlays: Solving Heat on Existing Slabs ($3–8/sq ft)",
-        body: "If you have an existing concrete pool deck that gets too hot underfoot, cool-coat or elastomeric deck coating overlays are the most cost-effective fix. These polymer-modified overlays apply over existing concrete at $3–8 per sq ft (materials and labor), dramatically reduce surface temperature by using light-reflective pigments, and can be textured for improved grip. A quality deck coating in a light sand or limestone color can reduce surface temperature by 15–25°F compared to a plain grey slab — a meaningful difference for barefoot use in direct sun. They're also the fastest option: application takes 1–2 days versus 5–7 days for a full pour. Limitations: they're a coating, not a structural finish. Existing cracks will eventually telegraph through. A deck with active movement, settlement, or multiple wide cracks needs structural repair before coating, not instead of it. For a structurally sound slab that simply runs hot or looks tired, cool-coat is the right call.",
+        heading: "Cool-Coat and Deck-Over Overlays: Solving Heat on Existing Slabs ($4–8/sq ft)",
+        body: "If you have an existing concrete pool deck that gets too hot underfoot, cool-coat or elastomeric deck coating overlays are the most cost-effective fix. These polymer-modified overlays apply over existing concrete at about $4–8 per sq ft (materials and labor), dramatically reduce surface temperature by using light-reflective pigments, and can be textured for improved grip. A quality deck coating in a light sand or limestone color runs noticeably cooler than a plain grey slab (light, reflective colors run cooler) — a meaningful difference for barefoot use in direct sun. They're also the fastest option: application takes 1–2 days versus 5–7 days for a full pour. Limitations: they're a coating, not a structural finish. Existing cracks will eventually telegraph through. A deck with active movement, settlement, or multiple wide cracks needs structural repair before coating, not instead of it. For a structurally sound slab that simply runs hot or looks tired, cool-coat is the right call.",
       },
       {
         heading: "What Pool Deck Concrete Finish to Choose: Decision Summary",
-        body: "Tightest budget: broom finish with light integral color ($7–12/sq ft total). Best all-around performance: exposed aggregate in a light warm mix ($10–16/sq ft). Best visual result: travertine-stamped concrete with non-slip sealer additive ($12–18/sq ft). Existing slab that runs hot: deck coating overlay ($3–8/sq ft). Avoid plain grey smooth concrete — it's the worst option for heat and grip and only marginally cheaper than better alternatives once you add a sealer. For any new pool deck pour in a climate with significant sun exposure, specify a light aggregate or integral color at the same time: the material cost difference is $1–3/sq ft and the performance difference over a southern summer is substantial. Tools like PourCanvas let you preview how different finishes and colors would look on your pool deck layout before committing — useful when the aggregate mix determines how the entire outdoor space reads. If you're also finishing a driveway or walkway, matching the aggregate color across all three surfaces creates a cohesive look that significantly lifts the whole property. For layouts and photos, see these <a href='/blog/patio/pool-deck-ideas-concrete'>concrete pool deck ideas</a>.",
+        body: "Tightest budget: broom finish with light integral color ($7–12/sq ft total). Best all-around performance: exposed aggregate in a light warm mix ($10–16/sq ft). Best visual result: travertine-stamped concrete with non-slip sealer additive ($12–18/sq ft). Existing slab that runs hot: deck coating overlay ($4–8/sq ft). Avoid plain grey smooth concrete — it's the worst option for heat and grip and only marginally cheaper than better alternatives once you add a sealer. For any new pool deck pour in a climate with significant sun exposure, specify a light aggregate or integral color at the same time: the material cost difference is $1–3/sq ft and the performance difference over a southern summer is substantial. Tools like PourCanvas let you preview how different finishes and colors would look on your pool deck layout before committing — useful when the aggregate mix determines how the entire outdoor space reads. If you're also finishing a driveway or walkway, matching the aggregate color across all three surfaces creates a cohesive look that significantly lifts the whole property. For layouts and photos, see these <a href='/blog/patio/pool-deck-ideas-concrete'>concrete pool deck ideas</a>.",
+      },
+      {
+        heading: "Pool Deck Finishes Compared: Slip, Heat and Upkeep",
+        body: `<p>The scores below rate each finish from 1 to 5, where higher is better for the homeowner. They are the same sourced scores behind our <a href="/tools/pool-deck-finish-selector">pool deck finish selector</a>, so the article and the tool always agree. "Barefoot comfort" combines sun heat and texture underfoot.</p>${scoreMatrix()}<p><strong>Slip:</strong> research by Cement Concrete &amp; Aggregates Australia, summarized by the <a href="https://www.homemods.info/Download.ashx?File=ab8bcafa659ebdf27d20d0b6e6a753d&amp;C=31342c3333362c30" rel="nofollow noopener">UNSW Home Modification Clearinghouse</a>, found that new wood-floated, broom and exposed-aggregate concrete usually reach the top wet slip class. <a href="https://www.concretedecor.net/departments/stamping-texturing-concrete/a-slippery-problem-stamped-concrete-near-pools/" rel="nofollow noopener">Concrete Decor</a> traces most slick stamped pool decks to the sealer rather than the stamp. Grit additives help but don't make a surface non-slip.</p><p><strong>Heat:</strong> color drives surface heat more than texture. New concrete reflects about 0.30–0.50 of sunlight (<a href="https://heatisland.lbl.gov/coolscience/cool-pavements" rel="nofollow noopener">LBNL</a>), and in <a href="https://www.solomoncolors.com/tech-docs/pdf/solomon/Integral-Color-SRI-Values.pdf" rel="nofollow noopener">Solomon Colors test data</a> dark integral colors reflected roughly half as much as light ones. On texture, <a href="https://www.concretenetwork.com/slip-resistant-coatings/broom-finish.html" rel="nofollow noopener">Concrete Network</a> notes broom can be harsh on bare feet, and suggests small or polished stones for <a href="https://www.concretenetwork.com/concrete/pool_decks/exposed_aggregate.htm" rel="nofollow noopener">exposed aggregate decks</a>.</p><p><strong>Upkeep:</strong> a penetrating sealer on exposed aggregate lasts about 7–10 years, while a topical acrylic needs redoing every 12–36 months (<a href="https://www.concretedecor.net/departments/concrete-sealers/seal-exposed-aggregate-concrete-for-best-results/" rel="nofollow noopener">Concrete Decor</a>). Stamped decks need cleaning and resealing every 2–3 years (<a href="https://www.concretenetwork.com/stamped-concrete/" rel="nofollow noopener">Concrete Network</a>).</p><p>Two options not covered above are worth a look in hot climates. A <a href="/materials/salt-finish">salt finish</a> grips and feels gentle barefoot but struggles where slabs freeze. Coatings are covered in <a href="/blog/patio/cool-deck-vs-kool-deck">cool deck vs Kool Deck</a>. To rank finishes for your own climate and priorities, use the <a href="/tools/pool-deck-finish-selector">pool deck finish selector</a> or the general <a href="/tools/concrete-finish-selector">concrete finish selector</a>.</p>`,
       },
     ],
-    relatedSlugs: ["pool-deck-ideas-concrete", "concrete-patio-sealing"],
+    relatedSlugs: ["pool-deck-ideas-concrete", "concrete-patio-sealing", "cool-deck-vs-kool-deck"],
     faqs: [
       {
         question: "What is the best concrete finish for a pool deck?",
@@ -750,7 +780,7 @@ export const patioArticles: Article[] = [
       },
       {
         question: "What concrete finish stays coolest around a pool?",
-        answer: "Light-colored exposed aggregate with a warm buff or tan aggregate mix stays coolest — the rough texture scatters heat and light-colored aggregate reflects solar radiation rather than absorbing it. Plain grey smooth concrete is the worst option for heat. A cool-coat overlay on an existing slab can reduce surface temperature by 15–25°F in direct sun. Avoid dark integral colors (charcoal, graphite) on south-facing pool decks.",
+        answer: "Light-colored exposed aggregate with a warm buff or tan aggregate mix stays coolest — the rough texture scatters heat and light-colored aggregate reflects solar radiation rather than absorbing it. Plain grey smooth concrete is the worst option for heat. A cool-coat overlay on an existing slab can reduce surface temperature noticeably in direct sun (light, reflective colors run cooler). Avoid dark integral colors (charcoal, graphite) on south-facing pool decks.",
       },
       {
         question: "Is stamped concrete slippery around a pool?",
@@ -889,6 +919,7 @@ All patterns require a structurally sound 4-inch slab on a compacted gravel base
   },
   {
     slug: "concrete-patio-ideas",
+    relatedTools: ["patio-cost-calculator", "paver-patio-cost-calculator", "concrete-finish-selector"],
     pillar: "patio",
     title: "Concrete Patio Ideas: 45+ Designs for Every Style and Budget",
     headline: "Concrete Patio Ideas",
@@ -993,11 +1024,18 @@ All costs are per square foot installed in 2026 and assume standard site conditi
   },
   {
     slug: "stamped-concrete-vs-pavers",
+    toolWidget: {
+      tool: "patio-cost-calculator",
+      variant: "compare",
+      heading: "Stamped concrete or pavers: price your patio",
+      compareMaterials: ["concrete-paver", "stamped-concrete"],
+    },
+    relatedTools: ["patio-cost-calculator", "paver-patio-cost-calculator", "paver-sand-calculator", "polymeric-sand-calculator"],
     pillar: "patio",
     title: "Stamped Concrete vs Pavers: Cost, Durability and Looks",
     headline: "Stamped Concrete vs Pavers",
     metaDescription:
-      "Stamped concrete costs $12–18/sq ft vs $20–40 for pavers — but cost isn't everything. Real comparison of repair, durability, appearance, and 10-year ownership.",
+      `Stamped concrete costs $12–18/sq ft vs ${pavers} for concrete pavers and more for brick or stone. A real comparison of repair, durability, looks and 10-year cost.`,
     targetKeywords: [
       "stamped concrete vs pavers",
       "stamped concrete patio vs pavers",
@@ -1009,16 +1047,16 @@ All costs are per square foot installed in 2026 and assume standard site conditi
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     intro:
-      "Stamped concrete costs $12–18 per sq ft installed. Pavers run $20–40. On a 400 sq ft patio, that's $4,800–7,200 for stamped vs $8,000–16,000 for pavers — a gap of $3,000–9,000 in upfront savings. Cost clearly favors stamped concrete, but the full ownership picture includes repair difficulty, long-term durability, climate performance, visual fidelity, and resale impact. Each factor shifts the calculus differently depending on your specific situation. This comparison covers all angles with real numbers so you can make the right call rather than the cheapest one.",
+      `Stamped concrete costs $12–18 per sq ft installed. Pavers run ${pavers} for concrete pavers and up to about $${paverTypeHigh} for clay brick, travertine or porcelain. On a 400 sq ft patio, that's $4,800–7,200 for stamped vs ${paversAt(400)} for concrete pavers — similar money — and more for brick or stone. Cost favors stamped concrete against brick and stone, but the full ownership picture includes repair difficulty, long-term durability, climate performance, visual fidelity, and resale impact. Each factor shifts the calculus differently depending on your specific situation. This comparison covers all angles with real numbers so you can make the right call rather than the cheapest one.`,
     sections: [
       {
         heading: "Upfront Cost: Stamped Concrete Wins",
-        body: "Stamped concrete runs $12–18 per sq ft installed in 2026. Pavers cost $20–40 per sq ft — a range that reflects material type (concrete pavers at the low end, natural stone at the high end) and pattern complexity. On a 400 sq ft patio, that translates to $4,800–7,200 for stamped concrete vs $8,000–16,000 for pavers. The cost gap comes down to labor intensity: stamped concrete is a single pour with pattern stamps pressed into wet concrete by a crew of 3–4 in one day. Pavers require individual piece setting — each unit hand-placed on a compacted sand bed, cut to fit edges, and swept with joint sand. That per-piece labor on a 400 sq ft patio means 800–1,200 individual pavers set by hand vs one continuous pour. The labor hours alone account for most of the price difference. Material cost matters too — concrete pavers themselves run $3–8 per sq ft wholesale vs $2–4 for the concrete mix in a stamped pour — but the labor gap is the primary driver.",
+        body: `Stamped concrete runs $12–18 per sq ft installed in 2026. Pavers cost ${pavers} per sq ft for concrete pavers and up to about $${paverTypeHigh} for clay brick, travertine or porcelain, depending on material and pattern complexity. On a 400 sq ft patio, that translates to $4,800–7,200 for stamped concrete vs ${paversAt(400)} for concrete pavers. Where pavers cost more, the gap comes down to labor intensity: stamped concrete is a single pour with pattern stamps pressed into wet concrete by a crew of 3–4 in one day. Pavers require individual piece setting — each unit hand-placed on a compacted sand bed, cut to fit edges, and swept with joint sand. That per-piece labor on a 400 sq ft patio means 800–1,200 individual pavers set by hand vs one continuous pour. The labor hours alone account for most of the price difference. Material cost matters too — concrete pavers themselves run $3–8 per sq ft wholesale vs $2–4 for the concrete mix in a stamped pour — but the labor gap is the primary driver.`,
         inspirationSlugs: ["stamped-concrete-patio-grey", "cobblestone-stamped-patio"],
       },
       {
         heading: "10-Year Ownership Cost: Pavers Close the Gap",
-        body: "Stamped concrete requires resealing every 2–3 years at $1–3 per sq ft to maintain color depth and surface protection. On a 400 sq ft patio, that's $400–1,200 per application — roughly $1,600–4,800 over a decade assuming 4 resealing cycles. Add potential crack repair at $300–800 per occurrence if settling or freeze-thaw damage develops, and the 10-year stamped concrete total lands at roughly $6,500–10,000 including the initial install. Pavers need joint sand replacement every 3–5 years at $200–400 per application and occasional individual paver replacement at $5–15 per unit if one chips or settles. The 10-year paver total runs approximately $9,500–18,000. Pavers remain more expensive over the ownership window, but the gap narrows from a 2:1 ratio at install to roughly 1.5:1 over a decade. The longer you own the patio, the less dramatic the cost advantage of stamped concrete becomes — though it never fully disappears.",
+        body: "Stamped concrete requires resealing every 2–3 years at $1–3 per sq ft to maintain color depth and surface protection. On a 400 sq ft patio, that's $400–1,200 per application — roughly $1,600–4,800 over a decade assuming 4 resealing cycles. Add potential crack repair at $300–800 per occurrence if settling or freeze-thaw damage develops, and the 10-year stamped concrete total lands at roughly $6,500–10,000 including the initial install. Pavers need joint sand replacement every 3–5 years at $200–400 per application and occasional individual paver replacement at $5–15 per unit if one chips or settles. Brick or stone pavers remain more expensive over the ownership window, while basic concrete pavers can end the decade close to stamped concrete or below it. The longer you own the patio, the smaller the cost advantage of stamped concrete becomes.",
       },
       {
         heading: "Repair: The Biggest Difference",
@@ -1040,7 +1078,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       },
       {
         heading: "The Verdict: Which to Choose by Scenario",
-        body: "Choose stamped concrete when: budget is the primary driver and saving $3,000–9,000 matters more than marginal durability differences; you're covering a large surface area where the per-sq-ft savings multiply significantly; you want a seamless, continuous look without joint lines; or you're in a warm, dry climate where freeze-thaw isn't a concern and light-colored concrete stays cool. Choose pavers when: individual repairability matters — you're on expansive soil or in a severe freeze-thaw climate where cracking is probable rather than possible; you value genuine material texture and depth over visual approximation; you're covering a smaller, high-visibility area where the cost premium is manageable in absolute dollars; you're building a pool surround where drainage between joints and thermal expansion tolerance matter; or you're building a high-end property where buyer expectations include real stone or brick hardscaping. For most homeowners in moderate climates with moderate budgets, stamped concrete delivers 85–90% of the visual result at 50–60% of the cost. The 10–15% gap in appearance and the repairability disadvantage are real trade-offs — but for the majority of residential patios, stamped concrete is the stronger overall value.",
+        body: "Choose stamped concrete when: budget is the primary driver and you are comparing against brick or stone pavers; you're covering a large surface area where the per-sq-ft savings multiply significantly; you want a seamless, continuous look without joint lines; or you're in a warm, dry climate where freeze-thaw isn't a concern and light-colored concrete stays cool. Choose pavers when: individual repairability matters — you're on expansive soil or in a severe freeze-thaw climate where cracking is probable rather than possible; you value genuine material texture and depth over visual approximation; you're covering a smaller, high-visibility area where the cost premium is manageable in absolute dollars; you're building a pool surround where drainage between joints and thermal expansion tolerance matter; or you're building a high-end property where buyer expectations include real stone or brick hardscaping. For most homeowners in moderate climates with moderate budgets, stamped concrete delivers 85–90% of the visual result of brick or stone pavers at a lower cost. The 10–15% gap in appearance and the repairability disadvantage are real trade-offs — but for the majority of residential patios, stamped concrete is the stronger overall value.",
         inspirationSlugs: ["poured-concrete-patio", "herringbone-brick-patio-colonial"],
       },
     ],
@@ -1055,7 +1093,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       {
         question: "Is stamped concrete cheaper than pavers?",
         answer:
-          "Yes, significantly. Stamped concrete runs $12–18/sq ft installed vs $20–40 for pavers. On a 400 sq ft patio, expect to save $3,000–9,000 choosing stamped concrete. The gap narrows over 10+ years due to resealing costs ($400–1,200 every 2–3 years), but stamped concrete remains the less expensive option across the full ownership timeline.",
+          `Usually, compared with brick or stone. Stamped concrete runs $12–18/sq ft installed vs ${pavers} for concrete pavers and up to about $${paverTypeHigh} for clay brick, travertine or porcelain. On a 400 sq ft patio, stamped saves several thousand dollars over brick or stone but costs about the same as basic concrete pavers. The gap narrows over 10+ years due to resealing costs ($400–1,200 every 2–3 years).`,
       },
       {
         question: "Does stamped concrete crack more than pavers?",
@@ -1076,6 +1114,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
   },
   {
     slug: "stained-concrete-patio-ideas",
+    relatedTools: ["concrete-finish-selector", "patio-cost-calculator"],
     pillar: "patio",
     title: "Stained Concrete Patio Ideas: Acid, Water-Based & Integral",
     headline: "Stained Concrete Patio Ideas",
@@ -1160,6 +1199,13 @@ All costs are per square foot installed in 2026 and assume standard site conditi
   },
   {
     slug: "exposed-aggregate-vs-broom-finish",
+    toolWidget: {
+      tool: "concrete-finish-selector",
+      variant: "finish",
+      heading: "Broom or exposed aggregate? Check for your project",
+      focusFinish: "exposed-aggregate",
+    },
+    relatedTools: ["concrete-finish-selector", "driveway-finish-selector", "pool-deck-finish-selector"],
     pillar: "patio",
     title: "Exposed Aggregate vs Broom Finish: Cost, Look & Durability",
     headline: "Exposed Aggregate vs Broom Finish",
@@ -1188,8 +1234,8 @@ All costs are per square foot installed in 2026 and assume standard site conditi
         inspirationSlugs: ["exposed-aggregate-patio-white", "exposed-aggregate-patio-charcoal"],
       },
       {
-        heading: "Slip Resistance: Aggregate Has the Edge",
-        body: "Both finishes provide adequate traction when dry — the broom texture and the aggregate stone surface both grip well under normal conditions. The difference shows when wet. Exposed aggregate's protruding stone particles create a naturally rough surface that maintains grip in rain and around pool edges better than broom finish. Broom finish with deeper brush lines improves wet traction compared to a light broom, but it still can't match aggregate's inherent texture. For pool decks, patios adjacent to hot tubs, or regions with frequent rain, exposed aggregate's wet-surface grip is a meaningful functional advantage. The ASTM slip resistance coefficient for quality exposed aggregate typically exceeds 0.60 wet; broom finish ranges from 0.45–0.55 depending on broom depth.",
+        heading: "Slip Resistance: Both Grip Well When Wet",
+        body: "Both finishes provide adequate traction when dry — the broom texture and the aggregate stone surface both grip well under normal conditions. The difference shows when wet. When new, both finishes usually reach the top wet slip-resistance class in Australian pendulum testing summarized by the UNSW Home Modification Clearinghouse (P5 / R13 for wood-floated, broom and exposed-aggregate concrete). No published test compares the two finishes by number in U.S. terms. In practice, grip depends more on upkeep: a broom texture stays grippier when it runs across the walking direction, and any glossy film sealer reduces grip on either finish. For pool decks and rainy climates, both are good choices; choose a penetrating sealer, and on aggregate ask for small or polished stones for bare feet.",
       },
       {
         heading: "Maintenance Over 10 Years",
@@ -1221,7 +1267,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       {
         question: "Which is more slip-resistant: exposed aggregate or broom finish?",
         answer:
-          "Exposed aggregate is more slip-resistant, especially when wet. The protruding stone particles create a naturally rough surface with a wet slip resistance coefficient above 0.60, compared to 0.45–0.55 for broom finish. This makes aggregate the better choice for pool decks and rain-prone climates.",
+          "Both are among the most slip-resistant concrete finishes when wet. Research summarized by the UNSW Home Modification Clearinghouse puts new broom-finished and exposed-aggregate concrete in the same top wet slip class. Keep it that way with a penetrating sealer rather than a glossy film sealer, and broom across the walking direction.",
       },
       {
         question: "Can you combine exposed aggregate and broom finish on one patio?",
@@ -1275,7 +1321,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       },
       {
         heading: "Full Replacement Cost ($8–18/sq ft Including Demo)",
-        body: "When the existing slab has failed structurally, resurfacing is a temporary fix at best. Full replacement — demolition of the old slab plus a new pour — costs $8–18/sq ft depending on finish. Demolition and disposal add $1–3/sq ft to the new-pour price. On a 300 sq ft patio, total replacement runs $2,400–5,400. The advantage: a new pour gives you full freedom on finish, pattern, color, and thickness. You get a fresh sub-base preparation, proper drainage grading, and a slab that starts its 25–30 year lifespan from zero. Full replacement is also the right call when the existing slab was poured too thin (under 4 inches), on inadequate base material, or without proper control joints — resurfacing those slabs delays failure rather than preventing it.",
+        body: `When the existing slab has failed structurally, resurfacing is a temporary fix at best. Full replacement — demolition of the old slab plus a new pour — costs $8–18/sq ft depending on finish. Demolition and disposal add ${removal}/sq ft to the new-pour price. On a 300 sq ft patio, total replacement runs $2,400–5,400. The advantage: a new pour gives you full freedom on finish, pattern, color, and thickness. You get a fresh sub-base preparation, proper drainage grading, and a slab that starts its 25–30 year lifespan from zero. Full replacement is also the right call when the existing slab was poured too thin (under 4 inches), on inadequate base material, or without proper control joints — resurfacing those slabs delays failure rather than preventing it.`,
         inspirationSlugs: ["poured-concrete-patio", "cobblestone-stamped-patio"],
       },
       {
@@ -1388,7 +1434,98 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       {
         question: "How much does a trendy concrete patio cost in 2026?",
         answer:
-          "The trending finishes range widely: scored geometric patterns on pigmented concrete run $8–12/sq ft, large-format floating pads cost $10–16/sq ft, and mixed-finish zone patios average $10–16/sq ft. Basic dark integral color with broom finish — the most accessible current trend — costs just $8–14/sq ft.",
+          "The trending finishes range widely: scored geometric patterns on pigmented concrete run $8–12/sq ft, large-format floating pads cost $10–16/sq ft, and mixed-finish zone patios average $10–16/sq ft. Basic dark integral color with broom finish — the most accessible current trend — costs about $8–16/sq ft.",
+      },
+    ],
+  },
+  {
+    slug: "cool-deck-vs-kool-deck",
+    toolWidget: {
+      tool: "pool-deck-finish-selector",
+      variant: "finish",
+      heading: "Find the coolest, safest finish for your pool deck",
+      finishDefaults: { surface: "pool-deck", climate: "hot-sun" },
+    },
+    relatedTools: ["pool-deck-finish-selector", "concrete-finish-selector"],
+    pillar: "patio",
+    title: "Cool Deck vs Kool Deck: Pool Deck Coatings Explained",
+    headline: "Cool Deck vs Kool Deck: What's the Difference?",
+    metaDescription:
+      "Kool Deck is Mortex's 1962 trademarked pool deck topping; cool deck is the generic term. Compare heat, slip, upkeep and light concrete for your pool deck.",
+    targetKeywords: ["cool deck", "kool deck", "cool deck pool", "cool deck vs kool deck", "kool deck pool deck", "cool deck coating"],
+    ogImage: "https://images.pourcanvas.com/inspiration-pool-deck-broom-finish.jpg",
+    publishedAt: "2026-10-10",
+    intro:
+      "Kool Deck is a brand: a textured cement topping that Mortex invented in 1962 and still sells under that trademark. \"Cool deck\" is the generic name for any light, textured coating that keeps a pool deck cooler and less slippery than plain concrete. Both rely mainly on light color to stay cooler. A light-colored concrete mix can get much of the same benefit without a coating.",
+    sections: [
+      {
+        heading: "Cool Deck vs Kool Deck: Brand vs Category",
+        body: `<p>The two terms get mixed up because one product named the whole category. Keystone Kool Deck was <a href="https://mortex.com/pdf/KoolDeckInstructions.pdf" rel="nofollow noopener">invented by Mortex in 1962</a>, and Mortex lists Kool Deck as a trademark of Mortex Manufacturing Co. in Tucson, Arizona. When a pool builder says "cool deck", they may mean the Mortex product, a competing topping, or any light textured deck coating.</p><p>There are really three different options behind the name:</p><ul><li><strong>Kool Deck (Mortex):</strong> a cement-based topping splashed onto fresh concrete on the day of the pour.</li><li><strong>Generic cool deck coatings:</strong> light-colored, spray-applied textured overlays, often acrylic-modified, that go over new or existing concrete. <a href="https://www.concretenetwork.com/concrete/pool_decks/heat-and-slip-resistance-comparison.html" rel="nofollow noopener">Concrete Network</a> says these have been standard on Sun Belt pool decks for decades. It also notes they are not a pool deck paint.</li><li><strong>Light-colored concrete:</strong> no coating at all. A white-cement or light integral color mix with a grippy finish.</li></ul><p>Ask your contractor which of the three is in the quote, and get the product name in writing.</p>`,
+      },
+      {
+        heading: "How Kool Deck Is Installed",
+        body: `<p>The Mortex <a href="https://mortex.com/pdf/KoolDeckInstructions.pdf" rel="nofollow noopener">contractor brochure</a> describes a process tied to the concrete pour. The base slab is floated and given a single light broom pass so the topping can bond. The crew mixes the Kool Deck unit with white cement, 20-mesh marble sand and water into a thin, milky slurry. They splash it on twice with a dash brush, then trowel it flat while it is still wet.</p><p>The finished surface is meant to be about 40% smooth tops and 60% voids, which Mortex says prevents craze cracking. The topping should be no more than 1/8 inch thick. Applied to fresh concrete, it contains its own sealer and curing agents. Mortex advises keeping traffic and furniture off for about 21 days.</p><p>Because Kool Deck goes onto fresh concrete, it is a new-construction choice. Existing decks usually get a spray-applied cool deck coating or overlay instead.</p>`,
+      },
+      {
+        heading: "Cool Deck vs Kool Deck vs Light Concrete Compared",
+        body: `<table><thead><tr><th>Factor</th><th>Kool Deck (Mortex)</th><th>Generic cool deck coating</th><th>Light-colored concrete</th></tr></thead><tbody><tr><td>What it is</td><td>Cement topping, max 1/8 in thick</td><td>Spray-applied textured overlay</td><td>The slab itself, no topping</td></tr><tr><td>When applied</td><td>On fresh concrete, same day as the pour</td><td>New or existing concrete</td><td>At the pour</td></tr><tr><td>Texture</td><td>Knock-down splash, about 40% smooth / 60% voids</td><td>"Orange peel" spray texture</td><td>Broom, salt or exposed aggregate</td></tr><tr><td>Why it's cooler</td><td>Light color (manufacturer claim)</td><td>Light color plus texture</td><td>Light cement and pigment</td></tr><tr><td>Grip</td><td>Non-skid texture (manufacturer claim)</td><td>Textured; grit can go in the sealer</td><td>Depends on the finish</td></tr></tbody></table><p>Sources: <a href="https://mortex.com/pdf/KoolDeckInstructions.pdf" rel="nofollow noopener">Mortex</a>, <a href="https://www.concretenetwork.com/concrete/pool_decks/heat-and-slip-resistance-comparison.html" rel="nofollow noopener">Concrete Network</a>. The Concrete Network page promotes a coating brand, so treat its comfort claims as industry claims too.</p>`,
+      },
+      {
+        heading: "How Much Cooler Is a Cool Deck?",
+        body: `<p>Mortex says Kool Deck "significantly lowers the surface temperature of concrete" but publishes no number in its brochure, so treat that as a <strong>manufacturer claim</strong>. It also says its darker Designer Colors are warmer than standard Kool Deck colors. The physics behind every cool deck is independent of the brand. Surface heat follows <strong>solar reflectance</strong> (SR), the share of sunlight a surface bounces back.</p><ul><li>New cement concrete reflects about 0.30–0.50 of sunlight, falling to 0.20–0.35 as it ages and gets dirty. In one thermal image a light pavement was about 30°F (17°C) cooler than a dark one next to it (<a href="https://heatisland.lbl.gov/coolscience/cool-pavements" rel="nofollow noopener">LBNL Heat Island Group</a>).</li><li>The cement matters most. In LBNL lab tests, white-cement concrete reflected 0.18–0.39 more than gray-cement concrete. Wet surfaces reflected less (<a href="https://www.osti.gov/servlets/purl/820773" rel="nofollow noopener">Levinson &amp; Akbari, LBNL</a>).</li><li>Color matters next. White-pigmented concrete measured 0.52–0.59, buff and sand 0.37–0.42, and dark tones 0.15–0.22 (<a href="https://www.solomoncolors.com/tech-docs/pdf/solomon/Integral-Color-SRI-Values.pdf" rel="nofollow noopener">Solomon Colors</a>).</li></ul><p>So the cooling comes mostly from light color, which a light concrete mix can also deliver. A pastel cool deck coating beats plain gray concrete. A charcoal one gives up most of the benefit.</p>`,
+      },
+      {
+        heading: "Is Cool Deck Slippery?",
+        body: `<p>Cool deck coatings are textured on purpose. Mortex calls Kool Deck a non-skid surface designed to reduce the risk of accidents when wet. That is a manufacturer claim, and we found no independent wet slip tests for it. <a href="https://www.concretenetwork.com/concrete/pool_decks/heat-and-slip-resistance-comparison.html" rel="nofollow noopener">Concrete Network</a> says cool decking gives good traction while staying comfortable barefoot. If you want more grip, a clear plastic grit can be mixed into the sealer.</p><p>Sealer is where many decks get slick. <a href="https://www.concretedecor.net/departments/safety/get-a-grip-on-concrete-slip-resistance/" rel="nofollow noopener">Concrete Decor</a> notes that film-forming sealers reduce a surface's built-in slip resistance, and recommends polystyrene grit on pool decks because it is gentler on feet than aluminum oxide. When a coated deck is resealed, ask for a low-sheen product with grit.</p>`,
+      },
+      {
+        heading: "Cleaning, Repair and Recoating",
+        body: `<p>Mortex's <a href="https://mortex.com/pdf/KoolDeckInstructions.pdf" rel="nofollow noopener">maintenance guidance</a> for Kool Deck is simple:</p><ul><li>Hose off dirt and leaves, and rinse spills right away.</li><li>Scrub stains with cleanser and a nylon brush. For heavier stains, scrub with a diluted granular dishwasher detergent.</li><li>Expect gray mineral deposits where water evaporates over and over, such as at steps, sprinkler heads and diving boards. Mortex sells a cleaner for these.</li><li>Patch chips with Mortex's premixed repair kit, which covers about 6 sq ft.</li></ul><p>Mortex says the topping is unaffected by normal pool chemicals. Over years, cool deck surfaces fade, stain and wear smooth at the high points. They are commonly refreshed with a coating made for pool decks. If you recoat, keep it light-colored and low-sheen so you don't trade heat or grip for looks. Cracks in the slab below will show through any topping, so repair moving cracks first.</p>`,
+      },
+      {
+        heading: "Cool Deck vs Salt, Broom and Exposed Aggregate",
+        body: `<p>For a new pour, a textured concrete finish in a light color competes directly with a cool deck topping. This is how they compare:</p><table><thead><tr><th>Finish</th><th>Barefoot feel</th><th>Wet grip</th><th>Watch out for</th></tr></thead><tbody><tr><td>Cool deck / Kool Deck</td><td>Comfortable splash texture</td><td>Textured (manufacturer claim)</td><td>Topping wear; darker colors run warmer</td></tr><tr><td><a href="/materials/salt-finish">Salt finish</a></td><td>Fairly smooth pits</td><td>Non-skid texture</td><td>Pits hold water in freeze-thaw climates</td></tr><tr><td><a href="/materials/broom-finish">Broom finish</a></td><td>Can be harsh at medium texture</td><td>High; top wet class in testing</td><td>Ask for a light broom near the water</td></tr><tr><td><a href="/materials/exposed-aggregate">Exposed aggregate</a></td><td>Rough unless small or polished stone</td><td>Very high</td><td>Heat follows the stone color</td></tr></tbody></table><p>Sources: <a href="https://www.concretenetwork.com/rock-salt-finish/" rel="nofollow noopener">Concrete Network on rock salt finish</a>, <a href="https://www.concretenetwork.com/slip-resistant-coatings/broom-finish.html" rel="nofollow noopener">on broom finish</a> and <a href="https://www.concretenetwork.com/concrete/pool_decks/exposed_aggregate.htm" rel="nofollow noopener">on exposed aggregate pool decks</a>. Our <a href="/tools/pool-deck-finish-selector">pool deck finish selector</a> ranks these for your climate. The full trade-offs are in <a href="/blog/patio/best-concrete-finish-pool-deck">best concrete finish for pool decks</a>.</p>`,
+      },
+      {
+        heading: "What Drives Cool Deck Cost",
+        body: `<p>Published cool deck prices vary too widely to quote a reliable figure, so ask for itemized bids. Mortex says Kool Deck is less expensive than other deck surfacing products, which is a manufacturer claim. What we can give you is the base: as of ${CURRENT_YEAR}, plain poured concrete runs about ${perSqftRange(INSTALLED["plain-concrete"])} per sq ft installed. A Kool Deck topping is added on top of that new slab. A coating on an existing deck replaces demolition and a new pour.</p><p>Price drivers to compare across bids:</p><ul><li>New pour with topping vs coating an existing slab</li><li>Crack repair and surface prep before coating</li><li>Sealer type, and whether grit is included</li><li>Color, since darker shades give up heat performance</li></ul><p>To price the slab itself, use the <a href="/tools/patio-cost-calculator">patio cost calculator</a>.</p>`,
+      },
+      {
+        heading: "Which Should You Choose?",
+        body: `<p><strong>New deck in a hot climate:</strong> either a Kool Deck-type topping or a light concrete finish such as salt or light broom in a white or sand mix. Both rely on light color, so pick the texture you like underfoot. <strong>Existing deck that runs hot:</strong> a light cool deck coating is the practical fix, provided the slab isn't moving. <strong>Freeze-thaw climate:</strong> skip salt finish. Check any topping's cold-weather guidance, and use the <a href="/tools/concrete-finish-selector">concrete finish selector</a> to see which finishes hold up. For layout ideas, browse these <a href="/blog/patio/pool-deck-ideas-concrete">concrete pool deck ideas</a>.</p>`,
+      },
+    ],
+    relatedSlugs: ["best-concrete-finish-pool-deck", "pool-deck-ideas-concrete", "concrete-patio-sealing"],
+    relatedMaterials: ["salt-finish", "broom-finish", "exposed-aggregate"],
+    faqs: [
+      {
+        question: "What is the difference between cool deck and Kool Deck?",
+        answer:
+          "Kool Deck is a trademarked product: Mortex's cement-based pool deck topping, invented in 1962 and applied to fresh concrete. Cool deck is the generic term for any light-colored, textured coating that keeps a pool deck cooler and less slippery than plain concrete, including competing products and spray-applied overlays on existing slabs.",
+      },
+      {
+        question: "Does Kool Deck really stay cooler?",
+        answer:
+          "Mortex says it significantly lowers the surface temperature of concrete, but its brochure gives no number, so treat that as a manufacturer claim. The independent data is on color. LBNL measured new concrete reflecting 0.30–0.50 of sunlight, and Solomon Colors measured white-pigmented concrete at 0.52–0.59 against 0.15–0.22 for dark tones. Lighter surfaces stay cooler.",
+      },
+      {
+        question: "Can you put Kool Deck on existing concrete?",
+        answer:
+          "Mortex's instructions apply Kool Deck to fresh concrete on the day of the pour, so it bonds as the slab cures. For an existing deck, contractors usually use a spray-applied cool deck coating or overlay instead. Repair any moving cracks first, because they will show through.",
+      },
+      {
+        question: "Is cool deck slippery when wet?",
+        answer:
+          "Cool deck coatings are textured to grip, and Mortex markets Kool Deck as non-skid, though no independent wet slip data is published. The sealer is the usual problem: glossy film sealers reduce grip. Ask for a low-sheen sealer with a grit additive, such as polystyrene beads, which are gentler on bare feet.",
+      },
+      {
+        question: "Is cool deck better than a salt finish pool deck?",
+        answer: `According to PourCanvas, a light-colored salt finish is the better value on a new warm-climate pour. It costs about $1 per sq ft more than plain concrete (${perSqftRange(INSTALLED["plain-concrete"])} installed), grips when wet, and has no topping to wear off. Cool deck coatings make more sense for resurfacing an existing deck that runs hot.`,
+      },
+      {
+        question: "What color pool deck stays coolest?",
+        answer:
+          "According to PourCanvas, white and pale sand or buff tones stay coolest. In Solomon Colors test data, white-pigmented concrete reflected 0.52–0.59 of sunlight and dark tones such as slate and bark only 0.15–0.22, less than half as much. That applies to cool deck coatings and plain concrete alike: darker Kool Deck Designer Colors run warmer than the standard colors.",
       },
     ],
   },

@@ -8,6 +8,8 @@ import { ToolWaitlistBlock } from "@/components/ToolWaitlistBlock";
 import { FAQSection } from "@/components/FAQSection";
 import { articlesBySlug, inspirationBySlug, allArticles } from "@/content";
 import { InspirationTile } from "@/components/inspiration/InspirationTile";
+import { LeanWidget } from "@/components/tools/LeanWidget";
+import { RelatedToolsList } from "@/components/tools/RelatedToolsList";
 
 const materialLabels: Record<string, string> = {
   "stamped-concrete": "Stamped Concrete",
@@ -19,6 +21,7 @@ const materialLabels: Record<string, string> = {
   travertine: "Travertine",
   "polished-concrete": "Polished Concrete",
   "concrete-overlay": "Concrete Overlay",
+  "salt-finish": "Salt Finish",
 };
 
 const ArticlePage = () => {
@@ -83,13 +86,15 @@ const ArticlePage = () => {
 
         <p className="text-xs font-body text-muted-foreground mb-8">
           {article.updatedAt
-            ? `Updated ${new Date(article.updatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`
-            : new Date(article.publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+            ? `Updated ${new Date(article.updatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}`
+            : new Date(article.publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}
         </p>
 
         <p className="text-base md:text-lg font-body text-foreground/80 leading-relaxed mb-10">
           {article.intro}
         </p>
+
+        {article.toolWidget && <LeanWidget widget={article.toolWidget} source={`blog/${article.pillar}/${article.slug}`} />}
 
         <div className="space-y-8">
           {article.sections.map((section, i) => (
@@ -132,7 +137,11 @@ const ArticlePage = () => {
         </div>
 
         <div className="mt-12">
-          <ToolWaitlistBlock source="tool-waitlist-blog" />
+          {article.relatedTools?.length ? (
+            <RelatedToolsList slugs={article.relatedTools} />
+          ) : (
+            <ToolWaitlistBlock source="tool-waitlist-blog" />
+          )}
         </div>
 
         {article.faqs && article.faqs.length > 0 && (

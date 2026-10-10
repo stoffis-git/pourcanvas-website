@@ -2,12 +2,19 @@ import type { MaterialPage } from "../types";
 
 export const exposedAggregatePage: MaterialPage = {
   slug: "exposed-aggregate",
-  title: "Exposed Aggregate Concrete: Cost, Looks and Finish Guide",
+  toolWidget: {
+    tool: "concrete-finish-selector",
+    variant: "finish",
+    heading: "Is exposed aggregate right for your project?",
+    focusFinish: "exposed-aggregate",
+  },
+  relatedTools: ["concrete-finish-selector", "driveway-finish-selector", "pool-deck-finish-selector"],
+  title: "Exposed Aggregate Concrete: Driveway & Patio Cost Guide",
   headline: "Exposed Aggregate Concrete",
   summary:
     "Exposed aggregate reveals the decorative stone beneath the concrete surface for a textured, slip-resistant finish. A practical choice for driveways and pool decks where grip matters.",
   metaDescription:
-    "Exposed aggregate concrete costs $8–14 per sq ft and delivers natural slip resistance by revealing decorative stone beneath the surface. Driveway, patio, and pool deck guide.",
+    "Exposed aggregate concrete costs $8–16 per sq ft installed. Slip-resistant stone texture for driveways, patios, porches and pool decks: looks, sealing, cost.",
   targetKeywords: [
     "exposed aggregate concrete",
     "aggregate finish",
@@ -27,7 +34,7 @@ export const exposedAggregatePage: MaterialPage = {
   publishedAt: "2025-06-01",
   updatedAt: "2026-06-10",
   intro:
-    "Exposed aggregate concrete reveals the decorative stone beneath the surface by washing away the top paste during cure — it costs $8–14 per sq ft installed, less than stamped concrete. The embedded stones provide natural grip and visual depth, making it the go-to finish for driveways and pool decks where slip resistance matters more than pattern.",
+    "Exposed aggregate concrete reveals the decorative stone beneath the surface by washing away the top paste during cure — it costs $8–16 per sq ft installed, less than stamped concrete. The embedded stones provide natural grip and visual depth, making it the go-to finish for driveways and pool decks where slip resistance matters more than pattern.",
   sections: [
     {
       heading: "How It's Made",
