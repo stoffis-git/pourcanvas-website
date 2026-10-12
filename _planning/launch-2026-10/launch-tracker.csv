@@ -1,9 +1,9 @@
 platform,url,free_tier,login,badge_required,badge_rel,status,submitted_date,launch_date,listing_url,link_rel_verified,notes
-KittyLaunch,https://kittylaunch.com/,,,,,todo,,,,,
-Neeed Directory,https://neeed.directory/,,,,,todo,,,,,
-tinyshelf,https://www.tinyshelf.co/,,,,,todo,,,,,
-Twelve Tools,https://www.twelve.tools/,,,,,todo,,,,,
-launched.tools,https://launched.tools/,,,,,todo,,,,,
-Nick Launches,https://nicklaunches.com/,,,,,todo,,,,,listed twice in request; one submission
-Startup Fast,https://www.startupfa.st/,,,,,todo,,,,,
-SideProjectors,https://www.sideprojectors.com/,,,,,todo,,,,,
+KittyLaunch,https://kittylaunch.com/,yes,Google (support@slabcalc.co),yes (data-kittylaunch-badge; rejects nofollow),noopener,BLOCKED - owner action,,,kittylaunch.com/p/pourcanvas (expected),,Launch form gated behind 3 daily upvotes on other products; agent may not upvote. Owner: upvote 3 then submit via Launch button. Badge already on homepage with expected slug; fix href if slug differs.
+Neeed Directory,https://neeed.directory/,yes,Google (support@slabcalc.co),for dofollow,noopener,LIVE,2026-10-12,2026-10-12,https://neeed.directory/products/pourcanvas,dofollow expected (badge verified 2026-10-12); raw link rel=noopener,Category Productivity. Prefill copy used.
+TinyShelf,https://www.tinyshelf.co/,yes,Google (support@slabcalc.co),for dofollow (href must be https://www.tinyshelf.co; no nofollow/sponsored/ugc; weekly recheck),noopener,LIVE,2026-10-12,2026-10-12,https://www.tinyshelf.co/tools/pourcanvas,rel=noopener (DOM); link not in curl HTML,Do not change badge href/rel. Checker UA tinyshelfbot/1.0.
+Twelve Tools,https://www.twelve.tools/,yes,email (support@slabcalc.co),yes (homepage or footer),noopener,LIVE,2026-10-12,2026-10-12,https://twelve.tools/pourcanvas,rel=noopener (raw HTML) UTM-tagged,"Rejects the word ""crack"". Edit link is a bearer secret: kept out of this public repo."
+launched.tools,https://launched.tools/,yes,Google (support@slabcalc.co),yes (daily recheck; 7-day grace),noopener,LIVE,2026-10-12,2026-10-12,https://launched.tools/tools/pourcanvas,rel=noopener (raw HTML),Review score 74/100; category Productivity.
+Nick Launches,https://nicklaunches.com/,yes,Google (support@slabcalc.co),yes (homepage),noopener,DRAFT - owner action,2026-10-12,,https://nicklaunches.com/products/pourcanvas/ (404 until live),,Badge verified. Free launch gated behind 3 community voting rounds (owner). Then pick a launch week and Submit launch at nicklaunches.com/submit/plan/?slug=pourcanvas.
+Startup Fast,https://www.startupfa.st/,yes,Google (support@slabcalc.co),yes (link to startupfa.st),noopener,SCHEDULED,2026-10-12,2026-11-03,https://www.startupfa.st/projects/pourcanvas,rel=noopener nofollow (pre-launch),Free tier dofollow only if top 3 daily or badge shown; recheck rel after 2026-11-03.
+SideProjectors,https://www.sideprojectors.com/,yes,Google (support@slabcalc.co),no,,IN REVIEW,2026-10-12,,TBC (project id 100172),,"Showcase type, 2-3 business days review. Not open to sale. ComingUp cross-post left unchecked. No logo uploaded (optional)."
