@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import HomeHero from "@/components/home/HomeHero";
 import ToolGrid from "@/components/home/ToolGrid";
 import TrustBand from "@/components/home/TrustBand";
+import LaunchBadges from "@/components/home/LaunchBadges";
 import FinishesGallery from "@/components/FinishesGallery";
 import ProjectCategories from "@/components/ProjectCategories";
 import HomeFAQ from "@/components/HomeFAQ";
@@ -56,6 +57,7 @@ const Index = () => {
       </section>
 
       <HomeFAQ />
+      <LaunchBadges />
       <Footer />
     </div>
   );
