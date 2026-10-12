@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
-import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
 import { MaterialProConBlock } from "@/components/materials/MaterialProConBlock";
 import { MaterialRelatedArticles } from "@/components/materials/MaterialRelatedArticles";
 import { FAQSection } from "@/components/FAQSection";
@@ -113,8 +112,6 @@ const MaterialPage = () => {
             </div>
           </div>
         )}
-
-        <InspirationEmailCapture slug={slug ?? ''} />
 
         {material.faqs && material.faqs.length > 0 && (
           <FAQSection faqs={material.faqs} />

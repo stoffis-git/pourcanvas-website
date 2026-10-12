@@ -5,26 +5,13 @@ import { articlesBySlug } from "@/content";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationImageCarousel } from "@/components/inspiration/InspirationImageCarousel";
 import { InspirationContentBlock } from "@/components/inspiration/InspirationContentBlock";
-import { InspirationPopup } from "@/components/inspiration/InspirationPopup";
-import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
 import { InspirationRelatedTiles } from "@/components/inspiration/InspirationRelatedTiles";
 import { InspirationCrossSection } from "@/components/inspiration/InspirationCrossSection";
 import { MaterialZoomContainer } from "@/components/inspiration/MaterialZoomContainer";
 import { FAQSection } from "@/components/FAQSection";
 import { inspirationPages } from "@/content";
-import { toolsBySlug } from "@/content/tools";
-
-/** One relevant calculator per inspiration page, by material in the slug. */
-const toolForSlug = (slug: string) =>
-  slug.includes("flagstone") && !slug.includes("stamped") && !slug.includes("patio-grey")
-    ? "flagstone-calculator"
-    : slug.includes("brick") || slug.includes("paver") || slug.includes("travertine")
-      ? "paver-calculator"
-      : slug.includes("pool")
-        ? "pool-deck-finish-selector"
-        : slug.includes("driveway")
-          ? "driveway-finish-selector"
-          : "concrete-finish-selector";
+import { LeanWidget } from "@/components/tools/LeanWidget";
+import { widgetForSlug } from "@/content/tools/widgetForSlug";
 
 const inspirationBySlug = new Map(inspirationPages.map((p) => [p.slug, p]));
 
@@ -68,14 +55,8 @@ const InspirationPage = () => {
               )}
             </div>
           </div>
-          <InspirationPopup slug={page.slug} pillar={page.pillar} />
+          <LeanWidget widget={widgetForSlug(page.slug, page.pillar)} source={`inspiration/${page.slug}`} />
           <InspirationRelatedTiles currentSlug={page.slug} pillar={page.pillar} />
-          <InspirationEmailCapture
-            slug={page.slug}
-            pillar={page.pillar}
-            pageHeadline={page.headline}
-            source="inspire-pack-insp-inline"
-          />
           <InspirationCrossSection currentSlug={page.slug} currentPillar={page.pillar} />
           {page.relatedArticles && page.relatedArticles.length > 0 && (
             <div className="pt-6 border-t border-border/40">
@@ -97,15 +78,6 @@ const InspirationPage = () => {
               </div>
             </div>
           )}
-          {(() => {
-            const tool = toolsBySlug.get(toolForSlug(page.slug));
-            return tool ? (
-              <p className="pt-6 border-t border-border/40 text-sm font-body text-foreground/80">
-                Planning a project like this? {tool.engine === "finish" ? "Check which finish suits your surface and climate with the" : "Get material quantities and installed cost with the"}{" "}
-                <Link to={`/tools/${tool.slug}`} className="font-medium text-primary hover:underline">{tool.h1.toLowerCase()}</Link>.
-              </p>
-            ) : null;
-          })()}
           {page.faqs && page.faqs.length > 0 && (
             <FAQSection faqs={page.faqs} />
           )}

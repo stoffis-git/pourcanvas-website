@@ -3,11 +3,11 @@ import { useParams, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
-import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
 import { FAQSection } from "@/components/FAQSection";
 import { articlesBySlug, inspirationBySlug, allArticles } from "@/content";
 import { InspirationTile } from "@/components/inspiration/InspirationTile";
 import { LeanWidget } from "@/components/tools/LeanWidget";
+import { widgetForSlug } from "@/content/tools/widgetForSlug";
 import { RelatedToolsList } from "@/components/tools/RelatedToolsList";
 import { PILLAR_TOOLS } from "@/content/tools/pillars";
 
@@ -129,8 +129,8 @@ const ArticlePage = () => {
                   </div>
                 )}
               </div>
-              {i === midpoint - 1 && (
-                <InspirationEmailCapture slug={slug ?? ''} pillar={pillar ?? ''} source="inspire-pack-blog" />
+              {i === midpoint - 1 && !article.toolWidget && (
+                <LeanWidget widget={widgetForSlug(article.slug, article.pillar)} source={`blog/${article.pillar}/${article.slug}`} />
               )}
             </Fragment>
           ))}

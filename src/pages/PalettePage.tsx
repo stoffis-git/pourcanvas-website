@@ -3,8 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
 import { InspirationContentBlock } from "@/components/inspiration/InspirationContentBlock";
-import { InspirationPopup } from "@/components/inspiration/InspirationPopup";
-import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
+import { LeanWidget } from "@/components/tools/LeanWidget";
+import { widgetForSlug } from "@/content/tools/widgetForSlug";
 import { InspirationCrossSection } from "@/components/inspiration/InspirationCrossSection";
 import { palettePages } from "@/content";
 
@@ -47,13 +47,7 @@ const PalettePage = () => {
               <InspirationContentBlock body={page.contentBlock} />
             </div>
           </div>
-          <InspirationPopup slug={page.slug} pillar={page.pillar} />
-          <InspirationEmailCapture
-            slug={page.slug}
-            pillar={page.pillar}
-            pageHeadline={page.headline}
-            source="inspire-pack-palette-inline"
-          />
+          <LeanWidget widget={widgetForSlug(page.slug, page.pillar)} source={`palette/${page.slug}`} />
           <InspirationCrossSection currentSlug={page.slug} currentPillar={page.pillar} />
         </div>
       </main>

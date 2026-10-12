@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
-import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
+import { LeanWidget } from "@/components/tools/LeanWidget";
+import { widgetForSlug } from "@/content/tools/widgetForSlug";
 
 const costRows = [
   { finish: "Broom finish (plain)",    cost: "$6–10/sq ft",      lifespan: "25–30 years" },
@@ -237,7 +238,7 @@ const ConcreteWalkwayGuide = () => (
       </section>
 
       <div className="mb-16">
-        <InspirationEmailCapture slug="concrete-walkway-guide" pillar="walkway" />
+        <LeanWidget widget={widgetForSlug("concrete-walkway-guide", "walkway")} source="guides/concrete-walkway" />
       </div>
 
       {/* Final CTA */}

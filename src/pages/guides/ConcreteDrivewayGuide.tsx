@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SeoHead } from "@/components/SeoHead";
-import { InspirationEmailCapture } from "@/components/inspiration/InspirationEmailCapture";
+import { LeanWidget } from "@/components/tools/LeanWidget";
+import { widgetForSlug } from "@/content/tools/widgetForSlug";
 import { moneyRange, perSqftRange } from "@/lib/format";
 import { INSTALLED, REMOVAL_PER_SQFT, type Range } from "@/lib/tools/data/paving";
 
@@ -294,7 +295,7 @@ const ConcreteDrivewayGuide = () => (
       </section>
 
       <div className="mb-16">
-        <InspirationEmailCapture slug="concrete-driveway-guide" pillar="driveway" />
+        <LeanWidget widget={widgetForSlug("concrete-driveway-guide", "driveway")} source="guides/concrete-driveway" />
       </div>
 
       {/* Final CTA */}
