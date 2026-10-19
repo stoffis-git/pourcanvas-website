@@ -7,6 +7,7 @@ import TermsPage from "./pages/TermsPage";
 import BlogHub from "./pages/blog/BlogHub";
 import PillarPage from "./pages/blog/PillarPage";
 import ArticlePage from "./pages/blog/ArticlePage";
+import OutrankArticlePage from "./pages/blog/OutrankArticlePage";
 import InspirationPage from "./pages/InspirationPage";
 import BeforeAfterPage from "./pages/BeforeAfterPage";
 import PalettePage from "./pages/PalettePage";
@@ -21,6 +22,7 @@ import ToolPage from "./pages/tools/ToolPage";
 import MethodologyPage from "./pages/MethodologyPage";
 import { allArticles, inspirationPages, beforeAfterPages, palettePages, allMaterialPages } from "./content";
 import { toolPages } from "./content/tools";
+import { outrankArticles } from "./content/outrank";
 
 export const routes: RouteObject[] = [
   {
@@ -33,6 +35,7 @@ export const routes: RouteObject[] = [
       { path: "walkway", element: <PillarLandingPage pillar="walkway" /> },
       { path: "blog", element: <BlogHub /> },
       { path: "blog/:pillar", element: <PillarPage /> },
+      { path: "blog/guides/:slug", element: <OutrankArticlePage /> },
       { path: "blog/:pillar/:slug", element: <ArticlePage /> },
       { path: "inspiration/:slug", element: <InspirationPage /> },
       { path: "before-after/:slug", element: <BeforeAfterPage /> },
@@ -76,6 +79,7 @@ export const dynamicPaths = [
   ...palettePages.map((p) => `/palette/${p.slug}`),
   ...allMaterialPages.map((m) => `/materials/${m.slug}`),
   ...toolPages.map((t) => `/tools/${t.slug}`),
+  ...outrankArticles.map((a) => `/blog/guides/${a.slug}`),
 ];
 
 export default function App() {
