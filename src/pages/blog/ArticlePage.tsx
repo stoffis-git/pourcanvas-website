@@ -36,11 +36,16 @@ const ArticlePage = () => {
     .map((s) => allArticles.find((a) => a.slug === s))
     .filter((a): a is NonNullable<typeof a> => !!a);
 
+  const sectionImages = article.sections
+    .filter((s) => s.image?.startsWith("https://"))
+    .map((s) => ({ url: s.image!, caption: s.imageAlt ?? s.heading }));
+
   const galleryImages = article.sections
     .flatMap((s) => s.inspirationSlugs ?? [])
     .map((s) => inspirationBySlug.get(s))
     .filter((p): p is NonNullable<typeof p> => !!p && p.ogImage.startsWith("https://"))
-    .map((p) => ({ url: p.ogImage, caption: p.headline }));
+    .map((p) => ({ url: p.ogImage, caption: p.headline }))
+    .concat(sectionImages);
 
   return (
     <>
@@ -108,6 +113,8 @@ const ArticlePage = () => {
                   <img
                     src={section.image}
                     alt={section.imageAlt ?? section.heading}
+                    loading="lazy"
+                    decoding="async"
                     className="mt-4 w-full rounded-xl object-cover aspect-video"
                   />
                 )}

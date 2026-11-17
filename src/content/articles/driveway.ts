@@ -1,6 +1,6 @@
 import type { Article } from "../types";
 import { DRIVEWAY_MULTIPLIER, INSTALLED, REMOVAL_PER_SQFT, type CompareMaterial, type Range } from "@/lib/tools/data/paving";
-import { perSqftRange, moneyRange } from "@/lib/format";
+import { perSqftRange, moneyRange, num } from "@/lib/format";
 import { CURRENT_YEAR } from "@/lib/year";
 
 /** Black integral color = plain concrete + about $2–4/sq ft pigment premium (verified, see methodology). */
@@ -33,6 +33,11 @@ const removal = perSqftRange(REMOVAL_PER_SQFT.concrete);
 /** Total for an area span: low rate × small area to high rate × large area. */
 const span = (r: Range, a1: number, a2: number) => moneyRange({ low: r.low * a1, typical: r.typical * a1, high: r.high * a2 });
 const pm = DRIVEWAY_MULTIPLIER.pavers.value;
+/** Circular driveway geometry from the sizing rule on that page: inside radius 18–20 ft, lanes 10–12 ft. */
+const LOOP = { low: Math.PI * (28 ** 2 - 18 ** 2), high: Math.PI * (32 ** 2 - 20 ** 2) };
+const HALF = { low: LOOP.low / 2, high: LOOP.high / 2 };
+const sqftNum = (n: number) => Math.round(n / 10) * 10;
+const STAMPED_COBBLE: Range = { low: 14, typical: 17, high: 20 };
 const paverDriveway = perSqftRange({ low: INSTALLED["concrete-paver"].low * pm, typical: INSTALLED["concrete-paver"].typical * pm, high: INSTALLED["concrete-paver"].high * pm });
 
 export const drivewayArticles: Article[] = [
@@ -346,7 +351,7 @@ export const drivewayArticles: Article[] = [
     targetKeywords: ["circular driveway ideas", "round driveway", "curved driveway design"],
     ogImage: "https://images.pourcanvas.com/driveway-circular-ideas.jpg",
     publishedAt: "2026-03-27",
-    updatedAt: "2026-06-10",
+    updatedAt: "2026-11-16",
     intro:
       "A circular concrete driveway typically costs $15,000–40,000 installed, depending on size, finish, and site conditions. That's a significant investment — justified when the property has the frontage to support it and curb appeal is a real priority. Done well in stamped or exposed aggregate concrete, a circular driveway is one of the most visually distinctive exterior upgrades possible. These ideas cover pattern choices, layout decisions, and the one sizing rule you can't ignore. For context on costs, the same per-sq-ft pricing logic from standard driveway work applies — with a complexity premium for curved forming.",
     sections: [
@@ -389,8 +394,41 @@ export const drivewayArticles: Article[] = [
         heading: "Front Walkway Integration on a Circular Driveway Property",
         body: "Properties with circular driveways typically have a front entry that's accessed from the center of the circular loop rather than from the street. The front walkway on these properties often functions as a short, formal connection from the island to the front door — 10–20 feet rather than the typical 30–40 foot front path. The walkway finish should match the driveway finish for visual continuity; on a cobblestone circular drive, a matching cobblestone-stamped walkway from the inner island to the front door reads as intentional and complete. The patio, if present, is typically at the rear and can use a different but related finish — the front exterior cohesion is the priority for a circular drive property.",
       },
+      {
+        heading: "Small Circular Driveway Ideas: The Half-Circle Layout",
+        body: `<p>The smallest true circular driveway is a half circle, also called a horseshoe drive: two curb cuts, one curve past the front door, and a planted island inside the curve. It uses the same turning geometry as a full loop (an inside radius of 18–20 ft and lanes 10–12 ft wide) but only half of it, so the curve paves about ${num(sqftNum(HALF.low))}–${num(sqftNum(HALF.high))} sq ft instead of about ${num(sqftNum(LOOP.low))}–${num(sqftNum(LOOP.high))} sq ft for a full circle. The outer edge of the curve still spans 56–64 ft, so a half circle needs as much frontage as a full loop; what it saves is depth and concrete.</p>
+<p>Small circular driveway ideas that keep the cost down:</p>
+<ul>
+<li>Pour the field in plain broom finish and spend the decorative budget on a stamped or exposed aggregate border band along the outer edge (see our <a href="/blog/driveway/driveway-border-ideas">driveway border ideas</a>).</li>
+<li>Keep the island low and simple: one small tree or a few shrubs reads better than a crowded bed in a tight curve.</li>
+<li>Run the front walk straight from the inside of the curve to the door, in the same finish as the border.</li>
+<li>Check curb-cut rules before you design: a horseshoe needs two driveway openings, and many towns limit the number of openings per lot.</li>
+</ul>
+<table>
+<tr><th>Layout</th><th>Paved area (curve only)</th><th>Plain concrete (${sqft("plain-concrete")}/sq ft)</th><th>Cobblestone stamped ($14–20/sq ft)</th></tr>
+<tr><td>Half circle (horseshoe)</td><td>${num(sqftNum(HALF.low))}–${num(sqftNum(HALF.high))} sq ft</td><td>${span(plainC, HALF.low, HALF.high)}</td><td>${span(STAMPED_COBBLE, HALF.low, HALF.high)}</td></tr>
+<tr><td>Full circle loop</td><td>${num(sqftNum(LOOP.low))}–${num(sqftNum(LOOP.high))} sq ft</td><td>${span(plainC, LOOP.low, LOOP.high)}</td><td>${span(STAMPED_COBBLE, LOOP.low, LOOP.high)}</td></tr>
+</table>
+<p>Add the two short legs to the street at the same rate per sq ft. To price the same layout in pavers, use the <a href="/tools/paver-installation-cost-calculator">paver installation cost calculator</a>.</p>`,
+        image: "https://images.pourcanvas.com/small-half-circle-concrete-driveway-two-entrances-front.jpg",
+        imageAlt: "Small half-circle concrete driveway with two entrances in front of a brick ranch house",
+      },
+      {
+        heading: "Round Driveway vs. Horseshoe vs. Turnaround: Which Layout Fits Your Lot",
+        body: `<p>"Round driveway" and "circle driveway design" cover three different layouts. A full round driveway loops all the way around a center island and suits wide, deep front yards. A horseshoe uses two curb cuts and half the loop, which suits wide but shallow lots. A teardrop turnaround sits at the house end of a long straight driveway: it needs one curb cut and lets you drive out forward instead of backing onto a busy road.</p>
+<table>
+<tr><th>Layout</th><th>Curb cuts</th><th>Lot it suits</th><th>Paved area of the loop</th><th>Main benefit</th></tr>
+<tr><td>Full round loop</td><td>1–2</td><td>Wide and deep front yard</td><td>About ${num(sqftNum(LOOP.low))}–${num(sqftNum(LOOP.high))} sq ft</td><td>Formal entry with a landscaped center</td></tr>
+<tr><td>Horseshoe (half circle)</td><td>2</td><td>Wide, shallow front yard</td><td>About ${num(sqftNum(HALF.low))}–${num(sqftNum(HALF.high))} sq ft</td><td>Drop-off at the front door on a smaller lot</td></tr>
+<tr><td>Teardrop turnaround</td><td>1</td><td>Long, narrow lot or busy road</td><td>About ${num(sqftNum(LOOP.low))}–${num(sqftNum(LOOP.high))} sq ft plus the straight approach</td><td>Leave forward instead of backing out</td></tr>
+</table>
+<p>All three follow the same sizing rule: an inside radius of 18–20 ft and lanes 10–12 ft wide. A teardrop is not a way to shrink the footprint; it moves the full loop to the house end. If you only need room to turn around, a straight driveway with a widened pad beside the garage uses far less concrete. For a paver field or paver border on any of these layouts, count units with the <a href="/tools/paver-calculator">paver calculator</a>, or compare the finished cost in the <a href="/tools/paver-driveway-cost-calculator">paver driveway cost calculator</a>.</p>`,
+        image: "https://images.pourcanvas.com/straight-concrete-driveway-ending-round-teardrop-turnaround-loop.jpg",
+        imageAlt: "Straight concrete driveway ending in a round teardrop turnaround loop around a planted island",
+      },
     ],
-    relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost"],
+    relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost", "driveway-border-ideas", "driveway-edging-ideas", "exposed-aggregate-driveway"],
+    relatedTools: ["paver-installation-cost-calculator", "paver-calculator", "paver-driveway-cost-calculator"],
     faqs: [
       {
         question: "How much does a circular concrete driveway cost?",
@@ -403,6 +441,10 @@ export const drivewayArticles: Article[] = [
       {
         question: "How much space do you need for a circular driveway?",
         answer: "A functional circular driveway requires a minimum inside radius of 18–20 feet to accommodate standard vehicles, with driveway lanes at least 10–12 feet wide. This means a minimum usable frontage of roughly 50–60 feet — it's not practical for narrow urban lots. Factor in the center island and approach lanes when assessing whether your property has sufficient space.",
+      },
+      {
+        question: "What is the smallest circular driveway?",
+        answer: `A half-circle (horseshoe) driveway is the smallest true circular layout. With the usual sizing rule of an 18–20 ft inside radius and 10–12 ft lanes, the curve paves about ${num(sqftNum(HALF.low))}–${num(sqftNum(HALF.high))} sq ft, roughly ${span(plainC, HALF.low, HALF.high)} in plain concrete at ${sqft("plain-concrete")}/sq ft, plus the two legs to the street. It still needs 56–64 ft of frontage and two curb cuts, so check your town's rules on driveway openings first.`,
       },
     ],
   },
@@ -436,7 +478,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Exposed Aggregate in Dark Tones",
-        body: "Dark pea gravel or black basalt aggregate in a washed finish gives a modern, textured surface without any stamped pattern. The aggregate itself provides visual interest and the texture handles vehicle loads well without polish or decoration. Cost: $8–14 per sq ft. It's one of the cleanest modern looks when executed in a consistent dark tone — the aggregate color and concrete base color should be close to each other to avoid a spotty appearance. Weighing it against a plain finish? Our <a href='/blog/patio/exposed-aggregate-vs-broom-finish'>exposed aggregate vs broom finish comparison</a> breaks down cost and grip.",
+        body: "Dark pea gravel or black basalt aggregate in a washed finish gives a modern, textured surface without any stamped pattern. The aggregate itself provides visual interest and the texture handles vehicle loads well without polish or decoration. Cost: $8–14 per sq ft. It's one of the cleanest modern looks when executed in a consistent dark tone — the aggregate color and concrete base color should be close to each other to avoid a spotty appearance. Weighing it against a plain finish? Our <a href='/blog/patio/exposed-aggregate-vs-broom-finish'>exposed aggregate vs broom finish comparison</a> breaks down cost and grip. For a driveway-specific cost and climate breakdown, see our <a href='/blog/driveway/exposed-aggregate-driveway'>exposed aggregate driveway guide</a>.",
         inspirationSlugs: ["exposed-aggregate-driveway-grey", "exposed-aggregate-driveway-grey-contemporary", "exposed-aggregate-driveway-tan", "white-exposed-aggregate-driveway"],
       },
       {
@@ -446,7 +488,7 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Stamped Concrete in a Modern Context",
-        body: "If you want a stamped driveway that reads as modern rather than traditional, avoid cobblestone and small brick patterns. The patterns that work in a modern context are: linear plank (wide rectangular bands running perpendicular to the house), large-format ashlar in a single dark tone without accent color, and simple grid scoring with a contrasting border. For every pattern and what it costs, see our <a href='/blog/patio/stamped-concrete-patterns'>stamped concrete patterns guide</a>.",
+        body: "If you want a stamped driveway that reads as modern rather than traditional, avoid cobblestone and small brick patterns. The patterns that work in a modern context are: linear plank (wide rectangular bands running perpendicular to the house), large-format ashlar in a single dark tone without accent color, and simple grid scoring with a contrasting border. For every pattern and what it costs, see our <a href='/blog/patio/stamped-concrete-patterns'>stamped concrete patterns guide</a>; for the darkest version of this look, see <a href='/blog/driveway/black-stamped-concrete'>black stamped concrete</a>.",
         inspirationSlugs: ["stamped-concrete-driveway-ashlar-slate", "stamped-concrete-driveway-cobblestone", "stamped-concrete-driveway-cream"],
       },
       {
@@ -499,9 +541,9 @@ export const drivewayArticles: Article[] = [
         inspirationSlugs: ["light-grey-brushed-concrete-driveway", "modern-large-slab-driveway", "concrete-strips-turf-driveway", "parallel-strip-driveway-white-gravel"],
       },
     ],
-    relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost", "black-concrete-driveway"],
+    relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost", "black-concrete-driveway", "charcoal-concrete-driveway", "black-stamped-concrete", "exposed-aggregate-driveway", "driveway-edging-ideas"],
     relatedMaterials: ["exposed-aggregate", "broom-finish", "colored-concrete", "stamped-concrete"],
-    relatedTools: ["paver-driveway-cost-calculator", "patio-cost-calculator"],
+    relatedTools: ["paver-driveway-cost-calculator", "patio-cost-calculator", "paver-calculator", "paver-installation-cost-calculator"],
     faqs: [
       {
         question: "What makes a driveway look modern in 2026?",
@@ -605,6 +647,8 @@ export const drivewayArticles: Article[] = [
         heading: "How Black Concrete Is Made — and Why It Matters",
         body: "Black concrete achieves its color through integral pigment — iron oxide or carbon black dye mixed directly into the concrete pour before it's placed. This is different from a surface stain or coating: the color runs through the full depth of the slab, so chips and surface wear expose the same color beneath rather than a grey base. Integral pigment is the only method worth considering for a driveway where vehicle traffic and edge impacts are routine. Surface stains ($1–3/sq ft) fade and chip within a few years under driveway conditions; integral color is the durable approach. The pigment premium adds $2–4 per sq ft over plain concrete — a relatively modest cost for a result that holds.",
         inspirationSlugs: ["modern-black-concrete-driveway"],
+        image: "https://images.pourcanvas.com/edge-black-integrally-colored-concrete-driveway-black-through.jpg",
+        imageAlt: "Edge of a black integrally colored concrete driveway, black through the full depth of the slab",
       },
       {
         heading: "The Heat Problem: What Black Driveways Do in Summer",
@@ -614,19 +658,27 @@ export const drivewayArticles: Article[] = [
         heading: "Black vs. Charcoal: The Practical Distinction",
         body: "True black concrete — fully saturated carbon black or iron oxide at maximum loading — is striking but the hardest to maintain. Over time, UV exposure breaks down the pigment binder and the surface fades to an uneven brownish-grey. Charcoal (dark grey with strong saturation) is a more forgiving choice: it reads as nearly black from the street, fades more gracefully and uniformly, and costs the same. If your goal is a bold, dark driveway that looks good for years with normal sealer maintenance, specify a charcoal or graphite integral color rather than maximum-black loading. Most contractors with experience in dark concrete will steer you this direction — it's worth asking why if they don't.",
         inspirationSlugs: ["brushed-concrete-driveway-charcoal", "modern-black-concrete-driveway"],
+        image: "https://images.pourcanvas.com/charcoal-integral-color-concrete-driveway-that-reads-nearly.jpg",
+        imageAlt: "Charcoal integral color concrete driveway that reads nearly black from the street",
       },
       {
         heading: "Sealer Maintenance: Non-Negotiable for Dark Concrete",
         body: "A penetrating sealer is required for dark concrete driveways — applied at installation and every 3–5 years thereafter. Without it, UV degradation fades the surface from deep charcoal to a washed-out mid-grey within 3–5 years. Penetrating sealers (silane-siloxane or siliconate formula) are the right product: they protect color depth without adding surface sheen, and they don't require stripping before reapplication. Film-forming sealers (acrylic, polyurethane) add a gloss that some homeowners want but creates a surface that looks worn when the film breaks down — more visible on dark surfaces than light ones. Budget $150–300 per application for a professional resealing, or $40–80 in product for a DIY job on a 500 sq ft driveway.",
+        image: "https://images.pourcanvas.com/black-concrete-driveway-half-resealed-showing-restored-deep.jpg",
+        imageAlt: "Black concrete driveway half resealed, showing restored deep color next to the faded unsealed half",
       },
       {
         heading: "Black Concrete vs. Asphalt: Which Is Actually Darker",
         body: "The most common question from homeowners considering a black driveway: is it really darker than asphalt? Fresh asphalt is deep black — often darker than even maximum-pigment concrete. But asphalt fades to an oxidized grey within a few years without seal coating; maintained asphalt cycles between dark and grey over time. Black concrete, maintained with a quality sealer, holds a consistent deep charcoal that reads darker than weathered asphalt and more intentional than sealed asphalt's inconsistent sheen. The key difference is aesthetic consistency: black concrete looks designed; maintained asphalt looks maintained. For the same visual result with more design control, black concrete is the stronger choice.",
+        image: "https://images.pourcanvas.com/sealed-black-concrete-driveway-meeting-faded-grey-asphalt.jpg",
+        imageAlt: "Sealed black concrete driveway meeting a faded grey asphalt street",
       },
       {
         heading: "What Black Driveways Work Best With",
         body: "A black or charcoal concrete driveway makes the strongest visual impact against a light home exterior — white, light grey, cream, or warm beige. The high contrast reads as architectural and deliberate. Against a dark home exterior (dark grey, navy, dark brown), the contrast disappears and the driveway blends rather than anchors. Light-toned window frames and trim, structured landscaping, and clean edge detailing amplify the effect. Where black driveways fail: underdeveloped landscapes, mismatched exterior materials, or homes that need other maintenance first. A bold driveway in a cluttered setting looks out of place, not elevated. If you're also redoing a front walkway or patio, extending the dark concrete theme across all three surfaces creates the most cohesive result — though a slightly lighter tone on the walkway and patio avoids the heat issues of full black on pedestrian surfaces. Want pattern as well as color? See our <a href='/blog/driveway/stamped-concrete-driveway'>stamped concrete driveway guide</a>. Already have a grey slab? <a href='/blog/driveway/driveway-resurfacing'>Driveway resurfacing</a> can take a dark overlay without a full tear-out.",
         inspirationSlugs: ["dark-concrete-home-exterior"],
+        image: "https://images.pourcanvas.com/black-concrete-driveway-front-white-modern-farmhouse-black.jpg",
+        imageAlt: "Black concrete driveway in front of a white modern farmhouse with black window frames",
       },
       {
         heading: "Comparing Black Concrete to Other Dark Driveway Options",
@@ -669,11 +721,13 @@ export const drivewayArticles: Article[] = [
 <tr><td>Coastal / rainy</td><td>Carbon black washing out, efflorescence</td><td>Iron oxide black, or carbon black only with a sealer program</td><td>Keep the surface sealed without gaps</td></tr>
 </table>
 <p>Across all climates, reseal when wear shows rather than on a fixed calendar. Butterfield says stamped concrete usually does not need sealing every year and warns that sealer buildup can cause delamination. If heat or upkeep tips the decision, compare a dark paver driveway in the <a href="/tools/paver-driveway-cost-calculator">paver driveway cost calculator</a>, or see the <a href="/blog/driveway/black-stamped-concrete">black stamped concrete guide</a> for patterned options.</p>`,
+        image: "https://images.pourcanvas.com/faded-black-concrete-driveway-lighter-tire-paths-years.jpg",
+        imageAlt: "Faded black concrete driveway with lighter tire paths after years without sealer",
       },
     ],
     relatedSlugs: ["modern-driveway-ideas", "concrete-driveway-cost", "concrete-driveway-color-guide", "charcoal-concrete-driveway", "black-stamped-concrete"],
     relatedMaterials: ["colored-concrete", "exposed-aggregate"],
-    relatedTools: ["paver-driveway-cost-calculator", "patio-cost-calculator"],
+    relatedTools: ["paver-driveway-cost-calculator", "driveway-finish-selector", "patio-cost-calculator", "paver-calculator"],
     faqs: [
       {
         question: "How much does a black concrete driveway cost?",
@@ -707,7 +761,7 @@ export const drivewayArticles: Article[] = [
     targetKeywords: ["driveway border ideas", "concrete driveway border", "stamped concrete border driveway"],
     ogImage: "https://images.pourcanvas.com/driveway-border-ideas.jpg",
     publishedAt: "2026-03-31",
-    updatedAt: "2026-06-10",
+    updatedAt: "2026-11-16",
     intro:
       "A driveway border adds visual definition to a plain concrete slab without the cost of stamping the entire surface. Border treatments run $8–20 per linear foot installed — on a standard two-car driveway perimeter (roughly 160 linear feet), that's $1,280–3,200. Here are 5 border styles worth considering, with real cost ranges and the home styles they work best with.",
     sections: [
@@ -744,9 +798,38 @@ export const drivewayArticles: Article[] = [
         heading: "Coordinating Driveway Border with Front Walkway and Patio",
         body: "A driveway border that echoes the material language of the front walkway creates a visually connected exterior. The most effective pairing: a cobblestone-stamp border on the driveway plus a cobblestone-stamped front walkway — same stamp, same color wash, different surface. The walkway can go slightly richer in color depth than the driveway since it handles foot traffic rather than vehicle loads. If the patio also uses a decorative stamp or exposed aggregate finish, a simple saw-cut score line or matching color band on the driveway ties everything together without over-decorating the most utilitarian surface.",
       },
+      {
+        heading: "Paver Border on a Concrete Driveway",
+        body: `<p>A paver border is one or two rows of concrete pavers or clay bricks set along the edges of a concrete driveway. It is the brick inlay border from above, built with pavers: $14–22 per linear foot installed, or about $2,240–3,520 around the perimeter of a two-car driveway (roughly 160 linear feet). The width depends on how the units are laid. Standard 4×8-inch pavers laid lengthwise make a 4-inch row; laid crosswise as a soldier course, each row is 8 inches wide.</p>
+<table>
+<tr><th>Border</th><th>Band width</th><th>Pavers per linear ft</th><th>Pavers for 160 linear ft</th></tr>
+<tr><td>One row, lengthwise</td><td>About 4 in</td><td>1.5</td><td>240</td></tr>
+<tr><td>Two rows, lengthwise</td><td>About 8 in</td><td>3</td><td>480</td></tr>
+<tr><td>One row, soldier course</td><td>About 8 in</td><td>3</td><td>480</td></tr>
+<tr><td>Two rows, soldier course</td><td>About 16 in</td><td>6</td><td>960</td></tr>
+</table>
+<p>Counts are for 4×8-inch units before cutting waste. Three details decide whether a paver border lasts: set it on a compacted base or a concrete footer so it doesn't settle below the slab, keep it flush with the concrete so tires and snowplows don't catch an edge, and fill the joints with polymeric sand, which hardens in place and resists washout and weeds. Count pavers for your border by entering its length and width in the <a href="/tools/paver-calculator">paver calculator</a>, then size the bedding with the <a href="/tools/paver-sand-calculator">paver sand calculator</a> and the joint fill with the <a href="/tools/polymeric-sand-calculator">polymeric sand calculator</a>.</p>`,
+        image: "https://images.pourcanvas.com/light-grey-concrete-driveway-double-row-charcoal-pavers.jpg",
+        imageAlt: "Light grey concrete driveway with a double row of charcoal pavers as a border",
+      },
+      {
+        heading: "Driveway Apron and Entrance Borders",
+        body: `<p>An entrance border runs across the driveway where it meets the sidewalk or street, usually as a band of brick, pavers or stamped concrete 12–24 inches deep. It frames the entrance the way a perimeter border frames the sides, for a fraction of the length: a 20 ft two-car entrance is 20 linear feet, against about 160 for the full perimeter.</p>
+<table>
+<tr><th>Entrance border</th><th>Cost per linear ft</th><th>20 ft entrance</th><th>Full 160 ft perimeter</th></tr>
+<tr><td>Saw-cut score line</td><td>$3–6</td><td>$60–120</td><td>$480–960</td></tr>
+<tr><td>Cobblestone stamp band</td><td>$8–12</td><td>$160–240</td><td>$1,280–1,920</td></tr>
+<tr><td>Exposed aggregate band</td><td>$10–16</td><td>$200–320</td><td>$1,600–2,560</td></tr>
+<tr><td>Brick or paver band</td><td>$14–22</td><td>$280–440</td><td>$2,240–3,520</td></tr>
+</table>
+<p>Check two things first. The strip between the sidewalk and the street is often public right-of-way, and many towns set the material and thickness for it, so put the decorative band on your side of the sidewalk unless your permit allows otherwise. And keep the band flush with the slab and the sidewalk: a raised edge at the entrance is a trip hazard and a snowplow target. Running the same material a few feet up both sides makes the entrance read as one designed element. For edging that also protects the slab, see our <a href="/blog/driveway/driveway-edging-ideas">driveway edging ideas</a>.</p>`,
+        image: "https://images.pourcanvas.com/brick-border-across-entrance-along-sides-concrete-driveway.jpg",
+        imageAlt: "Brick border across the entrance and along the sides of a concrete driveway at the sidewalk",
+      },
     ],
-    relatedSlugs: ["driveway-edging-ideas", "stamped-concrete-driveway", "concrete-driveway-cost"],
+    relatedSlugs: ["driveway-edging-ideas", "stamped-concrete-driveway", "concrete-driveway-cost", "circular-driveway-ideas", "black-stamped-concrete"],
     relatedMaterials: ["colored-concrete", "stamped-concrete"],
+    relatedTools: ["paver-calculator", "polymeric-sand-calculator", "paver-sand-calculator", "paver-installation-cost-calculator"],
     faqs: [
       {
         question: "How much does a driveway border cost?",
@@ -759,6 +842,10 @@ export const drivewayArticles: Article[] = [
       {
         question: "What is the most durable driveway border?",
         answer: "Brick or concrete paver inlay borders are the most durable — the individual units resist edge chipping from snowplow contact and don't rely on a surface color wash that fades. Exposed aggregate borders are next: the aggregate texture holds up without periodic resealing for color maintenance. Stamped borders with a color wash need resealing every 2–3 years to maintain color depth, similar to the main driveway surface.",
+      },
+      {
+        question: "How many pavers do I need for a driveway border?",
+        answer: "For standard 4×8-inch pavers, one row laid lengthwise takes 1.5 pavers per linear foot, and one soldier-course row (laid crosswise) takes 3. Around a two-car driveway perimeter (roughly 160 linear feet), that's 240 pavers for a single lengthwise row, 480 for a single soldier course and 960 for a double soldier course, before cutting waste. Enter the border's length and width in the PourCanvas paver calculator to add cutting waste and bedding sand.",
       },
     ],
   },

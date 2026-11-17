@@ -1,6 +1,9 @@
 import type { MaterialPage } from "../types";
-import { perSqftRange } from "@/lib/format";
-import { INSTALLED } from "@/lib/tools/data/paving";
+import { perSqftRange, moneyRange } from "@/lib/format";
+import { INSTALLED, MATERIAL_ONLY, type AnyMaterial } from "@/lib/tools/data/paving";
+
+const sq = (m: AnyMaterial) => perSqftRange(INSTALLED[m]);
+const for200 = (m: AnyMaterial) => moneyRange({ low: INSTALLED[m].low * 200, typical: 0, high: INSTALLED[m].high * 200 });
 
 export const flagstonePage: MaterialPage = {
   slug: "flagstone",
@@ -21,7 +24,7 @@ export const flagstonePage: MaterialPage = {
   ogImage: "/og/material-flagstone.jpg",
   publishedAt: "2025-06-15",
   intro:
-    `Flagstone runs ${perSqftRange(INSTALLED["flagstone-dry"])} per sq ft installed dry-laid and ${perSqftRange(INSTALLED["flagstone-mortared"])} mortared — typically above stamped concrete (${perSqftRange(INSTALLED["stamped-concrete"])}, most often $12–18) — and delivers something concrete can't fully replicate: genuine quarried stone with natural depth, variation, and texture. It's the premium choice for walkways, patios, and pool decks where material authenticity matters.`,
+    `No, flagstone is not cheaper than concrete. It runs ${sq("flagstone-dry")} per sq ft installed dry-laid and ${sq("flagstone-mortared")} mortared, against ${sq("plain-concrete")} for plain concrete and ${sq("stamped-concrete")} for stamped concrete (most often $12–18). What the premium buys is something concrete can't fully replicate: genuine quarried stone with natural depth, variation, and texture. It's the premium choice for walkways, patios, and pool decks where material authenticity matters.`,
   sections: [
     {
       heading: "Types of Flagstone",
@@ -29,7 +32,7 @@ export const flagstonePage: MaterialPage = {
     },
     {
       heading: "Cost",
-      body: `Natural flagstone installation runs $25–45 per sq ft, with the range driven by stone type and setting method. Bluestone at the lower end, travertine and quartzite at the higher end. The stone itself typically costs $3–8/sq ft; the rest is labor. Compare this to stamped concrete ($12–18/sq ft) or concrete pavers (${perSqftRange(INSTALLED["concrete-paver"])}/sq ft). On a 200 sq ft front walkway, natural flagstone costs $5,000–9,000 installed vs. $2,400–3,600 for stamped concrete.`,
+      body: `Natural flagstone installation runs ${sq("flagstone-dry")} per sq ft dry-laid and ${sq("flagstone-mortared")} mortared, with the range driven by stone type and setting method. Bluestone at the lower end, travertine and quartzite at the higher end. The stone itself costs about ${perSqftRange(MATERIAL_ONLY["flagstone-dry"])}/sq ft; the rest is labor, plus the concrete slab under mortared stone. Compare this to plain concrete (${sq("plain-concrete")}/sq ft), stamped concrete (${sq("stamped-concrete")}/sq ft, most often $12–18) or concrete pavers (${sq("concrete-paver")}/sq ft). On a 200 sq ft front walkway, dry-laid flagstone costs ${for200("flagstone-dry")} and mortared flagstone ${for200("flagstone-mortared")} installed, vs. $2,400–3,600 for stamped concrete at $12–18 and ${for200("plain-concrete")} for plain concrete. Price your own size in the <a href="/tools/flagstone-calculator">flagstone calculator</a>.`,
     },
     {
       heading: "Setting Methods",
@@ -72,7 +75,11 @@ export const flagstonePage: MaterialPage = {
   faqs: [
     {
       question: "How much does flagstone cost per square foot installed?",
-      answer: "Natural flagstone installation runs $25–45 per sq ft. Bluestone is at the lower end; travertine and quartzite are at the higher end. The stone itself costs $3–8/sq ft; the rest is labor. On a 200 sq ft front walkway, expect $5,000–9,000 installed vs. $2,400–3,600 for stamped concrete.",
+      answer: `Natural flagstone installation runs ${sq("flagstone-dry")} per sq ft dry-laid and ${sq("flagstone-mortared")} mortared. Bluestone is at the lower end; travertine and quartzite are at the higher end. The stone itself costs about ${perSqftRange(MATERIAL_ONLY["flagstone-dry"])}/sq ft; the rest is labor. On a 200 sq ft front walkway, expect ${for200("flagstone-dry")} dry-laid or ${for200("flagstone-mortared")} mortared, vs. $2,400–3,600 for stamped concrete.`,
+    },
+    {
+      question: "Is flagstone cheaper than concrete?",
+      answer: `No. According to PourCanvas pricing data, flagstone costs ${sq("flagstone-dry")} per sq ft installed dry-laid and ${sq("flagstone-mortared")} mortared, while plain concrete costs ${sq("plain-concrete")} and stamped concrete ${sq("stamped-concrete")} (most often $12–18). On a 200 sq ft walkway that is ${for200("flagstone-dry")} for dry-laid flagstone against ${for200("plain-concrete")} for plain concrete. Stamped concrete with a flagstone pattern is the usual way to get the look for less.`,
     },
     {
       question: "Does flagstone crack in cold climates?",
@@ -80,7 +87,7 @@ export const flagstonePage: MaterialPage = {
     },
     {
       question: "Is real flagstone worth the premium over stamped concrete?",
-      answer: "From across the yard, well-done stamped concrete flagstone pattern is nearly indistinguishable from real stone. Up close, natural stone has depth and texture that stamping approximates but doesn't fully replicate. The $10–25/sq ft premium is justified for high-end properties where material authenticity matters or where future buyers at a higher price point will notice the difference. For most homeowners, stamped concrete is the better value.",
+      answer: "From across the yard, well-done stamped concrete flagstone pattern is nearly indistinguishable from real stone. Up close, natural stone has depth and texture that stamping approximates but doesn't fully replicate. The premium over typical stamped concrete ($12–18/sq ft) is about $3–14/sq ft dry-laid and $8–27 mortared. It is justified for high-end properties where material authenticity matters or where future buyers at a higher price point will notice the difference. For most homeowners, stamped concrete is the better value.",
     },
   ],
 };

@@ -25,3 +25,11 @@ dist-ssr
 .vercel
 ai-tool/.next/
 ai-tool/node_modules/
+
+# image-gen local
+image-gen/.env
+image-gen/.venv/
+image-gen/__pycache__/
+image-gen/generated_images/
+image-gen/chatgpt/payload.js
+__pycache__/

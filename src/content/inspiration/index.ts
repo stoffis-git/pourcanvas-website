@@ -85,7 +85,7 @@ export const inspirationPages: InspirationPage[] = [
     title: "Minimalist Charcoal Concrete Driveway With Clean Joints",
     headline: "Minimalist Charcoal Concrete Driveway",
     metaDescription:
-      "Modern concrete driveways are clean, durable, and increasingly popular. These 2026 ideas show what's working — and how to get the look.",
+      "A minimalist charcoal concrete driveway with a soft broom finish, clean saw-cut joints and a dark border band. How to get this exact look and what to specify.",
     ogImage: "https://images.pourcanvas.com/inspiration-modern-driveway.jpg",
     heroAlt: "Modern minimalist concrete driveway with clean lines",
     dominantColor: "#52524f",

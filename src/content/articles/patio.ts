@@ -274,7 +274,7 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Appearance: Depends on Finish",
-        body: "Plain concrete looks plain. Stamped and colored concrete can look exceptional. Pavers naturally have variation and texture. Up close, high-quality pavers have a depth and authenticity that stamped concrete doesn't fully replicate — but from a normal outdoor viewing distance, the difference shrinks considerably.",
+        body: "Plain concrete looks plain. Stamped and colored concrete can look exceptional. Pavers naturally have variation and texture. Up close, high-quality pavers have a depth and authenticity that stamped concrete doesn't fully replicate — but from a normal outdoor viewing distance, the difference shrinks considerably. Weighing a decorative finish instead of plain concrete? Our <a href='/blog/patio/stamped-concrete-vs-pavers'>stamped concrete vs pavers cost comparison</a> covers that matchup.",
         inspirationSlugs: ["herringbone-brick-patio", "cobblestone-stamped-patio"],
       },
       {
@@ -308,7 +308,7 @@ export const patioArticles: Article[] = [
         body: "Most reputable concrete contractors offer a 1-year warranty on residential patio work — covering installation defects like significant cracking or surface delamination within 12 months of the pour. A few offer longer terms (2–5 years) for stamped and decorative work. What warranties typically don't cover: surface crazing or minor hairline cracking (considered normal concrete behavior), color fading from sealer neglect, or damage from impact or chemical exposure. Ask for the warranty terms in writing before signing a contract. A contractor who refuses to offer any written warranty is a red flag — most professionals in this trade stand behind their work. Compare warranty terms alongside price when evaluating quotes: a 2-year warranty from a slightly more expensive contractor may be the better overall value if the base price difference is modest.",
       },
     ],
-    relatedSlugs: ["stamped-concrete-ideas", "concrete-patio-cost"],
+    relatedSlugs: ["stamped-concrete-vs-pavers", "stamped-concrete-ideas", "concrete-patio-cost"],
     relatedMaterials: ["concrete-pavers", "flagstone"],
     faqs: [
       {
@@ -1039,6 +1039,8 @@ All costs are per square foot installed in 2026 and assume standard site conditi
     targetKeywords: [
       "stamped concrete vs pavers",
       "stamped concrete patio vs pavers",
+      "pavers vs stamped concrete cost",
+      "cost of pavers vs stamped concrete",
       "concrete vs paver patio cost",
       "stamped concrete or pavers",
       "is stamped concrete cheaper than pavers",

@@ -13,6 +13,9 @@ QUOTA_PROJECT = "gen-lang-client-0767192177"
 START = "2026-03-01"
 TODAY = dt.date.today()
 END = (TODAY - dt.timedelta(days=1)).isoformat()
+# Rank-tracker scraping, not people: 0 clicks, ~100% desktop, 90+ countries, flat impressions around the clock,
+# no Keyword Planner volume (analysis 2026-11-16). Excluded from clean_daily.csv; never optimize for these.
+BOT_QUERY_REGEX = r"^driveway design ideas 20\d\d$|^walkway renovation cost$|^online concrete driveway quote$"
 OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "gsc", TODAY.isoformat(), "api")
 
 TOKEN = subprocess.check_output(["gcloud", "auth", "application-default", "print-access-token"], text=True).strip()
@@ -50,10 +53,32 @@ def save(name, dims, rows):
     print(f"{name}: {len(rows)} rows")
 
 
+def clean_daily():
+    """Daily human-proxy series: mobile/tablet impressions, desktop minus bot queries, bot impressions, clicks."""
+    rows = {}
+    for r in query(["date", "device"]):
+        d = rows.setdefault(r["keys"][0], {"mobile": 0, "desktop": 0, "bot": 0, "web_clicks": 0, "image_clicks": 0})
+        d["desktop" if r["keys"][1] == "DESKTOP" else "mobile"] += r["impressions"]
+        d["web_clicks"] += r["clicks"]
+    for r in query(["date"], filters=[{"dimension": "query", "operator": "includingRegex", "expression": BOT_QUERY_REGEX}]):
+        rows.setdefault(r["keys"][0], {"mobile": 0, "desktop": 0, "bot": 0, "web_clicks": 0, "image_clicks": 0})["bot"] = r["impressions"]
+    for r in query(["date"], search_type="image"):
+        rows.setdefault(r["keys"][0], {"mobile": 0, "desktop": 0, "bot": 0, "web_clicks": 0, "image_clicks": 0})["image_clicks"] = r["clicks"]
+    with open(os.path.join(OUT, "clean_daily.csv"), "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["date", "mobile_tablet_impr", "desktop_impr_excl_bot", "bot_impr", "web_clicks", "image_clicks"])
+        for k in sorted(rows):
+            d = rows[k]
+            w.writerow([k, d["mobile"], d["desktop"] - d["bot"], d["bot"], d["web_clicks"], d["image_clicks"]])
+    print(f"clean_daily: {len(rows)} rows")
+
+
 def inspect_urls():
-    sitemap = urllib.request.urlopen("https://pourcanvas.com/sitemap.xml").read()
     ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-    urls = [e.text for e in ET.fromstring(sitemap).findall(".//s:loc", ns)]
+    index = ET.fromstring(urllib.request.urlopen("https://pourcanvas.com/sitemap.xml").read())
+    urls = []
+    for sm in [e.text for e in index.findall("./s:sitemap/s:loc", ns)]:
+        urls += [e.text for e in ET.fromstring(urllib.request.urlopen(sm).read()).findall("./s:url/s:loc", ns)]
     path = os.path.join(OUT, "url_inspection.csv")
     with open(path, "w", newline="") as f:
         w = csv.writer(f)
@@ -85,5 +110,6 @@ if __name__ == "__main__":
     save("image_query_page", ["query", "page"], query(["query", "page"], search_type="image"))
     save("image_date", ["date"], query(["date"], search_type="image"))
     save("web_date", ["date"], query(["date"]))
+    clean_daily()
     if "--inspect" in sys.argv:
         inspect_urls()
