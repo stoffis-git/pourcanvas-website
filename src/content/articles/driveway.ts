@@ -140,7 +140,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Pros",
         body: "Excellent slip resistance — far better than smooth concrete, and comparable to broom finish without the directional texture. Hides tire marks and surface imperfections well. Stands up to freeze-thaw cycles well when properly sealed. The pea gravel or river stone look is genuinely attractive without requiring the color maintenance that stamped finishes demand. And unlike stamped concrete, exposed aggregate improves with light wear — the aggregate polishes subtly over time.",
-        inspirationSlugs: ["exposed-aggregate-driveway-grey-contemporary"],
+        inspirationSlugs: ["exposed-aggregate-driveway-grey"],
       },
       {
         heading: "Cons",
@@ -363,7 +363,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Stamped vs. Exposed Aggregate: Which Works Better on a Curve",
         body: "Stamped concrete on a circular driveway requires precise alignment at the curved edges — the pattern must be cut cleanly rather than wrapped. This adds forming complexity and labor cost. Exposed aggregate ($8–14/sq ft) handles curves more naturally because it has no directional pattern, and the textured surface reads well against the curved border. Choose stamped for maximum visual impact; choose exposed aggregate for a cleaner, lower-risk execution.",
-        inspirationSlugs: ["exposed-aggregate-driveway-grey-contemporary"],
+        inspirationSlugs: ["exposed-aggregate-driveway-grey"],
       },
       {
         heading: "Two-Tone Concrete",
@@ -479,7 +479,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Exposed Aggregate in Dark Tones",
         body: "Dark pea gravel or black basalt aggregate in a washed finish gives a modern, textured surface without any stamped pattern. The aggregate itself provides visual interest and the texture handles vehicle loads well without polish or decoration. Cost: $8–14 per sq ft. It's one of the cleanest modern looks when executed in a consistent dark tone — the aggregate color and concrete base color should be close to each other to avoid a spotty appearance. Weighing it against a plain finish? Our <a href='/blog/patio/exposed-aggregate-vs-broom-finish'>exposed aggregate vs broom finish comparison</a> breaks down cost and grip. For a driveway-specific cost and climate breakdown, see our <a href='/blog/driveway/exposed-aggregate-driveway'>exposed aggregate driveway guide</a>.",
-        inspirationSlugs: ["exposed-aggregate-driveway-grey", "exposed-aggregate-driveway-grey-contemporary", "exposed-aggregate-driveway-tan", "white-exposed-aggregate-driveway"],
+        inspirationSlugs: ["exposed-aggregate-driveway-grey", "exposed-aggregate-driveway-tan", "white-exposed-aggregate-driveway"],
       },
       {
         heading: "Two-Tone Driveway: Border vs. Field Contrast",
@@ -538,7 +538,7 @@ export const drivewayArticles: Article[] = [
 <tr><td>Concrete strips with turf or gravel</td><td>Minimal, softened by green or gravel joints</td><td>Good on the strips; varies on the infill</td><td>Mowing or raking, weeding the joints</td><td>Moderate rainfall; joints help drainage</td><td>Less concrete than a full slab, plus infill</td></tr>
 </table>
 <p>The charcoal row carries the most trade-offs: for heat, fade and pigment choice, see our <a href="/blog/driveway/charcoal-concrete-driveway">charcoal concrete driveway guide</a>. To price a finish against pavers, run your size through the <a href="/tools/patio-cost-calculator">patio cost calculator</a> or the <a href="/tools/paver-driveway-cost-calculator">paver driveway cost calculator</a>.</p>`,
-        inspirationSlugs: ["light-grey-brushed-concrete-driveway", "modern-large-slab-driveway", "concrete-strips-turf-driveway", "parallel-strip-driveway-white-gravel"],
+        inspirationSlugs: ["light-grey-brushed-concrete-driveway", "large-slab-driveway-grass-joints", "concrete-strips-turf-driveway", "parallel-strip-driveway-white-gravel"],
       },
     ],
     relatedSlugs: ["stamped-concrete-driveway", "concrete-driveway-cost", "black-concrete-driveway", "charcoal-concrete-driveway", "black-stamped-concrete", "exposed-aggregate-driveway", "driveway-edging-ideas"],
@@ -1025,7 +1025,7 @@ export const drivewayArticles: Article[] = [
       {
         heading: "Metal Edging (Aluminum or Steel): Clean and Invisible",
         body: "Metal landscape edging — typically 1/8-inch aluminum or steel, 4–6 inches tall — is the most invisible edging option. Properly installed, it's nearly flush with grade and draws no visual attention. The edge does the structural job (preventing slab creep, containing gravel, retaining mulch or turf edges) without competing with the driveway surface. Installed cost: $3–8 per linear foot for aluminum; $4–10 for steel or Cor-Ten weathering steel. On 80 linear feet, that's $240–800. Aluminum is the standard residential choice — lightweight, rust-resistant, and easy to curve around radius edges. Steel is more durable for high-traffic commercial work. Metal edging suits contemporary and modern home styles where visual minimalism is the priority — if you want the driveway to look unedged but structurally perform as if it is, metal edging is the answer.",
-        inspirationSlugs: ["modern-large-slab-driveway"],
+        inspirationSlugs: ["large-slab-driveway-grass-joints"],
       },
       {
         heading: "Pavers as Edging: Visual Separation With Texture",

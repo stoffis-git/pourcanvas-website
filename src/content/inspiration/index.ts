@@ -31,6 +31,7 @@ export const inspirationPages: InspirationPage[] = [
     additionalImages: [
       { url: "https://images.pourcanvas.com/inspiration-grey-stamped-patio-v2.jpg", alt: "Grey stamped concrete patio - craftsman home with fall foliage background" },
       { url: "https://images.pourcanvas.com/inspiration-grey-stamped-patio-v3.jpg", alt: "Grey stamped concrete patio - colonial home with pool adjacent setting" },
+      { url: "https://images.pourcanvas.com/inspiration-grey-stamped-patio-craftsman.jpg", alt: "Grey ashlar stamped concrete patio beside a craftsman home with wide covered porch and mature landscaping" },
     ],
     relatedArticles: [
       { pillar: "patio", slug: "stamped-concrete-patterns" },
@@ -53,6 +54,7 @@ export const inspirationPages: InspirationPage[] = [
     additionalImages: [
       { url: "https://images.pourcanvas.com/inspiration-herringbone-patio-v2.jpg", alt: "Herringbone brick patio - farmhouse home with summer evening light" },
       { url: "https://images.pourcanvas.com/inspiration-herringbone-patio-v3.jpg", alt: "Herringbone brick patio - colonial home with garden edge setting" },
+      { url: "https://images.pourcanvas.com/inspiration-herringbone-brick-patio-colonial.jpg", alt: "Herringbone brick stamped concrete patio extending from a colonial red brick home with formal hedged garden borders" },
     ],
     relatedArticles: [
       { pillar: "patio", slug: "stamped-concrete-patterns" },
@@ -117,23 +119,6 @@ export const inspirationPages: InspirationPage[] = [
     ],
   },
   {
-    slug: "pool-deck-broom-finish",
-    title: "Broom Finish Pool Deck Ideas | PourCanvas",
-    headline: "Broom Finish Pool Deck",
-    metaDescription:
-      "A broom-finish concrete pool deck is slip-resistant, affordable, and cleaner-looking than most people expect. See how it looks in real yards.",
-    ogImage: "https://images.pourcanvas.com/inspiration-pool-deck-broom-finish.jpg",
-    heroAlt: "Broom finish concrete pool deck surrounding a modern pool",
-    dominantColor: "#a39d93",
-    contentBlock:
-      "The broom finish is the original concrete pool deck surface — and for good reason. The light texture left by dragging a stiff broom across fresh concrete creates just enough grip to be safe when wet, without the discomfort of coarser aggregate finishes underfoot. What surprises most homeowners is how clean a well-done broom finish looks. In a cool gray or warm buff color, it reads as intentional rather than default. It also pairs exceptionally well with modern pool coping and tile because it doesn't compete visually with the water or the pool surround design. For a pool deck that needs to handle heavy foot traffic, chemical splashing, and daily wet/dry cycles, a sealed broom-finish slab is one of the most durable and lowest-maintenance surfaces you can install. Cost: $6–10/sq ft for a standard broom finish, or $8–12/sq ft with a color wash added.",
-    targetKeywords: ["broom finish pool deck", "concrete pool deck", "pool surround ideas"],
-    pillar: "patio",
-    relatedArticles: [
-      { pillar: "patio", slug: "concrete-patio-ideas" },
-    ],
-  },
-  {
     slug: "stamped-concrete-walkway-grey",
     title: "Grey Stamped Concrete Walkway Inspiration | PourCanvas",
     headline: "Grey Stamped Concrete Walkway",
@@ -146,6 +131,9 @@ export const inspirationPages: InspirationPage[] = [
       "Grey stamped concrete might be the most versatile walkway finish available. It reads as modern without being trendy, pairs with brick, siding, stucco, and stone exteriors equally well, and ages attractively as the sealer weathers and develops a natural patina.\n\nThe key design decision is pattern choice. Ashlar slate in charcoal gray feels contemporary and structured — a natural match for modern and transitional homes. Random flagstone in a medium gray feels more traditional and relaxed, softening the approach to a craftsman or cottage-style home. Herringbone brick in a cooler gray tone has an almost European quality and suits formal traditional architecture particularly well. All three are strong choices; the right one is the one that reads as continuous with your home's exterior rather than competing with it.\n\nFrom a practical standpoint, grey stamped concrete walkways cost $12–18 per sq ft installed, and the color holds for 5–10 years with a quality sealer. Resealing every 2–3 years is the main maintenance requirement. UV-stable pigments are worth specifying for south- or west-facing walkways that get full afternoon sun, since gray is among the colors most prone to fading without UV protection in the sealer.",
     targetKeywords: ["stamped concrete walkway", "grey concrete walkway", "front path ideas"],
     pillar: "walkway",
+    additionalImages: [
+      { url: "https://images.pourcanvas.com/inspiration-stamped-walkway-grey-ranch.jpg", alt: "Grey slate stamped concrete front walkway approaching a low-slung ranch home with wide front yard and mature trees" },
+    ],
     relatedArticles: [
       { pillar: "patio", slug: "stamped-concrete-patterns" },
       { pillar: "walkway", slug: "concrete-walkway-ideas" },
@@ -199,6 +187,9 @@ export const inspirationPages: InspirationPage[] = [
       "Grey exposed aggregate is quietly one of the most practical driveway finishes available — and one of the most underrated visually. The washed surface reveals the pebble and stone aggregate below, creating a texture that's slip-resistant, hides tire marks, and ages without looking worn. In a cool grey or charcoal tone, it reads as clean and deliberate rather than decorative.\n\nThe grey palette works because it's flexible. A lighter silver-grey suits coastal and contemporary homes with white or light board-and-batten exteriors. Charcoal aggregate gives a more grounded, urban look that pairs well with dark timber, black window frames, and modern landscaping. The finish has no directional pattern, which means it handles curved driveways and irregular layouts more naturally than stamped concrete — no alignment decisions, no pattern interruptions at the curves.\n\nFrom a cost standpoint, grey exposed aggregate driveways run $8–14 per sq ft installed — the middle ground between plain broom finish ($6–10) and stamped concrete ($12–20). On a standard two-car driveway (400–500 sq ft), that's $3,200–7,000. Maintenance is straightforward: seal every 2–3 years with a penetrating sealer to protect the aggregate from staining and keep the color depth. The finish holds its character well over time — unlike stamped concrete, there's no color wash that fades unevenly.",
     targetKeywords: ["exposed aggregate driveway", "grey driveway ideas", "textured concrete driveway"],
     pillar: "driveway",
+    additionalImages: [
+      { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-driveway-contemporary.jpg", alt: "Grey exposed aggregate concrete driveway approaching an angular contemporary home with large windows and dark metal cladding" },
+    ],
     relatedArticles: [
       { pillar: "driveway", slug: "modern-driveway-ideas" },
     ],
@@ -267,6 +258,9 @@ export const inspirationPages: InspirationPage[] = [
       "Grey is the dominant color choice for concrete pool decks in 2026 — and the range within 'grey' is wider than most homeowners realize. A warm silver-grey with exposed aggregate reads as coastal and relaxed, pairing naturally with light-toned coping and white or cream home exteriors. A cool charcoal broom-finish or lightly stamped surface reads as architectural and grounded, suited to contemporary homes with dark window frames and structured landscaping. Both are the same material; the tone and finish choice is what changes the entire mood.\n\nThe practical case for grey pool decks is strong. Lighter grey tones reflect more heat than darker surfaces — an important consideration for any surface you walk across barefoot. A medium-grey exposed aggregate or lightly stamped concrete stays 15–20 degrees cooler underfoot than the same finish in charcoal or charcoal-black on a hot summer afternoon. It also doesn't show chemical splash staining as readily as very light white or cream tones.\n\nFrom a cost standpoint, a grey broom-finish or lightly textured pool deck runs $6–10 per sq ft installed. Exposed aggregate in grey tones adds $2–4 per sq ft over plain finish. Stamped grey concrete — especially the popular cool-grey flagstone patterns — runs $12–18 per sq ft. On a 500 sq ft pool deck, that's $3,000–9,000 depending on finish. Sealing every 2 years maintains color depth and protects against chemical degradation.",
     targetKeywords: ["grey pool deck concrete", "concrete pool deck grey", "pool deck ideas grey"],
     pillar: "patio",
+    additionalImages: [
+      { url: "https://images.pourcanvas.com/inspiration-pool-deck-broom-finish.jpg", alt: "Broom finish concrete pool deck surrounding a modern pool" },
+    ],
     relatedArticles: [
       { pillar: "patio", slug: "concrete-patio-ideas" },
     ],
@@ -839,24 +833,6 @@ export const inspirationPages: InspirationPage[] = [
     ],
   },
   {
-    slug: "modern-large-slab-driveway",
-    title: "Modern Large Slab Concrete Driveway Ideas | PourCanvas",
-    headline: "Modern Large Slab Driveway",
-    metaDescription:
-      "Large format concrete slab driveways define the contemporary home aesthetic. See how wide-joint slab patterns look with modern and transitional exteriors.",
-    ogImage: "https://images.pourcanvas.com/inspiration-modern-large-slab-driveway.jpg",
-    heroAlt: "Modern large format concrete slab driveway with wide grass joints and contemporary home exterior",
-    dominantColor: "#81847a",
-    contentBlock:
-      "Large format slab driveways are the defining hardscape feature of the contemporary home exterior. Two or three wide concrete panels running the length of the driveway, separated by grass, gravel, or steel-edging joints, create a clean geometric pattern that looks designed rather than poured.\n\nThe visual logic is architectural. Where a single poured concrete driveway reads as a functional surface, a two-strip or three-strip slab layout reads as a planned element of the exterior composition. The joint material matters enormously: grass turf strips create an organic, relaxed feel; white pea gravel reads as modern and precise; black river rock adds drama against a light grey slab. Each combination shifts the character of the same basic form.\n\nThis style works best with modern, contemporary, or clean transitional exteriors — homes with flat or low-pitch rooflines, horizontal cladding, and minimal decorative detail. The geometric simplicity of the slab pattern reinforces the architectural language rather than competing with it. It's a notably poor match for traditional or craftsman homes, where the hard geometry feels cold and out of place.\n\nCost varies more than conventional driveway pours because of the forming complexity. A two-strip slab with grass joints runs $12–20 per sq ft installed — the forming, joint installation, and finish work add cost over a single-pour conventional driveway. The result, however, is a driveway that reads as high-end from the street. LED strip joints, paired with blue-hour exterior lighting, push the effect further for homes where night-time curb appeal matters.",
-    targetKeywords: ["modern concrete driveway ideas", "large slab driveway", "contemporary driveway design"],
-    pillar: "driveway",
-    relatedArticles: [
-      { pillar: "driveway", slug: "modern-driveway-ideas" },
-      { pillar: "driveway", slug: "concrete-driveway-cost" },
-    ],
-  },
-  {
     slug: "cobblestone-stamped-patio",
     title: "Cobblestone Stamped Concrete Patio Ideas | PourCanvas",
     headline: "Cobblestone Stamped Patio",
@@ -868,42 +844,6 @@ export const inspirationPages: InspirationPage[] = [
     contentBlock:
       "Cobblestone stamped concrete brings centuries of visual history to a backyard patio — the rounded, irregular texture of antique European cobblestone, cast in durable concrete at a fraction of the cost of the real thing.\n\nWhat makes cobblestone stamping work visually is the depth of relief. A quality cobblestone stamp creates pronounced rounded surfaces between each stone, giving the patio a three-dimensional texture that reads clearly from any viewing angle. Combined with a multi-tone colour wash — typically warm greys, aged buff, and brown-gold antiquing — the result looks aged and substantial in a way that flat stamped patterns can't achieve.\n\nThe style pairs naturally with craftsman, colonial, Mediterranean, and traditional European-influenced home exteriors. The warm, earthy tones complement red brick, stone cladding, terracotta details, and painted wood trim. For a cohesive outdoor space, a cobblestone stamped patio border or patio edge strip paired with a plain grey field creates visual rhythm without requiring the full pattern across the whole surface.\n\nCost runs $14–20 per sq ft installed — slightly more than most other stamped patterns due to the heavier stamp and more complex colour work required to achieve the aged look convincingly. Compared to real granite cobblestone (where it's even available), which runs $40–80 per sq ft installed, it's the obvious practical choice for homeowners who want the look. Resealing every 2–3 years maintains the colour depth.",
     targetKeywords: ["cobblestone patio ideas", "cobblestone stamped concrete patio", "old-world patio design"],
-    pillar: "patio",
-    relatedArticles: [
-      { pillar: "patio", slug: "stamped-concrete-patterns" },
-      { pillar: "patio", slug: "concrete-patio-ideas" },
-    ],
-  },
-  {
-    slug: "grey-stamped-concrete-patio-craftsman",
-    title: "Grey Stamped Concrete Patio for Craftsman Homes | PourCanvas",
-    headline: "Grey Stamped Patio, Craftsman Style",
-    metaDescription:
-      "Grey ashlar stamped concrete patio paired with a craftsman home - geometric stone pattern that echoes the natural materials craftsman architecture favours.",
-    ogImage: "https://images.pourcanvas.com/inspiration-grey-stamped-patio-craftsman.jpg",
-    heroAlt: "Grey ashlar stamped concrete patio beside a craftsman home with wide covered porch and mature landscaping",
-    dominantColor: "#9a9c99",
-    contentBlock:
-      `Grey ashlar stamped concrete patio - the craftsman home's natural material logic in a durable, sealed surface. The irregular stone-cut geometry echoes the natural stone columns and clinker brick details that define the craftsman style, while the grey palette sits comfortably alongside cedar siding, painted sage, and warm wood trim.\n\nWhat makes this combination work is the visual continuity between the patio surface and the home's existing material story. Where generic grey concrete reads as filler, grey ashlar stamping reads as a material choice that was considered at the same time as the facade. The pattern creates shadow lines and dimensional interest from any angle - not just in direct sunlight.\n\nAt ${STAMPED} per sq ft installed, stamped concrete delivers the ashlar look at roughly half the cost of real cut stone. The pattern holds well in freeze-thaw climates, which often coincide with the older neighbourhoods where craftsman homes are concentrated - the sealed surface resists surface scaling better than unsealed concrete alternatives. A charcoal release agent on a medium grey base reads most authentically against typical craftsman brick and painted cedar. Resealing every 2-3 years maintains colour depth and the fine surface detail of the stamped pattern.`,
-    targetKeywords: ["craftsman patio ideas", "grey stamped concrete patio craftsman home", "ashlar patio design"],
-    pillar: "patio",
-    relatedArticles: [
-      { pillar: "patio", slug: "stamped-concrete-patterns" },
-      { pillar: "patio", slug: "stamped-concrete-ideas" },
-    ],
-  },
-  {
-    slug: "herringbone-brick-patio-colonial",
-    title: "Herringbone Brick Patio for Colonial Homes | PourCanvas",
-    headline: "Herringbone Brick Patio, Colonial Pairing",
-    metaDescription:
-      "Herringbone brick stamped concrete patio on a colonial home - interlocked pattern and formal symmetry reinforcing the period architecture.",
-    ogImage: "https://images.pourcanvas.com/inspiration-herringbone-brick-patio-colonial.jpg",
-    heroAlt: "Herringbone brick stamped concrete patio extending from a colonial red brick home with formal hedged garden borders",
-    dominantColor: "#7f7c76",
-    contentBlock:
-      "Colonial homes are defined by formal symmetry - centred entries, evenly spaced windows, structured gardens - and herringbone brick stamped concrete carries that formal logic directly into the patio. The interlocking 45-degree pattern creates a surface with strong directional geometry and visual order, qualities that read as natural extensions of the colonial home's compositional rigour. The brick pattern also creates a subtle visual continuity with the red or buff brick facade, without requiring an exact match.\n\nA colonial patio in herringbone brick stamped concrete looks as though it was planned at the same time as the house, not added later. At $12-18 per sq ft installed, it's significantly more affordable than real clay brick pavers ($15-25/sq ft) with better performance in freeze-thaw conditions and no weed joint maintenance. Sealing every 2-3 years maintains colour fidelity.",
-    targetKeywords: ["colonial home patio ideas", "herringbone brick patio colonial", "formal patio design"],
     pillar: "patio",
     relatedArticles: [
       { pillar: "patio", slug: "stamped-concrete-patterns" },
@@ -929,42 +869,6 @@ export const inspirationPages: InspirationPage[] = [
     ],
   },
   {
-    slug: "stamped-concrete-walkway-grey-ranch",
-    title: "Stamped Concrete Walkway for Ranch Homes | PourCanvas",
-    headline: "Grey Stamped Walkway for Ranch Homes",
-    metaDescription:
-      "Grey stamped concrete walkway for a ranch home - wide horizontal path echoing the low roofline, slate pattern grounding the wide front yard.",
-    ogImage: "https://images.pourcanvas.com/inspiration-stamped-walkway-grey-ranch.jpg",
-    heroAlt: "Grey slate stamped concrete front walkway approaching a low-slung ranch home with wide front yard and mature trees",
-    dominantColor: "#8c918f",
-    contentBlock:
-      `Ranch homes sit low and wide on their lots, and the front walkway has to match that scale. A narrow path leading to a wide ranch facade looks proportionally wrong - underscaled and tentative. A wide grey stamped concrete walkway in a slate or ashlar pattern fills the approach properly, sweeping from the street to the entry in a way that echoes the horizontal emphasis of the roofline above.\n\nThe grey slate pattern suits the earthy, understated material palette that most ranch exteriors use - brick, painted wood, stone veneer, or stucco. The stamped surface adds visual interest without demanding attention. At ${STAMPED} per sq ft installed, stamped concrete is the practical way to get the wide, finished walkway a ranch home needs without the cost of natural flagstone. A 4-foot or 5-foot width is typical; a 6-foot width is worth considering on lots with wider frontages.`,
-    targetKeywords: ["ranch home walkway ideas", "stamped concrete walkway ranch", "wide front path ideas"],
-    pillar: "walkway",
-    relatedArticles: [
-      { pillar: "walkway", slug: "concrete-walkway-ideas" },
-      { pillar: "walkway", slug: "front-walkway-ideas" },
-    ],
-  },
-  {
-    slug: "exposed-aggregate-driveway-grey-contemporary",
-    title: "Exposed Aggregate Driveway for Contemporary Homes",
-    headline: "Exposed Aggregate Driveway, Contemporary Home",
-    metaDescription:
-      "Grey exposed aggregate driveway on a contemporary home - scattered pebble texture against angular lines and dark metal cladding.",
-    ogImage: "https://images.pourcanvas.com/inspiration-exposed-aggregate-driveway-contemporary.jpg",
-    heroAlt: "Grey exposed aggregate concrete driveway approaching an angular contemporary home with large windows and dark metal cladding",
-    dominantColor: "#868c91",
-    contentBlock:
-      "Contemporary homes are built on precise geometry - flat rooflines, floor-to-ceiling glass, dark metal or fibre cement cladding with tight tolerances. Against that precision, exposed aggregate concrete introduces a deliberate textural contrast. The scattered pebble surface is organic and tactile where the architecture is smooth and angular, creating the kind of material tension that contemporary design intentionally cultivates. A grey aggregate palette keeps the contrast tonal rather than chromatic - the surface reads as part of the same grey-and-dark material story the home is telling.\n\nExposed aggregate also delivers practical benefits well suited to larger contemporary driveways: excellent slip resistance, no sealing required, and surface longevity of 25+ years with minimal maintenance. At $8-14 per sq ft installed it sits in the mid range. Pea gravel or local river stone aggregate can be specified to fine-tune the texture scale.",
-    targetKeywords: ["contemporary driveway ideas", "exposed aggregate driveway modern home", "grey aggregate driveway"],
-    pillar: "driveway",
-    relatedArticles: [
-      { pillar: "driveway", slug: "modern-driveway-ideas" },
-      { pillar: "driveway", slug: "exposed-aggregate-driveway" },
-    ],
-  },
-  {
     slug: "large-slab-driveway-grass-joints",
     title: "Large Concrete Slab Driveway With Grass Joints | PourCanvas",
     headline: "Large Slab Driveway With Grass Joints",
@@ -977,6 +881,9 @@ export const inspirationPages: InspirationPage[] = [
       "Large concrete slab driveways with grass joints are one of the most visually striking curb appeal upgrades available to homeowners right now. Two or three wide smooth concrete panels run the full driveway length, separated by flush grass or turf strips that read as deliberate green lines across the approach. The effect is architectural - the driveway looks designed rather than poured.\n\nThe visual logic is about contrast. The hard, precise geometry of the concrete slab plays against the soft, organic green of the turf joint, creating a pairing that's simultaneously modern and naturalistic. Against a craftsman home, the grass joints echo the garden-forward landscaping that the style favours. Against a contemporary home, the clean geometry reinforces the flat rooflines and horizontal cladding without competing.\n\nJoint width typically runs 2-4 inches for a planted grass strip, or up to 6 inches for a wider turf band. Real grass requires some maintenance in drought conditions - artificial turf strips are a practical alternative that maintain the look year-round without irrigation. The concrete panels themselves are standard broom-finish or smooth polish - the joint material carries the visual.\n\nCost runs $12-20 per sq ft installed for a two-strip layout with grass joints - higher than a conventional single-pour driveway due to the forming complexity and joint installation. The result is a driveway that earns consistent attention from neighbours and prospective buyers.",
     targetKeywords: ["large slab driveway grass joints", "modern concrete driveway ideas", "concrete driveway grass strips"],
     pillar: "driveway",
+    additionalImages: [
+      { url: "https://images.pourcanvas.com/inspiration-modern-large-slab-driveway.jpg", alt: "Modern large format concrete slab driveway with wide grass joints and contemporary home exterior" },
+    ],
     relatedArticles: [
       { pillar: "driveway", slug: "modern-driveway-ideas" },
       { pillar: "driveway", slug: "concrete-driveway-cost" },

@@ -378,7 +378,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Designing Curves That Connect Front and Back",
         body: "The most effective landscape walkway systems use a consistent curve vocabulary throughout the property — the front walk, side yard path, and backyard path share the same general radius and arc style. This doesn't mean every path looks the same; it means the outdoor hardscape reads as a unified plan rather than unrelated projects. If you're designing a front curved walkway, think at the property scale: where does the path system ultimately lead, and how do the curves of one surface flow visually into the next? For properties where the front walk, side yard, and patio are all connected, a contractor who plans all three surfaces simultaneously can create a cohesive flow that's much harder to achieve when each surface is designed independently.",
-        inspirationSlugs: ["stamped-concrete-walkway-grey-ranch"],
+        inspirationSlugs: ["stamped-concrete-walkway-grey"],
       },
       {
         heading: "Curved Walkways and Driveway Integration",
@@ -450,7 +450,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Coordinating Steps with the Front Walkway and Driveway",
         body: "Entry steps are the connection point between the front door, the walkway, and ultimately the driveway or street. Visual continuity across all three surfaces — steps, walkway, driveway — is what makes an exterior look designed rather than assembled. The most effective approach: choose one primary surface finish (stamped flagstone, exposed aggregate, or plain broom) and apply it consistently across all three surfaces. The steps can carry the same stamp as the walkway, with the landing matching the driveway color. If the three surfaces were poured at different times and don't match, a concrete overlay with consistent stain color is the most cost-effective way to unify them without full replacement.",
-        inspirationSlugs: ["stamped-concrete-walkway-grey-ranch"],
+        inspirationSlugs: ["stamped-concrete-walkway-grey"],
       },
     ],
     relatedSlugs: ["front-walkway-ideas", "concrete-walkway-cost"],
@@ -504,7 +504,7 @@ export const walkwayArticles: Article[] = [
       {
         heading: "Fixture Style: What Pairs with Your Surface Finish",
         body: "Warm brass or bronze fixtures pair naturally with stamped concrete in earth tones (buff, sandstone, aged brick colors). Matte black fixtures suit contemporary driveways with charcoal or dark grey concrete. Stainless or brushed nickel suits modern homes with cool-grey aggregate finishes. The lighting fixture style should reinforce the surface finish choice — if you're deciding on a walkway finish and want to add lighting, choosing the finish first makes the fixture selection easier.",
-        inspirationSlugs: ["stamped-concrete-walkway-grey-ranch", "charcoal-broom-finish-walkway"],
+        inspirationSlugs: ["stamped-concrete-walkway-grey", "charcoal-broom-finish-walkway"],
       },
       {
         heading: "Lighting the Full Property: Walkway, Driveway, and Patio",

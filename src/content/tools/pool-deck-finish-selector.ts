@@ -52,7 +52,7 @@ export const poolDeckFinishSelector: ToolConfig = {
     },
     {
       heading: "Pool Deck Finishes Ranked for Bare Feet",
-      body: `<p>Switch the priority to barefoot comfort and the order changes: the mild textures move up and the coarse ones drop.</p>${rankingTable({ ...finishDefaults, priority: "barefoot" })}<p>${bare[0].name} keeps good wet grip with a texture that is comfortable underfoot. ${pick(bare, "exposed-aggregate").name} drops to ${pick(bare, "exposed-aggregate").score}/100 here unless you choose small or polished stones. See a ${a("/inspiration/pool-deck-broom-finish", "broom finish pool deck")} for the look.</p>`,
+      body: `<p>Switch the priority to barefoot comfort and the order changes: the mild textures move up and the coarse ones drop.</p>${rankingTable({ ...finishDefaults, priority: "barefoot" })}<p>${bare[0].name} keeps good wet grip with a texture that is comfortable underfoot. ${pick(bare, "exposed-aggregate").name} drops to ${pick(bare, "exposed-aggregate").score}/100 here unless you choose small or polished stones. See a ${a("/inspiration/concrete-pool-deck-grey", "broom finish pool deck")} for the look.</p>`,
     },
     {
       heading: "Slip-Resistant Pool Deck Requirements",

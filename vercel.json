@@ -14,6 +14,12 @@
     { "source": "/blog/driveway/dark-concrete-driveway", "destination": "/blog/driveway/black-concrete-driveway", "permanent": true },
     { "source": "/blog/driveway/black-concrete-dayway", "destination": "/blog/driveway/black-concrete-driveway", "permanent": true },
     { "source": "/blog/driveway/modern-day-ideas", "destination": "/blog/driveway/modern-driveway-ideas", "permanent": true },
-    { "source": "/blog/walkway/flagstone-vs-flagstone-vs-concrete-walkway", "destination": "/blog/walkway/flagstone-vs-concrete-walkway", "permanent": true }
+    { "source": "/blog/walkway/flagstone-vs-flagstone-vs-concrete-walkway", "destination": "/blog/walkway/flagstone-vs-concrete-walkway", "permanent": true },
+    { "source": "/inspiration/grey-stamped-concrete-patio-craftsman", "destination": "/inspiration/stamped-concrete-patio-grey", "permanent": true },
+    { "source": "/inspiration/herringbone-brick-patio-colonial", "destination": "/inspiration/herringbone-brick-patio", "permanent": true },
+    { "source": "/inspiration/exposed-aggregate-driveway-grey-contemporary", "destination": "/inspiration/exposed-aggregate-driveway-grey", "permanent": true },
+    { "source": "/inspiration/stamped-concrete-walkway-grey-ranch", "destination": "/inspiration/stamped-concrete-walkway-grey", "permanent": true },
+    { "source": "/inspiration/pool-deck-broom-finish", "destination": "/inspiration/concrete-pool-deck-grey", "permanent": true },
+    { "source": "/inspiration/modern-large-slab-driveway", "destination": "/inspiration/large-slab-driveway-grass-joints", "permanent": true }
   ]
 }

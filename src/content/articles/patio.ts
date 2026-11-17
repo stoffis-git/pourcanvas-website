@@ -32,7 +32,7 @@ export const patioArticles: Article[] = [
       {
         heading: "Herringbone Brick",
         body: `Classic herringbone brick stamping gives a traditional red-brick feel for less than real brick pavers (${perSqftRange(INSTALLED["clay-brick"])}/sq ft for clay brick pavers vs. $12–18 for stamped). The interlocking diagonal layout also holds up better over time since there are no gaps for weeds or frost heave. A warm buff or sandstone color wash suits craftsman and colonial homes best.`,
-        inspirationSlugs: ["herringbone-brick-patio", "herringbone-brick-patio-colonial"],
+        inspirationSlugs: ["herringbone-brick-patio"],
       },
       {
         heading: "Random Flagstone",
@@ -65,7 +65,7 @@ export const patioArticles: Article[] = [
       {
         heading: "Stamped Concrete Lifespan and Resale Value",
         body: "A properly installed stamped concrete patio lasts 25–40 years. The surface value declines if sealing is neglected — faded, chalky stamped concrete reads as deferred maintenance rather than an upgrade. For resale, a well-maintained stamped patio typically adds $5,000–15,000 to perceived property value depending on size and quality, according to most real estate agent guidance. The caveat: an outdated color choice (heavy earth tones with excessive color release that were popular in the early 2000s) can actually work against you with buyers who associate them with aging finishes. Neutral contemporary tones — charcoal, medium grey, warm buff — have the longest visual shelf life and the broadest buyer appeal. If you're planning a new stamped patio with resale in mind within 10 years, choose a tone on the neutral side of the color spectrum. The same logic applies to stamped driveways and walkways.",
-        inspirationSlugs: ["grey-stamped-concrete-patio-craftsman"],
+        inspirationSlugs: ["stamped-concrete-patio-grey"],
       },
     ],
     relatedSlugs: ["concrete-patio-cost", "patio-color-ideas"],
@@ -557,7 +557,7 @@ export const patioArticles: Article[] = [
       {
         heading: "Broom Finish: The Practical Baseline",
         body: "A broom-finish concrete pool deck costs $6–10 per sq ft installed. For a standard 500 sq ft deck, that's $3,000–5,000. The broom texture provides enough grip for wet feet without the harshness of coarser aggregate finishes, and it's easy to clean with a pressure washer. In a cool grey or warm buff color, it reads as clean and intentional — not like a default choice. It's also the easiest finish to repair and extend if you add a pool house or landscaping later, since color-matching plain concrete is straightforward. The main limitation: broom finish offers fewer visual options than stamped or aggregate surfaces.",
-        inspirationSlugs: ["pool-deck-broom-finish", "warm-tan-broom-finish-patio"],
+        inspirationSlugs: ["concrete-pool-deck-grey", "warm-tan-broom-finish-patio"],
       },
       {
         heading: "Exposed Aggregate: Slip Resistance Without the Stamp Premium",
@@ -743,7 +743,7 @@ export const patioArticles: Article[] = [
       {
         heading: `Broom Finish: The Affordable Baseline (${perSqftRange(INSTALLED["plain-concrete"])}/sq ft)`,
         body: "A standard broom finish — parallel grooves drawn across fresh concrete before curing — is the default for most pool decks and for good reason. The texture provides adequate grip when wet, it's the cheapest option at $6–10 per sq ft installed, and it's simple to apply consistently across large areas. The downsides: plain grey broom finish has the highest solar heat absorption of all finish options (smooth grey concrete absorbs heat aggressively on south-facing surfaces), and it's the most visually generic. Adding an integral color pigment ($1–2/sq ft extra) in a light sand or buff tone reduces heat absorption and significantly improves aesthetics without adding complexity. For a 600 sq ft pool deck, a pigmented broom finish runs $4,200–7,200 — the entry-level option that performs well if you choose the right color.",
-        inspirationSlugs: ["pool-deck-broom-finish"],
+        inspirationSlugs: ["concrete-pool-deck-grey"],
       },
       {
         heading: "Exposed Aggregate: Best All-Around Performer ($10–16/sq ft)",
@@ -825,7 +825,6 @@ export const patioArticles: Article[] = [
         body: "The herringbone brick pattern arranges rectangular units in a zigzag layout that interlocks diagonally across the surface. It is one of the most versatile stamp patterns available — equally at home on patios, driveways, and walkways — and it pairs well with both traditional and transitional architecture. Cost runs $12–18 per sq ft installed, sitting at the lower end of the stamped concrete range because the pattern is relatively straightforward for experienced crews to stamp efficiently. A warm buff or sandstone color wash suits colonial and craftsman homes; charcoal or slate grey works for modern exteriors. The interlocking layout also provides good visual continuity across large surfaces without looking monotonous. Herringbone brick is a strong choice for homeowners who want the look of a paver patio without the joint maintenance. Reseal every 2–3 years.",
         inspirationSlugs: [
           "herringbone-brick-patio",
-          "herringbone-brick-patio-colonial",
           "herringbone-brick-driveway",
           "herringbone-walkway-concrete",
           "herringbone-brick-walkway-red",
@@ -851,7 +850,6 @@ export const patioArticles: Article[] = [
         body: "Random stone and Roman slate patterns use large-format irregular shapes — bigger and bolder than traditional flagstone — to create a clean, transitional look. The larger units mean fewer joint lines per square foot, which gives the surface a less busy, more contemporary feel. These patterns work well on patios and driveways where a modern but not minimal aesthetic is the goal. Cost runs $14–18 per sq ft installed, in line with most mid-complexity stamp patterns. In a medium grey or warm sandstone color wash, random stone reads as upscale without being ornate. Roman slate adds a subtle linear texture within each stone unit that catches light and enhances surface depth. Both patterns are contractor-friendly to stamp on large surfaces because the oversized units cover area quickly. Reseal every 2–3 years. These patterns are a strong choice for homeowners who find ashlar too rigid and flagstone too rustic.",
         inspirationSlugs: [
           "stamped-concrete-patio-grey",
-          "grey-stamped-concrete-patio-craftsman",
           "stamped-concrete-walkway-grey",
         ],
       },
@@ -943,7 +941,7 @@ All patterns require a structurally sound 4-inch slab on a compacted gravel base
       {
         heading: "Stamped Concrete Patio Ideas",
         body: "Stamped concrete is the most popular decorative patio finish in 2026, running $12–18 per sq ft installed. The three most requested patterns are ashlar slate (rectangular cut-stone look), cobblestone (old-world texture), and herringbone brick (classic interlocking diagonal). Single-color stamping with a release agent produces a subtle, natural variation. Multi-color release — where two or three accent tones are hand-applied over a base pour color — adds depth that reads as real stone from normal viewing distance. The cost difference between single and multi-color is $1–3 per sq ft, mostly labor. On a 300 sq ft patio, stamped concrete runs $3,600–5,400 total. Sealing every 2–3 years with a film-forming acrylic sealer maintains color depth and protects the surface from UV fading and freeze-thaw damage.",
-        inspirationSlugs: ["stamped-concrete-patio-grey", "grey-stamped-concrete-patio-craftsman", "ashlar-slate-patio-charcoal", "cobblestone-stamped-patio"],
+        inspirationSlugs: ["stamped-concrete-patio-grey", "ashlar-slate-patio-charcoal", "cobblestone-stamped-patio"],
       },
       {
         heading: "Modern Concrete Patio Designs",
@@ -968,7 +966,7 @@ All patterns require a structurally sound 4-inch slab on a compacted gravel base
       {
         heading: "Concrete Pool Deck Ideas",
         body: "Pool deck concrete must balance three demands: slip resistance when wet, cool surface temperature in direct sun, and resistance to pool chemical staining. Broom finish ($6–10/sq ft) with a light integral color is the budget baseline — the texture grips wet feet and a buff or sandstone tone stays cooler than plain grey. Exposed aggregate ($8–14/sq ft) is the best all-around performer — naturally slip-resistant, hides chemical stains, and can be specified in a light aggregate mix that scatters heat. Travertine-look stamped concrete ($12–18/sq ft) delivers the highest visual impact but requires a non-slip sealer additive (silica sand broadcast into the wet sealer coat) for safety. Avoid dark colors on south-facing pool decks — charcoal concrete in direct afternoon sun can reach temperatures 40–60°F above air temperature, uncomfortable for bare feet. Light-colored finishes stay noticeably cooler and are the default recommendation for pool surrounds.",
-        inspirationSlugs: ["concrete-pool-deck-grey", "pool-deck-broom-finish", "pool-deck-travertine"],
+        inspirationSlugs: ["concrete-pool-deck-grey", "pool-deck-travertine"],
       },
       {
         heading: "Small Concrete Patio Ideas",
@@ -1076,12 +1074,12 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       {
         heading: "Resale Value: What Buyers Actually See",
         body: "Real estate agents consistently report that paver patios signal higher-end construction and carry a slight premium in buyer perception. Pavers read as a deliberate material investment — buyers associate them with custom landscaping and higher property values. However, the actual resale premium of pavers vs stamped concrete is smaller than the installation cost gap. A well-maintained stamped concrete patio in a neutral color (medium grey, charcoal, or warm buff) photographs beautifully for listings, shows well during walkthroughs, and doesn't meaningfully discount the property compared to pavers in the same price tier neighborhood. The scenario where pavers clearly win on resale: higher-end properties ($500K+) in markets where competing listings feature paver hardscaping as a standard expectation. In that context, stamped concrete can read as a cost-cutting decision. For mid-range properties where both options would represent a quality outdoor living upgrade, the difference in buyer response is marginal. The ROI gap between stamped concrete and pavers at resale is substantially smaller than the upfront cost gap — stamped concrete's cost savings are not fully erased by a lower resale premium.",
-        inspirationSlugs: ["grey-stamped-concrete-patio-craftsman"],
+        inspirationSlugs: ["stamped-concrete-patio-grey"],
       },
       {
         heading: "The Verdict: Which to Choose by Scenario",
         body: "Choose stamped concrete when: budget is the primary driver and you are comparing against brick or stone pavers; you're covering a large surface area where the per-sq-ft savings multiply significantly; you want a seamless, continuous look without joint lines; or you're in a warm, dry climate where freeze-thaw isn't a concern and light-colored concrete stays cool. Choose pavers when: individual repairability matters — you're on expansive soil or in a severe freeze-thaw climate where cracking is probable rather than possible; you value genuine material texture and depth over visual approximation; you're covering a smaller, high-visibility area where the cost premium is manageable in absolute dollars; you're building a pool surround where drainage between joints and thermal expansion tolerance matter; or you're building a high-end property where buyer expectations include real stone or brick hardscaping. For most homeowners in moderate climates with moderate budgets, stamped concrete delivers 85–90% of the visual result of brick or stone pavers at a lower cost. The 10–15% gap in appearance and the repairability disadvantage are real trade-offs — but for the majority of residential patios, stamped concrete is the stronger overall value.",
-        inspirationSlugs: ["poured-concrete-patio", "herringbone-brick-patio-colonial"],
+        inspirationSlugs: ["poured-concrete-patio", "herringbone-brick-patio"],
       },
     ],
     relatedSlugs: [
@@ -1250,7 +1248,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       {
         heading: "Best Use Cases: Patio, Driveway, Pool Deck, Walkway",
         body: "Broom finish is the best choice for: budget-conscious projects where function matters more than decorative impact, pool decks where barefoot comfort is priority (aggregate stones can feel sharp underfoot in hot sun), and DIY-friendly projects where the homeowner is doing the finishing work. Exposed aggregate is the better choice for: driveways where tire marks and oil stains need to disappear into the surface, garden paths and walkway areas where the natural stone texture complements landscaping, and entertaining patios where the surface itself is a design element. The hybrid approach — exposed aggregate on the patio field with broom-finish borders, or aggregate walkways leading to a broom-finish pool deck — captures the strengths of both finishes and adds visual interest through contrast. Budget the border treatment at roughly the same per-sq-ft rate as the primary finish.",
-        inspirationSlugs: ["pool-deck-broom-finish", "charcoal-salt-finish-patio"],
+        inspirationSlugs: ["concrete-pool-deck-grey", "charcoal-salt-finish-patio"],
       },
       {
         heading: "The Verdict",
@@ -1412,7 +1410,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       {
         heading: "How to Future-Proof Your Patio Investment",
         body: "Trends fade; good materials don't. The most future-proof patio choices in 2026: neutral tones (charcoal, warm grey, natural buff) that work with any exterior color scheme and don't date to a specific era. Simple finishes (broom, salt, light scoring) that age gracefully rather than degrading visually as stamp edges wear and release colors fade. Quality materials — 4,000+ PSI concrete with fiber reinforcement, proper sub-base preparation, and consistent sealing — that ensure the slab itself lasts 30+ years regardless of surface fashion. A $4,000 patio in a neutral finish with quality materials will look appropriate in 2036. A $6,000 patio in a trendy finish with marginal materials may look dated and degraded by 2032. Invest in the slab, not the trend.",
-        inspirationSlugs: ["grey-stamped-concrete-patio-craftsman", "ashlar-slate-patio-charcoal"],
+        inspirationSlugs: ["stamped-concrete-patio-grey", "ashlar-slate-patio-charcoal"],
       },
     ],
     relatedSlugs: ["stamped-concrete-ideas", "patio-color-ideas", "concrete-patio-cost", "small-patio-ideas"],
