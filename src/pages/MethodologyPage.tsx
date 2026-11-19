@@ -34,13 +34,31 @@ import {
   type SourcedValue,
 } from "@/lib/tools/data/paving";
 import { FINISH_SOURCES } from "@/lib/tools/data/finish";
+import {
+  LIFESPAN_YEARS,
+  PAVER_RELEVEL_PER_SQFT,
+  PAVER_RELEVEL_SHARE,
+  PAVER_RELEVEL_YEARS,
+  PAVER_RESAND_PER_SQFT,
+  PAVER_RESAND_YEARS,
+  PAVER_SEAL_PER_SQFT,
+  PAVER_SEAL_YEARS,
+  STAMPED_CRACK_REPAIR_JOB,
+  STAMPED_CRACK_REPAIR_YEARS,
+  STAMPED_DESIGN_LABELS,
+  STAMPED_RESEAL_PER_SQFT,
+  STAMPED_RESEAL_YEARS,
+  STAMPED_TIER,
+  STAMPED_SLAB_IN,
+  PAVER_THICKNESS,
+} from "@/lib/tools/data/lifetime";
 import { CURRENT_YEAR } from "@/lib/year";
 
-type Row = { label: string; value: string; sources: Source[]; note?: string };
+type Row = { label: string; value: string; sources: Source[]; note?: string; pending?: boolean };
 
 const range = (r: SourcedRange, unit: string) => `${unit}${r.low}–${r.high} (typical ${unit}${r.typical})`;
-const rr = (label: string, r: SourcedRange, unit = "$", suffix = ""): Row => ({ label, value: `${range(r, unit)}${suffix}`, sources: r.sources, note: r.note });
-const rv = (label: string, v: SourcedValue, fmt: (n: number) => string): Row => ({ label, value: fmt(v.value), sources: v.sources, note: v.note });
+const rr = (label: string, r: SourcedRange, unit = "$", suffix = ""): Row => ({ label, value: `${range(r, unit)}${suffix}`, sources: r.sources, note: r.note, pending: r.status === "pending" });
+const rv = (label: string, v: SourcedValue, fmt: (n: number) => string): Row => ({ label, value: fmt(v.value), sources: v.sources, note: v.note, pending: v.status === "pending" });
 
 const groups: { title: string; rows: Row[] }[] = [
   {
@@ -89,6 +107,34 @@ const groups: { title: string; rows: Row[] }[] = [
       ),
     ],
   },
+  {
+    title: "Stamped concrete vs pavers: design tiers, upkeep and lifespan",
+    rows: [
+      ...(Object.keys(STAMPED_TIER) as (keyof typeof STAMPED_TIER)[]).map((t) => rr(`Stamped concrete, ${STAMPED_DESIGN_LABELS[t].toLowerCase()}`, STAMPED_TIER[t], "$", " / sq ft installed")),
+      rr("Stamped concrete: clean and reseal (pro)", STAMPED_RESEAL_PER_SQFT, "$", " / sq ft"),
+      rv("Stamped reseal interval, mild climate", STAMPED_RESEAL_YEARS.mild, (n) => `every ${n} years`),
+      rv("Stamped reseal interval, freeze-thaw", STAMPED_RESEAL_YEARS["freeze-thaw"], (n) => `every ${n} years`),
+      rr("Stamped concrete crack repair (per job)", STAMPED_CRACK_REPAIR_JOB, "$"),
+      rv("Crack repair allowance, mild climate", STAMPED_CRACK_REPAIR_YEARS.mild, (n) => `one job every ${n} years`),
+      rv("Crack repair allowance, freeze-thaw", STAMPED_CRACK_REPAIR_YEARS["freeze-thaw"], (n) => `one job every ${n} years`),
+      rr("Pavers: refresh polymeric joint sand (pro)", PAVER_RESAND_PER_SQFT, "$", " / sq ft"),
+      rv("Joint sand interval, mild climate", PAVER_RESAND_YEARS.mild, (n) => `every ${n} years`),
+      rv("Joint sand interval, freeze-thaw", PAVER_RESAND_YEARS["freeze-thaw"], (n) => `every ${n} years`),
+      rr("Pavers: lift and relevel (pro)", PAVER_RELEVEL_PER_SQFT, "$", " / sq ft"),
+      rv("Releveling allowance, mild climate", PAVER_RELEVEL_SHARE.mild, (n) => `${Math.round(n * 100)}% of the area every ${PAVER_RELEVEL_YEARS.value} years`),
+      rv("Releveling allowance, freeze-thaw", PAVER_RELEVEL_SHARE["freeze-thaw"], (n) => `${Math.round(n * 100)}% of the area every ${PAVER_RELEVEL_YEARS.value} years`),
+      rr("Pavers: clean, re-sand and seal (optional, pro)", PAVER_SEAL_PER_SQFT, "$", " / sq ft"),
+      rv("Paver sealing interval, mild climate", PAVER_SEAL_YEARS.mild, (n) => `every ${n} years`),
+      rv("Paver sealing interval, freeze-thaw", PAVER_SEAL_YEARS["freeze-thaw"], (n) => `every ${n} years`),
+      rr("Lifespan, stamped concrete", LIFESPAN_YEARS.stamped, "", " years"),
+      rr("Lifespan, concrete pavers", LIFESPAN_YEARS.pavers, "", " years"),
+      rv("Stamped slab thickness, patio", STAMPED_SLAB_IN.patio, (n) => `${n} in`),
+      rv("Stamped slab thickness, driveway", STAMPED_SLAB_IN.driveway, (n) => `${n} in`),
+      rv("Paver thickness, patio", PAVER_THICKNESS.patio, (n) => `${n} mm`),
+      rv("Paver thickness, residential driveway", PAVER_THICKNESS.driveway, (n) => `${n} mm`),
+      rv("Paver thickness, heavier vehicle traffic", PAVER_THICKNESS.heavy, (n) => `${n} mm`),
+    ],
+  },
 ];
 
 const MethodologyPage = () => (
@@ -132,7 +178,9 @@ const MethodologyPage = () => (
                     </td>
                     <td className="text-xs">
                       {r.sources.length === 0
-                        ? "Standard reference value"
+                        ? r.pending
+                          ? "PourCanvas planning allowance (no published figure)"
+                          : "Standard reference value"
                         : r.sources.map((s, i) => (
                             <span key={s.url + i}>
                               {i > 0 && "; "}
