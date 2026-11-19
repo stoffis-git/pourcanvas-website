@@ -9,7 +9,7 @@ export const coloredConcretePage: MaterialPage = {
   metaDescription:
     "Colored concrete costs $1–4/sq ft over plain concrete, using integral color, stain, or dye. This guide compares methods, durability, and color options to help you choose.",
   targetKeywords: ["colored concrete", "concrete color", "concrete stain", "integral color concrete"],
-  ogImage: "/og/material-colored-concrete.jpg",
+  ogImage: "https://images.pourcanvas.com/inspiration-stained-concrete-driveway-slate-blue.jpg",
   images: [
     { url: "https://images.pourcanvas.com/inspiration-stained-concrete-driveway-slate-blue.jpg", alt: "Slate-blue stained concrete driveway with even, modern color" },
     { url: "https://images.pourcanvas.com/inspiration-acid-stained-concrete-patio.jpg", alt: "Acid-stained concrete patio with mottled, marble-like earth tones" },

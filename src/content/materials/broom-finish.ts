@@ -23,7 +23,7 @@ export const broomFinishPage: MaterialPage = {
     "broom finish concrete patio",
     "broom finish vs stamped",
   ],
-  ogImage: "/og/material-broom-finish.jpg",
+  ogImage: "https://images.pourcanvas.com/inspiration-warm-tan-broom-finish-patio.jpg",
   images: [
     { url: "https://images.pourcanvas.com/inspiration-warm-tan-broom-finish-patio.jpg", alt: "Warm tan broom finish concrete patio with fine linear texture" },
     { url: "https://images.pourcanvas.com/inspiration-charcoal-broom-finish-walkway.jpg", alt: "Charcoal broom finish concrete walkway with anti-slip parallel lines" },

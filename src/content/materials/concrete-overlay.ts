@@ -9,7 +9,7 @@ export const concreteOverlayPage: MaterialPage = {
   metaDescription:
     "Concrete overlays cost $3–15/sq ft and can transform a worn slab without full replacement. Here's what they are, when they work, and what to watch out for.",
   targetKeywords: ["concrete overlay", "concrete resurfacing", "concrete overlay patio"],
-  ogImage: "/og/material-concrete-overlay.jpg",
+  ogImage: "https://images.pourcanvas.com/patio-resurfacing.jpg",
   publishedAt: "2025-06-15",
   intro:
     "A concrete overlay costs $3–15 per sq ft and can transform a worn or dated slab without demolition — a fraction of the $8–20/sq ft you'd spend on full replacement including demo. It's a thin polymer-modified layer bonded to the existing surface, which can be stamped, stained, or textured to any finish. It only works on structurally sound bases.",

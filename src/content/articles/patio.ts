@@ -804,7 +804,7 @@ export const patioArticles: Article[] = [
       "modern stamped concrete patterns",
       "concrete stamp patterns",
     ],
-    ogImage: "https://images.pourcanvas.com/stamped-patterns-gallery.jpg",
+    ogImage: "https://images.pourcanvas.com/patio-stamped-concrete-ideas.jpg",
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     intro:
@@ -932,7 +932,7 @@ All patterns require a structurally sound 4-inch slab on a compacted gravel base
       "concrete patio ideas on a budget",
       "concrete patio design ideas",
     ],
-    ogImage: "https://images.pourcanvas.com/patio-ideas-gallery.jpg",
+    ogImage: "https://images.pourcanvas.com/inspiration-concrete-patio-ideas-modern-grey.jpg",
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     intro:
@@ -1043,7 +1043,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       "stamped concrete or pavers",
       "is stamped concrete cheaper than pavers",
     ],
-    ogImage: "https://images.pourcanvas.com/stamped-vs-pavers-comparison.jpg",
+    ogImage: "https://images.pourcanvas.com/patio-vs-pavers.jpg",
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     intro:
@@ -1127,7 +1127,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       "concrete patio stain colors",
       "stained concrete patio cost",
     ],
-    ogImage: "https://images.pourcanvas.com/stained-concrete-patio-gallery.jpg",
+    ogImage: "https://images.pourcanvas.com/inspiration-acid-stained-concrete-patio.jpg",
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     intro:
@@ -1217,7 +1217,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       "exposed aggregate concrete pros and cons",
       "broom finish concrete vs exposed aggregate",
     ],
-    ogImage: "https://images.pourcanvas.com/exposed-aggregate-vs-broom.jpg",
+    ogImage: "https://images.pourcanvas.com/driveway-exposed-aggregate.jpg",
     publishedAt: "2026-05-26",
     updatedAt: "2026-05-26",
     intro:
@@ -1295,7 +1295,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       "how much to resurface a patio",
       "concrete patio resurfacing cost",
     ],
-    ogImage: "https://images.pourcanvas.com/patio-resurfacing-cost.jpg",
+    ogImage: "https://images.pourcanvas.com/patio-resurfacing.jpg",
     publishedAt: "2026-05-26",
     updatedAt: "2026-05-26",
     intro:
@@ -1372,7 +1372,7 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       "patio design trends 2026",
       "modern concrete patio ideas",
     ],
-    ogImage: "https://images.pourcanvas.com/patio-trends-2026.jpg",
+    ogImage: "https://images.pourcanvas.com/premium-slab-025.jpg",
     publishedAt: "2026-05-26",
     updatedAt: "2026-05-26",
     intro:

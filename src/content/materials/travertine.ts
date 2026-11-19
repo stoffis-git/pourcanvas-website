@@ -17,7 +17,7 @@ export const travertinePage: MaterialPage = {
   metaDescription:
     `Travertine pool decks stay cool underfoot, resist slipping and look stunning. Cost (${TRAV}/sq ft installed), upkeep, and how it compares to concrete options.`,
   targetKeywords: ["travertine pool deck", "travertine patio", "pool deck materials"],
-  ogImage: "/og/material-travertine.jpg",
+  ogImage: "https://images.pourcanvas.com/inspiration-travertine-pool-deck.jpg",
   publishedAt: "2025-06-15",
   intro:
     `Travertine is a natural limestone that costs about ${TRAV} per sq ft installed on a pool deck or patio — typically more than stamped concrete, but with thermal and grip properties that stamped concrete can't replicate. It stays noticeably cooler underfoot than dark concrete in direct sun, grips when wet without any added texture treatment, and has a depth of color variation that stamped imitations approximate but don't match.`,

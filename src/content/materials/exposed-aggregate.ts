@@ -23,7 +23,7 @@ export const exposedAggregatePage: MaterialPage = {
     "exposed aggregate pool deck",
     "exposed aggregate vs stamped concrete",
   ],
-  ogImage: "/og/material-exposed-aggregate.jpg",
+  ogImage: "https://images.pourcanvas.com/inspiration-exposed-aggregate-driveway-grey.jpg",
   images: [
     { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-driveway-grey.jpg", alt: "Grey exposed aggregate concrete driveway with a smooth troweled border" },
     { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-patio-charcoal.jpg", alt: "Charcoal exposed aggregate patio showing dark pebble texture" },

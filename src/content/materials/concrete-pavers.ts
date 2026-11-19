@@ -23,7 +23,7 @@ export const concretePagersPage: MaterialPage = {
   metaDescription:
     `Concrete pavers cost about ${PAV}/sq ft installed, more than a plain poured slab, but single units replace in minutes. Styles, costs and when pavers pay off.`,
   targetKeywords: ["concrete pavers", "paver patio", "concrete pavers vs poured concrete"],
-  ogImage: "/og/material-concrete-pavers.jpg",
+  ogImage: "https://images.pourcanvas.com/patio-vs-pavers.jpg",
   publishedAt: "2025-06-15",
   intro:
     `Concrete pavers cost about ${PAV} per sq ft installed (typical about $${pav.typical}) — more than a plain poured slab at ${PLAIN} — but they offer one advantage no poured slab can match: a cracked or damaged unit lifts out and replaces in minutes. They're factory-made individual blocks laid over a compacted base, available in hundreds of colors, shapes, and patterns.`,

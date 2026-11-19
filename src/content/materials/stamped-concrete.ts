@@ -23,7 +23,7 @@ export const stampedConcretePage: MaterialPage = {
     "stamped concrete vs pavers",
     "what is stamped concrete",
   ],
-  ogImage: "/og/material-stamped-concrete.jpg",
+  ogImage: "https://images.pourcanvas.com/patio-stamped-concrete-ideas.jpg",
   publishedAt: "2025-06-01",
   updatedAt: "2026-05-26",
   intro:

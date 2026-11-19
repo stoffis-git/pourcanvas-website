@@ -271,7 +271,7 @@ export const walkwayArticles: Article[] = [
     metaDescription:
       "Concrete walkway cost in 2026: plain $6–10/sq ft, stamped $12–18/sq ft, exposed aggregate $8–14/sq ft. Breakdown by finish, width, and regional labor.",
     targetKeywords: ["concrete walkway cost", "walkway installation price"],
-    ogImage: "/og/walkway-cost.jpg",
+    ogImage: "https://images.pourcanvas.com/walkway-concrete-cost.jpg",
     publishedAt: "2026-03-31",
     intro:
       "A plain concrete walkway costs $6–10 per sq ft installed. Stamped runs $12–18; exposed aggregate falls in between at $8–14. For a standard 4-foot-wide, 30-foot front walkway (120 sq ft), that's $720–2,160 depending on finish. The finish choice is the single biggest cost driver — site prep, width, and regional labor are secondary variables. These per-sq-ft numbers also apply to patio and driveway concrete work, so you can use this breakdown to budget multiple surface projects at once.",
@@ -686,7 +686,7 @@ export const walkwayArticles: Article[] = [
       "concrete front porch ideas",
       "concrete steps ideas",
     ],
-    ogImage: "https://images.pourcanvas.com/walkway-ideas-gallery.jpg",
+    ogImage: "https://images.pourcanvas.com/walkway-front-ideas.jpg",
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     intro:
@@ -778,7 +778,7 @@ export const walkwayArticles: Article[] = [
       "concrete walkway stain colors",
       "stained concrete path",
     ],
-    ogImage: "https://images.pourcanvas.com/stained-concrete-walkway-gallery.jpg",
+    ogImage: "https://images.pourcanvas.com/inspiration-acid-stained-concrete-walkway.jpg",
     publishedAt: "2026-05-26",
     updatedAt: "2026-05-26",
     intro:

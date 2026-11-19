@@ -9,7 +9,7 @@ export const polishedConcretePage: MaterialPage = {
   metaDescription:
     "Polished concrete costs $3–15/sq ft and works outdoors only on covered surfaces — it becomes dangerously slippery when wet. Learn when it's appropriate and what the alternatives are.",
   targetKeywords: ["polished concrete outdoor", "polished concrete patio", "outdoor polished concrete"],
-  ogImage: "/og/material-polished-concrete.jpg",
+  ogImage: "https://images.pourcanvas.com/premium-slab-045.jpg",
   publishedAt: "2025-06-15",
   intro:
     "Polished concrete costs $3–15 per sq ft and works outdoors only on covered, sheltered surfaces — roofed patios, outdoor kitchens, screened porches. On any surface exposed to rain, it becomes dangerously slippery when wet. Understanding that limitation upfront is the key to deciding whether polished concrete is right for your project.",

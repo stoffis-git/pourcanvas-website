@@ -21,7 +21,7 @@ export const flagstonePage: MaterialPage = {
   metaDescription:
     `Flagstone costs ${perSqftRange(INSTALLED["flagstone-dry"])}/sq ft installed dry-laid and ${perSqftRange(INSTALLED["flagstone-mortared"])} mortared, more than concrete. Types, setting methods, upkeep and when the premium is worth it.`,
   targetKeywords: ["flagstone", "what is flagstone", "flagstone types", "flagstone patio", "flagstone walkway"],
-  ogImage: "/og/material-flagstone.jpg",
+  ogImage: "https://images.pourcanvas.com/walkway-flagstone-vs-concrete.jpg",
   publishedAt: "2025-06-15",
   intro:
     `No, flagstone is not cheaper than concrete. It runs ${sq("flagstone-dry")} per sq ft installed dry-laid and ${sq("flagstone-mortared")} mortared, against ${sq("plain-concrete")} for plain concrete and ${sq("stamped-concrete")} for stamped concrete (most often $12–18). What the premium buys is something concrete can't fully replicate: genuine quarried stone with natural depth, variation, and texture. It's the premium choice for walkways, patios, and pool decks where material authenticity matters.`,
