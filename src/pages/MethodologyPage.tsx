@@ -34,6 +34,7 @@ import {
   type SourcedValue,
 } from "@/lib/tools/data/paving";
 import { FINISH_SOURCES } from "@/lib/tools/data/finish";
+import { COPING_PER_LF, CRACK_REPAIR, DECK_CONDITION_LABELS, DECK_DIY, DECK_LIFESPAN, DECK_METHOD_LABELS, DECK_PRO, HEAT_SLIP_SOURCES } from "@/lib/tools/data/poolDeck";
 import { CURRENT_YEAR } from "@/lib/year";
 
 type Row = { label: string; value: string; sources: Source[]; note?: string };
@@ -87,6 +88,31 @@ const groups: { title: string; rows: Row[] }[] = [
       ...(Object.keys(FLAGSTONE_SQFT_PER_TON) as (keyof typeof FLAGSTONE_SQFT_PER_TON)[]).map((t) =>
         rv(`Flagstone coverage, ${t} in thick`, FLAGSTONE_SQFT_PER_TON[t], (n) => `${n} sq ft per ton`),
       ),
+    ],
+  },
+  {
+    title: "Pool deck resurfacing: installed cost per square foot over an existing slab",
+    rows: [
+      ...(Object.keys(DECK_PRO) as (keyof typeof DECK_PRO)[]).map((m) => rr(DECK_METHOD_LABELS[m], DECK_PRO[m], "$", " / sq ft")),
+      {
+        label: DECK_METHOD_LABELS.replace,
+        value: `Remove old concrete + plain concrete installed (tables above): $${INSTALLED["plain-concrete"].low + REMOVAL_PER_SQFT.concrete.low}–${INSTALLED["plain-concrete"].high + REMOVAL_PER_SQFT.concrete.high} / sq ft`,
+        sources: [...REMOVAL_PER_SQFT.concrete.sources, ...INSTALLED["plain-concrete"].sources],
+      },
+    ],
+  },
+  {
+    title: "Pool deck resurfacing: lifespan, DIY materials, repairs and coping",
+    rows: [
+      ...(Object.keys(DECK_LIFESPAN) as (keyof typeof DECK_LIFESPAN)[]).map((m) => rr(`Lifespan: ${DECK_METHOD_LABELS[m]}`, DECK_LIFESPAN[m], "", " years")),
+      ...(Object.keys(DECK_DIY) as (keyof typeof DECK_DIY)[]).map((m) => rr(`DIY materials: ${DECK_METHOD_LABELS[m]}`, DECK_DIY[m]!, "$", " / sq ft")),
+      ...(Object.keys(CRACK_REPAIR) as (keyof typeof CRACK_REPAIR)[]).map((c) => rr(`Repair before resurfacing: ${DECK_CONDITION_LABELS[c].toLowerCase()}`, CRACK_REPAIR[c], "$", " per deck")),
+      rr("Replace pool coping", COPING_PER_LF, "$", " / linear ft"),
+      {
+        label: "Surface heat and wet-grip notes",
+        value: "Qualitative, per method; deck area from pool size uses rectangle or ellipse geometry",
+        sources: HEAT_SLIP_SOURCES,
+      },
     ],
   },
 ];
