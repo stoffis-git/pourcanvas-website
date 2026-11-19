@@ -28,7 +28,7 @@ export const travertinePage: MaterialPage = {
     },
     {
       heading: "Types and Finishes",
-      body: "Travertine pool decks use pavers or slabs (not continuous poured stone). Standard formats are 12\"×12\", 16\"×16\", 18\"×18\", and 24\"×24\" — larger formats read as more contemporary. The surface finish matters: tumbled travertine has rounded edges and a worn, antique appearance; honed travertine is smooth and flat; filled travertine has its natural holes filled with grout for a flatter surface. For pool decks, filled-and-honed is most practical — it's easy to clean and comfortable underfoot.",
+      body: "Travertine pool decks use pavers or slabs (not continuous poured stone). Standard formats are 12\"×12\", 16\"×16\", 18\"×18\", and 24\"×24\" — larger formats read as more contemporary. The surface finish matters: tumbled travertine has rounded edges and a worn, antique appearance; honed travertine is smooth and flat; filled travertine has its natural holes filled with grout for a flatter surface. For pool decks, filled-and-honed is most practical — it's easy to clean and comfortable underfoot. A cooler-underfoot concrete option is covered in our <a href='/blog/patio/cool-deck-vs-kool-deck'>cool deck vs Kool Deck</a> comparison.",
     },
     {
       heading: "Cost",
@@ -44,7 +44,7 @@ export const travertinePage: MaterialPage = {
     },
     {
       heading: "Installation Considerations",
-      body: "Travertine pavers around a pool are typically installed on a concrete slab substrate — not a sand/gravel base — to prevent shifting. The bond between paver and slab requires a quality thinset mortar and careful joint sizing. Expansion joints are essential; a pool deck sees constant thermal expansion and freeze-thaw movement, and rigid installations without expansion joints will crack at the weakest point. Hire a contractor with specific pool deck experience — it's a different installation requirement from a standard patio.",
+      body: "Travertine pavers around a pool are typically installed on a concrete slab substrate — not a sand/gravel base — to prevent shifting. The bond between paver and slab requires a quality thinset mortar and careful joint sizing. Expansion joints are essential; a pool deck sees constant thermal expansion and freeze-thaw movement, and rigid installations without expansion joints will crack at the weakest point. Hire a contractor with specific pool deck experience — it's a different installation requirement from a standard patio. For concrete options around a pool, see our <a href='/blog/patio/pool-deck-ideas-concrete'>concrete pool deck ideas</a>.",
     },
   ],
   prosAndCons: {

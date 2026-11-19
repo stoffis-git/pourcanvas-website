@@ -227,6 +227,7 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     relatedArticles: [
       { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "concrete-steps-ideas" },
     ],
   },
   {
@@ -377,6 +378,7 @@ export const inspirationPages: InspirationPage[] = [
     pillar: "walkway",
     relatedArticles: [
       { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "stained-concrete-walkway-ideas" },
     ],
   },
   {
@@ -511,6 +513,7 @@ export const inspirationPages: InspirationPage[] = [
     relatedArticles: [
       { pillar: "patio", slug: "stamped-concrete-patterns" },
       { pillar: "walkway", slug: "concrete-walkway-ideas" },
+      { pillar: "walkway", slug: "concrete-walkway-patterns" },
     ],
   },
   {
@@ -596,6 +599,7 @@ export const inspirationPages: InspirationPage[] = [
     relatedArticles: [
       { pillar: "walkway", slug: "concrete-walkway-ideas" },
       { pillar: "patio", slug: "stamped-concrete-patterns" },
+      { pillar: "walkway", slug: "concrete-walkway-patterns" },
     ],
   },
   {
@@ -632,6 +636,7 @@ export const inspirationPages: InspirationPage[] = [
     relatedArticles: [
       { pillar: "walkway", slug: "concrete-walkway-ideas" },
       { pillar: "walkway", slug: "concrete-walkway-patterns" },
+      { pillar: "walkway", slug: "stained-concrete-walkway-ideas" },
     ],
   },
   {
@@ -1251,6 +1256,7 @@ export const inspirationPages: InspirationPage[] = [
     relatedArticles: [
       { pillar: "walkway", slug: "concrete-walkway-ideas" },
       { pillar: "walkway", slug: "front-walkway-ideas" },
+      { pillar: "walkway", slug: "backyard-walkway-ideas" },
     ],
   },
   {
