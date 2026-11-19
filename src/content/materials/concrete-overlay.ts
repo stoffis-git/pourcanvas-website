@@ -24,7 +24,7 @@ export const concreteOverlayPage: MaterialPage = {
     },
     {
       heading: "Cost",
-      body: "Basic spray-down overlays run $3–5 per sq ft. Stamped overlays cost $8–15 per sq ft — comparable to a full stamped concrete pour but significantly less than demo and repour. On a 300 sq ft patio, a stamped overlay costs $2,400–4,500 vs. $1,800–5,400 for a new pour (including demo of the existing slab). The savings are meaningful when the existing slab qualifies.",
+      body: "Basic spray-down overlays run $3–5 per sq ft. Stamped overlays cost $8–15 per sq ft — comparable to a full stamped concrete pour but significantly less than demo and repour. On a 300 sq ft patio, a stamped overlay costs $2,400–4,500 vs. $1,800–5,400 for a new pour (including demo of the existing slab). The savings are meaningful when the existing slab qualifies. For overlays on a pool deck specifically, the <a href='/tools/pool-deck-resurfacing-cost-calculator'>pool deck resurfacing cost calculator</a> compares overlays with coatings, pavers and travertine.",
     },
     {
       heading: "When Overlays Work",

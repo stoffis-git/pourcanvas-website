@@ -2,6 +2,8 @@ import type { PavingInputs } from "@/lib/tools/paving";
 import type { AnyMaterial } from "@/lib/tools/data/paving";
 import type { FinishInputs } from "@/lib/tools/finish";
 import type { FinishId } from "@/lib/tools/data/finish";
+import type { PoolDeckInputs } from "@/lib/tools/poolDeck";
+import type { SvpInputs } from "@/lib/tools/stampedVsPavers";
 
 export type Pillar = "patio" | "driveway" | "walkway";
 
@@ -137,7 +139,7 @@ export type PavingView = "cost" | "pavers" | "base" | "sand" | "poly" | "flagsto
 
 export interface ToolConfig {
   slug: string;
-  engine: "paving" | "finish";
+  engine: "paving" | "finish" | "pool-deck" | "stamped-vs-pavers";
   category: "paving" | "finish";
   /** <title>, no site suffix (guide §3). */
   title: string;
@@ -152,6 +154,8 @@ export interface ToolConfig {
   pavingDefaults?: Partial<PavingInputs>;
   pavingView?: PavingView;
   finishDefaults?: Partial<FinishInputs>;
+  poolDeckDefaults?: Partial<PoolDeckInputs>;
+  svpDefaults?: Partial<SvpInputs>;
   tips: string[];
   sections: ArticleSection[];
   faqs: FAQ[];

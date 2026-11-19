@@ -50,7 +50,7 @@ export const concretePagersPage: MaterialPage = {
     },
     {
       heading: "When Pavers Are the Right Call",
-      body: "Choose pavers when: you're willing to pay the upfront premium for long-term repairability; you want a specific pattern or color combination that poured concrete can't replicate; you have tree roots or soil movement that makes a continuous slab likely to crack; or you're in a high-end project where the material authenticity of the surface matters. For most budget-conscious homeowners, plain or exposed-aggregate concrete costs less; stamped concrete gives a patterned look at a similar price.",
+      body: "Choose pavers when: you're willing to pay the upfront premium for long-term repairability; you want a specific pattern or color combination that poured concrete can't replicate; you have tree roots or soil movement that makes a continuous slab likely to crack; or you're in a high-end project where the material authenticity of the surface matters. For most budget-conscious homeowners, plain or exposed-aggregate concrete costs less; stamped concrete gives a patterned look at a similar price. To see whether pavers or stamped concrete cost less over 10 to 30 years for your project, try the <a href='/tools/stamped-concrete-vs-pavers-cost-calculator'>pavers vs stamped concrete cost calculator</a>.",
     },
   ],
   prosAndCons: {

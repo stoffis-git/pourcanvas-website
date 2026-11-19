@@ -5,6 +5,8 @@ import { SeoHead } from "@/components/SeoHead";
 import { FAQSection } from "@/components/FAQSection";
 import { PavingTool } from "@/components/tools/PavingTool";
 import { FinishTool } from "@/components/tools/FinishTool";
+import { PoolDeckTool } from "@/components/tools/PoolDeckTool";
+import { StampedVsPaversTool } from "@/components/tools/StampedVsPaversTool";
 import { toolsBySlug } from "@/content/tools";
 
 const SITE_URL = "https://pourcanvas.com";
@@ -64,7 +66,7 @@ const ToolPage = () => {
         <p className="max-w-3xl text-base md:text-lg font-body text-foreground/80 leading-relaxed mb-3">{tool.intro}</p>
         <p className="text-xs font-body text-muted-foreground mb-8">Last updated: {fmtDate(tool.lastUpdated)}</p>
 
-        {tool.engine === "paving" ? <PavingTool config={tool} /> : <FinishTool config={tool} />}
+        {tool.engine === "paving" ? <PavingTool config={tool} /> : tool.engine === "pool-deck" ? <PoolDeckTool config={tool} /> : tool.engine === "stamped-vs-pavers" ? <StampedVsPaversTool config={tool} /> : <FinishTool config={tool} />}
 
         <div className="max-w-3xl">
           {g1 && (

@@ -32,7 +32,7 @@ export const travertinePage: MaterialPage = {
     },
     {
       heading: "Cost",
-      body: `Travertine pool deck installation runs about ${TRAV} per sq ft. The stone itself costs ${STONE}/sq ft, with thicker 2-inch pool-deck pavers at the upper end; the rest is labor, base prep, and grouting. On a 600 sq ft pool deck, budget about ${TRAV600} installed. Compare to poured concrete ($8–18/sq ft), stamped concrete ($12–18/sq ft), or travertine-stamped concrete ($12–18/sq ft) which mimics the look at a lower cost. Natural travertine commands a premium because of the material and the care required during installation.`,
+      body: `Travertine pool deck installation runs about ${TRAV} per sq ft. The stone itself costs ${STONE}/sq ft, with thicker 2-inch pool-deck pavers at the upper end; the rest is labor, base prep, and grouting. On a 600 sq ft pool deck, budget about ${TRAV600} installed. Compare to poured concrete ($8–18/sq ft), stamped concrete ($12–18/sq ft), or travertine-stamped concrete ($12–18/sq ft) which mimics the look at a lower cost. Natural travertine commands a premium because of the material and the care required during installation. If your pool deck is sound concrete, travertine can go over it; compare that with coatings and overlays in the <a href='/tools/pool-deck-resurfacing-cost-calculator'>pool deck resurfacing cost calculator</a>.`,
     },
     {
       heading: "Maintenance",
