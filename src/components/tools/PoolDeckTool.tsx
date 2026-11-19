@@ -9,7 +9,7 @@ import {
   type PoolDeckInputs,
   type PoolDeckResult,
 } from "@/lib/tools/poolDeck";
-import { DECK_CONDITION_LABELS, DECK_METHOD_LABELS, DECK_METHODS } from "@/lib/tools/data/poolDeck";
+import { DECK_CONDITION_LABELS, DECK_DIY, DECK_METHOD_LABELS, DECK_METHOD_SHORT, DECK_METHODS } from "@/lib/tools/data/poolDeck";
 import { REGION_LABELS } from "@/lib/tools/data/paving";
 import { money, moneyRange, num, perSqftRange } from "@/lib/format";
 import { track } from "@/lib/track";
@@ -78,18 +78,20 @@ function Stat({ label, value, sub }: { label: string; value: string; sub?: strin
 
 const years = (r: { low: number; high: number }) => `${num(r.low)}–${num(r.high)} yrs`;
 
-export function poolDeckCopyText(r: PoolDeckResult, inputs: PoolDeckInputs, url: string) {
+export function poolDeckCopyText(r: PoolDeckResult, inputs: PoolDeckInputs, url: string, metric = false) {
+  const len = (ft: number) => (metric ? `${num(ft / FT_PER_M, 2)} m` : `${num(ft, 1)} ft`);
+  const ar = metric ? `${num(r.area / SQFT_PER_M2, 1)} m2` : `${num(r.area)} sq ft`;
   const size =
     inputs.mode === "pool"
-      ? `${inputs.poolLength} x ${inputs.poolWidth} ft ${inputs.shape === "rect" ? "rectangular" : "rounded"} pool, ${inputs.deckWidth} ft deck = ${num(r.area)} sq ft`
-      : `${num(r.area)} sq ft deck`;
+      ? `${len(inputs.poolWidth)} x ${len(inputs.poolLength)} ${inputs.shape === "rect" ? "rectangular" : "rounded"} pool, ${len(inputs.deckWidth)} deck = ${ar}`
+      : `${ar} deck`;
   return [
     `POOL DECK RESURFACING ESTIMATE - PourCanvas.com (${new Date().toISOString().split("T")[0]})`,
     `Deck: ${size}`,
     `Method: ${DECK_METHOD_LABELS[inputs.method]} · condition: ${DECK_CONDITION_LABELS[inputs.condition].toLowerCase()} · ${REGION_LABELS[inputs.region]}`,
     `Installed cost: ${moneyRange(r.total)} (${perSqftRange(r.perSqft)}/sq ft, typical ${money(r.total.typical)})`,
     r.repair.typical > 0 ? `Includes crack repair: ${moneyRange(r.repair)}` : "",
-    r.copingCost.typical > 0 ? `Includes coping replacement (${num(r.copingLF)} ft): ${moneyRange(r.copingCost)}` : "",
+    r.copingCost.typical > 0 ? `Includes coping replacement (${len(r.copingLF)}): ${moneyRange(r.copingCost)}` : "",
     r.diy ? `DIY materials: ${moneyRange(r.diy)}` : "",
     `Lifespan: ${years(r.lifespan)} · about ${money(r.perYear)} per year`,
     `Recommendation: ${r.recommendation}`,
@@ -135,7 +137,7 @@ export function PoolDeckTool({ config }: { config: ToolConfig }) {
   const areaLabel = metric ? `${num(r.area / SQFT_PER_M2, 1)} m²` : `${num(r.area)} sq ft`;
 
   const onCopy = async () => {
-    const text = poolDeckCopyText(r, inputs, window.location.href);
+    const text = poolDeckCopyText(r, inputs, window.location.href, metric);
     try {
       if (!navigator.clipboard) throw new Error("no clipboard");
       await navigator.clipboard.writeText(text);
@@ -167,7 +169,7 @@ export function PoolDeckTool({ config }: { config: ToolConfig }) {
               <NumberInput id="pd-dw" value={toLen(inputs.deckWidth)} onValue={(n) => set({ deckWidth: fromLen(n) })} className={selectCls} />
             </Field>
             <Field label="Pool shape" htmlFor="pd-sh">
-              <Select id="pd-sh" value={inputs.shape} onChange={(v) => set({ shape: v })} options={[["rect", "Rectangle"], ["round", "Oval / kidney / freeform"]]} />
+              <Select id="pd-sh" value={inputs.shape} onChange={(v) => set({ shape: v })} options={[["rect", "Rectangle"], ["round", "Oval or kidney"]]} />
             </Field>
           </div>
         ) : (
@@ -175,15 +177,15 @@ export function PoolDeckTool({ config }: { config: ToolConfig }) {
             <NumberInput id="pd-a" value={toArea(inputs.area)} onValue={(n) => set({ area: fromArea(n) })} className={selectCls} />
           </Field>
         )}
-        <div className="grid sm:grid-cols-2 gap-3">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-3">
           <Field label="Resurfacing method" htmlFor="pd-me">
-            <Select id="pd-me" value={inputs.method} onChange={(v) => set({ method: v })} options={DECK_METHODS.map((m) => [m, DECK_METHOD_LABELS[m]])} />
+            <Select id="pd-me" value={inputs.method} onChange={(v) => set({ method: v })} options={DECK_METHODS.map((m) => [m, DECK_METHOD_SHORT[m]])} />
           </Field>
           <Field label="Deck condition" htmlFor="pd-c">
-            <Select id="pd-c" value={inputs.condition} onChange={(v) => set({ condition: v })} options={Object.entries(DECK_CONDITION_LABELS) as [PoolDeckInputs["condition"], string][]} />
+            <Select id="pd-c" value={inputs.condition} onChange={(v) => set({ condition: v })} options={[["sound", "Sound, just worn"], ["minor", "Hairline cracks"], ["major", "Wide cracks / heaving"]]} />
           </Field>
           <Field label="Pool coping" htmlFor="pd-cp">
-            <Select id="pd-cp" value={inputs.coping} onChange={(v) => set({ coping: v })} options={[["keep", "Keep existing coping"], ["replace", "Replace coping"]]} />
+            <Select id="pd-cp" value={inputs.coping} onChange={(v) => set({ coping: v })} options={[["keep", "Keep"], ["replace", "Replace"]]} />
           </Field>
           <Field label="Region" htmlFor="pd-rg">
             <Select id="pd-rg" value={inputs.region} onChange={(v) => set({ region: v })} options={Object.entries(REGION_LABELS) as [PoolDeckInputs["region"], string][]} />
@@ -193,7 +195,7 @@ export function PoolDeckTool({ config }: { config: ToolConfig }) {
               id="pd-p"
               value={inputs.priority}
               onChange={(v) => set({ priority: v })}
-              options={[["value", "Best value over time"], ["low", "Lowest cost now"], ["cool", "Cool, grippy surface"], ["premium", "Premium stone look"]]}
+              options={[["value", "Best value"], ["low", "Lowest cost now"], ["cool", "Cool and grippy"], ["premium", "Premium look"]]}
             />
           </Field>
         </div>
@@ -203,7 +205,7 @@ export function PoolDeckTool({ config }: { config: ToolConfig }) {
           className="lg:hidden w-full rounded-pill py-2.5 text-sm font-semibold text-[#2d2a26]"
           style={{ background: "linear-gradient(135deg,#90d1bf,#9dde90)" }}
         >
-          See result
+          Calculate
         </button>
         {config.tips.length > 0 && (
           <div className="pt-2 border-t border-border">
@@ -249,7 +251,7 @@ export function PoolDeckTool({ config }: { config: ToolConfig }) {
           <Stat label="Lifespan" value={years(r.lifespan)} sub={`about ${money(r.perYear)} per year`} />
           {r.repair.typical > 0 && <Stat label="Crack repair" value={moneyRange(r.repair)} sub="included in the total" />}
           {r.copingCost.typical > 0 && <Stat label="New coping" value={moneyRange(r.copingCost)} sub={`${num(r.copingLF)} linear ft, included`} />}
-          <Stat label="DIY materials" value={r.diy ? moneyRange(r.diy) : "Pro job"} sub={r.diy ? "what you'd pay doing it yourself" : "needs pro tools and skills"} />
+          <Stat label="DIY materials" value={r.diy ? moneyRange(r.diy) : "Pro job"} sub={r.diy ? (DECK_DIY[inputs.method]?.status === "pending" ? "estimate, price not yet verified" : "what you'd pay doing it yourself") : "needs pro tools and skills"} />
         </div>
 
         <div className="rounded-2xl border border-border bg-muted/30 px-5 py-4">
@@ -283,6 +285,7 @@ export function PoolDeckTool({ config }: { config: ToolConfig }) {
                       )}
                       {c.suitability === "unsuitable" && <span className="block text-xs text-destructive">Slab must be stable first</span>}
                       {c.suitability === "caution" && <span className="block text-xs text-muted-foreground">Cracks show through</span>}
+                      {c.method === "replace" && <span className="block text-xs text-muted-foreground">Per year not like-for-like: also renews the slab</span>}
                     </td>
                     <td className="px-3 py-2.5 text-right font-medium whitespace-nowrap">{moneyRange(c.total)}</td>
                     <td className="px-3 py-2.5 text-right text-muted-foreground whitespace-nowrap">{years(c.lifespan)}</td>

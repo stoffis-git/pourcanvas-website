@@ -1,6 +1,12 @@
 // Pool deck resurfacing numbers. Same SourcedRange pattern as data/paving.ts; /methodology renders this file.
 // Tear-out + new concrete reuses INSTALLED["plain-concrete"] and REMOVAL_PER_SQFT.concrete from data/paving.ts.
-import type { Source, SourcedRange } from "./paving";
+import type { Source, SourcedRange, SourcedValue } from "./paving";
+import { FINISH_SOURCES } from "./finish";
+
+/** Reuse the finish selector's reflectance sources (LBNL, Solomon Colors) instead of duplicating them. */
+const finishSource = (url: string): Source => FINISH_SOURCES.find((s) => s.url === url)!;
+const LBNL = finishSource("https://heatisland.lbl.gov/coolscience/cool-pavements");
+const SOLOMON = finishSource("https://www.solomoncolors.com/tech-docs/pdf/solomon/Integral-Color-SRI-Values.pdf");
 
 const S = {
   homeguideDeck: { label: "HomeGuide: pool deck resurfacing cost", url: "https://homeguide.com/costs/pool-deck-resurfacing-cost", date: "2026-11" },
@@ -19,7 +25,10 @@ const S = {
   ctvegas: { label: "Concrete Texturing (Las Vegas): pool deck resurfacing cost guide", url: "https://ctvegas.com/pool-deck-resurfacing-cost-guide-what-to-expect-in-2025/", date: "2024-12-06" },
   encore: { label: "Encore Coatings: Cool Pool deck coating kit", url: "https://encorecoatings.com/product/new-cool-pool-deck-coating/", date: "2026-11" },
   calpool: { label: "Cal Pool: concrete pool decks", url: "https://www.calpool.com/pool-decking/concrete-decks/", date: "2026-11" },
-  recapHbs: { label: "HBS Dealer: Quikrete Re-Cap coverage (40 sq ft per 40 lb bag at 1/8 in)", url: "https://www.hbsdealer.com/products/quikrete-launches-re-cap-concrete-resurfacer/", date: "2026-11" },
+  recapHbs: { label: "HBS Dealer: Quikrete Re-Cap launch (coverage, walk-on time)", url: "https://www.hbsdealer.com/products/quikrete-launches-re-cap-concrete-resurfacer/", date: "2026-11" },
+  zionTimeline: { label: "Zion Outdoors: pool deck resurfacing cost (timeline)", url: "https://zionoutdoors.com/pool-deck-resurfacing-cost-2025/", date: "2025-08-28" },
+  homeguideSeason: { label: "HomeGuide: pool deck resurfacing cost (saving tips)", url: "https://homeguide.com/costs/pool-deck-resurfacing-cost", date: "2026-11" },
+  angiSeason: { label: "Angi: concrete resurfacing cost (off-season, sealing after about a month)", url: "https://www.angi.com/articles/concrete-resurfacing-cost.htm", date: "2026-10-08" },
   recapAce: { label: "Ace Hardware: Quikrete Re-Cap 40 lb", url: "https://www.acehardware.com/p/1004330", date: "2026-11" },
 } satisfies Record<string, Source>;
 
@@ -71,8 +80,40 @@ export const DECK_DIY: Partial<Record<DeckMethod, SourcedRange>> = {
   reseal: { low: 0.1, typical: 0.4, high: 0.75, sources: [S.angiSealing], status: "verified", note: "Sealer only; add a pressure-washer rental." },
   paint: { low: 0.3, typical: 1, high: 2, sources: [S.angiPaint], status: "verified", note: "Derived: acrylic $30–100 and epoxy $100–200 per gallon, about 100 sq ft per gallon in two coats." },
   spray: { low: 1.25, typical: 1.5, high: 2, sources: [S.encore], status: "verified", note: "Encore kit $259 finishes up to 200 sq ft in two coats, plus a gallon of tint paint, cleaner and sealer." },
-  resurfacer: { low: 0.5, typical: 0.9, high: 1.2, sources: [S.recapHbs, S.recapAce], status: "pending", note: "Quikrete Re-Cap: about $36–46 per 40 lb bag, 40 sq ft at 1/8 in or 80 sq ft as a skim coat. From retailer snippets; retail pages block automated fetches." },
+  resurfacer: { low: 0.5, typical: 0.9, high: 1.2, sources: [S.recapHbs, S.recapAce], status: "pending", note: "Estimate. Coverage verified (HBS Dealer: 40 sq ft per 40 lb bag at 1/8 in, 80 sq ft as a skim coat); the $36–46 bag price is from retailer search snippets because retail pages block automated fetches." },
 };
+
+/** Short labels for selects (full labels don't fit the two-column form). */
+export const DECK_METHOD_SHORT: Record<DeckMethod, string> = {
+  reseal: "Clean + reseal",
+  paint: "Paint / epoxy",
+  resurfacer: "Resurfacer",
+  spray: "Cool deck texture",
+  stamped: "Stamped overlay",
+  rubber: "Rubberized coating",
+  pavers: "Pavers over slab",
+  travertine: "Travertine over slab",
+  replace: "Tear out + new",
+};
+
+/** Solar reflectance (share of sunlight reflected), concrete surfaces with integral color; gray = new gray-cement concrete. */
+export type DeckColor = "white" | "buff" | "gray" | "dark";
+
+export const SOLAR_REFLECTANCE: Record<DeckColor, SourcedRange & { label: string }> = {
+  white: { label: "White or pale tint", low: 0.52, typical: 0.55, high: 0.59, sources: [SOLOMON], status: "verified" },
+  buff: { label: "Sand or buff", low: 0.37, typical: 0.4, high: 0.42, sources: [SOLOMON], status: "verified" },
+  gray: { label: "New gray concrete", low: 0.3, typical: 0.4, high: 0.5, sources: [LBNL], status: "verified", note: "Falls to 0.20–0.35 as it ages and gets dirty." },
+  dark: { label: "Charcoal or slate", low: 0.15, typical: 0.18, high: 0.22, sources: [SOLOMON], status: "verified" },
+};
+
+/** Days on site for a typical resurfacing job (coatings and overlays). */
+export const DECK_JOB_DAYS: SourcedRange = { low: 2, typical: 3, high: 4, sources: [S.zionTimeline, S.skin], status: "verified", note: "Zion Outdoors: 2–3 days for a straightforward job, up to about two weeks for large custom work; SKIN: 2–4 days." };
+
+/** Walk-on time for a cement resurfacer (Quikrete Re-Cap); drive-on 24 h. */
+export const RESURFACER_WALK_ON_HOURS: SourcedValue = { value: 8, sources: [S.recapHbs], status: "verified" };
+
+/** Seasonal and scope savings (qualitative): book off-season, keep patterns simple, resurface only what needs it. */
+export const SAVING_SOURCES: Source[] = [S.homeguideSeason, S.angiSeason];
 
 export type DeckCondition = "sound" | "minor" | "major";
 

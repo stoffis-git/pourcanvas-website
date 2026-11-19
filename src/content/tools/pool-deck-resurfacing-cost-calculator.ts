@@ -2,7 +2,18 @@ import type { ToolConfig } from "../types";
 import { CURRENT_YEAR } from "@/lib/year";
 import { money, moneyRange, num, perSqftRange } from "@/lib/format";
 import { calculatePoolDeck, DEFAULT_POOL_DECK_INPUTS, proPerSqft, type PoolDeckInputs } from "@/lib/tools/poolDeck";
-import { COPING_PER_LF, CRACK_REPAIR, DECK_DIY, DECK_LIFESPAN, DECK_METHOD_LABELS, DECK_PRO, type DeckMethod } from "@/lib/tools/data/poolDeck";
+import {
+  COPING_PER_LF,
+  CRACK_REPAIR,
+  DECK_DIY,
+  DECK_JOB_DAYS,
+  DECK_LIFESPAN,
+  DECK_METHOD_LABELS,
+  DECK_PRO,
+  RESURFACER_WALK_ON_HOURS,
+  SOLAR_REFLECTANCE,
+  type DeckMethod,
+} from "@/lib/tools/data/poolDeck";
 import { REGION_LABELS, REGION_MULTIPLIER, REMOVAL_PER_SQFT, type Range, type Region } from "@/lib/tools/data/paving";
 import { SLABCALC, a } from "./_shared";
 
@@ -13,7 +24,6 @@ const row = (m: DeckMethod, r = d) => r.compare.find((c) => c.method === m)!;
 const area = (sf: number, m: DeckMethod) => at({ mode: "area", area: sf, method: m });
 const minor = at({ condition: "minor" });
 const coping = at({ coping: "replace" });
-const big = at({ poolLength: 40, poolWidth: 20, deckWidth: 8 });
 
 /** Span of the common resurfacing methods (resurfacer, paint, cool deck) in $/sq ft. */
 const common: Range = {
@@ -29,6 +39,7 @@ const htmlTable = (head: string[], rows: string[][]) =>
     .join("")}</tbody></table>`;
 
 const ALL: DeckMethod[] = ["reseal", "paint", "resurfacer", "spray", "stamped", "rubber", "pavers", "travertine", "replace"];
+/** [width, length, deck width] in ft */
 const pools: [number, number, number][] = [
   [12, 24, 4],
   [16, 32, 6],
@@ -37,7 +48,10 @@ const pools: [number, number, number][] = [
 ];
 const diyMethods = (Object.keys(DECK_DIY) as DeckMethod[]).sort((x, y) => DECK_PRO[x as Exclude<DeckMethod, "replace">].typical - DECK_PRO[y as Exclude<DeckMethod, "replace">].typical);
 const cheapestUpfront = at({ priority: "low" });
-const perYearSorted = [...d.compare].filter((c) => c.method !== "replace").sort((x, y) => x.perYear - y.perYear);
+const perYearSorted = [...d.compare].sort((x, y) => x.perYear - y.perYear);
+/** Pool sizes are written width × length everywhere ("16×32"), matching the intro. */
+const pool = (w: number, l: number) => `${w}×${l}`;
+const pct = (r: Range) => `${Math.round(r.low * 100)}–${Math.round(r.high * 100)}%`;
 
 export const poolDeckResurfacingCostCalculator: ToolConfig = {
   slug: "pool-deck-resurfacing-cost-calculator",
@@ -59,39 +73,35 @@ export const poolDeckResurfacingCostCalculator: ToolConfig = {
     "Repair moving cracks before any coating; they show through within a season.",
     "Choose light colors around the pool; dark coatings run much hotter underfoot.",
     "Ask for grit in the sealer on any smooth, painted or stamped surface.",
-    `Reseal coated decks every ${yrs(DECK_LIFESPAN.reseal)} to keep the warranty and the grip.`,
+    `Reseal coated decks every ${yrs(DECK_LIFESPAN.reseal)} to keep the grip and the finish.`,
   ],
   sections: [
     {
       heading: "Pool Deck Resurfacing Cost by Method",
-      body: `<p>The method sets the price more than anything else. These are installed national averages over an existing, sound concrete deck, priced for the ${sq(d.area)} deck around a 16×32 pool with a 6 ft walkway.</p>${htmlTable(
+      body: `<p>The method sets the price. Installed national averages over a sound concrete deck, for the ${sq(d.area)} deck around a ${pool(16, 32)} pool:</p>${htmlTable(
         ["Method", "Per sq ft", `${sq(d.area)} deck`, "Lasts"],
         ALL.map((m) => [DECK_METHOD_LABELS[m], perSqftRange(proPerSqft(m)), moneyRange(row(m).total), yrs(DECK_LIFESPAN[m])]),
       )}<p>Resurfacers, paint and cool deck textures are thin coatings bonded to the old slab. A ${a("/materials/stamped-concrete", "stamped")} ${a("/materials/concrete-overlay", "concrete overlay")} is thicker and can mimic stone or wood. Pavers and travertine are laid over the slab.</p>`,
     },
     {
-      heading: "Pool Deck Square Footage by Pool Size",
-      body: `<p>Most homeowners know their pool size, not their deck area. The calculator works it out: for a rectangular pool, the deck is the outer rectangle (pool plus the deck width on every side) minus the water. Oval, kidney and freeform pools use the pool's perimeter instead.</p>${htmlTable(
-        ["Pool", "Deck width", "Deck area", "Coping", "Cool deck cost"],
-        pools.map(([l, w, dw]) => {
-          const r = at({ poolLength: l, poolWidth: w, deckWidth: dw });
-          return [`${w} × ${l} ft`, `${dw} ft`, sq(r.area), `${num(r.copingLF)} ft`, moneyRange(r.total)];
-        }),
-      )}<p>Add patios, steps and paths that get the same surface to the deck area, or switch the calculator to "Enter deck area" and type the total.</p>`,
-    },
-    {
       heading: "Pool Deck Resurfacing Cost by Deck Size",
-      body: `<p>Totals scale with area. The table compares three common resurfacing choices at typical deck sizes, at the U.S. average rate.</p>${htmlTable(
-        ["Deck size", DECK_METHOD_LABELS.resurfacer, "Cool deck", "Stamped overlay"],
+      body: `<p>The calculator derives deck area from pool size: for a rectangular pool, the outer rectangle (pool plus deck width on every side) minus the water; oval, kidney and freeform pools use the perimeter.</p>${htmlTable(
+        ["Pool", "Deck width", "Deck area", "Coping", "Cool deck cost"],
+        pools.map(([w, l, dw]) => {
+          const r = at({ poolLength: l, poolWidth: w, deckWidth: dw });
+          return [`${pool(w, l)} ft`, `${dw} ft`, sq(r.area), `${num(r.copingLF)} ft`, moneyRange(r.total)];
+        }),
+      )}<p>Already know the square footage? Totals scale with area:</p>${htmlTable(
+        ["Deck size", "Resurfacer", "Cool deck", "Stamped overlay"],
         [400, 600, 800, 1000, 1200].map((sf) => [sq(sf), moneyRange(area(sf, "resurfacer").total), moneyRange(area(sf, "spray").total), moneyRange(area(sf, "stamped").total)]),
-      )}<p>Expect a crew minimum on very small decks.</p>`,
+      )}<p>Add patios and steps that get the same surface, and expect a crew minimum on very small decks.</p>`,
     },
     {
       heading: "Cost per Year: Which Pool Deck Surface Lasts Longest?",
-      body: `<p>The cheapest coating is rarely the cheapest deck. Dividing the typical installed price by the typical service life shows what each year of use costs on the same ${sq(d.area)} deck:</p>${htmlTable(
+      body: `<p>The cheapest coating is rarely the cheapest deck. Typical installed price divided by typical service life, same ${sq(d.area)} deck:</p>${htmlTable(
         ["Method", "Typical cost", "Typical life", "Cost per year"],
-        perYearSorted.map((c) => [c.label, money(c.total.typical), `${num(c.lifespan.typical, 1)} years`, money(c.perYear)]),
-      )}<p>Travertine over the slab (${money(row("travertine").perYear)} a year) and a cool deck (${money(d.perYear)} a year) come out nearly even, so the cool deck wins on upfront price. Paint looks cheap but needs redoing every few years. Tearing out a sound slab is never the value play: you throw away the life left in it.</p><p>These lives assume a reseal every ${yrs(DECK_LIFESPAN.reseal)}: ${moneyRange(row("reseal").total)} per cycle on this deck from a pro, or ${moneyRange(row("reseal").diy!)} in sealer if you do it yourself. Our ${a("/blog/patio/concrete-patio-sealing", "concrete sealing guide")} covers sealer types.</p>`,
+        perYearSorted.map((c) => [c.method === "replace" ? `${c.label}*` : c.label, money(c.total.typical), `${num(c.lifespan.typical, 1)} years`, money(c.perYear)]),
+      )}<p>* Not like-for-like: a new slab also renews the structure, and on a sound deck it costs more up front and discards the slab's remaining life.</p><p>Travertine over the slab (${money(row("travertine").perYear)} a year) and a cool deck (${money(d.perYear)} a year) come out nearly even, so the cool deck wins on upfront price. Paint looks cheap but needs redoing every few years.</p><p>These lives assume a reseal every ${yrs(DECK_LIFESPAN.reseal)}: ${moneyRange(row("reseal").total)} per cycle on this deck from a pro, or ${moneyRange(row("reseal").diy!)} in sealer if you do it yourself. Our ${a("/blog/patio/concrete-patio-sealing", "concrete sealing guide")} covers sealer types.</p>`,
     },
     {
       heading: "Cool Deck Resurfacing Cost",
@@ -116,47 +126,55 @@ export const poolDeckResurfacingCostCalculator: ToolConfig = {
     },
     {
       heading: "Crack Repair and Coping Replacement Costs",
-      body: `<p>Two add-ons change most quotes. Crack repair is priced per job; coping is priced per linear foot of pool edge, which the calculator measures from your pool size.</p>${htmlTable(
-        ["Item", "Cost", "16×32 pool example"],
+      body: `<p>Crack repair is priced per job; coping per linear foot of pool edge, which the calculator measures from your pool size.</p>${htmlTable(
+        ["Item", "Cost", `${pool(16, 32)} pool example`],
         [
           ["Hairline crack and chip repair", moneyRange(CRACK_REPAIR.minor), `cool deck total ${moneyRange(minor.total)}`],
           ["Wide cracks and spalling", moneyRange(CRACK_REPAIR.major), "plus leveling if the slab settled"],
           ["Replace coping", `${perSqftRange(COPING_PER_LF)} per linear ft`, `${num(d.copingLF)} ft: ${moneyRange(coping.copingCost)}`],
         ],
-      )}<p>Replace coping that is loose, cracked or sitting at the wrong height, and plan it together with pavers or travertine, which raise the deck surface. More on fixes in our ${a("/blog/patio/concrete-patio-crack-repair", "concrete crack repair guide")}.</p>`,
+      )}<p>Plan new coping together with pavers or travertine, which raise the deck surface. More on fixes in our ${a("/blog/patio/concrete-patio-crack-repair", "concrete crack repair guide")}.</p>`,
+    },
+    {
+      heading: "What Affects Pool Deck Resurfacing Cost",
+      body: `<p>Five things move a quote most. Each row changes one of them on the ${pool(16, 32)} pool with a 6 ft cool deck (${moneyRange(d.total)}):</p>${htmlTable(
+        ["Driver", "Change", "Installed total"],
+        [
+          ["Method", "Resurfacer vs stamped overlay", `${moneyRange(row("resurfacer").total)} vs ${moneyRange(row("stamped").total)}`],
+          ["Deck width", "4 ft vs 8 ft around the pool", `${moneyRange(at({ deckWidth: 4 }).total)} vs ${moneyRange(at({ deckWidth: 8 }).total)}`],
+          ["Condition", "Hairline crack repair", `+${moneyRange(CRACK_REPAIR.minor)}`],
+          ["Coping", `Replace ${num(d.copingLF)} ft`, `+${moneyRange(coping.copingCost)}`],
+          ["Region", "South vs Pacific", `${moneyRange(at({ region: "south" }).total)} vs ${moneyRange(at({ region: "pacific" }).total)}`],
+        ],
+      )}<p><strong>Timeline:</strong> most coating and overlay jobs take ${DECK_JOB_DAYS.low}–${DECK_JOB_DAYS.high} days on site (Zion Outdoors, SKIN Microplaster). A cement resurfacer such as Quikrete Re-Cap takes foot traffic after about ${RESURFACER_WALK_ON_HOURS.value} hours, and Angi suggests sealing about a month after resurfacing.</p><p><strong>Ways to lower the cost</strong> (HomeGuide, Angi): book in fall or winter instead of late spring and early summer, pick a simple texture over stamped patterns, keep sound coping, and resurface only the areas that need it.</p>`,
     },
     {
       heading: "Pool Deck Resurfacing Cost by Region",
       body: `<p>Angi puts materials at no more than 20% of a resurfacing job, so regional labor rates move the total. The multipliers below are broad averages, not ZIP-level quotes.</p>${htmlTable(
         ["Region", "Multiplier", `Cool deck, ${sq(d.area)}`],
         (Object.keys(REGION_LABELS) as Region[]).map((rg) => [REGION_LABELS[rg], `×${REGION_MULTIPLIER[rg].value.toFixed(2)}`, moneyRange(at({ region: rg }).total)]),
-      )}<p>Cool deck coatings have been standard on Sun Belt pool decks for decades (Concrete Network), so experienced crews are easiest to find in the South and Southwest.</p>`,
+      )}`,
     },
     {
       heading: "DIY vs Professional Pool Deck Resurfacing",
-      body: `<p>Four methods are realistic DIY jobs. The rest need grinders, hopper guns, stamp mats or masonry skills. DIY figures are materials only; add a pressure washer and a weekend or two.</p>${htmlTable(
+      body: `<p>Four methods are realistic DIY jobs. DIY figures are materials only; add a pressure washer and a weekend or two.</p>${htmlTable(
         ["Method", "DIY materials", "Pro installed"],
-        diyMethods.map((m) => [DECK_METHOD_LABELS[m], moneyRange(row(m).diy!), moneyRange(row(m).total)]),
-      )}<p>The savings are real, but prep decides whether a coating lasts: degrease, etch or grind, patch and keep the slab dry. Our ${a("/blog/patio/patio-resurfacing-cost", "patio resurfacing cost guide")} covers prep in detail.</p>`,
+        diyMethods.map((m) => [`${DECK_METHOD_LABELS[m]}${DECK_DIY[m]!.status === "pending" ? "*" : ""}`, moneyRange(row(m).diy!), moneyRange(row(m).total)]),
+      )}${diyMethods.some((m) => DECK_DIY[m]!.status === "pending") ? "<p>* Estimate: coverage is Quikrete's published figure; the bag price is not yet verified.</p>" : ""}<p>The savings are real, but prep decides whether a coating lasts: degrease, etch or grind, patch and keep the slab dry. Our ${a("/blog/patio/patio-resurfacing-cost", "patio resurfacing cost guide")} covers prep in detail.</p>`,
     },
     {
       heading: "Pool Deck Colors, Heat and Slip Resistance",
-      body: `<p>Color decides how hot a resurfaced deck gets. Surface heat follows solar reflectance, the share of sunlight a surface bounces back (LBNL Heat Island Group; Solomon Colors integral color tests):</p>${htmlTable(
+      body: `<p>Color decides how hot a resurfaced deck gets. These are measured solar reflectance values (the share of sunlight a surface bounces back) for concrete surfaces with integral color, from Solomon Colors, and for new gray concrete, from the LBNL Heat Island Group.</p>${htmlTable(
         ["Deck color", "Sunlight reflected", "Underfoot"],
-        [
-          ["White or pale tint", "52–59%", "Coolest"],
-          ["Sand or buff", "37–42%", "Cool"],
-          ["New gray concrete", "30–50%", "Warm"],
-          ["Charcoal or slate", "15–22%", "Hottest"],
-        ],
-      )}<p>Texture and sealer decide wet grip: cool deck and rubberized coatings grip best, while paint, stamped overlays and glossy film sealers need grit in the topcoat (Concrete Network). The calculator's comparison table rates heat and grip for every method. See ${a("/materials/colored-concrete", "colored concrete")} for light tints, and rank finishes for your climate with the ${a("/tools/pool-deck-finish-selector", "pool deck finish selector")}.</p>`,
+        Object.values(SOLAR_REFLECTANCE).map((c, i) => [c.label, pct(c), ["Coolest", "Cool", "Warm", "Hottest"][i]]),
+      )}<p>Texture and sealer decide wet grip: cool deck and rubberized coatings grip best, while paint, stamped overlays and glossy film sealers need grit in the topcoat (Concrete Network). See ${a("/materials/colored-concrete", "colored concrete")} for light tints, and rank finishes for your climate with the ${a("/tools/pool-deck-finish-selector", "pool deck finish selector")}.</p>`,
     },
     {
       heading: "Pavers and Travertine Over an Existing Pool Deck",
       body: `<p>A sound slab makes a good base for pavers or thin travertine, which skips excavation and gravel. Both last decades and can be repaired one unit at a time.</p>${htmlTable(
         ["Option", `${sq(d.area)} deck`, "Lasts", "Cost per year"],
         (["stamped", "pavers", "travertine"] as DeckMethod[]).map((m) => [DECK_METHOD_LABELS[m], moneyRange(row(m).total), yrs(DECK_LIFESPAN[m]), money(row(m).perYear)]),
-      )}<p>On a larger 20×40 pool with an 8 ft deck (${sq(big.area)}), travertine comes to ${moneyRange(row("travertine", big).total)}. Read the ${a("/materials/travertine", "travertine pool deck guide")}, price patio pavers in the ${a("/tools/paver-patio-cost-calculator", "paver patio cost calculator")}, or browse ${a("/blog/patio/pool-deck-ideas-concrete", "concrete pool deck ideas")}.</p>`,
+      )}<p>Read the ${a("/materials/travertine", "travertine pool deck guide")}, price patio pavers in the ${a("/tools/paver-patio-cost-calculator", "paver patio cost calculator")}, or browse ${a("/blog/patio/pool-deck-ideas-concrete", "concrete pool deck ideas")}.</p>`,
     },
   ],
   faqs: [

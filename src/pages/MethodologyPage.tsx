@@ -34,7 +34,20 @@ import {
   type SourcedValue,
 } from "@/lib/tools/data/paving";
 import { FINISH_SOURCES } from "@/lib/tools/data/finish";
-import { COPING_PER_LF, CRACK_REPAIR, DECK_CONDITION_LABELS, DECK_DIY, DECK_LIFESPAN, DECK_METHOD_LABELS, DECK_PRO, HEAT_SLIP_SOURCES } from "@/lib/tools/data/poolDeck";
+import {
+  COPING_PER_LF,
+  CRACK_REPAIR,
+  DECK_CONDITION_LABELS,
+  DECK_DIY,
+  DECK_JOB_DAYS,
+  DECK_LIFESPAN,
+  DECK_METHOD_LABELS,
+  DECK_PRO,
+  HEAT_SLIP_SOURCES,
+  RESURFACER_WALK_ON_HOURS,
+  SAVING_SOURCES,
+  SOLAR_REFLECTANCE,
+} from "@/lib/tools/data/poolDeck";
 import { CURRENT_YEAR } from "@/lib/year";
 
 type Row = { label: string; value: string; sources: Source[]; note?: string };
@@ -108,10 +121,18 @@ const groups: { title: string; rows: Row[] }[] = [
       ...(Object.keys(DECK_DIY) as (keyof typeof DECK_DIY)[]).map((m) => rr(`DIY materials: ${DECK_METHOD_LABELS[m]}`, DECK_DIY[m]!, "$", " / sq ft")),
       ...(Object.keys(CRACK_REPAIR) as (keyof typeof CRACK_REPAIR)[]).map((c) => rr(`Repair before resurfacing: ${DECK_CONDITION_LABELS[c].toLowerCase()}`, CRACK_REPAIR[c], "$", " per deck")),
       rr("Replace pool coping", COPING_PER_LF, "$", " / linear ft"),
+      rr("Days on site, coating or overlay job", DECK_JOB_DAYS, "", " days"),
+      rv("Walk-on time, cement resurfacer", RESURFACER_WALK_ON_HOURS, (n) => `${n} hours`),
+      ...Object.values(SOLAR_REFLECTANCE).map((c) => rr(`Solar reflectance: ${c.label.toLowerCase()}`, c, "", "")),
       {
         label: "Surface heat and wet-grip notes",
         value: "Qualitative, per method; deck area from pool size uses rectangle or ellipse geometry",
         sources: HEAT_SLIP_SOURCES,
+      },
+      {
+        label: "Ways to lower the cost",
+        value: "Qualitative: book off-season, keep patterns simple, resurface only what needs it",
+        sources: SAVING_SOURCES,
       },
     ],
   },
