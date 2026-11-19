@@ -13,6 +13,7 @@ import { concreteFinishSelector } from "./concrete-finish-selector";
 import { poolDeckFinishSelector } from "./pool-deck-finish-selector";
 import { drivewayFinishSelector } from "./driveway-finish-selector";
 import { poolDeckResurfacingCostCalculator } from "./pool-deck-resurfacing-cost-calculator";
+import { stampedConcreteVsPaversCostCalculator } from "./stamped-concrete-vs-pavers-cost-calculator";
 
 export const toolPages: ToolConfig[] = [
   paverPatioCostCalculator,
@@ -29,6 +30,7 @@ export const toolPages: ToolConfig[] = [
   poolDeckFinishSelector,
   drivewayFinishSelector,
   poolDeckResurfacingCostCalculator,
+  stampedConcreteVsPaversCostCalculator,
 ];
 
 export const toolsBySlug = new Map<string, ToolConfig>(toolPages.map((t) => [t.slug, t]));

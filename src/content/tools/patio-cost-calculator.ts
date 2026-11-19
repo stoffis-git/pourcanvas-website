@@ -71,8 +71,8 @@ export const patioCostCalculator: ToolConfig = {
       body: `<p>Plain poured concrete costs ${pr("plain-concrete")} per square foot installed. Concrete pavers cost ${pr("concrete-paver")}. On a 12×16 patio that is ${moneyRange(plain.total)} versus ${moneyRange(paver.total)}.</p>${materialComparison(["plain-concrete", "exposed-aggregate", "concrete-paver"], [12, 16])}<p>Concrete wins on upfront cost. Pavers win on repairs: a sunken or stained paver can be lifted and replaced, while a cracked slab is patched or replaced in sections. For a detailed concrete quote, use the ${a(SLABCALC.patioCost, "concrete patio cost calculator")} on our sister site SlabCalc. Our ${a("/blog/patio/concrete-patio-vs-pavers", "concrete patio vs pavers guide")} and ${a("/blog/patio/concrete-patio-cost", "concrete patio cost guide")} go deeper.</p>`,
     },
     {
-      heading: "Stamped Concrete vs. Pavers Cost",
-      body: `<p>Stamped concrete (${pr("stamped-concrete")} per sq ft) overlaps with concrete pavers (${pr("concrete-paver")}). A 12×16 stamped patio comes to about ${moneyRange(stamped.total)}, against ${moneyRange(paver.total)} for pavers.</p>${materialComparison(["concrete-paver", "stamped-concrete", "clay-brick"], [12, 16])}<p>Stamped concrete gives a paver or stone look without joints for weeds, but it needs resealing and shows cracks. Price it in detail with the ${a(SLABCALC.stampedCost, "stamped concrete cost calculator")}, browse finishes on our ${a("/materials/stamped-concrete", "stamped concrete")} page, and compare upkeep in ${a("/blog/patio/stamped-concrete-vs-pavers", "stamped concrete vs pavers")}.</p>`,
+      heading: "Stamped Concrete vs. Pavers: Price per Sq Ft",
+      body: `<p>Stamped concrete (${pr("stamped-concrete")} per sq ft) overlaps with concrete pavers (${pr("concrete-paver")}). A 12×16 stamped patio comes to about ${moneyRange(stamped.total)}, against ${moneyRange(paver.total)} for pavers.</p>${materialComparison(["concrete-paver", "stamped-concrete", "clay-brick"], [12, 16])}<p>Stamped concrete gives a paver or stone look without joints for weeds, but it needs resealing and shows cracks. Price it in detail with the ${a(SLABCALC.stampedCost, "stamped concrete cost calculator")}, browse finishes on our ${a("/materials/stamped-concrete", "stamped concrete")} page, and compare upkeep in ${a("/blog/patio/stamped-concrete-vs-pavers", "stamped concrete vs pavers")}. For upkeep over the years, the break-even year, regional prices and driveways, use the ${a("/tools/stamped-concrete-vs-pavers-cost-calculator", "stamped concrete vs pavers cost calculator")}.</p>`,
     },
     {
       heading: "Flagstone vs. Concrete Patio Cost",
@@ -133,6 +133,7 @@ export const patioCostCalculator: ToolConfig = {
     "paver-walkway-cost-calculator",
     "paver-driveway-cost-calculator",
     "concrete-finish-selector",
+    "stamped-concrete-vs-pavers-cost-calculator",
   ],
   relatedGuides: [
     { label: "concrete patio vs pavers guide", to: "/blog/patio/concrete-patio-vs-pavers" },
