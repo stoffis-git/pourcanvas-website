@@ -4,8 +4,8 @@ A T3 Code scheduled task runs every Tuesday at 09:00. It builds the first row wh
 
 | # | due | status | slug (confirm in Phase 1) | primary keyword | demand (US/mo, DataForSEO 2026-11-19) |
 |---|---|---|---|---|---|
-| 1 | 2026-11-19 | in progress | stamped-concrete-vs-pavers-cost-calculator | stamped concrete vs pavers cost | 880 + 480 + 390 + 210 |
-| 2 | 2026-11-19 | in progress | pool-deck-resurfacing-cost-calculator | pool deck resurfacing cost | 6,600 + 720 (+ cool deck 2,900) |
+| 1 | 2026-11-19 | done 2026-11-19 | stamped-concrete-vs-pavers-cost-calculator | stamped concrete vs pavers cost | 880 + 480 + 390 + 210 |
+| 2 | 2026-11-19 | done 2026-11-19 | pool-deck-resurfacing-cost-calculator | pool deck resurfacing cost | 6,600 + 720 (+ cool deck 2,900) |
 | 3 | 2026-12-01 | scheduled | stamped-concrete-color-picker | stamped concrete colors | 1,900; concrete stain colors 5,400; color combinations 90 |
 | 4 | 2026-12-15 | scheduled | stamped-concrete-pattern-selector | stamped concrete patterns | 50K (head; ranks image pos ~27); ashlar slate 2,400; wood stamped 1,300; cobblestone 390 |
 | 5 | 2026-12-29 | scheduled | driveway-material-cost-comparison | cheapest driveway material | cheap driveway ideas 1,000; cheapest driveway material 320; asphalt vs concrete driveway 4,400; gravel vs concrete 140; pavers vs concrete driveway 210 |
@@ -23,3 +23,4 @@ A T3 Code scheduled task runs every Tuesday at 09:00. It builds the first row wh
 
 ## Log
 - 2026-11-19: schedule created; tools 1–2 started.
+- 2026-11-19: tools 1–2 live (commit 0840bb8): builder (Opus, worktree) → independent QA (Sonnet, ship after fixes) → fixes → merge, build, check-pages 0 failures, 103 tests → push; 5–6 inbound contextual links each; both URLs at the top of the indexing priority list.
