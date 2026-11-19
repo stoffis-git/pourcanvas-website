@@ -1,3 +1,4 @@
+import { cfImage } from "@/lib/imageUrl";
 import { useParams, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -55,6 +56,22 @@ const InspirationPage = () => {
               )}
             </div>
           </div>
+          {page.additionalImages && page.additionalImages.length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {page.additionalImages.map((img) => (
+                <figure key={img.url} className="overflow-hidden rounded-xl border border-border">
+                  <img
+                    src={cfImage(img.url, 900)}
+                    alt={img.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-auto"
+                  />
+                  <figcaption className="px-3 py-2 text-xs font-body text-muted-foreground">{img.alt}</figcaption>
+                </figure>
+              ))}
+            </div>
+          )}
           <LeanWidget widget={widgetForSlug(page.slug, page.pillar)} source={`inspiration/${page.slug}`} />
           <InspirationRelatedTiles currentSlug={page.slug} pillar={page.pillar} />
           <InspirationCrossSection currentSlug={page.slug} currentPillar={page.pillar} />

@@ -62,13 +62,18 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Ashlar Slate",
+        image: "https://images.pourcanvas.com/modern-stamped-concrete-driveway-charcoal-slate-smooth-border.jpg",
+        imageAlt: "Modern stamped concrete driveway in charcoal ashlar slate with smooth grey border bands",
+        imageCaption: "A modern stamped driveway: charcoal ashlar slate in the field, framed by smooth grey troweled bands.",
         body: "Ashlar slate patterns work particularly well on longer driveways where you want visual interest without the repetition becoming monotonous. Vary the color wash slightly between sections to add depth. Ashlar slate sits in the middle of the cost range — typically $13–17/sq ft — because the stamp is straightforward for experienced crews to work quickly. A medium grey or charcoal color wash suits contemporary homes; warm buff suits traditional and colonial exteriors.",
         inspirationSlugs: ["stamped-concrete-driveway-ashlar-slate"],
       },
       {
         heading: "Brick Running Bond",
+        image: "https://images.pourcanvas.com/running-bond-brick-stamped-concrete-driveway.jpg",
+        imageAlt: "Running bond brick stamped concrete driveway in red-brown with a soldier-course border",
+        imageCaption: "Running bond brick stamp: rows of 4x8 brick shapes offset by half a brick, with a soldier-course border along the edges.",
         body: "Running bond brick is the approachable choice — familiar, timeless, and compatible with nearly every house style. It's also one of the easier patterns for contractors to stamp consistently at scale, which keeps quotes at the lower end of the range — typically $12–15/sq ft. A warm buff or sandstone tone pairs well with traditional and craftsman exteriors; charcoal running bond suits modern homes. It's also a natural complement to a herringbone-brick patio if you want visual continuity across the property.",
-        inspirationSlugs: ["herringbone-brick-driveway"],
       },
       {
         heading: "Exposed Aggregate Borders",
@@ -505,6 +510,9 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Driveway Design Ideas at a Glance: Cost and Style Comparison",
+        image: "https://images.pourcanvas.com/cheap-concrete-driveway-idea-broom-finish-smooth-border.jpg",
+        imageAlt: "Budget concrete driveway idea: plain broom finish with a smooth troweled border and saw-cut joints",
+        imageCaption: "One of the cheapest concrete driveway upgrades: a smooth troweled border around a standard broom-finish field.",
         body: `<p>Quick reference for the 10 approaches covered in this guide — cost per square foot, style category, and relative maintenance commitment.</p>
 <table>
 <tr><th>Design</th><th>Cost/sq ft</th><th>Style</th><th>Maintenance</th></tr>
@@ -526,6 +534,9 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Modern Concrete Driveway Finishes Compared",
+        image: "https://images.pourcanvas.com/grey-modern-concrete-driveway-saw-cut-panels.jpg",
+        imageAlt: "Grey modern concrete driveway with large saw-cut panels and a dark steel edge in front of a flat-roof home",
+        imageCaption: "Grey modern concrete driveway: light broom finish, large saw-cut panels and a crisp steel edge.",
         body: `<p>Most modern driveways use one of seven finishes. The matrix below compares how each looks, how it grips, what it asks of you, and where it works best. Installed prices are national ranges per sq ft from our <a href="/methodology">methodology</a>: plain concrete runs ${sqft("plain-concrete")}, exposed aggregate ${sqft("exposed-aggregate")} and stamped concrete ${sqft("stamped-concrete")}. Finishes without their own data row are rated relative to plain concrete.</p>
 <table>
 <tr><th>Finish</th><th>Look</th><th>Slip resistance</th><th>Upkeep</th><th>Best climate</th><th>Relative cost</th></tr>
@@ -638,6 +649,7 @@ export const drivewayArticles: Article[] = [
     metaDescription: `Black concrete driveways cost about ${perSqftRange(BLACK_PER_SQFT)}/sq ft installed (${moneyRange({ low: BLACK_PER_SQFT.low * 500, typical: 0, high: BLACK_PER_SQFT.high * 500 })} for 500 sq ft). Photos, charcoal vs black, summer surface heat and how to slow fading.`,
     targetKeywords: ["black concrete driveway", "dark concrete driveway", "black driveway ideas", "black stained concrete driveway", "charcoal concrete driveway"],
     ogImage: "https://images.pourcanvas.com/driveway-black-concrete.jpg",
+    ogImageAlt: "Black concrete driveway in front of a modern black home with a frosted glass garage door",
     publishedAt: "2026-03-27",
     updatedAt: "2026-10-10",
     intro:
@@ -682,6 +694,9 @@ export const drivewayArticles: Article[] = [
       },
       {
         heading: "Comparing Black Concrete to Other Dark Driveway Options",
+        image: "https://images.pourcanvas.com/black-charcoal-dark-grey-concrete-sample-panels.jpg",
+        imageAlt: "Black, charcoal and dark grey integrally colored concrete sample panels side by side on a driveway",
+        imageCaption: "Three dark integral colors poured as test panels: black (left), charcoal (center) and dark grey (right).",
         body: `<p>Three ways to achieve a dark driveway: black integrally colored concrete (${colored}/sq ft), dark charcoal stamped concrete ($14–20/sq ft), and standard asphalt ($3–6/sq ft fresh, fades over time). Black integral concrete is the most design-intentional option — the color is consistent, goes all the way through, and stays dark with proper sealing. Dark stamped concrete adds pattern to the dark tone and suits homes where the decorative detail is part of the design intent. Asphalt is the default dark option, but its inconsistent color maintenance (dark when freshly sealed, faded grey when not) makes it a poor substitute for a genuinely designed dark surface. For the cost and lifespan side, see our <a href='/blog/driveway/concrete-driveway-vs-asphalt'>asphalt vs concrete driveway comparison</a>.</p>
 <table>
 <tr><th>Option</th><th>Cost/sq ft</th><th>Heat Absorption</th><th>Fade Rate</th><th>Maintenance</th></tr>
@@ -1197,7 +1212,8 @@ export const drivewayArticles: Article[] = [
     headline: "Black Stamped Concrete for Driveways and Patios: Colors, Patterns and Cost",
     metaDescription: `Black stamped concrete costs ${sqft("stamped-concrete")}/sq ft installed. See 8 base and release color pairings, the patterns that read best dark, and heat and sealer caveats.`,
     targetKeywords: ["black stamped concrete", "black stamped concrete driveway", "black stamped concrete patio", "charcoal stamped concrete", "dark stamped concrete"],
-    ogImage: "https://images.pourcanvas.com/inspiration-stamped-concrete-driveway-ashlar-slate.jpg",
+    ogImage: "https://images.pourcanvas.com/black-stamped-concrete-ashlar-slate-patio.jpg",
+    ogImageAlt: "Black stamped concrete patio in an ashlar slate pattern with grey release highlights",
     publishedAt: "2026-10-10",
     intro: `Black stamped concrete is a dark base color pressed with a stone or slate pattern, usually with a dark release powder in the joints. As of ${CURRENT_YEAR}, stamped concrete runs ${sqft("stamped-concrete")} per sq ft installed, or ${total("stamped-concrete", 300)} for a 300 sq ft patio. Most "black" stamped work is really charcoal, because a dark release over a lighter base shows the pattern.`,
     sections: [

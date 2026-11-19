@@ -155,6 +155,9 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Transition Joints Between Flagstone and Concrete",
+        image: "https://images.pourcanvas.com/flagstone-walkway-meeting-concrete-driveway.jpg",
+        imageAlt: "Natural flagstone walkway meeting a broom finish concrete driveway at a straight sealed joint",
+        imageCaption: "Where a flagstone walkway meets a concrete driveway: a straight joint with flexible sealant lets each material move on its own.",
         body: "Properties that mix flagstone and concrete — for example, a concrete driveway with a flagstone front walkway — need a well-designed transition joint at the point where the two materials meet. Without it, the different expansion rates of stone and concrete create stress cracking at the junction within 5–10 years. A properly specified expansion joint filled with a flexible backer rod and polyurethane caulk allows the two materials to move independently. This detail is often omitted on contractor bids — ask specifically about the transition joint treatment if you're mixing materials on the same project.",
       },
       {
@@ -686,7 +689,8 @@ export const walkwayArticles: Article[] = [
       "concrete front porch ideas",
       "concrete steps ideas",
     ],
-    ogImage: "https://images.pourcanvas.com/walkway-front-ideas.jpg",
+    ogImage: "https://images.pourcanvas.com/concrete-front-walkway-curved-to-front-porch.jpg",
+    ogImageAlt: "Curved concrete front walkway with a smooth border leading to a craftsman front porch",
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     intro:
@@ -699,6 +703,9 @@ export const walkwayArticles: Article[] = [
       },
       {
         heading: "Modern Concrete Walkway Designs",
+        image: "https://images.pourcanvas.com/modern-concrete-walkway-large-slabs-gravel-joints.jpg",
+        imageAlt: "Modern concrete walkway of large offset slabs with black gravel joints leading to a modern front door",
+        imageCaption: "Modern concrete walkway: 3 x 5 ft smooth slabs set with 4-inch black gravel joints and desert planting.",
         body: "Modern concrete walkways use clean geometry and restrained finishes to create impact — no stamps, no faux stone. A broom-finish walkway in dark charcoal pigment ($8–16/sq ft) with crisp beveled edges and consistent 4–5 foot width reads as deliberately designed at a fraction of stamped pricing. Floating slab designs — individual rectangular pads separated by 2–4 inch strips of turf or gravel — are the signature modern walkway treatment. They cost $10–16/sq ft installed because each pad is formed and poured individually, but the visual result is distinctive. Diagonal scoring (X-pattern saw cuts at 45 degrees to the walk direction) on a single continuous pour is another high-impact modern detail at minimal added cost — $0.50–1/sq ft for the saw work. Dark tones dominate modern walkway design: charcoal, slate grey, and near-black pigments suit contemporary architecture and create strong contrast against green landscaping.",
         inspirationSlugs: ["charcoal-broom-finish-walkway", "floating-concrete-walkway-turf", "parallel-strip-walkway-grass", "diagonal-x-scored-walkway"],
       },

@@ -44,6 +44,7 @@ for (const f of walk("src/content").filter((f) => f.endsWith(".ts"))) {
   for (const m of src.matchAll(/ogImage:\s*"[^"]*\/([^"\/]+\.jpg)"[\s\S]{0,800}?heroAlt:\s*"([^"]+)"/g)) alts.set(m[1], m[2]);
   for (const m of src.matchAll(/heroAlt:\s*"([^"]+)"[\s\S]{0,800}?ogImage:\s*"[^"]*\/([^"\/]+\.jpg)"/g)) if (!alts.has(m[2])) alts.set(m[2], m[1]);
   for (const m of src.matchAll(/url:\s*"[^"]*\/([^"\/]+\.jpg)",\s*alt:\s*"([^"]+)"/g)) alts.set(m[1], m[2]);
+  for (const m of src.matchAll(/image:\s*"[^"]*\/([^"\/]+\.jpg)",\s*imageAlt:\s*"([^"]+)"/g)) alts.set(m[1], m[2]);
 }
 
 const titleCase = (slug) =>

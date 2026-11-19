@@ -128,9 +128,15 @@ _LIGHT = [
 
 # Optional props — vary by setting type, blanks mean no prop
 _DRIVEWAY_PROPS = [
-    "a silver Honda CR-V parked in the driveway, rear 3/4 angle toward the garage",
-    "a dark grey Toyota RAV4 parked in the driveway, front 3/4 angle",
-    "a white sedan parked in the driveway near the garage door",
+    # user decision 2026-11-19: vary models, colors and facing direction (front and rear views)
+    "a silver Honda CR-V parked in the driveway, parked straight, nosed in toward the garage, seen from a rear 3/4 view",
+    "a dark grey Toyota RAV4 parked in the driveway, parked straight, seen from a front 3/4 view",
+    "a white Toyota Corolla sedan parked in the driveway near the garage door, parked straight, seen from a rear 3/4 view",
+    "a dark green Subaru Outback parked in the driveway, parked straight, seen from a front 3/4 view",
+    "a black Jeep Grand Cherokee parked in the driveway, parked straight, nosed in toward the garage, seen from a rear 3/4 view",
+    "a white Tesla Model Y parked in the driveway, parked straight, seen from a front 3/4 view",
+    "a blue Mazda CX-5 parked in the driveway, parked straight, nosed in toward the garage, seen from a rear 3/4 view",
+    "a grey Volvo XC60 parked in the driveway, parked straight, seen from a front 3/4 view",
     "",
     "",
     "",
@@ -184,6 +190,8 @@ def build_prompt(camera_desc, tone_desc, finish_desc, setting_desc, home, greene
     if "parked" in prop:  # user decision 2026-11-16: realistic, legible plates
         state, plate = random_plate()
         prop_clause += f" The car carries a realistic {state} license plate reading \"{plate}\", crisp and legible."
+        # user decision 2026-11-19: proper parking, never a wheel off the hardscape
+        prop_clause += " All four wheels sit fully on the concrete driveway with clear concrete on all sides of the car; never a wheel on lawn, gravel or a planting bed. The car is parked straight in line with the driveway, never diagonal or skewed."
     return (
         f"{camera_desc} "
         f"{tone_desc.capitalize()} poured concrete {setting_desc}, "

@@ -49,7 +49,9 @@ from google.genai import types
 
 CSV_PATH        = Path(__file__).parent / "master-pin-tracker.csv"
 OUTPUT_DIR      = Path(__file__).parent / "generated_images"
-STYLE_GUIDE     = (Path(__file__).parent / "IMAGEN_STYLE_GUIDE.md").read_text()
+# The QC rubric at the end of the guide is for the human/agent reviewer only; Gemini never sees it (2026-11-19).
+QC_MARKER       = "\nQC RUBRIC"
+STYLE_GUIDE     = (Path(__file__).parent / "IMAGEN_STYLE_GUIDE.md").read_text().split(QC_MARKER)[0]
 
 IMAGE_MODEL     = "imagen-4.0-ultra-generate-001"
 GEMINI_MODEL    = "gemini-2.5-flash"
@@ -126,13 +128,36 @@ _TIME_OVERRIDES = [
 ]
 
 # Driveway-only pools — injected when ai_prompt contains "driveway" but no vehicle keyword.
-_CAR_MODELS_DRIVEWAY = [
-    "Toyota Corolla compact sedan",
-    "Honda Accord mid-size sedan",
-    "Honda CR-V crossover",
-    "Toyota RAV4 SUV",
-    "Ford F-150 pickup truck",
+_CAR_MODELS_DRIVEWAY = [  # user decision 2026-11-19: vary models, colors and facing direction
+    "white Toyota Corolla compact sedan",
+    "dark blue Honda Accord mid-size sedan",
+    "silver Honda CR-V crossover",
+    "dark grey Toyota RAV4 SUV",
+    "red Ford F-150 pickup truck",
+    "white Tesla Model Y crossover",
+    "dark green Subaru Outback wagon",
+    "black Jeep Grand Cherokee SUV",
+    "silver Hyundai Tucson crossover",
+    "white Chevrolet Silverado pickup truck",
+    "grey Volvo XC60 SUV",
+    "blue Mazda CX-5 crossover",
+    "black Toyota Tacoma pickup truck",
+    "white Honda Odyssey minivan",
+    "dark grey BMW X3 SUV",
+    "burgundy Kia Telluride SUV",
 ]
+_CAR_ORIENTATIONS = [
+    "parked straight, nose toward the camera (pulled in backward), seen at a front 3/4 view because the camera stands off to one side; front license plate visible",
+    "parked straight, nosed in toward the garage with its back to the camera, seen at a rear 3/4 view because the camera stands off to one side; rear license plate visible",
+]
+
+
+def pick_vehicle(recent_text=""):
+    """Random model + facing direction; skips models already named in recent_text (e.g. recent ledger prompts)."""
+    fresh = [c for c in _CAR_MODELS_DRIVEWAY if " ".join(c.split()[1:3]) not in recent_text] or _CAR_MODELS_DRIVEWAY
+    return random.choice(fresh), random.choice(_CAR_ORIENTATIONS)
+
+
 _GARAGE_DOORS_DRIVEWAY = [
     "traditional raised-panel garage door",
     "contemporary flush panel garage door",
@@ -152,6 +177,8 @@ def random_plate():
 
 
 _VEHICLE_KEYWORDS = ("sedan", "suv", "crossover", "pickup", "truck", "parked")
+# Close-up / overhead subjects never get an injected car or garage door (2026-11-19).
+_CLOSEUP_KEYWORDS = ("close-up", "closeup", "overhead", "top-down", "straight down")
 
 # ── CSV helpers ───────────────────────────────────────────────────────────────
 
@@ -227,7 +254,8 @@ def build_imagen_prompt(client, ai_prompt: str) -> tuple:
     time_ovr = random.choice(_TIME_OVERRIDES)
 
     # Compact label stored in CSV for auditing and diversity tracking
-    cam_short   = "eye-lvl" if "straight" in camera else ("hi-angle" if "high" in camera else "lo-angle")
+    cam_short   = ("overhead" if "overhead" in camera else "close-up" if "close-up" in camera
+                   else "eye-lvl" if "straight" in camera else "hi-angle" if "high" in camera else "lo-angle")
     fg_short    = fg.split("%")[0].split()[-1] + "%"
     depth_short = "sky" if "sky" in depth else "no-sky"
     time_short  = time_ovr.split(",")[0] if time_ovr else "as-prompt"
@@ -244,11 +272,14 @@ def build_imagen_prompt(client, ai_prompt: str) -> tuple:
 
     # Inject vehicle for driveway images that have no vehicle in their prompt
     prompt_lower = ai_prompt.lower()
-    if "driveway" in prompt_lower and not any(kw in prompt_lower for kw in _VEHICLE_KEYWORDS):
-        car  = random.choice(_CAR_MODELS_DRIVEWAY)
+    if ("driveway" in prompt_lower and not any(kw in prompt_lower for kw in _VEHICLE_KEYWORDS)
+            and not any(kw in prompt_lower for kw in _CLOSEUP_KEYWORDS)):
+        car, facing = pick_vehicle()
         door = random.choice(_GARAGE_DOORS_DRIVEWAY)
         state, plate = random_plate()
-        variation_block += f"Vehicle: {car} parked in driveway, front 3/4 angle toward camera, {state} license plate reading \"{plate}\", crisp and legible\n"
+        variation_block += (f"Vehicle: {car} parked properly and straight (long axis parallel to the driveway, square to the garage door, never diagonal) on the driveway, all four wheels fully on the hardscape with clear "
+                            f"driveway visible on all sides (user decision 2026-11-19), {facing}, "
+                            f"{state} license plate reading \"{plate}\", crisp and legible\n")
         variation_block += f"Garage door: {door}\n"
         car_short  = car.split()[1][:6]  # e.g. "Accord" → "Accord"
         door_short = door.split()[0][:5]  # e.g. "contemporary" → "conte"
@@ -391,7 +422,9 @@ def run_test(client, rows, fieldnames):
 # ── Full run ──────────────────────────────────────────────────────────────────
 
 def run_full(client, rows, fieldnames, max_images=21):
-    pending = [r for r in rows if r.get("image_generated", "").strip() not in ("completed", "n/a")]
+    # rows queued for the ChatGPT backend (chatgpt_images.py) are not Imagen work (2026-11-19)
+    pending = [r for r in rows if r.get("image_generated", "").strip() not in ("completed", "n/a")
+               and r.get("generator", "") != "chatgpt"]
     print(f"\n── Full run: {len(pending)} pending rows ──────────────────────────")
 
     if not pending:
@@ -465,7 +498,7 @@ def interactive_loop(client, rows, fieldnames):
             input()
             # Reload style guide from disk
             global STYLE_GUIDE
-            STYLE_GUIDE = (Path(__file__).parent / "IMAGEN_STYLE_GUIDE.md").read_text()
+            STYLE_GUIDE = (Path(__file__).parent / "IMAGEN_STYLE_GUIDE.md").read_text().split(QC_MARKER)[0]
             # Re-mark test rows as pending
             slug_to_row = {r["slug"]: r for r in rows}
             for slug in TEST_SLUGS:

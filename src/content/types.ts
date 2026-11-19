@@ -71,6 +71,7 @@ export interface ArticleSection {
   body: string;
   image?: string;
   imageAlt?: string;
+  imageCaption?: string;
   inspirationSlugs?: string[];
 }
 
@@ -82,6 +83,7 @@ export interface Article {
   metaDescription: string;
   targetKeywords: string[];
   ogImage: string;
+  ogImageAlt?: string;
   publishedAt: string;
   updatedAt?: string;
   intro: string;

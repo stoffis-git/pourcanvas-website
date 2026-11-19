@@ -40,12 +40,16 @@ const ArticlePage = () => {
     .filter((s) => s.image?.startsWith("https://"))
     .map((s) => ({ url: s.image!, caption: s.imageAlt ?? s.heading }));
 
-  const galleryImages = article.sections
+  const heroImage = article.ogImage?.startsWith("https://")
+    ? [{ url: article.ogImage, caption: article.ogImageAlt ?? article.headline }]
+    : [];
+
+  const galleryImages = heroImage.concat(article.sections
     .flatMap((s) => s.inspirationSlugs ?? [])
     .map((s) => inspirationBySlug.get(s))
     .filter((p): p is NonNullable<typeof p> => !!p && p.ogImage.startsWith("https://"))
     .map((p) => ({ url: p.ogImage, caption: p.headline }))
-    .concat(sectionImages);
+    .concat(sectionImages));
 
   return (
     <>
@@ -79,7 +83,7 @@ const ArticlePage = () => {
         {article.ogImage?.startsWith("https://") && (
           <img
             src={article.ogImage}
-            alt={article.headline}
+            alt={article.ogImageAlt ?? article.headline}
             className="w-full rounded-2xl object-cover aspect-[2/3] md:aspect-[4/3] mb-8"
             draggable={false}
           />
@@ -110,13 +114,20 @@ const ArticlePage = () => {
                 </h2>
                 <div className="font-body text-foreground/80 leading-relaxed prose-table" dangerouslySetInnerHTML={{ __html: section.body }} />
                 {section.image && (
-                  <img
-                    src={section.image}
-                    alt={section.imageAlt ?? section.heading}
-                    loading="lazy"
-                    decoding="async"
-                    className="mt-4 w-full rounded-xl object-cover aspect-video"
-                  />
+                  <figure className="mt-4">
+                    <img
+                      src={section.image}
+                      alt={section.imageAlt ?? section.heading}
+                      loading="lazy"
+                      decoding="async"
+                      width={1200}
+                      height={800}
+                      className="w-full rounded-xl object-cover aspect-[3/2]"
+                    />
+                    {section.imageCaption && (
+                      <figcaption className="mt-2 text-xs font-body text-muted-foreground">{section.imageCaption}</figcaption>
+                    )}
+                  </figure>
                 )}
                 {section.inspirationSlugs && section.inspirationSlugs.length > 0 && (
                   <div className="mt-5 grid grid-cols-2 md:grid-cols-3 gap-4">

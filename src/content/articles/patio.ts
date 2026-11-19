@@ -189,6 +189,9 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Slate Blue",
+        image: "https://images.pourcanvas.com/slate-blue-concrete-patio.jpg",
+        imageAlt: "Slate blue concrete patio with a cool grey-blue tone beside a coastal home with navy shutters",
+        imageCaption: "Slate blue reads as a cool grey with a faint blue cast, not a true blue. It suits white, grey and navy exteriors.",
         body: "Slate blue is an emerging choice for contemporary homes. It photographs well, holds color evenly after sealing, and stands out from the sea of gray and beige patios without being risky. The key is using UV-stable pigment — blue fades faster than earth tones if the sealer isn't maintained.",
       },
       {
@@ -752,11 +755,17 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Travertine-Look Stamped Concrete: Best Visual Result ($12–18/sq ft)",
+        image: "https://images.pourcanvas.com/travertine-look-stamped-concrete-pool-deck.jpg",
+        imageAlt: "Travertine-look stamped concrete pool deck in warm ivory around a freeform pool",
+        imageCaption: "Travertine-look stamped concrete: tumbled-stone outlines and pitted texture in a light ivory tone.",
         body: `Travertine-stamped concrete is the premium pool deck choice for homeowners who prioritize aesthetics and want a natural stone look without the cost of actual travertine (${perSqftRange(INSTALLED.travertine)}/sq ft). Modern stamping dies replicate travertine's vein texture, slight pitting, and irregular rectangular grid closely enough that the difference is undetectable from normal viewing distance. In a cream or ivory color wash, it's the warmest and most visually sophisticated of the concrete finish options. The key considerations: stamped concrete around a pool must be sealed with a non-slip additive in the sealer (silica sand broadcast into wet sealer coat) — the stamped texture alone is not sufficient grip on a smooth-troweled base. This is a contractor-specified detail that's critical for safety; confirm it before signing any pool deck contract. Total cost with non-slip sealer: $12–18/sq ft.`,
         inspirationSlugs: ["pool-deck-travertine", "concrete-pool-deck-grey"],
       },
       {
         heading: "Broom Finish vs. Exposed Aggregate: The Practical Decision",
+        image: "https://images.pourcanvas.com/broom-finish-concrete-pool-deck-modern.jpg",
+        imageAlt: "Modern light grey broom finish concrete pool deck around a rectangular pool",
+        imageCaption: "A light broom finish pool deck: the lowest-cost slip-resistant pool deck finish, with brush lines running across the walking direction.",
         body: "For most homeowners choosing between broom finish and exposed aggregate, the decision comes down to three factors: budget, surface heat, and long-term appearance. Broom finish is about $2–4/sq ft cheaper installed. Exposed aggregate runs cooler underfoot because the aggregate composition can be selected for heat-scattering properties. And exposed aggregate hides wear better over 10–15 years of pool deck use — the surface variation means small chips, stains, and chemical marks disappear into the texture. Broom finish is the right choice when budget is the constraint and you'll use a light integral color to offset heat. Exposed aggregate is the right choice when you have a medium-to-generous budget and plan to own the home long enough to see the maintenance difference. Both are more practical for pool surrounds than stamped concrete for the same cost. The same tradeoff away from the pool is covered in <a href='/blog/patio/exposed-aggregate-vs-broom-finish'>exposed aggregate vs broom finish</a>.",
       },
       {
@@ -769,6 +778,9 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Pool Deck Finishes Compared: Slip, Heat and Upkeep",
+        image: "https://images.pourcanvas.com/concrete-pool-deck-finishes-compared.jpg",
+        imageAlt: "Three concrete pool deck finishes at the pool edge: broom finish, exposed aggregate and travertine-look stamped",
+        imageCaption: "Three concrete pool deck finishes along the same coping: broom finish (left), exposed aggregate (center) and travertine-look stamped (right).",
         body: `<p>The scores below rate each finish from 1 to 5, where higher is better for the homeowner. They are the same sourced scores behind our <a href="/tools/pool-deck-finish-selector">pool deck finish selector</a>, so the article and the tool always agree. "Barefoot comfort" combines sun heat and texture underfoot.</p>${scoreMatrix()}<p><strong>Slip:</strong> research by Cement Concrete &amp; Aggregates Australia, summarized by the <a href="https://www.homemods.info/Download.ashx?File=ab8bcafa659ebdf27d20d0b6e6a753d&amp;C=31342c3333362c30" rel="nofollow noopener">UNSW Home Modification Clearinghouse</a>, found that new wood-floated, broom and exposed-aggregate concrete usually reach the top wet slip class. <a href="https://www.concretedecor.net/departments/stamping-texturing-concrete/a-slippery-problem-stamped-concrete-near-pools/" rel="nofollow noopener">Concrete Decor</a> traces most slick stamped pool decks to the sealer rather than the stamp. Grit additives help but don't make a surface non-slip.</p><p><strong>Heat:</strong> color drives surface heat more than texture. New concrete reflects about 0.30–0.50 of sunlight (<a href="https://heatisland.lbl.gov/coolscience/cool-pavements" rel="nofollow noopener">LBNL</a>), and in <a href="https://www.solomoncolors.com/tech-docs/pdf/solomon/Integral-Color-SRI-Values.pdf" rel="nofollow noopener">Solomon Colors test data</a> dark integral colors reflected roughly half as much as light ones. On texture, <a href="https://www.concretenetwork.com/slip-resistant-coatings/broom-finish.html" rel="nofollow noopener">Concrete Network</a> notes broom can be harsh on bare feet, and suggests small or polished stones for <a href="https://www.concretenetwork.com/concrete/pool_decks/exposed_aggregate.htm" rel="nofollow noopener">exposed aggregate decks</a>.</p><p><strong>Upkeep:</strong> a penetrating sealer on exposed aggregate lasts about 7–10 years, while a topical acrylic needs redoing every 12–36 months (<a href="https://www.concretedecor.net/departments/concrete-sealers/seal-exposed-aggregate-concrete-for-best-results/" rel="nofollow noopener">Concrete Decor</a>). Stamped decks need cleaning and resealing every 2–3 years (<a href="https://www.concretenetwork.com/stamped-concrete/" rel="nofollow noopener">Concrete Network</a>).</p><p>Two options not covered above are worth a look in hot climates. A <a href="/materials/salt-finish">salt finish</a> grips and feels gentle barefoot but struggles where slabs freeze. Coatings are covered in <a href="/blog/patio/cool-deck-vs-kool-deck">cool deck vs Kool Deck</a>. To rank finishes for your own climate and priorities, use the <a href="/tools/pool-deck-finish-selector">pool deck finish selector</a> or the general <a href="/tools/concrete-finish-selector">concrete finish selector</a>.</p>`,
       },
     ],
@@ -804,7 +816,8 @@ export const patioArticles: Article[] = [
       "modern stamped concrete patterns",
       "concrete stamp patterns",
     ],
-    ogImage: "https://images.pourcanvas.com/patio-stamped-concrete-ideas.jpg",
+    ogImage: "https://images.pourcanvas.com/modern-grey-ashlar-slate-stamped-concrete-patio.jpg",
+    ogImageAlt: "Modern grey ashlar slate stamped concrete patio with a smooth charcoal border behind a flat-roof home",
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     intro:
@@ -812,16 +825,25 @@ export const patioArticles: Article[] = [
     sections: [
       {
         heading: "Ashlar Slate Stamped Concrete",
+        image: "https://images.pourcanvas.com/ashlar-slate-stamped-concrete-pattern-close-up.jpg",
+        imageAlt: "Close-up of ashlar slate stamped concrete in grey with darker release in the grout lines",
+        imageCaption: "Ashlar slate up close: squares and rectangles in four or five sizes, each with a stamped slate cleft texture.",
         body: "Ashlar slate is the most popular stamped concrete pattern in North America and the one most contractors recommend as a starting point. It replicates cut natural slate with rectangular blocks of varying sizes arranged in a staggered grid — clean, geometric, and convincingly stone-like from any normal viewing distance. The pattern works best on patios and entryways where its structured look complements architectural lines. Expect to pay $14–18 per sq ft installed. Ashlar slate is also one of the most forgiving patterns for contractors to stamp consistently, which keeps labor quotes competitive compared to more intricate designs. In charcoal or medium grey with a contrasting release agent, it reads as genuine cut stone. Reseal every 2–3 years to maintain color depth and surface protection.",
         inspirationSlugs: ["ashlar-slate-patio-charcoal", "stamped-concrete-driveway-ashlar-slate"],
       },
       {
         heading: "Cobblestone Stamped Concrete",
+        image: "https://images.pourcanvas.com/cobblestone-stamped-concrete-pattern-close-up.jpg",
+        imageAlt: "Close-up of charcoal cobblestone stamped concrete with domed stones and deep rounded joints",
+        imageCaption: "Cobblestone stamp: small domed stones in wavering courses, the most traditional-looking stamped pattern.",
         body: "Cobblestone stamping delivers a traditional European look — small, rounded stone units set in a tight mosaic pattern. It is one of the more expensive stamp options at $14–20 per sq ft because the pattern requires more stamps, tighter timing, and careful color layering to avoid a flat, repetitive appearance. Cobblestone works best on driveways and walkways where the small-scale pattern creates visual interest along a linear path. On large open patios, the busy texture can make the space feel smaller, so it is better suited as a border band or accent than a full-field application. The pattern holds up well to vehicle traffic on driveways when properly reinforced. Maintenance is standard: reseal every 2–3 years with a film-forming acrylic sealer to protect the color wash and surface detail.",
         inspirationSlugs: ["cobblestone-driveway-border", "cobblestone-stamped-patio", "cobblestone-stamped-walkway"],
       },
       {
         heading: "Herringbone Brick Stamp Patterns",
+        image: "https://images.pourcanvas.com/herringbone-brick-stamped-concrete-pattern-close-up.jpg",
+        imageAlt: "Close-up of herringbone brick stamped concrete with a soldier-course border in muted brick red",
+        imageCaption: "Herringbone brick stamp: 4x8 bricks set at 45 degrees in continuous zigzag columns, framed by a soldier-course border.",
         body: "The herringbone brick pattern arranges rectangular units in a zigzag layout that interlocks diagonally across the surface. It is one of the most versatile stamp patterns available — equally at home on patios, driveways, and walkways — and it pairs well with both traditional and transitional architecture. Cost runs $12–18 per sq ft installed, sitting at the lower end of the stamped concrete range because the pattern is relatively straightforward for experienced crews to stamp efficiently. A warm buff or sandstone color wash suits colonial and craftsman homes; charcoal or slate grey works for modern exteriors. The interlocking layout also provides good visual continuity across large surfaces without looking monotonous. Herringbone brick is a strong choice for homeowners who want the look of a paver patio without the joint maintenance. Reseal every 2–3 years.",
         inspirationSlugs: [
           "herringbone-brick-patio",
@@ -865,6 +887,9 @@ export const patioArticles: Article[] = [
       },
       {
         heading: "Stamped Concrete Pattern Comparison",
+        image: "https://images.pourcanvas.com/stamped-concrete-patterns-six-sample-panels.jpg",
+        imageAlt: "Six stamped concrete pattern sample panels: ashlar slate, cobblestone, European fan, herringbone brick, wood plank and random stone",
+        imageCaption: "Six common stamped concrete patterns side by side. Top row: ashlar slate, cobblestone, European fan. Bottom row: herringbone brick, wood plank, random stone.",
         body: `Choosing between stamped concrete patterns is easier when you compare them side by side on the factors that matter most: cost, best application, durability, and maintenance. The table below summarizes the six major pattern families covered in this guide.
 
 <table>
@@ -932,7 +957,8 @@ All patterns require a structurally sound 4-inch slab on a compacted gravel base
       "concrete patio ideas on a budget",
       "concrete patio design ideas",
     ],
-    ogImage: "https://images.pourcanvas.com/inspiration-concrete-patio-ideas-modern-grey.jpg",
+    ogImage: "https://images.pourcanvas.com/backyard-concrete-patio-stamped-border-fire-pit.jpg",
+    ogImageAlt: "Backyard concrete patio with a broom-finish field, stamped slate border and a round fire pit",
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     intro:
@@ -1043,7 +1069,8 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       "stamped concrete or pavers",
       "is stamped concrete cheaper than pavers",
     ],
-    ogImage: "https://images.pourcanvas.com/patio-vs-pavers.jpg",
+    ogImage: "https://images.pourcanvas.com/stamped-concrete-patio-meeting-paver-walkway.jpg",
+    ogImageAlt: "Grey stamped concrete patio meeting a charcoal concrete paver walkway in the same backyard",
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     intro:
@@ -1064,6 +1091,9 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       },
       {
         heading: "Appearance: How Close Does Stamped Get?",
+        image: "https://images.pourcanvas.com/stamped-concrete-that-looks-like-pavers-grey.jpg",
+        imageAlt: "Grey stamped concrete patio that looks like pavers, stamped in a large running bond paver pattern",
+        imageCaption: "Stamped concrete made to look like pavers: a running bond paver stamp with a two-tone grey release. Up close, the missing sand joints give it away.",
         body: "Modern stamped concrete replicates brick, stone, and slate patterns at 80–90% visual fidelity from normal viewing distance — standing height, 6+ feet away. A well-executed stamped patio with quality color layering is genuinely difficult to distinguish from real pavers in photographs and at conversational distance. Up close, the difference becomes apparent. Real pavers have genuine material depth — each unit is a separate physical object with its own slight color variation, edge wear, and surface texture. Sand-filled joints between pavers have a width and depth that stamped joint lines only simulate. The slight imperfections of individual manufactured or natural units create a visual richness that a continuous concrete surface approximates but cannot fully replicate. For specific patterns, stamped concrete is more convincing in some styles than others. Herringbone brick and cobblestone patterns are where stamped concrete is most successful — the regular geometry and uniform unit size play to stamped concrete's strengths. Natural flagstone with irregular thickness variation and organic edge shapes is where real stone retains a clear visual advantage over the stamped approximation.",
         inspirationSlugs: ["herringbone-brick-patio", "flagstone-stamped-patio-buff", "ashlar-slate-patio-charcoal"],
       },
@@ -1217,7 +1247,8 @@ All costs are per square foot installed in 2026 and assume standard site conditi
       "exposed aggregate concrete pros and cons",
       "broom finish concrete vs exposed aggregate",
     ],
-    ogImage: "https://images.pourcanvas.com/driveway-exposed-aggregate.jpg",
+    ogImage: "https://images.pourcanvas.com/exposed-aggregate-border-broom-finish-driveway.jpg",
+    ogImageAlt: "Exposed aggregate border next to a broom finish concrete field, showing both textures side by side",
     publishedAt: "2026-05-26",
     updatedAt: "2026-05-26",
     intro:

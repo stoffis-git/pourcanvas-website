@@ -23,8 +23,10 @@ export const broomFinishPage: MaterialPage = {
     "broom finish concrete patio",
     "broom finish vs stamped",
   ],
-  ogImage: "https://images.pourcanvas.com/inspiration-warm-tan-broom-finish-patio.jpg",
+  ogImage: "https://images.pourcanvas.com/broom-finish-concrete-driveway-raking-light.jpg",
   images: [
+    { url: "https://images.pourcanvas.com/broom-finish-concrete-driveway-raking-light.jpg", alt: "Broom finish concrete driveway with fine brush grooves catching low side light in front of a brick ranch garage" },
+    { url: "https://images.pourcanvas.com/light-medium-heavy-broom-finish-concrete-texture.jpg", alt: "Broom finish concrete texture: light, medium and heavy broom side by side on one slab" },
     { url: "https://images.pourcanvas.com/inspiration-warm-tan-broom-finish-patio.jpg", alt: "Warm tan broom finish concrete patio with fine linear texture" },
     { url: "https://images.pourcanvas.com/inspiration-charcoal-broom-finish-walkway.jpg", alt: "Charcoal broom finish concrete walkway with anti-slip parallel lines" },
     { url: "https://images.pourcanvas.com/inspiration-pool-deck-broom-finish.jpg", alt: "Light grey broom finish concrete pool deck with subtle texture" },

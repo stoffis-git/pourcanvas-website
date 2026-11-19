@@ -26,6 +26,7 @@ export const exposedAggregatePage: MaterialPage = {
   ogImage: "https://images.pourcanvas.com/inspiration-exposed-aggregate-driveway-grey.jpg",
   images: [
     { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-driveway-grey.jpg", alt: "Grey exposed aggregate concrete driveway with a smooth troweled border" },
+    { url: "https://images.pourcanvas.com/white-exposed-aggregate-concrete-close-up.jpg", alt: "Close-up of white exposed aggregate concrete with white marble and quartz chips" },
     { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-patio-charcoal.jpg", alt: "Charcoal exposed aggregate patio showing dark pebble texture" },
     { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-walkway-tan.jpg", alt: "Tan exposed aggregate walkway with rounded river-stone finish" },
     { url: "https://images.pourcanvas.com/inspiration-exposed-aggregate-driveway-tan.jpg", alt: "Tan exposed aggregate driveway with warm decorative stone" },
