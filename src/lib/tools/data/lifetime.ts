@@ -81,14 +81,14 @@ export const STAMPED_RESEAL_PER_SQFT: SourcedRange = {
   note: "Concrete Network $1.50–3.50+, HomeGuide $1–3, Angi $1.35–2.50.",
 };
 export const STAMPED_RESEAL_YEARS: Record<Climate, SourcedValue> = {
-  mild: { value: 3, sources: [S.hgStamped, S.lsStamped, S.cnStampedSealing], status: "verified", note: "Guides say every 2–3 years (HomeGuide, LawnStarter) or 2–5 years (Concrete Network)." },
-  "freeze-thaw": { value: 2, sources: [S.cnResealing, S.hgStamped], status: "verified", note: "Concrete Network: every 2–3 years where freeze-thaw and deicers are harsh; we use the short end." },
+  mild: { value: 3, sources: [S.hgStamped, S.lsStamped, S.cnStampedSealing], status: "verified", note: "Concrete Network: every 3–5 years in a mild climate with light traffic; HomeGuide and LawnStarter: every 2–3 years. We use 3." },
+  "freeze-thaw": { value: 2, sources: [S.cnResealing, S.hgStamped], status: "verified", note: "Concrete Network: every 2–3 years with frequent freezing and thawing, every 1–2 years with deicers and heavy vehicle traffic. We use 2." },
 };
 /** One crack-repair visit on stamped concrete: seal the crack, patch and recolor the area around it. */
 export const STAMPED_CRACK_REPAIR_JOB: SourcedRange = {
-  low: 150, typical: 400, high: 1000, status: "verified",
+  low: 100, typical: 400, high: 1000, status: "verified",
   sources: [S.fixrPatioRepair, S.hgDrivewayRepair, S.thDrivewayRepair, S.angiPatioRepair],
-  note: "Crack sealing $100–300 per crack (Fixr) with $100–250 minimums (HomeGuide); stamped patching $6–20 per sq ft of affected area (Angi, Fixr). Color rarely matches exactly.",
+  note: "Crack filling $50–300 (Fixr); crack filling $0.50–3 per linear ft with $100–250 service minimums (HomeGuide); about $175 per 10 linear ft (Today's Homeowner). Stamped concrete repair $4–20 per sq ft (Fixr) or $6–20 (Angi) of affected area. Our range = a filled crack up to a filled crack plus a recolored patch of about 50 sq ft. Color rarely matches exactly.",
 };
 export const STAMPED_CRACK_REPAIR_YEARS: Record<Climate, SourcedValue> = {
   mild: { value: 15, sources: [], status: "pending", note: "Planning allowance: one repair visit every 15 years. No source publishes a crack frequency." },
@@ -99,11 +99,11 @@ export const STAMPED_CRACK_REPAIR_YEARS: Record<Climate, SourcedValue> = {
 export const PAVER_RESAND_PER_SQFT: SourcedRange = {
   low: 0.5, typical: 1.25, high: 2, status: "verified",
   sources: [S.breen, S.beeGreen, S.usecalcpro],
-  note: "Contractor-published prices: $0.50–1 (Patrick Breen), $1–2 (Bee Green, UseCalcPro).",
+  note: "Contractor-published prices: $0.50–1 (Patrick Breen), $1–2 (Bee Green, UseCalcPro). A 400 sq ft patio therefore runs about $200–800 per visit; we use $1.25 as typical.",
 };
 export const PAVER_RESAND_YEARS: Record<Climate, SourcedValue> = {
-  mild: { value: 5, sources: [S.unilockPoly, S.usecalcpro, S.beeGreen], status: "verified", note: "Polymeric sand lasts several years (Unilock); refresh every 3–5 (UseCalcPro) or 5–8 years (Bee Green)." },
-  "freeze-thaw": { value: 3, sources: [S.cnVsPavers, S.usecalcpro], status: "verified", note: "Concrete Network: replenish joint sand every 2 or 3 years depending on weather." },
+  mild: { value: 5, sources: [S.unilockPoly, S.usecalcpro, S.beeGreen, S.breen], status: "verified", note: "Published intervals range from 1–2 years (Patrick Breen) and 2–3 (Concrete Network) to 3–5 (UseCalcPro) and 5–8 years (Bee Green); polymeric sand lasts several years (Unilock). Mild winters: 5, where the 3–5 and 5–8 ranges meet." },
+  "freeze-thaw": { value: 3, sources: [S.cnVsPavers, S.usecalcpro, S.breen], status: "verified", note: "Freeze-thaw: 3, where Concrete Network (every 2 or 3 years depending on weather) and UseCalcPro (3–5) overlap; Patrick Breen (NJ) quotes 1–2 years." },
 };
 /** Professional clean + re-sand + seal bundle for pavers, per sq ft (optional upkeep; replaces plain re-sanding when chosen). */
 export const PAVER_SEAL_PER_SQFT: SourcedRange = {

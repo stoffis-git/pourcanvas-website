@@ -38,7 +38,10 @@ const table = (head: string[], rows: string[][]) =>
     .join("")}</tbody></table>`;
 const sqft = (r: Range) => `${perSqftRange(r)}`;
 const gap = (r: SvpResult) =>
-  r.cheaperUpfront === "tie" ? "about even" : `${r.cheaperUpfront === "stamped" ? "stamped" : "pavers"} ${money(r.upfrontDiff)} less`;
+  r.cheaperUpfront === "tie" ? `about even (within ${money(r.upfrontDiff)})` : `${r.cheaperUpfront === "stamped" ? "stamped" : "pavers"} ${money(r.upfrontDiff)} less`;
+/** Exact upkeep rate, e.g. "$1–3.50" (perSqftRange rounds to whole dollars). */
+const dec = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(2));
+const rate = (r: Range) => `$${dec(r.low)}–${dec(r.high)}`;
 const pct = (n: number) => `${Math.round(n * 100)}%`;
 const yrs = (r: Range) => `${r.low}–${r.high} years`;
 const cheaperName = (s: SvpResult["cheaperOverYears"]) => (s === "stamped" ? "stamped concrete" : s === "pavers" ? "pavers" : "neither");
@@ -58,7 +61,7 @@ export const stampedConcreteVsPaversCostCalculator: ToolConfig = {
   h1: "Stamped Concrete vs Pavers Cost Calculator",
   summary: "Upfront and lifetime cost of stamped concrete vs pavers for your size, climate and design, with break-even year.",
   metaDescription: `Is stamped concrete cheaper than pavers? A 15×20 patio runs ${moneyRange(d.stamped.upfront)} stamped vs ${moneyRange(d.pavers.upfront)} in pavers. See upkeep, 20-year cost and break-even.`,
-  intro: `As of ${CURRENT_YEAR}, stamped concrete costs ${sqft(stampedStd)} per square foot installed and concrete pavers ${sqft(paverStd)}. A 15×20 patio runs ${moneyRange(d.stamped.upfront)} stamped vs ${moneyRange(d.pavers.upfront)} in pavers; with 20 years of freeze-thaw upkeep, about ${money(d.stamped.lifetime.typical)} vs ${money(d.pavers.lifetime.typical)}. Enter your size, climate and design to compare both.`,
+  intro: `As of ${CURRENT_YEAR}, stamped concrete costs ${sqft(stampedStd)} per square foot installed and concrete pavers ${sqft(paverStd)}. A 15×20 patio runs ${moneyRange(d.stamped.upfront)} stamped vs ${moneyRange(d.pavers.upfront)} in pavers; with 20 years of estimated upkeep in a freeze-thaw climate, about ${money(d.stamped.lifetime.typical)} vs ${money(d.pavers.lifetime.typical)}. Enter your size, climate and design to compare both.`,
   datePublished: "2026-11-19",
   lastUpdated: "2026-11-19",
   svpDefaults: {},
@@ -72,8 +75,8 @@ export const stampedConcreteVsPaversCostCalculator: ToolConfig = {
     "cost of pavers vs stamped concrete",
   ],
   tips: [
-    `Compare quotes per square foot: standard stamped runs ${sqft(STAMPED_TIER.standard)}, concrete pavers ${sqft(INSTALLED["concrete-paver"])}.`,
-    `Budget a clean-and-reseal for stamped concrete every ${STAMPED_RESEAL_YEARS["freeze-thaw"].value}–${STAMPED_RESEAL_YEARS.mild.value} years at ${sqft(STAMPED_RESEAL_PER_SQFT)} per sq ft.`,
+    `Compare quotes per square foot: mid-range stamped runs ${sqft(STAMPED_TIER.standard)}, concrete pavers ${sqft(INSTALLED["concrete-paver"])}.`,
+    `Budget a clean-and-reseal for stamped concrete every ${STAMPED_RESEAL_YEARS["freeze-thaw"].value}–${STAMPED_RESEAL_YEARS.mild.value} years at ${rate(STAMPED_RESEAL_PER_SQFT)} per sq ft.`,
     "Ask for air-entrained concrete and control joints in the stamped quote.",
     `Pavers need a ${BASE_DEPTH_IN.patio.value} inch compacted base for patios and ${BASE_DEPTH_IN.driveway.value} inches for driveways.`,
     "Buy 5% extra pavers from the same run so repairs match.",
@@ -84,7 +87,7 @@ export const stampedConcreteVsPaversCostCalculator: ToolConfig = {
       body: `<p>Which is cheaper depends on the stamped design and the paver you compare it with. Basic stamped concrete is the cheapest patterned surface, mid-range stamped and concrete pavers land close together, and custom stamped work costs more than concrete pavers.</p>${table(
         ["Surface (installed, patio)", "Per sq ft", "15 × 20 ft typical"],
         d.options.map((o) => [o.label, sqft(o.perSqft), money(o.total.typical)]),
-      )}<p>Stamped tiers follow the cost guides' own definitions: basic is one pattern and one color with no border; mid-range adds a second color, a second pattern or a custom border; custom means layered colors and hand-tooled detail. Pick the tier that matches your quote, and look through real ${a("/blog/patio/stamped-concrete-patterns", "stamped concrete patterns")} to judge which tier a look needs.</p>`,
+      )}<p>Tiers follow the cost guides: basic is one pattern and color, mid-range adds a color, pattern or border, custom means layered colors and hand-tooled detail. Look through real ${a("/blog/patio/stamped-concrete-patterns", "stamped concrete patterns")} to judge which tier a look needs.</p>`,
     },
     {
       heading: "Stamped Concrete vs Pavers Cost by Size",
@@ -94,11 +97,11 @@ export const stampedConcreteVsPaversCostCalculator: ToolConfig = {
           const r = svpAt({ length: l, width: w });
           return [`${l} × ${w} ft (${num(r.area)} sq ft)`, moneyRange(r.stamped.upfront), moneyRange(r.pavers.upfront), gap(r)];
         }),
-      )}<p>Real quotes for small patios often carry a minimum charge, because a concrete crew, pump and stamp set cost the same whether the slab is 100 or 300 square feet. Price the paver side with its full material list in the ${a("/tools/paver-patio-cost-calculator", "paver patio cost calculator")}.</p>`,
+      )}<p>Small patios often carry a contractor minimum. Price the paver side with its full material list in the ${a("/tools/paver-patio-cost-calculator", "paver patio cost calculator")}.</p>`,
     },
     {
       heading: "Lifetime Cost: Resealing vs Joint Sand",
-      body: `<p>Upkeep is where the two split. Stamped concrete needs a professional clean and reseal every ${STAMPED_RESEAL_YEARS["freeze-thaw"].value}–${STAMPED_RESEAL_YEARS.mild.value} years at ${sqft(STAMPED_RESEAL_PER_SQFT)} per sq ft to keep its color, plus an occasional crack repair. Pavers need fresh polymeric joint sand every ${PAVER_RESAND_YEARS["freeze-thaw"].value}–${PAVER_RESAND_YEARS.mild.value} years at ${sqft(PAVER_RESAND_PER_SQFT)} per sq ft and some releveling. Running totals for a 15×20 patio (mid-range stamped vs concrete pavers, typical prices):</p>${table(
+      body: `<p>Upkeep is where the two split. Stamped concrete needs a professional clean and reseal every ${STAMPED_RESEAL_YEARS["freeze-thaw"].value}–${STAMPED_RESEAL_YEARS.mild.value} years at ${rate(STAMPED_RESEAL_PER_SQFT)} per sq ft to keep its color, plus an occasional crack repair. Pavers need fresh polymeric joint sand every ${PAVER_RESAND_YEARS["freeze-thaw"].value}–${PAVER_RESAND_YEARS.mild.value} years and some releveling. Published re-sanding prices run ${rate(PAVER_RESAND_PER_SQFT)} per sq ft (roughly $200–800 for a 400 sq ft patio); we use $${dec(PAVER_RESAND_PER_SQFT.typical)} as typical. Running totals for a 15×20 patio (mid-range stamped vs concrete pavers, typical prices):</p>${table(
         ["Years owned, climate", "Stamped", "Pavers"],
         horizons.flatMap((y) =>
           (["freeze-thaw", "mild"] as const).map((cl) => {
@@ -106,7 +109,7 @@ export const stampedConcreteVsPaversCostCalculator: ToolConfig = {
             return [`${y} years, ${cl === "mild" ? "mild winters" : "freeze-thaw"}`, money(r.stamped.lifetime.typical), money(r.pavers.lifetime.typical)];
           }),
         ),
-      )}<p>With basic stamped concrete the order flips over time: it starts ${money(basic.upfrontDiff)} cheaper, and the running totals cross in year ${basic.breakEvenYear ?? "—"} in a freeze-thaw climate. Sealing pavers as well (${sqft(PAVER_SEAL_PER_SQFT)} per sq ft every ${PAVER_SEAL_YEARS["freeze-thaw"].value}–${PAVER_SEAL_YEARS.mild.value} years, joint sand included) narrows the gap. Our ${a("/blog/patio/concrete-patio-sealing", "concrete patio sealing guide")} covers resealing, and the ${a("/tools/polymeric-sand-calculator", "polymeric sand calculator")} sizes a joint refill.</p>`,
+      )}<p>${d.assumptions} With basic stamped concrete the order flips over time: it starts ${money(basic.upfrontDiff)} cheaper, and the running totals cross in year ${basic.breakEvenYear ?? "—"} in a freeze-thaw climate. Sealing pavers as well (${rate(PAVER_SEAL_PER_SQFT)} per sq ft every ${PAVER_SEAL_YEARS["freeze-thaw"].value}–${PAVER_SEAL_YEARS.mild.value} years, joint sand included) narrows the gap. Our ${a("/blog/patio/concrete-patio-sealing", "concrete patio sealing guide")} covers resealing, and the ${a("/tools/polymeric-sand-calculator", "polymeric sand calculator")} sizes a joint refill.</p>`,
     },
     {
       heading: "Pavers vs Concrete Driveway Cost",
@@ -130,7 +133,7 @@ export const stampedConcreteVsPaversCostCalculator: ToolConfig = {
     },
     {
       heading: "Freeze-Thaw, Clay Soil and Cracking",
-      body: `<p>Climate changes the upkeep more than the install price. A stamped slab is rigid: control joints decide where it cracks, but in freeze-thaw country it will crack somewhere, and deicers wear the sealer faster. Pavers flex with the ground, so frost heave shows up as uneven spots that can be lifted and relaid. Clay soil adds ${BASE_DEPTH_IN.poorSoilExtra.value} inches of base under pavers and calls for a well-compacted sub-base under a slab.</p>${table(
+      body: `<p>Climate changes the upkeep more than the install price. A stamped slab is rigid: control joints decide where it cracks, most slabs crack somewhere eventually, and deicers wear the sealer faster. Pavers flex with the ground, so frost heave shows up as uneven spots that can be lifted and relaid. Clay soil adds ${BASE_DEPTH_IN.poorSoilExtra.value} inches of base under pavers and calls for a well-compacted sub-base under a slab.</p>${table(
         ["Upkeep item", "Mild winters", "Freeze-thaw winters"],
         [
           ["Stamped: clean and reseal", `every ${STAMPED_RESEAL_YEARS.mild.value} years`, `every ${STAMPED_RESEAL_YEARS["freeze-thaw"].value} years`],
@@ -138,7 +141,7 @@ export const stampedConcreteVsPaversCostCalculator: ToolConfig = {
           ["Pavers: polymeric joint sand", `every ${PAVER_RESAND_YEARS.mild.value} years`, `every ${PAVER_RESAND_YEARS["freeze-thaw"].value} years`],
           ["Pavers: relevel settled areas (allowance)", `${pct(PAVER_RELEVEL_SHARE.mild.value)} of the area every ${PAVER_RELEVEL_YEARS.value} years`, `${pct(PAVER_RELEVEL_SHARE["freeze-thaw"].value)} every ${PAVER_RELEVEL_YEARS.value} years`],
         ],
-      )}<p>For a 15×20 patio over 20 years, freeze-thaw adds about ${money(d.stamped.upkeep.typical - mild.stamped.upkeep.typical)} to the stamped side and ${money(d.pavers.upkeep.typical - mild.pavers.upkeep.typical)} to the paver side. Weighing poured finishes for a cold climate instead? Try the ${a("/tools/driveway-finish-selector", "driveway finish selector")}.</p>`,
+      )}<p>Under these allowances, for a 15×20 patio over 20 years freeze-thaw adds about ${money(d.stamped.upkeep.typical - mild.stamped.upkeep.typical)} to the stamped side and ${money(d.pavers.upkeep.typical - mild.pavers.upkeep.typical)} to the paver side. Weighing poured finishes for a cold climate instead? Try the ${a("/tools/driveway-finish-selector", "driveway finish selector")}.</p>`,
     },
     {
       heading: "Repair Costs: Patching a Slab vs Relaying Pavers",
@@ -154,7 +157,7 @@ export const stampedConcreteVsPaversCostCalculator: ToolConfig = {
     },
     {
       heading: "Looks, Resale and Combining Both",
-      body: `<p>Stamped concrete gives a seamless surface and can mimic slate, cobblestone or wood plank. Pavers are real units with real joints, depth and color variation, which reads as higher-end up close. No cost guide publishes a reliable resale premium for either, so choose on how you will use the space.</p>${table(
+      body: `<p>Stamped concrete gives a seamless surface and can mimic slate, cobblestone or wood plank. Pavers are real units with real joints, depth and color variation, which reads as higher-end up close. Neither has a published resale premium.</p>${table(
         ["If you want", "Better pick", "Why"],
         [
           ["The lowest price for a pattern", "Basic stamped", `${sqft(STAMPED_TIER.basic)} per sq ft`],
@@ -206,15 +209,15 @@ export const stampedConcreteVsPaversCostCalculator: ToolConfig = {
     },
     {
       question: "What are the disadvantages of stamped concrete?",
-      answer: `It cracks eventually, repairs rarely match the color, it needs resealing every ${STAMPED_RESEAL_YEARS["freeze-thaw"].value}–${STAMPED_RESEAL_YEARS.mild.value} years, it can be slippery when sealed and wet unless grit is added, and it is not a DIY job. Over 20 freeze-thaw years, upkeep on a 15×20 patio adds about ${money(d.stamped.upkeep.typical)}.`,
+      answer: `It cracks eventually, repairs rarely match the color, it needs resealing every ${STAMPED_RESEAL_YEARS["freeze-thaw"].value}–${STAMPED_RESEAL_YEARS.mild.value} years, it can be slippery when sealed and wet unless grit is added, and it is not a DIY job. Assuming professional resealing every ${STAMPED_RESEAL_YEARS["freeze-thaw"].value} years and one crack-repair visit every ${STAMPED_CRACK_REPAIR_YEARS["freeze-thaw"].value} years, upkeep on a 15×20 patio comes to about ${money(d.stamped.upkeep.typical)} over 20 freeze-thaw years.`,
     },
     {
       question: "Which lasts longer, stamped concrete or pavers?",
-      answer: `Pavers usually last longer: cost guides put them at ${yrs(LIFESPAN_YEARS.pavers)} versus ${yrs(LIFESPAN_YEARS.stamped)} for stamped concrete, and a paver surface can be relaid rather than replaced. Both fail early on a poorly built base.`,
+      answer: `Lifespans are similar: cost guides put stamped concrete at ${yrs(LIFESPAN_YEARS.stamped)} and pavers at ${yrs(LIFESPAN_YEARS.pavers)} when maintained. The practical difference is repair: pavers can be lifted and relaid in sections, so a paver surface is rarely replaced whole, while a badly cracked slab is. Both fail early on a poorly built base.`,
     },
     {
       question: "Are pavers or stamped concrete better for a driveway?",
-      answer: `According to PourCanvas, a 20×24 driveway costs ${moneyRange(drive.stamped.upfront)} in mid-range stamped concrete and ${moneyRange(drive.pavers.upfront)} in concrete pavers. Over 20 freeze-thaw winters the typical totals are ${money(drive.stamped.lifetime.typical)} vs ${money(drive.pavers.lifetime.typical)}, so ${cheaperName(drive.cheaperOverYears)} ${drive.cheaperOverYears === "pavers" ? "come" : "comes"} out ahead once upkeep is counted.`,
+      answer: `According to PourCanvas, a 20×24 driveway costs ${moneyRange(drive.stamped.upfront)} in mid-range stamped concrete and ${moneyRange(drive.pavers.upfront)} in concrete pavers. With the calculator's upkeep assumptions over 20 freeze-thaw winters, the typical totals are ${money(drive.stamped.lifetime.typical)} vs ${money(drive.pavers.lifetime.typical)}, so ${cheaperName(drive.cheaperOverYears)} ${drive.cheaperOverYears === "pavers" ? "come" : "comes"} out ahead once upkeep is counted.`,
     },
     {
       question: "Do pavers add more value to a home than stamped concrete?",

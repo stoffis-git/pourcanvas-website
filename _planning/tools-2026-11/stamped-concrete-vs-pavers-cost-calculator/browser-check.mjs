@@ -44,6 +44,12 @@ for (const width of [375, 1280]) {
   await page.getByRole("button", { name: "Metric" }).click();
   await page.waitForTimeout(100);
   ok(`${width}px metric`, (await page.inputValue("#svp-length")) === "6.1", await page.inputValue("#svp-length"));
+  await page.getByRole("button", { name: "Copy result" }).click();
+  await page.waitForTimeout(200);
+  const clipM = await page.evaluate(() => navigator.clipboard.readText()).catch(() => "");
+  ok(`${width}px copy uses metric units`, /6\.1 x 6\.1 m = .* m²/.test(clipM) && clipM.includes("/m²"), clipM.split("\n")[1]);
+  const assumptions = await page.getByTestId("assumptions").textContent();
+  ok(`${width}px assumptions line`, /Assumes pro upkeep/.test(assumptions ?? "") && /one crack repair every 15/.test(assumptions ?? ""), assumptions); // mild + 30 yrs: 2 repairs counted
 
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
   ok(`${width}px no horizontal overflow`, overflow <= 0, `overflow ${overflow}px`);

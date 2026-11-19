@@ -91,7 +91,7 @@ export interface SvpResult {
   stamped: SideResult;
   pavers: SideResult;
   cheaperUpfront: Side | "tie";
-  /** Absolute typical upfront difference and its share of the cheaper option. */
+  /** Absolute typical upfront difference and its share of the dearer option ("x% less"). */
   upfrontDiff: number;
   upfrontPct: number;
   cheaperOverYears: Side | "tie";
@@ -101,6 +101,8 @@ export interface SvpResult {
   breakEvenYear: number | null;
   options: OptionRow[];
   verdict: string;
+  /** Plain-language upkeep assumptions behind the lifetime figures. */
+  assumptions: string;
 }
 
 const round = (n: number, d = 0) => Math.round(n * 10 ** d) / 10 ** d;
@@ -109,7 +111,7 @@ const addRange = (a: Range, b: Range): Range => ({ low: a.low + b.low, typical: 
 const ZERO: Range = { low: 0, typical: 0, high: 0 };
 const sum = (rs: Range[]) => rs.reduce(addRange, ZERO);
 
-/** A tie is any upfront or lifetime gap under this share of the cheaper option. */
+/** A tie is any upfront or lifetime gap under this share of the dearer option. */
 export const TIE_PCT = 5;
 
 export function stampedPerSqft(design: StampedDesign, use: Use, region: Region): Range {
@@ -154,7 +156,8 @@ function side(label: string, perSqft: Range, area: number, evs: UpkeepEvent[]): 
 
 const compare = (stamped: number, pavers: number): { cheaper: Side | "tie"; diff: number; pct: number } => {
   const diff = Math.abs(pavers - stamped);
-  const base = Math.min(stamped, pavers);
+  // Share of the dearer option ("x% less"), so it can never exceed 100%.
+  const base = Math.max(stamped, pavers);
   const pct = base > 0 ? Math.round((diff / base) * 100) : 0;
   return { cheaper: pct < TIE_PCT ? "tie" : stamped < pavers ? "stamped" : "pavers", diff, pct };
 };
@@ -207,7 +210,7 @@ export function calculateSvp(raw: SvpInputs): SvpResult {
       .map((c) => ({ id: c.material, label: `${c.label} (no pattern)`, perSqft: c.perSqft, total: c.total, side: "plain" as const })),
   ].sort((a, b) => a.total.typical - b.total.typical);
 
-  const result: Omit<SvpResult, "verdict"> = {
+  const result: Omit<SvpResult, "verdict" | "assumptions"> = {
     area: round(area, 1),
     years: input.years,
     stamped,
@@ -221,7 +224,7 @@ export function calculateSvp(raw: SvpInputs): SvpResult {
     breakEvenYear,
     options,
   };
-  return { ...result, verdict: verdictText(result, input) };
+  return { ...result, verdict: verdictText(result, input), assumptions: assumptionsText(result, input) };
 }
 
 const usd = (n: number) => `$${Math.round(n).toLocaleString("en-US")}`;
@@ -230,36 +233,63 @@ const approx = (n: number) => usd(n < 1000 ? Math.round(n / 10) * 10 : n < 10000
 const IS: Record<Side, string> = { stamped: "Stamped concrete is", pavers: "Pavers are" };
 const COMES: Record<Side, string> = { stamped: "stamped concrete comes", pavers: "pavers come" };
 
-const UPKEEP: Record<Side, string> = { stamped: "resealing and crack repair", pavers: "joint sand and releveling" };
+type Core = Omit<SvpResult, "verdict" | "assumptions">;
 
-export function verdictText(r: Omit<SvpResult, "verdict">, input: SvpInputs): string {
+/** The upkeep items actually counted for one side, e.g. "resealing and crack repair". */
+function upkeepWords(r: Core, side: Side): string {
+  const words: Record<string, string> = {
+    "Clean and reseal": "resealing",
+    "Crack repair (allowance)": "crack repair",
+    "Clean, re-sand and seal": "sealing",
+    "Refresh polymeric joint sand": "joint sand",
+  };
+  const list = r[side].events.filter((e) => e.count > 0).map((e) => words[e.label] ?? "releveling");
+  return list.length === 0 ? "upkeep" : list.length === 1 ? list[0] : `${list.slice(0, -1).join(", ")} and ${list[list.length - 1]}`;
+}
+
+export function verdictText(r: Core, input: SvpInputs): string {
   if (r.area <= 0) return "Enter a length and width to compare the two.";
   const parts: string[] = [];
   const n = r.years;
   if (r.cheaperUpfront === "tie") {
-    parts.push(`Up front it is close to a tie: the typical prices differ by only ${r.upfrontPct}%.`);
+    parts.push(`Up front the two are about even (within ${approx(r.upfrontDiff)}).`);
     parts.push(
       r.cheaperOverYears === "tie"
-        ? `Over ${n} years they stay within ${r.lifetimePct}% of each other, so choose on looks and repairability.`
+        ? `Over ${n} years they stay about even (within ${approx(r.lifetimeDiff)}), so choose on looks and repairability.`
         : `Over ${n} years, ${COMES[r.cheaperOverYears]} out about ${approx(r.lifetimeDiff)} cheaper once upkeep is counted.`,
     );
   } else {
     const u = r.cheaperUpfront;
-    parts.push(`${IS[u]} cheaper up front by about ${approx(r.upfrontDiff)} (${r.upfrontPct}%).`);
+    parts.push(`${IS[u]} cheaper up front by about ${approx(r.upfrontDiff)} (${r.upfrontPct}% less).`);
     if (r.cheaperOverYears === "tie") {
-      parts.push(`Over ${n} years, ${UPKEEP[u]} narrow the gap to ${r.lifetimePct}%, so looks and repairability can decide it.`);
+      parts.push(`Over ${n} years, ${upkeepWords(r, u)} bring the two to about even (within ${approx(r.lifetimeDiff)}), so looks and repairability can decide it.`);
     } else if (r.cheaperOverYears === u) {
       const later = r.breakEvenYear && r.breakEvenYear > n ? ` At these rates the running totals would cross in year ${r.breakEvenYear}.` : "";
-      parts.push(`${u === "stamped" ? "It stays" : "They stay"} about ${approx(r.lifetimeDiff)} cheaper over ${n} years, even after ${UPKEEP[u]}.${later}`);
+      parts.push(`${u === "stamped" ? "It stays" : "They stay"} about ${approx(r.lifetimeDiff)} cheaper over ${n} years, even after ${upkeepWords(r, u)}.${later}`);
     } else {
       parts.push(`Upkeep flips it: ${COMES[r.cheaperOverYears]} out about ${approx(r.lifetimeDiff)} cheaper over ${n} years${r.breakEvenYear ? `, with the running totals crossing in year ${r.breakEvenYear}` : ""}.`);
     }
   }
-  if (input.climate === "freeze-thaw") parts.push("With freeze-thaw winters, plan on the stamped slab cracking at some point; pavers shift instead and can be relaid.");
   if (input.use === "driveway") parts.push("For a driveway, insist on a thicker base under pavers and a thicker, reinforced slab for stamped concrete.");
   return parts.join(" ");
 }
 
+/** Visible list of the upkeep assumptions behind the lifetime numbers. */
+export function assumptionsText(r: Core, input: SvpInputs): string {
+  const ev = (side: Side, label: string) => r[side].events.find((e) => e.label.startsWith(label));
+  const reseal = ev("stamped", "Clean and reseal")!;
+  const crack = ev("stamped", "Crack repair")!;
+  const sand = ev("pavers", "Refresh polymeric") ?? ev("pavers", "Clean, re-sand and seal")!;
+  const relevel = ev("pavers", "Lift and relevel")!;
+  const share = Math.round(PAVER_RELEVEL_SHARE[input.climate].value * 100);
+  return [
+    `Assumes pro upkeep: stamped resealed every ${reseal.everyYears} years,`,
+    `${crack.count > 0 ? `one crack repair every ${crack.everyYears}` : `no crack repair within ${r.years} years (one every ${crack.everyYears})`};`,
+    `pavers ${input.sealPavers ? "cleaned, re-sanded and sealed" : "re-sanded"} every ${sand.everyYears} years,`,
+    `${share}% releveled every ${relevel.everyYears}.`,
+    "DIY sealing saves most of the labor.",
+  ].join(" ");
+}
 
 /* ---------- URL params ---------- */
 

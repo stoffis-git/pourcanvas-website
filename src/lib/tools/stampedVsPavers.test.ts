@@ -70,7 +70,7 @@ describe("calculateSvp upfront", () => {
     const s = r.stamped.upfront.typical;
     const p = r.pavers.upfront.typical;
     expect(r.upfrontDiff).toBe(Math.abs(s - p));
-    expect(r.upfrontPct).toBe(Math.round((Math.abs(s - p) / Math.min(s, p)) * 100));
+    expect(r.upfrontPct).toBe(Math.round((Math.abs(s - p) / Math.max(s, p)) * 100));
     expect(r.cheaperUpfront).toBe(s < p ? "stamped" : "pavers");
   });
 });
@@ -156,6 +156,32 @@ describe("calculateSvp edge cases", () => {
     expect(r.verdict).toMatch(/10 years/);
     expect(run({ use: "driveway" }).verdict).toMatch(/driveway/);
     expect(run({ climate: "mild" }).verdict).not.toMatch(/freeze-thaw/);
+  });
+
+  it("never reports a gap above 100%", () => {
+    for (const design of ["basic", "standard", "custom"] as const)
+      for (const paver of ["concrete-paver", "clay-brick", "travertine", "porcelain"] as const) {
+        const r = run({ design, paver });
+        expect(r.upfrontPct).toBeLessThanOrEqual(100);
+        expect(r.lifetimePct).toBeLessThanOrEqual(100);
+      }
+    // basic stamped vs porcelain: $3,000 vs $7,200 is 58% less, not 140% more
+    expect(run({ design: "basic", paver: "porcelain" }).upfrontPct).toBe(58);
+  });
+
+  it("only names crack repair when a repair is counted", () => {
+    const none = run({ design: "custom", climate: "mild", years: 10 });
+    expect(none.stamped.events.find((e) => e.label.startsWith("Crack"))!.count).toBe(0);
+    expect(none.verdict).not.toMatch(/crack/i);
+    expect(none.assumptions).toMatch(/no crack repair within 10 years/);
+    expect(none.assumptions).not.toMatch(/one crack repair every/);
+    expect(run().assumptions).toMatch(/one crack repair every 10;/);
+  });
+
+  it("states ties as about even with a dollar gap", () => {
+    const r = run({ use: "driveway", length: 20, width: 24 });
+    expect(r.cheaperUpfront).toBe("tie");
+    expect(r.verdict).toMatch(/about even \(within \$\d/);
   });
 });
 

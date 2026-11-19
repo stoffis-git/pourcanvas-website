@@ -53,16 +53,20 @@ function Select<T extends string>({ id, value, onChange, options }: { id: string
 
 const unitRate = (r: Range, metric: boolean) => (metric ? `${perSqftRange({ low: r.low * SQFT_PER_M2, typical: r.typical * SQFT_PER_M2, high: r.high * SQFT_PER_M2 })}/m²` : `${perSqftRange(r)}/sq ft`);
 
-export function svpCopyText(r: SvpResult, inputs: SvpInputs, url: string) {
+export function svpCopyText(r: SvpResult, inputs: SvpInputs, url: string, metric = false) {
+  const m = (ft: number) => Math.round((ft / FT_PER_M) * 100) / 100;
+  const size = metric
+    ? `${m(inputs.length)} x ${m(inputs.width)} m = ${num(r.area / SQFT_PER_M2, 1)} m²`
+    : `${inputs.length} x ${inputs.width} ft = ${num(r.area)} sq ft`;
   const ev = (side: "stamped" | "pavers") =>
     (side === "stamped" ? r.stamped : r.pavers).events
       .filter((e) => e.count > 0)
       .map((e) => `  - ${e.label}: every ${e.everyYears} yrs, ${e.count}x ${moneyRange(e.perEvent)} = ${moneyRange(e.total)}`);
   return [
     `STAMPED CONCRETE VS PAVERS - PourCanvas.com (${new Date().toISOString().split("T")[0]})`,
-    `Project: ${inputs.length} x ${inputs.width} ft = ${num(r.area)} sq ft ${inputs.use}, ${REGION_LABELS[inputs.region]}, ${inputs.climate === "freeze-thaw" ? "freeze-thaw winters" : "mild winters"}`,
-    `${r.stamped.label}: ${moneyRange(r.stamped.upfront)} installed (${perSqftRange(r.stamped.perSqft)}/sq ft)`,
-    `${r.pavers.label}: ${moneyRange(r.pavers.upfront)} installed (${perSqftRange(r.pavers.perSqft)}/sq ft)`,
+    `Project: ${size} ${inputs.use}, ${REGION_LABELS[inputs.region]}, ${inputs.climate === "freeze-thaw" ? "freeze-thaw winters" : "mild winters"}`,
+    `${r.stamped.label}: ${moneyRange(r.stamped.upfront)} installed (${unitRate(r.stamped.perSqft, metric)})`,
+    `${r.pavers.label}: ${moneyRange(r.pavers.upfront)} installed (${unitRate(r.pavers.perSqft, metric)})`,
     `Upkeep over ${r.years} years, stamped: ${moneyRange(r.stamped.upkeep)}`,
     ...ev("stamped"),
     `Upkeep over ${r.years} years, pavers: ${moneyRange(r.pavers.upkeep)}`,
@@ -70,6 +74,7 @@ export function svpCopyText(r: SvpResult, inputs: SvpInputs, url: string) {
     `${r.years}-year total: stamped ${moneyRange(r.stamped.lifetime)} vs pavers ${moneyRange(r.pavers.lifetime)}`,
     `Break-even: ${r.breakEvenYear ? `year ${r.breakEvenYear}` : "none within 30 years"}`,
     `Verdict: ${r.verdict}`,
+    r.assumptions,
     `Calculated with PourCanvas.com · ${url}`,
   ].join("\n");
 }
@@ -106,7 +111,7 @@ export function StampedVsPaversTool({ config }: { config: ToolConfig }) {
   const fromDisplay = (v: number) => (metric ? Math.round(v * FT_PER_M * 100) / 100 : v);
 
   const onCopy = async () => {
-    const text = svpCopyText(r, inputs, window.location.href);
+    const text = svpCopyText(r, inputs, window.location.href, metric);
     try {
       if (!navigator.clipboard) throw new Error("no clipboard");
       await navigator.clipboard.writeText(text);
@@ -217,7 +222,7 @@ export function StampedVsPaversTool({ config }: { config: ToolConfig }) {
           </div>
           <p className="text-sm text-[#faf8f5]/80 mt-4">
             {r.cheaperUpfront === "tie"
-              ? `Typical prices are within ${r.upfrontPct}% of each other.`
+              ? `About even up front (within ${money(r.upfrontDiff)}).`
               : `${r.cheaperUpfront === "stamped" ? "Stamped concrete costs" : "Pavers cost"} about ${money(r.upfrontDiff)} (${r.upfrontPct}%) less up front at typical prices.`}
           </p>
           <p className="text-sm text-[#faf8f5]/80 mt-1">
@@ -255,6 +260,7 @@ export function StampedVsPaversTool({ config }: { config: ToolConfig }) {
               })}
             </tbody>
           </table>
+          <p className="px-5 py-3 border-t border-border text-xs text-muted-foreground" data-testid="assumptions">{r.assumptions}</p>
         </div>
 
         <details className="rounded-2xl border border-border" open>
